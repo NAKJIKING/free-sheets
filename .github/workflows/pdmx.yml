@@ -1,0 +1,34 @@
+name: PDMX 수집
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'collect_pdmx.py'
+      - 'PDMX_RUN'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pdmx
+  cancel-in-progress: false
+
+jobs:
+  pdmx:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: PDMX 수집/정찰
+        run: python3 collect_pdmx.py
+      - name: 결과 커밋
+        run: |
+          git config user.name "sheet-collector-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "신규 없음"; else
+            git commit -m "PDMX 자동 수집 결과 [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
