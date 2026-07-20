@@ -35,6 +35,55 @@ TARGETS = {
 }
 KEYBOARD = {0, 1, 2, 3, 4, 5, 6, 7}  # 피아노 반주로 허용
 
+# ── 저작권 안전 장치 ──────────────────────────────────────────
+# MuseScore 이용자가 붙인 'publicdomain' 라벨은 오표기가 많다
+# (현대 팝·애니 곡 편곡에도 붙어 있음). 원곡 자체가 확실히 퍼블릭
+# 도메인인 작곡가(사후 70년+ 경과)의 곡, 또는 전통민요만 통과시킨다.
+PD_COMPOSERS = [
+    # 바로크·고전
+    'Bach', 'Handel', 'Vivaldi', 'Telemann', 'Purcell', 'Scarlatti',
+    'Corelli', 'Albinoni', 'Pachelbel', 'Rameau', 'Couperin', 'Buxtehude',
+    'Monteverdi', 'Palestrina', 'Byrd', 'Tallis', 'Dowland', 'Frescobaldi',
+    'Lully', 'Charpentier', 'Quantz', 'Stamitz', 'Danzi', 'Boccherini',
+    'Haydn', 'Mozart', 'Beethoven', 'Clementi', 'Czerny', 'Diabelli',
+    'Hummel', 'Gluck', 'Salieri', 'Kuhlau', 'Cimarosa',
+    # 낭만
+    'Schubert', 'Schumann', 'Chopin', 'Liszt', 'Mendelssohn', 'Brahms',
+    'Wagner', 'Verdi', 'Rossini', 'Donizetti', 'Bellini', 'Puccini',
+    'Tchaikovsky', 'Rimsky-Korsakov', 'Mussorgsky', 'Borodin', 'Glinka',
+    'Rachmaninoff', 'Rachmaninov', 'Scriabin', 'Grieg', 'Dvorak',
+    'Dvo\u0159\u00e1k', 'Smetana', 'Janacek', 'Mahler', 'Bruckner',
+    'Strauss', 'Debussy', 'Ravel', 'Faure', 'Faur\u00e9', 'Saint-Saens',
+    'Saint-Sa\u00ebns', 'Franck', 'Bizet', 'Gounod', 'Massenet',
+    'Offenbach', 'Satie', 'Elgar', 'Holst', 'Albeniz', 'Alb\u00e9niz',
+    'Granados', 'Paganini', 'Sarasate', 'Wieniawski', 'Weber', 'Spohr',
+    'MacDowell', 'Burgm\u00fcller', 'Burgmuller', 'Sibelius',
+    # 기타·류트
+    'Tarrega', 'T\u00e1rrega', 'Sor', 'Giuliani', 'Carcassi', 'Carulli',
+    'Aguado', 'Mertz', 'Milan', 'Sanz',
+    # 관악 연습곡·명곡
+    'Arban', 'Clarke', 'Klose', 'Klos\u00e9', 'Rose', 'Baermann',
+    'Crusell', 'Boehm', 'B\u00f6hm', 'Andersen', 'Popp', 'K\u00f6hler',
+    'Kohler', 'Drouet', 'Demersseman', 'Doppler', 'Briccialdi',
+    # 미국 퍼블릭 도메인
+    'Joplin', 'Sousa', 'Foster',
+    # 종교·전통
+    'Gregorian', 'Hymn',
+]
+_PD_RE = re.compile(
+    r'\b(' + '|'.join(re.escape(n) for n in PD_COMPOSERS) + r')\b', re.I)
+_TRAD_RE = re.compile(
+    r'\b(traditional|trad\.|folk|anonymous|anon\.?)\b', re.I)
+
+
+def is_pd_safe(composer, artist, title):
+    """원곡이 확실히 퍼블릭 도메인인지 — 작곡가 화이트리스트 또는 전통곡."""
+    for field in (composer, artist):
+        if field and _PD_RE.search(field):
+            return True
+    blob = ' '.join(x for x in (composer, artist, title) if x)
+    return bool(_TRAD_RE.search(blob))
+
 
 def open_url(name):
     req = urllib.request.Request(f'{BASE}/{name}/content', headers=UA)
@@ -76,6 +125,10 @@ def pick_candidates():
                     break
             if inst is None:
                 continue
+            if not is_pd_safe(row.get('composer_name', ''),
+                              row.get('artist_name', ''),
+                              row.get('song_name', '')):
+                continue
             try:
                 rating = float(row.get('rating') or 0)
                 n_ratings = int(row.get('n_ratings') or 0)
@@ -113,6 +166,11 @@ def main():
     print(f'총 추출 대상 {len(wanted)}개, PDF 아카이브 스트리밍 시작', flush=True)
 
     catalog = json.load(open(CATALOG, encoding='utf-8'))
+    # 이전 PDMX 수집분은 전부 버리고 새 기준으로 다시 담는다
+    # (화이트리스트 도입 전에 섞여 든 현대곡 정리).
+    catalog = [e for e in catalog if e.get('source') != 'pdmx']
+    import shutil
+    shutil.rmtree(os.path.join(RAW, 'pdmx'), ignore_errors=True)
     seen = {e['source_url'] for e in catalog}
     counts = {k: 0 for k in TARGETS}
     added = 0
