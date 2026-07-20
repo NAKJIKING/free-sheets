@@ -19,7 +19,7 @@ concurrency:
 jobs:
   mutopia:
     runs-on: ubuntu-latest
-    timeout-minutes: 110
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - name: Mutopia 수집

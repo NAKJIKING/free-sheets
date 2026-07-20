@@ -22,7 +22,7 @@ RAW = os.path.join(ROOT, 'raw')
 CATALOG = os.path.join(ROOT, 'catalog.json')
 
 UA = {'User-Agent': 'MySheetMusic-FreeLibrary/1.0 (public-domain collector)'}
-PER_INSTRUMENT_CAP = 40          # v1: 악기당 최대 곡수
+PER_INSTRUMENT_CAP = 400         # v2: 사실상 전량 수집 (Mutopia 최대 악기가 ~400곡)
 REQUEST_DELAY = 1.5              # 서버 예의용 딜레이(초)
 
 # 대표 악기 (Mutopia 검색 파라미터명 기준)
@@ -104,7 +104,7 @@ def collect_mutopia():
     for inst in INSTRUMENTS:
         print(f'== Mutopia: {inst}', flush=True)
         entries = []
-        for startat in range(0, 200, 25):   # 페이지 순회
+        for startat in range(0, 2000, 25):  # 페이지 순회 (전 페이지)
             url = ('https://www.mutopiaproject.org/cgibin/make-table.cgi'
                    f'?Instrument={inst}&startat={startat}')
             html = fetch(url)
