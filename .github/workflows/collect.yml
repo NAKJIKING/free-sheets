@@ -1,0 +1,36 @@
+name: 악보 자동 수집
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 18 * * 5'    # 매주 토요일 새벽 3시 KST
+  push:
+    paths:
+      - 'RUN'
+      - 'collect.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  mutopia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mutopia 수집
+        run: python3 collect.py
+      - name: 결과 커밋
+        run: |
+          git config user.name "sheet-collector-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "신규 없음"; else
+            git commit -m "Mutopia 자동 수집 결과 [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
