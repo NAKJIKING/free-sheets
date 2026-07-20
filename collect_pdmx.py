@@ -81,7 +81,7 @@ def is_pd_safe(composer, artist, title):
     for field in (composer, artist):
         if field and _PD_RE.search(field):
             return True
-    blob = ' '.join(x for x in (composer, artist, title) if x)
+    blob = ' '.join(x for x in (composer, artist) if x)
     return bool(_TRAD_RE.search(blob))
 
 
@@ -139,12 +139,17 @@ def pick_candidates():
             meta = row.get('metadata', '')
             m = re.search(r'/(\d+)\.json$', meta)
             ms_id = m.group(1) if m else ''
+            def _clean(v):
+                return '' if v in (None, '', 'NA') else v.strip()
+            title = (_clean(row.get('song_name'))
+                     or _clean(row.get('title')) or 'Untitled')
+            composer = (_clean(row.get('composer_name'))
+                        or _clean(row.get('artist_name')))
             cands[inst].append({
                 'pdf': pdf.lstrip('./'),
                 'score': score,
-                'title': row.get('song_name') or row.get('title') or '무제',
-                'composer': '' if row.get('composer_name') in (None, 'NA')
-                            else row.get('composer_name'),
+                'title': title,
+                'composer': composer,
                 'license': row.get('license') or 'publicdomain',
                 'solo': solo,
                 'ms_id': ms_id,
