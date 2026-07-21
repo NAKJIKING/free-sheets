@@ -24,6 +24,18 @@ UA = {'User-Agent': 'MySheetMusic-FreeLibrary/1.0 (public-domain collector)'}
 
 CAP = 150  # 악기당 1차 배치 상한 (저장소 용량 예고선 500MB 관리)
 
+# 전수조사에서 제외 판정된 곡 (MuseScore ID) — 원곡 저작권 존속·검증 불능·
+# 정서적 거부감 우려. 자동 수집이 다시 담지 않도록 영구 차단.
+BLOCKED_IDS = {
+    '5902556',  # Mary Did You Know (1991, Mark Lowry) - 저작권 존속
+    '4159766',  # 2CELLOS 브랜드 편곡
+    '5907396',  # The Laundromat theme - 현대 영상물 추정
+    '873391',   # 러시아 국가 - 거부감 우려
+    '5935685',  # Kevin Jiang 창작곡
+    '5941614',  # Kevin Jiang 창작곡
+    '5838089',  # 원곡 식별 불가
+}
+
 # 악기별 MIDI 프로그램 번호 (tracks 컬럼)
 TARGETS = {
     'Flute': {73},
@@ -139,6 +151,8 @@ def pick_candidates():
             meta = row.get('metadata', '')
             m = re.search(r'/(\d+)\.json$', meta)
             ms_id = m.group(1) if m else ''
+            if ms_id in BLOCKED_IDS:
+                continue
             def _clean(v):
                 return '' if v in (None, '', 'NA') else v.strip()
             title = (_clean(row.get('song_name'))
