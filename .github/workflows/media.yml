@@ -1,0 +1,36 @@
+name: 미디·썸네일 수집
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'collect_media.py'
+      - 'MEDIA_RUN'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: media
+  cancel-in-progress: false
+
+jobs:
+  media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: 도구 설치
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils webp
+      - name: 수집
+        run: python3 collect_media.py
+      - name: 결과 커밋
+        run: |
+          git config user.name "sheet-collector-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "신규 없음"; else
+            git commit -m "미디·썸네일 자동 수집 결과 [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
