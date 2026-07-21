@@ -14935,7 +14935,8 @@
   "composer": "Poldowski",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Poldowski-lc6663427.webp"
+  "thumb": "thumbs/openscore_lieder/Poldowski-lc6663427.webp",
+  "midi": "mids/Poldowski-lc6663427.mid"
  },
  {
   "source": "openscore_lieder",
@@ -14945,7 +14946,8 @@
   "composer": "Puget, Loïsa",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Puget__Lo_sa-lc6666995.webp"
+  "thumb": "thumbs/openscore_lieder/Puget__Lo_sa-lc6666995.webp",
+  "midi": "mids/Puget__Lo_sa-lc6666995.mid"
  },
  {
   "source": "openscore_lieder",
@@ -14955,7 +14957,8 @@
   "composer": "Puget, Loïsa",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Puget__Lo_sa-lc6667483.webp"
+  "thumb": "thumbs/openscore_lieder/Puget__Lo_sa-lc6667483.webp",
+  "midi": "mids/Puget__Lo_sa-lc6667483.mid"
  },
  {
   "source": "openscore_lieder",
@@ -14965,7 +14968,8 @@
   "composer": "Puget, Loïsa",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Puget__Lo_sa-lc6669339.webp"
+  "thumb": "thumbs/openscore_lieder/Puget__Lo_sa-lc6669339.webp",
+  "midi": "mids/Puget__Lo_sa-lc6669339.mid"
  },
  {
   "source": "openscore_lieder",
@@ -14975,7 +14979,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29199584.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29199584.webp",
+  "midi": "mids/Quilter__Roger-lc29199584.mid"
  },
  {
   "source": "openscore_lieder",
@@ -14985,7 +14990,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29746199.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29746199.webp",
+  "midi": "mids/Quilter__Roger-lc29746199.mid"
  },
  {
   "source": "openscore_lieder",
@@ -14995,7 +15001,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc31421012.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc31421012.webp",
+  "midi": "mids/Quilter__Roger-lc31421012.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15005,7 +15012,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29093051.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29093051.webp",
+  "midi": "mids/Quilter__Roger-lc29093051.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15015,7 +15023,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc321919.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc321919.webp",
+  "midi": "mids/Quilter__Roger-lc321919.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15025,7 +15034,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29092718.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29092718.webp",
+  "midi": "mids/Quilter__Roger-lc29092718.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15035,7 +15045,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc30190781.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc30190781.webp",
+  "midi": "mids/Quilter__Roger-lc30190781.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15045,7 +15056,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc30191099.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc30191099.webp",
+  "midi": "mids/Quilter__Roger-lc30191099.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15055,7 +15067,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc30908438.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc30908438.webp",
+  "midi": "mids/Quilter__Roger-lc30908438.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15065,7 +15078,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29093213.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc29093213.webp",
+  "midi": "mids/Quilter__Roger-lc29093213.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15075,7 +15089,8 @@
   "composer": "Quilter, Roger",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc30908660.webp"
+  "thumb": "thumbs/openscore_lieder/Quilter__Roger-lc30908660.webp",
+  "midi": "mids/Quilter__Roger-lc30908660.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15085,7 +15100,8 @@
   "composer": "Reichardt, Louise",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Reichardt__Louise-lc5001880.webp"
+  "thumb": "thumbs/openscore_lieder/Reichardt__Louise-lc5001880.webp",
+  "midi": "mids/Reichardt__Louise-lc5001880.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15095,7 +15111,8 @@
   "composer": "Rootham, Cyril",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Rootham__Cyril-lc6449397.webp"
+  "thumb": "thumbs/openscore_lieder/Rootham__Cyril-lc6449397.webp",
+  "midi": "mids/Rootham__Cyril-lc6449397.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15105,7 +15122,8 @@
   "composer": "Rossini, Gioachino",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Rossini__Gioachino-lc30064748.webp"
+  "thumb": "thumbs/openscore_lieder/Rossini__Gioachino-lc30064748.webp",
+  "midi": "mids/Rossini__Gioachino-lc30064748.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15115,7 +15133,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6988229.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6988229.webp",
+  "midi": "mids/Satie__Erik-lc6988229.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15125,7 +15144,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6990723.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6990723.webp",
+  "midi": "mids/Satie__Erik-lc6990723.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15135,7 +15155,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6990810.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6990810.webp",
+  "midi": "mids/Satie__Erik-lc6990810.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15145,7 +15166,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6990957.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6990957.webp",
+  "midi": "mids/Satie__Erik-lc6990957.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15155,7 +15177,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994116.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994116.webp",
+  "midi": "mids/Satie__Erik-lc6994116.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15165,7 +15188,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994136.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994136.webp",
+  "midi": "mids/Satie__Erik-lc6994136.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15175,7 +15199,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994157.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994157.webp",
+  "midi": "mids/Satie__Erik-lc6994157.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15185,7 +15210,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994174.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994174.webp",
+  "midi": "mids/Satie__Erik-lc6994174.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15195,7 +15221,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994190.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6994190.webp",
+  "midi": "mids/Satie__Erik-lc6994190.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15205,7 +15232,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6481218.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6481218.webp",
+  "midi": "mids/Satie__Erik-lc6481218.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15215,7 +15243,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6481941.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6481941.webp",
+  "midi": "mids/Satie__Erik-lc6481941.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15225,7 +15254,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6482032.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6482032.webp",
+  "midi": "mids/Satie__Erik-lc6482032.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15235,7 +15265,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6986065.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6986065.webp",
+  "midi": "mids/Satie__Erik-lc6986065.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15245,7 +15276,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6986302.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6986302.webp",
+  "midi": "mids/Satie__Erik-lc6986302.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15255,7 +15287,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6987705.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6987705.webp",
+  "midi": "mids/Satie__Erik-lc6987705.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15265,7 +15298,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6987889.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6987889.webp",
+  "midi": "mids/Satie__Erik-lc6987889.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15275,7 +15309,8 @@
   "composer": "Satie, Erik",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6993176.webp"
+  "thumb": "thumbs/openscore_lieder/Satie__Erik-lc6993176.webp",
+  "midi": "mids/Satie__Erik-lc6993176.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15285,7 +15320,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30509480.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30509480.webp",
+  "midi": "mids/Schoenberg__Arnold-lc30509480.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15295,7 +15331,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9134208.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9134208.webp",
+  "midi": "mids/Schoenberg__Arnold-lc9134208.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15305,7 +15342,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9134397.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9134397.webp",
+  "midi": "mids/Schoenberg__Arnold-lc9134397.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15315,7 +15353,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9134607.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9134607.webp",
+  "midi": "mids/Schoenberg__Arnold-lc9134607.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15325,7 +15364,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9138438.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9138438.webp",
+  "midi": "mids/Schoenberg__Arnold-lc9138438.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15335,7 +15375,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9138579.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc9138579.webp",
+  "midi": "mids/Schoenberg__Arnold-lc9138579.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15345,7 +15386,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30437000.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30437000.webp",
+  "midi": "mids/Schoenberg__Arnold-lc30437000.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15355,7 +15397,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30437453.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30437453.webp",
+  "midi": "mids/Schoenberg__Arnold-lc30437453.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15365,7 +15408,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30480782.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30480782.webp",
+  "midi": "mids/Schoenberg__Arnold-lc30480782.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15375,7 +15419,8 @@
   "composer": "Schoenberg, Arnold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30509105.webp"
+  "thumb": "thumbs/openscore_lieder/Schoenberg__Arnold-lc30509105.webp",
+  "midi": "mids/Schoenberg__Arnold-lc30509105.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15385,7 +15430,8 @@
   "composer": "Schröter, Corona",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schr_ter__Corona-lc6017336.webp"
+  "thumb": "thumbs/openscore_lieder/Schr_ter__Corona-lc6017336.webp",
+  "midi": "mids/Schr_ter__Corona-lc6017336.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15395,7 +15441,8 @@
   "composer": "Schröter, Corona",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schr_ter__Corona-lc6022417.webp"
+  "thumb": "thumbs/openscore_lieder/Schr_ter__Corona-lc6022417.webp",
+  "midi": "mids/Schr_ter__Corona-lc6022417.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15405,7 +15452,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5093434.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5093434.webp",
+  "midi": "mids/Schubert__Franz-lc5093434.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15415,7 +15463,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4988600.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4988600.webp",
+  "midi": "mids/Schubert__Franz-lc4988600.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15425,7 +15474,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5093748.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5093748.webp",
+  "midi": "mids/Schubert__Franz-lc5093748.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15435,7 +15485,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5093803.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5093803.webp",
+  "midi": "mids/Schubert__Franz-lc5093803.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15445,7 +15496,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6486395.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6486395.webp",
+  "midi": "mids/Schubert__Franz-lc6486395.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15455,7 +15507,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6487832.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6487832.webp",
+  "midi": "mids/Schubert__Franz-lc6487832.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15465,7 +15518,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5025985.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5025985.webp",
+  "midi": "mids/Schubert__Franz-lc5025985.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15475,7 +15529,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985949.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985949.webp",
+  "midi": "mids/Schubert__Franz-lc4985949.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15485,7 +15540,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985931.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985931.webp",
+  "midi": "mids/Schubert__Franz-lc4985931.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15495,7 +15551,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985937.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985937.webp",
+  "midi": "mids/Schubert__Franz-lc4985937.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15505,7 +15562,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985924.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985924.webp",
+  "midi": "mids/Schubert__Franz-lc4985924.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15515,7 +15573,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985951.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985951.webp",
+  "midi": "mids/Schubert__Franz-lc4985951.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15525,7 +15584,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6838113.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6838113.webp",
+  "midi": "mids/Schubert__Franz-lc6838113.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15535,7 +15595,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6834474.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6834474.webp",
+  "midi": "mids/Schubert__Franz-lc6834474.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15545,7 +15606,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29244491.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29244491.webp",
+  "midi": "mids/Schubert__Franz-lc29244491.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15555,7 +15617,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc30321236.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc30321236.webp",
+  "midi": "mids/Schubert__Franz-lc30321236.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15565,7 +15628,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6181353.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6181353.webp",
+  "midi": "mids/Schubert__Franz-lc6181353.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15575,7 +15639,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5103323.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5103323.webp",
+  "midi": "mids/Schubert__Franz-lc5103323.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15585,7 +15650,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4981984.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4981984.webp",
+  "midi": "mids/Schubert__Franz-lc4981984.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15595,7 +15661,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4919879.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4919879.webp",
+  "midi": "mids/Schubert__Franz-lc4919879.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15605,7 +15672,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4982491.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4982491.webp",
+  "midi": "mids/Schubert__Franz-lc4982491.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15615,7 +15683,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4982505.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4982505.webp",
+  "midi": "mids/Schubert__Franz-lc4982505.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15625,7 +15694,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4982465.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4982465.webp",
+  "midi": "mids/Schubert__Franz-lc4982465.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15635,7 +15705,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29747756.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29747756.webp",
+  "midi": "mids/Schubert__Franz-lc29747756.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15645,7 +15716,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5098612.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5098612.webp",
+  "midi": "mids/Schubert__Franz-lc5098612.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15655,7 +15727,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985973.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985973.webp",
+  "midi": "mids/Schubert__Franz-lc4985973.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15665,7 +15738,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985965.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985965.webp",
+  "midi": "mids/Schubert__Franz-lc4985965.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15675,7 +15749,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985964.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985964.webp",
+  "midi": "mids/Schubert__Franz-lc4985964.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15685,7 +15760,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985962.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985962.webp",
+  "midi": "mids/Schubert__Franz-lc4985962.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15695,7 +15771,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5077744.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5077744.webp",
+  "midi": "mids/Schubert__Franz-lc5077744.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15705,7 +15782,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4986000.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4986000.webp",
+  "midi": "mids/Schubert__Franz-lc4986000.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15715,7 +15793,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985999.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985999.webp",
+  "midi": "mids/Schubert__Franz-lc4985999.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15725,7 +15804,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5004835.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5004835.webp",
+  "midi": "mids/Schubert__Franz-lc5004835.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15735,7 +15815,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985990.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985990.webp",
+  "midi": "mids/Schubert__Franz-lc4985990.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15745,7 +15826,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985987.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985987.webp",
+  "midi": "mids/Schubert__Franz-lc4985987.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15755,7 +15837,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4978506.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4978506.webp",
+  "midi": "mids/Schubert__Franz-lc4978506.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15765,7 +15848,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985985.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985985.webp",
+  "midi": "mids/Schubert__Franz-lc4985985.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15775,7 +15859,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985984.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc4985984.webp",
+  "midi": "mids/Schubert__Franz-lc4985984.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15785,7 +15870,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5023517.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5023517.webp",
+  "midi": "mids/Schubert__Franz-lc5023517.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15795,7 +15881,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5023603.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5023603.webp",
+  "midi": "mids/Schubert__Franz-lc5023603.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15805,7 +15892,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5023662.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5023662.webp",
+  "midi": "mids/Schubert__Franz-lc5023662.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15815,7 +15903,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007176.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007176.webp",
+  "midi": "mids/Schubert__Franz-lc5007176.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15825,7 +15914,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007178.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007178.webp",
+  "midi": "mids/Schubert__Franz-lc5007178.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15835,7 +15925,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007179.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007179.webp",
+  "midi": "mids/Schubert__Franz-lc5007179.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15845,7 +15936,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007180.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007180.webp",
+  "midi": "mids/Schubert__Franz-lc5007180.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15855,7 +15947,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007181.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007181.webp",
+  "midi": "mids/Schubert__Franz-lc5007181.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15865,7 +15958,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007182.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5007182.webp",
+  "midi": "mids/Schubert__Franz-lc5007182.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15875,7 +15969,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5009833.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5009833.webp",
+  "midi": "mids/Schubert__Franz-lc5009833.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15885,7 +15980,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015378.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015378.webp",
+  "midi": "mids/Schubert__Franz-lc5015378.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15895,7 +15991,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5013945.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5013945.webp",
+  "midi": "mids/Schubert__Franz-lc5013945.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15905,7 +16002,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5013969.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5013969.webp",
+  "midi": "mids/Schubert__Franz-lc5013969.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15915,7 +16013,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5014002.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5014002.webp",
+  "midi": "mids/Schubert__Franz-lc5014002.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15925,7 +16024,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5014023.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5014023.webp",
+  "midi": "mids/Schubert__Franz-lc5014023.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15935,7 +16035,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015435.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015435.webp",
+  "midi": "mids/Schubert__Franz-lc5015435.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15945,7 +16046,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015499.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015499.webp",
+  "midi": "mids/Schubert__Franz-lc5015499.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15955,7 +16057,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015573.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015573.webp",
+  "midi": "mids/Schubert__Franz-lc5015573.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15965,7 +16068,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5016466.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5016466.webp",
+  "midi": "mids/Schubert__Franz-lc5016466.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15975,7 +16079,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5016512.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5016512.webp",
+  "midi": "mids/Schubert__Franz-lc5016512.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15985,7 +16090,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015410.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015410.webp",
+  "midi": "mids/Schubert__Franz-lc5015410.mid"
  },
  {
   "source": "openscore_lieder",
@@ -15995,7 +16101,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015521.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5015521.webp",
+  "midi": "mids/Schubert__Franz-lc5015521.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16005,7 +16112,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5023438.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5023438.webp",
+  "midi": "mids/Schubert__Franz-lc5023438.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16015,7 +16123,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29589203.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29589203.webp",
+  "midi": "mids/Schubert__Franz-lc29589203.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16025,7 +16134,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29588495.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29588495.webp",
+  "midi": "mids/Schubert__Franz-lc29588495.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16035,7 +16145,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5946872.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5946872.webp",
+  "midi": "mids/Schubert__Franz-lc5946872.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16045,7 +16156,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29062370.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc29062370.webp",
+  "midi": "mids/Schubert__Franz-lc29062370.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16055,7 +16167,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6900961.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6900961.webp",
+  "midi": "mids/Schubert__Franz-lc6900961.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16065,7 +16178,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc7111114.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc7111114.webp",
+  "midi": "mids/Schubert__Franz-lc7111114.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16075,7 +16189,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6834411.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc6834411.webp",
+  "midi": "mids/Schubert__Franz-lc6834411.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16085,7 +16200,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc28789279.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc28789279.webp",
+  "midi": "mids/Schubert__Franz-lc28789279.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16095,7 +16211,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc7071193.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc7071193.webp",
+  "midi": "mids/Schubert__Franz-lc7071193.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16105,7 +16222,8 @@
   "composer": "Schubert, Franz",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5133353.webp"
+  "thumb": "thumbs/openscore_lieder/Schubert__Franz-lc5133353.webp",
+  "midi": "mids/Schubert__Franz-lc5133353.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16115,7 +16233,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6826352.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6826352.webp",
+  "midi": "mids/Schumann__Robert-lc6826352.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16125,7 +16244,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6834542.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6834542.webp",
+  "midi": "mids/Schumann__Robert-lc6834542.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16135,7 +16255,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6826597.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6826597.webp",
+  "midi": "mids/Schumann__Robert-lc6826597.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16145,7 +16266,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6827712.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6827712.webp",
+  "midi": "mids/Schumann__Robert-lc6827712.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16155,7 +16277,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6828018.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6828018.webp",
+  "midi": "mids/Schumann__Robert-lc6828018.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16165,7 +16288,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc5003150.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc5003150.webp",
+  "midi": "mids/Schumann__Robert-lc5003150.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16175,7 +16299,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978395.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978395.webp",
+  "midi": "mids/Schumann__Robert-lc4978395.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16185,7 +16310,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978396.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978396.webp",
+  "midi": "mids/Schumann__Robert-lc4978396.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16195,7 +16321,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978397.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978397.webp",
+  "midi": "mids/Schumann__Robert-lc4978397.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16205,7 +16332,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978398.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978398.webp",
+  "midi": "mids/Schumann__Robert-lc4978398.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16215,7 +16343,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978400.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978400.webp",
+  "midi": "mids/Schumann__Robert-lc4978400.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16225,7 +16354,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4976777.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4976777.webp",
+  "midi": "mids/Schumann__Robert-lc4976777.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16235,7 +16365,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4976769.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4976769.webp",
+  "midi": "mids/Schumann__Robert-lc4976769.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16245,7 +16376,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978368.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978368.webp",
+  "midi": "mids/Schumann__Robert-lc4978368.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16255,7 +16387,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978373.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978373.webp",
+  "midi": "mids/Schumann__Robert-lc4978373.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16265,7 +16398,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978379.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978379.webp",
+  "midi": "mids/Schumann__Robert-lc4978379.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16275,7 +16409,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978382.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978382.webp",
+  "midi": "mids/Schumann__Robert-lc4978382.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16285,7 +16420,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978387.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978387.webp",
+  "midi": "mids/Schumann__Robert-lc4978387.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16295,7 +16431,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978488.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4978488.webp",
+  "midi": "mids/Schumann__Robert-lc4978488.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16305,7 +16442,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6984262.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6984262.webp",
+  "midi": "mids/Schumann__Robert-lc6984262.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16315,7 +16453,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6984553.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6984553.webp",
+  "midi": "mids/Schumann__Robert-lc6984553.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16325,7 +16464,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6834630.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6834630.webp",
+  "midi": "mids/Schumann__Robert-lc6834630.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16335,7 +16475,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6984631.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6984631.webp",
+  "midi": "mids/Schumann__Robert-lc6984631.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16345,7 +16486,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6985082.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6985082.webp",
+  "midi": "mids/Schumann__Robert-lc6985082.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16355,7 +16497,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc5003122.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc5003122.webp",
+  "midi": "mids/Schumann__Robert-lc5003122.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16365,7 +16508,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4987633.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc4987633.webp",
+  "midi": "mids/Schumann__Robert-lc4987633.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16375,7 +16519,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6915474.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6915474.webp",
+  "midi": "mids/Schumann__Robert-lc6915474.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16385,7 +16530,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6915729.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6915729.webp",
+  "midi": "mids/Schumann__Robert-lc6915729.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16395,7 +16541,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6915753.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6915753.webp",
+  "midi": "mids/Schumann__Robert-lc6915753.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16405,7 +16552,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6916642.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6916642.webp",
+  "midi": "mids/Schumann__Robert-lc6916642.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16415,7 +16563,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6917116.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6917116.webp",
+  "midi": "mids/Schumann__Robert-lc6917116.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16425,7 +16574,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6925763.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6925763.webp",
+  "midi": "mids/Schumann__Robert-lc6925763.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16435,7 +16585,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6834588.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6834588.webp",
+  "midi": "mids/Schumann__Robert-lc6834588.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16445,7 +16596,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6965894.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6965894.webp",
+  "midi": "mids/Schumann__Robert-lc6965894.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16455,7 +16607,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6969398.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6969398.webp",
+  "midi": "mids/Schumann__Robert-lc6969398.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16465,7 +16618,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6974646.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6974646.webp",
+  "midi": "mids/Schumann__Robert-lc6974646.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16475,7 +16629,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6885211.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6885211.webp",
+  "midi": "mids/Schumann__Robert-lc6885211.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16485,7 +16640,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6979621.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6979621.webp",
+  "midi": "mids/Schumann__Robert-lc6979621.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16495,7 +16651,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6980134.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6980134.webp",
+  "midi": "mids/Schumann__Robert-lc6980134.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16505,7 +16662,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6980464.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6980464.webp",
+  "midi": "mids/Schumann__Robert-lc6980464.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16515,7 +16673,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6981173.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6981173.webp",
+  "midi": "mids/Schumann__Robert-lc6981173.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16525,7 +16684,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6982729.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6982729.webp",
+  "midi": "mids/Schumann__Robert-lc6982729.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16535,7 +16695,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6982743.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6982743.webp",
+  "midi": "mids/Schumann__Robert-lc6982743.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16545,7 +16706,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6915685.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6915685.webp",
+  "midi": "mids/Schumann__Robert-lc6915685.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16555,7 +16717,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6885263.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6885263.webp",
+  "midi": "mids/Schumann__Robert-lc6885263.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16565,7 +16728,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6891758.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6891758.webp",
+  "midi": "mids/Schumann__Robert-lc6891758.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16575,7 +16739,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6909438.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6909438.webp",
+  "midi": "mids/Schumann__Robert-lc6909438.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16585,7 +16750,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6909543.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6909543.webp",
+  "midi": "mids/Schumann__Robert-lc6909543.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16595,7 +16761,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6909785.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6909785.webp",
+  "midi": "mids/Schumann__Robert-lc6909785.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16605,7 +16772,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6909797.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6909797.webp",
+  "midi": "mids/Schumann__Robert-lc6909797.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16615,7 +16783,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6910703.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6910703.webp",
+  "midi": "mids/Schumann__Robert-lc6910703.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16625,7 +16794,8 @@
   "composer": "Schumann, Robert",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6914397.webp"
+  "thumb": "thumbs/openscore_lieder/Schumann__Robert-lc6914397.webp",
+  "midi": "mids/Schumann__Robert-lc6914397.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16635,7 +16805,8 @@
   "composer": "Smyth, Ethel",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Smyth__Ethel-lc6665104.webp"
+  "thumb": "thumbs/openscore_lieder/Smyth__Ethel-lc6665104.webp",
+  "midi": "mids/Smyth__Ethel-lc6665104.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16645,7 +16816,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6785268.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6785268.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6785268.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16655,7 +16827,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6788150.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6788150.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6788150.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16665,7 +16838,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6789660.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6789660.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6789660.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16675,7 +16849,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6788555.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6788555.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6788555.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16685,7 +16860,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6789668.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6789668.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6789668.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16695,7 +16871,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6789677.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6789677.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6789677.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16705,7 +16882,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6793692.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6793692.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6793692.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16715,7 +16893,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6793961.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6793961.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6793961.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16725,7 +16904,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6794671.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6794671.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6794671.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16735,7 +16915,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6548253.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6548253.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6548253.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16745,7 +16926,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6547240.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6547240.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6547240.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16755,7 +16937,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6548234.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6548234.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6548234.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16765,7 +16948,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6548281.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6548281.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6548281.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16775,7 +16959,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6548330.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc6548330.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc6548330.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16785,7 +16970,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc31184216.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc31184216.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc31184216.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16795,7 +16981,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc31208321.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc31208321.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc31208321.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16805,7 +16992,8 @@
   "composer": "Stanford, Charles Villiers",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc31240310.webp"
+  "thumb": "thumbs/openscore_lieder/Stanford__Charles_Villiers-lc31240310.webp",
+  "midi": "mids/Stanford__Charles_Villiers-lc31240310.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16815,7 +17003,8 @@
   "composer": "Strauss, Richard",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Strauss__Richard-lc6199578.webp"
+  "thumb": "thumbs/openscore_lieder/Strauss__Richard-lc6199578.webp",
+  "midi": "mids/Strauss__Richard-lc6199578.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16825,7 +17014,8 @@
   "composer": "Tegnér, Alice",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Tegn_r__Alice-lc6910499.webp"
+  "thumb": "thumbs/openscore_lieder/Tegn_r__Alice-lc6910499.webp",
+  "midi": "mids/Tegn_r__Alice-lc6910499.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16835,7 +17025,8 @@
   "composer": "Tegnér, Alice",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Tegn_r__Alice-lc6910483.webp"
+  "thumb": "thumbs/openscore_lieder/Tegn_r__Alice-lc6910483.webp",
+  "midi": "mids/Tegn_r__Alice-lc6910483.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16845,7 +17036,8 @@
   "composer": "Thys, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Thys__Pauline-lc6670960.webp"
+  "thumb": "thumbs/openscore_lieder/Thys__Pauline-lc6670960.webp",
+  "midi": "mids/Thys__Pauline-lc6670960.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16855,7 +17047,8 @@
   "composer": "Tosti, Francesco Paolo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Tosti__Francesco_Paolo-lc29381987.webp"
+  "thumb": "thumbs/openscore_lieder/Tosti__Francesco_Paolo-lc29381987.webp",
+  "midi": "mids/Tosti__Francesco_Paolo-lc29381987.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16865,7 +17058,8 @@
   "composer": "Tosti, Francesco Paolo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Tosti__Francesco_Paolo-lc29748842.webp"
+  "thumb": "thumbs/openscore_lieder/Tosti__Francesco_Paolo-lc29748842.webp",
+  "midi": "mids/Tosti__Francesco_Paolo-lc29748842.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16875,7 +17069,8 @@
   "composer": "Verdi, Giuseppe",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Verdi__Giuseppe-lc29477486.webp"
+  "thumb": "thumbs/openscore_lieder/Verdi__Giuseppe-lc29477486.webp",
+  "midi": "mids/Verdi__Giuseppe-lc29477486.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16885,7 +17080,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6634152.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6634152.webp",
+  "midi": "mids/Viardot__Pauline-lc6634152.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16895,7 +17091,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6638810.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6638810.webp",
+  "midi": "mids/Viardot__Pauline-lc6638810.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16905,7 +17102,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6639009.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6639009.webp",
+  "midi": "mids/Viardot__Pauline-lc6639009.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16915,7 +17113,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6639381.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6639381.webp",
+  "midi": "mids/Viardot__Pauline-lc6639381.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16925,7 +17124,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6641060.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6641060.webp",
+  "midi": "mids/Viardot__Pauline-lc6641060.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16935,7 +17135,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6641170.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6641170.webp",
+  "midi": "mids/Viardot__Pauline-lc6641170.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16945,7 +17146,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6641589.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6641589.webp",
+  "midi": "mids/Viardot__Pauline-lc6641589.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16955,7 +17157,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6574373.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6574373.webp",
+  "midi": "mids/Viardot__Pauline-lc6574373.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16965,7 +17168,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6574450.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6574450.webp",
+  "midi": "mids/Viardot__Pauline-lc6574450.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16975,7 +17179,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6575233.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6575233.webp",
+  "midi": "mids/Viardot__Pauline-lc6575233.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16985,7 +17190,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6575283.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6575283.webp",
+  "midi": "mids/Viardot__Pauline-lc6575283.mid"
  },
  {
   "source": "openscore_lieder",
@@ -16995,7 +17201,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6581327.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6581327.webp",
+  "midi": "mids/Viardot__Pauline-lc6581327.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17005,7 +17212,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6581364.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6581364.webp",
+  "midi": "mids/Viardot__Pauline-lc6581364.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17015,7 +17223,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6581778.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6581778.webp",
+  "midi": "mids/Viardot__Pauline-lc6581778.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17025,7 +17234,8 @@
   "composer": "Viardot, Pauline",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6582062.webp"
+  "thumb": "thumbs/openscore_lieder/Viardot__Pauline-lc6582062.webp",
+  "midi": "mids/Viardot__Pauline-lc6582062.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17035,7 +17245,8 @@
   "composer": "Wagner, Richard",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wagner__Richard-lc5026068.webp"
+  "thumb": "thumbs/openscore_lieder/Wagner__Richard-lc5026068.webp",
+  "midi": "mids/Wagner__Richard-lc5026068.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17045,7 +17256,8 @@
   "composer": "Wagner, Richard",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wagner__Richard-lc5026084.webp"
+  "thumb": "thumbs/openscore_lieder/Wagner__Richard-lc5026084.webp",
+  "midi": "mids/Wagner__Richard-lc5026084.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17055,7 +17267,8 @@
   "composer": "Wagner, Richard",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wagner__Richard-lc5026087.webp"
+  "thumb": "thumbs/openscore_lieder/Wagner__Richard-lc5026087.webp",
+  "midi": "mids/Wagner__Richard-lc5026087.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17065,7 +17278,8 @@
   "composer": "Wagner, Richard",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wagner__Richard-lc5026092.webp"
+  "thumb": "thumbs/openscore_lieder/Wagner__Richard-lc5026092.webp",
+  "midi": "mids/Wagner__Richard-lc5026092.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17075,7 +17289,8 @@
   "composer": "Warlock, Peter",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Warlock__Peter-lc6202167.webp"
+  "thumb": "thumbs/openscore_lieder/Warlock__Peter-lc6202167.webp",
+  "midi": "mids/Warlock__Peter-lc6202167.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17085,7 +17300,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6715306.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6715306.webp",
+  "midi": "mids/Webern__Anton-lc6715306.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17095,7 +17311,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6715339.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6715339.webp",
+  "midi": "mids/Webern__Anton-lc6715339.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17105,7 +17322,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6715795.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6715795.webp",
+  "midi": "mids/Webern__Anton-lc6715795.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17115,7 +17333,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6716614.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6716614.webp",
+  "midi": "mids/Webern__Anton-lc6716614.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17125,7 +17344,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6716631.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6716631.webp",
+  "midi": "mids/Webern__Anton-lc6716631.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17135,7 +17355,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6725471.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6725471.webp",
+  "midi": "mids/Webern__Anton-lc6725471.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17145,7 +17366,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6725510.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6725510.webp",
+  "midi": "mids/Webern__Anton-lc6725510.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17155,7 +17377,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6725782.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6725782.webp",
+  "midi": "mids/Webern__Anton-lc6725782.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17165,7 +17388,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6725890.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6725890.webp",
+  "midi": "mids/Webern__Anton-lc6725890.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17175,7 +17399,8 @@
   "composer": "Webern, Anton",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6726319.webp"
+  "thumb": "thumbs/openscore_lieder/Webern__Anton-lc6726319.webp",
+  "midi": "mids/Webern__Anton-lc6726319.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17185,7 +17410,8 @@
   "composer": "White, Harold",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/White__Harold-lc30906395.webp"
+  "thumb": "thumbs/openscore_lieder/White__Harold-lc30906395.webp",
+  "midi": "mids/White__Harold-lc30906395.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17195,7 +17421,8 @@
   "composer": "White, Maude Valérie",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6202466.webp"
+  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6202466.webp",
+  "midi": "mids/White__Maude_Val_rie-lc6202466.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17205,7 +17432,8 @@
   "composer": "White, Maude Valérie",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6202530.webp"
+  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6202530.webp",
+  "midi": "mids/White__Maude_Val_rie-lc6202530.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17215,7 +17443,8 @@
   "composer": "White, Maude Valérie",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6202660.webp"
+  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6202660.webp",
+  "midi": "mids/White__Maude_Val_rie-lc6202660.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17225,7 +17454,8 @@
   "composer": "White, Maude Valérie",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6230776.webp"
+  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6230776.webp",
+  "midi": "mids/White__Maude_Val_rie-lc6230776.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17235,7 +17465,8 @@
   "composer": "White, Maude Valérie",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6230361.webp"
+  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6230361.webp",
+  "midi": "mids/White__Maude_Val_rie-lc6230361.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17245,7 +17476,8 @@
   "composer": "White, Maude Valérie",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6202745.webp"
+  "thumb": "thumbs/openscore_lieder/White__Maude_Val_rie-lc6202745.webp",
+  "midi": "mids/White__Maude_Val_rie-lc6202745.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17255,7 +17487,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5032950.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5032950.webp",
+  "midi": "mids/Wolf__Hugo-lc5032950.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17265,7 +17498,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4945807.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4945807.webp",
+  "midi": "mids/Wolf__Hugo-lc4945807.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17275,7 +17509,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5057797.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5057797.webp",
+  "midi": "mids/Wolf__Hugo-lc5057797.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17285,7 +17520,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5052792.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5052792.webp",
+  "midi": "mids/Wolf__Hugo-lc5052792.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17295,7 +17531,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5052714.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5052714.webp",
+  "midi": "mids/Wolf__Hugo-lc5052714.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17305,7 +17542,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5057804.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5057804.webp",
+  "midi": "mids/Wolf__Hugo-lc5057804.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17315,7 +17553,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4928198.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4928198.webp",
+  "midi": "mids/Wolf__Hugo-lc4928198.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17325,7 +17564,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5052822.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5052822.webp",
+  "midi": "mids/Wolf__Hugo-lc5052822.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17335,7 +17575,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5067337.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5067337.webp",
+  "midi": "mids/Wolf__Hugo-lc5067337.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17345,7 +17586,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5052801.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5052801.webp",
+  "midi": "mids/Wolf__Hugo-lc5052801.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17355,7 +17597,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5016637.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5016637.webp",
+  "midi": "mids/Wolf__Hugo-lc5016637.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17365,7 +17608,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5077482.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5077482.webp",
+  "midi": "mids/Wolf__Hugo-lc5077482.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17375,7 +17619,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5024866.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5024866.webp",
+  "midi": "mids/Wolf__Hugo-lc5024866.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17385,7 +17630,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4946077.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4946077.webp",
+  "midi": "mids/Wolf__Hugo-lc4946077.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17395,7 +17641,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5024834.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5024834.webp",
+  "midi": "mids/Wolf__Hugo-lc5024834.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17405,7 +17652,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5024898.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5024898.webp",
+  "midi": "mids/Wolf__Hugo-lc5024898.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17415,7 +17663,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5025040.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5025040.webp",
+  "midi": "mids/Wolf__Hugo-lc5025040.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17425,7 +17674,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5079629.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5079629.webp",
+  "midi": "mids/Wolf__Hugo-lc5079629.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17435,7 +17685,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5039817.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5039817.webp",
+  "midi": "mids/Wolf__Hugo-lc5039817.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17445,7 +17696,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5027811.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc5027811.webp",
+  "midi": "mids/Wolf__Hugo-lc5027811.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17455,7 +17707,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4945676.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4945676.webp",
+  "midi": "mids/Wolf__Hugo-lc4945676.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17465,7 +17718,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc29477528.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc29477528.webp",
+  "midi": "mids/Wolf__Hugo-lc29477528.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17475,7 +17729,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc30893624.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc30893624.webp",
+  "midi": "mids/Wolf__Hugo-lc30893624.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17485,7 +17740,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc30890858.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc30890858.webp",
+  "midi": "mids/Wolf__Hugo-lc30890858.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17495,7 +17751,8 @@
   "composer": "Wolf, Hugo",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4945954.webp"
+  "thumb": "thumbs/openscore_lieder/Wolf__Hugo-lc4945954.webp",
+  "midi": "mids/Wolf__Hugo-lc4945954.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17505,7 +17762,8 @@
   "composer": "Wood, Charles",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Wood__Charles-lc6568070.webp"
+  "thumb": "thumbs/openscore_lieder/Wood__Charles-lc6568070.webp",
+  "midi": "mids/Wood__Charles-lc6568070.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17515,7 +17773,8 @@
   "composer": "Zemlinsky, Alexander von",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Zemlinsky__Alexander_von-lc30893834.webp"
+  "thumb": "thumbs/openscore_lieder/Zemlinsky__Alexander_von-lc30893834.webp",
+  "midi": "mids/Zemlinsky__Alexander_von-lc30893834.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17525,7 +17784,8 @@
   "composer": "Zemlinsky, Alexander von",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Zemlinsky__Alexander_von-lc30910133.webp"
+  "thumb": "thumbs/openscore_lieder/Zemlinsky__Alexander_von-lc30910133.webp",
+  "midi": "mids/Zemlinsky__Alexander_von-lc30910133.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17535,7 +17795,8 @@
   "composer": "Zumsteeg, Emilie",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Zumsteeg__Emilie-lc6159273.webp"
+  "thumb": "thumbs/openscore_lieder/Zumsteeg__Emilie-lc6159273.webp",
+  "midi": "mids/Zumsteeg__Emilie-lc6159273.mid"
  },
  {
   "source": "openscore_lieder",
@@ -17545,7 +17806,8 @@
   "composer": "Zumsteeg, Emilie",
   "instrument": "Voice+Piano",
   "license": "CC0",
-  "thumb": "thumbs/openscore_lieder/Zumsteeg__Emilie-lc6162644.webp"
+  "thumb": "thumbs/openscore_lieder/Zumsteeg__Emilie-lc6162644.webp",
+  "midi": "mids/Zumsteeg__Emilie-lc6162644.mid"
  },
  {
   "source": "mutopia",
