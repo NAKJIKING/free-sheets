@@ -1,0 +1,59 @@
+name: Lieder 미디 추출
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'LIEDER_MIDI_RUN'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lieder-midi
+  cancel-in-progress: false
+
+jobs:
+  midi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: MuseScore 4 설치 (AppImage)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q xvfb jq libopengl0 libegl1 \
+            libasound2t64 libjack-jackd2-0 libnss3 libxkbcommon-x11-0
+          URL=$(curl -s https://api.github.com/repos/musescore/MuseScore/releases/latest \
+            | jq -r '.assets[] | select(.name | test("x86_64.AppImage$")) | .browser_download_url' | head -1)
+          echo "AppImage: $URL"
+          curl -sL "$URL" -o /opt/mscore4.AppImage
+          chmod +x /opt/mscore4.AppImage
+          # 매 호출마다 압축을 풀지 않도록 한 번만 풀어 둔다 (1,400여 회 호출)
+          cd /opt && sudo /opt/mscore4.AppImage --appimage-extract > /dev/null
+          printf '#!/bin/bash\nexec /opt/squashfs-root/AppRun "$@"\n' \
+            | sudo tee /usr/local/bin/mscore4 > /dev/null
+          sudo chmod +x /usr/local/bin/mscore4
+          xvfb-run -a mscore4 --version || true
+
+      - name: Lieder 저장소 클론
+        run: git clone --depth 1 https://github.com/OpenScore/Lieder.git lieder_src
+
+      - name: 미디 추출 (300곡씩 중간 커밋)
+        env:
+          QT_QPA_PLATFORM: offscreen
+          LIEDER_DIR: ${{ github.workspace }}/lieder_src
+          MSCORE: mscore4
+          LIEDER_BATCH: '300'
+        run: |
+          git config user.name "sheet-collector-bot"
+          git config user.email "actions@github.com"
+          for i in 1 2 3 4 5 6; do
+            xvfb-run -a python3 collect_lieder_midi.py
+            git add catalog.json mids lieder_midi_failed.txt 2>/dev/null || true
+            if git diff --cached --quiet; then echo "신규 없음 — 종료"; break; fi
+            git commit -m "Lieder 미디 자동 추출 ($i회차) [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          done
