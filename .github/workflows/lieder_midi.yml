@@ -51,7 +51,10 @@ jobs:
           git config user.email "actions@github.com"
           for i in 1 2 3 4 5 6; do
             xvfb-run -a python3 collect_lieder_midi.py
-            git add catalog.json mids lieder_midi_failed.txt 2>/dev/null || true
+            # 실패 목록 파일은 없을 수 있다 — 한 파일이라도 없으면 git add가
+            # 전체를 스테이징하지 않으므로 반드시 따로 넣는다.
+            git add catalog.json mids
+            if [ -f lieder_midi_failed.txt ]; then git add lieder_midi_failed.txt; fi
             if git diff --cached --quiet; then echo "신규 없음 — 종료"; break; fi
             git commit -m "Lieder 미디 자동 추출 ($i회차) [skip ci]"
             git pull --rebase origin main
