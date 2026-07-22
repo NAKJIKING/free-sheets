@@ -1,0 +1,49 @@
+name: 찬송가·민속곡 수집 (ABC)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: abc-expand
+  cancel-in-progress: false
+
+jobs:
+  abc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 도구 설치 (abcm2ps·abc2midi·ghostscript)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq abcm2ps abcmidi ghostscript
+
+      - name: 찬송가 수집 (Open Hymnal)
+        run: python3 collect_hymnal.py
+
+      - name: 중간 커밋
+        run: |
+          git config user.name "sheet-collector-bot"
+          git config user.email "actions@github.com"
+          git add catalog.json raw mids
+          if git diff --cached --quiet; then echo "찬송가 신규 없음"; else
+            git commit -m "찬송가 자동 수집 결과 [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: 민속곡 수집 (The Session 인기순)
+        env:
+          SESSION_LIMIT: '1500'
+        run: python3 collect_session.py
+
+      - name: 결과 커밋
+        run: |
+          git add catalog.json raw mids
+          if git diff --cached --quiet; then echo "민속곡 신규 없음"; else
+            git commit -m "민속곡 자동 수집 결과 [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

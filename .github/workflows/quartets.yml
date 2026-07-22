@@ -1,0 +1,53 @@
+name: 현악사중주 수집
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: quartets
+  cancel-in-progress: false
+
+jobs:
+  quartets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: MuseScore 4 설치 (AppImage)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q xvfb jq libopengl0 libegl1 \
+            libasound2t64 libjack-jackd2-0 libnss3 libxkbcommon-x11-0
+          URL=$(curl -s https://api.github.com/repos/musescore/MuseScore/releases/latest \
+            | jq -r '.assets[] | select(.name | test("x86_64.AppImage$")) | .browser_download_url' | head -1)
+          curl -sL "$URL" -o /opt/mscore4.AppImage
+          chmod +x /opt/mscore4.AppImage
+          cd /opt && sudo /opt/mscore4.AppImage --appimage-extract > /dev/null
+          printf '#!/bin/bash\nexec /opt/squashfs-root/AppRun "$@"\n' \
+            | sudo tee /usr/local/bin/mscore4 > /dev/null
+          sudo chmod +x /usr/local/bin/mscore4
+
+      - name: 사중주 저장소 클론
+        run: git clone --depth 1 https://github.com/OpenScore/StringQuartets.git quartets_src
+
+      - name: 수집 실행
+        env:
+          QT_QPA_PLATFORM: offscreen
+          QUARTETS_DIR: ${{ github.workspace }}/quartets_src
+          MSCORE: mscore4
+        run: xvfb-run -a python3 collect_quartets.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "sheet-collector-bot"
+          git config user.email "actions@github.com"
+          git add catalog.json raw mids
+          if git diff --cached --quiet; then echo "신규 없음"; else
+            git commit -m "현악사중주 자동 수집 결과 [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
