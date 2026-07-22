@@ -43682,6 +43682,10 @@
    {
     "t": 2,
     "file": "keys/openhymnal/A_Great_and_Mighty_Wonder_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/A_Great_and_Mighty_Wonder_t+3.pdf"
    }
   ]
  },
@@ -43745,6 +43749,10 @@
     "file": "keys/openhymnal/All_Depends_On_Our_Possessing_t-1.pdf"
    },
    {
+    "t": 1,
+    "file": "keys/openhymnal/All_Depends_On_Our_Possessing_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/All_Depends_On_Our_Possessing_t+2.pdf"
    },
@@ -43762,7 +43770,33 @@
   "composer": "Words: Theodulf of Orleans, circa 820. Translated by John Mason Neale, 1851.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_All_Glory__Laud__and_Honor.mid"
+  "midi": "mids/h_All_Glory__Laud__and_Honor.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/All_Glory__Laud__and_Honor_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/All_Glory__Laud__and_Honor_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/All_Glory__Laud__and_Honor_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/All_Glory__Laud__and_Honor_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/All_Glory__Laud__and_Honor_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/All_Glory__Laud__and_Honor_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -43773,7 +43807,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_All_Hail_The_Power_Of_Jesus__Name.mid",
-  "alias": "주 예수 이름 높이어"
+  "alias": "주 예수 이름 높이어",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/All_Hail_The_Power_Of_Jesus__Name_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/All_Hail_The_Power_Of_Jesus__Name_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/All_Hail_The_Power_Of_Jesus__Name_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/All_Hail_The_Power_Of_Jesus__Name_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/All_Hail_The_Power_Of_Jesus__Name_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/All_Hail_The_Power_Of_Jesus__Name_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -43862,6 +43922,10 @@
     "file": "keys/openhymnal/Alleluia__Sing_To_Jesus__t-3.pdf"
    },
    {
+    "t": -2,
+    "file": "keys/openhymnal/Alleluia__Sing_To_Jesus__t-2.pdf"
+   },
+   {
     "t": -1,
     "file": "keys/openhymnal/Alleluia__Sing_To_Jesus__t-1.pdf"
    },
@@ -43872,6 +43936,10 @@
    {
     "t": 2,
     "file": "keys/openhymnal/Alleluia__Sing_To_Jesus__t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Alleluia__Sing_To_Jesus__t+3.pdf"
    }
   ]
  },
@@ -43883,7 +43951,33 @@
   "composer": "Words: John Cawood, 1816.  Music: 'St. Anne' William Croft, 1708.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Almighty_God_Your_Word_Is_Cast.mid"
+  "midi": "mids/h_Almighty_God_Your_Word_Is_Cast.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Almighty_God_Your_Word_Is_Cast_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Almighty_God_Your_Word_Is_Cast_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Almighty_God_Your_Word_Is_Cast_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Almighty_God_Your_Word_Is_Cast_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Almighty_God_Your_Word_Is_Cast_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Almighty_God_Your_Word_Is_Cast_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -43894,7 +43988,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_Amazing_Grace.mid",
-  "alias": "나 같은 죄인 살리신"
+  "alias": "나 같은 죄인 살리신",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Amazing_Grace_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Amazing_Grace_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Amazing_Grace_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Amazing_Grace_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Amazing_Grace_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Amazing_Grace_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -44052,6 +44172,10 @@
   "midi": "mids/h_Author_of_All_Life.mid",
   "keys": [
    {
+    "t": -3,
+    "file": "keys/openhymnal/Author_of_All_Life_t-3.pdf"
+   },
+   {
     "t": -2,
     "file": "keys/openhymnal/Author_of_All_Life_t-2.pdf"
    },
@@ -44168,6 +44292,10 @@
     "file": "keys/openhymnal/Awake__My_Soul__And_With_The_Sun_t-1.pdf"
    },
    {
+    "t": 1,
+    "file": "keys/openhymnal/Awake__My_Soul__And_With_The_Sun_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/Awake__My_Soul__And_With_The_Sun_t+2.pdf"
    },
@@ -44186,7 +44314,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_Away_In_A_Manger.mid",
-  "alias": "그 어린 주 예수"
+  "alias": "그 어린 주 예수",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Away_In_A_Manger_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Away_In_A_Manger_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Away_In_A_Manger_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Away_In_A_Manger_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Away_In_A_Manger_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Away_In_A_Manger_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -44305,7 +44459,33 @@
   "composer": "Words: John Fawcett, 1782.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Blest_Be_The_Tie_That_Binds.mid"
+  "midi": "mids/h_Blest_Be_The_Tie_That_Binds.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Blest_Be_The_Tie_That_Binds_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Blest_Be_The_Tie_That_Binds_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Blest_Be_The_Tie_That_Binds_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Blest_Be_The_Tie_That_Binds_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Blest_Be_The_Tie_That_Binds_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Blest_Be_The_Tie_That_Binds_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -44336,6 +44516,10 @@
    {
     "t": 2,
     "file": "keys/openhymnal/By_Grace_I_m_Saved_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/By_Grace_I_m_Saved_t+3.pdf"
    }
   ]
  },
@@ -44356,6 +44540,10 @@
    {
     "t": -2,
     "file": "keys/openhymnal/Canon_in_D_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Canon_in_D_t-1.pdf"
    },
    {
     "t": 1,
@@ -44392,6 +44580,10 @@
    {
     "t": -1,
     "file": "keys/openhymnal/Christ_Arose_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Christ_Arose_t+1.pdf"
    },
    {
     "t": 2,
@@ -44447,7 +44639,33 @@
   "composer": "Words: H. L. Turner, 1878.  Music and Setting: 'Christ Returneth' James McGranahan, 1891.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Christ_Returneth.mid"
+  "midi": "mids/h_Christ_Returneth.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Christ_Returneth_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Christ_Returneth_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Christ_Returneth_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Christ_Returneth_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Christ_Returneth_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Christ_Returneth_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -44638,7 +44856,33 @@
   "composer": "Words: Aurelius Clemens Prudentius (348-413). Translated by O. T. Sanden, 1909.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Despair_Not__O_Heart.mid"
+  "midi": "mids/h_Despair_Not__O_Heart.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Despair_Not__O_Heart_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Despair_Not__O_Heart_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Despair_Not__O_Heart_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Despair_Not__O_Heart_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Despair_Not__O_Heart_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Despair_Not__O_Heart_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -44763,8 +45007,24 @@
     "file": "keys/openhymnal/Far__Far_Away_On_Judea_s_Plains_t-3.pdf"
    },
    {
+    "t": -2,
+    "file": "keys/openhymnal/Far__Far_Away_On_Judea_s_Plains_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Far__Far_Away_On_Judea_s_Plains_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Far__Far_Away_On_Judea_s_Plains_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/Far__Far_Away_On_Judea_s_Plains_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Far__Far_Away_On_Judea_s_Plains_t+3.pdf"
    }
   ]
  },
@@ -44776,7 +45036,33 @@
   "composer": "Words: William W. How, 1864.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_For_All_The_Saints.mid"
+  "midi": "mids/h_For_All_The_Saints.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/For_All_The_Saints_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/For_All_The_Saints_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/For_All_The_Saints_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/For_All_The_Saints_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/For_All_The_Saints_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/For_All_The_Saints_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -44909,6 +45195,10 @@
     "file": "keys/openhymnal/Glorious_Things_of_Thee_are_Spoken_t-1.pdf"
    },
    {
+    "t": 1,
+    "file": "keys/openhymnal/Glorious_Things_of_Thee_are_Spoken_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/Glorious_Things_of_Thee_are_Spoken_t+2.pdf"
    },
@@ -44969,12 +45259,24 @@
     "file": "keys/openhymnal/God_Himself_is_Present_t-3.pdf"
    },
    {
+    "t": -2,
+    "file": "keys/openhymnal/God_Himself_is_Present_t-2.pdf"
+   },
+   {
     "t": -1,
     "file": "keys/openhymnal/God_Himself_is_Present_t-1.pdf"
    },
    {
+    "t": 1,
+    "file": "keys/openhymnal/God_Himself_is_Present_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/God_Himself_is_Present_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/God_Himself_is_Present_t+3.pdf"
    }
   ]
  },
@@ -44986,7 +45288,33 @@
   "composer": "Words: Traditional English.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_God_Rest_Ye_Merry_Gentlemen.mid"
+  "midi": "mids/h_God_Rest_Ye_Merry_Gentlemen.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/God_Rest_Ye_Merry_Gentlemen_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/God_Rest_Ye_Merry_Gentlemen_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/God_Rest_Ye_Merry_Gentlemen_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/God_Rest_Ye_Merry_Gentlemen_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/God_Rest_Ye_Merry_Gentlemen_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/God_Rest_Ye_Merry_Gentlemen_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45248,7 +45576,33 @@
   "composer": "Words: Frederick W. Faber, 1854.  Arranged and alt. by Mike Hosken, 2014.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Hark__Hark__My_Soul_.mid"
+  "midi": "mids/h_Hark__Hark__My_Soul_.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Hark__Hark__My_Soul__t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Hark__Hark__My_Soul__t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Hark__Hark__My_Soul__t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Hark__Hark__My_Soul__t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Hark__Hark__My_Soul__t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Hark__Hark__My_Soul__t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45388,6 +45742,10 @@
    {
     "t": 2,
     "file": "keys/openhymnal/He_Was_Not_Willing_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/He_Was_Not_Willing_t+3.pdf"
    }
   ]
  },
@@ -45399,7 +45757,33 @@
   "composer": "Words: John Bunyan, 1684. Modified by Percy Dearmer, 1906.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_He_Who_Would_Valiant_Be.mid"
+  "midi": "mids/h_He_Who_Would_Valiant_Be.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/He_Who_Would_Valiant_Be_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/He_Who_Would_Valiant_Be_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/He_Who_Would_Valiant_Be_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/He_Who_Would_Valiant_Be_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/He_Who_Would_Valiant_Be_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/He_Who_Would_Valiant_Be_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45409,7 +45793,33 @@
   "composer": "Words: Brian J. Dumont, 2011.  Music: 'Simple Gifts' (Shaker dance) Joseph Brackett, 1848, alt.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_His_Gifts.mid"
+  "midi": "mids/h_His_Gifts.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/His_Gifts_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/His_Gifts_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/His_Gifts_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/His_Gifts_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/His_Gifts_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/His_Gifts_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45492,7 +45902,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_Holy__Holy__Holy.mid",
-  "alias": "거룩 거룩 거룩 전능하신 주님"
+  "alias": "거룩 거룩 거룩 전능하신 주님",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Holy__Holy__Holy_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Holy__Holy__Holy_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Holy__Holy__Holy_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Holy__Holy__Holy_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Holy__Holy__Holy_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Holy__Holy__Holy_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45502,7 +45938,33 @@
   "composer": "Words: Jeanette Threlfall, 1873, alt.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Hosanna__Loud_Hosanna.mid"
+  "midi": "mids/h_Hosanna__Loud_Hosanna.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Hosanna__Loud_Hosanna_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Hosanna__Loud_Hosanna_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Hosanna__Loud_Hosanna_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Hosanna__Loud_Hosanna_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Hosanna__Loud_Hosanna_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Hosanna__Loud_Hosanna_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45512,7 +45974,33 @@
   "composer": "Words: John Rippon, 1787.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_How_Firm_A_Foundation.mid"
+  "midi": "mids/h_How_Firm_A_Foundation.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/How_Firm_A_Foundation_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/How_Firm_A_Foundation_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/How_Firm_A_Foundation_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/How_Firm_A_Foundation_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/How_Firm_A_Foundation_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/How_Firm_A_Foundation_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45522,7 +46010,33 @@
   "composer": "Words: Richard W. Adams, 2001.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_How_Shall_We_Answer_Terror_s_Cry_.mid"
+  "midi": "mids/h_How_Shall_We_Answer_Terror_s_Cry_.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/How_Shall_We_Answer_Terror_s_Cry__t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/How_Shall_We_Answer_Terror_s_Cry__t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/How_Shall_We_Answer_Terror_s_Cry__t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/How_Shall_We_Answer_Terror_s_Cry__t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/How_Shall_We_Answer_Terror_s_Cry__t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/How_Shall_We_Answer_Terror_s_Cry__t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45532,7 +46046,33 @@
   "composer": "Words: Henrietta L. von Hayn, 1778. Translation composite.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_I_Am_Jesus__Little_Lamb.mid"
+  "midi": "mids/h_I_Am_Jesus__Little_Lamb.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/I_Am_Jesus__Little_Lamb_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/I_Am_Jesus__Little_Lamb_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/I_Am_Jesus__Little_Lamb_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/I_Am_Jesus__Little_Lamb_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/I_Am_Jesus__Little_Lamb_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/I_Am_Jesus__Little_Lamb_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45542,7 +46082,33 @@
   "composer": "Words: attributed to St. Patrick of Ireland (circa 387-466). Paraphrased by Cecil F. Alexander, 1889.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_I_Bind_Unto_Myself_Today.mid"
+  "midi": "mids/h_I_Bind_Unto_Myself_Today.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/I_Bind_Unto_Myself_Today_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/I_Bind_Unto_Myself_Today_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/I_Bind_Unto_Myself_Today_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/I_Bind_Unto_Myself_Today_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/I_Bind_Unto_Myself_Today_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/I_Bind_Unto_Myself_Today_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45563,8 +46129,20 @@
     "file": "keys/openhymnal/I_Know_That_My_Redeemer_Lives_t-2.pdf"
    },
    {
+    "t": -1,
+    "file": "keys/openhymnal/I_Know_That_My_Redeemer_Lives_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/I_Know_That_My_Redeemer_Lives_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/I_Know_That_My_Redeemer_Lives_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/I_Know_That_My_Redeemer_Lives_t+3.pdf"
    }
   ]
  },
@@ -45576,7 +46154,33 @@
   "composer": "Words: Daniel Webster Whittle (a.k.a. Elias Nathan), 1883.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_I_Know_Whom_I_Have_Believed.mid"
+  "midi": "mids/h_I_Know_Whom_I_Have_Believed.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/I_Know_Whom_I_Have_Believed_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/I_Know_Whom_I_Have_Believed_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/I_Know_Whom_I_Have_Believed_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/I_Know_Whom_I_Have_Believed_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/I_Know_Whom_I_Have_Believed_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/I_Know_Whom_I_Have_Believed_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45587,7 +46191,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_I_Need_Thee_Every_Hour.mid",
-  "alias": "주 음성 외에는"
+  "alias": "주 음성 외에는",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/I_Need_Thee_Every_Hour_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/I_Need_Thee_Every_Hour_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/I_Need_Thee_Every_Hour_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/I_Need_Thee_Every_Hour_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/I_Need_Thee_Every_Hour_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/I_Need_Thee_Every_Hour_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45597,7 +46227,33 @@
   "composer": "Words: verses by Dorothy Amstutz, 2007. Refrain by Loren J. Kropf, 2010.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_I_Place_My_Trust_In_God.mid"
+  "midi": "mids/h_I_Place_My_Trust_In_God.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/I_Place_My_Trust_In_God_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/I_Place_My_Trust_In_God_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/I_Place_My_Trust_In_God_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/I_Place_My_Trust_In_God_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/I_Place_My_Trust_In_God_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/I_Place_My_Trust_In_God_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45607,7 +46263,33 @@
   "composer": "Words: Isaac Watts, 1709.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_I_Sing_the_Mighty_Power_of_God.mid"
+  "midi": "mids/h_I_Sing_the_Mighty_Power_of_God.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/I_Sing_the_Mighty_Power_of_God_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/I_Sing_the_Mighty_Power_of_God_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/I_Sing_the_Mighty_Power_of_God_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/I_Sing_the_Mighty_Power_of_God_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/I_Sing_the_Mighty_Power_of_God_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/I_Sing_the_Mighty_Power_of_God_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45689,7 +46371,33 @@
   "composer": "Words: Paul Gerhardt, 1656.  Verses 1-3, 7-9, 11-15 Translated by Richard Massie, 1856, alt.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_If_God_Himself_Be_For_Me.mid"
+  "midi": "mids/h_If_God_Himself_Be_For_Me.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/If_God_Himself_Be_For_Me_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/If_God_Himself_Be_For_Me_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/If_God_Himself_Be_For_Me_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/If_God_Himself_Be_For_Me_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/If_God_Himself_Be_For_Me_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/If_God_Himself_Be_For_Me_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45735,7 +46443,33 @@
   "composer": "Words: Walter Chalmers Smith, 1876.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Immortal__Invisible__God_Only_Wise.mid"
+  "midi": "mids/h_Immortal__Invisible__God_Only_Wise.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Immortal__Invisible__God_Only_Wise_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Immortal__Invisible__God_Only_Wise_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Immortal__Invisible__God_Only_Wise_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Immortal__Invisible__God_Only_Wise_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Immortal__Invisible__God_Only_Wise_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Immortal__Invisible__God_Only_Wise_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45745,7 +46479,33 @@
   "composer": "Words: verses 1-3, Henry J. Pye, 1851. verse 4, William Cooke, 1853.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_In_His_Temple_Now_Behold_Him.mid"
+  "midi": "mids/h_In_His_Temple_Now_Behold_Him.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/In_His_Temple_Now_Behold_Him_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/In_His_Temple_Now_Behold_Him_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/In_His_Temple_Now_Behold_Him_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/In_His_Temple_Now_Behold_Him_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/In_His_Temple_Now_Behold_Him_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/In_His_Temple_Now_Behold_Him_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45801,7 +46561,33 @@
   "composer": "Words: Edmund H. Sears, 1849.  Music: 'Carol' Richard S. Willis, 1861.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_It_Came_Upon_A_Midnight_Clear.mid"
+  "midi": "mids/h_It_Came_Upon_A_Midnight_Clear.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/It_Came_Upon_A_Midnight_Clear_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/It_Came_Upon_A_Midnight_Clear_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/It_Came_Upon_A_Midnight_Clear_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/It_Came_Upon_A_Midnight_Clear_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/It_Came_Upon_A_Midnight_Clear_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/It_Came_Upon_A_Midnight_Clear_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -45811,7 +46597,33 @@
   "composer": "Words: Bernard of Cluny, 1146.  Translated by John Mason Neale, 1858.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Jerusalem_the_Golden.mid"
+  "midi": "mids/h_Jerusalem_the_Golden.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Jerusalem_the_Golden_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Jerusalem_the_Golden_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Jerusalem_the_Golden_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Jerusalem_the_Golden_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Jerusalem_the_Golden_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Jerusalem_the_Golden_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46218,7 +47030,33 @@
   "composer": "Words: Paul Gerhardt, 1653.  Translated by John Wesley, 1739.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Jesus__Thy_Boundless_Love_To_Me.mid"
+  "midi": "mids/h_Jesus__Thy_Boundless_Love_To_Me.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Jesus__Thy_Boundless_Love_To_Me_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Jesus__Thy_Boundless_Love_To_Me_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Jesus__Thy_Boundless_Love_To_Me_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Jesus__Thy_Boundless_Love_To_Me_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Jesus__Thy_Boundless_Love_To_Me_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Jesus__Thy_Boundless_Love_To_Me_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46228,7 +47066,33 @@
   "composer": "Words: verses 1-5 Mrs. James W. Wood, 1909. verses 6-7 Brian J. Dumont, 2008.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Jesus_Wants_All_Of_His_Children.mid"
+  "midi": "mids/h_Jesus_Wants_All_Of_His_Children.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Jesus_Wants_All_Of_His_Children_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Jesus_Wants_All_Of_His_Children_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Jesus_Wants_All_Of_His_Children_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Jesus_Wants_All_Of_His_Children_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Jesus_Wants_All_Of_His_Children_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Jesus_Wants_All_Of_His_Children_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46242,8 +47106,16 @@
   "alias": "기쁘다 구주 오셨네",
   "keys": [
    {
+    "t": -3,
+    "file": "keys/openhymnal/Joy_to_the_World_t-3.pdf"
+   },
+   {
     "t": -2,
     "file": "keys/openhymnal/Joy_to_the_World_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Joy_to_the_World_t-1.pdf"
    },
    {
     "t": 1,
@@ -46306,8 +47178,20 @@
   "midi": "mids/h_Lamp_of_Our_Feet.mid",
   "keys": [
    {
+    "t": -3,
+    "file": "keys/openhymnal/Lamp_of_Our_Feet_t-3.pdf"
+   },
+   {
     "t": -2,
     "file": "keys/openhymnal/Lamp_of_Our_Feet_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Lamp_of_Our_Feet_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Lamp_of_Our_Feet_t+1.pdf"
    },
    {
     "t": 2,
@@ -46334,8 +47218,24 @@
     "file": "keys/openhymnal/Let_All_Mortal_Flesh_Keep_Silence_t-3.pdf"
    },
    {
+    "t": -2,
+    "file": "keys/openhymnal/Let_All_Mortal_Flesh_Keep_Silence_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Let_All_Mortal_Flesh_Keep_Silence_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Let_All_Mortal_Flesh_Keep_Silence_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/Let_All_Mortal_Flesh_Keep_Silence_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Let_All_Mortal_Flesh_Keep_Silence_t+3.pdf"
    }
   ]
  },
@@ -46347,7 +47247,33 @@
   "composer": "Words: Isaac Watts, 1719.  Music: 'Lea' James Lea Summers, (1837-1881).",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Let_Children_Hear_The_Mighty_Deeds.mid"
+  "midi": "mids/h_Let_Children_Hear_The_Mighty_Deeds.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Let_Children_Hear_The_Mighty_Deeds_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Let_Children_Hear_The_Mighty_Deeds_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Let_Children_Hear_The_Mighty_Deeds_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Let_Children_Hear_The_Mighty_Deeds_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Let_Children_Hear_The_Mighty_Deeds_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Let_Children_Hear_The_Mighty_Deeds_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46393,7 +47319,33 @@
   "composer": "Words: Gottfried Wilhelm Sacer, 1661.  verses 1-5,7 Translated by Frances Elizabeth Cox, 1841.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Lo__God_To_Heav_n_Ascendeth.mid"
+  "midi": "mids/h_Lo__God_To_Heav_n_Ascendeth.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Lo__God_To_Heav_n_Ascendeth_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Lo__God_To_Heav_n_Ascendeth_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Lo__God_To_Heav_n_Ascendeth_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Lo__God_To_Heav_n_Ascendeth_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Lo__God_To_Heav_n_Ascendeth_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Lo__God_To_Heav_n_Ascendeth_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46475,7 +47427,33 @@
   "composer": "Words: John Fawcett, 1773; verse 3 alt. by Godfrey Thring, 1880.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Lord__Dismiss_Us_With_Thy_Blessing.mid"
+  "midi": "mids/h_Lord__Dismiss_Us_With_Thy_Blessing.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Lord__Dismiss_Us_With_Thy_Blessing_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Lord__Dismiss_Us_With_Thy_Blessing_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Lord__Dismiss_Us_With_Thy_Blessing_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Lord__Dismiss_Us_With_Thy_Blessing_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Lord__Dismiss_Us_With_Thy_Blessing_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Lord__Dismiss_Us_With_Thy_Blessing_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46485,7 +47463,33 @@
   "composer": "Words: Synesius of Cyrene, circa 430.  Translated by Allen W. Chatfield, 1876.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Lord_Jesus_Think_On_Me.mid"
+  "midi": "mids/h_Lord_Jesus_Think_On_Me.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Lord_Jesus_Think_On_Me_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Lord_Jesus_Think_On_Me_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Lord_Jesus_Think_On_Me_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Lord_Jesus_Think_On_Me_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Lord_Jesus_Think_On_Me_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Lord_Jesus_Think_On_Me_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46546,6 +47550,10 @@
     "file": "keys/openhymnal/Lord_Of_Our_Life_t-1.pdf"
    },
    {
+    "t": 1,
+    "file": "keys/openhymnal/Lord_Of_Our_Life_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/Lord_Of_Our_Life_t+2.pdf"
    },
@@ -46563,7 +47571,33 @@
   "composer": "Words: Adelaide Thrupp, 1853. Music: 'St. Ursula' Frederick Westlake, 1863.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Lord__Who_at_Cana_s_Wedding_Feast.mid"
+  "midi": "mids/h_Lord__Who_at_Cana_s_Wedding_Feast.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Lord__Who_at_Cana_s_Wedding_Feast_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Lord__Who_at_Cana_s_Wedding_Feast_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Lord__Who_at_Cana_s_Wedding_Feast_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Lord__Who_at_Cana_s_Wedding_Feast_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Lord__Who_at_Cana_s_Wedding_Feast_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Lord__Who_at_Cana_s_Wedding_Feast_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46573,7 +47607,33 @@
   "composer": "Words: Claudia F. Hernaman, 1873.  Music: 'St. Flavian' Day's Psalter, 1563.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Lord_Who_Throughout_These_Forty_Days.mid"
+  "midi": "mids/h_Lord_Who_Throughout_These_Forty_Days.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Lord_Who_Throughout_These_Forty_Days_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Lord_Who_Throughout_These_Forty_Days_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Lord_Who_Throughout_These_Forty_Days_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Lord_Who_Throughout_These_Forty_Days_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Lord_Who_Throughout_These_Forty_Days_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Lord_Who_Throughout_These_Forty_Days_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46604,6 +47664,10 @@
    {
     "t": 2,
     "file": "keys/openhymnal/Lord_of_Glory__Who_Hast_Bought_Us_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Lord_of_Glory__Who_Hast_Bought_Us_t+3.pdf"
    }
   ]
  },
@@ -46622,6 +47686,10 @@
     "file": "keys/openhymnal/Lord_of_Life__All_Praise_Excelling_t-3.pdf"
    },
    {
+    "t": -2,
+    "file": "keys/openhymnal/Lord_of_Life__All_Praise_Excelling_t-2.pdf"
+   },
+   {
     "t": -1,
     "file": "keys/openhymnal/Lord_of_Life__All_Praise_Excelling_t-1.pdf"
    },
@@ -46632,6 +47700,10 @@
    {
     "t": 2,
     "file": "keys/openhymnal/Lord_of_Life__All_Praise_Excelling_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Lord_of_Life__All_Praise_Excelling_t+3.pdf"
    }
   ]
  },
@@ -46788,7 +47860,33 @@
   "composer": "Words: Edward Mote, circa 1834.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_My_Hope_Is_Built.mid"
+  "midi": "mids/h_My_Hope_Is_Built.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/My_Hope_Is_Built_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/My_Hope_Is_Built_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/My_Hope_Is_Built_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/My_Hope_Is_Built_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/My_Hope_Is_Built_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/My_Hope_Is_Built_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46834,7 +47932,33 @@
   "composer": "Words: Fanny J. Crosby, 1875.  Adapted by Margaret Clarkson, 1973.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_My_Song_Shall_Be_Of_Jesus.mid"
+  "midi": "mids/h_My_Song_Shall_Be_Of_Jesus.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46844,7 +47968,33 @@
   "composer": "Words: Fanny J. Crosby, 1875.  Adapted by Margaret Clarkson, 1973.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_My_Song_Shall_Be_Of_Jesus-2.mid"
+  "midi": "mids/h_My_Song_Shall_Be_Of_Jesus-2.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus-2_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus-2_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus-2_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus-2_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus-2_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/My_Song_Shall_Be_Of_Jesus-2_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -46927,7 +48077,33 @@
   "composer": "Words: Christina Rossetti, 1892. Music: 'Rossetti' William Jeater, 1907.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_None_Other_Lamb.mid"
+  "midi": "mids/h_None_Other_Lamb.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/None_Other_Lamb_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/None_Other_Lamb_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/None_Other_Lamb_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/None_Other_Lamb_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/None_Other_Lamb_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/None_Other_Lamb_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47057,7 +48233,33 @@
   "composer": "Words: Christopher Wordsworth, 1862.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Day_of_Rest_And_Gladness.mid"
+  "midi": "mids/h_O_Day_of_Rest_And_Gladness.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Day_of_Rest_And_Gladness_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Day_of_Rest_And_Gladness_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Day_of_Rest_And_Gladness_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Day_of_Rest_And_Gladness_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Day_of_Rest_And_Gladness_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Day_of_Rest_And_Gladness_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47067,7 +48269,33 @@
   "composer": "Words: John Ellerton, 1876.  Music: 'Aurelia' Samuel Sebastian Wesley, 1864.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Father__All_Creating.mid"
+  "midi": "mids/h_O_Father__All_Creating.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Father__All_Creating_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Father__All_Creating_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Father__All_Creating_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Father__All_Creating_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Father__All_Creating_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Father__All_Creating_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47078,7 +48306,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_O_For_A_Thousand_Tongues.mid",
-  "alias": "만 입이 내게 있으면"
+  "alias": "만 입이 내게 있으면",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_For_A_Thousand_Tongues_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_For_A_Thousand_Tongues_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_For_A_Thousand_Tongues_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_For_A_Thousand_Tongues_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_For_A_Thousand_Tongues_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_For_A_Thousand_Tongues_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47088,7 +48342,33 @@
   "composer": "Words: Martin Behm, 1608.  Translated by C. H. L. Schuette, 1880.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Holy__Blessed_Trinity.mid"
+  "midi": "mids/h_O_Holy__Blessed_Trinity.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Holy__Blessed_Trinity_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Holy__Blessed_Trinity_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Holy__Blessed_Trinity_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Holy__Blessed_Trinity_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Holy__Blessed_Trinity_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Holy__Blessed_Trinity_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47099,7 +48379,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_O_Little_Town_of_Bethlehem.mid",
-  "alias": "오 베들레헴 작은 골"
+  "alias": "오 베들레헴 작은 골",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Little_Town_of_Bethlehem_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Little_Town_of_Bethlehem_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Little_Town_of_Bethlehem_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Little_Town_of_Bethlehem_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Little_Town_of_Bethlehem_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Little_Town_of_Bethlehem_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47109,7 +48415,33 @@
   "composer": "Words: from Landshuter Gesangbuch, 1777. Translation unknown, before 1913.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Lord__I_Am_Not_Worthy.mid"
+  "midi": "mids/h_O_Lord__I_Am_Not_Worthy.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Lord__I_Am_Not_Worthy_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Lord__I_Am_Not_Worthy_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Lord__I_Am_Not_Worthy_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Lord__I_Am_Not_Worthy_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Lord__I_Am_Not_Worthy_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Lord__I_Am_Not_Worthy_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47119,7 +48451,33 @@
   "composer": "Text: Anthony Robertson, 2010.  Music: 'Kingsfold' traditional English.  Setting: Ralph Vaughan Williams, 1906.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Lord__My_God__I_Thirst_For_You.mid"
+  "midi": "mids/h_O_Lord__My_God__I_Thirst_For_You.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Lord__My_God__I_Thirst_For_You_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Lord__My_God__I_Thirst_For_You_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Lord__My_God__I_Thirst_For_You_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Lord__My_God__I_Thirst_For_You_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Lord__My_God__I_Thirst_For_You_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Lord__My_God__I_Thirst_For_You_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47129,7 +48487,33 @@
   "composer": "Words: James Maxwell, 1759.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Lord_My_Soul_Convicted.mid"
+  "midi": "mids/h_O_Lord_My_Soul_Convicted.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Lord_My_Soul_Convicted_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Lord_My_Soul_Convicted_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Lord_My_Soul_Convicted_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Lord_My_Soul_Convicted_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Lord_My_Soul_Convicted_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Lord_My_Soul_Convicted_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47175,7 +48559,33 @@
   "composer": "Words: Unknown, 15th Century; Translated by Benjamin Webb, 1852, alt.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Love__How_Deep__How_Broad__How_High.mid"
+  "midi": "mids/h_O_Love__How_Deep__How_Broad__How_High.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Love__How_Deep__How_Broad__How_High_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Love__How_Deep__How_Broad__How_High_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Love__How_Deep__How_Broad__How_High_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Love__How_Deep__How_Broad__How_High_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Love__How_Deep__How_Broad__How_High_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Love__How_Deep__How_Broad__How_High_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47185,7 +48595,33 @@
   "composer": "Words: Bernard of Clairvaux, 1153. Translated by James W. Alexander, 1830.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Sacred_Head__Now_Wounded.mid"
+  "midi": "mids/h_O_Sacred_Head__Now_Wounded.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Sacred_Head__Now_Wounded_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Sacred_Head__Now_Wounded_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Sacred_Head__Now_Wounded_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Sacred_Head__Now_Wounded_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Sacred_Head__Now_Wounded_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Sacred_Head__Now_Wounded_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47195,7 +48631,33 @@
   "composer": "Words: Isaac Watts, 1719, alt.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_That_The_Lord_Would_Guide_My_Ways.mid"
+  "midi": "mids/h_O_That_The_Lord_Would_Guide_My_Ways.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_That_The_Lord_Would_Guide_My_Ways_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_That_The_Lord_Would_Guide_My_Ways_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_That_The_Lord_Would_Guide_My_Ways_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_That_The_Lord_Would_Guide_My_Ways_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_That_The_Lord_Would_Guide_My_Ways_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_That_The_Lord_Would_Guide_My_Ways_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47241,7 +48703,33 @@
   "composer": "Words: From the \"Sarum Breviary\", 1495.  Translated by John Mason Neale, 1851.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_O_Wondrous_Type__O_Vision_Fair.mid"
+  "midi": "mids/h_O_Wondrous_Type__O_Vision_Fair.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/O_Wondrous_Type__O_Vision_Fair_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/O_Wondrous_Type__O_Vision_Fair_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/O_Wondrous_Type__O_Vision_Fair_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/O_Wondrous_Type__O_Vision_Fair_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/O_Wondrous_Type__O_Vision_Fair_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/O_Wondrous_Type__O_Vision_Fair_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47287,7 +48775,33 @@
   "composer": "Words: John Newton, 1779.  Music: 'Darwall`s 148th' John Darwall, 1770.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_On_What_Has_Now_Been_Sown.mid"
+  "midi": "mids/h_On_What_Has_Now_Been_Sown.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/On_What_Has_Now_Been_Sown_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/On_What_Has_Now_Been_Sown_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/On_What_Has_Now_Been_Sown_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/On_What_Has_Now_Been_Sown_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/On_What_Has_Now_Been_Sown_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/On_What_Has_Now_Been_Sown_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47333,7 +48847,33 @@
   "composer": "Words: Isaac Watts, 1719.  Music: 'St. Anne' William Croft, 1708.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Our_God__Our_Help_In_Ages_Past.mid"
+  "midi": "mids/h_Our_God__Our_Help_In_Ages_Past.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Our_God__Our_Help_In_Ages_Past_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Our_God__Our_Help_In_Ages_Past_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Our_God__Our_Help_In_Ages_Past_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Our_God__Our_Help_In_Ages_Past_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Our_God__Our_Help_In_Ages_Past_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Our_God__Our_Help_In_Ages_Past_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47525,7 +49065,33 @@
   "composer": "Words: Paul Gerhardt, 1653.  Translation composite.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Rejoice__My_Heart__Be_Glad_and_Sing.mid"
+  "midi": "mids/h_Rejoice__My_Heart__Be_Glad_and_Sing.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Rejoice__My_Heart__Be_Glad_and_Sing_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Rejoice__My_Heart__Be_Glad_and_Sing_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Rejoice__My_Heart__Be_Glad_and_Sing_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Rejoice__My_Heart__Be_Glad_and_Sing_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Rejoice__My_Heart__Be_Glad_and_Sing_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Rejoice__My_Heart__Be_Glad_and_Sing_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47535,7 +49101,33 @@
   "composer": "Words: Edward H. Plumptre, 1865, alt.  Music: 'Marion' Arthur H. Messiter, 1883.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Rejoice__O_Pilgrim_Throng.mid"
+  "midi": "mids/h_Rejoice__O_Pilgrim_Throng.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Rejoice__O_Pilgrim_Throng_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Rejoice__O_Pilgrim_Throng_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Rejoice__O_Pilgrim_Throng_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Rejoice__O_Pilgrim_Throng_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Rejoice__O_Pilgrim_Throng_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Rejoice__O_Pilgrim_Throng_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47546,7 +49138,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_Rock_of_Ages.mid",
-  "alias": "만세 반석 열리니"
+  "alias": "만세 반석 열리니",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Rock_of_Ages_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Rock_of_Ages_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Rock_of_Ages_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Rock_of_Ages_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Rock_of_Ages_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Rock_of_Ages_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47563,12 +49181,24 @@
     "file": "keys/openhymnal/Savior_Of_The_Nations_Come_t-3.pdf"
    },
    {
+    "t": -2,
+    "file": "keys/openhymnal/Savior_Of_The_Nations_Come_t-2.pdf"
+   },
+   {
     "t": -1,
     "file": "keys/openhymnal/Savior_Of_The_Nations_Come_t-1.pdf"
    },
    {
+    "t": 1,
+    "file": "keys/openhymnal/Savior_Of_The_Nations_Come_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/Savior_Of_The_Nations_Come_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Savior_Of_The_Nations_Come_t+3.pdf"
    }
   ]
  },
@@ -47601,6 +49231,10 @@
    {
     "t": 2,
     "file": "keys/openhymnal/Savior_When_In_Dust_To_Thee_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Savior_When_In_Dust_To_Thee_t+3.pdf"
    }
   ]
  },
@@ -47687,12 +49321,24 @@
   "midi": "mids/h_See__The_Lord_Ascends_In_Triumph.mid",
   "keys": [
    {
+    "t": -3,
+    "file": "keys/openhymnal/See__The_Lord_Ascends_In_Triumph_t-3.pdf"
+   },
+   {
     "t": -2,
     "file": "keys/openhymnal/See__The_Lord_Ascends_In_Triumph_t-2.pdf"
    },
    {
+    "t": -1,
+    "file": "keys/openhymnal/See__The_Lord_Ascends_In_Triumph_t-1.pdf"
+   },
+   {
     "t": 1,
     "file": "keys/openhymnal/See__The_Lord_Ascends_In_Triumph_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/See__The_Lord_Ascends_In_Triumph_t+2.pdf"
    },
    {
     "t": 3,
@@ -47745,7 +49391,33 @@
   "composer": "Words: Christopher Wordsworth, 1865. Music and Setting: 'Nativity' William Henry Monk, 1865.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Sing__O_Sing__This_Blessed_Morn.mid"
+  "midi": "mids/h_Sing__O_Sing__This_Blessed_Morn.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Sing__O_Sing__This_Blessed_Morn_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Sing__O_Sing__This_Blessed_Morn_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Sing__O_Sing__This_Blessed_Morn_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Sing__O_Sing__This_Blessed_Morn_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Sing__O_Sing__This_Blessed_Morn_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Sing__O_Sing__This_Blessed_Morn_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47755,7 +49427,33 @@
   "composer": "Words: Christopher Wordsworth, 1862.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Songs_of_Thankfulness_and_Praise.mid"
+  "midi": "mids/h_Songs_of_Thankfulness_and_Praise.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Songs_of_Thankfulness_and_Praise_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Songs_of_Thankfulness_and_Praise_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Songs_of_Thankfulness_and_Praise_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Songs_of_Thankfulness_and_Praise_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Songs_of_Thankfulness_and_Praise_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Songs_of_Thankfulness_and_Praise_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47765,7 +49463,33 @@
   "composer": "Words: Thomas Kelly, 1804.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Stricken__Smitten__and_Afflicted.mid"
+  "midi": "mids/h_Stricken__Smitten__and_Afflicted.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Stricken__Smitten__and_Afflicted_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Stricken__Smitten__and_Afflicted_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Stricken__Smitten__and_Afflicted_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Stricken__Smitten__and_Afflicted_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Stricken__Smitten__and_Afflicted_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Stricken__Smitten__and_Afflicted_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47812,7 +49536,33 @@
   "composer": "Words: Julie Katharina von Hausmann, 1862.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Take_Thou_My_Hand_and_Lead_Me.mid"
+  "midi": "mids/h_Take_Thou_My_Hand_and_Lead_Me.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Take_Thou_My_Hand_and_Lead_Me_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Take_Thou_My_Hand_and_Lead_Me_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Take_Thou_My_Hand_and_Lead_Me_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Take_Thou_My_Hand_and_Lead_Me_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Take_Thou_My_Hand_and_Lead_Me_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Take_Thou_My_Hand_and_Lead_Me_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47825,12 +49575,24 @@
   "midi": "mids/h__Take_Up_Thy_Cross___the_Savior_Said.mid",
   "keys": [
    {
+    "t": -3,
+    "file": "keys/openhymnal/_Take_Up_Thy_Cross___the_Savior_Said_t-3.pdf"
+   },
+   {
     "t": -2,
     "file": "keys/openhymnal/_Take_Up_Thy_Cross___the_Savior_Said_t-2.pdf"
    },
    {
     "t": -1,
     "file": "keys/openhymnal/_Take_Up_Thy_Cross___the_Savior_Said_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/_Take_Up_Thy_Cross___the_Savior_Said_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/_Take_Up_Thy_Cross___the_Savior_Said_t+2.pdf"
    },
    {
     "t": 3,
@@ -47882,7 +49644,33 @@
   "composer": "Words: Charles Coffin, 1736.  translated by John Chandler, 1837, alt.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_The_Advent_of_Our_God.mid"
+  "midi": "mids/h_The_Advent_of_Our_God.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_Advent_of_Our_God_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_Advent_of_Our_God_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_Advent_of_Our_God_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_Advent_of_Our_God_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_Advent_of_Our_God_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_Advent_of_Our_God_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47892,7 +49680,33 @@
   "composer": "Words: Samuel John Stone, 1866.  Music: 'Aurelia' Samuel Sebastian Wesley, 1864.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_The_Church_s_One_Foundation.mid"
+  "midi": "mids/h_The_Church_s_One_Foundation.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_Church_s_One_Foundation_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_Church_s_One_Foundation_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_Church_s_One_Foundation_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_Church_s_One_Foundation_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_Church_s_One_Foundation_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_Church_s_One_Foundation_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47902,7 +49716,33 @@
   "composer": "Words: Brian J. Dumont, 09 Dec 2008.  Music: 'Azmon' Carl G. Gl�ser, 1828.  Setting: Lowell Mason, 1839.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_The_Cloud_Received_Christ_From_Their_Sight.mid"
+  "midi": "mids/h_The_Cloud_Received_Christ_From_Their_Sight.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_Cloud_Received_Christ_From_Their_Sight_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_Cloud_Received_Christ_From_Their_Sight_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_Cloud_Received_Christ_From_Their_Sight_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_Cloud_Received_Christ_From_Their_Sight_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_Cloud_Received_Christ_From_Their_Sight_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_Cloud_Received_Christ_From_Their_Sight_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47912,7 +49752,33 @@
   "composer": "Words: Frank Bottome, 1890.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_The_Comforter_Has_Come.mid"
+  "midi": "mids/h_The_Comforter_Has_Come.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_Comforter_Has_Come_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_Comforter_Has_Come_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_Comforter_Has_Come_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_Comforter_Has_Come_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_Comforter_Has_Come_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_Comforter_Has_Come_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47923,7 +49789,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_The_First_Noel.mid",
-  "alias": "저 들 밖에 한밤중에"
+  "alias": "저 들 밖에 한밤중에",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_First_Noel_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_First_Noel_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_First_Noel_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_First_Noel_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_First_Noel_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_First_Noel_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47933,7 +49825,33 @@
   "composer": "Words: Christopher Wordsworth, 1865, alt.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_The_Galilean_Fishers_Toil.mid"
+  "midi": "mids/h_The_Galilean_Fishers_Toil.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_Galilean_Fishers_Toil_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_Galilean_Fishers_Toil_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_Galilean_Fishers_Toil_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_Galilean_Fishers_Toil_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_Galilean_Fishers_Toil_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_Galilean_Fishers_Toil_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47943,7 +49861,33 @@
   "composer": "Words: Daniel ben Judah, circa 1400. Paraphrased by Thomas Olivers, circa 1765.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_The_God_of_Abraham_Praise.mid"
+  "midi": "mids/h_The_God_of_Abraham_Praise.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_God_of_Abraham_Praise_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_God_of_Abraham_Praise_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_God_of_Abraham_Praise_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_God_of_Abraham_Praise_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_God_of_Abraham_Praise_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_God_of_Abraham_Praise_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -47953,7 +49897,33 @@
   "composer": "Words: Matthias Loy, 1863.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_The_Gospel_Shows_The_Father_s_Grace.mid"
+  "midi": "mids/h_The_Gospel_Shows_The_Father_s_Grace.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_Gospel_Shows_The_Father_s_Grace_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_Gospel_Shows_The_Father_s_Grace_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_Gospel_Shows_The_Father_s_Grace_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_Gospel_Shows_The_Father_s_Grace_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_Gospel_Shows_The_Father_s_Grace_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_Gospel_Shows_The_Father_s_Grace_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48072,7 +50042,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_The_Old_Rugged_Cross.mid",
-  "alias": "갈보리산 위에"
+  "alias": "갈보리산 위에",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_Old_Rugged_Cross_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_Old_Rugged_Cross_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_Old_Rugged_Cross_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_Old_Rugged_Cross_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_Old_Rugged_Cross_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_Old_Rugged_Cross_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48082,7 +50078,33 @@
   "composer": "Words: John Morison, 1781.  Music: 'Lobt Gott, ihr Christen Allzugleich' Nikolaus Hermann, 1554.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_The_People_That_in_Darkness_Sat.mid"
+  "midi": "mids/h_The_People_That_in_Darkness_Sat.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/The_People_That_in_Darkness_Sat_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/The_People_That_in_Darkness_Sat_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/The_People_That_in_Darkness_Sat_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/The_People_That_in_Darkness_Sat_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/The_People_That_in_Darkness_Sat_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/The_People_That_in_Darkness_Sat_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48164,7 +50186,33 @@
   "composer": "Text: Edward H. Plumptre, 1864.  Music: 'Kingsfold' traditional English.  Setting: Ralph Vaughan Williams, 1906.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Thine_Arm__O_Lord__in_Days_of_Old.mid"
+  "midi": "mids/h_Thine_Arm__O_Lord__in_Days_of_Old.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Thine_Arm__O_Lord__in_Days_of_Old_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Thine_Arm__O_Lord__in_Days_of_Old_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Thine_Arm__O_Lord__in_Days_of_Old_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Thine_Arm__O_Lord__in_Days_of_Old_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Thine_Arm__O_Lord__in_Days_of_Old_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Thine_Arm__O_Lord__in_Days_of_Old_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48187,6 +50235,10 @@
    {
     "t": -1,
     "file": "keys/openhymnal/Though_in_the_Midst_of_Life_We_Be_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Though_in_the_Midst_of_Life_We_Be_t+1.pdf"
    },
    {
     "t": 2,
@@ -48278,7 +50330,33 @@
   "composer": "Words: Fanny Crosby, 1875. Music and Setting: 'To God Be The Glory' William Howard Doane, 1875.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_To_God_Be_The_Glory.mid"
+  "midi": "mids/h_To_God_Be_The_Glory.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/To_God_Be_The_Glory_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/To_God_Be_The_Glory_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/To_God_Be_The_Glory_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/To_God_Be_The_Glory_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/To_God_Be_The_Glory_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/To_God_Be_The_Glory_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48291,8 +50369,28 @@
   "midi": "mids/h_To_Jordan_Came_Our_Lord__The_Christ.mid",
   "keys": [
    {
+    "t": -3,
+    "file": "keys/openhymnal/To_Jordan_Came_Our_Lord__The_Christ_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/To_Jordan_Came_Our_Lord__The_Christ_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/To_Jordan_Came_Our_Lord__The_Christ_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/To_Jordan_Came_Our_Lord__The_Christ_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/To_Jordan_Came_Our_Lord__The_Christ_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/To_Jordan_Came_Our_Lord__The_Christ_t+3.pdf"
    }
   ]
  },
@@ -48304,7 +50402,33 @@
   "composer": "Words: Oswald Allen, 1861, alt.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Today_Thy_Mercy_Calls_Me.mid"
+  "midi": "mids/h_Today_Thy_Mercy_Calls_Me.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Today_Thy_Mercy_Calls_Me_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Today_Thy_Mercy_Calls_Me_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Today_Thy_Mercy_Calls_Me_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Today_Thy_Mercy_Calls_Me_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Today_Thy_Mercy_Calls_Me_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Today_Thy_Mercy_Calls_Me_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48323,6 +50447,14 @@
    {
     "t": -2,
     "file": "keys/openhymnal/Twas_In_The_Moon_of_Wintertime_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Twas_In_The_Moon_of_Wintertime_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Twas_In_The_Moon_of_Wintertime_t+1.pdf"
    },
    {
     "t": 2,
@@ -48429,8 +50561,16 @@
     "file": "keys/openhymnal/Wake__Awake__for_Night_Is_Flying_t-1.pdf"
    },
    {
+    "t": 1,
+    "file": "keys/openhymnal/Wake__Awake__for_Night_Is_Flying_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/Wake__Awake__for_Night_Is_Flying_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Wake__Awake__for_Night_Is_Flying_t+3.pdf"
    }
   ]
  },
@@ -48442,7 +50582,33 @@
   "composer": "Words: Anonymous circa 1597. Translated Theodore Baker, 1894.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_We_Gather_Together.mid"
+  "midi": "mids/h_We_Gather_Together.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/We_Gather_Together_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/We_Gather_Together_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/We_Gather_Together_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/We_Gather_Together_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/We_Gather_Together_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/We_Gather_Together_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48452,7 +50618,33 @@
   "composer": "Words: William W. How, 1864.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_We_Give_Thee_But_Thine_Own.mid"
+  "midi": "mids/h_We_Give_Thee_But_Thine_Own.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/We_Give_Thee_But_Thine_Own_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/We_Give_Thee_But_Thine_Own_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/We_Give_Thee_But_Thine_Own_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/We_Give_Thee_But_Thine_Own_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/We_Give_Thee_But_Thine_Own_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/We_Give_Thee_But_Thine_Own_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48462,7 +50654,33 @@
   "composer": "Words: William Bright, 1865.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_We_Know_Thee_Who_Thou_Art.mid"
+  "midi": "mids/h_We_Know_Thee_Who_Thou_Art.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/We_Know_Thee_Who_Thou_Art_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/We_Know_Thee_Who_Thou_Art_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/We_Know_Thee_Who_Thou_Art_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/We_Know_Thee_Who_Thou_Art_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/We_Know_Thee_Who_Thou_Art_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/We_Know_Thee_Who_Thou_Art_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48546,7 +50764,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_What_Child_Is_This_.mid",
-  "alias": "그 맑고 환한 밤중에"
+  "alias": "그 맑고 환한 밤중에",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/What_Child_Is_This__t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/What_Child_Is_This__t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/What_Child_Is_This__t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/What_Child_Is_This__t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/What_Child_Is_This__t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/What_Child_Is_This__t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48668,7 +50912,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_When_I_Survey_the_Wondrous_Cross-4.mid",
-  "alias": "주 달려 죽은 십자가"
+  "alias": "주 달려 죽은 십자가",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/When_I_Survey_the_Wondrous_Cross-4_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/When_I_Survey_the_Wondrous_Cross-4_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/When_I_Survey_the_Wondrous_Cross-4_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/When_I_Survey_the_Wondrous_Cross-4_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/When_I_Survey_the_Wondrous_Cross-4_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/When_I_Survey_the_Wondrous_Cross-4_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48679,7 +50949,33 @@
   "instrument": "Hymn",
   "license": "Public Domain",
   "midi": "mids/h_When_The_Roll_Is_Called_Up_Yonder.mid",
-  "alias": "하나님의 나팔 소리"
+  "alias": "하나님의 나팔 소리",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/When_The_Roll_Is_Called_Up_Yonder_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/When_The_Roll_Is_Called_Up_Yonder_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/When_The_Roll_Is_Called_Up_Yonder_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/When_The_Roll_Is_Called_Up_Yonder_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/When_The_Roll_Is_Called_Up_Yonder_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/When_The_Roll_Is_Called_Up_Yonder_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48725,7 +51021,33 @@
   "composer": "Words: James Nicholson, 1872.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Whiter_Than_Snow.mid"
+  "midi": "mids/h_Whiter_Than_Snow.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Whiter_Than_Snow_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Whiter_Than_Snow_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Whiter_Than_Snow_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Whiter_Than_Snow_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Whiter_Than_Snow_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Whiter_Than_Snow_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48771,7 +51093,33 @@
   "composer": "Words: James Russell Woodford, 1863.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_Within_the_Father_s_House.mid"
+  "midi": "mids/h_Within_the_Father_s_House.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/Within_the_Father_s_House_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/Within_the_Father_s_House_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/Within_the_Father_s_House_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/Within_the_Father_s_House_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/Within_the_Father_s_House_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/Within_the_Father_s_House_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48817,7 +51165,33 @@
   "composer": "Words: Ludwig Helmbold (1532-1598). Translated by William M. Czamanske, 1939.",
   "instrument": "Hymn",
   "license": "Public Domain",
-  "midi": "mids/h_You_Parents_Hear_What_Jesus_Taught.mid"
+  "midi": "mids/h_You_Parents_Hear_What_Jesus_Taught.mid",
+  "keys": [
+   {
+    "t": -3,
+    "file": "keys/openhymnal/You_Parents_Hear_What_Jesus_Taught_t-3.pdf"
+   },
+   {
+    "t": -2,
+    "file": "keys/openhymnal/You_Parents_Hear_What_Jesus_Taught_t-2.pdf"
+   },
+   {
+    "t": -1,
+    "file": "keys/openhymnal/You_Parents_Hear_What_Jesus_Taught_t-1.pdf"
+   },
+   {
+    "t": 1,
+    "file": "keys/openhymnal/You_Parents_Hear_What_Jesus_Taught_t+1.pdf"
+   },
+   {
+    "t": 2,
+    "file": "keys/openhymnal/You_Parents_Hear_What_Jesus_Taught_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/You_Parents_Hear_What_Jesus_Taught_t+3.pdf"
+   }
+  ]
  },
  {
   "source": "openhymnal",
@@ -48842,8 +51216,16 @@
     "file": "keys/openhymnal/You_People_Who_Now_Are_Baptized_t-1.pdf"
    },
    {
+    "t": 1,
+    "file": "keys/openhymnal/You_People_Who_Now_Are_Baptized_t+1.pdf"
+   },
+   {
     "t": 2,
     "file": "keys/openhymnal/You_People_Who_Now_Are_Baptized_t+2.pdf"
+   },
+   {
+    "t": 3,
+    "file": "keys/openhymnal/You_People_Who_Now_Are_Baptized_t+3.pdf"
    }
   ]
  },
