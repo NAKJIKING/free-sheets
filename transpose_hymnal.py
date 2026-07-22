@@ -2,13 +2,16 @@
 # -*- coding: utf-8 -*-
 """찬송가 조옮김 악보 생성 — Open Hymnal ABC 소스를 ±3반음까지 조옮김.
 
-collect_hymnal.py가 수집한 곡의 source_url(.abc 직링크)에서 ABC를
-다시 받아 abc2abc -t 로 조옮김한 뒤 PDF로 렌더한다. 결과는
+collect_hymnal.py가 수집한 곡의 ABC 원문(abc/openhymnal/)을 읽어
+abc2abc -t 로 조옮김한 뒤 PDF로 렌더한다. 결과는
 keys/openhymnal/ 아래에 두고, 카탈로그 곡 항목에
 'keys': [{'t': -3, 'file': ...}, ...] 필드를 심는다.
 
 앱은 keys 필드가 있으면 내려받기 때 키 선택 시트를 보여준다.
-ABC 원문도 abc/openhymnal/ 에 저장해 다음부터는 재방문 없이 쓴다.
+
+주의: abcm2ps는 조옮김된 파일의 가사 줄 정렬 경고('Too many words
+in lyric line')만으로도 exit 1을 낸다 — 악보는 정상 생성되므로
+종료 코드가 아니라 출력 파일 존재로 성공을 판정한다.
 
 전제: abcm2ps, abcmidi(abc2abc), ghostscript(ps2pdf) 설치.
 """
@@ -44,19 +47,20 @@ def save_catalog(c):
 
 
 def render_pdf(abc_text, out_pdf):
-    """ABC → PDF. 성공 여부 반환."""
+    """ABC → PDF. 성공 여부 반환 — 종료 코드가 아니라 출력물로 판정
+    (abcm2ps는 가사 정렬 경고만으로도 exit 1을 낸다)."""
     tmp_abc = os.path.join(ROOT, '_tmp_t.abc')
     tmp_ps = os.path.join(ROOT, '_tmp_t.ps')
     with open(tmp_abc, 'w', encoding='utf-8') as f:
         f.write(abc_text)
     try:
-        r = subprocess.run(['abcm2ps', tmp_abc, '-O', tmp_ps],
-                           capture_output=True, text=True, timeout=60)
-        if r.returncode != 0 or not os.path.exists(tmp_ps):
+        subprocess.run(['abcm2ps', tmp_abc, '-O', tmp_ps],
+                       capture_output=True, text=True, timeout=60)
+        if not os.path.exists(tmp_ps) or os.path.getsize(tmp_ps) < 3000:
             return False
-        r = subprocess.run(['ps2pdf', tmp_ps, out_pdf],
-                           capture_output=True, text=True, timeout=60)
-        return r.returncode == 0 and os.path.exists(out_pdf)
+        subprocess.run(['ps2pdf', tmp_ps, out_pdf],
+                       capture_output=True, text=True, timeout=60)
+        return os.path.exists(out_pdf) and os.path.getsize(out_pdf) > 1000
     finally:
         for p in (tmp_abc, tmp_ps):
             if os.path.exists(p):
@@ -86,8 +90,9 @@ def main():
     os.makedirs(ABCDIR, exist_ok=True)
     catalog = load_catalog()
     todo = [e for e in catalog
-            if e.get('source') == 'openhymnal' and not e.get('keys')]
-    print(f'대상 찬송가 {len(todo)}곡 (이미 keys 있는 곡 제외)', flush=True)
+            if e.get('source') == 'openhymnal'
+            and len(e.get('keys', [])) < len(SHIFTS)]
+    print(f'대상 찬송가 {len(todo)}곡 (6벌 미만인 곡 재시도)', flush=True)
     done = failed = 0
     for e in todo:
         stem = os.path.splitext(os.path.basename(e['file']))[0]
@@ -112,6 +117,7 @@ def main():
             if not os.path.exists(out_pdf):
                 ta = transpose(abc, t)
                 if ta is None or not render_pdf(ta, out_pdf):
+                    print(f'  ! 조옮김 실패: {stem} t{tag}', flush=True)
                     continue
             keys.append({'t': t, 'file': os.path.relpath(out_pdf, ROOT)})
         if keys:
