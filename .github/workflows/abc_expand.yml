@@ -23,6 +23,9 @@ jobs:
       - name: 찬송가 수집 (Open Hymnal)
         run: python3 collect_hymnal.py
 
+      - name: 찬송가 한국어 별칭 주입
+        run: python3 apply_hymn_aliases.py
+
       - name: 중간 커밋
         run: |
           git config user.name "sheet-collector-bot"
