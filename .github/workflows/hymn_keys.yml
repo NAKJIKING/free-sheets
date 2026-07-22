@@ -1,0 +1,39 @@
+name: 찬송가 조옮김 악보 생성
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keys:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ABC 도구 설치
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q abcm2ps abcmidi ghostscript
+
+      - name: 조옮김 실행
+        run: python3 transpose_hymnal.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name sheet-collector-bot
+          git config user.email actions@github.com
+          git add catalog.json
+          [ -d keys ] && git add keys
+          [ -d abc ] && git add abc
+          if git diff --cached --quiet; then
+            echo '변경 없음'
+            exit 0
+          fi
+          git commit -m '찬송가 조옮김 악보 자동 생성 [skip ci]'
+          for i in 1 2 3 4; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            sleep $((i * 2))
+          done
