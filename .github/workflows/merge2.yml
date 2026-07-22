@@ -1,0 +1,32 @@
+name: 2권 카탈로그 병합
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 병합 실행
+        run: python3 merge_catalog2.py
+
+      - name: 커밋
+        run: |
+          git config user.name sheet-collector-bot
+          git config user.email actions@github.com
+          git add catalog.json
+          if git diff --cached --quiet; then
+            echo '변경 없음'
+            exit 0
+          fi
+          git commit -m '2권(pdmx2) 카탈로그 병합 [skip ci]'
+          for i in 1 2 3 4; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            sleep $((i * 2))
+          done
