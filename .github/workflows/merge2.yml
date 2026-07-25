@@ -16,6 +16,9 @@ jobs:
       - name: 병합 실행
         run: python3 merge_catalog2.py
 
+      - name: 카탈로그 정리 (제목 복구·깨짐 제거·중복 정리·정렬)
+        run: python3 sanitize_catalog.py
+
       - name: 커밋
         run: |
           git config user.name sheet-collector-bot
