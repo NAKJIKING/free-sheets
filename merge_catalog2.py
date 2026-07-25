@@ -3,8 +3,9 @@
 """free-sheets-2(2권) 카탈로그 병합 — 공개 raw URL로 catalog2.json을
 받아 1권 catalog.json에 합친다. 2권 곡(pdmx2·imslp 등)은 base
 필드(저장소/릴리스 URL)를 달고 있어 앱이 그쪽에서 내려받는다.
-재실행해도 안전: base를 가진 항목(=2권 유래) 전부를 걸어내고
-새 catalog2로 교체한다.
+재실행해도 안전: base가 2권 저장소를 가리키는 항목만 걸어내고
+새 catalog2로 교체한다. 3권(free-sheets-3·교본)도 base를 갖고
+있으므로 base 유무만으로 거르면 교본이 통째로 날아간다.
 """
 import json
 import os
@@ -15,6 +16,11 @@ CATALOG = os.path.join(ROOT, 'catalog.json')
 VOL2 = ('https://raw.githubusercontent.com/NAKJIKING/'
         'free-sheets-2/main/catalog2.json')
 UA = {'User-Agent': 'MySheetMusic-FreeLibrary/1.0 (catalog merge)'}
+VOL2_REPO = 'free-sheets-2'
+
+
+def is_vol2(entry):
+    return VOL2_REPO in (entry.get('base') or '')
 
 
 def main():
@@ -25,7 +31,7 @@ def main():
           if e.get('base') and e.get('file') and e.get('title')]
     catalog = json.load(open(CATALOG, encoding='utf-8'))
     before = len(catalog)
-    catalog = [e for e in catalog if not e.get('base')]
+    catalog = [e for e in catalog if not is_vol2(e)]
     catalog.extend(ok)
     with open(CATALOG, 'w', encoding='utf-8') as f:
         json.dump(catalog, f, ensure_ascii=False, indent=1)
