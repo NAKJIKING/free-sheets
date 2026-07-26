@@ -27,7 +27,8 @@ _CANON_ALIASES = {
         'ludwig van beethoven', 'beethoven ludwig van', 'l van beethoven',
     ],
     'Frédéric Chopin': [
-        'chopin', 'f chopin', 'frederic chopin', 'fryderyk chopin',
+        'chopin', 'f chopin', 'f f chopin', 'frederic chopin',
+        'fryderyk chopin',
         'chopin frederic', 'frederic francois chopin',
     ],
     'Wolfgang Amadeus Mozart': [
@@ -87,6 +88,10 @@ _CANON_ALIASES = {
                         'sergei lyapunov'],
     'Georges Bizet': ['bizet', 'g bizet', 'georges bizet'],
     'Edward MacDowell': ['macdowell', 'edward macdowell', 'e macdowell'],
+    'Edward Elgar': ['elgar', 'e elgar', 'edward elgar', 'elgar edward',
+                     'eward elgar'],
+    'William B. Bradbury': ['wm b bradbury', 'w b bradbury',
+                            'william b bradbury'],
 }
 CANON = {}
 for canonical, aliases in _CANON_ALIASES.items():
