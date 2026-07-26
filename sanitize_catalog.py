@@ -50,6 +50,72 @@ def is_broken(s):
         return True
     return False
 
+# ⓪ 저작권·품질 차단 목록 — 2026-07 전수 점검 결과.
+#    병합이 다시 담아 와도 여기서 늘 걸러진다 (source_url 기준).
+#    원칙: 작곡가가 특정되는 현대곡(사후 70년 미경과)은 제거.
+#    연주자 이름만 붙은 전통곡(Cooley's 등)은 유지.
+BLOCKED_URLS = {
+    # ── thesession: 비틀즈·영화·게임 유래 ─────────────────────
+    'https://thesession.org/tunes/2705',   # Hey Jude (McCartney)
+    'https://thesession.org/tunes/12615',  # Zelda (현대 추정)
+    'https://thesession.org/tunes/4197',   # Rohan (현대 추정)
+    # ── thesession: 현대 작곡가 작품 (트래드로 통용되지만 저작권 존속) ──
+    'https://thesession.org/tunes/4997',   # Ashokan Farewell (Jay Ungar 1982)
+    'https://thesession.org/tunes/346',    # Music for a Found Harmonium (Jeffes †1997)
+    'https://thesession.org/tunes/1016',   # Josefin's (Roger Tallroth 생존)
+    'https://thesession.org/tunes/15',     # Calliope House (Dave Richardson 생존)
+    'https://thesession.org/tunes/1863',   # Da Slockit Light (Tom Anderson †1991)
+    'https://thesession.org/tunes/5020',   # Midnight on the Water (Thomasson)
+    'https://thesession.org/tunes/211',    # Inisheer (Thomas Walsh 1979)
+    'https://thesession.org/tunes/562',    # Crested Hens (Gilles Chabenat 생존)
+    'https://thesession.org/tunes/703',    # Catharsis (Amy Cann 생존)
+    'https://thesession.org/tunes/3014',   # Ed Reavy's (†1988)
+    'https://thesession.org/tunes/8921',   # Reavy's (†1988)
+    'https://thesession.org/tunes/302',    # Maudabawn Chapel (Ed Reavy)
+    'https://thesession.org/tunes/472',    # The Hunter's House (Ed Reavy)
+    'https://thesession.org/tunes/636',    # The Otter's Holt (Junior Crehan †1998)
+    'https://thesession.org/tunes/256',    # Mist Covered Mountain (Junior Crehan)
+    'https://thesession.org/tunes/36',     # The Golden Keyboard (V. Broderick †2008)
+    'https://thesession.org/tunes/4724',   # Darby's Farewell to London (McDermott †1992)
+    'https://thesession.org/tunes/14008',  # Glen Allen (Sean Ryan †1985)
+    'https://thesession.org/tunes/3270',   # Road to Cashel (Charlie Lennon 추정)
+    'https://thesession.org/tunes/112',    # Trip to Pakistan (Tommy Peoples †2018)
+    'https://thesession.org/tunes/192',    # Tommy Peoples' (†2018)
+    'https://thesession.org/tunes/1100',   # Tommy Peoples' (†2018)
+    'https://thesession.org/tunes/1323',   # Tommy Peoples' (†2018)
+    'https://thesession.org/tunes/451',    # Brendan Tonra's (†2013)
+    'https://thesession.org/tunes/2716',   # Carmel Mahoney Mulhaire (Mulhaire †2017)
+    'https://thesession.org/tunes/2115',   # Charlie Lennon's (생존)
+    'https://thesession.org/tunes/5248',   # Charlie Lennon's Scottish Concerto
+    'https://thesession.org/tunes/12406',  # Maurice Lennon's Tribute (생존)
+    'https://thesession.org/tunes/8668',   # Finbarr Dwyer's (†2014)
+    'https://thesession.org/tunes/5623',   # Finbarr Dwyer's (†2014)
+    'https://thesession.org/tunes/3330',   # Finbarr Dwyer's (†2014)
+    'https://thesession.org/tunes/8258',   # Finbarr Dwyer's (†2014)
+    # ── pdmx2: 'Traditional' 오표기로 통과한 현대곡 ─────────────
+    'https://musescore.com/score/4880956',  # Theme Song from Titanic (Horner 추정)
+    'https://musescore.com/score/5028778',  # MacAllister's Dirk (현대 파이프곡 추정)
+    # ── archive(3권): 악보가 아닌 자료 (논문·사전·도록 등) ───────
+    'https://archive.org/details/exileidentityart00vera',
+    'https://archive.org/details/arxiv-0903.3905',
+    'https://archive.org/details/arxiv-1502.01586',
+    'https://archive.org/details/arxiv-1605.09387',
+    'https://archive.org/details/arxiv-1502.01587',
+    'https://archive.org/details/mustafayasinbascetin2019klasikserhlerinmetodolojisimethodologyofclassicalcommentarytexts_202001',
+    'https://archive.org/details/pubmed-PMC3560109',
+    'https://archive.org/details/pronouncingdicti00claruoft',
+    'https://archive.org/details/cihm_00666',
+    'https://archive.org/details/catalogueofkohle00kohlrich',
+    'https://archive.org/details/arxiv-1508.04267',
+    'https://archive.org/details/arxiv-1605.02564',
+    'https://archive.org/details/arxiv-1701.08258',
+    'https://archive.org/details/methodologyforco6811bran',
+    'https://archive.org/details/jstor-737943',
+}
+# 이름이 곧 작곡가인 현대 곡 무더기 — Paddy Fahey(†2019)의 무제 곡들은
+# 전부 "Paddy Fahey's"로 불린다. URL을 나열하는 대신 제목으로 잡는다.
+BLOCKED_TITLE = re.compile(r"(?i)^paddy fahey'?s?$")
+
 # 같은 이름의 다른 곡이 흔한 소스 — 제목 기준 중복 제거에서 제외.
 DUP_EXEMPT = {'thesession'}
 
@@ -96,6 +162,12 @@ def main():
     out = []
     for e in data:
         title = (e.get('title') or '').strip()
+
+        # ⓪ 저작권·품질 차단 목록
+        if (e.get('source_url') in BLOCKED_URLS
+                or BLOCKED_TITLE.match(title)):
+            stat['차단목록'] = stat.get('차단목록', 0) + 1
+            continue
 
         # ① 제목 복구
         if not title:

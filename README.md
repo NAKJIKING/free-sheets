@@ -25,5 +25,33 @@
 
 - **Mutopia Project** — thousands of freely redistributable editions,
   typeset by volunteers. Each piece's license is printed on the score itself.
-- **OpenScore Lieder Corpus** — 1,300+ songs transcribed by contributors and
-  professionally proofread, released under CC0. https://openscore.cc
+  https://www.mutopiaproject.org
+- **OpenScore Lieder Corpus** / **OpenScore String Quartets** — songs and
+  quartets transcribed by contributors and professionally proofread,
+  released under CC0. https://openscore.cc
+- **The Session** — community database of traditional Irish tunes.
+  Tune data © The Session contributors, made available under the
+  [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
+  Our derived tune list (the `thesession` rows of `catalog.json`) is
+  likewise available under ODbL. https://thesession.org
+- **Open Hymnal Project** — public-domain Christian hymns, ABC/MIDI
+  editions. http://openhymnal.org
+- **PDMX** (Long et al., ISMIR/IEEE) — large-scale dataset of
+  public-domain/CC0-marked MuseScore scores; we use only the
+  `no_license_conflict` subset, further restricted to composers whose
+  works are unambiguously out of copyright (or traditional tunes).
+  https://github.com/pnlong/PDMX
+- **Internet Archive** — scans of 19th–early-20th-century method books
+  and editions marked public domain. https://archive.org
+
+## 저작권 정책 / Takedown
+
+퍼블릭 도메인 판별은 한국(사후 70년)·미국(1930년 이전 발행) 기준을
+함께 적용하며, 2026-07 전수 점검에서 저작권 존속이 확인·의심되는
+곡(현대 작곡 세션 튠, 오표기된 영화·팝 편곡 등)은 `sanitize_catalog.py`
+의 차단 목록으로 영구 제외했습니다.
+
+권리자로서 이의가 있는 곡이 있다면 GitHub 이슈로 곡 제목과 근거를
+알려주세요. 확인 즉시 카탈로그와 저장소에서 내리겠습니다.
+If you are a rights holder and believe a score here infringes your
+copyright, please open a GitHub issue — we will remove it promptly.
