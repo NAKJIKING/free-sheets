@@ -90,6 +90,8 @@ _CANON_ALIASES = {
     'Edward MacDowell': ['macdowell', 'edward macdowell', 'e macdowell'],
     'Edward Elgar': ['elgar', 'e elgar', 'edward elgar', 'elgar edward',
                      'eward elgar'],
+    'Francisco Tárrega': ['tarrega', 'f tarrega', 'francisco tarrega',
+                          'tarrega francisco'],
     'William B. Bradbury': ['wm b bradbury', 'w b bradbury',
                             'william b bradbury'],
 }
