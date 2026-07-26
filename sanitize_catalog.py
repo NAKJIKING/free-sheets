@@ -19,6 +19,8 @@ import json
 import os
 import re
 
+from normalize_composers import normalize as normalize_composer
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CATALOG = os.path.join(ROOT, 'catalog.json')
 
@@ -111,6 +113,13 @@ def main():
         if is_broken(e.get('composer')):
             e['composer'] = ''
             stat['작곡가비움'] += 1
+
+        # ②-1 작곡가 표기 정규화 (normalize_composers.py) —
+        #     중복 제거 전에 해야 표기만 다른 같은 곡이 합쳐진다.
+        nc = normalize_composer(e.get('composer', ''))
+        if nc != e.get('composer', ''):
+            e['composer'] = nc
+            stat['작곡가정규화'] = stat.get('작곡가정규화', 0) + 1
 
         out.append(e)
 

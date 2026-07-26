@@ -63,8 +63,11 @@ ALIASES = {
     'PRAISE TO THE LORD THE ALMIGHTY': '다 찬양하여라',
     'ANGELS WE HAVE HEARD ON HIGH': '천사들의 노래가',
     'O LITTLE TOWN OF BETHLEHEM': '오 베들레헴 작은 골',
-    'WHAT CHILD IS THIS': '그 맑고 환한 밤중에',
+    'WHAT CHILD IS THIS': '웬 아기인가',
+    'IT CAME UPON': '그 맑고 환한 밤중에',
     'CHRIST THE LORD IS RISEN TODAY': '예수 부활했으니',
+    'JESUS CHRIST IS RISEN TODAY': '예수 부활했으니',
+    'CHRIST AROSE': '무덤에 머물러',
     'LOW IN THE GRAVE HE LAY': '무덤에 머물러',
     'IN THE SWEET BY AND BY': '해보다 더 밝은 저 천국',
     'WHEN THE ROLL IS CALLED UP YONDER': '하나님의 나팔 소리',
@@ -73,16 +76,37 @@ ALIASES = {
     'MINE EYES HAVE SEEN THE GLORY': '마귀들과 싸울지라',
     'COUNT YOUR BLESSINGS': '받은 복을 세어 보아라',
     'GREAT IS THY FAITHFULNESS': '오 신실하신 주',
-    'O COME O COME EMMANUEL': '곷 오소서 임마누엘',
+    'O COME O COME EMMANUEL': '곧 오소서 임마누엘',
     'THERE IS POWER IN THE BLOOD': '죄에서 자유를 얻게 함은',
     'WOULD YOU BE FREE FROM THE BURDEN': '죄에서 자유를 얻게 함은',
     'WERE YOU THERE': '거기 너 있었는가',
     'MORE LOVE TO THEE': '내 구주 예수를 더욱 사랑',
+    'JOYFUL JOYFUL WE ADORE THEE': '기뻐하며 경배하세',
+    'MY HOPE IS BUILT': '이 몸의 소망 무언가',
+    'O SACRED HEAD': '오 거룩하신 주님',
+    'OUR GOD OUR HELP IN AGES PAST': '옛부터 도움 되시고',
+    'PASS ME NOT': '인애하신 구세주여',
+    'THE CHURCHS ONE FOUNDATION': '교회의 참된 터는',
+    'MY JESUS AS THOU WILT': '내 주여 뜻대로',
+    'BLEST BE THE TIE THAT BINDS': '주 믿는 형제들',
+    'BENEATH THE CROSS OF JESUS': '십자가 그늘 밑에',
+    'COME THOU LONG EXPECTED JESUS': '오랫동안 기다리던',
+    'UNDER HIS WINGS': '주 날개 밑 내가 편안히 쉬네',
+    'TO GOD BE THE GLORY': '영광을 받으신 만유의 주여',
+    'I KNOW WHOM I HAVE BELIEVED': '아 하나님의 은혜로',
+    'GLORIOUS THINGS OF THEE': '시온성과 같은 교회',
+    'ALL GLORY LAUD AND HONOR': '왕 되신 우리 주께',
+    'JESUS JOY OF MANS DESIRING': '예수는 인간 소망의 기쁨',
+    'THE LORDS PRAYER': '주기도문',
+    'MAGNIFICAT': '마리아 찬가',
+    'CANON IN D': '파헬벨 캐논',
 }
 
 
 def norm(t):
-    t = re.sub(r'[^A-Za-z0-9 ]', ' ', t.upper())
+    # 어퍼스트로피는 지운다 — "Church's" → CHURCHS (키 표기와 일치).
+    t = re.sub(r"['’]", '', t.upper())
+    t = re.sub(r'[^A-Za-z0-9 ]', ' ', t)
     return re.sub(r'\s+', ' ', t).strip()
 
 
@@ -91,7 +115,9 @@ def main():
         catalog = json.load(f)
     hit = 0
     for e in catalog:
-        if e.get('source') != 'openhymnal' or e.get('alias'):
+        # 찬송가 별칭은 전부 이 스크립트가 넣는다 — 매번 새로 계산해
+        # 잘못 들어간 옛 별칭도 함께 고쳐진다.
+        if e.get('source') != 'openhymnal':
             continue
         nt = norm(e.get('title', ''))
         for k, v in ALIASES.items():
