@@ -313,28 +313,19 @@ BLOCKED_COMPOSERS = {
 BLOCKED_TITLE = re.compile(r"(?i)^paddy fahey'?s?$")
 
 
-# ⓺ PDMX 수집분의 퍼블릭 도메인 판정 실패분.
-#    수집기(free-sheets-2/collect_pdmx2.py)가 작곡가 이름을 문자열
-#    부분일치로 찾던 시절에 통과한 것들 — 'dont know'가 Jakob **Dont**로,
-#    'Lalo Schifrin'(†2025)이 Édouard **Lalo**로 잡혔다. 수집기는 성
-#    자리에서만 대조하도록 고쳤고, 이미 담긴 곡은 이 목록으로 뺀다.
-#    작곡가가 비어 있는 PDMX 곡도 권리 확인이 불가능하므로 함께 제외.
-def _load_pdmx_block():
-    p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                     'blocked_pdmx_composers.txt')
-    if not os.path.exists(p):
-        return set()
-    out = set()
-    for line in open(p, encoding='utf-8'):
-        if line.startswith('#'):
-            continue
-        line = line.strip()
-        if line:
-            out.add(line.lower())
-    return out
+# ⓺ PDMX 수집분은 '작곡가가 PD 명단에 있는 곡'만 남긴다.
+#    차단 목록이 아니라 허용 목록이다 — 이름을 나열해 빼는 방식은
+#    새 이름이 들어올 때마다 샌다.
+#
+#    특히 'Traditional'·'Anonymous' 표기만으로는 통과시키지 않는다.
+#    그 값은 업로더가 직접 적은 것이라 검증된 사실이 아니고, 2026-07
+#    점검에서 이 경로로 들어온 곡에서 실제 침해가 확인됐다
+#    (전통곡 표기 아래 현대 편곡·팝 편곡이 섞여 있었다).
+#
+#    판정 기준은 수집기와 같은 파일(pd_match.py)을 쓴다 —
+#    수집기만 고치고 정리 스크립트를 안 고치면 다시 어긋난다.
+from pd_match import is_pd_composer  # noqa: E402
 
-
-PDMX_BLOCKED = _load_pdmx_block()
 PDMX_SOURCES = {'pdmx', 'pdmx2'}
 
 # 같은 이름의 다른 곡이 흔한 소스 — 제목 기준 중복 제거에서 제외.
@@ -404,7 +395,7 @@ def main():
         elif comp.lower() in BLOCKED_COMPOSERS:
             why = '보호기간중'
         elif (e.get('source') in PDMX_SOURCES
-              and (not comp or comp.lower() in PDMX_BLOCKED)):
+              and not is_pd_composer(comp, '')):
             why = 'PD판정실패'
         if why:
             stat[why] = stat.get(why, 0) + 1

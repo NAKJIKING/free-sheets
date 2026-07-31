@@ -16,6 +16,7 @@ import os
 import sys
 
 import sanitize_catalog as S
+from pd_match import is_pd_composer
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CATALOG = os.path.join(ROOT, 'catalog.json')
@@ -44,8 +45,7 @@ def violations(cat):
             why = '작곡가불명'
         elif comp.lower() in S.BLOCKED_COMPOSERS:
             why = '보호기간중'
-        elif src in S.PDMX_SOURCES and (not comp
-                                        or comp.lower() in S.PDMX_BLOCKED):
+        elif src in S.PDMX_SOURCES and not is_pd_composer(comp, ''):
             why = 'PD판정실패'
         elif not title:
             why = '제목없음'

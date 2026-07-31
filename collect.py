@@ -14,6 +14,7 @@ import os
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
 
@@ -22,13 +23,24 @@ RAW = os.path.join(ROOT, 'raw')
 CATALOG = os.path.join(ROOT, 'catalog.json')
 
 UA = {'User-Agent': 'MySheetMusic-FreeLibrary/1.0 (public-domain collector)'}
-PER_INSTRUMENT_CAP = 400         # v2: 사실상 전량 수집 (Mutopia 최대 악기가 ~400곡)
+PER_INSTRUMENT_CAP = 900         # 사실상 전량 수집 (악기별 상한을 넉넉히)
 REQUEST_DELAY = 1.5              # 서버 예의용 딜레이(초)
 
-# 대표 악기 (Mutopia 검색 파라미터명 기준)
+# 악기 (Mutopia 검색 파라미터명 기준).
+# Mutopia는 전 곡이 PD 헌정 또는 CC 라이선스이고 자원봉사자가 새로
+# 조판해 판면권도 걸리지 않는다 — 우리가 가진 소스 중 신뢰 등급이
+# 가장 높다. 대표 8종만 받던 것을 전 악기로 넓힌다
+# (2026-07 저작권 점검에서 불확실한 소스를 뺀 만큼을 여기서 채운다).
 INSTRUMENTS = [
+    # 기존 8종
     'Piano', 'Flute', 'Violin', 'Clarinet', 'Trumpet',
     'Saxophone', 'Cello', 'Guitar',
+    # 확대분 — 건반·현·목관·금관·성악·합주
+    'Organ', 'Harpsichord', 'Viola', 'Harp', 'Recorder', 'Lute',
+    'Mandolin', 'Banjo', 'Oboe', 'Bassoon', 'Horn', 'Trombone',
+    'Tuba', 'Double bass', 'Voice', 'Choir', 'Orchestra',
+    'String ensemble', 'Wind ensemble', 'Brass ensemble',
+    'Chamber ensemble', 'Percussion', 'Accordion', 'Ukulele',
 ]
 
 # 재배포 허용으로 취급하는 라이선스 (표기 그대로 보존해 출처 고지에 사용)
@@ -105,8 +117,10 @@ def collect_mutopia():
         print(f'== Mutopia: {inst}', flush=True)
         entries = []
         for startat in range(0, 2000, 25):  # 페이지 순회 (전 페이지)
+            # 악기 이름에 공백이 있는 것들('Double bass')이 있어 인코딩한다.
             url = ('https://www.mutopiaproject.org/cgibin/make-table.cgi'
-                   f'?Instrument={inst}&startat={startat}')
+                   f'?Instrument={urllib.parse.quote(inst)}'
+                   f'&startat={startat}')
             html = fetch(url)
             if html is None:
                 break
