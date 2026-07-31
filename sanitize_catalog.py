@@ -328,7 +328,11 @@ from pd_match import is_pd_composer  # noqa: E402
 
 # 작곡가가 PD 명단에 있어야만 남기는 소스 — 수집기와 같은 기준을
 # 정리 쪽에서도 강제한다(수집기만 고치면 어긋난다).
-PDMX_SOURCES = {'pdmx', 'pdmx2', 'cpdl'}
+# 이 소스들은 업로더·기여자가 메타데이터를 직접 적는 곳이라
+# 표기만 믿을 수 없다. Mutopia·OpenScore 처럼 편집진이 통제하는
+# 소스는 여기 넣지 않는다.
+STRICT_PD_SOURCES = {'pdmx', 'pdmx2', 'cpdl', 'imslp'}
+PDMX_SOURCES = STRICT_PD_SOURCES   # 옛 이름 (다른 스크립트가 참조)
 
 
 # ⓻ 교본(archive) 중 작곡가 표기를 원본 메타데이터로 확인하지 못한 곡.
@@ -357,9 +361,10 @@ SOURCE_ORDER = {
     'openscore_quartets': 2,  # 실내악 정전
     'archive': 3,             # 교재·교본
     'cpdl': 4,                # 합창 정전 (라이선스 명시 소스)
-    'pdmx': 5,                # 인기 편곡
-    'pdmx2': 6,
-    'openhymnal': 7,          # 찬송가
+    'imslp': 5,               # 원판 스캔 (파일별 PD 표기 확인)
+    'pdmx': 6,                # 인기 편곡
+    'pdmx2': 7,
+    'openhymnal': 8,          # 찬송가
     'thesession': 9,          # 민속곡 — 맨 뒤
 }
 
@@ -413,7 +418,7 @@ def main():
             why = '작곡가불명'
         elif comp.lower() in BLOCKED_COMPOSERS:
             why = '보호기간중'
-        elif (e.get('source') in PDMX_SOURCES
+        elif (e.get('source') in STRICT_PD_SOURCES
               and not is_pd_composer(comp, '')):
             why = 'PD판정실패'
         elif url in ARCHIVE_BLOCKED:

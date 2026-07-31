@@ -45,7 +45,7 @@ def violations(cat):
             why = '작곡가불명'
         elif comp.lower() in S.BLOCKED_COMPOSERS:
             why = '보호기간중'
-        elif src in S.PDMX_SOURCES and not is_pd_composer(comp, ''):
+        elif src in S.STRICT_PD_SOURCES and not is_pd_composer(comp, ''):
             why = 'PD판정실패'
         elif url in S.ARCHIVE_BLOCKED:
             why = '교본표기미확인'
