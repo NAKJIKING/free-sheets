@@ -1,0 +1,29 @@
+name: 카탈로그 검사
+
+# 차단 목록에 있는 곡이 카탈로그로 다시 새어 들어오지 않았는지 본다.
+# 목록만 있고 검증이 없어 13건이 그대로 실려 있던 적이 있다.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'catalog.json'
+      - 'sanitize_catalog.py'
+      - 'blocked_*.txt'
+  pull_request:
+    paths:
+      - 'catalog.json'
+      - 'sanitize_catalog.py'
+      - 'blocked_*.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: 차단 목록 누수 검사
+        run: python3 check_catalog.py

@@ -111,10 +111,231 @@ BLOCKED_URLS = {
     'https://archive.org/details/arxiv-1701.08258',
     'https://archive.org/details/methodologyforco6811bran',
     'https://archive.org/details/jstor-737943',
+    # ── 2026-07-31 전수조사 확정분 (실물 PDF·제목 확인) ──────
+    'https://musescore.com/score/5834139',  # Youngblood / 5 Seconds of Summer (2018)
+    'https://musescore.com/score/5912945',  # Mission: Impossible / Lalo Schifrin (1966)
+    'https://musescore.com/score/5921558',  # Mission: Impossible arr. C. Sweedy
+    'https://musescore.com/score/5888245',  # Simone / Frank Foster (†2011)
+    'https://musescore.com/score/5893332',  # Philip Wesley (생존, 본인 판매 중)
+    'https://musescore.com/score/5838347',  # Mohabbatein (2000) 영화 테마
+    'https://musescore.com/score/5769215',  # Victoria Booth-Clipborn Demarest (†1982)
+    'https://musescore.com/score/5909165',  # Keith Jarrett 채보 (생존)
+    'https://musescore.com/score/5650234',  # Banana Boat Song / Irving Burgie (†2019)
+    'https://musescore.com/score/5962531',  # Oh Noel / Piffer·Weekes (생존)
+    'https://musescore.com/score/5707163',  # Fantaisie-impromptu arr. Jacob Koller (생존)
+    'https://musescore.com/score/5420495',  # Himno de la Alegría / Miguel Ríos (생존)
+    'https://musescore.com/score/6049167',  # waste / Kurstin·Foster
+    'https://musescore.com/score/4574648',  # How Great Thou Art — Hine 영어 가사
+    # 정책성(기존 '거부감 우려' 기준과 통일) — 저작권과 별개
+    'https://musescore.com/score/5881036',  # Funkerlied (국방군 군가)
+    'https://musescore.com/score/5866544',  # Mi General, Augusto Pinochet
+    'https://musescore.com/score/5946346',  # Die Wacht am Rhein
+    # ── PDF 본문에서 편곡자·채보자가 확인된 곡 (2차적저작물 권리) ──
+    'https://musescore.com/score/5578965',  # To A Wild Rose arranged for Violin Sol / arr. Matthew TATEOSSIAN
+    'https://musescore.com/score/6290624',  # 24 Caprices for Solo Violin Op.1 / Niccolo Paganini arr. Brandon Andr
+    'https://musescore.com/score/5911887',  # 3 Gymnopédies / (Arranged by dddiam)
+    'https://musescore.com/score/5752228',  # I saw my lady weepe / James Gibb editions
+    'https://musescore.com/score/5488033',  # L Arlesienne Suite No 1 Violin I / Arr: Hilary Day 2/20/2019
+    'https://musescore.com/score/5764368',  # When others sings Venite exultemus (Th / James Gibb editions
+    'https://musescore.com/score/5992590',  # Chanson de l'Oignon / arr. Ben Neithardt
+    'https://musescore.com/score/5790470',  # Old Folks At Home / This edition produced by Andrew Si
+    'https://musescore.com/score/5790350',  # i saw three ships / This edition  Andrew Sims 2014
+    'https://musescore.com/score/5924039',  # Violin Sonata in D minor Op.5 No.12 'L / Simplified Arrangement
+    'https://musescore.com/score/5468765',  # Brahms: Nachtwandler Op. 86 Nº 3 / Arr. Max Laurischkus
+    'https://musescore.com/score/5757900',  # I know not if or dark or bright / James Gibb editions
+    'https://musescore.com/score/5861792',  # Canon and Gigue in D major P.37 / Arr.Eliaz Bobadilla(Flute Cool)
+    'https://musescore.com/score/5757543',  # Alma redemptoris Mater / James Gibb editions
+    'https://musescore.com/score/4811958',  # Swan Lake (ballet) Op.20 / arr. by Jacob Solis
+    'https://musescore.com/score/5785683',  # What Child is this? / This edition  Andrew Sims 2014
+    'https://musescore.com/score/5484201',  # Le nozze di Figaro K.492 / arr. Anton Bernhard Furstenau
+    'https://musescore.com/score/5895364',  # jim jones at botany bay / Nyoongar Song (transcribed 1852 by
+    'https://musescore.com/score/5788844',  # Unto us is born a Son / This edition  Andrew Sims 2014
+    'https://musescore.com/score/5410325',  # 2 Sonatinas for Piano Anh.5 / Arrangement für zwei Violinen
+    'https://musescore.com/score/5750479',  # flow my tears / James Gibb editions
+    'https://musescore.com/score/6367611',  # Violin Sonata in C major K.14 / arr. Rampal / Veyron-Lacroix
+    'https://musescore.com/score/5581291',  # Violinkonzert_Nr._4_A minor / Niccolo Paganini (Transcripted to 
+    'https://musescore.com/score/5216102',  # The Washington Post March / Arranged by Andrew Balent
+    'https://musescore.com/score/5788795',  # Macht hoch die Tür die Tor macht weit / Harmony: arr. A.S.
+    'https://musescore.com/score/2577231',  # Violin Concerto in D major Op.61 / transcribed for violin and piano a
+    'https://musescore.com/score/165019',  # String Quintet K.Anh.83/592b / 
+    'https://musescore.com/score/1156641',  # Canonic Sonata Number One / transcribed for B♭ clarinet
+    'https://musescore.com/score/86309',  # Concerto in D Allegro (2) / Arr. & Cadenza by Michel Rondeau
+    'https://musescore.com/score/6269453',  # Jesu der du meine Seele BWV 78 / arr. André Papillon
+    'https://musescore.com/score/5873890',  # god rest ye merry gentlemen / Arranged by: David Archuleta and C
+    'https://musescore.com/score/5927365',  # molly malone / arr. Florian Brambock
+    'https://musescore.com/score/6212249',  # 14 Romances Op.34 / arrangiamento per flauto  Vasco Ma
+    'https://musescore.com/score/6371663',  # Manucript Wandembrile 84 / Transcription n°80 du Manuscrit Wa
+    'https://musescore.com/score/203281',  # Mélancolie per Flauto / Cesar Franck (arr. Valentino Minut
+    'https://musescore.com/score/5766979',  # Then sit thee downe&amp; say thy Nunc  / James Gibb editions
+    'https://musescore.com/score/5789299',  # Here We Come A-Wassailing / This edition  Andrew Sims 2014
+    'https://musescore.com/score/6280206',  # Herr Jesu Christ du höchstes Gut BWV 1 / arr. André Papillon
+    'https://musescore.com/score/5746441',  # An die Musik D.547 / James Gibb editions
+    'https://musescore.com/score/5872132',  # Morrison's jig / Arranged by Ollie Stevens
+    'https://musescore.com/score/6265878',  # Preise Jerusalem den Herren BWV 119 / arr. André Papillon
+    'https://musescore.com/score/167419',  # the irish washerwoman / 
+    'https://musescore.com/score/5792453',  # Illumina oculos meos / James Gibb editions
+    'https://musescore.com/score/5783808',  # The first Nowell / arr. John Stainer
+    'https://musescore.com/score/4852365',  # The Nutcracker (ballet) Op.71 / arranged by Aaron Gascon
+    'https://musescore.com/score/5874724',  # the first noel / Arr. Jason Garrison
+    'https://musescore.com/score/5790378',  # O Jesulein süß o Jesulein mild BWV 493 / arr. J.S. Bach
+    'https://musescore.com/score/5790446',  # Cranham / This edition  Andrew Sims 2014
+    'https://musescore.com/score/4880134',  # Salut d'amour Op.12 / Composed by Eward Elgar, Arranged 
+    'https://musescore.com/score/32273',  # Folk Medley for Clarinets / 
+    'https://musescore.com/score/4063251',  # Clarinet Concerto K.622 / (Solo Transcribed for Flute)
+    'https://musescore.com/score/4889687',  # The House of the Rising Sun / Arranged by: Ryan Davenport
+    'https://musescore.com/score/5771237',  # Gabriel's Message (51324) / This edition  Andrew Sims 2014
+    'https://musescore.com/score/3571656',  # Canon and Gigue in D major P.37 / Transcriber: yyaname
+    'https://musescore.com/score/6285767',  # Schweigt stille plaudert nicht BWV 211 / arr. André Papillon
+    'https://musescore.com/score/5750692',  # Vide Domine / James Gibb editions
+    'https://musescore.com/score/5764469',  # Tua Jesu dilectio / James Gibb editions
+    'https://musescore.com/score/6272513',  # Gott der Herr ist Sonn und Schild BWV  / arr. André Papillon
+    'https://musescore.com/score/5909670',  # Azeri Folk Music / Azari Trad. Arr. Lennard Farwick
+    'https://musescore.com/score/5785364',  # While Shepherds Watched Their Flocks / This edition  Andrew Sims 2014
+    'https://musescore.com/score/5999394',  # Piano Sonata No.14 Op.27 No.2 / Ludwig van Beethoven (arr. Charley
+    'https://musescore.com/score/126815',  # a la nanita nana / Ritmo Chocoano 2013, Transposed an
+    'https://musescore.com/score/5746456',  # Of one that is so fair and bright / This edition  Andrew Sims 2016
+    'https://musescore.com/score/3475681',  # Piano Sonata No.24 Op.78 / Arranged for clarinet and piano by
+    'https://musescore.com/score/5926589',  # Brillante Phantaisie / Arban, arr. Dennis Geurts
+    'https://musescore.com/score/5747423',  # Symphony No.9 Op.95 / Arr. by Jacob Dellinger
+    'https://musescore.com/score/6308738',  # Mer hahn en neue Oberkeet BWV 212 / arr. André Papillon
+    'https://musescore.com/score/554151',  # christmas medley / Arranged
+    'https://musescore.com/score/4619976',  # Piano Sonata No.14 Op.27 No.2 / Arranged by Hayley & Sachiko
+    'https://musescore.com/score/6288369',  # Süsser Trost mein Jesus kömmt BWV 151 / arr. André Papillon
+    'https://musescore.com/score/6291560',  # Was Gott tut das ist wohlgetan BWV 99 / arr. André Papillon
+    'https://musescore.com/score/5862513',  # orchestral suite no 2 in b minor bwv 1 / Arr. by Philip R.M.
+    'https://musescore.com/score/5976504',  # Lute Suite in E minor BWV 996 / arr. Mark Bücker
+    'https://musescore.com/score/6149240',  # Maler for folkemusikk / Arr:
+    'https://musescore.com/score/5785237',  # Tenebrae factae sunt / James Gibb editions
+    'https://musescore.com/score/5436903',  # Greensleeves / Arranged by Pierre-Antoine Roby
+    'https://musescore.com/score/2875806',  # Sonata for Bassoon and Cello in B-flat / arr. Jeff Slade
+    'https://musescore.com/score/5923120',  # Don Carlo / arr:Allan James
+    'https://musescore.com/score/471871',  # Rigadoon in C major Z.653 / 
+    'https://musescore.com/score/5939783',  # La fille aux cheveux de lin / Arrangé par Olivér Nagy
+    'https://musescore.com/score/108610',  # Ave Maria D.839 / semplificata e arrangiata per sax 
+    'https://musescore.com/score/5290059',  # Ave Maria / Arrangement by Jaime A. Sánchez
+    'https://musescore.com/score/5782875',  # Hark the Herald Angels Sing / This edition  Andrew Sims 2014
+    'https://musescore.com/score/4818780',  # Air 'on the G string' Orchestral Suite / Arranged by Banuwarsa
+    'https://musescore.com/score/5813678',  # Jeg Ser Deg Sote Lam - for Flute and P / arr. Susanna Lundeng
+    'https://musescore.com/score/5857214',  # Hocus Pocus / Transcribed by Paul Wagner
+    'https://musescore.com/score/2838536',  # Scarborough Faire with variations / Traditional - arr: M Graham
+    'https://musescore.com/score/5901821',  # Air 'on the G string' Orchestral Suite / arr. Ruth Bearden
+    'https://musescore.com/score/6270178',  # Liebster Gott wenn werd ich sterben? B / arr. André Papillon
+    'https://musescore.com/score/5789386',  # Angels from the realms of glory / This edition  Andrew Sims 2014
+    'https://musescore.com/score/4920576',  # 12 Horn Duos K.487/496a / Arranged by Watson Forbes
+    'https://musescore.com/score/5789821',  # Alla Trinita Beata / This edition  Andrew Sims 2014
+    'https://musescore.com/score/5913255',  # Cabar Feidh / arranged by Allan Ferguson
+    'https://musescore.com/score/4862281',  # the first noel / Arr. Jason Garrison
+    'https://musescore.com/score/152011',  # Cello Concerto Op.85 / Arr. thefoilist
+    'https://musescore.com/score/1955181',  # The Thunderer / Arr. for Bb Cornet by Benned Hedeg
+    'https://musescore.com/score/5193656',  # The Children of Haimon / Arranged from Quadrille
+    'https://musescore.com/score/5743952',  # God save the king / This edition produced by Andrew Si
+    'https://musescore.com/score/5968074',  # locomotion / Transcribed by Paul Wagner
+    'https://musescore.com/score/5786207',  # In monte Oliveti / James Gibb editions
+    'https://musescore.com/score/5949119',  # Piano Sonata No.20 Op.49 No.2 / arr. for Alto Saxophone Duet by Ca
+    'https://musescore.com/score/5845011',  # Carmen / Arranged by RICHARD SAUCEDO
+    'https://musescore.com/score/2838491',  # House of the Rising Sun / Traditional - arr M Graham
+    'https://musescore.com/score/5789359',  # Good Christian men rejoice / This edition  Andrew Sims 2014
+    'https://musescore.com/score/6274529',  # Was frag ich nach der Welt BWV 94 / arr. André Papillon
+    'https://musescore.com/score/5752800',  # Slav'sya / This edition  Andrew Sims 2012
+    'https://musescore.com/score/711261',  # bonny portmore / Irish traditional (Arr. Erik Malta
+    'https://musescore.com/score/6367748',  # Violin Sonata No.9 Op.47 / Transcribed by alliebaster
+    'https://musescore.com/score/5861011',  # Pas de Deux / (arr. T.Inaba)
+    'https://musescore.com/score/5748631',  # Ständchen D.889 / James Gibb editions
+    'https://musescore.com/score/6008001',  # Piano Sonata No.18 Op.31 No.3 / Arr. Berkheimer
+    'https://musescore.com/score/6267196',  # Brich dem Hungrigen dein Brot BWV 39 / arr. André Papillon
+    'https://musescore.com/score/5661986',  # Murka / Murka. Author unknown, ca. 1920. A
+    'https://musescore.com/score/5450727',  # Children's Album Op.39 / Arrangement for two violins by A. 
 }
+# ── 규칙 기반 차단 — 2026-07-31 전수조사 결과 ────────────────────
+# URL 열거는 수집기가 새로 담아오는 곡을 막지 못한다. 아래는 패턴으로
+# 막아 재수집·재병합에도 계속 걸러지게 한 규칙들.
+
+# ⓵ archive: 악보가 아닌 자료(논문·초록·도록). 저자란에 클래식 작곡가
+#    이름이 자동으로 붙어 '저작자 아닌 자를 저작자로 표시'까지 된다.
+NON_SCORE_ID = re.compile(
+    r'(?i)/details/(arxiv-|pubmed-|PMC\d|jstor-|cihm_|osti|'
+    r'nasa|ERIC_|DTIC|bub_gb_)')
+
+# ⓶ thesession: 작곡가가 특정되는 튠은 전통곡이 아니다.
+#    The Session 은 composer 필드를 따로 제공하므로, 그 값이 있는 튠은
+#    현대 창작곡으로 보고 제외한다(생존 작곡가 다수 확인).
+#    tune_id 목록은 조사 산출물에서 가져온다.
+def _load_session_block():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     'blocked_session_tunes.txt')
+    if not os.path.exists(p):
+        return set()
+    out = set()
+    for line in open(p, encoding='utf-8'):
+        line = line.split('#')[0].strip()
+        if line:
+            out.add(f'https://thesession.org/tunes/{line}')
+    return out
+
+SESSION_BLOCKED = _load_session_block()
+
+# ⓷ 편곡자·채보자가 명시된 곡 — 편곡물은 2차적저작물이라 원곡이 PD여도
+#    편곡자의 권리가 따로 산다. 업로더의 CC0 선언은 자기 편곡 층위만
+#    커버할 뿐 원곡 이용허락을 대신하지 못한다.
+ARRANGER = re.compile(
+    r'(?i)\b(arr\.|arrang|transcrib|transcription by|realization by|'
+    r'harmon(y|ized) by|adapted by|edited by)\b')
+
+# ⓸ 작곡가란이 사람 이름이 아니라 계정명·설명문인 경우 — 출처 불명이라
+#    권리 상태를 확인할 길이 없다(현대 창작곡이 이 경로로 들어왔다).
+BAD_COMPOSER = re.compile(
+    r'(?i)^(dont know|unknown artist|me\b|myself|anonymous user|'
+    r'various|n/?a|none|test|asdf)$')
+
+# ⓹ 사후 70년 미경과가 확인된 작곡가 (2026년 기준 1955년 이전 사망만 PD)
+BLOCKED_COMPOSERS = {
+    'andré popp', 'andre popp',                    # †2014
+    'victoria booth-clipborn demarest',            # †1982
+    'gayle kowalchyk',                             # 생존
+    'dekkadeci',                                   # 생존(필명)
+    'wesley steenbergen',                          # 생존
+    'paul ernst ruppel',                           # †2006
+    'harry d. clarke',                             # †1957
+    'cyprien katsaris',                            # 생존
+    'anna cramer',                                 # †1968
+    'roy turk & russell robinson',                 # †1963/1966
+    'billy rose',                                  # †1966
+    'philip wesley',                               # 생존
+    'lalo schifrin',                               # †2025
+    'keith jarrett',                               # 생존
+    'irving burgie',                               # †2019
+    'jacob koller',                                # 생존
+    'miguel ríos', 'miguel rios',                  # 생존
+}
+
 # 이름이 곧 작곡가인 현대 곡 무더기 — Paddy Fahey(†2019)의 무제 곡들은
 # 전부 "Paddy Fahey's"로 불린다. URL을 나열하는 대신 제목으로 잡는다.
 BLOCKED_TITLE = re.compile(r"(?i)^paddy fahey'?s?$")
+
+
+# ⓺ PDMX 수집분의 퍼블릭 도메인 판정 실패분.
+#    수집기(free-sheets-2/collect_pdmx2.py)가 작곡가 이름을 문자열
+#    부분일치로 찾던 시절에 통과한 것들 — 'dont know'가 Jakob **Dont**로,
+#    'Lalo Schifrin'(†2025)이 Édouard **Lalo**로 잡혔다. 수집기는 성
+#    자리에서만 대조하도록 고쳤고, 이미 담긴 곡은 이 목록으로 뺀다.
+#    작곡가가 비어 있는 PDMX 곡도 권리 확인이 불가능하므로 함께 제외.
+def _load_pdmx_block():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     'blocked_pdmx_composers.txt')
+    if not os.path.exists(p):
+        return set()
+    out = set()
+    for line in open(p, encoding='utf-8'):
+        if line.startswith('#'):
+            continue
+        line = line.strip()
+        if line:
+            out.add(line.lower())
+    return out
+
+
+PDMX_BLOCKED = _load_pdmx_block()
+PDMX_SOURCES = {'pdmx', 'pdmx2'}
 
 # 같은 이름의 다른 곡이 흔한 소스 — 제목 기준 중복 제거에서 제외.
 DUP_EXEMPT = {'thesession'}
@@ -163,10 +384,30 @@ def main():
     for e in data:
         title = (e.get('title') or '').strip()
 
-        # ⓪ 저작권·품질 차단 목록
-        if (e.get('source_url') in BLOCKED_URLS
-                or BLOCKED_TITLE.match(title)):
-            stat['차단목록'] = stat.get('차단목록', 0) + 1
+        # ⓪ 저작권·품질 차단 — URL 목록 + 규칙(재수집 대비)
+        url = e.get('source_url') or ''
+        comp = (e.get('composer') or '').strip()
+        blob = f'{title} {comp}'
+        why = None
+        if url in BLOCKED_URLS:
+            why = '차단목록'
+        elif BLOCKED_TITLE.match(title):
+            why = '차단제목'
+        elif url in SESSION_BLOCKED:
+            why = 'session작곡가'
+        elif NON_SCORE_ID.search(url):
+            why = '비악보'
+        elif ARRANGER.search(blob):
+            why = '편곡자권리'
+        elif BAD_COMPOSER.match(comp):
+            why = '작곡가불명'
+        elif comp.lower() in BLOCKED_COMPOSERS:
+            why = '보호기간중'
+        elif (e.get('source') in PDMX_SOURCES
+              and (not comp or comp.lower() in PDMX_BLOCKED)):
+            why = 'PD판정실패'
+        if why:
+            stat[why] = stat.get(why, 0) + 1
             continue
 
         # ① 제목 복구
