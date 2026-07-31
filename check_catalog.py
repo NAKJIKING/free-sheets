@@ -47,6 +47,8 @@ def violations(cat):
             why = '보호기간중'
         elif src in S.PDMX_SOURCES and not is_pd_composer(comp, ''):
             why = 'PD판정실패'
+        elif url in S.ARCHIVE_BLOCKED:
+            why = '교본표기미확인'
         elif not title:
             why = '제목없음'
         if why:

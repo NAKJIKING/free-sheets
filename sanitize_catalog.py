@@ -328,6 +328,22 @@ from pd_match import is_pd_composer  # noqa: E402
 
 PDMX_SOURCES = {'pdmx', 'pdmx2'}
 
+
+# ⓻ 교본(archive) 중 작곡가 표기를 원본 메타데이터로 확인하지 못한 곡.
+#    수집기가 "Czerny" 로 검색해 나온 결과에 그 이름을 작곡가로 붙여,
+#    그 사람이 편집만 한 남의 작품에도 이름이 달렸다(체르니 교정판
+#    평균율 등). 목록은 free-sheets-3/verify_archive_meta.py 가 만든다.
+def _load_archive_block():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     'blocked_archive.txt')
+    if not os.path.exists(p):
+        return set()
+    return {ln.strip() for ln in open(p, encoding='utf-8')
+            if ln.strip() and not ln.startswith('#')}
+
+
+ARCHIVE_BLOCKED = _load_archive_block()
+
 # 같은 이름의 다른 곡이 흔한 소스 — 제목 기준 중복 제거에서 제외.
 DUP_EXEMPT = {'thesession'}
 
@@ -397,6 +413,8 @@ def main():
         elif (e.get('source') in PDMX_SOURCES
               and not is_pd_composer(comp, '')):
             why = 'PD판정실패'
+        elif url in ARCHIVE_BLOCKED:
+            why = '교본표기미확인'
         if why:
             stat[why] = stat.get(why, 0) + 1
             continue
