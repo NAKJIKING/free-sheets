@@ -326,7 +326,9 @@ BLOCKED_TITLE = re.compile(r"(?i)^paddy fahey'?s?$")
 #    수집기만 고치고 정리 스크립트를 안 고치면 다시 어긋난다.
 from pd_match import is_pd_composer  # noqa: E402
 
-PDMX_SOURCES = {'pdmx', 'pdmx2'}
+# 작곡가가 PD 명단에 있어야만 남기는 소스 — 수집기와 같은 기준을
+# 정리 쪽에서도 강제한다(수집기만 고치면 어긋난다).
+PDMX_SOURCES = {'pdmx', 'pdmx2', 'cpdl'}
 
 
 # ⓻ 교본(archive) 중 작곡가 표기를 원본 메타데이터로 확인하지 못한 곡.
@@ -354,9 +356,10 @@ SOURCE_ORDER = {
     'openscore_lieder': 1,    # 가곡 정전
     'openscore_quartets': 2,  # 실내악 정전
     'archive': 3,             # 교재·교본
-    'pdmx': 4,                # 인기 편곡
-    'pdmx2': 5,
-    'openhymnal': 6,          # 찬송가
+    'cpdl': 4,                # 합창 정전 (라이선스 명시 소스)
+    'pdmx': 5,                # 인기 편곡
+    'pdmx2': 6,
+    'openhymnal': 7,          # 찬송가
     'thesession': 9,          # 민속곡 — 맨 뒤
 }
 
