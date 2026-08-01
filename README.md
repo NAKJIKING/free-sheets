@@ -56,23 +56,35 @@ Takedown 절차로 즉시 내립니다.
   Berg-Kirkpatrick, Julian McAuley). Dataset released under **CC BY 4.0**
   via Zenodo (DOI [10.5281/zenodo.13763756](https://doi.org/10.5281/zenodo.13763756));
   we use only the `no_license_conflict` subset, further restricted to
-  composers whose works are unambiguously out of copyright (or traditional
-  tunes). Per-song license strings come from the uploader's MuseScore
-  declaration, which we do not independently verify.
+  composers whose works are unambiguously out of copyright. Uploader-typed
+  "Traditional"/"Anonymous" is **not** accepted as evidence — sampling found
+  modern arrangements filed under it. Per-song license strings come from the
+  uploader's MuseScore declaration, which we do not independently verify.
   https://github.com/pnlong/PDMX
 - **Internet Archive** — scans of 19th–early-20th-century method books
-  and editions marked public domain. https://archive.org
+  and editions marked public domain. Composer attributions are checked
+  against each item's own `creator` metadata (first-listed author), because
+  searching by a name also returns editions that person merely edited.
+  https://archive.org
 
 ## 저작권 정책 / Takedown
 
 퍼블릭 도메인 판별은 한국·EU(사후 70년)와 미국(1930년 이전 발행)
-기준을 함께 적용합니다. 2026-07 전수 점검에서 저작권 존속이
-확인·의심되는 곡은 `sanitize_catalog.py`로 영구 제외했습니다 —
-작곡가가 표기된 현대 세션 튠 1,715곡, 오표기된 영화·팝 편곡,
-학술 논문 스캔 등 악보가 아닌 자료, 편곡자 권리가 남은 판본,
-사후 70년이 지나지 않은 작곡가의 곡 등 총 2,031곡(18,093 → 16,062).
-점검 규칙은 이름 목록이 아니라 코드로 남겨 두어 이후 수집분에도
-자동으로 적용됩니다.
+기준을 함께 적용합니다. 2026-07 전수 점검에서 권리 관계를 확인할 수
+없는 곡을 모두 제외했습니다 — **18,093 → 11,153곡**.
+
+ · 작곡가가 표기된 현대 세션 튠 1,715곡 (전통곡이 아니다)
+ · 업로더가 'Traditional'·'Anonymous' 라고만 적은 곡 4,749곡
+   (표본에서 현대 편곡·팝 편곡이 나왔다 — 표기는 증거가 아니다)
+ · 작곡가 이름을 문자열 부분일치로 찾다 통과한 곡 713곡
+   ('dont know'→Jakob Dont, 'Lalo Schifrin'→Édouard Lalo)
+ · 악보가 아닌 학술 자료 46곡 · 편곡자 권리가 남은 판본 · 사후
+   70년 미경과 작곡가의 곡 · 원본 메타데이터로 작곡가를 확인하지
+   못한 교본 104곡
+
+점검 규칙은 이름 목록이 아니라 **코드**로 남겨 두어 이후 수집분에도
+자동으로 적용되고, `check_catalog.py` 가 규칙 누수를 CI에서 막습니다
+(목록만 있고 검증이 없던 시절 52건 중 13건이 그대로 실려 있었습니다).
 
 권리자로서 이의가 있는 곡이 있다면 GitHub 이슈로 곡 제목과 근거를
 알려주세요. 확인 즉시 카탈로그와 저장소에서 내리겠습니다.
