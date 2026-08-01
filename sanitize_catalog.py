@@ -468,6 +468,24 @@ def main():
             e['composer'] = nc
             stat['작곡가정규화'] = stat.get('작곡가정규화', 0) + 1
 
+        # ②-2 정규화·비움 뒤의 값으로 저작권 규칙 재평가.
+        #     ⓪의 첫 평가는 원본 문자열을 본다 — 'X arr. Y'가 정규화로
+        #     'X'가 되거나 깨진 표기가 비워지면, 첫 평가를 통과한 곡이
+        #     검사 스크립트(check_catalog)에서는 걸려 정리와 검사가
+        #     어긋난다. 최종 값으로 한 번 더 거른다.
+        comp2 = (e.get('composer') or '').strip()
+        why2 = None
+        if BAD_COMPOSER.match(comp2):
+            why2 = '작곡가불명'
+        elif comp2.lower() in BLOCKED_COMPOSERS:
+            why2 = '보호기간중'
+        elif (e.get('source') in STRICT_PD_SOURCES
+              and not is_pd_composer(comp2, '')):
+            why2 = 'PD판정실패'
+        if why2:
+            stat[why2] = stat.get(why2, 0) + 1
+            continue
+
         out.append(e)
 
     # ③ 같은 작품 중복 제거 (민속곡 제외).
