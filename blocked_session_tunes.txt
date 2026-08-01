@@ -1715,3 +1715,7 @@
 13820  # Dr. Iain MacAonghais / Allan MacDonald
 2585  # Eighth Dwarf, The / Gian Marco Pietrasanta
 3044  # Estonian / Phil Cunningham
+7844   # Lord Of The Dance, The / Ronan Hardiman 1996 (생존) — MIDI 선율 대조 확인
+14419  # Lord Of The Dance / Sydney Carter †2004 개작 찬송 — Stainer & Bell 관리
+1755   # Mathematician, The / Charlie Lennon (생존)
+6632   # Clumsy Lover, The / Neil Dickie (생존)

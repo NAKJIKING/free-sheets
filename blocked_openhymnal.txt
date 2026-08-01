@@ -1,0 +1,19 @@
+# Open Hymnal 중 제한 라이선스 곡 — ABC 원문에 "All other rights
+# reserved"(예배용 한정 등)가 명시된 저작물. 카탈로그의 Public Domain
+# 표기는 zip 전체에 대한 가정이었고 곡별 검사에서 뒤집혔다 (2026-08-01).
+# 한 줄에 카탈로그 file 경로 하나 (탭 뒤는 주석).
+raw/openhymnal/Ascribe_To_the_Lord_Honor.pdf	# Ascribe To the Lord Honor
+raw/openhymnal/Author_of_All_Life.pdf	# Author of All Life
+raw/openhymnal/Awake_My_Soul__An_Offering_Bring.pdf	# Awake My Soul, An Offering Bring
+raw/openhymnal/Canon_in_D.pdf	# Canon in D
+raw/openhymnal/Christ_My_King_On_High.pdf	# Christ My King On High
+raw/openhymnal/Have_Mercy_On_Me__O_My_God.pdf	# Have Mercy On Me, O My God
+raw/openhymnal/His_Gifts.pdf	# His Gifts
+raw/openhymnal/How_Shall_We_Answer_Terror_s_Cry_.pdf	# How Shall We Answer Terror's Cry?
+raw/openhymnal/Magnificat.pdf	# Magnificat
+raw/openhymnal/My_Song_Shall_Be_Of_Jesus.pdf	# My Song Shall Be Of Jesus
+raw/openhymnal/O_Lord__My_God__I_Thirst_For_You.pdf	# O Lord, My God, I Thirst For You
+raw/openhymnal/The_Cloud_Received_Christ_From_Their_Sight.pdf	# The Cloud Received Christ From Their Sight
+raw/openhymnal/The_Lord_s_Prayer__new_.pdf	# The Lord's Prayer (new)
+raw/openhymnal/Yet_Before_We_See_Your_Plans.pdf	# Yet Before We See Your Plans
+raw/openhymnal/You_People_Who_Now_Are_Baptized.pdf	# You People Who Now Are Baptized

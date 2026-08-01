@@ -350,6 +350,21 @@ def _load_archive_block():
 
 ARCHIVE_BLOCKED = _load_archive_block()
 
+
+# ⓼ Open Hymnal 중 제한 라이선스 곡 — ABC 원문에 "All other rights
+#    reserved"(예배용 한정)가 명시된 저작물. 'Public Domain' 표기는
+#    배포 zip 전체에 대한 가정이었고 곡별 검사에서 뒤집혔다.
+def _load_hymnal_block():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     'blocked_openhymnal.txt')
+    if not os.path.exists(p):
+        return set()
+    return {ln.split('\t')[0].strip() for ln in open(p, encoding='utf-8')
+            if ln.strip() and not ln.startswith('#')}
+
+
+HYMNAL_BLOCKED = _load_hymnal_block()
+
 # 같은 이름의 다른 곡이 흔한 소스 — 제목 기준 중복 제거에서 제외.
 DUP_EXEMPT = {'thesession'}
 
@@ -423,6 +438,8 @@ def main():
             why = 'PD판정실패'
         elif url in ARCHIVE_BLOCKED:
             why = '교본표기미확인'
+        elif (e.get('file') or '') in HYMNAL_BLOCKED:
+            why = '찬송가제한라이선스'
         if why:
             stat[why] = stat.get(why, 0) + 1
             continue

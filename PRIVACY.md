@@ -1,6 +1,6 @@
 # 내 악보함 (My Sheet Music) — 개인정보처리방침 / Privacy Policy
 
-최종 수정 / Last updated: 2026-07-26
+최종 수정 / Last updated: 2026-08-01
 
 ## 한국어
 
@@ -50,7 +50,7 @@
 
 ### 문의
 
-개인정보처리방침에 대한 문의: coco.kilin.sasm@gmail.com
+개인정보처리방침에 대한 문의: hhs.79.dsn@gmail.com
 
 ## English
 
@@ -76,4 +76,4 @@ on your device only (Android system backup is disabled).
 - **Retention**: deleting the app deletes its data. Use backup
   export/import in Settings to keep your own copy.
 
-Contact: coco.kilin.sasm@gmail.com
+Contact: hhs.79.dsn@gmail.com
