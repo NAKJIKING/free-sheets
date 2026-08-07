@@ -51,6 +51,8 @@ def violations(cat):
             why = '교본표기미확인'
         elif (e.get('file') or '') in S.HYMNAL_BLOCKED:
             why = '찬송가제한라이선스'
+        elif (e.get('file') or '') in S.AUDIT_BLOCKED:
+            why = '감사차단'
         elif not title:
             why = '제목없음'
         if why:

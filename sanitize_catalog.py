@@ -365,6 +365,20 @@ def _load_hymnal_block():
 
 HYMNAL_BLOCKED = _load_hymnal_block()
 
+
+# 4) 2026-08 전수 감사 차단 — 현대곡·매시업·현대 편곡, Traditional 오표기,
+#    비악보 자료, 미국 미발효(1930년 이후 발행) 등. blocked_audit.txt 관리.
+def _load_audit_block():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     'blocked_audit.txt')
+    if not os.path.exists(p):
+        return set()
+    return {ln.split('\t')[0].strip() for ln in open(p, encoding='utf-8')
+            if ln.strip() and not ln.startswith('#')}
+
+
+AUDIT_BLOCKED = _load_audit_block()
+
 # 같은 이름의 다른 곡이 흔한 소스 — 제목 기준 중복 제거에서 제외.
 DUP_EXEMPT = {'thesession'}
 
@@ -440,6 +454,8 @@ def main():
             why = '교본표기미확인'
         elif (e.get('file') or '') in HYMNAL_BLOCKED:
             why = '찬송가제한라이선스'
+        elif (e.get('file') or '') in AUDIT_BLOCKED:
+            why = '감사차단'
         if why:
             stat[why] = stat.get(why, 0) + 1
             continue

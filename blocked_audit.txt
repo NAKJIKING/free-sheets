@@ -1,0 +1,183 @@
+# 2026-08 전수 감사에서 확인된 제외 곡 — 현대곡·매시업·현대 편곡,
+# 표기 오류(Traditional 표기된 현대 창작 등), 비악보 자료, 미국 미발효
+# (1930년 이후 발행) 등. 한 줄에 카탈로그 file 경로 하나 (탭 뒤는 주석).
+raw/openscore_quartets/Jan__ek__Leo_-String_Quartet_No.2__Intimate_Letters____sq7267316.pdf	# String Quartet No.2 “Intimate Letters” / Leoš Janáček
+31761034193417.pdf	# Wozzeck; musikalische Tragödie in 15 Szenen und ei / Cornelius Gurlitt
+harlequinade1.pdf	# harlequinade: a ballet / Friedrich Seitz
+sm_gardenofdreams.pdf	# Garden of Dreams / Friedrich August Kummer
+20bailuyenngonguitarclassic.pdf	# 20 bài luyện ngón Guitar Classic / Fernando Sor
+sex-god-method-2nd-edition.com.pdf	# Sex God Method 2nd Edition / Cyrille Rose
+biblia-de-la-flauta.pdf	# Biblia De La Flauta / Theobald Boehm
+per-un-piu-efficace-concorso-della-scuola-al-progresso-dellagricoltura-in-italia-relazione.pdf	# Per Un Più Efficace Concorso Della Scuola Al Progr / Luigi Legnani
+cf-000720300.pdf	# Canzoniere umoristico. Libro 18. N. 8 La tavola / Niccolò Paganini
+rode1976.pdf	# The Origin of Jewish Family Names / Pierre Rode
+just-because-youre-you.pdf	# Just Because You're You, That's Why I Love You / Daniel Gottlob Türk
+schumannsjohanne00schu.pdf	# The Schumanns and Johannes Brahms; the memoirs of  / Robert Schumann
+TheMethodOfDarwin.pdf	# The Method Of Darwin / Johann Baptist Cramer
+littlepictureson00cram.pdf	# Little picture songs; / Johann Baptist Cramer
+31761104084033.pdf	# Predvaritelʹnoe deĭstvo : fantazii͡a dli͡a chtet͡ / Alexander Scriabin
+tudesurlesuvre00bereuoft.pdf	# Étude sur les uvres d'Annette de Droste-Hülshoff / Hermann Berens
+raw/pdmx/trumpet/Piano_Sonata_No.14_Op.27_No.2-QmeDTiQzT4bs.pdf	# Piano Sonata No.14 Op.27 No.2 / Ludwig van Beethoven Mysteriou
+raw/pdmx/clarinet/Symphonic_Dances-QmTYYAHn6E1D.pdf	# Symphonic Dances / Rachmaninov
+raw/pdmx/clarinet/solace-QmRTQ7WSx8Sz.pdf	# solace / Scott Joplin Adapt. Ph.Dailly
+raw/pdmx/flute/The_Dance_of_the_Lakes-QmRs32nrqi7Y.pdf	# The Dance of the Lakes / Jeremiah Clarke
+raw/pdmx/violin/Fundamentos_da_Composicao_Musical_-_Schoenberg_Arnold_-_Ex._-QmVZWvq9BFvX.pdf	# Fundamentos da Composicao Musical - Schoenberg Arn / Ex. 2 - e - Beethoven - Sinfon
+raw/pdmx/clarinet/Symphonic_Dances_Op.45-QmUerWkhjsp9.pdf	# Symphonic Dances Op.45 / Rachmaninov
+raw/pdmx/trumpet/Musens_sang-QmU78v17cyMa.pdf	# Musens sang / Kai Normann Andersen
+raw/pdmx/violin/To_Love_You_More-QmbZhTpP67Ad.pdf	# To Love You More / David Foster
+raw/pdmx/violin/Winterlandschaft_-_Winter_Landscape-QmbhuZrCmJuY.pdf	# Winterlandschaft - Winter Landscape / Michael Schubert
+raw/pdmx2/clarinet/eye_of_the_tiger-Qme4GQ3eBKiQ.pdf	# eye of the tiger / Jim Peterik and Frankie Sulliv
+raw/pdmx2/piano/jazz_melody-QmY3MfAkcY6i.pdf	# jazz melody / Mark Nevin
+raw/pdmx2/piano/Keyboard_Sonata_in_D_minor_K.34-QmY5mvJ8WGxE.pdf	# Keyboard Sonata in D minor K.34 / Domenico Scarlatti Questions o
+raw/pdmx2/piano/happy_bithday-QmRKfX7Sg1EZ.pdf	# happy bithday / Mildred and Patty Smith Hill/J
+raw/pdmx2/violin/Fundamentos_da_Composicao_Musical_-_Schoenberg_Arnold_-_Ex._-QmR4fVYuWEu6.pdf	# Fundamentos da Composicao Musical - Schoenberg Arn / Ex. 2 - d - Mendelssohn Concer
+raw/pdmx2/piano/Les_solos_sous_les_draps-QmZWQ7vMEU86.pdf	# Les solos sous les draps / Mozart L'opera Rock
+raw/pdmx2/violin/A_New_World-QmcRTh6zMPuu.pdf	# A New World / Ruben Giordano
+raw/pdmx2/violin/Tears_of_Sadness-QmUMDwsVK9mx.pdf	# Tears of Sadness / Giordano Ruben
+raw/pdmx2/piano/a_clockwork_orange_theme-QmXtr5QNuPaR.pdf	# a clockwork orange theme / Henry Purcell
+raw/pdmx2/piano/Minor_Piano_Piece-QmXvMwczz8LT.pdf	# Minor Piano Piece / Gage Rose
+raw/pdmx2/piano/Rorate_coeli-QmXmpAjA11Kh.pdf	# Rorate coeli / Gregorian mel.harm. Andris Sol
+raw/pdmx2/piano/Major_Piano_Piece-QmXr2JvU8fQi.pdf	# Major Piano Piece / Gage Rose
+raw/pdmx2/piano/Mariage_D_amour-QmePJ61Kjryc.pdf	# Mariage D'amour / Maurice Ravel
+raw/pdmx2/piano/The_Bus-QmY8MtiKaSPu.pdf	# The Bus / Mussorgsky Chopin MZ
+raw/pdmx2/piano/Minuet_in_G_major_BWV_Anh.114-QmYg1EwhMB5n.pdf	# Minuet in G major BWV Anh.114 / Theme by Kristian Petzold Vari
+raw/pdmx2/piano/Piano_Concerto_in_G_major-QmTXuxt7hSRT.pdf	# Piano Concerto in G major / Maurice Ravel
+raw/pdmx2/piano/Canon_and_Gigue_in_D_major_P.37-QmTG6YVyUM6H.pdf	# Canon and Gigue in D major P.37 / Johann Pachelbel - Ed SheeranP
+raw/pdmx2/piano/Heart_and_soul_remix-QmPjvbXgY9gL.pdf	# Heart and soul remix / Arranged by: Sean Granados
+raw/pdmx2/piano/Song_Without_Words_-_Happily_Version-QmPzKb5jEqbb.pdf	# Song Without Words - Happily Version / Sergio Filippifeat. J.B.Duvern
+raw/pdmx2/piano/The_School_Road-Qmar1uRoS21z.pdf	# The School Road / Øyvind Nielsen 16 September
+raw/pdmx2/piano/Ah_vous_dirais-je_Maman-QmZPArNmZjRm.pdf	# Ah vous dirais-je Maman / Comptine sur un air de Mozart 
+raw/pdmx2/piano/Rain__Staring_at_the_Ceiling-QmZEduchrLvJ.pdf	# Rain: Staring at the Ceiling / Jake Voltage Andersen
+raw/pdmx2/piano/Ich_steh_an_Deiner_Krippen_hier-QmZoetjrijWv.pdf	# Ich steh an Deiner Krippen hier / Melodie: Johann Sebastian Bach
+raw/pdmx2/piano/Tri_Yann_-_Pelot_d_Hennebont-QmVK27C2mBNf.pdf	# Tri Yann - Pelot d'Hennebont / Claude Franck
+raw/pdmx2/piano/Arrangement-QmVuo2TcbyCN.pdf	# Arrangement / Justin Biber
+raw/pdmx2/piano/Keyboard_Sonata_in_C_major_K.159-QmVqZE6WSHt1.pdf	# Keyboard Sonata in C major K.159 / Domenico Scarlatti Restitution
+raw/pdmx2/piano/Er_geh_rt_zu_mir-QmVNoqybGNCe.pdf	# Er gehört zu mir / Joachim Heider Marianne Rosenb
+raw/pdmx2/piano/Amen-QmcK29rMiPVv.pdf	# Amen / Donald Byrd
+raw/pdmx2/piano/Waterfall-QmcjxFTwSQZt.pdf	# Waterfall / Haydn Miller
+raw/pdmx2/piano/score_8464510_afb12fffc80b2d6b4298b30b3ce19d2a0c4fcae2-QmeuDnLPmsHy.pdf	# score 8464510 afb12fffc80b2d6b4298b30b3ce19d2a0c4f / Ludwig van Beethoven
+raw/pdmx2/piano/Fourths_Arr._J._Johnson_1988-QmeZvcsU5FxJ.pdf	# Fourths Arr. J. Johnson 1988 / Johann Pachelbel
+raw/pdmx2/piano/You_ve_got_To_See_Your_Mamma_Ev_ry_Night-QmYDuwRsFRK3.pdf	# You've got To See Your Mamma Ev'ry Night / Billy Rose & Con Conrad
+raw/pdmx2/piano/O__say_but_im_glad-Qmf86ZRGC8tx.pdf	# O! say but im glad / Mildred Ellen Sullivan
+raw/pdmx2/piano/Prelude_in_C_minor_BWV_999-QmfR3XuvmzBZ.pdf	# Prelude in C minor BWV 999 / J.s. Bach - Patrice Reich
+raw/pdmx2/piano/There_is_power_in_the_blood_now_to_wash_your_soul-QmaXyQHpDtid.pdf	# There is power in the blood now to wash your soul / Rev. J. H. Weber
+raw/pdmx2/piano/Bro_Aber-QmWi5XLsQPWs.pdf	# Bro Aber / J. Haydn Phillips
+raw/pdmx2/piano/Minuet_in_c_major-QmVxMXiAb2yD.pdf	# Minuet in c major / Nicolò Clementi
+raw/pdmx2/piano/Nighthawks-QmV2yE3mynXk.pdf	# Nighthawks / Michael Schubert
+raw/pdmx2/piano/Canon_in_G_major-QmeJZ9K4AekF.pdf	# Canon in G major / Johann Pachelbel íê³ Suejeen L
+raw/pdmx2/piano/PEMBROKE__Foster_-QmeaNfjuhVej.pdf	# PEMBROKE (Foster) / James Foster
+raw/pdmx2/piano/There_is_a_song_in_my_heart_today-QmeMoBmENcrD.pdf	# There is a song in my heart today / Mildred Ellen Sullivan
+raw/pdmx2/piano/The_Bonny_Blue_Handkerchief-Qme62cMyyzjE.pdf	# The Bonny Blue Handkerchief / Sung by Mr. Dick Anthony Stanf
+raw/pdmx2/piano/Handel_s_Clarinet.2Parts._TLY.016-QmYpACnXWLy5.pdf	# Handel's Clarinet.2Parts. TLY.016 / by Handel?just guessing!
+raw/pdmx2/piano/I_am_leaning_on_the_arm_of_the_Saviour-QmYinGA4B7TG.pdf	# I am leaning on the arm of the Saviour / Rev. J. H. Weber
+raw/pdmx2/piano/Thirds_-_Page_1_Arr._J._Johnson_1988-QmT77yRqGofe.pdf	# Thirds - Page 1 Arr. J. Johnson 1988 / Johann Pachelbel
+raw/pdmx2/piano/We_are_little_reapers-QmfStQ9UT8vp.pdf	# We are little reapers / Rev. J. H. Weber
+raw/pdmx2/piano/Fundamentos_da_Composicao_Musical_-_Schoenberg_Arnold_-_Ex._-QmfA1Uaxwe18.pdf	# Fundamentos da Composicao Musical - Schoenberg Arn / Ex. 2 - i - Wagner - Motivo de
+raw/pdmx2/piano/Firsts_-_Page_2_Arr._J._Johnson-Qmf28LxfFui5.pdf	# Firsts - Page 2 Arr. J. Johnson / Johann Pachelbel
+raw/pdmx2/piano/Though_trials_surround_you_and_dark_is_the_way-QmfDvNkKyiCn.pdf	# Though trials surround you and dark is the way / Eileen A. Turk
+raw/pdmx2/piano/Colors_of_the_Rainbow-QmfCmuBZEAF8.pdf	# Colors of the Rainbow / Mario Spindler
+raw/pdmx2/piano/New_features_in_abcm2ps-5.x.x-QmaD3PCHXR2c.pdf	# New features in abcm2ps-5.x.x / This is the composer field
+raw/pdmx2/piano/GB_6a_163_Sweet_Primroses_Version_4_of_5-QmRMBEgdWT4R.pdf	# GB/6a/163 Sweet Primroses Version 4 of 5 / Mr. Dick Anthony Stanford Bish
+raw/pdmx2/piano/GB_6a_100_Isle_of_France_Version_2_of_3-QmRsPzxT4G8y.pdf	# GB/6a/100 Isle of France Version 2 of 3 / Sung by Mr Dick Antony Stanfor
+raw/pdmx2/piano/Mrs._Norman_Lockhart-QmR1zwor6TDQ.pdf	# Mrs. Norman Lockhart / William Clarke
+raw/pdmx2/piano/composition_1-QmWvu98ftNCU.pdf	# composition 1 / Lizbeth Granados-Aparicio
+raw/pdmx2/piano/Sample_tune_-_abcm2ps__sample5.abc__-_New_features_in_abcm2p-QmWKv4263d4L.pdf	# Sample tune - abcm2ps (sample5.abc) - New features / This is the composer field
+raw/pdmx2/piano/At_the_door_of_mercy_sighing__Field_-QmZWv3Wy5hBf.pdf	# At the door of mercy sighing (Field) / J. L. Field
+raw/pdmx2/piano/Handel_s_Clarinet._Primo._TLY.016-QmZnX9CDTESq.pdf	# Handel's Clarinet. Primo. TLY.016 / Handel?just guessing!
+raw/pdmx2/piano/My_soul_is_full_of_gladness_My_heart_is_full_of_-_May_D._Kir-QmVhwhfLSuv2.pdf	# My soul is full of gladness My heart is full of -  / May D. Kirkpatrick
+raw/pdmx2/piano/trad_folk-QmVxwmhrgJ3S.pdf	# trad folk / John Kirkpatrick
+raw/pdmx2/piano/Yes__I_am_Mireille_s_Daughter-QmVKDs5mCF1V.pdf	# Yes! I am Mireille's Daughter / Tune is Stangate Bridge
+raw/pdmx2/piano/Seconds_-_Page_2_Arr._J._Johnson_1988-QmcAvywkVy8J.pdf	# Seconds - Page 2 Arr. J. Johnson 1988 / Johann Pachelbel
+raw/pdmx2/piano/Seconds_-_Page_1_Arr._J._Johnson_1988-Qmcm4gAZLsx5.pdf	# Seconds - Page 1 Arr. J. Johnson 1988 / Johann Pachelbel
+raw/pdmx2/piano/Ring_Joyful_bells_from_far_and_near_-_A._F._Field-QmUA6QRXTQsw.pdf	# Ring Joyful bells from far and near - A. F. Field / A. F. Field
+raw/pdmx2/piano/Mary_Jazz-QmUEYDAMY7zE.pdf	# Mary Jazz / Ryan O'Sullivan
+raw/pdmx2/piano/composition_1_finished-QmNruBf8KdgH.pdf	# composition 1 finished / Lizbeth Granados-Aparicio
+raw/pdmx2/piano/Thirds_-_Page_2_Arr._J._Johnson_1988-QmWYrQbmgJUZ.pdf	# Thirds - Page 2 Arr. J. Johnson 1988 / Johann Pachelbel
+raw/pdmx2/piano/True_in_heart_and_loyal_we_are_ever-QmZvFqSJZHb5.pdf	# True in heart and loyal we are ever / Percy S. Foster
+raw/pdmx2/piano/Firsts_-_Page_1_Arr._J._Johnson_1988-QmUGNFc2Un17.pdf	# Firsts - Page 1 Arr. J. Johnson 1988 / Johann Pachelbel
+raw/pdmx2/piano/Creator_alme_siderum-QmU8xQd21muy.pdf	# Creator alme siderum / C. Rossini Cantate Domino for 
+raw/pdmx2/piano/Night_is_at_hand_the_day_draws_to_its_close-QmUZ5vbniX4S.pdf	# Night is at hand the day draws to its close / Alfred L. Field
+raw/pdmx2/piano/Erin_s_Lovely_Home_Version_1_of_3-QmQTomLNxraT.pdf	# Erin's Lovely Home Version 1 of 3 / Mr. Dick Anthony Stanford Bish
+raw/pdmx2/piano/Ring_abroad_the_joyful_message_of_redeeming_love-QmQucx6C3RrA.pdf	# Ring abroad the joyful message of redeeming love / Henry D. Field
+raw/pdmx2/piano/GB_7a_1_Isle_of_France_Version_1_of_3-QmQMsF9Da1ir.pdf	# GB/7a/1 Isle of France Version 1 of 3 / Dick Antony Stanford Bishop He
+raw/pdmx2/piano/We_ll_Bring_the_World_His_Truth_Pachelbel_s_Canon-QmQb27kqj8eZ.pdf	# We'll Bring the World His Truth/Pachelbel s Canon / Inspired from Themes by Janice
+raw/pdmx2/piano/On_Mount_Olive_s_sacred_brow-QmQkXDRP225M.pdf	# On Mount Olive's sacred brow / G. T. Byrd
+raw/pdmx2/piano/Es_ist_vollbracht_das_Opfer_f_r_die_Welt_-_Johannes_Petzold-QmYP6ZXVQper.pdf	# Es ist vollbracht das Opfer für die Welt - Johanne / Johannes Petzold
+raw/pdmx2/piano/Two_minuet_variations-QmUoommSWQaD.pdf	# Two minuet variations / Christian Petzold Will Martin
+raw/pdmx2/piano/Piano_Sonata_No.2_Op.36-QmQqzp2i2N93.pdf	# Piano Sonata No.2 Op.36 / Sergei Rachmaninoff
+raw/pdmx2/piano/Theres_a_robe_and_a_palm_for_you-QmQj4USoedLH.pdf	# Theres a robe and a palm for you / M. D. Kirkpatrick
+raw/pdmx2/piano/Rhapsody_on_a_Theme_of_Paganini_Op.43-QmQhYEv3ySJe.pdf	# Rhapsody on a Theme of Paganini Op.43 / Sergei Rachmaninoff
+raw/pdmx2/piano/Piano_Concerto_No._4_in_G_minor_Op._40-Qmdk6fBMwUNe.pdf	# Piano Concerto No. 4 in G minor Op. 40 / Sergueï Rachmaninov
+raw/pdmx2/piano/Himno_del_atl_tico_de_Madrid-QmdbKDnaidRe.pdf	# Himno del atlético de Madrid / Compuesto por J.a. Granados & 
+raw/pdmx2/piano/Trosbekjennelsen-QmduJFJ1FCe7.pdf	# Trosbekjennelsen / Mel.: Steinar Hetland -08Arr.:
+raw/pdmx2/piano/Flute_excerpt_mahler_s_10th_symphony-QmdhXTJevgg4.pdf	# Flute excerpt mahler s 10th symphony / Gustav Mahler
+raw/pdmx2/piano/Were_an_army_marching_in_the_cause_of_right-Qmd7Ujt69CWS.pdf	# Were an army marching in the cause of right / Claire C. Foster
+raw/pdmx2/piano/An_Der_Sch_nen_Blauen_Donau-QmdNcC2xjKqy.pdf	# An Der Schönen Blauen Donau / J. Strauss - Cziffra
+raw/pdmx2/piano/Fundamentos_da_Composicao_Musical_-_Schoenberg_Arnold_-_Ex._-Qmb52GG4ZRXs.pdf	# Fundamentos da Composicao Musical - Schoenberg Arn / Ex. 2 - b - Mozart - Sinfonia 
+raw/pdmx2/piano/Stille_natt-Qmb38vJFD76i.pdf	# Stille natt / Ludwig van Beethoven
+raw/pdmx2/piano/Tetris_Theme_A_Fast-Qmb8GHZ7RDUG.pdf	# Tetris Theme A Fast / Pyotr Ilyich Tchaikovsky
+raw/openhymnal/For_All_The_Saints.pdf	# For All The Saints / William W. How
+raw/openhymnal/Hark__Hark__My_Soul_.pdf	# Hark, Hark, My Soul! / Frederick W. Faber
+raw/openhymnal/I_Place_My_Trust_In_God.pdf	# I Place My Trust In God / Dorothy Amstutz
+raw/openhymnal/Jesus_Wants_All_Of_His_Children.pdf	# Jesus Wants All Of His Children / Mrs. James W. Wood
+raw/openhymnal/None_Other_Lamb.pdf	# None Other Lamb / William Jeater
+raw/openhymnal/O_Wondrous_Type__O_Vision_Fair.pdf	# O Wondrous Type, O Vision Fair / From the
+raw/openhymnal/Take_My_Life_And_Let_It_Be.pdf	# Take My Life And Let It Be / Wolfgang Amadeus Mozart
+raw/openhymnal/The_Old_Rugged_Cross.pdf	# The Old Rugged Cross / George Bennard
+raw/openhymnal/To_Avert_From_Men_God_s_Wrath.pdf	# To Avert From Men God's Wrath / Latin c
+raw/thesession/Whiskey_Before_Breakfast-602.pdf	# Whiskey Before Breakfast / Traditional
+raw/thesession/Mairi_s_Wedding-706.pdf	# Mairi's Wedding / Traditional
+raw/thesession/Ievan_Polkka-418.pdf	# Ievan Polkka / Traditional
+raw/thesession/Pachelbel_s_Frolics-487.pdf	# Pachelbel's Frolics / Traditional
+raw/thesession/Merry_Sisters_Of_Fate__The-165.pdf	# Merry Sisters Of Fate, The / Traditional
+raw/thesession/Galway_Bay-3453.pdf	# Galway Bay / Traditional
+raw/thesession/Kenny_Gilles_Of_Portnalong-1875.pdf	# Kenny Gilles Of Portnalong / Traditional
+raw/thesession/Hamish_The_Carpenter-3103.pdf	# Hamish The Carpenter / Traditional
+raw/thesession/Caoineadh_Cu_Chulainn-9584.pdf	# Caoineadh Cu Chulainn / Traditional
+raw/thesession/Dance_Of_The_Riverwoman-7927.pdf	# Dance Of The Riverwoman / Traditional
+raw/thesession/Hommage___Edmond_Parizeau-7346.pdf	# Hommage à Edmond Parizeau / Traditional
+raw/thesession/Wellerman__The-20383.pdf	# Wellerman, The / Traditional
+raw/thesession/Mull_Of_Kintyre-2704.pdf	# Mull Of Kintyre / Traditional
+raw/thesession/Westering_Home-6587.pdf	# Westering Home / Traditional
+raw/thesession/Brexit__The-15449.pdf	# Brexit, The / Traditional
+raw/thesession/Mairi_s_Wedding-5324.pdf	# Mairi's Wedding / Traditional
+raw/thesession/Come_In_From_The_Rain-4811.pdf	# Come In From The Rain / Traditional
+raw/thesession/Dan_Sullivan_s_Shamrock_Swing_Band-2419.pdf	# Dan Sullivan's Shamrock Swing Band / Traditional
+raw/thesession/Fields_Of_Athenry__The-21907.pdf	# Fields Of Athenry, The / Traditional
+raw/thesession/Cruel_Is_The_Snow_That_Sweeps_Glencoe-8090.pdf	# Cruel Is The Snow That Sweeps Glencoe / Traditional
+raw/thesession/Farewell_To_The_Creeks-4795.pdf	# Farewell To The Creeks / Traditional
+raw/thesession/Starry_Nights_Of_Shetland__The-7357.pdf	# Starry Nights Of Shetland, The / Traditional
+raw/thesession/Bennachie_Sunrise-4544.pdf	# Bennachie Sunrise / Traditional
+raw/thesession/Both_Sides_The_Tweed-12935.pdf	# Both Sides The Tweed / Traditional
+raw/thesession/Cherokee_Shuffle-14576.pdf	# Cherokee Shuffle / Traditional
+raw/thesession/Red_Prairie_Dawn-19378.pdf	# Red Prairie Dawn / Traditional
+raw/thesession/Old_Claddagh_Ring__The-4137.pdf	# Old Claddagh Ring, The / Traditional
+raw/thesession/Jig_Of_Life-7575.pdf	# Jig Of Life / Traditional
+raw/thesession/Fairytale_Of_New_York___The-23823.pdf	# Fairytale Of New York , The / Traditional
+raw/thesession/Spirit_Of_The_Dance-10502.pdf	# Spirit Of The Dance / Traditional
+raw/thesession/Valley_Of_Knockanure__The-8068.pdf	# Valley Of Knockanure, The / Traditional
+raw/thesession/Charlie_McKerron_s-2076.pdf	# Charlie McKerron's / Traditional
+raw/thesession/Rothbury_Hills-6484.pdf	# Rothbury Hills / Traditional
+raw/thesession/Trowie_Burn__The-9986.pdf	# Trowie Burn, The / Traditional
+raw/thesession/Emma_And_Jamie_s_Wedding-456.pdf	# Emma And Jamie's Wedding / Traditional
+raw/thesession/Mockingbird_Hill-3628.pdf	# Mockingbird Hill / Traditional
+raw/thesession/Cillian_s_Midnight_Dip-2916.pdf	# Cillian's Midnight Dip / Traditional
+raw/thesession/Waltz_For_Pelle-7410.pdf	# Waltz For Pelle / Traditional
+raw/thesession/Dublin_Airport-9668.pdf	# Dublin Airport / Traditional
+raw/thesession/Ev_Chistr__Ta__Laou-7312.pdf	# Ev Chistr 'Ta, Laou / Traditional
+raw/thesession/Tune_For_Dad-11153.pdf	# Tune For Dad / Traditional
+raw/thesession/Marie_s_Wedding-11980.pdf	# Marie's Wedding / Traditional
+raw/thesession/10th_Bat_Crossing_Rhine-7078.pdf	# 10th Bat Crossing Rhine / Traditional
+raw/thesession/Northern_Lights_Of_Old_Aberdeen__The-8700.pdf	# Northern Lights Of Old Aberdeen, The / Traditional
+raw/thesession/Boston_Urban_Ceilidh__The-4401.pdf	# Boston Urban Ceilidh, The / Traditional
+raw/thesession/Gerald_Thomas__Burnt_Potato-6743.pdf	# Gerald Thomas' Burnt Potato / Traditional
+raw/thesession/Grumpy_Old_Fart__The-8004.pdf	# Grumpy Old Fart, The / Traditional
+raw/thesession/Don_Messer_s_Breakdown-6038.pdf	# Don Messer's Breakdown / Traditional
+raw/thesession/Gorbachev_s_Farewell_To_Lithuania-254.pdf	# Gorbachev's Farewell To Lithuania / Traditional
+raw/thesession/Myxamatosis-5334.pdf	# Myxamatosis / Traditional
+raw/thesession/Tam_Bain_s_Lum-11633.pdf	# Tam Bain's Lum / Traditional
+raw/thesession/Big_Mon-5640.pdf	# Big Mon / Traditional
+raw/thesession/A_Tune_For_Paddy__A_Pint_Of_Guiness_And_One_For_The_Goat-8899.pdf	# A Tune For Paddy: A Pint Of Guiness And One For Th / Traditional
+raw/thesession/Obamas_In_The_White_House-9059.pdf	# Obamas In The White House / Traditional
+raw/thesession/Kilkelly__Ireland-5897.pdf	# Kilkelly, Ireland / Traditional
+raw/thesession/5_30am-4856.pdf	# 5:30am / Traditional
