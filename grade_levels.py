@@ -1250,6 +1250,8 @@ def group_of(inst):
 def grade(e, feats):
     """(level|None, 판정 경로)"""
     inst = e.get('instrument') or ''
+    if e.get('source') == 'original' and e.get('level') in (1, 2, 3):
+        return e['level'], 'fixed'   # 직접 조판한 초급판 — 만들 때 정한 등급 유지
     grp = group_of(inst)
     tf = fold(e.get('title'))
     cf = fold(e.get('composer'))

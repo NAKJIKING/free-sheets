@@ -21,9 +21,31 @@ Takedown 절차로 즉시 내립니다.
 - `sanitize_catalog.py` — 저작권·품질 점검 필터 (병합 뒤 항상 실행)
 - `grade_levels.py` — 난이도 등급(`level`) 자동 분류. 특징값 캐시는
   `level_features.json` (아래 '난이도 등급' 절)
+- `raw/original/` — **내 악보함이 직접 조판한 초급 단선율 악보** (한글 제목·계이름,
+  LilyPond 소스는 `tools/original_src/`; 아래 '직접 조판 초급판' 절)
+- `tools/mutopia_ly/` — Mutopia 의 LilyPond 소스를 직접 컴파일해 PDF·MIDI 를 만드는
+  일괄 도구 (mutopiaproject.org 가 막힌 환경에서 GitHub 소스로 수집)
 - `blocked_session_tunes.txt` — 작곡가가 특정되는 세션 튠 제외 목록
 - `blocked_pdmx_composers.txt` — PD 판정을 통과하지 못한 PDMX 작곡가 표기
 - `저작권_조사보고서.md` — 소스별 라이선스 조건 및 법적 근거 조사 보고서
+
+## 직접 조판 초급판 (source = original)
+
+초등 저학년용으로 유명한 주제 선율을 **한 줄 악보 + 한글 계이름**으로 직접
+조판한 것. 원곡 선율은 모두 퍼블릭 도메인이고 조판은 우리 것이라 라이선스가
+깨끗하다 — 원본 음표를 Mutopia 의 PD 판본에서 뽑은 곡은 CC0, CC BY-SA 판본에서
+뽑은 곡(도나우·즐거운 농부·신세계 라르고)은 같은 CC BY-SA 로 표기한다.
+
+- 소스: `tools/original_src/<id>.ly` (LilyPond 2.24). 렌더는
+  `lilypond -o out <id>.ly` → PDF·MIDI, 썸네일은 PyMuPDF 로 1쪽을 340×480 WebP.
+- 생성기: `tools/original_src/melody_sheet.py` — Mutopia 소스를 컴파일한 MIDI 에서
+  선율 트랙을 뽑아(최고음 단선율화, 1/16 양자화, 꾸밈음 제거, 마디 분할·붙임줄,
+  조성별 임시표 철자) 한글 제목·계이름이 붙은 .ly 를 만든다. 곡별 설정은
+  `cfg1.json`(트랙·마디 범위·조옮김·못갖춘마디), 카탈로그 항목은 `originals_meta.py`.
+- 카탈로그: `source: "original"`, `instrument: "Piano"`(오른손·리코더·멜로디언 겸용),
+  `alias` 에 한글 제목, `level` 은 만들 때 정한 값을 `grade_levels.py` 가 그대로 둔다.
+- 검수: 렌더 PNG 를 눈으로 원본과 대조했다. 원본이 복잡해 자동 축약이 깨진 곡
+  (G선상의 아리아)은 싣지 않았다.
 
 ## 난이도 등급 (level)
 

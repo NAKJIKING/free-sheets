@@ -284,10 +284,15 @@ def main():
     for e in catalog:
         t = tags_for(e)
         if t:
+            # 직접 조판한 초급판(source=original)은 만들 때 넣은 태그를 유지한다
+            if e.get('source') == 'original' and e.get('tags'):
+                extra = [w for w in e['tags'].split() if w not in t.split()]
+                t = (t + ' ' + ' '.join(extra)).strip()
             e['tags'] = t
             hit += 1
         else:
-            e.pop('tags', None)
+            if e.get('source') != 'original':
+                e.pop('tags', None)
     with open(CATALOG, 'w', encoding='utf-8') as f:
         json.dump(catalog, f, ensure_ascii=False, indent=1)
     print(f'{len(catalog)}곡 중 검색 태그 주입 {hit}곡', flush=True)
