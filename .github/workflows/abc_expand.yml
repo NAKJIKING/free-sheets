@@ -26,11 +26,13 @@ jobs:
       - name: 찬송가 한국어 별칭 주입
         run: python3 apply_hymn_aliases.py
 
+      - name: 난이도 등급 갱신 (grade_levels.py — 캐시가 있어 수 초)
+        run: python3 grade_levels.py
       - name: 중간 커밋
         run: |
           git config user.name "sheet-collector-bot"
           git config user.email "actions@github.com"
-          git add catalog.json raw mids
+          git add catalog.json level_features.json raw mids
           [ -d abc ] && git add abc
           if git diff --cached --quiet; then echo "찬송가 신규 없음"; else
             git commit -m "찬송가 자동 수집 결과 [skip ci]"
@@ -43,9 +45,11 @@ jobs:
           SESSION_LIMIT: '1500'
         run: python3 collect_session.py
 
+      - name: 난이도 등급 갱신 (grade_levels.py — 캐시가 있어 수 초)
+        run: python3 grade_levels.py
       - name: 결과 커밋
         run: |
-          git add catalog.json raw mids
+          git add catalog.json level_features.json raw mids
           [ -d abc ] && git add abc
           if git diff --cached --quiet; then echo "민속곡 신규 없음"; else
             git commit -m "민속곡 자동 수집 결과 [skip ci]"

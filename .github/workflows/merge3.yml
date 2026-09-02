@@ -22,11 +22,13 @@ jobs:
       - name: 차단 목록 누수 검사 (실패 시 커밋 안 함)
         run: python3 check_catalog.py
 
+      - name: 난이도 등급 갱신 (grade_levels.py — 캐시가 있어 수 초)
+        run: python3 grade_levels.py
       - name: 커밋
         run: |
           git config user.name sheet-collector-bot
           git config user.email actions@github.com
-          git add catalog.json
+          git add catalog.json level_features.json
           if git diff --cached --quiet; then echo '변경 없음'; exit 0; fi
           git commit -m '3권(archive 교본) 카탈로그 병합 [skip ci]'
           for i in 1 2 3 4; do
