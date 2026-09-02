@@ -83,7 +83,7 @@ def build_variant(cfg, inst_id, outdir, tag=None):
         key=wkey, time=cfg['time'], tempo=cfg.get('tempo', 96),
         partial=('\\partial ' + cfg['partial']) if cfg.get('partial') else '', melody=mel, lyrics=' '.join(sol))
     ly = ly.replace('\\key ' + wkey, f"\\clef {inst['clef']} {inst['transposition']} \\key " + wkey)
-    ly = ly.replace('  tagline = ##f', f'  instrument = \\markup {{ \\fontsize #1 "{inst["ko"]} · {inst["en"]}" }}\n  tagline = ##f')
+    ly = ly.replace('  tagline = ##f', f'  subsubtitle = \\markup {{ \\fontsize #0.5 \\bold "{inst["ko"]} · {inst["en"]}" }}\n  tagline = ##f')
     if not cfg.get('solfege', False):
         ly = re.sub(r'\n\s*\\addlyrics \{[^}]*\}\n', '\n', ly)
     base = os.path.join(outdir, (tag or cfg['id']) + '__' + inst_id)
