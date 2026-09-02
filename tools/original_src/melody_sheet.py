@@ -65,9 +65,9 @@ def split_value(L):
             out.append(s); L -= v
     return out, L
 
-def notes_from_midi(midi, track, start_tick, end_tick, top=True, min_len=48, pmin=None, legato_max=384, pad_last=True, collapse_rests=True):
+def notes_from_midi(midi, track, start_tick, end_tick, top=True, min_len=48, pmin=None, legato_max=384, pad_last=True, collapse_rests=True, tscale=1.0):
     div, tempos, notes = G.parse_midi(midi)
-    scale = DIV / div
+    scale = DIV / div * tscale
     ns = [(round(n[0]*scale), round(n[1]*scale), n[2]) for n in notes if n[4] == track and (pmin is None or n[2] >= pmin)]
     ns = [n for n in ns if start_tick <= n[0] < end_tick and n[1] - n[0] >= 60]  # 꾸밈음(짧은 음) 제외
     # 단선율화: 같은 시작(±1/32) 은 최고음만, 다음 시작에서 끊는다
@@ -169,15 +169,15 @@ TEMPLATE = r'''\version "2.24.4"
   top-margin = 16\mm  bottom-margin = 14\mm
   left-margin = 16\mm right-margin = 16\mm
   ragged-bottom = ##t  ragged-last-bottom = ##t
-  property-defaults.fonts.roman = "Nanum Gothic"
+  #(define fonts (set-global-fonts #:roman "%(font)s" #:sans "%(font)s" #:factor (/ staff-height pt 20)))
   oddFooterMarkup = \markup { \fill-line { \fontsize #-3 \line { "%(footer)s" } } }
   evenFooterMarkup = \markup { \fill-line { \fontsize #-3 \line { "%(footer)s" } } }
 }
 \header {
-  title = \markup { \fontsize #3 \bold "%(title_ko)s" }
-  subtitle = \markup { \fontsize #0 "%(subtitle)s" }
+  title = \markup { \fontsize #%(tsize)s \bold "%(title_ko)s" }
+  subtitle = \markup { \fontsize #%(ssize)s "%(subtitle)s" }
   composer = "%(composer)s"
-  arranger = "%(arranger)s"
+  arranger = \markup { \fontsize #-1 "%(arranger)s" }
   tagline = ##f
 }
 melody = \absolute {
@@ -230,7 +230,7 @@ def build(cfg, outdir):
                 if not prev_tied: sol.append(sol2[idx])
                 idx += 1; prev_tied = bool(m.group(5))
     else:
-        ev = notes_from_midi(cfg['midi'], cfg['track'], cfg['start'], cfg['end'], top=cfg.get('top', True), pmin=cfg.get('pmin'), legato_max=cfg.get('legato_max', 384))
+        ev = notes_from_midi(cfg['midi'], cfg['track'], cfg['start'], cfg['end'], top=cfg.get('top', True), pmin=cfg.get('pmin'), legato_max=cfg.get('legato_max', 384), tscale=cfg.get('tscale', 1.0))
         if cfg.get('fallback_track') is not None:
             ev2 = notes_from_midi(cfg['midi'], cfg['fallback_track'], cfg['start'], cfg['end'], top=True, pmin=cfg.get('fallback_pmin'), legato_max=cfg.get('legato_max', 384))
             merged = []; cur = 0
@@ -254,6 +254,8 @@ def build(cfg, outdir):
             ev = [f for f in fixed if f[1] > f[0]]
         mel, sol = to_lily(ev, cfg['time'], cfg.get('transpose', 0), cfg.get('flats', False), cfg.get('partial_ticks', 0), collapse=cfg.get('collapse', True), pad=cfg.get('pad', True), key=cfg['key'])
     ly = TEMPLATE % dict(
+        font=cfg.get('font', 'Nanum Gothic'),
+        tsize=cfg.get('tsize', 3), ssize=cfg.get('ssize', 0),
         staff=cfg.get('staff', 24), footer=cfg.get('footer', ''), title_ko=cfg['title_ko'], subtitle=cfg.get('subtitle', ''),
         composer=cfg.get('composer', ''), arranger=cfg.get('arranger', '단선율 초급판 · 내 악보함'),
         key=cfg['key'], time=cfg['time'], tempo=cfg.get('tempo', 96),

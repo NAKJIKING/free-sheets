@@ -1,0 +1,188 @@
+[
+ {
+  "id": "mary_lamb",
+  "title_ko": "메리에게 작은 양이 있었네",
+  "subtitle": "Mary Had a Little Lamb — 동요",
+  "composer": "로웰 메이슨 (Lowell Mason, 1792–1872)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 104,
+  "lily": "e'4 d'4 c'4 d'4 | e'4 e'4 e'2 | d'4 d'4 d'2 | e'4 g'4 g'2 | e'4 d'4 c'4 d'4 | e'4 e'4 e'4 e'4 | d'4 d'4 e'4 d'4 | c'1 |"
+ },
+ {
+  "id": "london_bridge",
+  "title_ko": "런던 다리",
+  "subtitle": "London Bridge Is Falling Down — 동요",
+  "composer": "영국 전래 동요 (18세기)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 104,
+  "lily": "g'4. a'8 g'4 f'4 | e'4 f'4 g'2 | d'4 e'4 f'2 | e'4 f'4 g'2 | g'4. a'8 g'4 f'4 | e'4 f'4 g'2 | d'2 g'2 | e'2 c'2 |"
+ },
+ {
+  "id": "row_boat",
+  "title_ko": "노를 저어라",
+  "subtitle": "Row, Row, Row Your Boat — 동요",
+  "composer": "미국 전래 동요 (1852)",
+  "key": "c \\major",
+  "time": "6/8",
+  "tempo": 100,
+  "lily": "c'4. c'4. | c'4 d'8 e'4. | e'4 d'8 e'4 f'8 | g'2. | c''8 c''8 c''8 g'8 g'8 g'8 | e'8 e'8 e'8 c'8 c'8 c'8 | g'4 f'8 e'4 d'8 | c'2. |"
+ },
+ {
+  "id": "frere",
+  "title_ko": "프레르 자크 (우리 서로 학교길에)",
+  "subtitle": "Frère Jacques — 프랑스 동요",
+  "composer": "프랑스 전래 동요 (18세기)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 108,
+  "lily": "c'4 d'4 e'4 c'4 | c'4 d'4 e'4 c'4 | e'4 f'4 g'2 | e'4 f'4 g'2 | g'8 a'8 g'8 f'8 e'4 c'4 | g'8 a'8 g'8 f'8 e'4 c'4 | c'4 g4 c'2 | c'4 g4 c'2 |"
+ },
+ {
+  "id": "old_macdonald",
+  "title_ko": "맥도날드 아저씨네 농장",
+  "subtitle": "Old MacDonald Had a Farm — 동요 (1절)",
+  "composer": "미국 전래 동요 (1917)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 112,
+  "lily": "c'4 c'4 c'4 g4 | a'4 a'4 g'2 | e'4 e'4 d'4 d'4 | c'2. g4 | c'4 c'4 c'4 g4 | a'4 a'4 g'2 | e'4 e'4 d'4 d'4 | c'1 |"
+ },
+ {
+  "id": "happy_birthday",
+  "title_ko": "생일 축하합니다",
+  "subtitle": "Happy Birthday to You",
+  "composer": "밀드레드 힐 · 패티 힐 (Mildred & Patty Hill, 1893)",
+  "key": "c \\major",
+  "time": "3/4",
+  "tempo": 100,
+  "partial": "4",
+  "partial_ticks": 384,
+  "lily": "g8. g16 | a4 g4 c'4 | b2 g8. g16 | a4 g4 d'4 | c'2 g8. g16 | g'4 e'4 c'4 | b4 a4 f'8. f'16 | e'4 c'4 d'4 | c'2 |"
+ },
+ {
+  "id": "hot_cross",
+  "title_ko": "핫 크로스 번",
+  "subtitle": "Hot Cross Buns — 동요",
+  "composer": "영국 전래 동요 (18세기)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 96,
+  "lily": "e'4 d'4 c'2 | e'4 d'4 c'2 | c'8 c'8 c'8 c'8 d'8 d'8 d'8 d'8 | e'4 d'4 c'2 |"
+ },
+ {
+  "id": "we_wish",
+  "title_ko": "즐거운 성탄",
+  "subtitle": "We Wish You a Merry Christmas — 캐럴 (앞부분)",
+  "composer": "영국 전래 캐럴 (16세기)",
+  "key": "c \\major",
+  "time": "3/4",
+  "tempo": 120,
+  "partial": "4",
+  "partial_ticks": 384,
+  "lily": "c'4 | f'4 f'8 g'8 f'8 e'8 | d'4 d'4 d'4 | g'4 g'8 a'8 g'8 f'8 | e'4 c'4 c'4 | a'4 a'8 b'8 a'8 g'8 | f'4 d'4 c'8 c'8 | d'4 g'4 e'4 | f'2. |"
+ },
+ {
+  "id": "tannenbaum",
+  "title_ko": "소나무야",
+  "subtitle": "O Tannenbaum — 독일 캐럴",
+  "composer": "독일 전래 선율 · 에른스트 안쉬츠 (Ernst Anschütz, 1824)",
+  "key": "c \\major",
+  "time": "3/4",
+  "tempo": 96,
+  "partial": "4",
+  "partial_ticks": 384,
+  "lily": "g4 | c'8. c'16 c'4. d'8 | e'8. e'16 e'4. e'8 | d'8 e'8 f'4 b4 | d'4 c'4 g4 | c'8. c'16 c'4. d'8 | e'8. e'16 e'4. e'8 | d'8 e'8 f'4 b4 | d'4 c'2 | g'8 g'8 e'4. a'8 | g'8 g'8 f'4. f'8 | f'8 f'8 d'4. g'8 | f'8 f'8 e'4 g4 | c'8. c'16 c'4. d'8 | e'8. e'16 e'4. e'8 | d'8 e'8 f'4 b4 | d'4 c'2 |"
+ },
+ {
+  "id": "entchen",
+  "title_ko": "나의 오리들 (Alle meine Entchen)",
+  "subtitle": "Alle meine Entchen — 독일 동요",
+  "composer": "독일 전래 동요 (19세기)",
+  "key": "c \\major",
+  "time": "2/4",
+  "tempo": 108,
+  "lily": "c'8 d'8 e'8 f'8 | g'4 g'4 | a'8 a'8 a'8 a'8 | g'2 | a'8 a'8 a'8 a'8 | g'2 | f'8 f'8 f'8 f'8 | e'4 e'4 | d'8 d'8 d'8 d'8 | c'2 |"
+ },
+ {
+  "id": "butterfly",
+  "title_ko": "나비야",
+  "subtitle": "Hänschen klein — 독일 동요 (한국 동요 「나비야」 선율)",
+  "composer": "독일 전래 동요 (프란츠 비데만 작사, 1860)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 108,
+  "lily": "g'4 e'4 e'2 | f'4 d'4 d'2 | c'4 d'4 e'4 f'4 | g'4 g'4 g'2 | g'4 e'4 e'2 | f'4 d'4 d'2 | c'4 e'4 g'4 g'4 | c'1 | d'4 d'4 d'4 d'4 | d'4 e'4 f'2 | e'4 e'4 e'4 e'4 | e'4 f'4 g'2 | g'4 e'4 e'2 | f'4 d'4 d'2 | c'4 e'4 g'4 g'4 | c'1 |"
+ },
+ {
+  "id": "au_clair",
+  "title_ko": "달빛 아래 (Au clair de la lune)",
+  "subtitle": "Au clair de la lune — 프랑스 동요",
+  "composer": "프랑스 전래 동요 (18세기)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 100,
+  "lily": "c'4 c'4 c'4 d'4 | e'2 d'2 | c'4 e'4 d'4 d'4 | c'1 | c'4 c'4 c'4 d'4 | e'2 d'2 | c'4 e'4 d'4 d'4 | c'1 | d'4 d'4 d'4 d'4 | a2 a2 | d'4 c'4 b4 a4 | g1 | c'4 c'4 c'4 d'4 | e'2 d'2 | c'4 e'4 d'4 d'4 | c'1 |"
+ },
+ {
+  "id": "yankee",
+  "title_ko": "양키 두들",
+  "subtitle": "Yankee Doodle — 미국 민속 노래",
+  "composer": "미국 전래 (18세기)",
+  "key": "c \\major",
+  "time": "2/4",
+  "tempo": 112,
+  "lily": "c'8 c'8 d'8 e'8 | c'8 e'8 d'8 g8 | c'8 c'8 d'8 e'8 | c'4 b4 | c'8 c'8 d'8 e'8 | f'8 e'8 d'8 c'8 | b8 g8 a8 b8 | c'4 c'4 | a8 b8 a8 g8 | a8 b8 c'4 | g8 a8 g8 f8 | e4 g4 | a8 b8 a8 g8 | a8 b8 c'8 a8 | g8 c'8 b8 d'8 | c'4 c'4 |"
+ },
+ {
+  "id": "kuckuck",
+  "title_ko": "뻐꾸기 (Kuckuck, Kuckuck)",
+  "subtitle": "Kuckuck, Kuckuck, ruft’s aus dem Wald — 독일 동요 (앞부분)",
+  "composer": "오스트리아 전래 선율 · 호프만 폰 팔러슬레벤 작사 (1837)",
+  "key": "c \\major",
+  "time": "3/4",
+  "tempo": 108,
+  "lily": "g'4 e'2 | g'4 e'2 | f'8 e'8 d'4 f'4 | e'8 d'8 c'2 | g'4 e'2 | g'4 e'2 | f'8 e'8 d'4 f'4 | e'8 d'8 c'2 |"
+ },
+ {
+  "id": "haydn_surprise",
+  "title_ko": "놀람 교향곡 주제",
+  "subtitle": "Symphony No.94 \"Surprise\" — 2악장 주제",
+  "composer": "요제프 하이든 (Joseph Haydn, 1732–1809)",
+  "key": "c \\major",
+  "time": "2/4",
+  "tempo": 66,
+  "lily": "c'8 c'8 e'8 e'8 | g'8 g'8 e'4 | f'8 f'8 d'8 d'8 | b8 b8 g4 | c'8 c'8 e'8 e'8 | g'8 g'8 e'4 | c''8 r8 r4 |"
+ },
+ {
+  "id": "humoresque",
+  "title_ko": "유모레스크",
+  "subtitle": "Humoresque Op.101 No.7 — 주제",
+  "composer": "안토닌 드보르자크 (Antonín Dvořák, 1841–1904)",
+  "key": "g \\major",
+  "time": "2/4",
+  "tempo": 112,
+  "lily": "g'8. a'16 b'8. a'16 | b'8. d''16 b'8. d''16 | g''8. fis''16 g''8. fis''16 | e''8. d''16 b'8. a'16 | g'8. a'16 b'8. a'16 | b'8. d''16 b'8. a'16 | g'2~ | g'2 |"
+ },
+ {
+  "id": "pomp",
+  "title_ko": "위풍당당 행진곡 (희망과 영광의 나라)",
+  "subtitle": "Pomp and Circumstance March No.1 — Trio (Land of Hope and Glory)",
+  "composer": "에드워드 엘가 (Edward Elgar, 1857–1934)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 76,
+  "lily": "g'2. e'4 | f'2. g'4 | c''2. b'4 | a'4 g'4 f'4 e'4 | d'1 | g'2. e'4 | f'2. g'4 | c''2. b'4 | a'4 g'4 f'4 d'4 | c'1 |"
+ },
+ {
+  "id": "swan_lake",
+  "title_ko": "백조의 호수 주제",
+  "subtitle": "Swan Lake Op.20 — 백조의 주제",
+  "composer": "표트르 차이콥스키 (Pyotr Ilyich Tchaikovsky, 1840–1893)",
+  "key": "a \\minor",
+  "time": "4/4",
+  "tempo": 66,
+  "lily": "e''2. a'8 b'8 | c''8 d''8 e''2 a'8 b'8 | c''8 d''8 e''4. f''8 e''8 d''8 | c''8 b'8 a'2. | e''2. a'8 b'8 | c''8 d''8 e''2 a'8 b'8 | c''8 d''8 e''4. f''8 e''8 d''8 | c''8 b'8 a'2. |"
+ }
+]

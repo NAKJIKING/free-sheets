@@ -1,0 +1,2027 @@
+{
+ "salut": {
+  "id": "salut",
+  "de": {
+   "title": "Salut d'amour",
+   "sub": "Liebesgruß, Op. 12"
+  },
+  "fr": {
+   "title": "Salut d'amour",
+   "sub": "Op. 12 — thème principal"
+  },
+  "es": {
+   "title": "Salut d'amour",
+   "sub": "Op. 12 — tema principal"
+  },
+  "pt": {
+   "title": "Salut d'amour",
+   "sub": "Op. 12 — tema principal"
+  },
+  "ind": {
+   "title": "Salut d'amour",
+   "sub": "Op. 12 — melodi utama"
+  },
+  "zh": {
+   "title": "爱的礼赞",
+   "sub": "作品12号 主题"
+  }
+ },
+ "canon": {
+  "id": "canon",
+  "de": {
+   "title": "Kanon in D-Dur",
+   "sub": "Kanon und Gigue in D-Dur — Thema"
+  },
+  "fr": {
+   "title": "Canon en ré majeur",
+   "sub": "Canon et Gigue en ré majeur — thème"
+  },
+  "es": {
+   "title": "Canon en re mayor",
+   "sub": "Canon y Giga en re mayor — tema"
+  },
+  "pt": {
+   "title": "Cânone em ré maior",
+   "sub": "Cânone e Giga em ré maior — tema"
+  },
+  "ind": {
+   "title": "Canon in D",
+   "sub": "Canon dan Gigue dalam D mayor — tema"
+  },
+  "zh": {
+   "title": "D大调卡农",
+   "sub": "卡农与吉格 主题"
+  }
+ },
+ "jesu": {
+  "id": "jesu",
+  "de": {
+   "title": "Jesus bleibet meine Freude",
+   "sub": "Kantate BWV 147 — Choral"
+  },
+  "fr": {
+   "title": "Jésus, que ma joie demeure",
+   "sub": "Cantate BWV 147 — choral"
+  },
+  "es": {
+   "title": "Jesús, alegría de los hombres",
+   "sub": "Cantata BWV 147 — coral"
+  },
+  "pt": {
+   "title": "Jesus, alegria dos homens",
+   "sub": "Cantata BWV 147 — coral"
+  },
+  "ind": {
+   "title": "Jesu, Joy of Man's Desiring",
+   "sub": "Kantata BWV 147 — koral"
+  },
+  "zh": {
+   "title": "耶稣，世人仰望的喜悦",
+   "sub": "康塔塔BWV147 众赞歌"
+  }
+ },
+ "william_tell": {
+  "id": "william_tell",
+  "de": {
+   "title": "Wilhelm-Tell-Ouvertüre",
+   "sub": "Finale (Galopp) — Thema"
+  },
+  "fr": {
+   "title": "Ouverture de Guillaume Tell",
+   "sub": "Final (galop) — thème"
+  },
+  "es": {
+   "title": "Obertura de Guillermo Tell",
+   "sub": "Final (galope) — tema"
+  },
+  "pt": {
+   "title": "Abertura de Guilherme Tell",
+   "sub": "Final (galope) — tema"
+  },
+  "ind": {
+   "title": "Overture William Tell",
+   "sub": "Bagian final (galop) — tema"
+  },
+  "zh": {
+   "title": "威廉·退尔序曲",
+   "sub": "歌剧《威廉·退尔》 终曲主题"
+  }
+ },
+ "la_donna": {
+  "id": "la_donna",
+  "de": {
+   "title": "La donna è mobile",
+   "sub": "Arie aus Rigoletto, 3. Akt"
+  },
+  "fr": {
+   "title": "La donna è mobile",
+   "sub": "Air de Rigoletto, acte III"
+  },
+  "es": {
+   "title": "La donna è mobile",
+   "sub": "Aria de Rigoletto, acto III"
+  },
+  "pt": {
+   "title": "La donna è mobile",
+   "sub": "Ária de Rigoletto, ato III"
+  },
+  "ind": {
+   "title": "La donna è mobile",
+   "sub": "Aria dari opera Rigoletto, babak III"
+  },
+  "zh": {
+   "title": "La donna è mobile",
+   "sub": "歌剧《弄臣》 第三幕咏叹调《女人善变》"
+  }
+ },
+ "rondeau": {
+  "id": "rondeau",
+  "de": {
+   "title": "Rondeau aus Abdelazer",
+   "sub": "Bühnenmusik, Z. 570 — Thema"
+  },
+  "fr": {
+   "title": "Rondeau d'Abdelazer",
+   "sub": "Musique de scène, Z. 570 — thème"
+  },
+  "es": {
+   "title": "Rondó de Abdelazer",
+   "sub": "Música incidental, Z. 570 — tema"
+  },
+  "pt": {
+   "title": "Rondó de Abdelazer",
+   "sub": "Música incidental, Z. 570 — tema"
+  },
+  "ind": {
+   "title": "Rondeau dari Abdelazer",
+   "sub": "Musik panggung, Z. 570 — tema"
+  },
+  "zh": {
+   "title": "回旋曲(选自Abdelazer)",
+   "sub": "戏剧配乐 Z.570 主题"
+  }
+ },
+ "anh5": {
+  "id": "anh5",
+  "de": {
+   "title": "Sonatine G-Dur",
+   "sub": "Anh. 5 Nr. 1, 1. Satz — Thema"
+  },
+  "fr": {
+   "title": "Sonatine en sol majeur",
+   "sub": "Anh. 5 n° 1, 1er mouvement — thème"
+  },
+  "es": {
+   "title": "Sonatina en sol mayor",
+   "sub": "Anh. 5 n.º 1, 1.er movimiento — tema"
+  },
+  "pt": {
+   "title": "Sonatina em sol maior",
+   "sub": "Anh. 5 n.º 1, 1.º movimento — tema"
+  },
+  "ind": {
+   "title": "Sonatina dalam G mayor",
+   "sub": "Anh. 5 no. 1, gerakan 1 — tema"
+  },
+  "zh": {
+   "title": "G大调小奏鸣曲",
+   "sub": "Anh.5 第1首 第一乐章 主题"
+  }
+ },
+ "sleeping": {
+  "id": "sleeping",
+  "de": {
+   "title": "Dornröschen-Walzer",
+   "sub": "Ballett Op. 66 — Walzerthema"
+  },
+  "fr": {
+   "title": "La Belle au bois dormant — Valse",
+   "sub": "Ballet op. 66 — thème de la valse"
+  },
+  "es": {
+   "title": "La bella durmiente — Vals",
+   "sub": "Ballet op. 66 — tema del vals"
+  },
+  "pt": {
+   "title": "A Bela Adormecida — Valsa",
+   "sub": "Balé op. 66 — tema da valsa"
+  },
+  "ind": {
+   "title": "Putri Tidur — Waltz",
+   "sub": "Balet Op. 66 — tema waltz"
+  },
+  "zh": {
+   "title": "睡美人圆舞曲",
+   "sub": "芭蕾舞剧 作品66 圆舞曲主题"
+  }
+ },
+ "barcarolle": {
+  "id": "barcarolle",
+  "de": {
+   "title": "Barkarole",
+   "sub": "Aus der Oper Hoffmanns Erzählungen"
+  },
+  "fr": {
+   "title": "Barcarolle",
+   "sub": "Opéra Les Contes d'Hoffmann"
+  },
+  "es": {
+   "title": "Barcarola",
+   "sub": "Ópera Los cuentos de Hoffmann"
+  },
+  "pt": {
+   "title": "Barcarola",
+   "sub": "Ópera Os Contos de Hoffmann"
+  },
+  "ind": {
+   "title": "Barcarolle",
+   "sub": "Dari opera Les Contes d'Hoffmann"
+  },
+  "zh": {
+   "title": "船歌",
+   "sub": "歌剧《霍夫曼的故事》"
+  }
+ },
+ "meditation": {
+  "id": "meditation",
+  "de": {
+   "title": "Méditation aus Thaïs",
+   "sub": "Oper Thaïs — Zwischenspiel, 2. Akt"
+  },
+  "fr": {
+   "title": "Méditation de Thaïs",
+   "sub": "Opéra Thaïs — intermède, acte II"
+  },
+  "es": {
+   "title": "Meditación de Thaïs",
+   "sub": "Ópera Thaïs — intermedio, acto II"
+  },
+  "pt": {
+   "title": "Meditação de Thaïs",
+   "sub": "Ópera Thaïs — intermezzo, ato II"
+  },
+  "ind": {
+   "title": "Méditation dari Thaïs",
+   "sub": "Opera Thaïs — intermezzo, babak II"
+  },
+  "zh": {
+   "title": "泰伊思冥想曲",
+   "sub": "歌剧《泰伊思》 第二幕间奏曲"
+  }
+ },
+ "swan": {
+  "id": "swan",
+  "de": {
+   "title": "Der Schwan",
+   "sub": "Der Karneval der Tiere, Nr. 13"
+  },
+  "fr": {
+   "title": "Le Cygne",
+   "sub": "Le Carnaval des animaux, n° 13"
+  },
+  "es": {
+   "title": "El cisne",
+   "sub": "El carnaval de los animales, n.º 13"
+  },
+  "pt": {
+   "title": "O Cisne",
+   "sub": "O Carnaval dos Animais, n.º 13"
+  },
+  "ind": {
+   "title": "Le Cygne",
+   "sub": "Karnaval Binatang, no. 13"
+  },
+  "zh": {
+   "title": "天鹅",
+   "sub": "动物狂欢节 第13首"
+  }
+ },
+ "minuet_woo10": {
+  "id": "minuet_woo10",
+  "de": {
+   "title": "Menuett G-Dur",
+   "sub": "Sechs Menuette WoO 10, Nr. 2"
+  },
+  "fr": {
+   "title": "Menuet en sol majeur",
+   "sub": "Six menuets WoO 10, n° 2"
+  },
+  "es": {
+   "title": "Minueto en sol mayor",
+   "sub": "Seis minuetos WoO 10, n.º 2"
+  },
+  "pt": {
+   "title": "Minueto em sol maior",
+   "sub": "Seis minuetos WoO 10, n.º 2"
+  },
+  "ind": {
+   "title": "Minuet in G",
+   "sub": "Enam Minuet WoO 10, no. 2"
+  },
+  "zh": {
+   "title": "G大调小步舞曲",
+   "sub": "六首小步舞曲 WoO 10 第2首"
+  }
+ },
+ "ecossaise": {
+  "id": "ecossaise",
+  "de": {
+   "title": "Ecossaise",
+   "sub": "Es-Dur, WoO 86"
+  },
+  "fr": {
+   "title": "Écossaise",
+   "sub": "Mi bémol majeur, WoO 86"
+  },
+  "es": {
+   "title": "Écossaise",
+   "sub": "Mi bemol mayor, WoO 86"
+  },
+  "pt": {
+   "title": "Écossaise",
+   "sub": "Mi bemol maior, WoO 86"
+  },
+  "ind": {
+   "title": "Écossaise",
+   "sub": "Es mayor, WoO 86"
+  },
+  "zh": {
+   "title": "苏格兰舞曲",
+   "sub": "降E大调 WoO 86"
+  }
+ },
+ "wooden": {
+  "id": "wooden",
+  "de": {
+   "title": "Marsch der Holzsoldaten",
+   "sub": "Kinderalbum Op. 39, Nr. 5"
+  },
+  "fr": {
+   "title": "Marche des soldats de bois",
+   "sub": "Album pour enfants op. 39, n° 5"
+  },
+  "es": {
+   "title": "Marcha de los soldados de madera",
+   "sub": "Álbum infantil, op. 39, n.º 5"
+  },
+  "pt": {
+   "title": "Marcha dos Soldadinhos de Madeira",
+   "sub": "Álbum Infantil, op. 39, n.º 5"
+  },
+  "ind": {
+   "title": "Mars Prajurit Kayu",
+   "sub": "Album Anak-anak op. 39, no. 5"
+  },
+  "zh": {
+   "title": "木偶兵进行曲",
+   "sub": "儿童曲集 Op.39 第5首"
+  }
+ },
+ "old_french": {
+  "id": "old_french",
+  "de": {
+   "title": "Altfranzösisches Lied",
+   "sub": "Kinderalbum Op. 39, Nr. 16"
+  },
+  "fr": {
+   "title": "Vieille chanson française",
+   "sub": "Album pour enfants op. 39, n° 16"
+  },
+  "es": {
+   "title": "Antigua canción francesa",
+   "sub": "Álbum infantil, op. 39, n.º 16"
+  },
+  "pt": {
+   "title": "Velha Canção Francesa",
+   "sub": "Álbum Infantil, op. 39, n.º 16"
+  },
+  "ind": {
+   "title": "Lagu Prancis Kuno",
+   "sub": "Album Anak-anak op. 39, no. 16"
+  },
+  "zh": {
+   "title": "古老的法国歌曲",
+   "sub": "儿童曲集 Op.39 第16首"
+  }
+ },
+ "brahms_waltz": {
+  "id": "brahms_waltz",
+  "de": {
+   "title": "Walzer As-Dur",
+   "sub": "16 Walzer Op. 39, Nr. 15"
+  },
+  "fr": {
+   "title": "Valse en la bémol majeur",
+   "sub": "16 Valses op. 39, n° 15"
+  },
+  "es": {
+   "title": "Vals en la bemol mayor",
+   "sub": "16 valses, op. 39, n.º 15"
+  },
+  "pt": {
+   "title": "Valsa em lá bemol maior",
+   "sub": "16 valsas, op. 39, n.º 15"
+  },
+  "ind": {
+   "title": "Waltz As Mayor",
+   "sub": "16 Waltz, op. 39, no. 15"
+  },
+  "zh": {
+   "title": "降A大调圆舞曲",
+   "sub": "16首圆舞曲 Op.39 第15首"
+  }
+ },
+ "susanna": {
+  "id": "susanna",
+  "de": {
+   "title": "Oh! Susanna",
+   "sub": "Amerikanisches Volkslied, 1848"
+  },
+  "fr": {
+   "title": "Oh! Susanna",
+   "sub": "Chanson populaire américaine, 1848"
+  },
+  "es": {
+   "title": "Oh! Susanna",
+   "sub": "Canción popular estadounidense, 1848"
+  },
+  "pt": {
+   "title": "Oh! Susanna",
+   "sub": "Canção popular americana, 1848"
+  },
+  "ind": {
+   "title": "Oh! Susanna",
+   "sub": "Lagu rakyat Amerika, 1848"
+  },
+  "zh": {
+   "title": "噢!苏珊娜",
+   "sub": "美国民谣 1848年"
+  }
+ },
+ "old_folks": {
+  "id": "old_folks",
+  "de": {
+   "title": "Old Folks at Home",
+   "sub": "Swanee River — amerikanisches Volkslied, 1851"
+  },
+  "fr": {
+   "title": "Old Folks at Home",
+   "sub": "Swanee River — chanson populaire américaine, 1851"
+  },
+  "es": {
+   "title": "Old Folks at Home",
+   "sub": "Swanee River — canción popular estadounidense, 1851"
+  },
+  "pt": {
+   "title": "Old Folks at Home",
+   "sub": "Swanee River — canção popular americana, 1851"
+  },
+  "ind": {
+   "title": "Old Folks at Home",
+   "sub": "Swanee River — lagu rakyat Amerika, 1851"
+  },
+  "zh": {
+   "title": "故乡的亲人",
+   "sub": "斯瓦尼河 美国民谣 1851年"
+  }
+ },
+ "home_sweet": {
+  "id": "home_sweet",
+  "de": {
+   "title": "Home, Sweet Home",
+   "sub": "Aus der Oper Clari, 1823"
+  },
+  "fr": {
+   "title": "Home, Sweet Home",
+   "sub": "Extrait de l'opéra Clari, 1823"
+  },
+  "es": {
+   "title": "Home, Sweet Home",
+   "sub": "De la ópera Clari, 1823"
+  },
+  "pt": {
+   "title": "Home, Sweet Home",
+   "sub": "Da ópera Clari, 1823"
+  },
+  "ind": {
+   "title": "Home, Sweet Home",
+   "sub": "Dari opera Clari, 1823"
+  },
+  "zh": {
+   "title": "可爱的家",
+   "sub": "选自歌剧克拉丽 1823年"
+  }
+ },
+ "eine_kleine": {
+  "id": "eine_kleine",
+  "de": {
+   "title": "Eine kleine Nachtmusik",
+   "sub": "Serenade KV 525, 1. Satz — Thema"
+  },
+  "fr": {
+   "title": "Une petite musique de nuit",
+   "sub": "Sérénade K. 525, 1er mouvement — thème"
+  },
+  "es": {
+   "title": "Pequeña serenata nocturna",
+   "sub": "Serenata K. 525, 1.er movimiento — tema"
+  },
+  "pt": {
+   "title": "Pequena Serenata Noturna",
+   "sub": "Serenata K. 525, 1.º movimento — tema"
+  },
+  "ind": {
+   "title": "Eine kleine Nachtmusik",
+   "sub": "Serenade K. 525, gerakan 1 — tema"
+  },
+  "zh": {
+   "title": "G大调弦乐小夜曲",
+   "sub": "K.525 第一乐章 主题"
+  }
+ },
+ "minuet_f": {
+  "id": "minuet_f",
+  "de": {
+   "title": "Menuett F-Dur",
+   "sub": "BWV Anh. 113 — Notenbüchlein für Anna Magdalena Bach"
+  },
+  "fr": {
+   "title": "Menuet en fa majeur",
+   "sub": "BWV Anh. 113 — Petit livre d'Anna Magdalena Bach"
+  },
+  "es": {
+   "title": "Minueto en fa mayor",
+   "sub": "BWV Anh. 113 — Cuaderno de Ana Magdalena Bach"
+  },
+  "pt": {
+   "title": "Minueto em fá maior",
+   "sub": "BWV Anh. 113 — Caderno de Anna Magdalena Bach"
+  },
+  "ind": {
+   "title": "Minuet dalam F mayor",
+   "sub": "BWV Anh. 113 — Buku Catatan Anna Magdalena Bach"
+  },
+  "zh": {
+   "title": "F大调小步舞曲",
+   "sub": "BWV Anh.113 安娜·玛格达莱娜·巴赫笔记本"
+  }
+ },
+ "march_d": {
+  "id": "march_d",
+  "de": {
+   "title": "Marsch D-Dur",
+   "sub": "BWV Anh. 122 — Notenbüchlein für Anna Magdalena Bach"
+  },
+  "fr": {
+   "title": "Marche en ré majeur",
+   "sub": "BWV Anh. 122 — Petit livre d'Anna Magdalena Bach"
+  },
+  "es": {
+   "title": "Marcha en re mayor",
+   "sub": "BWV Anh. 122 — Cuaderno de Ana Magdalena Bach"
+  },
+  "pt": {
+   "title": "Marcha em ré maior",
+   "sub": "BWV Anh. 122 — Caderno de Anna Magdalena Bach"
+  },
+  "ind": {
+   "title": "Mars dalam D mayor",
+   "sub": "BWV Anh. 122 — Buku Catatan Anna Magdalena Bach"
+  },
+  "zh": {
+   "title": "D大调进行曲",
+   "sub": "BWV Anh.122 安娜·玛格达莱娜·巴赫笔记本"
+  }
+ },
+ "polonaise_g": {
+  "id": "polonaise_g",
+  "de": {
+   "title": "Polonaise g-Moll",
+   "sub": "BWV Anh. 119 — Notenbüchlein für Anna Magdalena Bach"
+  },
+  "fr": {
+   "title": "Polonaise en sol mineur",
+   "sub": "BWV Anh. 119 — Petit livre d'Anna Magdalena Bach"
+  },
+  "es": {
+   "title": "Polonesa en sol menor",
+   "sub": "BWV Anh. 119 — Cuaderno de Ana Magdalena Bach"
+  },
+  "pt": {
+   "title": "Polonesa em sol menor",
+   "sub": "BWV Anh. 119 — Caderno de Anna Magdalena Bach"
+  },
+  "ind": {
+   "title": "Polonaise dalam G minor",
+   "sub": "BWV Anh. 119 — Buku Catatan Anna Magdalena Bach"
+  },
+  "zh": {
+   "title": "g小调波兰舞曲",
+   "sub": "BWV Anh.119 安娜·玛格达莱娜·巴赫笔记本"
+  }
+ },
+ "solveig": {
+  "id": "solveig",
+  "de": {
+   "title": "Solvejgs Lied",
+   "sub": "Peer-Gynt-Suite Nr. 2, Op. 55"
+  },
+  "fr": {
+   "title": "Chanson de Solveig",
+   "sub": "Peer Gynt — Suite n° 2, op. 55"
+  },
+  "es": {
+   "title": "Canción de Solveig",
+   "sub": "Peer Gynt — Suite n.º 2, op. 55"
+  },
+  "pt": {
+   "title": "Canção de Solveig",
+   "sub": "Peer Gynt — Suíte n.º 2, op. 55"
+  },
+  "ind": {
+   "title": "Lagu Solveig",
+   "sub": "Peer Gynt — Suite no. 2, Op. 55"
+  },
+  "zh": {
+   "title": "索尔维格之歌",
+   "sub": "培尔·金特 第二组曲 作品55"
+  }
+ },
+ "mountain_king": {
+  "id": "mountain_king",
+  "de": {
+   "title": "In der Halle des Bergkönigs",
+   "sub": "Peer-Gynt-Suite Nr. 1, Op. 46"
+  },
+  "fr": {
+   "title": "Dans l'antre du roi de la montagne",
+   "sub": "Peer Gynt — Suite n° 1, op. 46"
+  },
+  "es": {
+   "title": "En la gruta del rey de la montaña",
+   "sub": "Peer Gynt — Suite n.º 1, op. 46"
+  },
+  "pt": {
+   "title": "Na gruta do rei da montanha",
+   "sub": "Peer Gynt — Suíte n.º 1, op. 46"
+  },
+  "ind": {
+   "title": "Di Istana Raja Gunung",
+   "sub": "Peer Gynt — Suite no. 1, Op. 46"
+  },
+  "zh": {
+   "title": "在山魔王的宫殿里",
+   "sub": "培尔·金特 第一组曲 作品46"
+  }
+ },
+ "beethoven5": {
+  "id": "beethoven5",
+  "de": {
+   "title": "Sinfonie Nr. 5",
+   "sub": "Op. 67, 1. Satz — Thema"
+  },
+  "fr": {
+   "title": "Symphonie n° 5",
+   "sub": "op. 67, 1er mouvement — thème"
+  },
+  "es": {
+   "title": "Sinfonía n.º 5",
+   "sub": "op. 67, 1.er movimiento — tema"
+  },
+  "pt": {
+   "title": "Sinfonia n.º 5",
+   "sub": "op. 67, 1.º movimento — tema"
+  },
+  "ind": {
+   "title": "Simfoni No. 5",
+   "sub": "Op. 67, gerakan 1 — tema"
+  },
+  "zh": {
+   "title": "命运交响曲",
+   "sub": "第五交响曲 作品67 第一乐章 主题"
+  }
+ },
+ "martini": {
+  "id": "martini",
+  "de": {
+   "title": "Gavotte",
+   "sub": "Barocker Tanzsatz"
+  },
+  "fr": {
+   "title": "Gavotte",
+   "sub": "Danse baroque"
+  },
+  "es": {
+   "title": "Gavota",
+   "sub": "Danza barroca"
+  },
+  "pt": {
+   "title": "Gavota",
+   "sub": "Dança barroca"
+  },
+  "ind": {
+   "title": "Gavotte",
+   "sub": "Tarian Barok"
+  },
+  "zh": {
+   "title": "加沃特舞曲",
+   "sub": "巴洛克舞曲"
+  }
+ },
+ "emperor": {
+  "id": "emperor",
+  "de": {
+   "title": "Kaiserquartett",
+   "sub": "Op. 76 Nr. 3, 2. Satz — Thema"
+  },
+  "fr": {
+   "title": "Quatuor L'Empereur",
+   "sub": "op. 76 n° 3, 2e mouvement — thème"
+  },
+  "es": {
+   "title": "Cuarteto Emperador",
+   "sub": "op. 76 n.º 3, 2.º movimiento — tema"
+  },
+  "pt": {
+   "title": "Quarteto Imperador",
+   "sub": "op. 76 n.º 3, 2.º movimento — tema"
+  },
+  "ind": {
+   "title": "Kuartet Kaisar",
+   "sub": "Op. 76 no. 3, gerakan 2 — tema"
+  },
+  "zh": {
+   "title": "皇帝四重奏",
+   "sub": "作品76之3 第二乐章 主题"
+  }
+ },
+ "k331_theme": {
+  "id": "k331_theme",
+  "de": {
+   "title": "Klaviersonate KV 331",
+   "sub": "1. Satz, Andante grazioso — Thema"
+  },
+  "fr": {
+   "title": "Sonate pour piano K. 331",
+   "sub": "1er mouvement, Andante grazioso — thème"
+  },
+  "es": {
+   "title": "Sonata para piano K. 331",
+   "sub": "1.er movimiento, Andante grazioso — tema"
+  },
+  "pt": {
+   "title": "Sonata para piano K. 331",
+   "sub": "1.º movimento, Andante grazioso — tema"
+  },
+  "ind": {
+   "title": "Sonata Piano K. 331",
+   "sub": "Gerakan 1, Andante grazioso — tema"
+  },
+  "zh": {
+   "title": "A大调钢琴奏鸣曲 K.331",
+   "sub": "第一乐章 优雅的行板 主题"
+  }
+ },
+ "bourree": {
+  "id": "bourree",
+  "de": {
+   "title": "Bourrée e-Moll",
+   "sub": "BWV 996 — aus der Suite e-Moll"
+  },
+  "fr": {
+   "title": "Bourrée en mi mineur",
+   "sub": "BWV 996 — extrait de la Suite en mi mineur"
+  },
+  "es": {
+   "title": "Bourrée en mi menor",
+   "sub": "BWV 996 — de la Suite en mi menor"
+  },
+  "pt": {
+   "title": "Bourrée em mi menor",
+   "sub": "BWV 996 — da Suíte em mi menor"
+  },
+  "ind": {
+   "title": "Bourrée dalam E minor",
+   "sub": "BWV 996 — dari Suite dalam E minor"
+  },
+  "zh": {
+   "title": "e小调布列舞曲",
+   "sub": "BWV 996 选自e小调组曲"
+  }
+ },
+ "carmen_habanera": {
+  "id": "carmen_habanera",
+  "de": {
+   "title": "Habanera",
+   "sub": "Aus der Oper Carmen, 1. Akt"
+  },
+  "fr": {
+   "title": "Habanera",
+   "sub": "Extrait de l'opéra Carmen, acte I"
+  },
+  "es": {
+   "title": "Habanera",
+   "sub": "De la ópera Carmen, acto I"
+  },
+  "pt": {
+   "title": "Habanera",
+   "sub": "Da ópera Carmen, ato I"
+  },
+  "ind": {
+   "title": "Habanera",
+   "sub": "Dari opera Carmen, babak I"
+  },
+  "zh": {
+   "title": "哈巴涅拉舞曲",
+   "sub": "歌剧《卡门》第一幕"
+  }
+ },
+ "santa_lucia": {
+  "id": "santa_lucia",
+  "de": {
+   "title": "Santa Lucia",
+   "sub": "Neapolitanisches Lied"
+  },
+  "fr": {
+   "title": "Santa Lucia",
+   "sub": "Chanson napolitaine"
+  },
+  "es": {
+   "title": "Santa Lucía",
+   "sub": "Canción napolitana"
+  },
+  "pt": {
+   "title": "Santa Lucia",
+   "sub": "Canção napolitana"
+  },
+  "ind": {
+   "title": "Santa Lucia",
+   "sub": "Lagu Napoli"
+  },
+  "zh": {
+   "title": "桑塔露琪亚",
+   "sub": "那不勒斯民歌"
+  }
+ },
+ "chopin_prelude7": {
+  "id": "chopin_prelude7",
+  "de": {
+   "title": "Prélude Op. 28 Nr. 7",
+   "sub": "24 Préludes Op. 28 — Nr. 7, A-Dur"
+  },
+  "fr": {
+   "title": "Prélude op. 28 n° 7",
+   "sub": "24 Préludes op. 28 — n° 7, en la majeur"
+  },
+  "es": {
+   "title": "Preludio op. 28 n.º 7",
+   "sub": "24 Preludios op. 28 — n.º 7, en la mayor"
+  },
+  "pt": {
+   "title": "Prelúdio op. 28 n.º 7",
+   "sub": "24 Prelúdios op. 28 — n.º 7, em lá maior"
+  },
+  "ind": {
+   "title": "Prelude op. 28 no. 7",
+   "sub": "24 Prelude op. 28 — no. 7, A mayor"
+  },
+  "zh": {
+   "title": "前奏曲 Op.28 第7首",
+   "sub": "《24首前奏曲》第7首 A大调"
+  }
+ },
+ "nutcracker": {
+  "id": "nutcracker",
+  "de": {
+   "title": "Der Nussknacker",
+   "sub": "Ballett Op. 71 — Thema"
+  },
+  "fr": {
+   "title": "Casse-Noisette",
+   "sub": "Ballet op. 71 — thème"
+  },
+  "es": {
+   "title": "El Cascanueces",
+   "sub": "Ballet op. 71 — tema"
+  },
+  "pt": {
+   "title": "O Quebra-Nozes",
+   "sub": "Balé op. 71 — tema"
+  },
+  "ind": {
+   "title": "The Nutcracker",
+   "sub": "Balet op. 71 — tema"
+  },
+  "zh": {
+   "title": "胡桃夹子",
+   "sub": "芭蕾舞剧 作品71 主题"
+  }
+ },
+ "heidenroslein": {
+  "id": "heidenroslein",
+  "de": {
+   "title": "Heidenröslein",
+   "sub": "Lied D 257, Text von Goethe"
+  },
+  "fr": {
+   "title": "Heidenröslein",
+   "sub": "Lied D 257, texte de Goethe"
+  },
+  "es": {
+   "title": "Heidenröslein",
+   "sub": "Lied D 257, texto de Goethe"
+  },
+  "pt": {
+   "title": "Heidenröslein",
+   "sub": "Lied D 257, texto de Goethe"
+  },
+  "ind": {
+   "title": "Heidenröslein",
+   "sub": "Lagu seni D 257 — puisi Goethe"
+  },
+  "zh": {
+   "title": "野玫瑰",
+   "sub": "艺术歌曲 D.257 歌德词"
+  }
+ },
+ "an_die_musik": {
+  "id": "an_die_musik",
+  "de": {
+   "title": "An die Musik",
+   "sub": "Lied D 547, Text von Schober"
+  },
+  "fr": {
+   "title": "An die Musik",
+   "sub": "Lied D 547, texte de Schober"
+  },
+  "es": {
+   "title": "An die Musik",
+   "sub": "Lied D 547, texto de Schober"
+  },
+  "pt": {
+   "title": "An die Musik",
+   "sub": "Lied D 547, texto de Schober"
+  },
+  "ind": {
+   "title": "An die Musik",
+   "sub": "Lagu seni D 547 — puisi Schober"
+  },
+  "zh": {
+   "title": "致音乐",
+   "sub": "艺术歌曲 D.547"
+  }
+ },
+ "standchen": {
+  "id": "standchen",
+  "de": {
+   "title": "Ständchen",
+   "sub": "Schwanengesang D 957, Nr. 4"
+  },
+  "fr": {
+   "title": "Sérénade",
+   "sub": "Le Chant du cygne D 957, n° 4"
+  },
+  "es": {
+   "title": "Serenata",
+   "sub": "El canto del cisne D 957, n.º 4"
+  },
+  "pt": {
+   "title": "Serenata",
+   "sub": "O canto do cisne D 957, n.º 4"
+  },
+  "ind": {
+   "title": "Serenade",
+   "sub": "Schwanengesang D 957, no. 4"
+  },
+  "zh": {
+   "title": "小夜曲",
+   "sub": "《天鹅之歌》D.957 第4首"
+  }
+ },
+ "lindenbaum": {
+  "id": "lindenbaum",
+  "de": {
+   "title": "Der Lindenbaum",
+   "sub": "Winterreise D 911, Nr. 5"
+  },
+  "fr": {
+   "title": "Le Tilleul",
+   "sub": "Le Voyage d'hiver D 911, n° 5"
+  },
+  "es": {
+   "title": "El tilo",
+   "sub": "Viaje de invierno D 911, n.º 5"
+  },
+  "pt": {
+   "title": "A tília",
+   "sub": "Viagem de inverno D 911, n.º 5"
+  },
+  "ind": {
+   "title": "Der Lindenbaum",
+   "sub": "Winterreise D 911, no. 5"
+  },
+  "zh": {
+   "title": "菩提树",
+   "sub": "《冬之旅》D.911 第5首"
+  }
+ },
+ "nussbaum": {
+  "id": "nussbaum",
+  "de": {
+   "title": "Der Nussbaum",
+   "sub": "Myrthen Op. 25, Nr. 3"
+  },
+  "fr": {
+   "title": "Der Nussbaum",
+   "sub": "Myrthen op. 25, n° 3"
+  },
+  "es": {
+   "title": "Der Nussbaum",
+   "sub": "Myrthen op. 25, n.º 3"
+  },
+  "pt": {
+   "title": "Der Nussbaum",
+   "sub": "Myrthen op. 25, n.º 3"
+  },
+  "ind": {
+   "title": "Der Nussbaum",
+   "sub": "Myrthen op. 25, no. 3"
+  },
+  "zh": {
+   "title": "核桃树",
+   "sub": "《桃金娘》Op.25 第3首"
+  }
+ },
+ "musensohn": {
+  "id": "musensohn",
+  "de": {
+   "title": "Der Musensohn",
+   "sub": "Lied D 764, Text von Goethe"
+  },
+  "fr": {
+   "title": "Der Musensohn",
+   "sub": "Lied D 764, texte de Goethe"
+  },
+  "es": {
+   "title": "Der Musensohn",
+   "sub": "Lied D 764, texto de Goethe"
+  },
+  "pt": {
+   "title": "Der Musensohn",
+   "sub": "Lied D 764, texto de Goethe"
+  },
+  "ind": {
+   "title": "Der Musensohn",
+   "sub": "Lagu seni D 764 — puisi Goethe"
+  },
+  "zh": {
+   "title": "缪斯之子",
+   "sub": "艺术歌曲 D.764 歌德词"
+  }
+ },
+ "du_bist_die_ruh": {
+  "id": "du_bist_die_ruh",
+  "de": {
+   "title": "Du bist die Ruh",
+   "sub": "Lied D 776, Text von Friedrich Rückert"
+  },
+  "fr": {
+   "title": "Du bist die Ruh",
+   "sub": "Lied D 776, poème de Rückert"
+  },
+  "es": {
+   "title": "Du bist die Ruh",
+   "sub": "Lied D 776, texto de Rückert"
+  },
+  "pt": {
+   "title": "Du bist die Ruh",
+   "sub": "Lied D 776, texto de Rückert"
+  },
+  "ind": {
+   "title": "Du bist die Ruh",
+   "sub": "Lagu seni D 776, puisi Rückert"
+  },
+  "zh": {
+   "title": "你是安宁",
+   "sub": "艺术歌曲 D.776 吕克特诗作"
+  }
+ },
+ "je_te_veux": {
+  "id": "je_te_veux",
+  "de": {
+   "title": "Je te veux",
+   "sub": "Walzerlied (valse chantée)"
+  },
+  "fr": {
+   "title": "Je te veux",
+   "sub": "Valse chantée, paroles d’Henry Pacory"
+  },
+  "es": {
+   "title": "Je te veux",
+   "sub": "Vals cantado (valse chantée)"
+  },
+  "pt": {
+   "title": "Je te veux",
+   "sub": "Valsa cantada (valse chantée)"
+  },
+  "ind": {
+   "title": "Je te veux",
+   "sub": "Lagu waltz Prancis (valse chantée)"
+  },
+  "zh": {
+   "title": "我要你",
+   "sub": "法国香颂圆舞曲"
+  }
+ },
+ "mary_lamb": {
+  "id": "mary_lamb",
+  "de": {
+   "title": "Mary Had a Little Lamb",
+   "sub": "Amerikanisches Kinderlied"
+  },
+  "fr": {
+   "title": "Mary Had a Little Lamb",
+   "sub": "Comptine américaine"
+  },
+  "es": {
+   "title": "María tenía un corderito",
+   "sub": "Canción infantil estadounidense"
+  },
+  "pt": {
+   "title": "Maria tinha um carneirinho",
+   "sub": "Canção infantil americana"
+  },
+  "ind": {
+   "title": "Mary Had a Little Lamb",
+   "sub": "Lagu anak-anak Amerika"
+  },
+  "zh": {
+   "title": "玛丽有只小羊羔",
+   "sub": "美国传统儿歌"
+  }
+ },
+ "london_bridge": {
+  "id": "london_bridge",
+  "de": {
+   "title": "London Bridge Is Falling Down",
+   "sub": "Englisches Kinderlied"
+  },
+  "fr": {
+   "title": "London Bridge Is Falling Down",
+   "sub": "Comptine anglaise"
+  },
+  "es": {
+   "title": "London Bridge Is Falling Down",
+   "sub": "Canción infantil inglesa"
+  },
+  "pt": {
+   "title": "London Bridge Is Falling Down",
+   "sub": "Canção infantil inglesa"
+  },
+  "ind": {
+   "title": "London Bridge Is Falling Down",
+   "sub": "Lagu anak-anak Inggris"
+  },
+  "zh": {
+   "title": "伦敦大桥垮下来",
+   "sub": "英国传统儿歌"
+  }
+ },
+ "row_boat": {
+  "id": "row_boat",
+  "de": {
+   "title": "Row, Row, Row Your Boat",
+   "sub": "Englisches Kinderlied, Kanon"
+  },
+  "fr": {
+   "title": "Row, Row, Row Your Boat",
+   "sub": "Comptine anglaise, canon"
+  },
+  "es": {
+   "title": "Row, Row, Row Your Boat",
+   "sub": "Canción infantil inglesa, canon"
+  },
+  "pt": {
+   "title": "Row, Row, Row Your Boat",
+   "sub": "Canção infantil inglesa, cânone"
+  },
+  "ind": {
+   "title": "Row, Row, Row Your Boat",
+   "sub": "Lagu anak-anak Inggris, kanon"
+  },
+  "zh": {
+   "title": "划船歌",
+   "sub": "英语传统儿歌 轮唱曲"
+  }
+ },
+ "frere": {
+  "id": "frere",
+  "de": {
+   "title": "Bruder Jakob",
+   "sub": "Französisches Kinderlied, Kanon"
+  },
+  "fr": {
+   "title": "Frère Jacques",
+   "sub": "Comptine française, canon"
+  },
+  "es": {
+   "title": "Martinillo",
+   "sub": "Canción infantil francesa (Frère Jacques)"
+  },
+  "pt": {
+   "title": "Frei João",
+   "sub": "Canção infantil francesa (Frère Jacques)"
+  },
+  "ind": {
+   "title": "Frère Jacques",
+   "sub": "Lagu anak-anak Prancis, kanon"
+  },
+  "zh": {
+   "title": "雅克兄弟",
+   "sub": "法国儿歌 曲调同《两只老虎》"
+  }
+ },
+ "old_macdonald": {
+  "id": "old_macdonald",
+  "de": {
+   "title": "Old MacDonald Had a Farm",
+   "sub": "Amerikanisches Kinderlied"
+  },
+  "fr": {
+   "title": "Dans la ferme de Mathurin",
+   "sub": "Comptine américaine (Old MacDonald)"
+  },
+  "es": {
+   "title": "El viejo MacDonald tenía una granja",
+   "sub": "Canción infantil estadounidense"
+  },
+  "pt": {
+   "title": "Seu Lobato tinha um sítio",
+   "sub": "Canção infantil americana (Old MacDonald)"
+  },
+  "ind": {
+   "title": "Old MacDonald Had a Farm",
+   "sub": "Lagu anak-anak Amerika"
+  },
+  "zh": {
+   "title": "王老先生有块地",
+   "sub": "美国传统儿歌"
+  }
+ },
+ "happy_birthday": {
+  "id": "happy_birthday",
+  "de": {
+   "title": "Zum Geburtstag viel Glück",
+   "sub": "Geburtstagslied nach „Good Morning to All“"
+  },
+  "fr": {
+   "title": "Joyeux anniversaire",
+   "sub": "Chanson d’anniversaire, d’après « Good Morning to All »"
+  },
+  "es": {
+   "title": "Cumpleaños feliz",
+   "sub": "Canción de cumpleaños, de «Good Morning to All»"
+  },
+  "pt": {
+   "title": "Parabéns a você",
+   "sub": "Canção de aniversário, de “Good Morning to All”"
+  },
+  "ind": {
+   "title": "Selamat Ulang Tahun",
+   "sub": "Lagu ulang tahun, dari “Good Morning to All”"
+  },
+  "zh": {
+   "title": "生日快乐歌",
+   "sub": "生日歌 源自《Good Morning to All》"
+  }
+ },
+ "hot_cross": {
+  "id": "hot_cross",
+  "de": {
+   "title": "Hot Cross Buns",
+   "sub": "Englisches Kinderlied"
+  },
+  "fr": {
+   "title": "Hot Cross Buns",
+   "sub": "Comptine anglaise"
+  },
+  "es": {
+   "title": "Hot Cross Buns",
+   "sub": "Canción infantil inglesa"
+  },
+  "pt": {
+   "title": "Hot Cross Buns",
+   "sub": "Canção infantil inglesa"
+  },
+  "ind": {
+   "title": "Hot Cross Buns",
+   "sub": "Lagu anak-anak Inggris"
+  },
+  "zh": {
+   "title": "十字面包",
+   "sub": "英国传统儿歌"
+  }
+ },
+ "we_wish": {
+  "id": "we_wish",
+  "de": {
+   "title": "Wir wünschen euch frohe Weihnachten",
+   "sub": "Englisches Weihnachtslied"
+  },
+  "fr": {
+   "title": "Nous vous souhaitons un joyeux Noël",
+   "sub": "Chant de Noël anglais"
+  },
+  "es": {
+   "title": "Os deseamos una feliz Navidad",
+   "sub": "Villancico inglés tradicional"
+  },
+  "pt": {
+   "title": "Nós desejamos um feliz Natal",
+   "sub": "Canção natalina inglesa"
+  },
+  "ind": {
+   "title": "Kami Ucapkan Selamat Natal",
+   "sub": "Lagu Natal tradisional Inggris"
+  },
+  "zh": {
+   "title": "我们祝你圣诞快乐",
+   "sub": "英国传统圣诞颂歌"
+  }
+ },
+ "tannenbaum": {
+  "id": "tannenbaum",
+  "de": {
+   "title": "O Tannenbaum",
+   "sub": "Deutsches Weihnachtslied — Volksweise"
+  },
+  "fr": {
+   "title": "Mon beau sapin",
+   "sub": "Chant de Noël allemand (O Tannenbaum)"
+  },
+  "es": {
+   "title": "Oh abeto",
+   "sub": "Villancico alemán (O Tannenbaum)"
+  },
+  "pt": {
+   "title": "Ó abeto",
+   "sub": "Canção natalina alemã (O Tannenbaum)"
+  },
+  "ind": {
+   "title": "O Tannenbaum",
+   "sub": "Lagu Natal Jerman"
+  },
+  "zh": {
+   "title": "圣诞树",
+   "sub": "德国圣诞歌曲"
+  }
+ },
+ "entchen": {
+  "id": "entchen",
+  "de": {
+   "title": "Alle meine Entchen",
+   "sub": "Deutsches Kinderlied — Volksweise"
+  },
+  "fr": {
+   "title": "Alle meine Entchen",
+   "sub": "Chanson enfantine allemande"
+  },
+  "es": {
+   "title": "Alle meine Entchen",
+   "sub": "Canción infantil alemana"
+  },
+  "pt": {
+   "title": "Alle meine Entchen",
+   "sub": "Canção infantil alemã"
+  },
+  "ind": {
+   "title": "Alle meine Entchen",
+   "sub": "Lagu anak-anak Jerman"
+  },
+  "zh": {
+   "title": "我的小鸭子",
+   "sub": "德国儿歌"
+  }
+ },
+ "butterfly": {
+  "id": "butterfly",
+  "de": {
+   "title": "Hänschen klein",
+   "sub": "Deutsches Kinderlied — Volksweise"
+  },
+  "fr": {
+   "title": "Hänschen klein",
+   "sub": "Chanson enfantine allemande"
+  },
+  "es": {
+   "title": "Hänschen klein",
+   "sub": "Canción infantil alemana"
+  },
+  "pt": {
+   "title": "Hänschen klein",
+   "sub": "Canção infantil alemã"
+  },
+  "ind": {
+   "title": "Hänschen klein",
+   "sub": "Lagu anak-anak Jerman"
+  },
+  "zh": {
+   "title": "小蜜蜂",
+   "sub": "德国儿歌"
+  }
+ },
+ "au_clair": {
+  "id": "au_clair",
+  "de": {
+   "title": "Au clair de la lune",
+   "sub": "Französisches Kinderlied — Volksweise"
+  },
+  "fr": {
+   "title": "Au clair de la lune",
+   "sub": "Chanson enfantine française"
+  },
+  "es": {
+   "title": "Au clair de la lune",
+   "sub": "Canción infantil francesa"
+  },
+  "pt": {
+   "title": "Au clair de la lune",
+   "sub": "Canção infantil francesa"
+  },
+  "ind": {
+   "title": "Au clair de la lune",
+   "sub": "Lagu anak-anak Prancis"
+  },
+  "zh": {
+   "title": "月光下",
+   "sub": "法国儿歌"
+  }
+ },
+ "yankee": {
+  "id": "yankee",
+  "de": {
+   "title": "Yankee Doodle",
+   "sub": "Amerikanisches Volkslied"
+  },
+  "fr": {
+   "title": "Yankee Doodle",
+   "sub": "Chanson traditionnelle américaine"
+  },
+  "es": {
+   "title": "Yankee Doodle",
+   "sub": "Canción tradicional estadounidense"
+  },
+  "pt": {
+   "title": "Yankee Doodle",
+   "sub": "Canção tradicional americana"
+  },
+  "ind": {
+   "title": "Yankee Doodle",
+   "sub": "Lagu rakyat Amerika"
+  },
+  "zh": {
+   "title": "扬基歌",
+   "sub": "美国民歌"
+  }
+ },
+ "kuckuck": {
+  "id": "kuckuck",
+  "de": {
+   "title": "Kuckuck, Kuckuck",
+   "sub": "Deutsches Kinderlied — Volksweise"
+  },
+  "fr": {
+   "title": "Kuckuck, Kuckuck",
+   "sub": "Chanson enfantine allemande"
+  },
+  "es": {
+   "title": "Kuckuck, Kuckuck",
+   "sub": "Canción infantil alemana"
+  },
+  "pt": {
+   "title": "Kuckuck, Kuckuck",
+   "sub": "Canção infantil alemã"
+  },
+  "ind": {
+   "title": "Kuckuck, Kuckuck",
+   "sub": "Lagu anak-anak Jerman"
+  },
+  "zh": {
+   "title": "布谷",
+   "sub": "德国儿歌"
+  }
+ },
+ "haydn_surprise": {
+  "id": "haydn_surprise",
+  "de": {
+   "title": "Sinfonie mit dem Paukenschlag",
+   "sub": "Sinfonie Nr. 94, 2. Satz — Andante-Thema"
+  },
+  "fr": {
+   "title": "Symphonie « La Surprise »",
+   "sub": "Symphonie n° 94, 2e mouvement — thème Andante"
+  },
+  "es": {
+   "title": "Sinfonía «La sorpresa»",
+   "sub": "Sinfonía n.º 94, 2.º movimiento — tema Andante"
+  },
+  "pt": {
+   "title": "Sinfonia A Surpresa",
+   "sub": "Sinfonia n.º 94, 2º movimento — tema Andante"
+  },
+  "ind": {
+   "title": "Simfoni Kejutan",
+   "sub": "Simfoni no. 94, gerakan ke-2 — tema Andante"
+  },
+  "zh": {
+   "title": "惊愕交响曲",
+   "sub": "第94交响曲 第二乐章 行板主题"
+  }
+ },
+ "humoresque": {
+  "id": "humoresque",
+  "de": {
+   "title": "Humoreske",
+   "sub": "Humoresken Op. 101 Nr. 7 — Thema"
+  },
+  "fr": {
+   "title": "Humoresque",
+   "sub": "Humoresques op. 101 n° 7 — thème"
+  },
+  "es": {
+   "title": "Humoresque",
+   "sub": "Humorescas op. 101, n.º 7 — tema"
+  },
+  "pt": {
+   "title": "Humoresque",
+   "sub": "Humorescas op. 101, n.º 7 — tema"
+  },
+  "ind": {
+   "title": "Humoresque",
+   "sub": "Humoresques Op. 101 no. 7 — tema"
+  },
+  "zh": {
+   "title": "幽默曲",
+   "sub": "作品101 第7首 主题"
+  }
+ },
+ "pomp": {
+  "id": "pomp",
+  "de": {
+   "title": "Pomp and Circumstance",
+   "sub": "Marsch Nr. 1 — Trio (Land of Hope and Glory)"
+  },
+  "fr": {
+   "title": "Pomp and Circumstance",
+   "sub": "Marche n° 1 — trio (Land of Hope and Glory)"
+  },
+  "es": {
+   "title": "Pompa y circunstancia",
+   "sub": "Marcha n.º 1 — trío (Land of Hope and Glory)"
+  },
+  "pt": {
+   "title": "Pompa e Circunstância",
+   "sub": "Marcha n.º 1 — trio (Land of Hope and Glory)"
+  },
+  "ind": {
+   "title": "Pomp and Circumstance",
+   "sub": "Mars no. 1 — bagian trio (Land of Hope and Glory)"
+  },
+  "zh": {
+   "title": "威风凛凛进行曲",
+   "sub": "第1号 中段主题 希望与光荣的土地"
+  }
+ },
+ "swan_lake": {
+  "id": "swan_lake",
+  "de": {
+   "title": "Schwanensee",
+   "sub": "Ballett Op. 20 — Thema der Schwäne"
+  },
+  "fr": {
+   "title": "Le Lac des cygnes",
+   "sub": "Ballet op. 20 — thème des cygnes"
+  },
+  "es": {
+   "title": "El lago de los cisnes",
+   "sub": "Ballet op. 20 — tema de los cisnes"
+  },
+  "pt": {
+   "title": "O Lago dos Cisnes",
+   "sub": "Balé op. 20 — tema dos cisnes"
+  },
+  "ind": {
+   "title": "Danau Angsa",
+   "sub": "Balet Op. 20 — tema angsa"
+  },
+  "zh": {
+   "title": "天鹅湖",
+   "sub": "芭蕾舞剧 作品20 天鹅主题"
+  }
+ },
+ "ode": {
+  "id": "ode",
+  "de": {
+   "title": "Ode an die Freude",
+   "sub": "Sinfonie Nr. 9, 4. Satz — Thema"
+  },
+  "fr": {
+   "title": "Hymne à la joie",
+   "sub": "Symphonie n° 9, 4e mouvement — thème"
+  },
+  "es": {
+   "title": "Himno de la Alegría",
+   "sub": "Sinfonía n.º 9, 4.º movimiento — tema"
+  },
+  "pt": {
+   "title": "Hino à Alegria",
+   "sub": "Sinfonia n.º 9, 4º movimento — tema"
+  },
+  "ind": {
+   "title": "Ode untuk Kegembiraan",
+   "sub": "Simfoni no. 9, gerakan ke-4 — tema"
+  },
+  "zh": {
+   "title": "欢乐颂",
+   "sub": "第九交响曲 第四乐章 主题"
+  }
+ },
+ "twinkle": {
+  "id": "twinkle",
+  "de": {
+   "title": "Funkel, funkel, kleiner Stern",
+   "sub": "Französische Volksweise — Thema der Variationen KV 265"
+  },
+  "fr": {
+   "title": "Ah ! vous dirai-je, maman",
+   "sub": "Air traditionnel français — thème des variations K. 265"
+  },
+  "es": {
+   "title": "Estrellita, ¿dónde estás?",
+   "sub": "Melodía popular francesa — tema de las variaciones K. 265"
+  },
+  "pt": {
+   "title": "Brilha, brilha, estrelinha",
+   "sub": "Melodia popular francesa — tema das variações K. 265"
+  },
+  "ind": {
+   "title": "Twinkle, Twinkle, Little Star",
+   "sub": "Melodi rakyat Prancis — tema variasi K. 265"
+  },
+  "zh": {
+   "title": "小星星",
+   "sub": "法国民谣 K.265变奏曲主题"
+  }
+ },
+ "elise": {
+  "id": "elise",
+  "de": {
+   "title": "Für Elise",
+   "sub": "Bagatelle WoO 59 — Anfangsteil (A-Teil)"
+  },
+  "fr": {
+   "title": "Für Elise",
+   "sub": "Bagatelle WoO 59 — section A (début)"
+  },
+  "es": {
+   "title": "Für Elise",
+   "sub": "Bagatela WoO 59 — sección A (inicio)"
+  },
+  "pt": {
+   "title": "Für Elise",
+   "sub": "Bagatela WoO 59 — seção A (início)"
+  },
+  "ind": {
+   "title": "Für Elise",
+   "sub": "Bagatelle WoO 59 — bagian A (awal)"
+  },
+  "zh": {
+   "title": "致爱丽丝",
+   "sub": "巴加泰勒WoO 59 开头A段"
+  }
+ },
+ "lullaby": {
+  "id": "lullaby",
+  "de": {
+   "title": "Wiegenlied",
+   "sub": "Op. 49 Nr. 4 — Guten Abend, gut’ Nacht"
+  },
+  "fr": {
+   "title": "Berceuse de Brahms",
+   "sub": "Wiegenlied op. 49 n° 4"
+  },
+  "es": {
+   "title": "Canción de cuna de Brahms",
+   "sub": "Wiegenlied op. 49 n.º 4"
+  },
+  "pt": {
+   "title": "Canção de ninar de Brahms",
+   "sub": "Wiegenlied op. 49 n.º 4"
+  },
+  "ind": {
+   "title": "Lagu Nina Bobo Brahms",
+   "sub": "Wiegenlied op. 49 no. 4"
+  },
+  "zh": {
+   "title": "勃拉姆斯摇篮曲",
+   "sub": "艺术歌曲 作品49第4首"
+  }
+ },
+ "musette": {
+  "id": "musette",
+  "de": {
+   "title": "Musette D-Dur",
+   "sub": "BWV Anh. 126 — Notenbüchlein für Anna Magdalena Bach"
+  },
+  "fr": {
+   "title": "Musette en ré majeur",
+   "sub": "BWV Anh. 126 — Petit livre d’Anna Magdalena Bach"
+  },
+  "es": {
+   "title": "Musette en re mayor",
+   "sub": "BWV Anh. 126 — Cuaderno de Anna Magdalena Bach"
+  },
+  "pt": {
+   "title": "Musette em ré maior",
+   "sub": "BWV Anh. 126 — Caderno de Anna Magdalena Bach"
+  },
+  "ind": {
+   "title": "Musette dalam D mayor",
+   "sub": "BWV Anh. 126 — Buku Not Anna Magdalena Bach"
+  },
+  "zh": {
+   "title": "D大调缪塞特舞曲",
+   "sub": "BWV Anh.126 安娜·玛格达莱娜·巴赫笔记本"
+  }
+ },
+ "minuet": {
+  "id": "minuet",
+  "de": {
+   "title": "Menuett G-Dur",
+   "sub": "BWV Anh. 114 — Notenbüchlein für Anna Magdalena Bach"
+  },
+  "fr": {
+   "title": "Menuet en sol majeur",
+   "sub": "BWV Anh. 114 — Petit livre d’Anna Magdalena Bach"
+  },
+  "es": {
+   "title": "Minueto en sol mayor",
+   "sub": "BWV Anh. 114 — Cuaderno de Anna Magdalena Bach"
+  },
+  "pt": {
+   "title": "Minueto em sol maior",
+   "sub": "BWV Anh. 114 — Caderno de Anna Magdalena Bach"
+  },
+  "ind": {
+   "title": "Minuet dalam G mayor",
+   "sub": "BWV Anh. 114 — Buku Not Anna Magdalena Bach"
+  },
+  "zh": {
+   "title": "G大调小步舞曲",
+   "sub": "BWV Anh.114 安娜·玛格达莱娜·巴赫笔记本"
+  }
+ },
+ "turca": {
+  "id": "turca",
+  "de": {
+   "title": "Türkischer Marsch",
+   "sub": "Klaviersonate KV 331, 3. Satz — Thema"
+  },
+  "fr": {
+   "title": "Marche turque",
+   "sub": "Sonate pour piano K. 331, 3e mouvement — thème"
+  },
+  "es": {
+   "title": "Marcha turca",
+   "sub": "Sonata para piano K. 331, 3.er movimiento — tema"
+  },
+  "pt": {
+   "title": "Marcha turca",
+   "sub": "Sonata para piano K. 331, 3º movimento — tema"
+  },
+  "ind": {
+   "title": "Rondo alla turca",
+   "sub": "Sonata piano K. 331, gerakan ke-3 — tema"
+  },
+  "zh": {
+   "title": "土耳其进行曲",
+   "sub": "钢琴奏鸣曲K.331 第三乐章 主题"
+  }
+ },
+ "danube": {
+  "id": "danube",
+  "de": {
+   "title": "An der schönen blauen Donau",
+   "sub": "Walzer Op. 314 — Hauptthema"
+  },
+  "fr": {
+   "title": "Le Beau Danube bleu",
+   "sub": "Valse op. 314 — thème principal"
+  },
+  "es": {
+   "title": "El Danubio azul",
+   "sub": "Vals op. 314 — tema principal"
+  },
+  "pt": {
+   "title": "O Danúbio Azul",
+   "sub": "Valsa op. 314 — tema principal"
+  },
+  "ind": {
+   "title": "The Blue Danube",
+   "sub": "Waltz op. 314 — tema utama"
+  },
+  "zh": {
+   "title": "蓝色多瑙河",
+   "sub": "圆舞曲 作品314 主题"
+  }
+ },
+ "forelle": {
+  "id": "forelle",
+  "de": {
+   "title": "Die Forelle",
+   "sub": "Lied D 550 — Melodie"
+  },
+  "fr": {
+   "title": "La Truite",
+   "sub": "Lied D. 550 — mélodie"
+  },
+  "es": {
+   "title": "La trucha",
+   "sub": "Lied D. 550 — melodía"
+  },
+  "pt": {
+   "title": "A Truta",
+   "sub": "Lied D. 550 — melodia"
+  },
+  "ind": {
+   "title": "Die Forelle",
+   "sub": "Lied D. 550 — melodi lagu"
+  },
+  "zh": {
+   "title": "鳟鱼",
+   "sub": "艺术歌曲D.550 旋律"
+  }
+ },
+ "greensleeves": {
+  "id": "greensleeves",
+  "de": {
+   "title": "Greensleeves",
+   "sub": "Englisches Volkslied, 16. Jahrhundert"
+  },
+  "fr": {
+   "title": "Greensleeves",
+   "sub": "Chanson traditionnelle anglaise, XVIe siècle"
+  },
+  "es": {
+   "title": "Greensleeves",
+   "sub": "Canción tradicional inglesa, siglo XVI"
+  },
+  "pt": {
+   "title": "Greensleeves",
+   "sub": "Canção tradicional inglesa, século XVI"
+  },
+  "ind": {
+   "title": "Greensleeves",
+   "sub": "Lagu rakyat Inggris, abad ke-16"
+  },
+  "zh": {
+   "title": "绿袖子",
+   "sub": "16世纪英格兰民谣"
+  }
+ },
+ "landmann": {
+  "id": "landmann",
+  "de": {
+   "title": "Fröhlicher Landmann",
+   "sub": "Album für die Jugend, Op. 68 Nr. 10"
+  },
+  "fr": {
+   "title": "Le gai laboureur",
+   "sub": "Album pour la jeunesse, op. 68 n° 10"
+  },
+  "es": {
+   "title": "El alegre campesino",
+   "sub": "Álbum para la juventud, op. 68 n.º 10"
+  },
+  "pt": {
+   "title": "O camponês alegre",
+   "sub": "Álbum para a juventude, op. 68 n.º 10"
+  },
+  "ind": {
+   "title": "Petani yang Gembira",
+   "sub": "Album untuk Kaum Muda, Op. 68 no. 10"
+  },
+  "zh": {
+   "title": "快乐的农夫",
+   "sub": "少年曲集 Op.68 第10首"
+  }
+ },
+ "gymno": {
+  "id": "gymno",
+  "de": {
+   "title": "Gymnopédie Nr. 1",
+   "sub": "Trois Gymnopédies Nr. 1 — Melodie"
+  },
+  "fr": {
+   "title": "Gymnopédie n° 1",
+   "sub": "Trois Gymnopédies n° 1 — mélodie"
+  },
+  "es": {
+   "title": "Gymnopédie n.º 1",
+   "sub": "Trois Gymnopédies n.º 1 — melodía"
+  },
+  "pt": {
+   "title": "Gymnopédie n.º 1",
+   "sub": "Trois Gymnopédies n.º 1 — melodia"
+  },
+  "ind": {
+   "title": "Gymnopédie No. 1",
+   "sub": "Trois Gymnopédies no. 1 — melodi"
+  },
+  "zh": {
+   "title": "吉姆诺佩迪第1号",
+   "sub": "三首吉姆诺佩迪 第1首 旋律"
+  }
+ },
+ "largo": {
+  "id": "largo",
+  "de": {
+   "title": "Largo aus der Neuen Welt",
+   "sub": "Sinfonie Nr. 9 Op. 95, 2. Satz — Thema"
+  },
+  "fr": {
+   "title": "Largo de la Symphonie du Nouveau Monde",
+   "sub": "Symphonie n° 9 op. 95, 2e mouvement — thème"
+  },
+  "es": {
+   "title": "Largo de la Sinfonía del Nuevo Mundo",
+   "sub": "Sinfonía n.º 9 op. 95, 2.º movimiento — tema"
+  },
+  "pt": {
+   "title": "Largo da Sinfonia do Novo Mundo",
+   "sub": "Sinfonia n.º 9 op. 95, 2.º movimento — tema"
+  },
+  "ind": {
+   "title": "Largo dari Simfoni Dunia Baru",
+   "sub": "Simfoni no. 9 Op. 95, gerakan ke-2 — tema"
+  },
+  "zh": {
+   "title": "念故乡",
+   "sub": "第九交响曲《自新大陆》第二乐章 主题"
+  }
+ },
+ "jingle": {
+  "id": "jingle",
+  "de": {
+   "title": "Jingle Bells",
+   "sub": "Weihnachtslied, 1857"
+  },
+  "fr": {
+   "title": "Jingle Bells",
+   "sub": "Chant de Noël, 1857"
+  },
+  "es": {
+   "title": "Jingle Bells",
+   "sub": "Villancico, 1857"
+  },
+  "pt": {
+   "title": "Jingle Bells",
+   "sub": "Canção de Natal, 1857"
+  },
+  "ind": {
+   "title": "Jingle Bells",
+   "sub": "Lagu Natal, 1857"
+  },
+  "zh": {
+   "title": "铃儿响叮当",
+   "sub": "圣诞歌曲 1857年"
+  }
+ },
+ "silent": {
+  "id": "silent",
+  "de": {
+   "title": "Stille Nacht, heilige Nacht",
+   "sub": "Weihnachtslied, 1818"
+  },
+  "fr": {
+   "title": "Douce nuit, sainte nuit",
+   "sub": "Chant de Noël, 1818"
+  },
+  "es": {
+   "title": "Noche de paz",
+   "sub": "Villancico, 1818"
+  },
+  "pt": {
+   "title": "Noite Feliz",
+   "sub": "Canção de Natal, 1818"
+  },
+  "ind": {
+   "title": "Malam Kudus",
+   "sub": "Lagu Natal, 1818"
+  },
+  "zh": {
+   "title": "平安夜",
+   "sub": "圣诞歌曲 1818年"
+  }
+ }
+}

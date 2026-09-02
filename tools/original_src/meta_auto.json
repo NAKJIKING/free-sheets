@@ -1,0 +1,412 @@
+[
+ {
+  "id": "salut",
+  "title": "Salut d'amour (easy melody)",
+  "alias": "사랑의 인사",
+  "composer": "Edward Elgar",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5008111",
+  "tags": ""
+ },
+ {
+  "id": "canon",
+  "title": "Canon in D — theme (easy melody)",
+  "alias": "캐논",
+  "composer": "Johann Pachelbel",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/4844400",
+  "tags": ""
+ },
+ {
+  "id": "jesu",
+  "title": "Jesu, Joy of Man's Desiring (easy melody)",
+  "alias": "예수, 인류 소망의 기쁨",
+  "composer": "Johann Sebastian Bach",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5728126",
+  "tags": ""
+ },
+ {
+  "id": "william_tell",
+  "title": "William Tell Overture — finale theme (easy melody)",
+  "alias": "윌리엄 텔 서곡 주제",
+  "composer": "Gioachino Rossini",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5885051",
+  "tags": ""
+ },
+ {
+  "id": "la_donna",
+  "title": "La donna è mobile (easy melody)",
+  "alias": "여자의 마음 (라 돈나 에 모빌레)",
+  "composer": "Giuseppe Verdi",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5056825",
+  "tags": ""
+ },
+ {
+  "id": "rondeau",
+  "title": "Rondeau from Abdelazer (easy melody)",
+  "alias": "론도 (압델라자르)",
+  "composer": "Henry Purcell",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/4692142",
+  "tags": ""
+ },
+ {
+  "id": "anh5",
+  "title": "Sonatina in G major Anh.5 — theme (easy melody)",
+  "alias": "소나티네 G장조 (베토벤)",
+  "composer": "Ludwig van Beethoven",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5907036",
+  "tags": ""
+ },
+ {
+  "id": "sleeping",
+  "title": "The Sleeping Beauty Waltz — theme (easy melody)",
+  "alias": "잠자는 숲속의 미녀 왈츠",
+  "composer": "Pyotr Ilyich Tchaikovsky",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/168747",
+  "tags": ""
+ },
+ {
+  "id": "barcarolle",
+  "title": "Barcarolle from The Tales of Hoffmann (easy melody)",
+  "alias": "뱃노래 (호프만의 이야기)",
+  "composer": "Jacques Offenbach",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/6201397",
+  "tags": ""
+ },
+ {
+  "id": "meditation",
+  "title": "Méditation from Thaïs (easy melody)",
+  "alias": "타이스의 명상곡",
+  "composer": "Jules Massenet",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/6088084",
+  "tags": ""
+ },
+ {
+  "id": "swan",
+  "title": "The Swan — Le Cygne (easy melody)",
+  "alias": "백조 (동물의 사육제)",
+  "composer": "Camille Saint-Saëns",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/2180726",
+  "tags": ""
+ },
+ {
+  "id": "minuet_woo10",
+  "title": "Minuet in G WoO 10 No.2 (easy melody)",
+  "alias": "베토벤 미뉴에트 G장조",
+  "composer": "Ludwig van Beethoven",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5045054",
+  "tags": ""
+ },
+ {
+  "id": "ecossaise",
+  "title": "Écossaise WoO 86 (easy melody)",
+  "alias": "에코세즈",
+  "composer": "Ludwig van Beethoven",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/4936740",
+  "tags": ""
+ },
+ {
+  "id": "wooden",
+  "title": "March of the Wooden Soldiers Op.39 No.5 (easy melody)",
+  "alias": "나무 병정의 행진",
+  "composer": "Pyotr Ilyich Tchaikovsky",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1806",
+  "tags": ""
+ },
+ {
+  "id": "old_french",
+  "title": "Old French Song Op.39 No.16 (easy melody)",
+  "alias": "옛 프랑스 노래",
+  "composer": "Pyotr Ilyich Tchaikovsky",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2080",
+  "tags": ""
+ },
+ {
+  "id": "brahms_waltz",
+  "title": "Waltz Op.39 No.15 (easy melody)",
+  "alias": "브람스 왈츠 Op.39-15",
+  "composer": "Johannes Brahms",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/ftp/BrahmsJ/O39/waltz-op39-15/waltz-op39-15-a4.pdf",
+  "tags": ""
+ },
+ {
+  "id": "susanna",
+  "title": "Oh! Susanna (easy melody)",
+  "alias": "오 수재너",
+  "composer": "Stephen Foster",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5149556",
+  "tags": ""
+ },
+ {
+  "id": "old_folks",
+  "title": "Old Folks at Home — Swanee River (easy melody)",
+  "alias": "스와니 강 (고향 사람들)",
+  "composer": "Stephen Foster",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/4106026",
+  "tags": ""
+ },
+ {
+  "id": "home_sweet",
+  "title": "Home, Sweet Home (easy melody)",
+  "alias": "즐거운 나의 집",
+  "composer": "Henry Bishop",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=435",
+  "tags": ""
+ },
+ {
+  "id": "eine_kleine",
+  "title": "Eine kleine Nachtmusik — theme (easy melody)",
+  "alias": "아이네 클라이네 나흐트무지크",
+  "composer": "Wolfgang Amadeus Mozart",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/1080491",
+  "tags": ""
+ },
+ {
+  "id": "minuet_f",
+  "title": "Minuet in F major BWV Anh.113 (easy melody)",
+  "alias": "미뉴에트 F장조",
+  "composer": "Anonymous",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5799384",
+  "tags": ""
+ },
+ {
+  "id": "march_d",
+  "title": "March in D major BWV Anh.122 (easy melody)",
+  "alias": "행진곡 D장조",
+  "composer": "C. P. E. Bach",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/29531",
+  "tags": ""
+ },
+ {
+  "id": "polonaise_g",
+  "title": "Polonaise in G minor BWV Anh.119 (easy melody)",
+  "alias": "폴로네즈 G단조",
+  "composer": "Anonymous",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1016",
+  "tags": ""
+ },
+ {
+  "id": "solveig",
+  "title": "Solveig's Song (easy melody)",
+  "alias": "솔베이지의 노래",
+  "composer": "Edvard Grieg",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5222772",
+  "tags": ""
+ },
+ {
+  "id": "mountain_king",
+  "title": "In the Hall of the Mountain King (easy melody)",
+  "alias": "산왕의 궁전에서",
+  "composer": "Edvard Grieg",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1888",
+  "tags": ""
+ },
+ {
+  "id": "beethoven5",
+  "title": "Symphony No.5 — opening theme (easy melody)",
+  "alias": "운명 교향곡 주제",
+  "composer": "Ludwig van Beethoven",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/ftp/BeethovenLv/O67/beethoven_fifth_op67/beethoven_fifth_op67-a4.pdf",
+  "tags": ""
+ },
+ {
+  "id": "martini",
+  "title": "Gavotte (Martini) (easy melody)",
+  "alias": "마르티니 가보트",
+  "composer": "Giovanni Battista Martini",
+  "level": 1,
+  "license": "CC BY-SA 3.0 (내 악보함 조판 · 원본 Mutopia)",
+  "source_url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1785",
+  "tags": ""
+ },
+ {
+  "id": "emperor",
+  "title": "Emperor Quartet — hymn theme (easy melody)",
+  "alias": "황제 4중주 주제 (하이든)",
+  "composer": "Joseph Haydn",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/4665110",
+  "tags": ""
+ },
+ {
+  "id": "k331_theme",
+  "title": "Sonata K.331 — Andante grazioso theme (easy melody)",
+  "alias": "피아노 소나타 K.331 1악장 주제",
+  "composer": "Wolfgang Amadeus Mozart",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=614",
+  "tags": ""
+ },
+ {
+  "id": "bourree",
+  "title": "Bourrée in E minor BWV 996 (easy melody)",
+  "alias": "부레 E단조",
+  "composer": "Johann Sebastian Bach",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/1717176",
+  "tags": ""
+ },
+ {
+  "id": "carmen_habanera",
+  "title": "Habanera from Carmen (easy melody)",
+  "alias": "카르멘 하바네라",
+  "composer": "Georges Bizet",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/84845",
+  "tags": ""
+ },
+ {
+  "id": "santa_lucia",
+  "title": "Santa Lucia (easy melody)",
+  "alias": "산타 루치아",
+  "composer": "Teodoro Cottrau",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 PDMX PD)",
+  "source_url": "https://musescore.com/score/5119177",
+  "tags": ""
+ },
+ {
+  "id": "chopin_prelude7",
+  "title": "Prélude Op.28 No.7 (easy melody)",
+  "alias": "쇼팽 전주곡 7번",
+  "composer": "Frédéric Chopin",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 Mutopia PD)",
+  "source_url": "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-7/Chop-28-7-a4.pdf",
+  "tags": ""
+ },
+ {
+  "id": "heidenroslein",
+  "title": "Heidenröslein D.257 (easy melody)",
+  "alias": "들장미",
+  "composer": "Franz Schubert",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 OpenScore PD)",
+  "source_url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Op.3/3_Heidenröslein,_D.257/lc30321236.mscz",
+  "tags": ""
+ },
+ {
+  "id": "an_die_musik",
+  "title": "An die Musik D.547 (easy melody)",
+  "alias": "음악에게",
+  "composer": "Franz Schubert",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 OpenScore PD)",
+  "source_url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/_/An_die_Musik,_D.547/lc6180725.mscx",
+  "tags": ""
+ },
+ {
+  "id": "standchen",
+  "title": "Ständchen — Serenade D.957 (easy melody)",
+  "alias": "세레나데 (슈베르트)",
+  "composer": "Franz Schubert",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 OpenScore PD)",
+  "source_url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Schwanengesang,_D.957/4_Ständchen/lc5004835.mscz",
+  "tags": ""
+ },
+ {
+  "id": "lindenbaum",
+  "title": "Der Lindenbaum (easy melody)",
+  "alias": "보리수",
+  "composer": "Franz Schubert",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 OpenScore PD)",
+  "source_url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Winterreise,_D.911/5_Der_Lindenbaum/lc5016466.mscz",
+  "tags": ""
+ },
+ {
+  "id": "nussbaum",
+  "title": "Der Nussbaum (easy melody)",
+  "alias": "호두나무",
+  "composer": "Robert Schumann",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 OpenScore PD)",
+  "source_url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schumann,_Robert/Myrthen,_Op.25/3_Der_Nussbaum/lc6891758.mscz",
+  "tags": ""
+ },
+ {
+  "id": "musensohn",
+  "title": "Der Musensohn D.764 (easy melody)",
+  "alias": "뮤즈의 아들",
+  "composer": "Franz Schubert",
+  "level": 2,
+  "license": "CC0 (내 악보함 조판 · 원본 OpenScore PD)",
+  "source_url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Op.92/1_Der_Musensohn,_D.764/lc29747756.mscz",
+  "tags": ""
+ },
+ {
+  "id": "du_bist_die_ruh",
+  "title": "Du bist die Ruh D.776 (easy melody)",
+  "alias": "그대는 나의 안식",
+  "composer": "Franz Schubert",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 OpenScore PD)",
+  "source_url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Op.59/3_Du_bist_die_Ruh/lc4919879.mscz",
+  "tags": ""
+ },
+ {
+  "id": "je_te_veux",
+  "title": "Je te veux (easy melody)",
+  "alias": "주 트 뵈 (당신을 원해요)",
+  "composer": "Erik Satie",
+  "level": 1,
+  "license": "CC0 (내 악보함 조판 · 원본 OpenScore PD)",
+  "source_url": "https://github.com/OpenScore/Lieder/blob/main/scores/Satie,_Erik/_/Je_te_veux/lc6986302.mscz",
+  "tags": ""
+ }
+]

@@ -380,11 +380,14 @@ def _load_audit_block():
 AUDIT_BLOCKED = _load_audit_block()
 
 # 같은 이름의 다른 곡이 흔한 소스 — 제목 기준 중복 제거에서 제외.
-DUP_EXEMPT = {'thesession'}
+# 'original' = 우리가 직접 조판한 초급 단선율 — 같은 곡의 원본 악보와 제목이
+# 겹쳐도 서로 다른 판(초급 한 줄 vs 원곡)이라 중복으로 지우면 안 된다.
+DUP_EXEMPT = {'thesession', 'original'}
 
 # 첫 화면 노출 우선순위 (작을수록 앞). 알려진 클래식·교재를 앞에,
 # 무명 민속곡을 뒤로.
 SOURCE_ORDER = {
+    'original': -1,           # 직접 조판한 초급 단선율 (악기별)
     'mutopia': 0,             # 정전 클래식 (큐레이션)
     'openscore_lieder': 1,    # 가곡 정전
     'openscore_quartets': 2,  # 실내악 정전

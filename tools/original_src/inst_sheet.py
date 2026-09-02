@@ -60,15 +60,98 @@ def choose_shift(events, tonic, minor, inst):
         if best is None or score < best[0]: best = (score, s, wt, acc, viol)
     return best
 
-def build_variant(cfg, inst_id, outdir, tag=None):
+
+# ── 언어별 표기 ─────────────────────────────────────────────
+LANGS = ['ko', 'en', 'de', 'fr', 'es', 'pt', 'ind', 'zh']
+# 한국어판만 나눔고딕(한글), 중국어판은 한자 폰트, 나머지는 유럽문자 전용
+# 폰트 한 벌 — 도(°)·서수(º) 같은 글자까지 있어 대체 폰트가 끼어들지 않는다.
+FONT_OF = {'zh': 'WenQuanYi Zen Hei', 'ko': 'Nanum Gothic'}
+DEFAULT_FONT = 'C059'   # 유럽어판 — 악센트 있고 부분집합이 가장 가볍다(54KB)
+INST_NAMES = {
+ 'piano':    dict(ko='피아노', en='Piano', de='Klavier', fr='Piano', es='Piano', pt='Piano', ind='Piano', zh='钢琴'),
+ 'recorder': dict(ko='리코더', en='Recorder', de='Blockflöte', fr='Flûte à bec', es='Flauta dulce', pt='Flauta doce', ind='Recorder', zh='竖笛'),
+ 'violin':   dict(ko='바이올린', en='Violin', de='Violine', fr='Violon', es='Violín', pt='Violino', ind='Biola', zh='小提琴'),
+ 'flute':    dict(ko='플루트', en='Flute', de='Flöte', fr='Flûte', es='Flauta', pt='Flauta', ind='Suling', zh='长笛'),
+ 'clarinet': dict(ko='클라리넷 (B♭)', en='Clarinet in B♭', de='Klarinette in B', fr='Clarinette si♭', es='Clarinete en si♭', pt='Clarinete em si♭', ind='Klarinet B♭', zh='单簧管 (降B)'),
+ 'trumpet':  dict(ko='트럼펫 (B♭)', en='Trumpet in B♭', de='Trompete in B', fr='Trompette si♭', es='Trompeta en si♭', pt='Trompete em si♭', ind='Terompet B♭', zh='小号 (降B)'),
+ 'altosax':  dict(ko='알토색소폰 (E♭)', en='Alto saxophone in E♭', de='Altsaxophon in Es', fr='Saxophone alto mi♭', es='Saxofón alto en mi♭', pt='Saxofone alto em mi♭', ind='Saksofon alto E♭', zh='中音萨克斯 (降E)'),
+ 'cello':    dict(ko='첼로', en='Cello', de='Violoncello', fr='Violoncelle', es='Violonchelo', pt='Violoncelo', ind='Cello', zh='大提琴'),
+ 'guitar':   dict(ko='기타', en='Guitar', de='Gitarre', fr='Guitare', es='Guitarra', pt='Violão', ind='Gitar', zh='吉他'),
+}
+TAGLINE = {
+ 'ko': '초급 단선율 · 내 악보함', 'en': 'Easy melody — My Sheet Music',
+ 'de': 'Einfache Melodie — My Sheet Music', 'fr': 'Mélodie facile — My Sheet Music',
+ 'es': 'Melodía fácil — My Sheet Music', 'pt': 'Melodia fácil — My Sheet Music',
+ 'ind': 'Melodi mudah — My Sheet Music', 'zh': '简易旋律 — My Sheet Music',
+}
+
+
+# 나눔고딕에 없어 대체 폰트(90KB)를 통째로 끌어들이던 글자들 — 뜻이 같은
+# 국제 표기로 바꾼다. n° / n.º → No.
+_SUBST = [(re.compile(r'\bn\.?\s*[º°]'), 'No.'), (re.compile(r'[º°]'), 'o')]
+
+
+def tidy(s):
+    for rx, rep in _SUBST:
+        s = rx.sub(rep, s)
+    return s
+
+
+def text_width(t):
+    """글자 폭 어림 — 한자·한글은 라틴 문자의 두 배로 센다."""
+    return sum(2 if ord(c) > 0x2E80 else 1 for c in t)
+
+
+def fit_size(t, big):
+    """제목이 A4 폭(약 178mm)을 넘지 않게 글자 크기를 정한다.
+    LilyPond 에 자동 맞춤이 없어 길이로 단계를 나눈다."""
+    w = text_width(t)
+    if big:
+        return 3 if w <= 26 else 2 if w <= 31 else 1 if w <= 37 else 0 if w <= 44 else -1 if w <= 54 else -2
+    return 0 if w <= 62 else -1 if w <= 74 else -2 if w <= 90 else -3
+
+
+def composer_for(cfg, lang):
+    """작곡가 표기 — 한국어판만 한글 이름, 나머지는 원어 표기."""
+    if lang == 'ko':
+        return cfg.get('composer', '')
+    return cfg.get('composer_latin') or cfg.get('composer', '')
+
+
+def header_for(cfg, inst_id, lang):
+    """(큰 제목, 작은 줄, 악기 줄, 꼬리표, 폰트) — 큰 제목은 원제 고정,
+    작은 줄만 그 나라 언어로 바뀐다."""
+    i18n = (cfg.get('i18n') or {}).get(lang) or {}
+    title = cfg.get('title_en') or cfg['title_ko']
+    loc = i18n.get('title') or (cfg['title_ko'] if lang == 'ko' else '')
+    sub = i18n.get('sub') or (cfg.get('subtitle', '') if lang == 'ko' else cfg.get('sub_en', ''))
+    line = tidy(' · '.join(x for x in (loc if loc != title else '', sub) if x))
+    return title, line, INST_NAMES[inst_id][lang], TAGLINE[lang], FONT_OF.get(lang, DEFAULT_FONT)
+
+
+
+def build_variant(cfg, inst_id, outdir, tag=None, lang='ko'):
     inst = INSTR[inst_id]
     tonic, minor = parse_key(cfg['key'])
     if 'lily' in cfg:
         ev = events_from_lily(cfg['lily'])
         ev_all = ev
     else:
-        ev = M.notes_from_midi(cfg['midi'], cfg['track'], cfg['start'], cfg['end'], top=cfg.get('top', True), pmin=cfg.get('pmin'), legato_max=cfg.get('legato_max', 384))
+        ev = M.notes_from_midi(cfg['midi'], cfg['track'], cfg['start'], cfg['end'], top=cfg.get('top', True), pmin=cfg.get('pmin'), legato_max=cfg.get('legato_max', 384), tscale=cfg.get('tscale', 1.0))
         ev_all = ev
+        if cfg.get('auto_phase') and 'partial_ticks' not in cfg:
+            BAR = M.bar_ticks(cfg['time'])
+            best = None
+            for off in range(0, BAR, 96):
+                sc = sum((e[1] - e[0]) * (2 if (e[0] - off) % BAR == 0 else 0.3 if (e[0] - off) % (BAR // 2 or BAR) == 0 else 0) for e in ev_all)
+                if best is None or sc > best[0]: best = (sc, off)
+            off = best[1]
+            if off:
+                cfg['partial_ticks'] = off
+                vals = {1536: '1', 1152: '2.', 768: '2', 576: '4.', 384: '4', 288: '8.', 192: '8', 96: '16'}
+                cfg['partial'] = vals.get(off, '4')
+            else:
+                cfg['partial_ticks'] = 0; cfg['partial'] = ''
     score, s, wt, acc, viol = choose_shift(ev_all, tonic, minor, inst)
     wkey = key_name(wt, minor)
     if 'lily' in cfg:
@@ -76,17 +159,19 @@ def build_variant(cfg, inst_id, outdir, tag=None):
         mel, sol = M.to_lily(ev_all, cfg['time'], transpose=s + inst['transp'], partial=cfg.get('partial_ticks', 0), collapse=False, pad=False, key=wkey)
     else:
         mel, sol = M.to_lily(ev_all, cfg['time'], transpose=s + inst['transp'], partial=cfg.get('partial_ticks', 0), collapse=cfg.get('collapse', True), pad=cfg.get('pad', True), key=wkey)
+    big, line, instname, tagline, font = header_for(cfg, inst_id, lang)
     ly = M.TEMPLATE % dict(
-        staff=cfg.get('staff', 24), footer=cfg.get('footer', ''), title_ko=cfg['title_ko'],
-        subtitle=cfg.get('subtitle', ''),
-        composer=cfg.get('composer', ''), arranger="초급 단선율 · Easy melody — 내 악보함 · My Sheet Music",
+        font=font, tsize=fit_size(big, True), ssize=fit_size(line, False),
+        staff=cfg.get('staff', 24), footer=cfg.get('footer', ''), title_ko=big,
+        subtitle=line,
+        composer=composer_for(cfg, lang), arranger=tagline,
         key=wkey, time=cfg['time'], tempo=cfg.get('tempo', 96),
         partial=('\\partial ' + cfg['partial']) if cfg.get('partial') else '', melody=mel, lyrics=' '.join(sol))
     ly = ly.replace('\\key ' + wkey, f"\\clef {inst['clef']} {inst['transposition']} \\key " + wkey)
-    ly = ly.replace('  tagline = ##f', f'  subsubtitle = \\markup {{ \\fontsize #0.5 \\bold "{inst["ko"]} · {inst["en"]}" }}\n  tagline = ##f')
+    ly = ly.replace('  tagline = ##f', f'  subsubtitle = \\markup {{ \\fontsize #0.5 \\bold "{instname}" }}\n  tagline = ##f')
     if not cfg.get('solfege', False):
         ly = re.sub(r'\n\s*\\addlyrics \{[^}]*\}\n', '\n', ly)
-    base = os.path.join(outdir, (tag or cfg['id']) + '__' + inst_id)
+    base = os.path.join(outdir, (tag or cfg['id']) + '__' + inst_id + ('' if lang == 'ko' else '__' + lang))
     os.makedirs(outdir, exist_ok=True)
     open(base + '.ly', 'w', encoding='utf-8').write(ly)
     r = subprocess.run([M.LP, '-dno-point-and-click', '-o', base, base + '.ly'], capture_output=True, text=True, timeout=300)

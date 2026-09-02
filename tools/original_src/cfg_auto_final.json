@@ -1,0 +1,1766 @@
+[
+ {
+  "id": "salut",
+  "title_ko": "사랑의 인사",
+  "subtitle": "Salut d'amour Op.12",
+  "composer": "에드워드 엘가 (Edward Elgar, 1857–1934)",
+  "key": "e \\major",
+  "time": "2/4",
+  "tempo": 72,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Salut_d_amour_Op.12-QmNNEw95ndQ6.mid",
+  "track": 0,
+  "start": 0,
+  "end": 12288,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 556,
+    "mean": 54.67805755395683,
+    "lo": 28,
+    "hi": 69,
+    "poly": 0.65,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 674,
+    "mean": 71.2433234421365,
+    "lo": 49,
+    "hi": 93,
+    "poly": 0.66,
+    "first": 0.5
+   }
+  ],
+  "_src": {
+   "title": "Salut d'amour Op.12",
+   "composer": "Edward Elgar",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/5008111",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "canon",
+  "title_ko": "캐논",
+  "subtitle": "Canon in D — 주제 선율",
+  "composer": "요한 파헬벨 (Johann Pachelbel, 1653–1706)",
+  "key": "d \\major",
+  "time": "4/4",
+  "tempo": 68,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Canon_in_D-QmNgAWEpcHaP.mid",
+  "track": 0,
+  "start": 6144,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 244,
+    "mean": 55.454918032786885,
+    "lo": 38,
+    "hi": 74,
+    "poly": 0.27,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 219,
+    "mean": 69.97260273972603,
+    "lo": 57,
+    "hi": 83,
+    "poly": 0.19,
+    "first": 0.5
+   }
+  ],
+  "_src": {
+   "title": "Canon in D",
+   "composer": "Johann Pachelbel",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/4844400",
+   "license": "cc-zero"
+  },
+  "pmin": 60
+ },
+ {
+  "id": "jesu",
+  "title_ko": "예수, 인류 소망의 기쁨",
+  "subtitle": "Jesu, Joy of Man's Desiring BWV 147",
+  "composer": "요한 제바스티안 바흐 (Johann Sebastian Bach, 1685–1750)",
+  "key": "g \\major",
+  "time": "9/8",
+  "tempo": 102,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Jesu_Joy_of_Man_s_Desiring-QmTStqcNWoVN.mid",
+  "track": 0,
+  "start": 0,
+  "end": 20736,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 501,
+    "mean": 46.604790419161674,
+    "lo": 26,
+    "hi": 72,
+    "poly": 0.89,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 1074,
+    "mean": 68.16480446927375,
+    "lo": 57,
+    "hi": 84,
+    "poly": 0.56,
+    "first": 0.3333333333333333
+   }
+  ],
+  "_src": {
+   "title": "Jesu Joy of Man's Desiring",
+   "composer": "Johann Sebastian Bach",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/5728126",
+   "license": "publicdomain"
+  },
+  "tscale": 1.5
+ },
+ {
+  "id": "william_tell",
+  "title_ko": "윌리엄 텔 서곡 주제",
+  "subtitle": "Guillaume Tell — 서곡 피날레(갤럽) 주제",
+  "composer": "조아키노 로시니 (Gioachino Rossini, 1792–1868)",
+  "key": "e \\major",
+  "time": "4/4",
+  "tempo": 132,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Guillaume_Tell-QmZAKKQbxEPJ.mid",
+  "track": 0,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 1897,
+    "mean": 71.44965735371639,
+    "lo": 52,
+    "hi": 88,
+    "poly": 0.5,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 1167,
+    "mean": 52.51156812339332,
+    "lo": 28,
+    "hi": 81,
+    "poly": 0.44,
+    "first": 20.0
+   }
+  ],
+  "_src": {
+   "title": "Guillaume Tell",
+   "composer": "Gioachino Rossini",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/5885051",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "la_donna",
+  "title_ko": "여자의 마음 (라 돈나 에 모빌레)",
+  "subtitle": "La donna è mobile — 리골레토",
+  "composer": "주세페 베르디 (Giuseppe Verdi, 1813–1901)",
+  "key": "f \\major",
+  "time": "3/4",
+  "tempo": 120,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/la_Donna__e_Mobile-QmdfsL74U4XQ.mid",
+  "track": 0,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 92,
+    "mean": 67.73913043478261,
+    "lo": 60,
+    "hi": 76,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "la Donna 'e Mobile",
+   "composer": "Giuseppe Verdi",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/5056825",
+   "license": "publicdomain"
+  }
+ },
+ {
+  "id": "rondeau",
+  "title_ko": "론도 (압델라자르)",
+  "subtitle": "Rondeau from Abdelazer Z.570",
+  "composer": "헨리 퍼셀 (Henry Purcell, 1659–1695)",
+  "key": "d \\minor",
+  "time": "3/2",
+  "tempo": 120,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Rondeau_from_Abdelazer-QmSzC9x4buRB.mid",
+  "track": 0,
+  "start": 0,
+  "end": 36864,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 178,
+    "mean": 75.28089887640449,
+    "lo": 62,
+    "hi": 82,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Rondeau from Abdelazer",
+   "composer": "Henry Purcell",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/4692142",
+   "license": "publicdomain"
+  }
+ },
+ {
+  "id": "anh5",
+  "title_ko": "소나티네 G장조 (베토벤)",
+  "subtitle": "Sonatina in G major Anh.5 No.1 — 1악장 주제",
+  "composer": "루트비히 판 베토벤 (Ludwig van Beethoven, 1770–1827)",
+  "key": "g \\major",
+  "time": "4/4",
+  "tempo": 120,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/2_Sonatinas_for_Piano_Anh.5-QmetPJWpxk5J.mid",
+  "track": 0,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 226,
+    "mean": 55.16814159292036,
+    "lo": 43,
+    "hi": 65,
+    "poly": 0.15,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 281,
+    "mean": 72.4982206405694,
+    "lo": 59,
+    "hi": 86,
+    "poly": 0.02,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "2 Sonatinas for Piano Anh.5",
+   "composer": "Ludwig van Beethoven",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/5907036",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "sleeping",
+  "title_ko": "잠자는 숲속의 미녀 왈츠",
+  "subtitle": "The Sleeping Beauty Op.66 — 왈츠 주제",
+  "composer": "표트르 차이콥스키 (Pyotr Ilyich Tchaikovsky, 1840–1893)",
+  "key": "f \\major",
+  "time": "3/4",
+  "tempo": 120,
+  "midi": "/home/user/free-sheets/mids/pdmx/clarinet/The_Sleeping_Beauty__ballet__Op.66-QmbQK9GGeiED.mid",
+  "track": 0,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 55,
+    "mean": 67.32727272727273,
+    "lo": 62,
+    "hi": 74,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "The Sleeping Beauty (ballet) Op.66",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "instrument": "Clarinet",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/168747",
+   "license": "publicdomain"
+  }
+ },
+ {
+  "id": "barcarolle",
+  "title_ko": "뱃노래 (호프만의 이야기)",
+  "subtitle": "Barcarolle — 호프만의 이야기",
+  "composer": "자크 오펜바흐 (Jacques Offenbach, 1819–1880)",
+  "key": "bes \\major",
+  "time": "6/8",
+  "tempo": 80,
+  "midi": "/home/user/free-sheets/mids/pdmx/flute/Barcarolle-QmRBQBiGTH33.mid",
+  "track": 0,
+  "start": 2304,
+  "end": 20736,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 210,
+    "mean": 49.319047619047616,
+    "lo": 34,
+    "hi": 58,
+    "poly": 0.11,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 234,
+    "mean": 66.2948717948718,
+    "lo": 51,
+    "hi": 81,
+    "poly": 0.24,
+    "first": 1.0
+   },
+   {
+    "track": 0,
+    "n": 182,
+    "mean": 78.01098901098901,
+    "lo": 70,
+    "hi": 86,
+    "poly": 0.0,
+    "first": 6.0
+   }
+  ],
+  "_src": {
+   "title": "Barcarolle",
+   "composer": "Offenbach",
+   "instrument": "Flute",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/6201397",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "meditation",
+  "title_ko": "타이스의 명상곡",
+  "subtitle": "Méditation — 타이스",
+  "composer": "쥘 마스네 (Jules Massenet, 1842–1912)",
+  "key": "d \\major",
+  "time": "2/4",
+  "tempo": 92,
+  "midi": "/home/user/free-sheets/mids/pdmx/flute/M_ditation__Tha_s_-QmQejujTS5RQ.mid",
+  "track": 0,
+  "start": 768,
+  "end": 9984,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 342,
+    "mean": 74.97953216374269,
+    "lo": 61,
+    "hi": 93,
+    "poly": 0.0,
+    "first": 2.0
+   }
+  ],
+  "_src": {
+   "title": "Méditation (Thaïs)",
+   "composer": "Jules Massenet",
+   "instrument": "Flute",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/6088084",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "swan",
+  "title_ko": "백조 (동물의 사육제)",
+  "subtitle": "Le Cygne — 동물의 사육제",
+  "composer": "카미유 생상스 (Camille Saint-Saëns, 1835–1921)",
+  "key": "g \\major",
+  "time": "6/4",
+  "tempo": 62,
+  "midi": "/home/user/free-sheets/mids/pdmx/violin/Le_carnaval_des_animaux-QmZTfXFUpc66.mid",
+  "track": 0,
+  "start": 2304,
+  "end": 39168,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 618,
+    "mean": 66.10679611650485,
+    "lo": 57,
+    "hi": 88,
+    "poly": 0.0,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 305,
+    "mean": 48.91803278688525,
+    "lo": 33,
+    "hi": 83,
+    "poly": 0.01,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 114,
+    "mean": 76.67543859649123,
+    "lo": 64,
+    "hi": 95,
+    "poly": 0.0,
+    "first": 6.0
+   }
+  ],
+  "_src": {
+   "title": "Le carnaval des animaux",
+   "composer": "Camille Saint-Saëns",
+   "instrument": "Violin",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/2180726",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "minuet_woo10",
+  "title_ko": "베토벤 미뉴에트 G장조",
+  "subtitle": "Minuet in G WoO 10 No.2",
+  "composer": "루트비히 판 베토벤 (Ludwig van Beethoven, 1770–1827)",
+  "key": "g \\major",
+  "time": "3/4",
+  "tempo": 90,
+  "midi": "/home/user/free-sheets/mids/pdmx/violin/6_Minuets_WoO_10-QmTLJRmcyacS.mid",
+  "track": 0,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 378,
+    "mean": 70.64814814814815,
+    "lo": 57,
+    "hi": 81,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "6 Minuets WoO 10",
+   "composer": "Ludwig van Beethoven",
+   "instrument": "Violin",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/5045054",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "ecossaise",
+  "title_ko": "에코세즈",
+  "subtitle": "Écossaise WoO 86",
+  "composer": "루트비히 판 베토벤 (Ludwig van Beethoven, 1770–1827)",
+  "key": "f \\major",
+  "time": "2/4",
+  "tempo": 120,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Ecossaise_WoO_86-Qmbs2gUsobGd.mid",
+  "track": 0,
+  "start": 0,
+  "end": 12288,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 100,
+    "mean": 72.02,
+    "lo": 65,
+    "hi": 84,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Ecossaise WoO 86",
+   "composer": "Ludwig van Beethoven",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/4936740",
+   "license": "publicdomain"
+  }
+ },
+ {
+  "id": "wooden",
+  "title_ko": "나무 병정의 행진",
+  "subtitle": "March of the Wooden Soldiers — 어린이 앨범 Op.39 No.5",
+  "composer": "표트르 차이콥스키 (Pyotr Ilyich Tchaikovsky, 1840–1893)",
+  "key": "d \\major",
+  "time": "2/4",
+  "tempo": 132,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/TchaikovskyPI__O39__05MarchOfTheWoodenSoldiers.mid",
+  "track": 1,
+  "start": 0,
+  "end": 12288,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 151,
+    "mean": 64.25165562913908,
+    "lo": 57,
+    "hi": 74,
+    "poly": 0.4,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 167,
+    "mean": 72.1497005988024,
+    "lo": 64,
+    "hi": 79,
+    "poly": 0.33,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "March of the Wooden Soldiers, Op. 39, No. 5",
+   "composer": "Peter Ilyich Tchaikovsky",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1806",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "old_french",
+  "title_ko": "옛 프랑스 노래",
+  "subtitle": "Old French Song — 어린이 앨범 Op.39 No.16",
+  "composer": "표트르 차이콥스키 (Pyotr Ilyich Tchaikovsky, 1840–1893)",
+  "key": "g \\minor",
+  "time": "2/4",
+  "tempo": 70,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/TchaikovskyPI__O39__16OldFrenchSong.mid",
+  "track": 1,
+  "start": 0,
+  "end": 12288,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 99,
+    "mean": 71.11111111111111,
+    "lo": 58,
+    "hi": 77,
+    "poly": 0.03,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 89,
+    "mean": 57.48314606741573,
+    "lo": 43,
+    "hi": 67,
+    "poly": 0.17,
+    "first": 0.5
+   }
+  ],
+  "_src": {
+   "title": "Old French Song, Op. 39, No. 16",
+   "composer": "Peter Ilyich Tchaikovsky",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2080",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "brahms_waltz",
+  "title_ko": "브람스 왈츠 Op.39-15",
+  "subtitle": "Waltz Op.39 No.15",
+  "composer": "요하네스 브람스 (Johannes Brahms, 1833–1897)",
+  "key": "aes \\major",
+  "time": "3/4",
+  "tempo": 116,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/waltz-op39-15-a4.mid",
+  "track": 1,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 295,
+    "mean": 52.35254237288136,
+    "lo": 32,
+    "hi": 66,
+    "poly": 0.66,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 425,
+    "mean": 71.50117647058823,
+    "lo": 60,
+    "hi": 92,
+    "poly": 0.81,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Waltz Op39 15",
+   "composer": "Johannes Brahms",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/ftp/BrahmsJ/O39/waltz-op39-15/waltz-op39-15-a4.pdf",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "susanna",
+  "title_ko": "오 수재너",
+  "subtitle": "Oh! Susanna",
+  "composer": "스티븐 포스터 (Stephen Foster, 1826–1864)",
+  "key": "c \\major",
+  "time": "2/4",
+  "tempo": 120,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/oh_susanna-QmTcDBzRxZ4o.mid",
+  "track": 0,
+  "start": 0,
+  "end": 12288,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 85,
+    "mean": 75.84705882352941,
+    "lo": 72,
+    "hi": 81,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "oh susanna",
+   "composer": "Stephen C. Foster",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/5149556",
+   "license": "publicdomain"
+  },
+  "partial": "4",
+  "partial_ticks": 384
+ },
+ {
+  "id": "old_folks",
+  "title_ko": "스와니 강 (고향 사람들)",
+  "subtitle": "Old Folks at Home (Swanee River)",
+  "composer": "스티븐 포스터 (Stephen Foster, 1826–1864)",
+  "key": "ees \\major",
+  "time": "4/4",
+  "tempo": 100,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/OLD_FOLKS_AT_HOME-QmNdUJkmsKgA.mid",
+  "track": 0,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 346,
+    "mean": 53.0635838150289,
+    "lo": 44,
+    "hi": 63,
+    "poly": 0.99,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 346,
+    "mean": 65.09826589595376,
+    "lo": 58,
+    "hi": 77,
+    "poly": 0.98,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "OLD FOLKS AT HOME",
+   "composer": "ephen Foster",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/4106026",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "home_sweet",
+  "title_ko": "즐거운 나의 집",
+  "subtitle": "Home, Sweet Home",
+  "composer": "헨리 비숍 (Henry Bishop, 1786–1855)",
+  "key": "f \\major",
+  "time": "4/4",
+  "tempo": 90,
+  "midi": "/home/user/free-sheets/mids/mutopia/voice_piano/BishopHR__homeshome.mid",
+  "track": 1,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 5,
+    "n": 140,
+    "mean": 68.00714285714285,
+    "lo": 57,
+    "hi": 77,
+    "poly": 0.7,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 75,
+    "mean": 70.30666666666667,
+    "lo": 65,
+    "hi": 77,
+    "poly": 0.0,
+    "first": 0.0
+   },
+   {
+    "track": 6,
+    "n": 189,
+    "mean": 49.232804232804234,
+    "lo": 36,
+    "hi": 62,
+    "poly": 0.11,
+    "first": 1.0
+   }
+  ],
+  "_src": {
+   "title": "Home, Sweet Home",
+   "composer": "Sir Henry Rowley Bishop",
+   "instrument": "Voice+Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=435",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "eine_kleine",
+  "title_ko": "아이네 클라이네 나흐트무지크",
+  "subtitle": "Eine kleine Nachtmusik K.525 — 1악장 주제",
+  "composer": "볼프강 아마데우스 모차르트 (Wolfgang Amadeus Mozart, 1756–1791)",
+  "key": "g \\major",
+  "time": "4/4",
+  "tempo": 120,
+  "midi": "/home/user/free-sheets/mids/pdmx/flute/Eine_kleine_Nachtmusik_K.525-QmRwu8AxPxRz.mid",
+  "track": 0,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 100,
+    "mean": 81.0,
+    "lo": 74,
+    "hi": 88,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Eine kleine Nachtmusik K.525",
+   "composer": "Wolfgang Amadeus Mozart",
+   "instrument": "Flute",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/1080491",
+   "license": "publicdomain"
+  }
+ },
+ {
+  "id": "minuet_f",
+  "title_ko": "미뉴에트 F장조",
+  "subtitle": "Minuet in F major BWV Anh.113 (안나 막달레나 바흐 소곡집)",
+  "composer": "작자 미상 · 바흐 소곡집 수록",
+  "key": "f \\major",
+  "time": "3/4",
+  "tempo": 120,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Minuet_in_F_major_BWV_Anh.113-QmZLB5s1pGDS.mid",
+  "track": 0,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 200,
+    "mean": 51.15,
+    "lo": 40,
+    "hi": 62,
+    "poly": 0.0,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 324,
+    "mean": 73.75308641975309,
+    "lo": 62,
+    "hi": 84,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Minuet in F major BWV Anh.113",
+   "composer": "Johann Sebastian Bach",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/5799384",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "march_d",
+  "title_ko": "행진곡 D장조",
+  "subtitle": "March in D major BWV Anh.122 (안나 막달레나 바흐 소곡집)",
+  "composer": "카를 필리프 에마누엘 바흐 (C. P. E. Bach, 1714–1788)",
+  "key": "d \\major",
+  "time": "4/4",
+  "tempo": 120,
+  "midi": "/home/user/free-sheets/mids/pdmx/violin/March_in_D_Major-QmVoEdiaaoLQ.mid",
+  "track": 0,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 246,
+    "mean": 74.51219512195122,
+    "lo": 64,
+    "hi": 83,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "March in D Major",
+   "composer": "Carl Philipp Emanuel Bach",
+   "instrument": "Violin",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/29531",
+   "license": "publicdomain"
+  }
+ },
+ {
+  "id": "polonaise_g",
+  "title_ko": "폴로네즈 G단조",
+  "subtitle": "Polonaise in G minor BWV Anh.119 (안나 막달레나 바흐 소곡집)",
+  "composer": "작자 미상 · 바흐 소곡집 수록",
+  "key": "bes \\major",
+  "time": "3/4",
+  "tempo": 60,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/BachJS__BWVAnh119__BWV-119.mid",
+  "track": 1,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 93,
+    "mean": 71.04301075268818,
+    "lo": 55,
+    "hi": 79,
+    "poly": 0.0,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 55,
+    "mean": 50.69090909090909,
+    "lo": 43,
+    "hi": 58,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Polonaise in G minor, BWV Anh. 119",
+   "composer": "Johann Sebastian Bach",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1016",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "solveig",
+  "title_ko": "솔베이지의 노래",
+  "subtitle": "Solveig's Song — 페르귄트 Op.55",
+  "composer": "에드바르 그리그 (Edvard Grieg, 1843–1907)",
+  "key": "a \\minor",
+  "time": "4/4",
+  "tempo": 70,
+  "midi": "/home/user/free-sheets/mids/pdmx/cello/solveigs_song-QmPTeYt9dnXg.mid",
+  "track": 0,
+  "start": 12288,
+  "end": 36864,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 385,
+    "mean": 62.42597402597403,
+    "lo": 52,
+    "hi": 88,
+    "poly": 0.73,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 264,
+    "mean": 46.38636363636363,
+    "lo": 23,
+    "hi": 71,
+    "poly": 0.73,
+    "first": 20.0
+   },
+   {
+    "track": 0,
+    "n": 274,
+    "mean": 66.75182481751825,
+    "lo": 59,
+    "hi": 76,
+    "poly": 0.0,
+    "first": 35.0
+   }
+  ],
+  "_src": {
+   "title": "solveigs song",
+   "composer": "Edvard Grieg",
+   "instrument": "Cello",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/5222772",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "mountain_king",
+  "title_ko": "산왕의 궁전에서",
+  "subtitle": "In the Hall of the Mountain King — 페르귄트 Op.46",
+  "composer": "에드바르 그리그 (Edvard Grieg, 1843–1907)",
+  "key": "b \\minor",
+  "time": "4/4",
+  "tempo": 132,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/GriegE__O46__Dans_l_antre_du_roi_de_la_montagne.mid",
+  "track": 1,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 726,
+    "mean": 74.73415977961433,
+    "lo": 35,
+    "hi": 99,
+    "poly": 0.25,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 727,
+    "mean": 43.58872077028886,
+    "lo": 23,
+    "hi": 59,
+    "poly": 0.22,
+    "first": 4.0
+   }
+  ],
+  "_src": {
+   "title": "In the Hall of the Mountain King, op. 46, no. 4",
+   "composer": "Edvard Grieg",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1888",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "beethoven5",
+  "title_ko": "운명 교향곡 주제",
+  "subtitle": "Symphony No.5 Op.67 — 1악장 주제",
+  "composer": "루트비히 판 베토벤 (Ludwig van Beethoven, 1770–1827)",
+  "key": "c \\minor",
+  "time": "2/4",
+  "tempo": 132,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/beethoven_fifth_op67-a4.mid",
+  "track": 1,
+  "start": 0,
+  "end": 9216,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 1800,
+    "mean": 49.592777777777776,
+    "lo": 26,
+    "hi": 69,
+    "poly": 0.69,
+    "first": 0.5
+   },
+   {
+    "track": 1,
+    "n": 2423,
+    "mean": 73.94428394552207,
+    "lo": 43,
+    "hi": 92,
+    "poly": 0.53,
+    "first": 0.5
+   }
+  ],
+  "_src": {
+   "title": "Beethoven Fifth Op67",
+   "composer": "Ludwig van Beethoven",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/O67/beethoven_fifth_op67/beethoven_fifth_op67-a4.pdf",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "martini",
+  "title_ko": "마르티니 가보트",
+  "subtitle": "Gavotte",
+  "composer": "조반니 바티스타 마르티니 (Giovanni Battista Martini, 1706–1784)",
+  "key": "g \\major",
+  "time": "2/2",
+  "tempo": 100,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/MartiniGB__Gavotte.mid",
+  "track": 1,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 439,
+    "mean": 72.32118451025057,
+    "lo": 59,
+    "hi": 83,
+    "poly": 0.0,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 300,
+    "mean": 61.28333333333333,
+    "lo": 55,
+    "hi": 71,
+    "poly": 0.0,
+    "first": 2.0
+   },
+   {
+    "track": 3,
+    "n": 254,
+    "mean": 50.13385826771653,
+    "lo": 35,
+    "hi": 64,
+    "poly": 0.15,
+    "first": 2.0
+   }
+  ],
+  "_src": {
+   "title": "Gavotte",
+   "composer": "Giovanni Battista Martini",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1785",
+   "license": "Creative Commons Attribution-ShareAlike 3.0 (Mutopia)"
+  }
+ },
+ {
+  "id": "emperor",
+  "title_ko": "황제 4중주 주제 (하이든)",
+  "subtitle": "Emperor Quartet Op.76 No.3 — 2악장 주제",
+  "composer": "요제프 하이든 (Joseph Haydn, 1732–1809)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 88,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Streichquartett_Op._76_No._3_in_C_Major__Emperor_Kaiserquart-QmdtpLDRLBFF.mid",
+  "track": 0,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 0,
+    "n": 117,
+    "mean": 76.82905982905983,
+    "lo": 67,
+    "hi": 84,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Streichquartett Op. 76 No. 3 in C Major (Emperor/Kaiserquartett)",
+   "composer": "Joseph Haydn",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/4665110",
+   "license": "publicdomain"
+  }
+ },
+ {
+  "id": "k331_theme",
+  "title_ko": "피아노 소나타 K.331 1악장 주제",
+  "subtitle": "Sonata K.331 — Andante grazioso 주제",
+  "composer": "볼프강 아마데우스 모차르트 (Wolfgang Amadeus Mozart, 1756–1791)",
+  "key": "a \\major",
+  "time": "6/8",
+  "tempo": 56,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/MozartWA__KV331__KV331_1_1_tema.mid",
+  "track": 1,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 244,
+    "mean": 58.76229508196721,
+    "lo": 40,
+    "hi": 66,
+    "poly": 0.63,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 236,
+    "mean": 71.9322033898305,
+    "lo": 61,
+    "hi": 81,
+    "poly": 0.2,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Sonate Opus KV 331 - Tema",
+   "composer": "Wolfgang Amadeus Mozart",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=614",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "bourree",
+  "title_ko": "부레 E단조",
+  "subtitle": "Bourrée in E minor BWV 996",
+  "composer": "요한 제바스티안 바흐 (Johann Sebastian Bach, 1685–1750)",
+  "key": "e \\minor",
+  "time": "4/4",
+  "tempo": 132,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/guitar/Bourr_e_in_E_Minor_BWV996-QmcU1cMYcWQE.mid",
+  "track": 0,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 308,
+    "mean": 49.01298701298701,
+    "lo": 38,
+    "hi": 62,
+    "poly": 0.26,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 164,
+    "mean": 63.25609756097561,
+    "lo": 58,
+    "hi": 71,
+    "poly": 0.0,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Bourrée in E Minor BWV996",
+   "composer": "Johann Sebastian Bach",
+   "instrument": "Guitar",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/1717176",
+   "license": "cc-zero"
+  },
+  "partial": "4",
+  "partial_ticks": 384
+ },
+ {
+  "id": "carmen_habanera",
+  "title_ko": "카르멘 하바네라",
+  "subtitle": "Habanera — 카르멘",
+  "composer": "조르주 비제 (Georges Bizet, 1838–1875)",
+  "key": "c \\major",
+  "time": "4/4",
+  "tempo": 120,
+  "midi": "/home/user/free-sheets/mids/pdmx/flute/Carmen-QmexDKqvS5iT.mid",
+  "track": 0,
+  "start": 0,
+  "end": 24576,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 91,
+    "mean": 47.86813186813187,
+    "lo": 38,
+    "hi": 59,
+    "poly": 0.05,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 98,
+    "mean": 75.95918367346938,
+    "lo": 67,
+    "hi": 83,
+    "poly": 0.0,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 147,
+    "mean": 72.16326530612245,
+    "lo": 55,
+    "hi": 83,
+    "poly": 0.58,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Carmen",
+   "composer": "Georges Bizet",
+   "instrument": "Flute",
+   "source": "pdmx",
+   "url": "https://musescore.com/score/84845",
+   "license": "publicdomain"
+  }
+ },
+ {
+  "id": "santa_lucia",
+  "title_ko": "산타 루치아",
+  "subtitle": "Santa Lucia — 나폴리 노래",
+  "composer": "테오도로 코트라우 (Teodoro Cottrau, 1827–1879)",
+  "key": "g \\major",
+  "time": "3/4",
+  "tempo": 120,
+  "midi": "/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2/mids/pdmx2/piano/Czerny_-_Air_napolitain_Santa_Lucia-QmbCzDWtNSV3.mid",
+  "track": 0,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 191,
+    "mean": 56.890052356020945,
+    "lo": 43,
+    "hi": 64,
+    "poly": 0.97,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 121,
+    "mean": 76.43801652892562,
+    "lo": 69,
+    "hi": 91,
+    "poly": 0.03,
+    "first": 0.0
+   }
+  ],
+  "_src": {
+   "title": "Czerny - Air napolitain Santa Lucia",
+   "composer": "Carl Czerny",
+   "instrument": "Piano",
+   "source": "pdmx2",
+   "url": "https://musescore.com/score/5119177",
+   "license": "cc-zero"
+  }
+ },
+ {
+  "id": "chopin_prelude7",
+  "title_ko": "쇼팽 전주곡 7번",
+  "subtitle": "Prélude Op.28 No.7",
+  "composer": "프레데리크 쇼팽 (Frédéric Chopin, 1810–1849)",
+  "key": "a \\major",
+  "time": "3/4",
+  "tempo": 120,
+  "midi": "/home/user/free-sheets/mids/mutopia/piano/Chop-28-7-a4.mid",
+  "track": 1,
+  "start": 0,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 102,
+    "mean": 71.08823529411765,
+    "lo": 61,
+    "hi": 85,
+    "poly": 0.88,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 66,
+    "mean": 56.45454545454545,
+    "lo": 33,
+    "hi": 69,
+    "poly": 0.75,
+    "first": 1.0
+   }
+  ],
+  "_src": {
+   "title": "Chop 28 7",
+   "composer": "Frédéric Chopin",
+   "instrument": "Piano",
+   "source": "mutopia",
+   "url": "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-7/Chop-28-7-a4.pdf",
+   "license": "Public Domain (Mutopia)"
+  }
+ },
+ {
+  "id": "heidenroslein",
+  "title_ko": "들장미",
+  "subtitle": "Heidenröslein D.257",
+  "composer": "프란츠 슈베르트 (Franz Schubert, 1797–1828)",
+  "key": "g \\major",
+  "time": "2/4",
+  "tempo": 69,
+  "midi": "/home/user/free-sheets/mids/Schubert__Franz-lc30321236.mid",
+  "track": 0,
+  "start": 0,
+  "end": 9216,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 138,
+    "mean": 54.54347826086956,
+    "lo": 43,
+    "hi": 64,
+    "poly": 0.12,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 180,
+    "mean": 84.85,
+    "lo": 79,
+    "hi": 91,
+    "poly": 0.0,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 270,
+    "mean": 68.71111111111111,
+    "lo": 60,
+    "hi": 79,
+    "poly": 0.74,
+    "first": 0.5
+   }
+  ],
+  "_src": {
+   "title": "Heidenröslein, D.257 (Op.3)",
+   "composer": "Franz Schubert",
+   "instrument": "Voice+Piano",
+   "source": "openscore_lieder",
+   "url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Op.3/3_Heidenröslein,_D.257/lc30321236.mscz",
+   "license": "CC0"
+  }
+ },
+ {
+  "id": "an_die_musik",
+  "title_ko": "음악에게",
+  "subtitle": "An die Musik D.547",
+  "composer": "프란츠 슈베르트 (Franz Schubert, 1797–1828)",
+  "key": "d \\major",
+  "time": "2/2",
+  "tempo": 53,
+  "midi": "/home/user/free-sheets/mids/Schubert__Franz-lc6180725.mid",
+  "track": 0,
+  "start": 3072,
+  "end": 27648,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 932,
+    "mean": 63.19849785407725,
+    "lo": 50,
+    "hi": 74,
+    "poly": 1.0,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 126,
+    "mean": 48.817460317460316,
+    "lo": 31,
+    "hi": 59,
+    "poly": 0.06,
+    "first": 1.0
+   },
+   {
+    "track": 0,
+    "n": 126,
+    "mean": 68.74603174603175,
+    "lo": 61,
+    "hi": 78,
+    "poly": 0.0,
+    "first": 9.0
+   }
+  ],
+  "_src": {
+   "title": "An die Musik, D.547",
+   "composer": "Franz Schubert",
+   "instrument": "Voice+Piano",
+   "source": "openscore_lieder",
+   "url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/_/An_die_Musik,_D.547/lc6180725.mscx",
+   "license": "CC0"
+  }
+ },
+ {
+  "id": "standchen",
+  "title_ko": "세레나데 (슈베르트)",
+  "subtitle": "Ständchen — 백조의 노래 D.957",
+  "composer": "프란츠 슈베르트 (Franz Schubert, 1797–1828)",
+  "key": "d \\minor",
+  "time": "3/4",
+  "tempo": 62,
+  "midi": "/home/user/free-sheets/mids/Schubert__Franz-lc5004835.mid",
+  "track": 0,
+  "start": 4608,
+  "end": 18432,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 649,
+    "mean": 51.59784283513097,
+    "lo": 29,
+    "hi": 67,
+    "poly": 0.94,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 705,
+    "mean": 62.751773049645394,
+    "lo": 53,
+    "hi": 83,
+    "poly": 0.93,
+    "first": 0.5
+   },
+   {
+    "track": 0,
+    "n": 197,
+    "mean": 70.73096446700508,
+    "lo": 62,
+    "hi": 79,
+    "poly": 0.0,
+    "first": 12.0
+   }
+  ],
+  "_src": {
+   "title": "Ständchen (Schwanengesang, D.957)",
+   "composer": "Franz Schubert",
+   "instrument": "Voice+Piano",
+   "source": "openscore_lieder",
+   "url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Schwanengesang,_D.957/4_Ständchen/lc5004835.mscz",
+   "license": "CC0"
+  }
+ },
+ {
+  "id": "lindenbaum",
+  "title_ko": "보리수",
+  "subtitle": "Der Lindenbaum — 겨울 나그네 D.911",
+  "composer": "프란츠 슈베르트 (Franz Schubert, 1797–1828)",
+  "key": "e \\major",
+  "time": "3/4",
+  "tempo": 70,
+  "midi": "/home/user/free-sheets/mids/Schubert__Franz-lc5016466.mid",
+  "track": 0,
+  "start": 8064,
+  "end": 26496,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 934,
+    "mean": 64.52462526766595,
+    "lo": 47,
+    "hi": 80,
+    "poly": 0.26,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 500,
+    "mean": 51.004,
+    "lo": 35,
+    "hi": 68,
+    "poly": 0.35,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 205,
+    "mean": 67.51219512195122,
+    "lo": 59,
+    "hi": 76,
+    "poly": 0.0,
+    "first": 23.5
+   }
+  ],
+  "_src": {
+   "title": "Der Lindenbaum (Winterreise, D.911)",
+   "composer": "Franz Schubert",
+   "instrument": "Voice+Piano",
+   "source": "openscore_lieder",
+   "url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Winterreise,_D.911/5_Der_Lindenbaum/lc5016466.mscz",
+   "license": "CC0"
+  }
+ },
+ {
+  "id": "nussbaum",
+  "title_ko": "호두나무",
+  "subtitle": "Der Nussbaum — 미르테의 꽃 Op.25",
+  "composer": "로베르트 슈만 (Robert Schumann, 1810–1856)",
+  "key": "g \\major",
+  "time": "6/8",
+  "tempo": 116,
+  "midi": "/home/user/free-sheets/mids/Schumann__Robert-lc6891758.mid",
+  "track": 0,
+  "start": 1152,
+  "end": 14976,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 569,
+    "mean": 58.15114235500879,
+    "lo": 35,
+    "hi": 81,
+    "poly": 0.0,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 322,
+    "mean": 66.8136645962733,
+    "lo": 43,
+    "hi": 83,
+    "poly": 0.03,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 144,
+    "mean": 70.13194444444444,
+    "lo": 62,
+    "hi": 78,
+    "poly": 0.0,
+    "first": 5.5
+   }
+  ],
+  "_src": {
+   "title": "Der Nussbaum (Myrthen, Op.25)",
+   "composer": "Robert Schumann",
+   "instrument": "Voice+Piano",
+   "source": "openscore_lieder",
+   "url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schumann,_Robert/Myrthen,_Op.25/3_Der_Nussbaum/lc6891758.mscz",
+   "license": "CC0"
+  }
+ },
+ {
+  "id": "musensohn",
+  "title_ko": "뮤즈의 아들",
+  "subtitle": "Der Musensohn D.764",
+  "composer": "프란츠 슈베르트 (Franz Schubert, 1797–1828)",
+  "key": "g \\major",
+  "time": "6/8",
+  "tempo": 132,
+  "midi": "/home/user/free-sheets/mids/Schubert__Franz-lc29747756.mid",
+  "track": 0,
+  "start": 5760,
+  "end": 24192,
+  "top": true,
+  "_stats": [
+   {
+    "track": 2,
+    "n": 382,
+    "mean": 45.424083769633505,
+    "lo": 31,
+    "hi": 60,
+    "poly": 0.6,
+    "first": 0.0
+   },
+   {
+    "track": 1,
+    "n": 1211,
+    "mean": 66.67795210569777,
+    "lo": 54,
+    "hi": 84,
+    "poly": 1.0,
+    "first": 0.5
+   },
+   {
+    "track": 0,
+    "n": 289,
+    "mean": 72.38754325259515,
+    "lo": 66,
+    "hi": 79,
+    "poly": 0.0,
+    "first": 17.5
+   }
+  ],
+  "_src": {
+   "title": "Der Musensohn, D.764 (Op.92)",
+   "composer": "Franz Schubert",
+   "instrument": "Voice+Piano",
+   "source": "openscore_lieder",
+   "url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Op.92/1_Der_Musensohn,_D.764/lc29747756.mscz",
+   "license": "CC0"
+  }
+ },
+ {
+  "id": "du_bist_die_ruh",
+  "title_ko": "그대는 나의 안식",
+  "subtitle": "Du bist die Ruh D.776",
+  "composer": "프란츠 슈베르트 (Franz Schubert, 1797–1828)",
+  "key": "ees \\major",
+  "time": "3/8",
+  "tempo": 80,
+  "midi": "/home/user/free-sheets/mids/Schubert__Franz-lc4919879.mid",
+  "track": 0,
+  "start": 4032,
+  "end": 13248,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 498,
+    "mean": 67.66666666666667,
+    "lo": 55,
+    "hi": 84,
+    "poly": 0.18,
+    "first": 0.0
+   },
+   {
+    "track": 2,
+    "n": 245,
+    "mean": 57.39591836734694,
+    "lo": 32,
+    "hi": 68,
+    "poly": 0.19,
+    "first": 0.0
+   },
+   {
+    "track": 0,
+    "n": 155,
+    "mean": 71.46451612903226,
+    "lo": 63,
+    "hi": 80,
+    "poly": 0.0,
+    "first": 10.5
+   }
+  ],
+  "_src": {
+   "title": "Du bist die Ruh (Op.59)",
+   "composer": "Franz Schubert",
+   "instrument": "Voice+Piano",
+   "source": "openscore_lieder",
+   "url": "https://github.com/OpenScore/Lieder/blob/main/scores/Schubert,_Franz/Op.59/3_Du_bist_die_Ruh/lc4919879.mscz",
+   "license": "CC0"
+  }
+ },
+ {
+  "id": "je_te_veux",
+  "title_ko": "주 트 뵈 (당신을 원해요)",
+  "subtitle": "Je te veux — 왈츠 노래",
+  "composer": "에릭 사티 (Erik Satie, 1866–1925)",
+  "key": "c \\major",
+  "time": "3/4",
+  "tempo": 124,
+  "midi": "/home/user/free-sheets/mids/Satie__Erik-lc6986302.mid",
+  "track": 0,
+  "start": 4608,
+  "end": 23040,
+  "top": true,
+  "_stats": [
+   {
+    "track": 1,
+    "n": 982,
+    "mean": 62.65987780040733,
+    "lo": 43,
+    "hi": 79,
+    "poly": 0.93,
+    "first": 1.0
+   },
+   {
+    "track": 2,
+    "n": 419,
+    "mean": 40.599045346062056,
+    "lo": 24,
+    "hi": 60,
+    "poly": 0.88,
+    "first": 3.0
+   },
+   {
+    "track": 0,
+    "n": 273,
+    "mean": 68.71428571428571,
+    "lo": 60,
+    "hi": 79,
+    "poly": 0.0,
+    "first": 13.0
+   }
+  ],
+  "_src": {
+   "title": "Je te veux",
+   "composer": "Erik Satie",
+   "instrument": "Voice+Piano",
+   "source": "openscore_lieder",
+   "url": "https://github.com/OpenScore/Lieder/blob/main/scores/Satie,_Erik/_/Je_te_veux/lc6986302.mscz",
+   "license": "CC0"
+  }
+ }
+]
