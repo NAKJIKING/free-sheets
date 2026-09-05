@@ -132,6 +132,10 @@ PD_COMPOSERS = [
     'Janequin',    # Clément Janequin †1558
     'Sermisy',     # Claudin de Sermisy †1562
     'Costeley',    # Guillaume Costeley †1606
+    # 기타·바이올린 교본 작곡가 — 편곡물 차단 규칙을 고치면서 PD 예외로
+    # 필요해졌다(둘 다 사후 70년 훨씬 지남, archive 수집분).
+    'Coste',       # Napoléon Coste †1883
+    'Fiorillo',    # Federigo Fiorillo †1823 이후
     # 영국 튜더·자코비안
     'Morley',      # Thomas Morley †1602
     'Weelkes',     # Thomas Weelkes †1623

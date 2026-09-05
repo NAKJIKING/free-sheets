@@ -14,12 +14,12 @@ META = [
  ('musette', 'Musette in D major BWV Anh.126 (melody)', '뮤제트 D장조', 'Anonymous', 2, 'CC0 (내 악보함 조판 · 원본 Mutopia PD)', MUT + 'BachJS/BWVAnh126/anna-magdalena-22/', '바흐 안나 막달레나 소곡집 Bach Notebook'),
  ('minuet', 'Minuet in G major BWV Anh.114 (melody)', '미뉴에트 G장조', 'Christian Petzold', 1, 'CC0 (내 악보함 조판 · 원본 Mutopia PD)', MUT + 'BachJS/BWVAnh114/anna-magdalena-04/', '바흐 미뉴에트 안나 막달레나 소곡집 Bach Minuet 小步舞曲'),
  ('turca', 'Rondo alla turca — theme (easy melody)', '터키 행진곡 주제', 'Wolfgang Amadeus Mozart', 2, 'CC0 (내 악보함 조판 · 원본 Mutopia PD)', MUT + 'MozartWA/KV331/KV331_3_RondoAllaTurca/', '터키행진곡 Turkish March 土耳其进行曲 K.331'),
- ('danube', 'The Blue Danube — waltz theme (easy melody)', '아름답고 푸른 도나우 주제', 'Johann Strauss II', 1, 'CC BY-SA 4.0 (내 악보함 조판 · 원본 Mutopia)', MUT + 'StraussJJ/O314/blue_danube/', '도나우 왈츠 Blue Danube Donau 蓝色多瑙河'),
+ ('danube', 'The Blue Danube — waltz theme (easy melody)', '아름답고 푸른 도나우 주제', 'Johann Strauss II', 1, 'CC BY-SA 4.0 (내 악보함 조판 · 원본 Mutopia: Nikos Kouremenos 조판 © 2014)', MUT + 'StraussJJ/O314/blue_danube/', '도나우 왈츠 Blue Danube Donau 蓝色多瑙河'),
  ('forelle', 'Die Forelle — The Trout (easy melody)', '송어', 'Franz Schubert', 2, 'CC0 (내 악보함 조판 · 원본 Mutopia PD)', MUT + 'SchubertF/D550/forelle/', '송어 Trout 鳟鱼 D.550'),
  ('greensleeves', 'Greensleeves (easy melody)', '그린슬리브즈', 'Traditional', 1, 'CC0 (내 악보함 조판 · 원본 Mutopia PD)', MUT + 'Traditional/greensleeves/', '그린슬리브스 영국 민요 绿袖子'),
- ('landmann', 'The Happy Farmer — Fröhlicher Landmann Op.68 No.10 (melody)', '즐거운 농부', 'Robert Schumann', 2, 'CC BY-SA 2.5 (내 악보함 조판 · 원본 Mutopia)', MUT + 'SchumannR/O68/schumann-op68-10-gai-laboureur/', '즐거운 농부 슈만 유겐트 앨범 Happy Farmer Merry Peasant 快乐的农夫'),
+ ('landmann', 'The Happy Farmer — Fröhlicher Landmann Op.68 No.10 (melody)', '즐거운 농부', 'Robert Schumann', 2, 'CC BY-SA 2.5 (내 악보함 조판 · 원본 Mutopia: Philippe Hézaine 조판 © 2007)', MUT + 'SchumannR/O68/schumann-op68-10-gai-laboureur/', '즐거운 농부 슈만 유겐트 앨범 Happy Farmer Merry Peasant 快乐的农夫'),
  ('gymno', 'Gymnopédie No.1 (melody)', '짐노페디 1번', 'Erik Satie', 1, 'CC0 (내 악보함 조판 · 원본 Mutopia PD)', MUT + 'SatieE/gymnopedie_1/', '짐노페디 사티 Gymnopedie 裸体歌舞'),
- ('largo', "Largo from the New World Symphony — Goin' Home (easy melody)", '꿈속의 고향 (신세계 교향곡 라르고)', 'Antonín Dvořák', 1, 'CC BY-SA 3.0 (내 악보함 조판 · 원본 Mutopia)', MUT + 'DvorakA/O95/Sym9/', '신세계 교향곡 라르고 꿈속의 고향 드보르작 New World Symphony Largo 自新大陆'),
+ ('largo', "Largo from the New World Symphony — Goin' Home (easy melody)", '꿈속의 고향 (신세계 교향곡 라르고)', 'Antonín Dvořák', 1, 'CC BY-SA 3.0 (내 악보함 조판 · 원본 Mutopia: Keith OHara 조판 © 2011)', MUT + 'DvorakA/O95/Sym9/', '신세계 교향곡 라르고 꿈속의 고향 드보르작 New World Symphony Largo 自新大陆'),
 ]
 
 def main(write):

@@ -277,9 +277,13 @@ SESSION_BLOCKED = _load_session_block()
 # ⓷ 편곡자·채보자가 명시된 곡 — 편곡물은 2차적저작물이라 원곡이 PD여도
 #    편곡자의 권리가 따로 산다. 업로더의 CC0 선언은 자기 편곡 층위만
 #    커버할 뿐 원곡 이용허락을 대신하지 못한다.
+# 주의: 예전 규칙은 맨 끝에 \b 가 붙어 있어 arr. · arrang · transcrib
+#       세 갈래가 한 번도 매칭되지 않았다 — 'arr.' 뒤에는 빈칸이,
+#       'arrang' 뒤에는 ed/ement 가 와서 낱말 경계가 성립하지 않는다.
+#       접두 매칭이어야 하는 갈래는 뒤 경계를 빼고, 'X by' 형태만 경계를 둔다.
 ARRANGER = re.compile(
-    r'(?i)\b(arr\.|arrang|transcrib|transcription by|realization by|'
-    r'harmon(y|ized) by|adapted by|edited by)\b')
+    r'(?i)(\barr\.|\barrang|\btranscri|\brealization by\b|'
+    r'\bharmon(y|ized) by\b|\badapted by\b|\bedited by\b)')
 
 # ⓸ 작곡가란이 사람 이름이 아니라 계정명·설명문인 경우 — 출처 불명이라
 #    권리 상태를 확인할 길이 없다(현대 창작곡이 이 경로로 들어왔다).
@@ -444,7 +448,10 @@ def main():
             why = 'session작곡가'
         elif NON_SCORE_ID.search(url):
             why = '비악보'
-        elif ARRANGER.search(blob):
+        elif ARRANGER.search(blob) and not is_pd_composer(comp, ''):
+            # 편곡 표기가 있어도 이름이 PD 명단에 있으면(리스트·타레가 등
+            # 사후 70년 지난 편곡자) 그 편곡물도 이미 퍼블릭 도메인이다.
+            # 이 예외가 없으면 규칙을 고치는 순간 멀쩡한 PD 곡 60곡이 빠진다.
             why = '편곡자권리'
         elif BAD_COMPOSER.match(comp):
             why = '작곡가불명'
