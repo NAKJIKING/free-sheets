@@ -16196,7 +16196,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/g-major-allegro-a4.webp",
   "midi": "mids/mutopia/guitar/g-major-allegro-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -16674,7 +16675,8 @@
   "license": "CC BY 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/guitar-skole-no-10-a4.webp",
   "midi": "mids/mutopia/guitar/guitar-skole-no-10-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "코스트 科斯特"
  },
  {
   "source": "mutopia",
@@ -16686,7 +16688,8 @@
   "license": "CC BY 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/guitar-skole-no-23-a4.webp",
   "midi": "mids/mutopia/guitar/guitar-skole-no-23-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "코스트 科斯特"
  },
  {
   "source": "mutopia",
@@ -20753,7 +20756,7 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/mertz_etude-a4.webp",
   "midi": "mids/mutopia/guitar/mertz_etude-a4.mid",
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo",
+  "tags": "메르츠 梅尔茨 연습곡 에튀드 练习曲 Estudio Estudo",
   "level": 2
  },
  {
@@ -24790,7 +24793,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/clarinet/CavalliniNo1-a4.webp",
   "midi": "mids/mutopia/clarinet/CavalliniNo1-a4.mid",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "mutopia",
@@ -24802,7 +24806,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/clarinet/CavalliniNo3-a4.webp",
   "midi": "mids/mutopia/clarinet/CavalliniNo3-a4.mid",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "mutopia",
@@ -24814,7 +24819,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/clarinet/CavalliniNo4-a4.webp",
   "midi": "mids/mutopia/clarinet/CavalliniNo4-a4.mid",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "mutopia",
@@ -24825,7 +24831,8 @@
   "instrument": "Trumpet",
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/trumpet/Arban_first-a4.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아르방 아르반 阿尔班"
  },
  {
   "source": "mutopia",
@@ -24986,7 +24993,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/aguado-op03n01-a4.webp",
   "midi": "mids/mutopia/guitar/aguado-op03n01-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -24998,7 +25006,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/aguado-op03n02-a4.webp",
   "midi": "mids/mutopia/guitar/aguado-op03n02-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -25010,7 +25019,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/aguado-op03n03-a4.webp",
   "midi": "mids/mutopia/guitar/aguado-op03n03-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -25022,7 +25032,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/aguado-op03n04-a4.webp",
   "midi": "mids/mutopia/guitar/aguado-op03n04-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -25034,7 +25045,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/aguado-op03n05-a4.webp",
   "midi": "mids/mutopia/guitar/aguado-op03n05-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -25046,7 +25058,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/aguado-op03n06-a4.webp",
   "midi": "mids/mutopia/guitar/aguado-op03n06-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -25058,7 +25071,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/aguado-op03n07-a4.webp",
   "midi": "mids/mutopia/guitar/aguado-op03n07-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -25070,7 +25084,8 @@
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/aguado-op03n08-a4.webp",
   "midi": "mids/mutopia/guitar/aguado-op03n08-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -25081,7 +25096,8 @@
   "instrument": "Guitar",
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoOp4No1-a4.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -25092,7 +25108,8 @@
   "instrument": "Guitar",
   "license": "CC BY-SA 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoOp4No2-a4.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -27468,7 +27485,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/clarinet/CavalliniE__CavalliniNo7.webp",
   "midi": "mids/mutopia/clarinet/CavalliniE__CavalliniNo7.mid",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "mutopia",
@@ -27480,7 +27498,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/clarinet/CavalliniE__CavalliniNo8.webp",
   "midi": "mids/mutopia/clarinet/CavalliniE__CavalliniNo8.mid",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "mutopia",
@@ -28812,7 +28831,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/CosteN__guitar-skole-no-24__guitar-skole-no-24-lys.webp",
   "midi": "mids/mutopia/guitar/CosteN__guitar-skole-no-24__guitar-skole-no-24-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "코스트 科斯特"
  },
  {
   "source": "mutopia",
@@ -32140,7 +32160,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n07.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n07.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32152,7 +32173,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n10.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n10.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32164,7 +32186,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n04.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n04.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32176,7 +32199,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n01.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n01.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32188,7 +32212,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n05.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n05.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32200,7 +32225,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n08.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n08.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32212,7 +32238,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n02.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n02.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32224,7 +32251,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n09.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n09.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32236,7 +32264,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n06.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n06.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32248,7 +32277,8 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__O11__aguado-op11n03.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O11__aguado-op11n03.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32260,7 +32290,8 @@
   "license": "Creative Commons Attribution-ShareAlike 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/AguadoD__aminor-study.webp",
   "midi": "mids/mutopia/guitar/AguadoD__aminor-study.mid",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "mutopia",
@@ -32273,7 +32304,7 @@
   "thumb": "thumbs/mutopia/guitar/AguadoD__O4__AguadoOp4No6.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O4__AguadoOp4No6.mid",
   "level": 2,
-  "tags": "Six Petites Pieces, No. 6, Op. 4, 6"
+  "tags": "아과도 아구아도 阿瓜多 Six Petites Pieces, No. 6, Op. 4, 6"
  },
  {
   "source": "mutopia",
@@ -32286,7 +32317,7 @@
   "thumb": "thumbs/mutopia/guitar/AguadoD__O4__AguadoOp4No5.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O4__AguadoOp4No5.mid",
   "level": 2,
-  "tags": "Six Petites Pieces, Op. 4, No. 5"
+  "tags": "아과도 아구아도 阿瓜多 Six Petites Pieces, Op. 4, No. 5"
  },
  {
   "source": "mutopia",
@@ -32299,7 +32330,7 @@
   "thumb": "thumbs/mutopia/guitar/AguadoD__O4__AguadoOp4No3.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O4__AguadoOp4No3.mid",
   "level": 2,
-  "tags": "Six Petites Pieces, Op. 4, No. 3"
+  "tags": "아과도 아구아도 阿瓜多 Six Petites Pieces, Op. 4, No. 3"
  },
  {
   "source": "mutopia",
@@ -32312,7 +32343,7 @@
   "thumb": "thumbs/mutopia/guitar/AguadoD__O4__AguadoOp4No4.webp",
   "midi": "mids/mutopia/guitar/AguadoD__O4__AguadoOp4No4.mid",
   "level": 2,
-  "tags": "Six Petites Pieces, No. 4"
+  "tags": "아과도 아구아도 阿瓜多 Six Petites Pieces, No. 4"
  },
  {
   "source": "mutopia",
@@ -36982,7 +37013,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/MertzJK__guitar-skole-no-04__guitar-skole-no-04-lys.webp",
   "midi": "mids/mutopia/guitar/MertzJK__guitar-skole-no-04__guitar-skole-no-04-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "mutopia",
@@ -36994,7 +37026,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/MertzJK__guitar-skole-no-21__guitar-skole-no-21-lys.webp",
   "midi": "mids/mutopia/guitar/MertzJK__guitar-skole-no-21__guitar-skole-no-21-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "mutopia",
@@ -37018,7 +37051,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/MertzJK__guitar-skole-no-14__guitar-skole-no-14-lys.webp",
   "midi": "mids/mutopia/guitar/MertzJK__guitar-skole-no-14__guitar-skole-no-14-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "mutopia",
@@ -37030,7 +37064,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/MertzJK__guitar-skole-no-09__guitar-skole-no-09-lys.webp",
   "midi": "mids/mutopia/guitar/MertzJK__guitar-skole-no-09__guitar-skole-no-09-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "mutopia",
@@ -37042,7 +37077,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/MertzJK__guitar-skole-no-12__guitar-skole-no-12-lys.webp",
   "midi": "mids/mutopia/guitar/MertzJK__guitar-skole-no-12__guitar-skole-no-12-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "mutopia",
@@ -37054,7 +37090,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/MertzJK__guitar-skole-no-07__guitar-skole-no-07-lys.webp",
   "midi": "mids/mutopia/guitar/MertzJK__guitar-skole-no-07__guitar-skole-no-07-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "mutopia",
@@ -37066,7 +37103,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/MertzJK__guitar-skole-no-05__guitar-skole-no-05-lys.webp",
   "midi": "mids/mutopia/guitar/MertzJK__guitar-skole-no-05__guitar-skole-no-05-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "mutopia",
@@ -37078,7 +37116,8 @@
   "license": "Creative Commons Attribution 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/guitar/MertzJK__guitar-skole-no-16__guitar-skole-no-16-lys.webp",
   "midi": "mids/mutopia/guitar/MertzJK__guitar-skole-no-16__guitar-skole-no-16-lys.mid",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "mutopia",
@@ -63599,7 +63638,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_pianofortestudie661loes.webp",
-  "level": 2
+  "level": 2,
+  "tags": "뢰슈호른 뢰쉬호른 勒施霍恩"
  },
  {
   "source": "archive",
@@ -63612,7 +63652,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-amusemens-lgans-op37-loeschhorn-albert.webp",
   "level": 2,
-  "tags": "6 Amusemens elegans, Op.37"
+  "tags": "뢰슈호른 뢰쉬호른 勒施霍恩 6 Amusemens elegans, Op.37"
  },
  {
   "source": "archive",
@@ -63625,7 +63665,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-kinderstcke-zu-4-hnden-op182-loeschhorn-albert.webp",
   "level": 2,
-  "tags": "10 Kinderstucke zu 4 Handen, Op.182"
+  "tags": "뢰슈호른 뢰쉬호른 勒施霍恩 10 Kinderstucke zu 4 Handen, Op.182"
  },
  {
   "source": "archive",
@@ -63637,7 +63677,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-studies-for-the-medium-grade-op169-loeschhorn-albert.webp",
-  "level": 2
+  "level": 2,
+  "tags": "뢰슈호른 뢰쉬호른 勒施霍恩"
  },
  {
   "source": "archive",
@@ -63650,7 +63691,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-melodische-etuden-op38-loeschhorn-albert.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "뢰슈호른 뢰쉬호른 勒施霍恩 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -63663,7 +63704,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-melodische-etuden-op52-loeschhorn-albert.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "뢰슈호른 뢰쉬호른 勒施霍恩 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -63675,7 +63716,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-belle-amazone-op27-loeschhorn-albert.webp",
-  "level": 2
+  "level": 2,
+  "tags": "뢰슈호른 뢰쉬호른 勒施霍恩"
  },
  {
   "source": "archive",
@@ -63687,7 +63729,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_foundationtoclar00rein.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63699,7 +63742,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_beethovenpianofo00rein.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63711,7 +63755,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_beethovenpianofo01rein.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63724,7 +63769,7 @@
   "license": "Public Domain",
   "thumb": "T_ouverturenfrda00rein.webp",
   "level": 3,
-  "tags": "Ouverturen fur das Pianoforte zu vier Handen"
+  "tags": "라이네케 莱内克 Ouverturen fur das Pianoforte zu vier Handen"
  },
  {
   "source": "archive",
@@ -63737,7 +63782,7 @@
   "license": "Public Domain",
   "thumb": "T_dreicadenzenzumc03rein.webp",
   "level": 2,
-  "tags": "Drei Cadenzen zum Concert fur Flote und Harfe (Koch. Verz. No. 299) von W.A. Mozart"
+  "tags": "라이네케 莱内克 Drei Cadenzen zum Concert fur Flote und Harfe (Koch. Verz. No. 299) von W.A. Mozart"
  },
  {
   "source": "archive",
@@ -63749,7 +63794,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_MeisterDerTonkunst.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63775,7 +63821,7 @@
   "license": "Public Domain",
   "thumb": "T_concertfrdieha00rein.webp",
   "level": 2,
-  "tags": "Concert fur die Harfe mit Begleitung des Orchesters : op. 182"
+  "tags": "라이네케 莱内克 Concert fur die Harfe mit Begleitung des Orchesters : op. 182"
  },
  {
   "source": "archive",
@@ -63787,7 +63833,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_ReineckeDieBeethovenschenClavier-sonaten.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63800,7 +63847,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op88-reinecke-carl.webp",
   "level": 2,
-  "tags": "Madchenlieder, Op.88"
+  "tags": "라이네케 莱内克 Madchenlieder, Op.88"
  },
  {
   "source": "archive",
@@ -63812,7 +63859,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_ReineckecUndMancheLiebeSchattenSteigenAuf.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63825,7 +63873,7 @@
   "license": "Public Domain",
   "thumb": "T_concertfurdievio00rein.webp",
   "level": 2,
-  "tags": "Concert fur die Violine mit Begleitung des Orchesters, op. 141"
+  "tags": "라이네케 莱内克 Concert fur die Violine mit Begleitung des Orchesters, op. 141"
  },
  {
   "source": "archive",
@@ -63838,7 +63886,7 @@
   "license": "Public Domain",
   "thumb": "T_quintettfrpianof00rein.webp",
   "level": 2,
-  "tags": "Quintett f©or Pianoforte, zwei Violinen, Viola und Violoncello, op. 83"
+  "tags": "라이네케 莱内克 Quintett f©or Pianoforte, zwei Violinen, Viola und Violoncello, op. 83"
  },
  {
   "source": "archive",
@@ -63851,7 +63899,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-vierjhrige-posten-op45-reinecke-carl.webp",
   "level": 2,
-  "tags": "Der vierjahrige Posten, Op.45"
+  "tags": "라이네케 莱内克 Der vierjahrige Posten, Op.45"
  },
  {
   "source": "archive",
@@ -63863,7 +63911,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_veniceop156carlr00rein.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63876,7 +63925,7 @@
   "license": "Public Domain",
   "thumb": "T_impromptuuberein02rein.webp",
   "level": 2,
-  "tags": "즉흥곡 即兴曲"
+  "tags": "라이네케 莱内克 즉흥곡 即兴曲"
  },
  {
   "source": "archive",
@@ -63889,7 +63938,7 @@
   "license": "Public Domain",
   "thumb": "T_quartettfrpianof00rein.webp",
   "level": 2,
-  "tags": "Quartett f©or Pianoforte, Violin, Viola und Violoncello, 34tes Werk"
+  "tags": "라이네케 莱内克 Quartett f©or Pianoforte, Violin, Viola und Violoncello, 34tes Werk"
  },
  {
   "source": "archive",
@@ -63902,7 +63951,7 @@
   "license": "Public Domain",
   "thumb": "T_quartettimleicht00rein.webp",
   "level": 2,
-  "tags": "Quartett im leichteren Stile, f©or Klavier, Violine, Viola und Violoncello, op. 272"
+  "tags": "라이네케 莱内克 Quartett im leichteren Stile, f©or Klavier, Violine, Viola und Violoncello, op. 272"
  },
  {
   "source": "archive",
@@ -63928,7 +63977,7 @@
   "license": "Public Domain",
   "thumb": "T_weihnachtskantat00rein.webp",
   "level": 2,
-  "tags": "캐럴 크리스마스 성탄 圣诞 Weihnachten Navidad villancico Natal Weihnachts-Kantate, fur Sopran- und Alt-Solo, weiblichen Chor Pianoforte. Op. 170"
+  "tags": "라이네케 莱内克 캐럴 크리스마스 성탄 圣诞 Weihnachten Navidad villancico Natal Weihnachts-Kantate, fur Sopran- und Alt-Solo, weiblichen Chor Pianoforte. Op. 170"
  },
  {
   "source": "archive",
@@ -63941,7 +63990,7 @@
   "license": "Public Domain",
   "thumb": "T_b10407303.webp",
   "level": 2,
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine"
+  "tags": "라이네케 莱内克 소나티네 소나티나 小奏鸣曲 Sonatine"
  },
  {
   "source": "archive",
@@ -63953,7 +64002,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_tentriosincanonf00rein.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63965,7 +64015,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b10253683.webp",
-  "level": 2
+  "level": 2,
+  "tags": "라이네케 莱内克"
  },
  {
   "source": "archive",
@@ -63978,7 +64029,7 @@
   "license": "Public Domain",
   "thumb": "T_concertfrdasviol00rein.webp",
   "level": 2,
-  "tags": "Concert fur das Violoncell mit Begleitung des Orchesters oder Pianoforte, op. 82"
+  "tags": "라이네케 莱内克 Concert fur das Violoncell mit Begleitung des Orchesters oder Pianoforte, op. 82"
  },
  {
   "source": "archive",
@@ -63991,7 +64042,7 @@
   "license": "Public Domain",
   "thumb": "T_sonateno2furpian00rein.webp",
   "level": 2,
-  "tags": "소나타 奏鸣曲 Sonate (No. 2) fur Pianoforte und Violoncell op. 89"
+  "tags": "라이네케 莱内克 소나타 奏鸣曲 Sonate (No. 2) fur Pianoforte und Violoncell op. 89"
  },
  {
   "source": "archive",
@@ -64004,7 +64055,7 @@
   "license": "Public Domain",
   "thumb": "T_cadenzatobeethov00rein.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto"
+  "tags": "라이네케 莱内克 협주곡 콘체르토 协奏曲 Concierto"
  },
  {
   "source": "archive",
@@ -64211,7 +64262,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-violin-studies-op20-kayser-heinrich-ernst.webp",
-  "level": 3
+  "level": 3,
+  "tags": "카이저 카이제르 凯泽"
  },
  {
   "source": "archive",
@@ -64224,7 +64276,7 @@
   "license": "Public Domain",
   "thumb": "T_36etudesforvioli20kays.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "카이저 카이제르 凯泽 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -64237,7 +64289,7 @@
   "license": "Public Domain",
   "thumb": "T_MN41365ucmf_1.webp",
   "level": 3,
-  "tags": "Beitrage zur Geschichte und Erklarung der altesten Kirchen-hymnen ... [microform]"
+  "tags": "카이저 카이제르 凯泽 Beitrage zur Geschichte und Erklarung der altesten Kirchen-hymnen ... [microform]"
  },
  {
   "source": "archive",
@@ -64250,7 +64302,7 @@
   "license": "Public Domain",
   "thumb": "T_beitrgezurgesch03kaysgoog.webp",
   "level": 3,
-  "tags": "Beitrage zur geschichte und erklarung der altesten kirchen-hymnen .."
+  "tags": "카이저 카이제르 凯泽 Beitrage zur geschichte und erklarung der altesten kirchen-hymnen .."
  },
  {
   "source": "archive",
@@ -64262,7 +64314,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_thirtysixelemen00svegoog.webp",
-  "level": 3
+  "level": 1,
+  "tags": "카이저 카이제르 凯泽"
  },
  {
   "source": "archive",
@@ -64517,7 +64570,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-violin-duos-op38-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64530,7 +64583,7 @@
   "license": "Public Domain",
   "thumb": "T_fortyselectedstu01maza.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64543,7 +64596,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op36-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 연습곡 에튀드 练习曲 Estudio Estudo Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64556,7 +64609,7 @@
   "license": "Public Domain",
   "thumb": "T_violinstudiesop303maza.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64569,7 +64622,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-violin-duos-op39-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64582,7 +64635,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op73-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "Elegie, Op.73 Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Elegie, Op.73 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64595,7 +64648,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-petits-duos-progressifs-op70-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64608,7 +64661,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-violin-duos-op40-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64621,7 +64674,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-trios-op18-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64634,7 +64687,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-violin-duos-op41-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64647,7 +64700,7 @@
   "license": "Public Domain",
   "thumb": "T_brainardsviolini00maza.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64660,7 +64713,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-string-quartets-op7-mazas-jacques-frol.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64673,7 +64726,7 @@
   "license": "Public Domain",
   "thumb": "T_grande-methode-complete-de-violon.webp",
   "level": 2,
-  "tags": "Grande methode complete de violon. Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Grande methode complete de violon. Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64686,7 +64739,7 @@
   "license": "Public Domain",
   "thumb": "T_troisimercration00maza.webp",
   "level": 2,
-  "tags": "Troisieme recreation : pour la harpe ou le piano avec accompagnement de violon oblige violoncelle ; op. 10 / compo Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Troisieme recreation : pour la harpe ou le piano avec accompagnement de violon oblige violoncelle ; op. 10 / compo Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64699,7 +64752,7 @@
   "license": "Public Domain",
   "thumb": "T_sm_amourmalheureux.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "archive",
@@ -64711,7 +64764,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_twentyprogressiv00dontuoft.webp",
-  "level": 2
+  "level": 2,
+  "tags": "동트 돈트 东特"
  },
  {
   "source": "archive",
@@ -64723,7 +64777,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-progressive-exercises-for-violin-op38-dont-jakob.webp",
-  "level": 2
+  "level": 2,
+  "tags": "동트 돈트 东特"
  },
  {
   "source": "archive",
@@ -64735,7 +64790,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-preparatory-exercises-op37-dont-jakob.webp",
-  "level": 2
+  "level": 2,
+  "tags": "동트 돈트 东特"
  },
  {
   "source": "archive",
@@ -64748,7 +64804,7 @@
   "license": "Public Domain",
   "thumb": "T_24ievingtquatree00dont.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo 24 [i.e. Vingt-quatre] exercices pour le violon, preparatiores aux etudes de R. Kreutzer et P. Rode. [Op. 37]"
+  "tags": "동트 돈트 东特 연습곡 에튀드 练习曲 Estudio Estudo 24 [i.e. Vingt-quatre] exercices pour le violon, preparatiores aux etudes de R. Kreutzer et P. Rode. [Op. 37]"
  },
  {
   "source": "archive",
@@ -64761,7 +64817,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-or-caprices-op35-dont-jakob.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "동트 돈트 东特 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -64773,7 +64829,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-ad-parnassum-op52-dont-jakob.webp",
-  "level": 3
+  "level": 3,
+  "tags": "동트 돈트 东特"
  },
  {
   "source": "archive",
@@ -65009,7 +65066,7 @@
   "license": "Public Domain",
   "thumb": "T_36vorubungenzurk00kays.webp",
   "level": 2,
-  "tags": "36 vorubungen zu R. Kreutzer's Etuden fur Violine Solo : op. 20"
+  "tags": "카이저 카이제르 凯泽 36 vorubungen zu R. Kreutzer's Etuden fur Violine Solo : op. 20"
  },
  {
   "source": "archive",
@@ -65354,7 +65411,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-cole-de-la-mlodie-op123-dancla-charles.webp",
   "level": 1,
-  "tags": "Petite ecole de la melodie, Op.123"
+  "tags": "당클라 단클라 丹克拉 Petite ecole de la melodie, Op.123"
  },
  {
   "source": "archive",
@@ -65366,7 +65423,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_duosfacilesetpro00danc.webp",
-  "level": 1
+  "level": 1,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65378,7 +65436,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-concert-solos-op77-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65391,7 +65450,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-airs-varis-series-ii-op118-dancla-charles.webp",
   "level": 2,
-  "tags": "6 Airs varies, Series II, Op.118"
+  "tags": "당클라 단클라 丹克拉 6 Airs varies, Series II, Op.118"
  },
  {
   "source": "archive",
@@ -65403,7 +65462,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-studies-for-violin-op68-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65416,7 +65476,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-petites-symphonies-concertantes-op109-dancla-charles.webp",
   "level": 2,
-  "tags": "교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
+  "tags": "당클라 단클라 丹克拉 교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
  },
  {
   "source": "archive",
@@ -65428,7 +65488,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-petits-trios-faciles-et-concertants-op99-dancla-charles.webp",
-  "level": 1
+  "level": 1,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65441,7 +65502,7 @@
   "license": "Public Domain",
   "thumb": "T_nouvelleecoledel02danc.webp",
   "level": 1,
-  "tags": "Nouvelle ecole de le melodie : 50 pieces faciles et progressives dans les premieres 5 positions pour violon avec accomp."
+  "tags": "당클라 단클라 丹克拉 Nouvelle ecole de le melodie : 50 pieces faciles et progressives dans les premieres 5 positions pour violon avec accomp."
  },
  {
   "source": "archive",
@@ -65454,7 +65515,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-airs-varis-series-i-op89-dancla-charles.webp",
   "level": 2,
-  "tags": "6 Airs varies, Series I, Op.89"
+  "tags": "당클라 단클라 丹克拉 6 Airs varies, Series I, Op.89"
  },
  {
   "source": "archive",
@@ -65467,7 +65528,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-petites-pices-op163-dancla-charles.webp",
   "level": 2,
-  "tags": "6 Petites Pieces, Op.163"
+  "tags": "당클라 단클라 丹克拉 6 Petites Pieces, Op.163"
  },
  {
   "source": "archive",
@@ -65480,7 +65541,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-brillantes-sur-le-carnaval-de-venise-op120-dancla-charles.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações"
+  "tags": "당클라 단클라 丹克拉 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "archive",
@@ -65492,7 +65553,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-petites-fantaisies-faciles-op126-dancla-charles.webp",
-  "level": 1
+  "level": 1,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65505,7 +65567,7 @@
   "license": "Public Domain",
   "thumb": "T_threelittlesymph00danc.webp",
   "level": 3,
-  "tags": "교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
+  "tags": "당클라 단클라 丹克拉 교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
  },
  {
   "source": "archive",
@@ -65518,7 +65580,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-du-thatre-italien-op83-dancla-charles.webp",
   "level": 2,
-  "tags": "Souvenir du Theatre italien, Op.83."
+  "tags": "당클라 단클라 丹克拉 Souvenir du Theatre italien, Op.83."
  },
  {
   "source": "archive",
@@ -65530,7 +65592,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op62-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65542,7 +65605,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-romances-sans-paroles-op57-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65555,7 +65619,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-mlodiste-op86-dancla-charles.webp",
   "level": 2,
-  "tags": "Le melodiste, Op.86"
+  "tags": "당클라 단클라 丹克拉 Le melodiste, Op.86"
  },
  {
   "source": "archive",
@@ -65567,7 +65631,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op15-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65580,7 +65645,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op59-dancla-charles.webp",
   "level": 2,
-  "tags": "Resignation, Op.59"
+  "tags": "당클라 단클라 丹克拉 Resignation, Op.59"
  },
  {
   "source": "archive",
@@ -65592,7 +65657,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-de-concours-no7-op224-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65604,7 +65670,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-perles-ditalie-de-france-et-dallemagne-op107bis-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65616,7 +65683,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_petiteecoledelam00danc.webp",
-  "level": 1
+  "level": 1,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65628,7 +65696,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op24-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65641,7 +65710,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp--lamiti-op66-dancla-charles.webp",
   "level": 2,
-  "tags": "Hommage a l’amitie, Op.66"
+  "tags": "당클라 단클라 丹克拉 Hommage a l’amitie, Op.66"
  },
  {
   "source": "archive",
@@ -65653,7 +65722,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-souvenir-op58-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65665,7 +65735,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-violin-sonatas-op138-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65677,7 +65748,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-charmille-op135-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65689,7 +65761,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op25-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65701,7 +65774,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op32-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65713,7 +65787,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op35-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65725,7 +65800,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op33-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65737,7 +65813,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op124-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65749,7 +65826,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-trio-no4-op51-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65761,7 +65839,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op34-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65773,7 +65852,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65785,7 +65865,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op60-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65797,7 +65878,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-petits-divertissements-op106-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65809,7 +65891,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-trio-no2-op37-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -65821,7 +65904,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-op61-dancla-charles.webp",
-  "level": 2
+  "level": 2,
+  "tags": "당클라 단클라 丹克拉"
  },
  {
   "source": "archive",
@@ -66011,7 +66095,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_violoncellometho01dotz.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66023,7 +66108,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-sonatas-for-2-cellos-op103-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66035,7 +66121,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_113selectedstudi00dotz.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66047,7 +66134,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66059,7 +66147,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-per-violoncello-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66071,7 +66160,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-trio-op111-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66083,7 +66173,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-exercises-for-cello-op158-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66095,7 +66186,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-easy-duos-for-2-cellos-op114-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66107,7 +66199,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-exercises-for-cello-op54-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66119,7 +66212,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-exercises-for-cello-op120-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66132,7 +66226,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-on-a-theme-from-norma-op135-dotzauer-friedrich.webp",
   "level": 2,
-  "tags": "변주곡 变奏曲 Variaciones Variações"
+  "tags": "도츠아우어 도차우어 多茨奥尔 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "archive",
@@ -66145,7 +66239,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-op123-dotzauer-friedrich.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "도츠아우어 도차우어 多茨奥尔 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -66157,7 +66251,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-exercises-for-cello-op35-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66169,7 +66264,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-trio-op52b-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66181,7 +66277,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-quintet-op134-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66193,7 +66290,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-quartet-op37-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66205,7 +66303,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_6romancespourvio00dotz.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66217,7 +66316,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-string-quartets-op12-dotzauer-friedrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66229,7 +66329,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_quatuorpourfltev00dotz.webp",
-  "level": 2
+  "level": 2,
+  "tags": "도츠아우어 도차우어 多茨奥尔"
  },
  {
   "source": "archive",
@@ -66956,7 +67057,7 @@
   "license": "Public Domain",
   "thumb": "T_derfhrerindiep00kumm.webp",
   "level": 2,
-  "tags": "Der Fuhrer in die Pilzkunde : Anleitung zum methodischen, leichten und sichern Bestimmen Deutschland vorkommenden"
+  "tags": "쿠머 库默尔 Der Fuhrer in die Pilzkunde : Anleitung zum methodischen, leichten und sichern Bestimmen Deutschland vorkommenden"
  },
  {
   "source": "archive",
@@ -66968,7 +67069,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-for-flute-and-clarinet-op46-kummer-kaspar.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -66980,7 +67082,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-for-piano-flute-and-violin-op75-kummer-kaspar.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -66992,7 +67095,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-for-flute-clarinet-and-bassoon-op32-kummer-kaspar.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67005,7 +67109,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-divertissements-sur-des-thmes-de-lopra-le-prophete-op94-kummer-friedrich-a.webp",
   "level": 3,
-  "tags": "2 Divertissements sur des themes de l’opera 'Le prophete', Op.94"
+  "tags": "쿠머 库默尔 2 Divertissements sur des themes de l’opera 'Le prophete', Op.94"
  },
  {
   "source": "archive",
@@ -67018,7 +67122,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-fr-den-ersten-unterricht-op60-kummer-friedrich-august.webp",
   "level": 1,
-  "tags": "Violoncell-Schule fur den ersten Unterricht, Op.60"
+  "tags": "쿠머 库默尔 Violoncell-Schule fur den ersten Unterricht, Op.60"
  },
  {
   "source": "archive",
@@ -67030,7 +67134,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-for-2-cellos-op156-kummer-friedrich-august.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67042,7 +67147,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-quintet-in-d-major-op66-kummer-kaspar.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67055,7 +67161,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-melodic-etudes-op57-kummer-friedrich-august.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "쿠머 库默尔 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -67067,7 +67173,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-easy-flute-duets-op20-kummer-kaspar.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67079,7 +67186,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-easy-and-instructive-flute-duets-op74-kummer-kaspar.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67092,7 +67200,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-tudes-amusantes-et-instructives-op129-kummer-kaspar.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo 32 Etudes amusantes et instructives, Op.129"
+  "tags": "쿠머 库默尔 연습곡 에튀드 练习曲 Estudio Estudo 32 Etudes amusantes et instructives, Op.129"
  },
  {
   "source": "archive",
@@ -67105,7 +67213,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-mlodiques-op110-kummer-kaspar.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo 24 Etudes melodiques, Op.110"
+  "tags": "쿠머 库默尔 연습곡 에튀드 练习曲 Estudio Estudo 24 Etudes melodiques, Op.110"
  },
  {
   "source": "archive",
@@ -67117,7 +67225,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-divertissements-op92-kummer-kaspar.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67130,7 +67239,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-in-f-major-kummer-gotthelf-heinrich.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto"
+  "tags": "쿠머 库默尔 협주곡 콘체르토 协奏曲 Concierto"
  },
  {
   "source": "archive",
@@ -67143,7 +67252,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-in-g-major-op17-kummer-kaspar.webp",
   "level": 3,
-  "tags": "폴로네즈 波兰舞曲 Polonesa"
+  "tags": "쿠머 库默尔 폴로네즈 波兰舞曲 Polonesa"
  },
  {
   "source": "archive",
@@ -67155,7 +67264,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-idylles-op145-kummer-kaspar.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67167,7 +67277,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-concert-duos-for-violin-and-cello-op67-kummer-friedrich-august.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67180,7 +67291,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op83-kummer-kaspar.webp",
   "level": 2,
-  "tags": "세레나데 小夜曲 Serenade, Op.83"
+  "tags": "쿠머 库默尔 세레나데 小夜曲 Serenade, Op.83"
  },
  {
   "source": "archive",
@@ -67193,7 +67304,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-fantaisies-lgantes-sur-des-chansons-favorites-op133-kummer-kaspar.webp",
   "level": 2,
-  "tags": "3 Fantaisies elegantes sur des chansons favorites, Op.133"
+  "tags": "쿠머 库默尔 3 Fantaisies elegantes sur des chansons favorites, Op.133"
  },
  {
   "source": "archive",
@@ -67206,7 +67317,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-maria-op126-kummer-kaspar.webp",
   "level": 2,
-  "tags": "아베마리아 아베 마리아 圣母颂"
+  "tags": "쿠머 库默尔 아베마리아 아베 마리아 圣母颂"
  },
  {
   "source": "archive",
@@ -67218,7 +67329,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-for-cello-and-orchestra-kummer-friedrich-august.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67230,7 +67342,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-for-2-cellos-op165-kummer-friedrich-august.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67243,7 +67356,7 @@
   "license": "Public Domain",
   "thumb": "T_b10277663.webp",
   "level": 2,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Second concertino pour deux flutes principales : avec accompagnement l'orchestre ou de piano ; oeuv. 104 / compose par G"
+  "tags": "쿠머 库默尔 협주곡 콘체르토 协奏曲 Concierto Second concertino pour deux flutes principales : avec accompagnement l'orchestre ou de piano ; oeuv. 104 / compose par G"
  },
  {
   "source": "archive",
@@ -67256,7 +67369,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-sur-les-motifs-de-lopra-lucia-de-lammermoor-de-g-donizetti-op68-kummer-fri.webp",
   "level": 3,
-  "tags": "Fantaisie sur les motifs de l'opera 'Lucia Lammermoor' G. Donizetti, Op.68"
+  "tags": "쿠머 库默尔 Fantaisie sur les motifs de l'opera 'Lucia Lammermoor' G. Donizetti, Op.68"
  },
  {
   "source": "archive",
@@ -67269,7 +67382,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-salon-op130-kummer-friedrich-august.webp",
   "level": 2,
-  "tags": "Pieces de Salon, Op.130"
+  "tags": "쿠머 库默尔 Pieces de Salon, Op.130"
  },
  {
   "source": "archive",
@@ -67281,7 +67394,8 @@
   "instrument": "Cello",
   "license": "Public Domain",
   "thumb": "T_soiremusicalepou00kumm.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿠머 库默尔"
  },
  {
   "source": "archive",
@@ -67294,7 +67408,7 @@
   "license": "Public Domain",
   "thumb": "T_b10277651.webp",
   "level": 2,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Concertino pour deux flutes principales, oeuvre 67 : avec accompagnement de l'orchestre ou pianoforte / par Gaspard Ku"
+  "tags": "쿠머 库默尔 협주곡 콘체르토 协奏曲 Concierto Concertino pour deux flutes principales, oeuvre 67 : avec accompagnement de l'orchestre ou pianoforte / par Gaspard Ku"
  },
  {
   "source": "archive",
@@ -67497,7 +67611,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-exercises-or-etudes-for-flute-berbiguier-tranquille.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 연습곡 에튀드 练习曲 Estudio Estudo Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67510,7 +67624,7 @@
   "license": "Public Domain",
   "thumb": "T_dixhuitexercices00berb.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo Dix-huit exercices ou Etudes dans tous les tons pour la flute, se former au mecanisme de toutes petites clefs Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 연습곡 에튀드 练习曲 Estudio Estudo Dix-huit exercices ou Etudes dans tous les tons pour la flute, se former au mecanisme de toutes petites clefs Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67523,7 +67637,7 @@
   "license": "Public Domain",
   "thumb": "T_nouvellemthodepo00berb.webp",
   "level": 2,
-  "tags": "Nouvelle methode pour la flute : divisee en trois parties Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 Nouvelle methode pour la flute : divisee en trois parties Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67536,7 +67650,7 @@
   "license": "Public Domain",
   "thumb": "T_sixgrandesolosou01berb.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 연습곡 에튀드 练习曲 Estudio Estudo Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67549,7 +67663,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-easy-flute-duets-op72-berbiguier-tranquille.webp",
   "level": 2,
-  "tags": "Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67562,7 +67676,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-quartet-no1-op86-berbiguier-tranquille.webp",
   "level": 2,
-  "tags": "Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67575,7 +67689,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-su-io-son-lindoro-di-paisiello-berbiguier-tranquille.webp",
   "level": 2,
-  "tags": "변주곡 变奏曲 Variaciones Variações Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 변주곡 变奏曲 Variaciones Variações Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67588,7 +67702,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-grande-solos-op1-berbiguier-tranquille.webp",
   "level": 2,
-  "tags": "Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67601,7 +67715,7 @@
   "license": "Public Domain",
   "thumb": "T_b10277766.webp",
   "level": 2,
-  "tags": "Theme varie pour piano forte & deux flutes : op. 50 / tire de la premiere simphonie concertante T. Berbiguier. Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 Theme varie pour piano forte & deux flutes : op. 50 / tire de la premiere simphonie concertante T. Berbiguier. Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67614,7 +67728,7 @@
   "license": "Public Domain",
   "thumb": "T_septimetemevarip00berb.webp",
   "level": 2,
-  "tags": "Septieme theme varie pour la flute avec accompagnement de pianoforte. Oeuvre 87 Benoit Tranquille Berbiguier"
+  "tags": "베르비귀에 贝尔比吉耶 Septieme theme varie pour la flute avec accompagnement de pianoforte. Oeuvre 87 Benoit Tranquille Berbiguier"
  },
  {
   "source": "archive",
@@ -67664,7 +67778,7 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_vingtquatreexerc00sorf.webp",
-  "level": 2,
+  "level": 1,
   "tags": "소르 索尔 Vingt quatre exercices tres faciles & soigneusement doigtes pour le guitar, op. 35"
  },
  {
@@ -67742,7 +67856,7 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-exercices-trs-faciles-op35-sor-fernando.webp",
-  "level": 2,
+  "level": 1,
   "tags": "소르 索尔 24 Exercices tres faciles, Op.35"
  },
  {
@@ -67755,7 +67869,7 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-progressive-lessons-for-beginners-op31-sor-fernando.webp",
-  "level": 2,
+  "level": 1,
   "tags": "소르 索尔"
  },
  {
@@ -69794,7 +69908,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-complte-pour-la-guitare-aguado-dionisio.webp",
   "level": 2,
-  "tags": "Methode complete pour la guitare"
+  "tags": "아과도 아구아도 阿瓜多 Methode complete pour la guitare"
  },
  {
   "source": "archive",
@@ -69806,7 +69920,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_Nuevo-metodo-para-guitarra.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "archive",
@@ -69818,7 +69933,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-aguado-dionisio.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "archive",
@@ -69830,7 +69946,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-rondos-brillants-op2-aguado-dionisio.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "archive",
@@ -69842,7 +69959,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-et-valses-faciles-op8-aguado-dionisio.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "archive",
@@ -69855,7 +69973,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-menuet-affandangado-op15-aguado-dionisio.webp",
   "level": 2,
-  "tags": "미뉴에트 小步舞曲 Minueto Minuetto"
+  "tags": "아과도 아구아도 阿瓜多 미뉴에트 小步舞曲 Minueto Minuetto"
  },
  {
   "source": "archive",
@@ -69868,7 +69986,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-faciles-et-trs-utiles-op10-aguado-dionisio.webp",
   "level": 2,
-  "tags": "Exercices faciles et tres utiles, Op.10"
+  "tags": "아과도 아구아도 阿瓜多 Exercices faciles et tres utiles, Op.10"
  },
  {
   "source": "archive",
@@ -69881,7 +69999,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-agrables-et-non-difficiles-op13-aguado-dionisio.webp",
   "level": 2,
-  "tags": "Morceaux agreables et non difficiles, Op.13"
+  "tags": "아과도 아구아도 阿瓜多 Morceaux agreables et non difficiles, Op.13"
  },
  {
   "source": "archive",
@@ -69893,7 +70011,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-waltzes-op1-aguado-dionisio.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "archive",
@@ -69906,7 +70025,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-menuets-et-6-valses-op12-aguado-dionisio.webp",
   "level": 2,
-  "tags": "미뉴에트 小步舞曲 Minueto Minuetto"
+  "tags": "아과도 아구아도 阿瓜多 미뉴에트 小步舞曲 Minueto Minuetto"
  },
  {
   "source": "archive",
@@ -69919,7 +70038,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-petites-pices-op4-aguado-dionisio.webp",
   "level": 2,
-  "tags": "6 Petites Pieces, Op.4"
+  "tags": "아과도 아구아도 阿瓜多 6 Petites Pieces, Op.4"
  },
  {
   "source": "archive",
@@ -69932,7 +70051,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-petites-pices-op3-aguado-dionisio.webp",
   "level": 2,
-  "tags": "8 Petites Pieces, Op.3"
+  "tags": "아과도 아구아도 阿瓜多 8 Petites Pieces, Op.3"
  },
  {
   "source": "archive",
@@ -69945,7 +70064,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-petites-pices-non-difficiles-op14-aguado-dionisio.webp",
   "level": 2,
-  "tags": "10 Petites Pieces non difficiles, Op.14"
+  "tags": "아과도 아구아도 阿瓜多 10 Petites Pieces non difficiles, Op.14"
  },
  {
   "source": "archive",
@@ -69957,7 +70076,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-valses-de-guitarra-aguado-dionisio.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "archive",
@@ -69969,7 +70089,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-andantes-and-4-waltzes-op5-aguado-dionisio.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "archive",
@@ -70970,7 +71091,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_carlbaermannscom03baer.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르만 베어만 贝尔曼"
  },
  {
   "source": "archive",
@@ -70982,7 +71104,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_CompleteMethodForClarinet.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르만 베어만 贝尔曼"
  },
  {
   "source": "archive",
@@ -70995,7 +71118,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-for-clarinet-and-orchestra-op27-baermann-heinrich.webp",
   "level": 2,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto"
+  "tags": "베르만 베어만 贝尔曼 협주곡 콘체르토 协奏曲 Concierto"
  },
  {
   "source": "archive",
@@ -71007,7 +71130,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_imslp-quartet-op18-baermann-heinrich.webp",
-  "level": 3
+  "level": 3,
+  "tags": "베르만 베어만 贝尔曼"
  },
  {
   "source": "archive",
@@ -71019,7 +71143,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_imslp-quintet-no3-op23-baermann-heinrich.webp",
-  "level": 3
+  "level": 3,
+  "tags": "베르만 베어만 贝尔曼"
  },
  {
   "source": "archive",
@@ -71032,7 +71157,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-pour-la-clarinette-op31-baermann-heinrich.webp",
   "level": 3,
-  "tags": "소나타 奏鸣曲 Sonate"
+  "tags": "베르만 베어만 贝尔曼 소나타 奏鸣曲 Sonate"
  },
  {
   "source": "archive",
@@ -71044,7 +71169,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_clarinettschulez00baer.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르만 베어만 贝尔曼"
  },
  {
   "source": "archive",
@@ -71057,7 +71183,7 @@
   "license": "Public Domain",
   "thumb": "T_baermann-carl.-vollstandige-clarinett-schule-von-dem-ersten-anfange-bis-zur-hoch.webp",
   "level": 2,
-  "tags": "Baermann, Carl. Vollstandige Clarinett Schule Von Dem Ersten Anfange Bis Zur Hochsten Ausbildung Des Virtuosen. 2 Vols."
+  "tags": "베르만 베어만 贝尔曼 Baermann, Carl. Vollstandige Clarinett Schule Von Dem Ersten Anfange Bis Zur Hochsten Ausbildung Des Virtuosen. 2 Vols."
  },
  {
   "source": "archive",
@@ -71070,7 +71196,7 @@
   "license": "Public Domain",
   "thumb": "T_baermann-carl.-vollstandige-clarinett-schule-von-dem-ersten-anfange-bis-zur-hoch_202208.webp",
   "level": 2,
-  "tags": "Baermann, Carl. Vollstandige Clarinett Schule Von Dem Ersten Anfange Bis Zur Hochsten Ausbildung Des Virtuosen. Abteilun"
+  "tags": "베르만 베어만 贝尔曼 Baermann, Carl. Vollstandige Clarinett Schule Von Dem Ersten Anfange Bis Zur Hochsten Ausbildung Des Virtuosen. Abteilun"
  },
  {
   "source": "archive",
@@ -71095,7 +71221,8 @@
   "instrument": "Trumpet",
   "license": "Public Domain",
   "thumb": "T_ArbansWorldRenownedMethodForTheCornet1879.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아르방 아르반 阿尔班"
  },
  {
   "source": "archive",
@@ -71400,7 +71527,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-flte-op100-tulou-jean-louis.webp",
   "level": 2,
-  "tags": "Methode de flute, Op.100"
+  "tags": "튈루 툴루 蒂卢 Methode de flute, Op.100"
  },
  {
   "source": "archive",
@@ -71412,7 +71539,8 @@
   "instrument": "Flute",
   "license": "Public Domain",
   "thumb": "T_imslp-spada-fantaisie-op101-tulou-jean-louis.webp",
-  "level": 2
+  "level": 2,
+  "tags": "튈루 툴루 蒂卢"
  },
  {
   "source": "archive",
@@ -71424,7 +71552,8 @@
   "instrument": "Flute",
   "license": "Public Domain",
   "thumb": "T_imslp-pardon-de-ploermel-fantaisie-op110-tulou-jean-louis.webp",
-  "level": 2
+  "level": 2,
+  "tags": "튈루 툴루 蒂卢"
  },
  {
   "source": "archive",
@@ -71436,7 +71565,8 @@
   "instrument": "Flute",
   "license": "Public Domain",
   "thumb": "T_b10278370.webp",
-  "level": 2
+  "level": 2,
+  "tags": "튈루 툴루 蒂卢"
  },
  {
   "source": "archive",
@@ -71449,7 +71579,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-for-guitar-op38-coste-napolon.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo Napoleon Coste"
+  "tags": "코스트 科斯特 연습곡 에튀드 练习曲 Estudio Estudo Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71462,7 +71592,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-opp17-23-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71475,7 +71605,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-dor-du-guitariste-op52-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71488,7 +71618,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-flandres-marche-4-valses-et-un-rondeau-op5-coste-napolon.webp",
   "level": 3,
-  "tags": "행진곡 进行曲 Marcha Napoleon Coste"
+  "tags": "코스트 科斯特 행진곡 进行曲 Marcha Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71501,7 +71631,7 @@
   "license": "Public Domain",
   "thumb": "T_leshorreursdelag00cost.webp",
   "level": 3,
-  "tags": "Les horreurs de la guerre; opera bouffe en 2 actes [et trois tableaux] Paroles Philippe Gille. Partition chant et pia Napoleon Coste"
+  "tags": "코스트 科斯特 Les horreurs de la guerre; opera bouffe en 2 actes [et trois tableaux] Paroles Philippe Gille. Partition chant et pia Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71514,7 +71644,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-quadrilles-de-contredanses-op3-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71527,7 +71657,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-duo-pour-2-gitares-gales-et-concertantes-coste-napolon.webp",
   "level": 3,
-  "tags": "Grand Duo pour 2 Gitares egales et concertantes Napoleon Coste"
+  "tags": "코스트 科斯特 Grand Duo pour 2 Gitares egales et concertantes Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71540,7 +71670,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-for-oboe-or-violin-and-piano-or-guitar-op36-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71553,7 +71683,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-dpart-op31-coste-napolon.webp",
   "level": 3,
-  "tags": "Le depart, Op.31 Napoleon Coste"
+  "tags": "코스트 科斯特 Le depart, Op.31 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71566,7 +71696,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-montagnard-op34-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71579,7 +71709,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-marches-et-6-prludes-pour-la-guitare-opp48-49-coste-napolon.webp",
   "level": 3,
-  "tags": "전주곡 프렐류드 前奏曲 Preludio 4 Marches et 6 Preludes pour la Guitare, Opp.48-49 Napoleon Coste"
+  "tags": "코스트 科斯特 전주곡 프렐류드 前奏曲 Preludio 4 Marches et 6 Preludes pour la Guitare, Opp.48-49 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71592,7 +71722,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-funbre-et-rondeau-pour-la-guitare-op43-coste-napolon.webp",
   "level": 3,
-  "tags": "행진곡 进行曲 Marcha Marche funebre et Rondeau pour la Guitare, Op.43 Napoleon Coste"
+  "tags": "코스트 科斯特 행진곡 进行曲 Marcha Marche funebre et Rondeau pour la Guitare, Op.43 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71605,7 +71735,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-et-menuet-op39-coste-napolon.webp",
   "level": 3,
-  "tags": "미뉴에트 小步舞曲 Minueto Minuetto Napoleon Coste"
+  "tags": "코스트 科斯特 미뉴에트 小步舞曲 Minueto Minuetto Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71618,7 +71748,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-horreurs-de-la-guerre-cost-jules.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71631,7 +71761,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-et-finale-op2-coste-napolon.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Napoleon Coste"
+  "tags": "코스트 科斯特 변주곡 变奏曲 Variaciones Variações Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71644,7 +71774,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-pour-la-guitarre-op30-coste-napolon.webp",
   "level": 3,
-  "tags": "세레나데 小夜曲 Serenade pour la Guitarre, Op.30 Napoleon Coste"
+  "tags": "코스트 科斯特 세레나데 小夜曲 Serenade pour la Guitarre, Op.30 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71657,7 +71787,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-source-du-lyson-op47-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71670,7 +71800,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-triumphale-pour-la-guitare-op26-coste-napolon.webp",
   "level": 3,
-  "tags": "행진곡 进行曲 Marcha Napoleon Coste"
+  "tags": "코스트 科斯特 행진곡 进行曲 Marcha Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71683,7 +71813,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-du-jura-op44-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71696,7 +71826,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-concert-op35-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71709,7 +71839,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-et-variations-sur-un-motif-de-rossini-coste-napolon.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Napoleon Coste"
+  "tags": "코스트 科斯特 변주곡 变奏曲 Variaciones Variações Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71722,7 +71852,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op37-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71735,7 +71865,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-for-oboe-coste-napolon.webp",
   "level": 2,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Napoleon Coste"
+  "tags": "코스트 科斯特 협주곡 콘체르토 协奏曲 Concierto Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71748,7 +71878,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-sur-lair-espagnol-la-cachucha-op13-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71761,7 +71891,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-et-allegro-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71774,7 +71904,7 @@
   "license": "Public Domain",
   "thumb": "T_b35844267.webp",
   "level": 3,
-  "tags": "Das goldene Buch des Gitarristen = Le livre d'or guitaristes : op. 52 / [arrangiert von] Napoleon Coste ; bearbeitet"
+  "tags": "코스트 科斯特 Das goldene Buch des Gitarristen = Le livre d'or guitaristes : op. 52 / [arrangiert von] Napoleon Coste ; bearbeitet"
  },
  {
   "source": "archive",
@@ -71787,7 +71917,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-coste-napolon.webp",
   "level": 3,
-  "tags": "미뉴에트 小步舞曲 Minueto Minuetto Napoleon Coste"
+  "tags": "코스트 科斯特 미뉴에트 小步舞曲 Minueto Minuetto Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71800,7 +71930,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-et-divertissements-op50-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71813,7 +71943,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-romanesca-op19b-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71826,7 +71956,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-for-oboe-and-piano-coste-napolon.webp",
   "level": 3,
-  "tags": "소나타 奏鸣曲 Sonate Napoleon Coste"
+  "tags": "코스트 科斯特 소나타 奏鸣曲 Sonate Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71839,7 +71969,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-no-cost-jules.webp",
   "level": 3,
-  "tags": "L'Arche de Noe Napoleon Coste"
+  "tags": "코스트 科斯特 L'Arche de Noe Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71852,7 +71982,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op45-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71865,7 +71995,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-sur-un-motif-du-ballet-darmide-op4-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71878,7 +72008,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-petit-ange-rose-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71891,7 +72021,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-italienne-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71904,7 +72034,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-tournoi-fantasie-chevaleresque-op15-coste-napolon.webp",
   "level": 3,
-  "tags": "Napoleon Coste"
+  "tags": "코스트 科斯特 Napoleon Coste"
  },
  {
   "source": "archive",
@@ -71917,7 +72047,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp---mlodie-coste-napolon.webp",
   "level": 3,
-  "tags": "Lolla - Melodie Napoleon Coste"
+  "tags": "코스트 科斯特 Lolla - Melodie Napoleon Coste"
  },
  {
   "source": "archive",
@@ -72058,7 +72188,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-nocturnes-op4-mertz-johann-kaspar.webp",
   "level": 3,
-  "tags": "녹턴 야상곡 夜曲 Nocturno Noturno"
+  "tags": "메르츠 梅尔茨 녹턴 야상곡 夜曲 Nocturno Noturno"
  },
  {
   "source": "archive",
@@ -72070,7 +72200,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-am-traunsee-mertz-johann-kaspar.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72082,7 +72213,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-on-rigoletto-op60-mertz-johann-kaspar.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72095,7 +72227,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-mertz-johann-kaspar.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "메르츠 梅尔茨 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -72107,7 +72239,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30253184.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72120,7 +72253,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-nationaltnze-op89-mertz-johann-kaspar.webp",
   "level": 3,
-  "tags": "Spanische Nationaltanze, Op.89"
+  "tags": "메르츠 梅尔茨 Spanische Nationaltanze, Op.89"
  },
  {
   "source": "archive",
@@ -72133,7 +72266,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-pense--toi-mertz-johann-kaspar.webp",
   "level": 3,
-  "tags": "Je pense a toi"
+  "tags": "메르츠 梅尔茨 Je pense a toi"
  },
  {
   "source": "archive",
@@ -72145,7 +72278,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-op5-mertz-johann-kaspar.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72157,7 +72291,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-duos-for-2-guitars-op38-mertz-johann-kaspar.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72169,7 +72304,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-in-d-major-mertz-johann-kaspar.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72181,7 +72317,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-ungarische-op1-mertz-johann-kaspar.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72194,7 +72331,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-and-mazurkas-op3-mertz-johann-kaspar.webp",
   "level": 3,
-  "tags": "폴로네즈 波兰舞曲 Polonesa 마주르카 玛祖卡 Mazurca"
+  "tags": "메르츠 梅尔茨 폴로네즈 波兰舞曲 Polonesa 마주르카 玛祖卡 Mazurca"
  },
  {
   "source": "archive",
@@ -72207,7 +72344,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-in-c-major-mertz-johann-kaspar.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "메르츠 梅尔茨 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -72232,7 +72369,7 @@
   "license": "Public Domain",
   "thumb": "T_b30244663_202007.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "메르츠 梅尔茨 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -72245,7 +72382,7 @@
   "license": "Public Domain",
   "thumb": "T_b30213320.webp",
   "level": 3,
-  "tags": "Nachtviolen : op. 2 Melodische Satze / Mertz, J.K."
+  "tags": "메르츠 梅尔茨 Nachtviolen : op. 2 Melodische Satze / Mertz, J.K."
  },
  {
   "source": "archive",
@@ -72258,7 +72395,7 @@
   "license": "Public Domain",
   "thumb": "T_b30269209_202007.webp",
   "level": 3,
-  "tags": "Kuckuck : 24 l. Unterhaltungsstucke / Mertz, Johann Kaspar."
+  "tags": "메르츠 梅尔茨 Kuckuck : 24 l. Unterhaltungsstucke / Mertz, Johann Kaspar."
  },
  {
   "source": "archive",
@@ -72270,7 +72407,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30605003_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72282,7 +72420,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30212492.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72294,7 +72433,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30253147.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72306,7 +72446,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b21284283_202008.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72319,7 +72460,7 @@
   "license": "Public Domain",
   "thumb": "T_b30605210_202007.webp",
   "level": 3,
-  "tags": "마주르카 玛祖卡 Mazurca"
+  "tags": "메르츠 梅尔茨 마주르카 玛祖卡 Mazurca"
  },
  {
   "source": "archive",
@@ -72332,7 +72473,7 @@
   "license": "Public Domain",
   "thumb": "T_b30605167_202007.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações"
+  "tags": "메르츠 梅尔茨 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "archive",
@@ -72345,7 +72486,7 @@
   "license": "Public Domain",
   "thumb": "T_b30605088_202007.webp",
   "level": 3,
-  "tags": "Fingals-Hohle : Guitare ; Gebeth / [von J.K. Mertz]."
+  "tags": "메르츠 梅尔茨 Fingals-Hohle : Guitare ; Gebeth / [von J.K. Mertz]."
  },
  {
   "source": "archive",
@@ -72357,7 +72498,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30322406.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72369,7 +72511,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30605155_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72382,7 +72525,7 @@
   "license": "Public Domain",
   "thumb": "T_b30244869_202007.webp",
   "level": 2,
-  "tags": "Schule fur die Guitare / von J.K. Mertz."
+  "tags": "메르츠 梅尔茨 Schule fur die Guitare / von J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72395,7 +72538,7 @@
   "license": "Public Domain",
   "thumb": "T_b30213253.webp",
   "level": 3,
-  "tags": "Ungar. Vaterlandsbluten : op. 1 / Mertz, J.K."
+  "tags": "메르츠 梅尔茨 Ungar. Vaterlandsbluten : op. 1 / Mertz, J.K."
  },
  {
   "source": "archive",
@@ -72408,7 +72551,7 @@
   "license": "Public Domain",
   "thumb": "T_b30235984_202007.webp",
   "level": 3,
-  "tags": "Landler, Guitare / von J.K. Mertz."
+  "tags": "메르츠 梅尔茨 Landler, Guitare / von J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72420,7 +72563,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b2128426x_202008.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72433,7 +72577,7 @@
   "license": "Public Domain",
   "thumb": "T_b30605222_202007.webp",
   "level": 3,
-  "tags": "왈츠 圆舞曲 华尔兹 Vals Valsa Walzer im Landlerstyl : Guitarre nachgel. Werk / J.K. Mertz."
+  "tags": "메르츠 梅尔茨 왈츠 圆舞曲 华尔兹 Vals Valsa Walzer im Landlerstyl : Guitarre nachgel. Werk / J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72446,7 +72590,7 @@
   "license": "Public Domain",
   "thumb": "T_b3033780x.webp",
   "level": 3,
-  "tags": "Der fliegende Hollander : Musik von Richard Wagner Guitare / [von J.K. Mertz]."
+  "tags": "메르츠 梅尔茨 Der fliegende Hollander : Musik von Richard Wagner Guitare / [von J.K. Mertz]."
  },
  {
   "source": "archive",
@@ -72459,7 +72603,7 @@
   "license": "Public Domain",
   "thumb": "T_b30253822.webp",
   "level": 3,
-  "tags": "Agathe : Guitarre op. 22. no. 1 / Lied von F. Abt ; [bearbeitet von] J.K. Mertz. Lob der Thranen 2 Lie"
+  "tags": "메르츠 梅尔茨 Agathe : Guitarre op. 22. no. 1 / Lied von F. Abt ; [bearbeitet von] J.K. Mertz. Lob der Thranen 2 Lie"
  },
  {
   "source": "archive",
@@ -72471,7 +72615,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b3025338x.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72484,7 +72629,7 @@
   "license": "Public Domain",
   "thumb": "T_b30265836_202007.webp",
   "level": 3,
-  "tags": "El ole ; La madrilena : spanische Nationaltanze eingerichtet fur Guitarre / J.K. Mertz."
+  "tags": "메르츠 梅尔茨 El ole ; La madrilena : spanische Nationaltanze eingerichtet fur Guitarre / J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72496,7 +72641,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30321803.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72509,7 +72655,7 @@
   "license": "Public Domain",
   "thumb": "T_b30605209_202007.webp",
   "level": 3,
-  "tags": "스케르초 谐谑曲"
+  "tags": "메르츠 梅尔茨 스케르초 谐谑曲"
  },
  {
   "source": "archive",
@@ -72521,7 +72667,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30322388.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72534,7 +72681,7 @@
   "license": "Public Domain",
   "thumb": "T_b30605039_202007.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "메르츠 梅尔茨 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -72547,7 +72694,7 @@
   "license": "Public Domain",
   "thumb": "T_b30210963.webp",
   "level": 3,
-  "tags": "3 morceaux pour la guitarre, oeuvre 65 / par J.K. Mertz."
+  "tags": "메르츠 梅尔茨 3 morceaux pour la guitarre, oeuvre 65 / par J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72559,7 +72706,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30322303.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72572,7 +72720,7 @@
   "license": "Public Domain",
   "thumb": "T_b30244857_202007.webp",
   "level": 3,
-  "tags": "\"Romanza\" per la chitarra solo : aus dem Nachlass des Componisten fur den J. G. V. angekauft / J.K. Mertz."
+  "tags": "메르츠 梅尔茨 \"Romanza\" per la chitarra solo : aus dem Nachlass des Componisten fur den J. G. V. angekauft / J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72584,7 +72732,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30265897_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72597,7 +72746,7 @@
   "license": "Public Domain",
   "thumb": "T_b21284271_202007.webp",
   "level": 3,
-  "tags": "Kindermarchen : Guitare / [J.K. Mertz]"
+  "tags": "메르츠 梅尔茨 Kindermarchen : Guitare / [J.K. Mertz]"
  },
  {
   "source": "archive",
@@ -72609,7 +72758,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30211049.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72622,7 +72772,7 @@
   "license": "Public Domain",
   "thumb": "T_b30235479_202007.webp",
   "level": 3,
-  "tags": "녹턴 야상곡 夜曲 Nocturno Noturno Trois nocturnes pour la guitare, oeuvre 4 / composes et dedies a Madame Aloyse Streibig par J.K. Mertz."
+  "tags": "메르츠 梅尔茨 녹턴 야상곡 夜曲 Nocturno Noturno Trois nocturnes pour la guitare, oeuvre 4 / composes et dedies a Madame Aloyse Streibig par J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72634,7 +72784,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30260711_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72646,7 +72797,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30277292_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72658,7 +72810,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30322467.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72670,7 +72823,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30321785.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72682,7 +72836,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30322431.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72694,7 +72849,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30271654_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72707,7 +72863,7 @@
   "license": "Public Domain",
   "thumb": "T_b30293947_202007.webp",
   "level": 3,
-  "tags": "Das Madchen vom Lande : von Franz v. Suppe Guitare / [J.K. Mertz]."
+  "tags": "메르츠 梅尔茨 Das Madchen vom Lande : von Franz v. Suppe Guitare / [J.K. Mertz]."
  },
  {
   "source": "archive",
@@ -72720,7 +72876,7 @@
   "license": "Public Domain",
   "thumb": "T_b30260577_202007.webp",
   "level": 3,
-  "tags": "Fantaisie uber Motive aus der Oper: Teufels Antheil : Guitarre op. 31 / J.K. Mertz."
+  "tags": "메르츠 梅尔茨 Fantaisie uber Motive aus der Oper: Teufels Antheil : Guitarre op. 31 / J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72732,7 +72888,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30277723_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72744,7 +72901,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30236058_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72756,7 +72914,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30338384.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72768,7 +72927,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b3029518x_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72781,7 +72941,7 @@
   "license": "Public Domain",
   "thumb": "T_b30235959.webp",
   "level": 3,
-  "tags": "6. Landler, 9tes Werk., Guitare / von J.K. Mertz"
+  "tags": "메르츠 梅尔茨 6. Landler, 9tes Werk., Guitare / von J.K. Mertz"
  },
  {
   "source": "archive",
@@ -72794,7 +72954,7 @@
   "license": "Public Domain",
   "thumb": "T_b30260851_202007.webp",
   "level": 3,
-  "tags": "Russisches Zigeunerlied : chant bohemien Guitarre op. 88 ; Thuringer Volkslied / J.K. Mertz."
+  "tags": "메르츠 梅尔茨 Russisches Zigeunerlied : chant bohemien Guitarre op. 88 ; Thuringer Volkslied / J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72806,7 +72966,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b3027770x_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72818,7 +72979,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30253676.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72830,7 +72992,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30605180_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72843,7 +73006,7 @@
   "license": "Public Domain",
   "thumb": "T_b30235911_202007.webp",
   "level": 3,
-  "tags": "Cyanen : als Folge der Nachtviolen / eine Reihe origineller melodischer Satze fur die Guitare von J.K. Mertz, 5tes Werk."
+  "tags": "메르츠 梅尔茨 Cyanen : als Folge der Nachtviolen / eine Reihe origineller melodischer Satze fur die Guitare von J.K. Mertz, 5tes Werk."
  },
  {
   "source": "archive",
@@ -72856,7 +73019,7 @@
   "license": "Public Domain",
   "thumb": "T_b30260097_202007.webp",
   "level": 3,
-  "tags": "Fantaisie uber Motive aus der Oper: Belisar : Guitarre op. 30 / J.K. Mertz."
+  "tags": "메르츠 梅尔茨 Fantaisie uber Motive aus der Oper: Belisar : Guitarre op. 30 / J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72868,7 +73031,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30322339.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72880,7 +73044,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30322480.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72892,7 +73057,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b3025369x.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72904,7 +73070,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b3027106x_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72916,7 +73083,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30271101_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72929,7 +73097,7 @@
   "license": "Public Domain",
   "thumb": "T_b30235923_202007.webp",
   "level": 3,
-  "tags": "Le carneval de Venice : air varie. Guitare 6tes Werk / J.K. Mertz."
+  "tags": "메르츠 梅尔茨 Le carneval de Venice : air varie. Guitare 6tes Werk / J.K. Mertz."
  },
  {
   "source": "archive",
@@ -72941,7 +73109,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30277656_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72953,7 +73122,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30295051_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72965,7 +73135,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30270765_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72977,7 +73148,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30295191_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -72990,7 +73162,7 @@
   "license": "Public Domain",
   "thumb": "T_b3025999x_202007.webp",
   "level": 3,
-  "tags": "Glockentone : Guitarre op. 24. no. 1 / Musik von H. Proch ; [bearbeitet von] J.K. Mertz. Die Fahnenwacht"
+  "tags": "메르츠 梅尔茨 Glockentone : Guitarre op. 24. no. 1 / Musik von H. Proch ; [bearbeitet von] J.K. Mertz. Die Fahnenwacht"
  },
  {
   "source": "archive",
@@ -73003,7 +73175,7 @@
   "license": "Public Domain",
   "thumb": "T_b30295154_202007.webp",
   "level": 3,
-  "tags": "Haydee = (Das Geheimniss) : von D.F.E. Auber Guitare / [J.K. Mertz]."
+  "tags": "메르츠 梅尔茨 Haydee = (Das Geheimniss) : von D.F.E. Auber Guitare / [J.K. Mertz]."
  },
  {
   "source": "archive",
@@ -73015,7 +73187,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30277711_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73027,7 +73200,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30310350_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73039,7 +73213,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30270753_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73051,7 +73226,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30271071_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73063,7 +73239,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30322297.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73075,7 +73252,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30277541_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73087,7 +73265,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30277619_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73099,7 +73278,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30236125_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73112,7 +73292,7 @@
   "license": "Public Domain",
   "thumb": "T_b30235467_202007.webp",
   "level": 3,
-  "tags": "폴로네즈 波兰舞曲 Polonesa 마주르카 玛祖卡 Mazurca"
+  "tags": "메르츠 梅尔茨 폴로네즈 波兰舞曲 Polonesa 마주르카 玛祖卡 Mazurca"
  },
  {
   "source": "archive",
@@ -73124,7 +73304,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30277401_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73136,7 +73317,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30295208_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73149,7 +73331,7 @@
   "license": "Public Domain",
   "thumb": "T_b30235972_202008.webp",
   "level": 3,
-  "tags": "Introduction et rondeau brillant : pour la guitarre oeuvre 11 / composes dedies a Monsieur M. Diry par J.K. Mertz."
+  "tags": "메르츠 梅尔茨 Introduction et rondeau brillant : pour la guitarre oeuvre 11 / composes dedies a Monsieur M. Diry par J.K. Mertz."
  },
  {
   "source": "archive",
@@ -73161,7 +73343,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30271198_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73173,7 +73356,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30271125_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "archive",
@@ -73185,7 +73369,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-for-the-guitar-legnani-luigi.webp",
-  "level": 2
+  "level": 2,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73198,7 +73383,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-for-guitar-legnani-luigi.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "레냐니 레그나니 莱尼亚尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -73210,7 +73395,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-in-a-major-op19-legnani-luigi.webp",
-  "level": 3
+  "level": 3,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73223,7 +73409,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-for-guitar-op18-legnani-luigi.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações"
+  "tags": "레냐니 레그나니 莱尼亚尼 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "archive",
@@ -73236,7 +73422,7 @@
   "license": "Public Domain",
   "thumb": "T_b30062512A.webp",
   "level": 3,
-  "tags": "스케르초 谐谑曲"
+  "tags": "레냐니 레그나니 莱尼亚尼 스케르초 谐谑曲"
  },
  {
   "source": "archive",
@@ -73249,7 +73435,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-and-variations-for-guitar-op237-legnani-luigi.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações"
+  "tags": "레냐니 레그나니 莱尼亚尼 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "archive",
@@ -73261,7 +73447,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-and-allegro-op202-legnani-luigi.webp",
-  "level": 3
+  "level": 3,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73274,7 +73461,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-agrables-sur-la-romance-de-cendrillon-op30-legnani-luigi.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Variations agreables sur la Romance de 'Cendrillon', Op.30"
+  "tags": "레냐니 레그나니 莱尼亚尼 변주곡 变奏曲 Variaciones Variações Variations agreables sur la Romance de 'Cendrillon', Op.30"
  },
  {
   "source": "archive",
@@ -73286,7 +73473,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_imslp-fantasia-op61-legnani-luigi.webp",
-  "level": 3
+  "level": 3,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73299,7 +73487,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-op10-legnani-luigi.webp",
   "level": 3,
-  "tags": "스케르초 谐谑曲 변주곡 变奏曲 Variaciones Variações"
+  "tags": "레냐니 레그나니 莱尼亚尼 스케르초 谐谑曲 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "archive",
@@ -73311,7 +73499,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30065756_202007.webp",
-  "level": 2
+  "level": 2,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73323,7 +73512,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30047821_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73335,7 +73525,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30047912_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73348,7 +73539,7 @@
   "license": "Public Domain",
   "thumb": "T_b30065586_202007.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Introduction, theme et variations, guitare, op. 224 / Luigi Legnani."
+  "tags": "레냐니 레그나니 莱尼亚尼 변주곡 变奏曲 Variaciones Variações Introduction, theme et variations, guitare, op. 224 / Luigi Legnani."
  },
  {
   "source": "archive",
@@ -73372,7 +73563,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30047900_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73384,7 +73576,8 @@
   "instrument": "Guitar",
   "license": "Public Domain",
   "thumb": "T_b30047791_202007.webp",
-  "level": 3
+  "level": 3,
+  "tags": "레냐니 레그나니 莱尼亚尼"
  },
  {
   "source": "archive",
@@ -73397,7 +73590,7 @@
   "license": "Public Domain",
   "thumb": "T_b30054904.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações"
+  "tags": "레냐니 레그나니 莱尼亚尼 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "archive",
@@ -73410,7 +73603,7 @@
   "license": "Public Domain",
   "thumb": "T_b30054928.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Theme et variations pour la guitare, op. 237 / composees par Luigi Legnani."
+  "tags": "레냐니 레그나니 莱尼亚尼 변주곡 变奏曲 Variaciones Variações Theme et variations pour la guitare, op. 237 / composees par Luigi Legnani."
  },
  {
   "source": "archive",
@@ -73423,7 +73616,7 @@
   "license": "Public Domain",
   "thumb": "T_b30046245_202007.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Gran variazioni : per la chitarra sul duetto (:Nel cuor piu non mi sento:) nell'opera molinara op.16 / composte d"
+  "tags": "레냐니 레그나니 莱尼亚尼 변주곡 变奏曲 Variaciones Variações Gran variazioni : per la chitarra sul duetto (:Nel cuor piu non mi sento:) nell'opera molinara op.16 / composte d"
  },
  {
   "source": "archive",
@@ -73435,7 +73628,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_imslp-method-cavallini-eugenio.webp",
-  "level": 2
+  "level": 2,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "archive",
@@ -73447,7 +73641,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_imslp-caprices-for-violin-cavallini-eugenio.webp",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "archive",
@@ -73459,7 +73654,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_imslp-for-viola-and-string-quintet-cavallini-eugenio.webp",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "archive",
@@ -73472,7 +73668,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-russe-cavallini-eugenio.webp",
   "level": 3,
-  "tags": "몽상 梦幻 Reverie Russe"
+  "tags": "카발리니 卡瓦利尼 몽상 梦幻 Reverie Russe"
  },
  {
   "source": "archive",
@@ -73484,7 +73680,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_imslp-for-viola-and-string-quartet-cavallini-eugenio.webp",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "archive",
@@ -73496,7 +73693,8 @@
   "instrument": "Clarinet",
   "license": "Public Domain",
   "thumb": "T_imslp-concertant-duos-for-2-violins-cavallini-eugenio.webp",
-  "level": 3
+  "level": 3,
+  "tags": "카발리니 卡瓦利尼"
  },
  {
   "source": "archive",
@@ -77503,7 +77701,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-violon-op102-briot-charles-auguste-de.webp",
   "level": 2,
-  "tags": "Methode de violon, Op.102 Charles-Auguste Beriot"
+  "tags": "베리오 베리오트 贝里奥 Methode de violon, Op.102 Charles-Auguste Beriot"
  },
  {
   "source": "archive",
@@ -77516,7 +77714,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no9-op104-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77529,7 +77727,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-easy-duos-for-2-violins-op87-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77542,7 +77740,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-ballet-op100-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Scene de ballet, Op.100 Charles-Auguste Beriot"
+  "tags": "베리오 베리오트 贝里奥 Scene de ballet, Op.100 Charles-Auguste Beriot"
  },
  {
   "source": "archive",
@@ -77555,7 +77753,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-scenes-ou-caprices-op109-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77568,7 +77766,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no3-op44-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77581,7 +77779,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no6-op70-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77594,7 +77792,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-de-concert-op123-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 연습곡 에튀드 练习曲 Estudio Estudo Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77607,7 +77805,7 @@
   "license": "Public Domain",
   "thumb": "T_sixthairwithvari00beri.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77620,7 +77818,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no3-op3-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77633,7 +77831,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no4-op46-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77646,7 +77844,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-caprices-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77659,7 +77857,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no2-op32-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77672,7 +77870,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no6-op12-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77685,7 +77883,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-brilliant-studies-for-violin-op17-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77698,7 +77896,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-no2-op105-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77711,7 +77909,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no1-op1-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77724,7 +77922,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no7-op76-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77737,7 +77935,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no1-op16-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77750,7 +77948,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no5-op55-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77763,7 +77961,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-brillant-sur-des-motifs-de-hayde-op64-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Duo brillant sur des motifs de 'Haydee', Op.64 Charles-Auguste Beriot"
+  "tags": "베리오 베리오트 贝里奥 Duo brillant sur des motifs de 'Haydee', Op.64 Charles-Auguste Beriot"
  },
  {
   "source": "archive",
@@ -77776,7 +77974,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-studies-or-caprices-for-violin-op9-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77789,7 +77987,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-weber-op126-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77802,7 +78000,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no7-op15-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77815,7 +78013,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-nocturnes-sur-les-soires-musicales-de-rossini-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "녹턴 야상곡 夜曲 Nocturno Noturno 2 Nocturnes sur les Soirees musicales de Rossini Charles-Auguste Beriot"
+  "tags": "베리오 베리오트 贝里奥 녹턴 야상곡 夜曲 Nocturno Noturno 2 Nocturnes sur les Soirees musicales de Rossini Charles-Auguste Beriot"
  },
  {
   "source": "archive",
@@ -77828,7 +78026,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-quartet-in-a-minor-op50-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77841,7 +78039,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concertant-duets-op57-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77854,7 +78052,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no13-op121-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77867,7 +78065,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no5-op7-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77880,7 +78078,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-musicale-sur-othello-op89-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Soiree musicale sur 'Othello', Op.89 Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Soiree musicale sur 'Othello', Op.89 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77893,7 +78091,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no2-op2-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77906,7 +78104,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-ou-improvisation-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "전주곡 프렐류드 前奏曲 Preludio Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 전주곡 프렐류드 前奏曲 Preludio Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77919,7 +78117,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-varis-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Airs Varies Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Airs Varies Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77932,7 +78130,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-italiennes-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Melodies italiennes Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Melodies italiennes Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77945,7 +78143,7 @@
   "license": "Public Domain",
   "thumb": "T_duosurdesairshon00br.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77958,7 +78156,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-sans-paroles-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Opera sans paroles Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Opera sans paroles Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77971,7 +78169,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-duo-sur-les-jolis-motifs-du-barbier-de-seville-op56-briot-charles-auguste-.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77984,7 +78182,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no4-op5-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -77997,7 +78195,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no8-op99-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78010,7 +78208,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no10-op127-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78023,7 +78221,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-trmolo-op30-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Le tremolo, Op.30 Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Le tremolo, Op.30 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78036,7 +78234,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-sur-des-airs-hongrois-et-styriens-op84-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78049,7 +78247,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no8-op42-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78062,7 +78260,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-duo-concertant-sur-les-motifs-de-zanetta-op33-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78075,7 +78273,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-brillante-sur-guillaume-tell-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "윌리엄 텔 威廉退尔 Guillermo Tell Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 윌리엄 텔 威廉退尔 Guillermo Tell Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78088,7 +78286,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-with-variations-no12-op88-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78112,7 +78310,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-grand-studies-for-2-violins-op43-briot-charles-auguste-de.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78125,7 +78323,7 @@
   "license": "Public Domain",
   "thumb": "T_sixthairwithvari00brio.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 변주곡 变奏曲 Variaciones Variações Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78138,7 +78336,7 @@
   "license": "Public Domain",
   "thumb": "T_b1032771x.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78151,7 +78349,7 @@
   "license": "Public Domain",
   "thumb": "T_1eriepremierconc00brio.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78164,7 +78362,7 @@
   "license": "Public Domain",
   "thumb": "T_concertonoviiing00brio.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78177,7 +78375,7 @@
   "license": "Public Domain",
   "thumb": "T_airvarino6inaop100brio.webp",
   "level": 3,
-  "tags": "Air varie no. 6 in A. Op. 12 Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Air varie no. 6 in A. Op. 12 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78190,7 +78388,7 @@
   "license": "Public Domain",
   "thumb": "T_secondconcertopo00brio.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 협주곡 콘체르토 协奏曲 Concierto Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78203,7 +78401,7 @@
   "license": "Public Domain",
   "thumb": "T_airvareno7ineop100brio.webp",
   "level": 3,
-  "tags": "Air varie no. 7 in E : op. 15 Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Air varie no. 7 in E : op. 15 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78216,7 +78414,7 @@
   "license": "Public Domain",
   "thumb": "T_gml-cinci-18-berio-spani.webp",
   "level": 3,
-  "tags": "Charles-Auguste de Beriot"
+  "tags": "베리오 베리오트 贝里奥 Charles-Auguste de Beriot"
  },
  {
   "source": "archive",
@@ -78229,7 +78427,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-du-violon-alard-jean-delphin.webp",
   "level": 2,
-  "tags": "Ecole du violon"
+  "tags": "알라르 알라르드 阿拉尔 Ecole du violon"
  },
  {
   "source": "archive",
@@ -78242,7 +78440,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concertante-no2-op33-alard-jean-delphin.webp",
   "level": 3,
-  "tags": "교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
+  "tags": "알라르 알라르드 阿拉尔 교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
  },
  {
   "source": "archive",
@@ -78254,7 +78452,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-quartet-no1-op8-alard-jean-delphin.webp",
-  "level": 2
+  "level": 2,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78267,7 +78466,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-caprices-op41-alard-jean-delphin.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "알라르 알라르드 阿拉尔 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -78279,7 +78478,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-brillants-op27-alard-jean-delphin.webp",
-  "level": 3
+  "level": 3,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78292,7 +78492,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concertante-no3-op34b-alard-jean-delphin.webp",
   "level": 3,
-  "tags": "교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
+  "tags": "알라르 알라르드 阿拉尔 교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
  },
  {
   "source": "archive",
@@ -78305,7 +78505,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concertante-no1-op31-alard-jean-delphin.webp",
   "level": 3,
-  "tags": "교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
+  "tags": "알라르 알라르드 阿拉尔 교향곡 심포니 交响曲 Symphonie Sinfonía Sinfonia"
  },
  {
   "source": "archive",
@@ -78318,7 +78518,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-duos-lmentaires-op22-alard-jean-delphin.webp",
   "level": 2,
-  "tags": "3 Duos elementaires, Op.22"
+  "tags": "알라르 알라르드 阿拉尔 3 Duos elementaires, Op.22"
  },
  {
   "source": "archive",
@@ -78330,7 +78530,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-sur-la-traviata-op38-alard-jean-delphin.webp",
-  "level": 3
+  "level": 3,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78342,7 +78543,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-moderne-op53-alard-jean-delphin.webp",
-  "level": 2
+  "level": 2,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78354,7 +78556,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-op42-alard-jean-delphin.webp",
-  "level": 2
+  "level": 2,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78367,7 +78570,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no1-op15-alard-jean-delphin.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto"
+  "tags": "알라르 알라르드 阿拉尔 협주곡 콘체르토 协奏曲 Concierto"
  },
  {
   "source": "archive",
@@ -78379,7 +78582,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-on-rigoletto-op46-alard-jean-delphin.webp",
-  "level": 2
+  "level": 2,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78392,7 +78596,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-tudes-melodiques-et-progressives-op10-alard-jean-delphin.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo 10 Etudes melodiques et progressives, Op.10"
+  "tags": "알라르 알라르드 阿拉尔 연습곡 에튀드 练习曲 Estudio Estudo 10 Etudes melodiques et progressives, Op.10"
  },
  {
   "source": "archive",
@@ -78404,7 +78608,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_3894847.0001.001.umich.edu.webp",
-  "level": 2
+  "level": 2,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78416,7 +78621,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-sur-ernani-op54-alard-jean-delphin.webp",
-  "level": 3
+  "level": 3,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78429,7 +78635,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-tudes-artistiques-op19-alard-jean-delphin.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo 10 Etudes artistiques, Op.19"
+  "tags": "알라르 알라르드 阿拉尔 연습곡 에튀드 练习曲 Estudio Estudo 10 Etudes artistiques, Op.19"
  },
  {
   "source": "archive",
@@ -78442,7 +78648,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-concerto-no2-op34-alard-jean-delphin.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto"
+  "tags": "알라르 알라르드 阿拉尔 협주곡 콘체르토 协奏曲 Concierto"
  },
  {
   "source": "archive",
@@ -78454,7 +78660,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duets-op23-alard-jean-delphin.webp",
-  "level": 2
+  "level": 2,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78466,7 +78673,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-de-concert-sur-faust-op47-alard-jean-delphin.webp",
-  "level": 3
+  "level": 3,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78479,7 +78687,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-tudes-op2-alard-jean-delphin.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo 6 Etudes, Op.2"
+  "tags": "알라르 알라르드 阿拉尔 연습곡 에튀드 练习曲 Estudio Estudo 6 Etudes, Op.2"
  },
  {
   "source": "archive",
@@ -78491,7 +78699,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-duo-concertant-op25-alard-jean-delphin.webp",
-  "level": 2
+  "level": 2,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78503,7 +78712,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-sur-un-ballo-in-maschera-op40-alard-jean-delphin.webp",
-  "level": 3
+  "level": 3,
+  "tags": "알라르 알라르드 阿拉尔"
  },
  {
   "source": "archive",
@@ -78516,7 +78726,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-sur-guillaume-tell-op45-alard-jean-delphin.webp",
   "level": 3,
-  "tags": "윌리엄 텔 威廉退尔 Guillermo Tell"
+  "tags": "알라르 알라르드 阿拉尔 윌리엄 텔 威廉退尔 Guillermo Tell"
  },
  {
   "source": "archive",
@@ -78529,7 +78739,7 @@
   "license": "Public Domain",
   "thumb": "T_2eiedeuximeconce00alar.webp",
   "level": 3,
-  "tags": "협주곡 콘체르토 协奏曲 Concierto 2e [i.e. Deuxieme] concerto pour violon, avec acc. de piano ou d'orchestre. Op. 34"
+  "tags": "알라르 알라르드 阿拉尔 협주곡 콘체르토 协奏曲 Concierto 2e [i.e. Deuxieme] concerto pour violon, avec acc. de piano ou d'orchestre. Op. 34"
  },
  {
   "source": "archive",
@@ -78542,7 +78752,7 @@
   "license": "Public Domain",
   "thumb": "T_11228906bsb.webp",
   "level": 2,
-  "tags": "Wetter-Predigten: d. i. vier ... Predigten von schrecklichem Donner und Blitz, starcken Sturmwinden hohen schadl"
+  "tags": "알라르 알라르드 阿拉尔 Wetter-Predigten: d. i. vier ... Predigten von schrecklichem Donner und Blitz, starcken Sturmwinden hohen schadl"
  },
  {
   "source": "archive",
@@ -84383,7 +84593,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_fiftyselectedpia01cram.webp",
-  "level": 3
+  "level": 3,
+  "tags": "크라머 크라메르 克拉默"
  },
  {
   "source": "archive",
@@ -84395,7 +84606,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_lessonsinscience00cramrich.webp",
-  "level": 3
+  "level": 3,
+  "tags": "크라머 크라메르 克拉默"
  },
  {
   "source": "archive",
@@ -84408,7 +84620,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-studies-selected-by-blow-cramer-johann-baptist.webp",
   "level": 3,
-  "tags": "60 Studies selected by Bulow"
+  "tags": "크라머 크라메르 克拉默 60 Studies selected by Bulow"
  },
  {
   "source": "archive",
@@ -84420,7 +84632,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_eightfourcelebra01cram.webp",
-  "level": 3
+  "level": 3,
+  "tags": "크라머 크라메르 克拉默"
  },
  {
   "source": "archive",
@@ -84432,7 +84645,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-per-il-pianoforte-cramer-johann-baptist.webp",
-  "level": 3
+  "level": 3,
+  "tags": "크라머 크라메르 克拉默"
  },
  {
   "source": "archive",
@@ -91612,7 +91826,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_beethovenspianop00kull.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿨라크 쿨라 库拉克"
  },
  {
   "source": "archive",
@@ -91624,7 +91839,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_schoolofoctavepl00kull.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿨라크 쿨라 库拉克"
  },
  {
   "source": "archive",
@@ -91637,7 +91853,7 @@
   "license": "Public Domain",
   "thumb": "T_diesthetikdeskla00kull.webp",
   "level": 2,
-  "tags": "Die Asthetik des Klavierspiels"
+  "tags": "쿨라크 쿨라 库拉克 Die Asthetik des Klavierspiels"
  },
  {
   "source": "archive",
@@ -91649,7 +91865,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_dervortraginderm00kull.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿨라크 쿨라 库拉克"
  },
  {
   "source": "archive",
@@ -91661,7 +91878,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_dieaesthetikdes01biscgoog.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿨라크 쿨라 库拉克"
  },
  {
   "source": "archive",
@@ -91686,7 +91904,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b10333629.webp",
-  "level": 2
+  "level": 2,
+  "tags": "쿨라크 쿨라 库拉克"
  },
  {
   "source": "archive",
@@ -91699,7 +91918,7 @@
   "license": "Public Domain",
   "thumb": "T_jbc.bj.uj.edu.pl.NDIGMUZ031206.webp",
   "level": 2,
-  "tags": "환상 즉흥곡 즉흥환상곡 幻想即兴曲 即兴曲"
+  "tags": "쿨라크 쿨라 库拉克 환상 즉흥곡 즉흥환상곡 幻想即兴曲 即兴曲"
  },
  {
   "source": "archive",
@@ -91712,7 +91931,7 @@
   "license": "Public Domain",
   "thumb": "T_jbc.bj.uj.edu.pl.NDIGMUZ049195.webp",
   "level": 2,
-  "tags": "녹턴 야상곡 夜曲 Nocturno Noturno"
+  "tags": "쿨라크 쿨라 库拉克 녹턴 야상곡 夜曲 Nocturno Noturno"
  },
  {
   "source": "archive",
@@ -91725,7 +91944,7 @@
   "license": "Public Domain",
   "thumb": "T_jbc.bj.uj.edu.pl.NDIGMUZ038381.webp",
   "level": 3,
-  "tags": "폴로네즈 波兰舞曲 Polonesa"
+  "tags": "쿨라크 쿨라 库拉克 폴로네즈 波兰舞曲 Polonesa"
  },
  {
   "source": "archive",
@@ -91738,7 +91957,7 @@
   "license": "Public Domain",
   "thumb": "T_jbc.bj.uj.edu.pl.NDIGMUZ031907.webp",
   "level": 2,
-  "tags": "소나타 奏鸣曲 Sonate"
+  "tags": "쿨라크 쿨라 库拉克 소나타 奏鸣曲 Sonate"
  },
  {
   "source": "archive",
@@ -91751,7 +91970,7 @@
   "license": "Public Domain",
   "thumb": "T_jbc.bj.uj.edu.pl.Polonaise_Fantaisie_Polonaise_Fantasy_Op._61.webp",
   "level": 3,
-  "tags": "폴로네즈 波兰舞曲 Polonesa"
+  "tags": "쿨라크 쿨라 库拉克 폴로네즈 波兰舞曲 Polonesa"
  },
  {
   "source": "archive",
@@ -91764,7 +91983,7 @@
   "license": "Public Domain",
   "thumb": "T_jbc.bj.uj.edu.pl.NDIGMUZ031410.webp",
   "level": 3,
-  "tags": "폴로네즈 波兰舞曲 Polonesa"
+  "tags": "쿨라크 쿨라 库拉克 폴로네즈 波兰舞曲 Polonesa"
  },
  {
   "source": "archive",
@@ -91777,7 +91996,7 @@
   "license": "Public Domain",
   "thumb": "T_b88365177_202605.webp",
   "level": 2,
-  "tags": "Rothkappchen: idylle fur Piano = Le chaperon rouge: op. 50"
+  "tags": "쿨라크 쿨라 库拉克 Rothkappchen: idylle fur Piano = Le chaperon rouge: op. 50"
  },
  {
   "source": "archive",
@@ -92332,7 +92551,7 @@
   "license": "cc-zero",
   "thumb": "thumbs/pdmx/saxophone/Fantaisie_and_Variations_on_The_Carnival_of_Venice-QmeQ8t4hZKYN.webp",
   "midi": "mids/pdmx/saxophone/Fantaisie_and_Variations_on_The_Carnival_of_Venice-QmeQ8t4hZKYN.mid",
-  "tags": "변주곡 变奏曲 Variaciones Variações",
+  "tags": "아르방 아르반 阿尔班 변주곡 变奏曲 Variaciones Variações",
   "level": 3
  },
  {
@@ -92664,7 +92883,7 @@
   "license": "publicdomain",
   "thumb": "thumbs/pdmx/trumpet/Premi_res__tudes_No.9-QmT3dPU47PHU.webp",
   "midi": "mids/pdmx/trumpet/Premi_res__tudes_No.9-QmT3dPU47PHU.mid",
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo Premieres Etudes No.9",
+  "tags": "아르방 아르반 阿尔班 연습곡 에튀드 练习曲 Estudio Estudo Premieres Etudes No.9",
   "level": 2
  },
  {
@@ -93287,7 +93506,7 @@
   "license": "cc-zero",
   "thumb": "thumbs/pdmx/trumpet/ARBAN_1_7a9_Premieres_etudes-QmNgZPLsvxYw.webp",
   "midi": "mids/pdmx/trumpet/ARBAN_1_7a9_Premieres_etudes-QmNgZPLsvxYw.mid",
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo",
+  "tags": "아르방 아르반 阿尔班 연습곡 에튀드 练习曲 Estudio Estudo",
   "level": 2
  },
  {
@@ -93378,7 +93597,7 @@
   "license": "cc-zero",
   "thumb": "thumbs/pdmx/trumpet/ARBAN_1_15a19_premieres_etudes-QmNQvWjGtNiD.webp",
   "midi": "mids/pdmx/trumpet/ARBAN_1_15a19_premieres_etudes-QmNQvWjGtNiD.mid",
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo",
+  "tags": "아르방 아르반 阿尔班 연습곡 에튀드 练习曲 Estudio Estudo",
   "level": 2
  },
  {
@@ -93903,7 +94122,7 @@
   "license": "cc-zero",
   "thumb": "thumbs/pdmx/trumpet/JB_Arban_s_M_todo_for_Trumpet-QmZHL1SJi1K2.webp",
   "midi": "mids/pdmx/trumpet/JB_Arban_s_M_todo_for_Trumpet-QmZHL1SJi1K2.mid",
-  "tags": "JB Arban's Metodo for Trumpet",
+  "tags": "아르방 아르반 阿尔班 JB Arban's Metodo for Trumpet",
   "level": 2
  },
  {
@@ -94096,7 +94315,7 @@
   "license": "cc-zero",
   "thumb": "thumbs/pdmx/trumpet/Fantaisie_and_Variations_on_The_Carnival_of_Venice-QmV6Q1mpwV24.webp",
   "midi": "mids/pdmx/trumpet/Fantaisie_and_Variations_on_The_Carnival_of_Venice-QmV6Q1mpwV24.mid",
-  "tags": "변주곡 变奏曲 Variaciones Variações",
+  "tags": "아르방 아르반 阿尔班 변주곡 变奏曲 Variaciones Variações",
   "level": 3
  },
  {
@@ -94686,7 +94905,7 @@
   "license": "cc-zero",
   "thumb": "thumbs/pdmx/trumpet/L_art_de_phraser_sur_le_cornet___pistons-QmdrtHxETK6D.webp",
   "midi": "mids/pdmx/trumpet/L_art_de_phraser_sur_le_cornet___pistons-QmdrtHxETK6D.mid",
-  "tags": "L'art de phraser sur le cornet a pistons",
+  "tags": "아르방 아르반 阿尔班 L'art de phraser sur le cornet a pistons",
   "level": 2
  },
  {
@@ -95775,7 +95994,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/violin/RondoMazasDuet-QmXPdHNbczBL.mid",
   "thumb": "thumbs/pdmx2/violin/RondoMazasDuet-QmXPdHNbczBL.webp",
-  "level": 2
+  "level": 2,
+  "tags": "마자스 马扎斯"
  },
  {
   "source": "pdmx2",
@@ -96458,7 +96678,8 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/guitar/DOUZE_VALSES-QmeRkgwQ9ygu.mid",
   "thumb": "thumbs/pdmx2/guitar/DOUZE_VALSES-QmeRkgwQ9ygu.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "pdmx2",
@@ -97277,7 +97498,7 @@
   "midi": "mids/pdmx2/violin/Theme_and_Variations-QmSykqxNfqRa.mid",
   "thumb": "thumbs/pdmx2/violin/Theme_and_Variations-QmSykqxNfqRa.webp",
   "level": 2,
-  "tags": "변주곡 变奏曲 Variaciones Variações"
+  "tags": "당클라 단클라 丹克拉 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "pdmx2",
@@ -98666,7 +98887,7 @@
   "midi": "mids/pdmx2/trumpet/ARBAN_1_10a14_Premieres_etudes-QmTsdFFTt9ty.mid",
   "thumb": "thumbs/pdmx2/trumpet/ARBAN_1_10a14_Premieres_etudes-QmTsdFFTt9ty.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "아르방 아르반 阿尔班 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "pdmx2",
@@ -99721,7 +99942,7 @@
   "midi": "mids/pdmx2/violin/75_melodious_and_progressive_studies_for_the_violin_op._36_n-Qmf6kzvjgFJf.mid",
   "thumb": "thumbs/pdmx2/violin/75_melodious_and_progressive_studies_for_the_violin_op._36_n-Qmf6kzvjgFJf.webp",
   "level": 2,
-  "tags": "Jacques Fereol Mazas"
+  "tags": "마자스 马扎斯 Jacques Fereol Mazas"
  },
  {
   "source": "pdmx2",
@@ -99805,7 +100026,7 @@
   "midi": "mids/pdmx2/guitar/Bardenkl_nge-QmfMFGTnv4kk.mid",
   "thumb": "thumbs/pdmx2/guitar/Bardenkl_nge-QmfMFGTnv4kk.webp",
   "level": 3,
-  "tags": "Bardenklange"
+  "tags": "메르츠 梅尔茨 Bardenklange"
  },
  {
   "source": "pdmx2",
@@ -103990,7 +104211,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/guitar/4_Rondos_brillants_Op.2-QmVry3t5TdS8.mid",
   "thumb": "thumbs/pdmx2/guitar/4_Rondos_brillants_Op.2-QmVry3t5TdS8.webp",
-  "level": 2
+  "level": 2,
+  "tags": "아과도 아구아도 阿瓜多"
  },
  {
   "source": "pdmx2",
@@ -104854,7 +105076,7 @@
   "midi": "mids/pdmx2/violin/Menuetto_from_Mazas_duet_Op._70_n__1-QmUFB9xAd6ra.mid",
   "thumb": "thumbs/pdmx2/violin/Menuetto_from_Mazas_duet_Op._70_n__1-QmUFB9xAd6ra.webp",
   "level": 2,
-  "tags": "미뉴에트 小步舞曲 Minueto Minuetto Menuetto from Mazas duet Op. 70 no 1"
+  "tags": "마자스 马扎斯 미뉴에트 小步舞曲 Minueto Minuetto Menuetto from Mazas duet Op. 70 no 1"
  },
  {
   "source": "pdmx2",
@@ -105166,7 +105388,7 @@
   "midi": "mids/pdmx2/guitar/etude_in_a_minor-QmQPmJTbDcdu.mid",
   "thumb": "thumbs/pdmx2/guitar/etude_in_a_minor-QmQPmJTbDcdu.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "아과도 아구아도 阿瓜多 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "pdmx2",
@@ -105808,7 +106030,7 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/guitar/_WIP__Diabelli_-_Diff_rentes_pi_ces_tr_s_faciles_pour_guitar-QmdmpepG8DrM.mid",
   "thumb": "thumbs/pdmx2/guitar/_WIP__Diabelli_-_Diff_rentes_pi_ces_tr_s_faciles_pour_guitar-QmdmpepG8DrM.webp",
-  "level": 2,
+  "level": 1,
   "tags": "디아벨리 迪亚贝利 (WIP) Diabelli - Differentes pieces tres faciles pour guitare et pianoforte par A. Cahier II Andante"
  },
  {
@@ -109193,7 +109415,8 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/piano/Carnaval_de_Venise-QmahVRaoEvgc.mid",
   "thumb": "thumbs/pdmx2/piano/Carnaval_de_Venise-QmahVRaoEvgc.webp",
-  "level": 3
+  "level": 3,
+  "tags": "아르방 아르반 阿尔班"
  },
  {
   "source": "pdmx2",
@@ -112297,7 +112520,7 @@
   "midi": "mids/pdmx2/piano/Variations_on_a_Tyrolienne-QmetpQPN9cXe.mid",
   "thumb": "thumbs/pdmx2/piano/Variations_on_a_Tyrolienne-QmetpQPN9cXe.webp",
   "level": 3,
-  "tags": "변주곡 变奏曲 Variaciones Variações"
+  "tags": "아르방 아르반 阿尔班 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "pdmx2",
@@ -112584,7 +112807,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/piano/Study_No.16_From_60_Selected_Studies-QmY4zQYAfbat.mid",
   "thumb": "thumbs/pdmx2/piano/Study_No.16_From_60_Selected_Studies-QmY4zQYAfbat.webp",
-  "level": 3
+  "level": 3,
+  "tags": "크라머 크라메르 克拉默"
  },
  {
   "source": "pdmx2",
@@ -116089,7 +116313,7 @@
   "midi": "mids/pdmx2/piano/V_gleins_Begr_bnis_Op._75-QmeWAtuLQrej.mid",
   "thumb": "thumbs/pdmx2/piano/V_gleins_Begr_bnis_Op._75-QmeWAtuLQrej.webp",
   "level": 2,
-  "tags": "Vogleins Begrabnis Op. 75"
+  "tags": "라이네케 莱内克 Vogleins Begrabnis Op. 75"
  },
  {
   "source": "pdmx2",
@@ -116773,7 +116997,8 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/piano/Cynthia._CJF.065_La-QmSg8LypJyLF.mid",
   "thumb": "thumbs/pdmx2/piano/Cynthia._CJF.065_La-QmSg8LypJyLF.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르비귀에 贝尔比吉耶"
  },
  {
   "source": "pdmx2",
@@ -117101,7 +117326,8 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/piano/PythiaLa._CJF.064-QmS9vPAeAJJN.mid",
   "thumb": "thumbs/pdmx2/piano/PythiaLa._CJF.064-QmS9vPAeAJJN.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르비귀에 贝尔比吉耶"
  },
  {
   "source": "pdmx2",
@@ -117286,7 +117512,7 @@
   "midi": "mids/pdmx2/piano/Sonatina_in_A_minor-QmSTdxMvMqwF.mid",
   "thumb": "thumbs/pdmx2/piano/Sonatina_in_A_minor-QmSTdxMvMqwF.webp",
   "level": 2,
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine"
+  "tags": "라이네케 莱内克 소나티네 소나티나 小奏鸣曲 Sonatine"
  },
  {
   "source": "pdmx2",
@@ -118194,7 +118420,7 @@
   "midi": "mids/pdmx2/piano/Zugv_gelein_Op._37-QmY6ZxQhZNMJ.mid",
   "thumb": "thumbs/pdmx2/piano/Zugv_gelein_Op._37-QmY6ZxQhZNMJ.webp",
   "level": 2,
-  "tags": "Zugvogelein Op. 37"
+  "tags": "라이네케 莱内克 Zugvogelein Op. 37"
  },
  {
   "source": "pdmx2",
@@ -121629,7 +121855,8 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/piano/CynthiaLa._CJF.065-QmRVge8UwAPj.mid",
   "thumb": "thumbs/pdmx2/piano/CynthiaLa._CJF.065-QmRVge8UwAPj.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르비귀에 贝尔比吉耶"
  },
  {
   "source": "pdmx2",
@@ -123074,7 +123301,8 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/piano/Pythia._CJF.064_La-QmZ1JRLLievf.mid",
   "thumb": "thumbs/pdmx2/piano/Pythia._CJF.064_La-QmZ1JRLLievf.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르비귀에 贝尔比吉耶"
  },
  {
   "source": "pdmx2",
@@ -129234,7 +129462,7 @@
   "midi": "mids/pdmx2/piano/Study_No.21__Spastic_man_valse__from_60_selected_studies-QmQdX7e6SX3r.mid",
   "thumb": "thumbs/pdmx2/piano/Study_No.21__Spastic_man_valse__from_60_selected_studies-QmQdX7e6SX3r.webp",
   "level": 3,
-  "tags": "왈츠 圆舞曲 华尔兹 Vals Valsa"
+  "tags": "크라머 크라메르 克拉默 왈츠 圆舞曲 华尔兹 Vals Valsa"
  },
  {
   "source": "pdmx2",
@@ -132597,7 +132825,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/piano/Mertz_Johann_Kaspar_-_school_for_the_guitar_-_practice_piece-QmbJQYNqLKKf.mid",
   "thumb": "thumbs/pdmx2/piano/Mertz_Johann_Kaspar_-_school_for_the_guitar_-_practice_piece-QmbJQYNqLKKf.webp",
-  "level": 2
+  "level": 2,
+  "tags": "메르츠 梅尔茨"
  },
  {
   "source": "pdmx2",

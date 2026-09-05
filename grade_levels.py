@@ -556,6 +556,16 @@ def rule_level(e, tf, cf, ck, grp):
     # ── 악기 무관 제목 규칙 ──
     if grp in (ENSEMBLE,):
         return ADV
+    # 제목이 스스로 '초보용'이라고 밝히는 교재 — 미디가 없어 작곡가 성향
+    # 기본값으로 떨어지면 소르·카이저 같은 대가의 입문 교본이 중급·고급으로
+    # 잘못 매겨진다. 실측: 이 규칙에 걸리는 17곡 중 12곡은 이미 초급이라
+    # 기존 판정과 일치하고, 5곡(소르 Op.31·Op.35, 디아벨리 기타, 카이저
+    # Op.20)만 바로잡힌다.
+    if has(r'for beginners?|fur anfanger|vom ersten anfang|ersten unterricht'
+           r'|very easy|tres facile|sehr leicht|elementary and progressive'
+           r'|elementary studies|vorschule|petite ecole'
+           r'|exercices tres faciles|pieces tres faciles'):
+        return BEGINNER
     if has(r'concert(o|ino)\b|konzert|concierto') and not has(r'concertino'):
         return ADV
     if has(r'\bconcertino'):
