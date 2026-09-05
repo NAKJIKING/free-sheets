@@ -19,7 +19,16 @@ level 값: 1 초급(초등 1~3학년) · 2 중급(초등 4~6학년) · 3 고급(
  ③ 미디가 없으면 작곡가 성향 기본값 — 비르투오소 작곡가 고급,
     교재 작곡가 중급, 전통곡 초급.
 
+자체 조판(source=original) 곡에는 추가로 `entry`(입문) 표시를 붙인다.
+level 은 그대로 1~3 을 유지한다 — 구버전 앱은 level 만 읽으므로(1~3 밖은
+미분류 처리) 새 숫자를 만들면 구버전에서 곡이 사라진다. 새 앱만 entry 를
+읽어 '입문' 분류로 보여주고, 구버전은 계속 초급으로 본다. 입문 판정은
+ENTRY_IDS 명시 목록이다 — 특징값 게이트는 조표 샤프가 임시표로 잡히는 등
+(스핀들러 acc 0.158) 오판이 있어 교재 수록곡을 놓친다.
+
 매 실행마다 전부 새로 계산한다(멱등). 규칙만 고치고 다시 돌리면 된다.
+build_all.py --write 가 original 항목을 다시 만들면 entry 가 지워지므로
+그 뒤에는 이 스크립트를 꼭 다시 돌린다.
 
   python3 grade_levels.py                 # catalog.json 갱신
   python3 grade_levels.py --dry --sample 8   # 쓰지 않고 통계·표본만
@@ -41,6 +50,30 @@ FEATURES = os.path.join(ROOT, 'level_features.json')
 
 BEGINNER, INTER, ADV = 1, 2, 3
 NAMES = {1: '초급', 2: '중급', 3: '고급', None: '미분류'}
+
+# 입문(진짜 초보) — 자체 조판 단선율 중 첫 교본·동요 수준 곡. 멜로디 id 기준
+# (mids/original/<악기>/<id>.mid 의 <id>)이라 9개 악기판에 똑같이 붙는다.
+ENTRY_IDS = frozenset({
+    # 2026 입문 교재 발굴분 24곡 (전부 입문)
+    'cancan', 'lakeside', 'beethoven_rondo', 'nearer', 'rockofages',
+    'joytoworld', 'amazing', 'suogan', 'waterwide', 'auldlang', 'firstnoel',
+    'camptown', 'kentucky', 'gymno2', 'beyer101', 'gurlitt_sonatina',
+    'reinagle', 'karussell', 'spindler', 'behr_may', 'czerny139_1',
+    'czerny139_2', 'czerny100_2', 'bach_pol117a',
+    # 기존 원본 중 동요·첫걸음급 16곡
+    'au_clair', 'butterfly', 'entchen', 'frere', 'hot_cross', 'jingle',
+    'kuckuck', 'london_bridge', 'mary_lamb', 'old_macdonald', 'row_boat',
+    'twinkle', 'happy_birthday', 'we_wish', 'yankee', 'ode',
+})
+
+
+def is_entry(e):
+    """입문 여부 — 자체 조판 곡만 대상, 멜로디 id 로 판정."""
+    if e.get('source') != 'original':
+        return False
+    m = re.search(r'/([^/]+)\.mid$', e.get('midi') or '')
+    return bool(m and m.group(1) in ENTRY_IDS)
+
 
 KEYBOARD = {'Piano', 'Harpsichord', 'Organ', 'Accordion', 'Harp'}
 GUITAR = {'Guitar', 'Lute', 'Mandolin'}
@@ -1303,14 +1336,18 @@ def main():
     rows = []
     for e in cat:
         lv, path = grade(e, feats)
-        old = e.get('level')
+        old = (e.get('level'), e.get('entry'))
         if lv:
             e['level'] = lv
         else:
             e.pop('level', None)
-        if old != e.get('level'):
+        if is_entry(e):
+            e['entry'] = True
+        else:
+            e.pop('entry', None)
+        if old != (e.get('level'), e.get('entry')):
             changed += 1
-        stat[e.get('instrument') or '?'][lv] += 1
+        stat[e.get('instrument') or '?']['entry' if e.get('entry') else lv] += 1
         how[path] += 1
         rows.append((e, lv, path))
 
@@ -1324,9 +1361,9 @@ def main():
     for inst, c in sorted(stat.items(), key=lambda x: -sum(x[1].values())):
         tot.update(c)
         n = sum(c.values())
-        print(f'  {inst:14} {n:5}  초급 {c[1]:5}  중급 {c[2]:5}  고급 {c[3]:5}  미분류 {c[None]:5}')
+        print(f'  {inst:14} {n:5}  입문 {c["entry"]:4}  초급 {c[1]:5}  중급 {c[2]:5}  고급 {c[3]:5}  미분류 {c[None]:5}')
     n = sum(tot.values())
-    print(f'  {"합계":14} {n:5}  초급 {tot[1]:5}  중급 {tot[2]:5}  고급 {tot[3]:5}  미분류 {tot[None]:5}')
+    print(f'  {"합계":14} {n:5}  입문 {tot["entry"]:4}  초급 {tot[1]:5}  중급 {tot[2]:5}  고급 {tot[3]:5}  미분류 {tot[None]:5}')
 
     if a.tsv:
         with open(a.tsv, 'w', encoding='utf-8') as fp:
