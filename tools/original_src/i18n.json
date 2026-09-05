@@ -2023,5 +2023,653 @@
    "title": "平安夜",
    "sub": "圣诞歌曲 1818年"
   }
+ },
+ "cancan": {
+  "id": "cancan",
+  "de": {
+   "title": "Cancan",
+   "sub": "Galopp aus „Orpheus in der Unterwelt“"
+  },
+  "fr": {
+   "title": "Cancan",
+   "sub": "Galop infernal — Orphée aux enfers"
+  },
+  "es": {
+   "title": "Cancán",
+   "sub": "Galop infernal — Orfeo en los infiernos"
+  },
+  "pt": {
+   "title": "Cancã",
+   "sub": "Galope infernal — Orfeu no Inferno"
+  },
+  "ind": {
+   "title": "Can-Can",
+   "sub": "Galop dari “Orpheus di Dunia Bawah”"
+  },
+  "zh": {
+   "title": "康康舞",
+   "sub": "《地狱中的奥菲欧》加洛普"
+  }
+ },
+ "lakeside": {
+  "id": "lakeside",
+  "de": {
+   "title": "Am See",
+   "sub": "leichte Melodie"
+  },
+  "fr": {
+   "title": "Au bord du lac",
+   "sub": "mélodie facile"
+  },
+  "es": {
+   "title": "Junto al lago",
+   "sub": "melodía fácil"
+  },
+  "pt": {
+   "title": "À beira do lago",
+   "sub": "melodia fácil"
+  },
+  "ind": {
+   "title": "Di Tepi Danau",
+   "sub": "melodi mudah"
+  },
+  "zh": {
+   "title": "湖畔",
+   "sub": "简易旋律"
+  }
+ },
+ "beethoven_rondo": {
+  "id": "beethoven_rondo",
+  "de": {
+   "title": "Rondo C-Dur",
+   "sub": "leichte Melodie"
+  },
+  "fr": {
+   "title": "Rondo en ut majeur",
+   "sub": "mélodie facile"
+  },
+  "es": {
+   "title": "Rondó en do mayor",
+   "sub": "melodía fácil"
+  },
+  "pt": {
+   "title": "Rondó em dó maior",
+   "sub": "melodia fácil"
+  },
+  "ind": {
+   "title": "Rondo dalam C mayor",
+   "sub": "melodi mudah"
+  },
+  "zh": {
+   "title": "C大调回旋曲",
+   "sub": "简易旋律"
+  }
+ },
+ "nearer": {
+  "id": "nearer",
+  "de": {
+   "title": "Näher, mein Gott, zu dir",
+   "sub": "Kirchenlied"
+  },
+  "fr": {
+   "title": "Plus près de toi, mon Dieu",
+   "sub": "cantique"
+  },
+  "es": {
+   "title": "Más cerca, oh Dios, de ti",
+   "sub": "himno"
+  },
+  "pt": {
+   "title": "Mais perto quero estar",
+   "sub": "hino"
+  },
+  "ind": {
+   "title": "Lebih Dekat, Tuhan",
+   "sub": "himne"
+  },
+  "zh": {
+   "title": "更近我主",
+   "sub": "聖詩"
+  }
+ },
+ "rockofages": {
+  "id": "rockofages",
+  "de": {
+   "title": "Fels des Heils",
+   "sub": "Kirchenlied"
+  },
+  "fr": {
+   "title": "Rocher séculaire",
+   "sub": "cantique"
+  },
+  "es": {
+   "title": "Roca de la eternidad",
+   "sub": "himno"
+  },
+  "pt": {
+   "title": "Rocha eterna",
+   "sub": "hino"
+  },
+  "ind": {
+   "title": "Karang Yang Teguh",
+   "sub": "himne"
+  },
+  "zh": {
+   "title": "萬古磐石",
+   "sub": "聖詩"
+  }
+ },
+ "joytoworld": {
+  "id": "joytoworld",
+  "de": {
+   "title": "Freue dich, Welt",
+   "sub": "Weihnachtslied"
+  },
+  "fr": {
+   "title": "Joie dans le monde",
+   "sub": "chant de Noël"
+  },
+  "es": {
+   "title": "Al mundo paz",
+   "sub": "villancico"
+  },
+  "pt": {
+   "title": "Regozijai, ó terra",
+   "sub": "cântico de Natal"
+  },
+  "ind": {
+   "title": "Hai Dunia Gembiralah",
+   "sub": "lagu Natal"
+  },
+  "zh": {
+   "title": "普世歡騰",
+   "sub": "聖誕頌歌"
+  }
+ },
+ "amazing": {
+  "id": "amazing",
+  "de": {
+   "title": "Amazing Grace",
+   "sub": "Kirchenlied"
+  },
+  "fr": {
+   "title": "Amazing Grace",
+   "sub": "cantique"
+  },
+  "es": {
+   "title": "Sublime gracia",
+   "sub": "himno"
+  },
+  "pt": {
+   "title": "Maravilhosa graça",
+   "sub": "hino"
+  },
+  "ind": {
+   "title": "Amazing Grace",
+   "sub": "himne"
+  },
+  "zh": {
+   "title": "奇異恩典",
+   "sub": "聖詩"
+  }
+ },
+ "suogan": {
+  "id": "suogan",
+  "de": {
+   "title": "Suo Gân",
+   "sub": "walisisches Wiegenlied"
+  },
+  "fr": {
+   "title": "Suo Gân",
+   "sub": "berceuse galloise"
+  },
+  "es": {
+   "title": "Suo Gân",
+   "sub": "nana galesa"
+  },
+  "pt": {
+   "title": "Suo Gân",
+   "sub": "canção de ninar galesa"
+  },
+  "ind": {
+   "title": "Suo Gân",
+   "sub": "lagu nina bobo Wales"
+  },
+  "zh": {
+   "title": "搖籃曲 Suo Gân",
+   "sub": "威爾斯民謠"
+  }
+ },
+ "waterwide": {
+  "id": "waterwide",
+  "de": {
+   "title": "The Water Is Wide",
+   "sub": "Volkslied"
+  },
+  "fr": {
+   "title": "The Water Is Wide",
+   "sub": "chanson traditionnelle"
+  },
+  "es": {
+   "title": "The Water Is Wide",
+   "sub": "canción tradicional"
+  },
+  "pt": {
+   "title": "The Water Is Wide",
+   "sub": "canção tradicional"
+  },
+  "ind": {
+   "title": "The Water Is Wide",
+   "sub": "lagu rakyat"
+  },
+  "zh": {
+   "title": "水兒寬廣",
+   "sub": "民謠"
+  }
+ },
+ "auldlang": {
+  "id": "auldlang",
+  "de": {
+   "title": "Auld Lang Syne",
+   "sub": "Nehmt Abschied, Brüder"
+  },
+  "fr": {
+   "title": "Ce n’est qu’un au revoir",
+   "sub": "Auld Lang Syne"
+  },
+  "es": {
+   "title": "Auld Lang Syne",
+   "sub": "canción de despedida"
+  },
+  "pt": {
+   "title": "Auld Lang Syne",
+   "sub": "canção de despedida"
+  },
+  "ind": {
+   "title": "Auld Lang Syne",
+   "sub": "lagu perpisahan"
+  },
+  "zh": {
+   "title": "友誼萬歲",
+   "sub": "驪歌"
+  }
+ },
+ "firstnoel": {
+  "id": "firstnoel",
+  "de": {
+   "title": "The First Noel",
+   "sub": "Weihnachtslied"
+  },
+  "fr": {
+   "title": "Le premier Noël",
+   "sub": "chant de Noël"
+  },
+  "es": {
+   "title": "La primera Navidad",
+   "sub": "villancico"
+  },
+  "pt": {
+   "title": "O primeiro Natal",
+   "sub": "cântico de Natal"
+  },
+  "ind": {
+   "title": "Natal Pertama",
+   "sub": "lagu Natal"
+  },
+  "zh": {
+   "title": "第一個聖誕",
+   "sub": "聖誕頌歌"
+  }
+ },
+ "camptown": {
+  "id": "camptown",
+  "de": {
+   "title": "Camptown Races",
+   "sub": "Volkslied von Foster"
+  },
+  "fr": {
+   "title": "Camptown Races",
+   "sub": "chanson de Foster"
+  },
+  "es": {
+   "title": "Camptown Races",
+   "sub": "canción de Foster"
+  },
+  "pt": {
+   "title": "Camptown Races",
+   "sub": "canção de Foster"
+  },
+  "ind": {
+   "title": "Camptown Races",
+   "sub": "lagu Foster"
+  },
+  "zh": {
+   "title": "康城賽馬",
+   "sub": "福斯特民謠"
+  }
+ },
+ "kentucky": {
+  "id": "kentucky",
+  "de": {
+   "title": "Mein altes Kentucky-Heim",
+   "sub": "Volkslied von Foster"
+  },
+  "fr": {
+   "title": "My Old Kentucky Home",
+   "sub": "chanson de Foster"
+  },
+  "es": {
+   "title": "Mi viejo hogar de Kentucky",
+   "sub": "canción de Foster"
+  },
+  "pt": {
+   "title": "Meu velho lar do Kentucky",
+   "sub": "canção de Foster"
+  },
+  "ind": {
+   "title": "Rumah Lamaku di Kentucky",
+   "sub": "lagu Foster"
+  },
+  "zh": {
+   "title": "肯塔基老家",
+   "sub": "福斯特民謠"
+  }
+ },
+ "gymno2": {
+  "id": "gymno2",
+  "de": {
+   "title": "Gymnopédie Nr. 2",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "Gymnopédie n° 2",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "Gymnopédie n.º 2",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "Gymnopédie n.º 2",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "Gymnopédie No.2",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "裸體歌舞 第2號",
+   "sub": "旋律"
+  }
+ },
+ "beyer101": {
+  "id": "beyer101",
+  "de": {
+   "title": "Vorschule im Klavierspiel, Op.101",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "Méthode élémentaire de piano, op.101",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "Escuela preparatoria de piano, op.101",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "Escola preparatória de piano, op.101",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "Sekolah Dasar Piano, Op.101",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "拜厄鋼琴基本教程 作品101",
+   "sub": "旋律"
+  }
+ },
+ "gurlitt_sonatina": {
+  "id": "gurlitt_sonatina",
+  "de": {
+   "title": "Sonatine",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "Sonatine",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "Sonatina",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "Sonatina",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "Sonatina",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "小奏鳴曲",
+   "sub": "旋律"
+  }
+ },
+ "reinagle": {
+  "id": "reinagle",
+  "de": {
+   "title": "Allegro",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "Allegro",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "Allegro",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "Allegro",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "Allegro",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "快板",
+   "sub": "旋律"
+  }
+ },
+ "karussell": {
+  "id": "karussell",
+  "de": {
+   "title": "Karussell-Walzer",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "Valse du manège",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "Vals del carrusel",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "Valsa do carrossel",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "Waltz Komidi Putar",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "旋轉木馬圓舞曲",
+   "sub": "旋律"
+  }
+ },
+ "spindler": {
+  "id": "spindler",
+  "de": {
+   "title": "Lied ohne Worte",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "Romance sans paroles",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "Canción sin palabras",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "Canção sem palavras",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "Lagu Tanpa Kata",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "無言歌",
+   "sub": "旋律"
+  }
+ },
+ "behr_may": {
+  "id": "behr_may",
+  "de": {
+   "title": "Im Mai",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "En mai",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "En mayo",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "Em maio",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "Di Bulan Mei",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "五月",
+   "sub": "旋律"
+  }
+ },
+ "czerny139_1": {
+  "id": "czerny139_1",
+  "de": {
+   "title": "100 Übungsstücke, Op.139 Nr.1",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "100 études progressives, op.139 n°1",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "100 estudios progresivos, op.139 n.º1",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "100 estudos progressivos, op.139 n.º1",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "100 Studi Progresif, Op.139 No.1",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "車爾尼100首 作品139之1",
+   "sub": "旋律"
+  }
+ },
+ "czerny139_2": {
+  "id": "czerny139_2",
+  "de": {
+   "title": "100 Übungsstücke, Op.139 Nr.2",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "100 études progressives, op.139 n°2",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "100 estudios progresivos, op.139 n.º2",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "100 estudos progressivos, op.139 n.º2",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "100 Studi Progresif, Op.139 No.2",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "車爾尼100首 作品139之2",
+   "sub": "旋律"
+  }
+ },
+ "czerny100_2": {
+  "id": "czerny100_2",
+  "de": {
+   "title": "100 Erholungen, Nr.2",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "100 récréations, n°2",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "100 recreaciones, n.º2",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "100 recreações, n.º2",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "100 Rekreasi, No.2",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "車爾尼100首小品之2",
+   "sub": "旋律"
+  }
+ },
+ "bach_pol117a": {
+  "id": "bach_pol117a",
+  "de": {
+   "title": "Polonaise F-Dur, BWV Anh.117a",
+   "sub": "Melodie"
+  },
+  "fr": {
+   "title": "Polonaise en fa majeur, BWV Anh.117a",
+   "sub": "mélodie"
+  },
+  "es": {
+   "title": "Polonesa en fa mayor, BWV Anh.117a",
+   "sub": "melodía"
+  },
+  "pt": {
+   "title": "Polonaise em fá maior, BWV Anh.117a",
+   "sub": "melodia"
+  },
+  "ind": {
+   "title": "Polonaise in F mayor, BWV Anh.117a",
+   "sub": "melodi"
+  },
+  "zh": {
+   "title": "F大調波蘭舞曲 BWV Anh.117a",
+   "sub": "旋律"
+  }
  }
 }

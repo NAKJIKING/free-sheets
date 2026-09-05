@@ -1,8 +1,14 @@
 """단선율 초급판 조판기 — MIDI 트랙(또는 LilyPond 선율 문자열)에서 선율을 뽑아
 한글 제목·계이름이 붙은 한 줄 악보(LilyPond)를 만들고 PDF·MIDI·PNG·WebP 를 낸다."""
-import os, re, subprocess, sys, json
-sys.path.insert(0, '/home/user/free-sheets'); import grade_levels as G
-LP = '/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/lily/lilypond-2.24.4/bin/lilypond'
+import os, re, shutil, subprocess, sys, json
+# 저장소 루트 = 이 파일의 두 단계 위 (tools/original_src/ → 루트).
+# 예전엔 '/home/user/free-sheets' 로 박혀 있어 다른 PC 에서 못 돌았다.
+REPO = os.environ.get('FREE_SHEETS_ROOT') or os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, REPO); import grade_levels as G
+# LilyPond: 환경변수 → PATH → 예전 고정 경로 순. 2.24 계열이면 된다.
+LP = (os.environ.get('LILYPOND') or shutil.which('lilypond')
+      or '/usr/bin/lilypond')
 DIV = 384  # LilyPond MIDI ticks per quarter
 SHARP_NAMES = ['c','cis','d','dis','e','f','fis','g','gis','a','ais','b']
 FLAT_NAMES  = ['c','des','d','ees','e','f','ges','g','aes','a','bes','b']
@@ -65,8 +71,17 @@ def split_value(L):
             out.append(s); L -= v
     return out, L
 
+def _midi_path(midi):
+    """설정의 미디 경로 — 상대경로면 저장소 루트 기준으로 푼다.
+    (설정 파일에 절대경로를 박으면 다른 PC 에서 못 돌아간다)"""
+    if os.path.isabs(midi) or os.path.exists(midi):
+        return midi
+    cand = os.path.join(REPO, midi)
+    return cand if os.path.exists(cand) else midi
+
+
 def notes_from_midi(midi, track, start_tick, end_tick, top=True, min_len=48, pmin=None, legato_max=384, pad_last=True, collapse_rests=True, tscale=1.0):
-    div, tempos, notes = G.parse_midi(midi)
+    div, tempos, notes = G.parse_midi(_midi_path(midi))
     scale = DIV / div * tscale
     ns = [(round(n[0]*scale), round(n[1]*scale), n[2]) for n in notes if n[4] == track and (pmin is None or n[2] >= pmin)]
     ns = [n for n in ns if start_tick <= n[0] < end_tick and n[1] - n[0] >= 60]  # 꾸밈음(짧은 음) 제외

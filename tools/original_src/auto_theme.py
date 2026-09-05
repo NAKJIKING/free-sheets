@@ -2,8 +2,9 @@
 import os, re, struct, sys, json, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import melody_sheet as M
-FS = '/home/user/free-sheets'
-FS2 = '/tmp/claude-0/-home-user-project-all/37b62809-cd4d-5ffe-9718-71b635990054/scratchpad/fs2'
+FS = M.REPO
+# 보조 검색 경로(선택) — 예전엔 세션 스크래치패드가 박혀 있었다.
+FS2 = os.environ.get('FREE_SHEETS_ALT', '')
 KEYS_MAJ = {-7:'ces',-6:'ges',-5:'des',-4:'aes',-3:'ees',-2:'bes',-1:'f',0:'c',1:'g',2:'d',3:'a',4:'e',5:'b',6:'fis',7:'cis'}
 KEYS_MIN = {-7:'aes',-6:'ees',-5:'bes',-4:'f',-3:'c',-2:'g',-1:'d',0:'a',1:'e',2:'b',3:'fis',4:'cis',5:'gis',6:'dis',7:'ais'}
 
@@ -44,11 +45,17 @@ def track_stats(path):
     return out
 
 def pick_track(stats):
-    """선율 트랙: 음 수 충분하고 화음 적고 음높이 높은 쪽."""
+    """선율 트랙 = 음 수가 충분한 트랙 중 평균 음높이가 가장 높은 것.
+
+    예전엔 화성 비율이 높은 트랙을 뒤로 밀었는데(poly > 0.5), 선율 추출이
+    이미 화음의 맨 윗음만 가져가므로(notes_from_midi top=True) 그럴 이유가
+    없다. 오히려 반주가 화음이면 선율 트랙이 밀려나 베이스가 뽑혔다 —
+    짐노페디 2번이 평균 음고 40(왼손)으로, 체르니 Op.139-1 이 왼손으로
+    잡히던 실제 사례가 있었다.
+    """
     cands = [s for s in stats if s['n'] >= 12]
     if not cands: return None
-    cands.sort(key=lambda s: (s['poly'] > 0.5, -s['mean']))
-    return cands[0]
+    return max(cands, key=lambda s: s['mean'])
 
 def make_cfg(e, bars=16, **over):
     p = midi_path(e)

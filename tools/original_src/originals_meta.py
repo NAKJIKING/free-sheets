@@ -1,6 +1,7 @@
 """직접 조판한 초급 단선율 악보 → free-sheets 카탈로그 항목 + 파일 배치."""
 import json, os, shutil, sys
-FS = '/home/user/free-sheets'
+FS = os.environ.get('FREE_SHEETS_ROOT') or os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'out2')
 MUT = 'https://www.mutopiaproject.org/ftp/'

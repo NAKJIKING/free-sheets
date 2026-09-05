@@ -168,3 +168,42 @@ Takedown 절차로 즉시 내립니다.
 알려주세요. 확인 즉시 카탈로그와 저장소에서 내리겠습니다.
 If you are a rights holder and believe a score here infringes your
 copyright, please open a GitHub issue — we will remove it promptly.
+
+## 입문 단선율 2차분 (2026-09-05, source = original)
+
+기존 74곡에 더해 **24곡**을 같은 방식으로 조판했다. 딥서치로 카탈로그
+12,663곡을 훑어 "선율만 뽑으면 입문이 되는 곡" 1,011개를 추린 뒤,
+한국에서 통하는 유명 선율과 입문 교재 수록곡만 남긴 것이다.
+
+- 유명 선율: 캉캉 · 기쁘다 구주 오셨네 · 어메이징 그레이스 · 내 주를 가까이 ·
+  만세 반석 · 그 첫 성탄 · 올드 랭 사인 · 수오 간 · 물은 넓어라 ·
+  캠프타운 경마 · 켄터키 옛집 · 짐노페디 2번 · 베토벤 론도/호숫가에서
+- 입문 교재: 바이엘 Op.101 · 구를리트 소나티네 · 레이너글 알레그로 ·
+  스트레아보그 회전목마 왈츠 · 스핀들러 무언가 · 베어 5월에 ·
+  체르니 Op.139 No.1·No.2, 100번 소품 · 바흐 폴로네즈 BWV Anh.117a
+- 원본은 전부 CC0·퍼블릭도메인(PDMX / Open Hymnal / The Session / Mutopia)
+  이라 조판본도 CC0. CC BY-SA 원본은 쓰지 않았다.
+- 설정·메타는 `tools/original_src/cfg_new2026.json`, `meta_new2026.json`,
+  번역은 `i18n.json` 에 합쳐 넣었다.
+
+### 이번에 고친 도구 문제 (다음 사람이 또 밟지 않도록)
+
+- **경로 하드코딩** — `melody_sheet.LP` 가 특정 세션의 스크래치패드 경로,
+  `FS` 가 `/home/user/free-sheets` 로 박혀 있어 다른 PC 에서 못 돌았다.
+  이제 `LILYPOND`/`FREE_SHEETS_ROOT` 환경변수 → `PATH` → 파일 위치 순으로 찾는다.
+- **미디 상대경로** — 설정의 `midi` 가 상대경로면 저장소 루트 기준으로 푼다
+  (`melody_sheet._midi_path`). 예전엔 실행 위치에 따라 실패했다.
+- **선율 트랙 오선택** — `auto_theme.pick_track` 이 화성 비율 높은 트랙을
+  뒤로 밀어 반주(베이스)를 선율로 잡는 일이 있었다(짐노페디 2번은 평균
+  음고 40, 체르니 Op.139-1 은 왼손). 선율 추출이 이미 화음의 윗음만
+  가져가므로 그 벌점을 없애고 '평균 음고가 가장 높은 트랙'으로 바꿨다.
+- **`--only` + `--write` 가 카탈로그를 지우던 것** — original 항목을 통째로
+  비우고 다시 채워서, 몇 곡만 빌드하면 나머지 자체 조판 곡이 목록에서
+  사라졌다(파일은 남아 눈치채기 어렵다). 이제 빌드한 곡의 항목만 교체한다.
+
+### 렌더 환경
+
+LilyPond 2.24.4 가 필요하다(템플릿이 `\version "2.24.4"`). 우분투 apt 판은
+2.24.3 이라 거부당한다 — GitLab 릴리스의 정적 바이너리를 쓸 것:
+`https://gitlab.com/lilypond/lilypond/-/releases/v2.24.4/downloads/lilypond-2.24.4-linux-x86_64.tar.gz`
+썸네일에는 PyMuPDF(`pip install pymupdf`)와 Pillow 가 필요하다.

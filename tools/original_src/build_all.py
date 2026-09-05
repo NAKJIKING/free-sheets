@@ -4,7 +4,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import inst_sheet as I
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FS = '/home/user/free-sheets'
+FS = os.environ.get('FREE_SHEETS_ROOT') or os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CAT_INST = {'piano':'Piano','recorder':'Recorder','violin':'Violin','flute':'Flute','clarinet':'Clarinet',
             'trumpet':'Trumpet','altosax':'Saxophone','cello':'Cello','guitar':'Guitar'}
 TAGS = '초등 초급 단선율 쉬운 악보 easy melody beginner kids 儿童 简易 einfach fácil facile'
@@ -12,11 +13,11 @@ TAGS = '초등 초급 단선율 쉬운 악보 easy melody beginner kids 儿童 �
 
 def load():
     cfgs = {}
-    for f in ('cfg2.json', 'cfg_auto_final.json', 'cfg_hand.json'):
+    for f in ('cfg2.json', 'cfg_auto_final.json', 'cfg_hand.json', 'cfg_new2026.json'):
         for c in json.load(open(os.path.join(HERE, f), encoding='utf-8')):
             cfgs[c['id']] = c
     metas = {}
-    for f in ('originals_meta_export.json', 'meta_auto.json', 'meta_hand.json'):
+    for f in ('originals_meta_export.json', 'meta_auto.json', 'meta_hand.json', 'meta_new2026.json'):
         p = os.path.join(HERE, f)
         if not os.path.exists(p): continue
         for m in json.load(open(p, encoding='utf-8')):
@@ -89,7 +90,15 @@ def main(write=False, only=None, langs=None, insts=None, workers=4, catalog_only
     if not write:
         return
     cat = json.load(open(os.path.join(FS, 'catalog.json'), encoding='utf-8'))
-    cat = [e for e in cat if e.get('source') != 'original']
+    # 이번에 빌드한 곡의 항목만 걷어낸다. 예전엔 original 을 통째로 비우고
+    # 다시 채워서, --only 로 몇 곡만 빌드하면 나머지 자체 조판 곡이 카탈로그
+    # 에서 조용히 사라졌다(파일은 남고 목록에서만 없어져 눈치채기 어렵다).
+    built = {p['id'] for p in pieces}
+    def _pid(e):
+        m = re.match(r'raw/original/[^/]+/(.+)\.pdf$', e.get('file') or '')
+        return m.group(1) if m else None
+    cat = [e for e in cat
+           if e.get('source') != 'original' or _pid(e) not in built]
     for p in pieces:
         m = p['_meta']
         for inst in insts:

@@ -2,7 +2,8 @@
 import json, os, shutil, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import inst_sheet as I
-FS = '/home/user/free-sheets'
+FS = os.environ.get('FREE_SHEETS_ROOT') or os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CAT_INST = {'piano':'Piano','recorder':'Recorder','violin':'Violin','flute':'Flute','clarinet':'Clarinet','trumpet':'Trumpet','altosax':'Saxophone','cello':'Cello','guitar':'Guitar'}
 TAGS = '초등 초급 단선율 쉬운 악보 easy melody beginner kids 儿童 简易 einfach fácil facile'
 
