@@ -39,7 +39,11 @@ def violations(cat):
             why = 'session작곡가'
         elif S.NON_SCORE_ID.search(url):
             why = '비악보'
-        elif S.ARRANGER.search(f'{title} {comp}'):
+        elif (S.ARRANGER.search(f'{title} {comp}')
+              and not is_pd_composer(comp, '')):
+            # sanitize 와 같은 예외 — 편곡 표기가 있어도 이름이 PD 명단에
+            # 있으면(리스트·타레가 등) 그 편곡물도 이미 퍼블릭 도메인이다.
+            # 두 스크립트가 어긋나면 정리해도 검사가 계속 실패한다.
             why = '편곡자권리'
         elif S.BAD_COMPOSER.match(comp):
             why = '작곡가불명'

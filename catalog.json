@@ -17550,7 +17550,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/piano/25EF-01-a4.webp",
   "midi": "mids/mutopia/piano/25EF-01-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒"
  },
  {
   "source": "mutopia",
@@ -17562,7 +17563,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/piano/25EF-17-a4.webp",
   "midi": "mids/mutopia/piano/25EF-17-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒"
  },
  {
   "source": "mutopia",
@@ -17574,7 +17576,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/piano/25EF-18-a4.webp",
   "midi": "mids/mutopia/piano/25EF-18-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒"
  },
  {
   "source": "mutopia",
@@ -17586,7 +17589,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/piano/ploermel-a4.webp",
   "midi": "mids/mutopia/piano/ploermel-a4.mid",
-  "level": 3
+  "level": 3,
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒"
  },
  {
   "source": "mutopia",
@@ -18073,7 +18077,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-11-a4.webp",
   "midi": "mids/mutopia/piano/op149-11-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18085,7 +18090,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-12-a4.webp",
   "midi": "mids/mutopia/piano/op149-12-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18097,7 +18103,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-13-a4.webp",
   "midi": "mids/mutopia/piano/op149-13-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18108,7 +18115,8 @@
   "instrument": "Piano",
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-14-a4.webp",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18120,7 +18128,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-15-a4.webp",
   "midi": "mids/mutopia/piano/op149-15-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18131,7 +18140,8 @@
   "instrument": "Piano",
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-16-a4.webp",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18143,7 +18153,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-17-a4.webp",
   "midi": "mids/mutopia/piano/op149-17-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18155,7 +18166,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-18-a4.webp",
   "midi": "mids/mutopia/piano/op149-18-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18167,7 +18179,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-19-a4.webp",
   "midi": "mids/mutopia/piano/op149-19-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18179,7 +18192,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/op149-20-a4.webp",
   "midi": "mids/mutopia/piano/op149-20-a4.mid",
-  "level": 1
+  "level": 1,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18191,7 +18205,8 @@
   "license": "CC BY-SA 3.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/diabeli.op163.s2-4-a4.webp",
   "midi": "mids/mutopia/piano/diabeli.op163.s2-4-a4.mid",
-  "level": 2
+  "level": 2,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "mutopia",
@@ -18641,7 +18656,7 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/piano/sonatine-1-allegro-a4.webp",
   "midi": "mids/mutopia/piano/sonatine-1-allegro-a4.mid",
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine",
+  "tags": "쿨라우 库劳 소나티네 소나티나 小奏鸣曲 Sonatine",
   "level": 2
  },
  {
@@ -18654,7 +18669,7 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/piano/sonatine-1-andante-a4.webp",
   "midi": "mids/mutopia/piano/sonatine-1-andante-a4.mid",
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine",
+  "tags": "쿨라우 库劳 소나티네 소나티나 小奏鸣曲 Sonatine",
   "level": 2
  },
  {
@@ -18667,7 +18682,7 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/piano/sonatine-1-rondo-a4.webp",
   "midi": "mids/mutopia/piano/sonatine-1-rondo-a4.mid",
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine",
+  "tags": "쿨라우 库劳 소나티네 소나티나 小奏鸣曲 Sonatine",
   "level": 2
  },
  {
@@ -29175,7 +29190,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-07.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-07.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29188,7 +29203,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-15.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-15.mid",
   "level": 3,
-  "tags": "발라드 叙事曲 Balada Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 발라드 叙事曲 Balada Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29213,7 +29228,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-16.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-16.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29226,7 +29241,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-14.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-14.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29239,7 +29254,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-13.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-13.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29252,7 +29267,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-11.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-11.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29265,7 +29280,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-09.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-09.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29278,7 +29293,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-04.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-04.mid",
   "level": 2,
-  "tags": "La Petite Reunion, Opus 100. Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 La Petite Reunion, Opus 100. Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29291,7 +29306,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-05.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-05.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29304,7 +29319,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-08.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-08.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29317,7 +29332,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-12.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-12.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29330,7 +29345,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-06.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-06.mid",
   "level": 2,
-  "tags": "Progres, Opus 100. Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Progres, Opus 100. Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29343,7 +29358,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-02.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-02.mid",
   "level": 2,
-  "tags": "아라베스크 阿拉伯风格曲 Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 아라베스크 阿拉伯风格曲 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29356,7 +29371,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-10.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-10.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -29369,7 +29384,7 @@
   "thumb": "thumbs/mutopia/piano/BurgmullerJFF__O100__25EF-03.webp",
   "midi": "mids/mutopia/piano/BurgmullerJFF__O100__25EF-03.mid",
   "level": 2,
-  "tags": "Johann Friedrich Franz Burgmuller"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 Johann Friedrich Franz Burgmuller"
  },
  {
   "source": "mutopia",
@@ -36610,7 +36625,7 @@
   "license": "Creative Commons Attribution-ShareAlike 4.0 (Mutopia)",
   "thumb": "thumbs/mutopia/piano/HanonCL__virtuoso-pianist-pt1__virtuoso-pianist-pt1-lys.webp",
   "level": 1,
-  "tags": "하농 哈农"
+  "tags": "하농 하논 哈农"
  },
  {
   "source": "mutopia",
@@ -37879,7 +37894,8 @@
   "license": "Public Domain (Mutopia)",
   "thumb": "thumbs/mutopia/harpsichord/BehrF__in_may_piano.webp",
   "midi": "mids/mutopia/harpsichord/BehrF__in_may_piano.mid",
-  "level": 1
+  "level": 1,
+  "tags": "베어 贝尔"
  },
  {
   "source": "mutopia",
@@ -59702,7 +59718,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-im-klavierspiel-op101-beyer-ferdinand.webp",
-  "level": 1
+  "level": 1,
+  "tags": "바이엘 바이어 拜厄"
  },
  {
   "source": "archive",
@@ -59714,7 +59731,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_beyervorschule.webp",
-  "level": 1
+  "level": 1,
+  "tags": "바이엘 바이어 拜厄"
  },
  {
   "source": "archive",
@@ -59727,7 +59745,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp--la-russie-op100-beyer-ferdinand.webp",
   "level": 1,
-  "tags": "Hommage a la Russie, Op.100"
+  "tags": "바이엘 바이어 拜厄 Hommage a la Russie, Op.100"
  },
  {
   "source": "archive",
@@ -59740,7 +59758,7 @@
   "license": "Public Domain",
   "thumb": "T_illustrirterneu00dziegoog.webp",
   "level": 1,
-  "tags": "Illustrirter neuester bienenfreund. Eine vollstandige unterweisung in der behandlung bienen zu jeglicher jahreszeit,"
+  "tags": "바이엘 바이어 拜厄 Illustrirter neuester bienenfreund. Eine vollstandige unterweisung in der behandlung bienen zu jeglicher jahreszeit,"
  },
  {
   "source": "archive",
@@ -59752,7 +59770,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-du-nord-op103-beyer-ferdinand.webp",
-  "level": 1
+  "level": 1,
+  "tags": "바이엘 바이어 拜厄"
  },
  {
   "source": "archive",
@@ -59764,7 +59783,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_lamarseillaisefo00beye.webp",
-  "level": 1
+  "level": 1,
+  "tags": "바이엘 바이어 拜厄"
  },
  {
   "source": "archive",
@@ -59776,7 +59796,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-divertissiments-sur-lucrezia-borgia-de-donizetti-op74-beyer-ferdinand.webp",
-  "level": 1
+  "level": 1,
+  "tags": "바이엘 바이어 拜厄"
  },
  {
   "source": "archive",
@@ -59789,7 +59810,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-morceaux-lgants-op80-beyer-ferdinand.webp",
   "level": 1,
-  "tags": "6 Morceaux elegants, Op.80"
+  "tags": "바이엘 바이어 拜厄 6 Morceaux elegants, Op.80"
  },
  {
   "source": "archive",
@@ -59801,7 +59822,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-morceaux-gracieux-op110-beyer-ferdinand.webp",
-  "level": 1
+  "level": 1,
+  "tags": "바이엘 바이어 拜厄"
  },
  {
   "source": "archive",
@@ -59814,7 +59836,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-beyer-ferdinand.webp",
   "level": 1,
-  "tags": "행진곡 进行曲 Marcha"
+  "tags": "바이엘 바이어 拜厄 행진곡 进行曲 Marcha"
  },
  {
   "source": "archive",
@@ -59827,7 +59849,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op81-beyer-ferdinand.webp",
   "level": 1,
-  "tags": "녹턴 야상곡 夜曲 Nocturno Noturno"
+  "tags": "바이엘 바이어 拜厄 녹턴 야상곡 夜曲 Nocturno Noturno"
  },
  {
   "source": "archive",
@@ -61838,7 +61860,7 @@
   "license": "Public Domain",
   "thumb": "T_Virtuoso_Pianist_Hanon.webp",
   "level": 1,
-  "tags": "하농 哈农"
+  "tags": "하농 하논 哈农"
  },
  {
   "source": "archive",
@@ -61851,7 +61873,7 @@
   "license": "Public Domain",
   "thumb": "T_hanonvirtuosopia00hano.webp",
   "level": 1,
-  "tags": "하농 哈农"
+  "tags": "하농 하논 哈农"
  },
  {
   "source": "archive",
@@ -61864,7 +61886,7 @@
   "license": "Public Domain",
   "thumb": "T_virtuosopianisti9259unse.webp",
   "level": 1,
-  "tags": "하농 哈农"
+  "tags": "하농 하논 哈农"
  },
  {
   "source": "archive",
@@ -61890,7 +61912,7 @@
   "license": "Public Domain",
   "thumb": "T_dizionariostoric12bert.webp",
   "level": 2,
-  "tags": "Dizionario storico-critico degli scrittori di musica e de' piu celebri artisti tutte le nazioni si antiche che modern"
+  "tags": "베르티니 贝尔蒂尼 Dizionario storico-critico degli scrittori di musica e de' piu celebri artisti tutte le nazioni si antiche che modern"
  },
  {
   "source": "archive",
@@ -61902,7 +61924,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_progressivecompl00bertrich.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -61915,7 +61938,7 @@
   "license": "Public Domain",
   "thumb": "T_dizionariostori00bertgoog.webp",
   "level": 2,
-  "tags": "Dizionario storico-critico degli scrittori di musica e de'piu celebri ..."
+  "tags": "베르티니 贝尔蒂尼 Dizionario storico-critico degli scrittori di musica e de'piu celebri ..."
  },
  {
   "source": "archive",
@@ -61927,7 +61950,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_artoffingerdexte06czer.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -61939,7 +61963,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_twentyfiveeasyst100bert.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -61952,7 +61977,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-op29-bertini-henri.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "베르티니 贝尔蒂尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -61964,7 +61989,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-sextet-no5-op124-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -61977,7 +62003,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-faciles-et-progressives-op100-bertini-henri.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "베르티니 贝尔蒂尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -61990,7 +62016,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-op32-bertini-henri.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "베르티니 贝尔蒂尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -62002,7 +62028,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-solos-de-concours-op167-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62015,7 +62042,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-op137-bertini-henri.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "베르티니 贝尔蒂尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -62027,7 +62054,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_valdibisenzio00bertini.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62040,7 +62068,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-musicales-op97-bertini-henri.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "베르티니 贝尔蒂尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -62053,7 +62081,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-etudes-op66-bertini-henri.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "베르티니 贝尔蒂尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -62065,7 +62093,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_2egrandsextuorpo00bert.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62078,7 +62107,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-fantaisie-sur-un-thme-de-pacini-op113-bertini-henri.webp",
   "level": 3,
-  "tags": "Grande Fantaisie sur un Theme de Pacini, Op.113"
+  "tags": "베르티니 贝尔蒂尼 Grande Fantaisie sur un Theme de Pacini, Op.113"
  },
  {
   "source": "archive",
@@ -62090,7 +62119,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-sextet-no3-op90-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62102,7 +62132,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-sextet-no2-op85-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62114,7 +62145,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-pour-le-piano-op109-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62126,7 +62158,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_troisimegrandsex00bert.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62138,7 +62171,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-de-concours-no2-op121-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62150,7 +62184,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-brillant-op37-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62162,7 +62197,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-trio-op43-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62174,7 +62210,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-sextet-no4-op114-bertini-henri.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62187,7 +62224,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-fantaisie-etude-op46-bertini-henri.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "베르티니 贝尔蒂尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "archive",
@@ -62199,7 +62236,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b10000057.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62211,7 +62249,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_legatostaccato4001bert.webp",
-  "level": 2
+  "level": 2,
+  "tags": "베르티니 贝尔蒂尼"
  },
  {
   "source": "archive",
@@ -62562,7 +62601,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op61-oesten-theodore.webp",
   "level": 2,
-  "tags": "Maiblumchen, Op.61"
+  "tags": "오이스텐 외스텐 厄斯滕 Maiblumchen, Op.61"
  },
  {
   "source": "archive",
@@ -62574,7 +62613,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-ditalie-op57-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62586,7 +62626,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_CSM_01492.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62598,7 +62639,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-de-lucrezia-borgia-op32-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62610,7 +62652,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-op99-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62623,7 +62666,7 @@
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-op175-oesten-theodore.webp",
   "level": 2,
-  "tags": "Alpineglockchen, Op.175"
+  "tags": "오이스텐 외스텐 厄斯滕 Alpineglockchen, Op.175"
  },
  {
   "source": "archive",
@@ -62635,7 +62678,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-de-lucia-di-lammermoor-op30-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62647,7 +62691,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-carnaval-de-venise-op37-oesten-theodore.webp",
-  "level": 3
+  "level": 3,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62660,7 +62705,7 @@
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-op193-oesten-theodore.webp",
   "level": 2,
-  "tags": "Alpengluhen, Op.193"
+  "tags": "오이스텐 외스텐 厄斯滕 Alpengluhen, Op.193"
  },
  {
   "source": "archive",
@@ -62673,7 +62718,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-lopra-op78-oesten-theodore.webp",
   "level": 3,
-  "tags": "Bluettes de l'opera, Op.78"
+  "tags": "오이스텐 외스텐 厄斯滕 Bluettes de l'opera, Op.78"
  },
  {
   "source": "archive",
@@ -62685,7 +62730,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-song-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62698,7 +62744,7 @@
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-der-liebe-op100-oesten-theodore.webp",
   "level": 2,
-  "tags": "Klange der Liebe, Op.100"
+  "tags": "오이스텐 외스텐 厄斯滕 Klange der Liebe, Op.100"
  },
  {
   "source": "archive",
@@ -62711,7 +62757,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op73-oesten-theodore.webp",
   "level": 2,
-  "tags": "Marchen-Fantasien, Op.73"
+  "tags": "오이스텐 외스텐 厄斯滕 Marchen-Fantasien, Op.73"
  },
  {
   "source": "archive",
@@ -62723,7 +62769,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-op94-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62736,7 +62783,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op278-oesten-theodore.webp",
   "level": 2,
-  "tags": "Zauberglokchen, Op.278"
+  "tags": "오이스텐 외스텐 厄斯滕 Zauberglokchen, Op.278"
  },
  {
   "source": "archive",
@@ -62749,7 +62796,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-kleine-fantasien-ber-beliebte-volkslieder-op49-oesten-theodore.webp",
   "level": 2,
-  "tags": "12 Kleine Fantasien uber beliebte Volkslieder, Op.49"
+  "tags": "오이스텐 외스텐 厄斯滕 12 Kleine Fantasien uber beliebte Volkslieder, Op.49"
  },
  {
   "source": "archive",
@@ -62761,7 +62808,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-der-gondel-op366-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62773,7 +62821,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-op105-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62786,7 +62835,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-mlodies-op104-oesten-theodore.webp",
   "level": 2,
-  "tags": "Couronnes de melodies, Op.104"
+  "tags": "오이스텐 외스텐 厄斯滕 Couronnes de melodies, Op.104"
  },
  {
   "source": "archive",
@@ -62798,7 +62847,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-aux-dames-op83-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62810,7 +62860,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-beliebter-deutscher-volkslieder-op96-oesten-theodore.webp",
-  "level": 3
+  "level": 3,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62823,7 +62874,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-morceaux-mlodieux-op48-oesten-theodore.webp",
   "level": 2,
-  "tags": "3 Morceaux melodieux, Op.48"
+  "tags": "오이스텐 외스텐 厄斯滕 3 Morceaux melodieux, Op.48"
  },
  {
   "source": "archive",
@@ -62835,7 +62886,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-op9-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62848,7 +62900,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op65-oesten-theodore.webp",
   "level": 2,
-  "tags": "Kindertraume, Op.65"
+  "tags": "오이스텐 외스텐 厄斯滕 Kindertraume, Op.65"
  },
  {
   "source": "archive",
@@ -62860,7 +62912,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-avant-op185-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62872,7 +62925,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-op63-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62885,7 +62939,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-frhling-op337-oesten-theodore.webp",
   "level": 2,
-  "tags": "Neuer Fruhling, Op.337"
+  "tags": "오이스텐 외스텐 厄斯滕 Neuer Fruhling, Op.337"
  },
  {
   "source": "archive",
@@ -62897,7 +62951,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-amusements-op39-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62909,7 +62964,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-op56-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62922,7 +62978,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-de-lopra-op43-oesten-theodore.webp",
   "level": 3,
-  "tags": "Repertoire de l'opera, Op.43"
+  "tags": "오이스텐 외스텐 厄斯滕 Repertoire de l'opera, Op.43"
  },
  {
   "source": "archive",
@@ -62935,7 +62991,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-clavier-werke-oesten-theodore.webp",
   "level": 2,
-  "tags": "Ausgewahlte Clavier-Werke"
+  "tags": "오이스텐 외스텐 厄斯滕 Ausgewahlte Clavier-Werke"
  },
  {
   "source": "archive",
@@ -62948,7 +63004,7 @@
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-op173-oesten-theodore.webp",
   "level": 2,
-  "tags": "Fruhlingsknospen, Op.173"
+  "tags": "오이스텐 외스텐 厄斯滕 Fruhlingsknospen, Op.173"
  },
  {
   "source": "archive",
@@ -62961,7 +63017,7 @@
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-fllhorn-op116-oesten-theodore.webp",
   "level": 2,
-  "tags": "Das Fullhorn, Op.116"
+  "tags": "오이스텐 외스텐 厄斯滕 Das Fullhorn, Op.116"
  },
  {
   "source": "archive",
@@ -62973,7 +63029,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-operngarten-op164-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62985,7 +63042,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-fantaisies-brillantes-op67-oesten-theodore.webp",
-  "level": 3
+  "level": 3,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -62997,7 +63055,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-melodien-op45-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63010,7 +63069,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-op85-oesten-theodore.webp",
   "level": 2,
-  "tags": "Freudenklange, Op.85"
+  "tags": "오이스텐 외스텐 厄斯滕 Freudenklange, Op.85"
  },
  {
   "source": "archive",
@@ -63023,7 +63082,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-lgante-sur-mignon-op400-oesten-theodore.webp",
   "level": 2,
-  "tags": "Fantaisie elegante sur 'Mignon', Op.400"
+  "tags": "오이스텐 외스텐 厄斯滕 Fantaisie elegante sur 'Mignon', Op.400"
  },
  {
   "source": "archive",
@@ -63035,7 +63094,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-morceaux-de-genre-op92-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63047,7 +63107,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-den-lagunen-op222-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63059,7 +63120,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-de-martha-op34-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63071,7 +63133,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-op160-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63083,7 +63146,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-paraphrasen-op277-oesten-theodore.webp",
-  "level": 3
+  "level": 3,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63095,7 +63159,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-volksweisen-op329-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63107,7 +63172,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-rosengefilde-op318-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63120,7 +63186,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-stndchen-op241-oesten-theodore.webp",
   "level": 2,
-  "tags": "세레나데 小夜曲 Irisches Standchen, Op.241"
+  "tags": "오이스텐 외스텐 厄斯滕 세레나데 小夜曲 Irisches Standchen, Op.241"
  },
  {
   "source": "archive",
@@ -63132,7 +63198,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-de-loisir-op102-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63145,7 +63212,7 @@
   "license": "Public Domain",
   "thumb": "https://raw.githubusercontent.com/NAKJIKING/free-sheets-3/main/thumbs/imslp-der-liebe-op50-oesten-theodore.webp",
   "level": 2,
-  "tags": "Klange der Liebe, Op.50"
+  "tags": "오이스텐 외스텐 厄斯滕 Klange der Liebe, Op.50"
  },
  {
   "source": "archive",
@@ -63157,7 +63224,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-of-love-op50-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63169,7 +63237,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-de-salon-op38-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63182,7 +63251,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-italiennes-op125-oesten-theodore.webp",
   "level": 2,
-  "tags": "Pensees Italiennes, Op.125"
+  "tags": "오이스텐 외스텐 厄斯滕 Pensees Italiennes, Op.125"
  },
  {
   "source": "archive",
@@ -63194,7 +63263,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_imslp-allemandes-op62-oesten-theodore.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63206,7 +63276,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_sm_slumbersong.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63218,7 +63289,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b10006989.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63231,7 +63303,7 @@
   "license": "Public Domain",
   "thumb": "T_b10334300.webp",
   "level": 2,
-  "tags": "왈츠 圆舞曲 华尔兹 Vals Valsa"
+  "tags": "오이스텐 외스텐 厄斯滕 왈츠 圆舞曲 华尔兹 Vals Valsa"
  },
  {
   "source": "archive",
@@ -63244,7 +63316,7 @@
   "license": "Public Domain",
   "thumb": "T_b10010919.webp",
   "level": 2,
-  "tags": "월광 月光 Mondschein Sonate au clair de lune Claro Luna ao Luar"
+  "tags": "오이스텐 외스텐 厄斯滕 월광 月光 Mondschein Sonate au clair de lune Claro Luna ao Luar"
  },
  {
   "source": "archive",
@@ -63256,7 +63328,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b10000185.webp",
-  "level": 3
+  "level": 3,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63269,7 +63342,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-elyses-op80-oesten-theodore.webp",
   "level": 2,
-  "tags": "Soirees elysees, Op.80"
+  "tags": "오이스텐 외스텐 厄斯滕 Soirees elysees, Op.80"
  },
  {
   "source": "archive",
@@ -63281,7 +63354,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b10249837.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63293,7 +63367,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_gondelliedfurdas00oest.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63306,7 +63381,7 @@
   "license": "Public Domain",
   "thumb": "T_b10000379.webp",
   "level": 2,
-  "tags": "Alpine bells = (Alpenglockchen) : tyrolienne"
+  "tags": "오이스텐 외스텐 厄斯滕 Alpine bells = (Alpenglockchen) : tyrolienne"
  },
  {
   "source": "archive",
@@ -63318,7 +63393,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b10003381.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63330,7 +63406,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_sm_styriencarneval.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63342,7 +63419,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b10407017.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63355,7 +63433,7 @@
   "license": "Public Domain",
   "thumb": "T_b10001529.webp",
   "level": 2,
-  "tags": "The brightest eyes = Die schonsten Augen : [aus?] Liederharfe op. 358"
+  "tags": "오이스텐 외스텐 厄斯滕 The brightest eyes = Die schonsten Augen : [aus?] Liederharfe op. 358"
  },
  {
   "source": "archive",
@@ -63367,7 +63445,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_sm_chantdoiseauxaubocage.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63379,7 +63458,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_sm_ernaniop63no4.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63391,7 +63471,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_gml-us1850s-01-oeste-gipse.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63403,7 +63484,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_sm_soundsoflove.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63426,7 +63508,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b105166844.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63439,7 +63522,7 @@
   "license": "Public Domain",
   "thumb": "T_b90408147.webp",
   "level": 2,
-  "tags": "녹턴 야상곡 夜曲 Nocturno Noturno"
+  "tags": "오이스텐 외스텐 厄斯滕 녹턴 야상곡 夜曲 Nocturno Noturno"
  },
  {
   "source": "archive",
@@ -63451,7 +63534,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_gml-cinci-11-oeste-lecar.webp",
-  "level": 3
+  "level": 3,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63463,7 +63547,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b88418042.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63476,7 +63561,7 @@
   "license": "Public Domain",
   "thumb": "T_b88340570.webp",
   "level": 2,
-  "tags": "캐럴 크리스마스 성탄 圣诞 Weihnachten Navidad villancico Natal"
+  "tags": "오이스텐 외스텐 厄斯滕 캐럴 크리스마스 성탄 圣诞 Weihnachten Navidad villancico Natal"
  },
  {
   "source": "archive",
@@ -63488,7 +63573,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_gml-cinci-12-oeste-gonde.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63500,7 +63586,8 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_b88470556.webp",
-  "level": 2
+  "level": 2,
+  "tags": "오이스텐 외스텐 厄斯滕"
  },
  {
   "source": "archive",
@@ -63930,7 +64017,7 @@
   "license": "Public Domain",
   "thumb": "T_KlavierschuleOderAnweisungZumKlavierspielenFrLehrerUndLernende.webp",
   "level": 1,
-  "tags": "Klavierschule oder Anweisung zum Klavierspielen fur Lehrer und Lernende Daniel Gottlob Turk"
+  "tags": "튀르크 튜르크 图尔克 Klavierschule oder Anweisung zum Klavierspielen fur Lehrer und Lernende Daniel Gottlob Turk"
  },
  {
   "source": "archive",
@@ -63943,7 +64030,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-trk-daniel-gottlob.webp",
   "level": 1,
-  "tags": "Daniel Gottlob Turk"
+  "tags": "튀르크 튜르크 图尔克 Daniel Gottlob Turk"
  },
  {
   "source": "archive",
@@ -63956,7 +64043,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-hirten-bey-der-krippe-zu-bethlehem-trk-daniel-gottlob.webp",
   "level": 1,
-  "tags": "Daniel Gottlob Turk"
+  "tags": "튀르크 튜르크 图尔克 Daniel Gottlob Turk"
  },
  {
   "source": "archive",
@@ -63969,7 +64056,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-leichte-klaviersonaten-trk-daniel-gottlob.webp",
   "level": 1,
-  "tags": "Daniel Gottlob Turk"
+  "tags": "튀르크 튜르크 图尔克 Daniel Gottlob Turk"
  },
  {
   "source": "archive",
@@ -63981,7 +64068,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_sixtystudiesforv02wohl.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "archive",
@@ -63993,7 +64081,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_fortyelementarys54wohl.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "archive",
@@ -64005,7 +64094,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_fiftyeasymelodio74wohl.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "archive",
@@ -64017,7 +64107,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_cu31924022479798.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "archive",
@@ -64030,7 +64121,7 @@
   "license": "Public Domain",
   "thumb": "T_guidetomusicalco00wohl.webp",
   "level": 1,
-  "tags": "인벤션 创意曲"
+  "tags": "볼파르트 볼파르 沃尔法特 인벤션 创意曲"
  },
  {
   "source": "archive",
@@ -64042,7 +64133,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-anfang-im-violinspiel-op38-wohlfahrt-franz.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "archive",
@@ -64054,7 +64146,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_sixtystudiesforv245wohl.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "archive",
@@ -64066,7 +64159,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-facile-op69-wohlfahrt-franz.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "archive",
@@ -64078,7 +64172,8 @@
   "instrument": "Violin",
   "license": "Public Domain",
   "thumb": "T_imslp-trios-op66-wohlfahrt-franz.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "archive",
@@ -64091,7 +64186,7 @@
   "license": "Public Domain",
   "thumb": "T_10599778bsb.webp",
   "level": 1,
-  "tags": "Kinder-Klavierschule oder musikalischer ABC- und Lesebuch fur junge Pianoforte-Spieler: Herausgegeben von Heinrich Wohlf"
+  "tags": "볼파르트 볼파르 沃尔法特 Kinder-Klavierschule oder musikalischer ABC- und Lesebuch fur junge Pianoforte-Spieler: Herausgegeben von Heinrich Wohlf"
  },
  {
   "source": "archive",
@@ -64104,7 +64199,7 @@
   "license": "Public Domain",
   "thumb": "T_10599777bsb.webp",
   "level": 1,
-  "tags": "Theoretisch-praktische Modulation-Schule: die Accordfolge in den verschiedenen Stellungen, Uebergangen und Ausweichungen"
+  "tags": "볼파르트 볼파르 沃尔法特 Theoretisch-praktische Modulation-Schule: die Accordfolge in den verschiedenen Stellungen, Uebergangen und Ausweichungen"
  },
  {
   "source": "archive",
@@ -67212,7 +67307,7 @@
   "license": "Public Domain",
   "thumb": "T_sonatinaalbumcol00kh.webp",
   "level": 2,
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine Ernesto Kohler"
+  "tags": "쾰러 켈러 科勒 소나티네 소나티나 小奏鸣曲 Sonatine Ernesto Kohler"
  },
  {
   "source": "archive",
@@ -67225,7 +67320,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-musiklehre-fr-lehrende-und-lernende-khler-louis.webp",
   "level": 2,
-  "tags": "Allgemeine Musiklehre fur Lehrende und Lernende Ernesto Kohler"
+  "tags": "쾰러 켈러 科勒 Allgemeine Musiklehre fur Lehrende und Lernende Ernesto Kohler"
  },
  {
   "source": "archive",
@@ -67238,7 +67333,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-klavierschule-op300-khler-louis.webp",
   "level": 2,
-  "tags": "Ernesto Kohler"
+  "tags": "쾰러 켈러 科勒 Ernesto Kohler"
  },
  {
   "source": "archive",
@@ -67251,7 +67346,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-salonstcke-op60-khler-ernesto.webp",
   "level": 2,
-  "tags": "6 Salonstucke, Op.60 Ernesto Kohler"
+  "tags": "쾰러 켈러 科勒 6 Salonstucke, Op.60 Ernesto Kohler"
  },
  {
   "source": "archive",
@@ -67264,7 +67359,7 @@
   "license": "Public Domain",
   "thumb": "T_imslp-maitres-du-clavecin-khler-louis.webp",
   "level": 2,
-  "tags": "Ernesto Kohler"
+  "tags": "쾰러 켈러 科勒 Ernesto Kohler"
  },
  {
   "source": "archive",
@@ -91695,7 +91790,7 @@
   "license": "Public Domain",
   "thumb": "T_12studienimbrill00bere.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo 12 Studien im brillanten Style zur hoheren Ausbildung = etudes de perfectionnement dans le brillant studie"
+  "tags": "베렌스 贝伦斯 연습곡 에튀드 练习曲 Estudio Estudo 12 Studien im brillanten Style zur hoheren Ausbildung = etudes de perfectionnement dans le brillant studie"
  },
  {
   "source": "archive",
@@ -91707,7 +91802,7 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_viertesgesellsch00bere.webp",
-  "tags": "Viertes Gesellschafts-Quartett : f©or das Pianoforte zu vier H©Þnden, Violine und Violoncello, op. 80"
+  "tags": "베렌스 贝伦斯 Viertes Gesellschafts-Quartett : f©or das Pianoforte zu vier H©Þnden, Violine und Violoncello, op. 80"
  },
  {
   "source": "archive",
@@ -91719,7 +91814,7 @@
   "instrument": "Piano",
   "license": "Public Domain",
   "thumb": "T_dreitriosfurviol00bere.webp",
-  "tags": "Drei Trios fur Violine, Bratsche u. Violoncell. Op. 85"
+  "tags": "베렌스 贝伦斯 Drei Trios fur Violine, Bratsche u. Violoncell. Op. 85"
  },
  {
   "source": "archive",
@@ -92365,7 +92460,7 @@
   "license": "cc-zero",
   "thumb": "thumbs/pdmx/flute/20_Leichte_und_melodische_Lektionen_f_r_Fl_te_Op.93_vol_2_No-QmShmJ2LrjFk.webp",
   "midi": "mids/pdmx/flute/20_Leichte_und_melodische_Lektionen_f_r_Fl_te_Op.93_vol_2_No-QmShmJ2LrjFk.mid",
-  "tags": "20 Leichte und melodische Lektionen fur Flote Op.93 vol 2 No.",
+  "tags": "쾰러 켈러 科勒 20 Leichte und melodische Lektionen fur Flote Op.93 vol 2 No.",
   "level": 1
  },
  {
@@ -94231,7 +94326,7 @@
   "license": "cc-zero",
   "thumb": "thumbs/pdmx/violin/Nocturne_n1-QmckmNN1be5W.webp",
   "midi": "mids/pdmx/violin/Nocturne_n1-QmckmNN1be5W.mid",
-  "tags": "녹턴 야상곡 夜曲 Nocturno Noturno Freidrich Burgmuller",
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 녹턴 야상곡 夜曲 Nocturno Noturno Freidrich Burgmuller",
   "level": 2
  },
  {
@@ -97087,7 +97182,7 @@
   "midi": "mids/pdmx2/piano/Karussell-Walzer-QmSZxbaibzGN.mid",
   "thumb": "thumbs/pdmx2/piano/Karussell-Walzer-QmSZxbaibzGN.webp",
   "level": 1,
-  "tags": "왈츠 圆舞曲 华尔兹 Vals Valsa"
+  "tags": "스트레아보그 斯特里博格 왈츠 圆舞曲 华尔兹 Vals Valsa"
  },
  {
   "source": "pdmx2",
@@ -102259,7 +102354,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/piano/The_Virtuoso_Pianist-QmWMgJiK1iXj.mid",
   "thumb": "thumbs/pdmx2/piano/The_Virtuoso_Pianist-QmWMgJiK1iXj.webp",
-  "level": 1
+  "level": 1,
+  "tags": "하농 하논 哈农"
  },
  {
   "source": "pdmx2",
@@ -102821,7 +102917,7 @@
   "midi": "mids/pdmx2/piano/Variation_on_a_Waltz_by_Diabelli_S.147-QmZuY5Bo9tvf.mid",
   "thumb": "thumbs/pdmx2/piano/Variation_on_a_Waltz_by_Diabelli_S.147-QmZuY5Bo9tvf.webp",
   "level": 2,
-  "tags": "왈츠 圆舞曲 华尔兹 Vals Valsa 변주곡 变奏曲 Variaciones Variações"
+  "tags": "디아벨리 迪亚贝利 왈츠 圆舞曲 华尔兹 Vals Valsa 변주곡 变奏曲 Variaciones Variações"
  },
  {
   "source": "pdmx2",
@@ -103051,7 +103147,7 @@
   "midi": "mids/pdmx2/piano/7_Piano_Sonatinas_Op.168-QmZLmH4rC6AG.mid",
   "thumb": "thumbs/pdmx2/piano/7_Piano_Sonatinas_Op.168-QmZLmH4rC6AG.webp",
   "level": 2,
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine"
+  "tags": "디아벨리 迪亚贝利 소나티네 소나티나 小奏鸣曲 Sonatine"
  },
  {
   "source": "pdmx2",
@@ -103962,7 +104058,7 @@
   "midi": "mids/pdmx2/guitar/Sonatine_in_A_major_Op.68-Qmc4qEpe79aX.mid",
   "thumb": "thumbs/pdmx2/guitar/Sonatine_in_A_major_Op.68-Qmc4qEpe79aX.webp",
   "level": 2,
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine"
+  "tags": "디아벨리 迪亚贝利 소나티네 소나티나 小奏鸣曲 Sonatine"
  },
  {
   "source": "pdmx2",
@@ -104551,7 +104647,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/piano/Elementary_Studies__op_176_-QmUoPiKBCbG6.mid",
   "thumb": "thumbs/pdmx2/piano/Elementary_Studies__op_176_-QmUoPiKBCbG6.webp",
-  "level": 1
+  "level": 1,
+  "tags": "뒤베르누아 迪韦尔努瓦"
  },
  {
   "source": "pdmx2",
@@ -104742,7 +104839,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/guitar/Allegretto_in_C_major-QmUj6e3PZmuV.mid",
   "thumb": "thumbs/pdmx2/guitar/Allegretto_in_C_major-QmUj6e3PZmuV.webp",
-  "level": 2
+  "level": 2,
+  "tags": "디아벨리 迪亚贝利"
  },
  {
   "source": "pdmx2",
@@ -105711,7 +105809,7 @@
   "midi": "mids/pdmx2/guitar/_WIP__Diabelli_-_Diff_rentes_pi_ces_tr_s_faciles_pour_guitar-QmdmpepG8DrM.mid",
   "thumb": "thumbs/pdmx2/guitar/_WIP__Diabelli_-_Diff_rentes_pi_ces_tr_s_faciles_pour_guitar-QmdmpepG8DrM.webp",
   "level": 2,
-  "tags": "(WIP) Diabelli - Differentes pieces tres faciles pour guitare et pianoforte par A. Cahier II Andante"
+  "tags": "디아벨리 迪亚贝利 (WIP) Diabelli - Differentes pieces tres faciles pour guitare et pianoforte par A. Cahier II Andante"
  },
  {
   "source": "pdmx2",
@@ -108189,7 +108287,7 @@
   "midi": "mids/pdmx2/piano/18__tudes_Op.109-QmPqfTaax1tf.mid",
   "thumb": "thumbs/pdmx2/piano/18__tudes_Op.109-QmPqfTaax1tf.webp",
   "level": 3,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo 18 Etudes Op.109"
+  "tags": "부르크뮐러 부르그뮐러 布格缪勒 연습곡 에튀드 练习曲 Estudio Estudo 18 Etudes Op.109"
  },
  {
   "source": "pdmx2",
@@ -110076,7 +110174,8 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/piano/La_Violette-QmWvdp3Ccawz.mid",
   "thumb": "thumbs/pdmx2/piano/La_Violette-QmWvdp3Ccawz.webp",
-  "level": 1
+  "level": 1,
+  "tags": "스트레아보그 斯特里博格"
  },
  {
   "source": "pdmx2",
@@ -110296,7 +110395,7 @@
   "midi": "mids/pdmx2/piano/L.K_hler_Sonatina_-_OP_300_NO_1-QmWBZzJA4qh6.mid",
   "thumb": "thumbs/pdmx2/piano/L.K_hler_Sonatina_-_OP_300_NO_1-QmWBZzJA4qh6.webp",
   "level": 2,
-  "tags": "소나티네 소나티나 小奏鸣曲 Sonatine L.Kohler Sonatina - OP 300 NO:1 Louis Kohler"
+  "tags": "쾰러 켈러 科勒 소나티네 소나티나 小奏鸣曲 Sonatine L.Kohler Sonatina - OP 300 NO:1 Louis Kohler"
  },
  {
   "source": "pdmx2",
@@ -110338,7 +110437,7 @@
   "midi": "mids/pdmx2/piano/Update_Scherzo_und_Trio-QmWMW5UySvHM.mid",
   "thumb": "thumbs/pdmx2/piano/Update_Scherzo_und_Trio-QmWMW5UySvHM.webp",
   "level": 3,
-  "tags": "스케르초 谐谑曲"
+  "tags": "디아벨리 迪亚贝利 스케르초 谐谑曲"
  },
  {
   "source": "pdmx2",
@@ -113561,7 +113660,7 @@
   "midi": "mids/pdmx2/piano/Etudes_Enfantines-Qmayu8CY6McR.mid",
   "thumb": "thumbs/pdmx2/piano/Etudes_Enfantines-Qmayu8CY6McR.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "르무안 勒穆瓦纳 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "pdmx2",
@@ -115632,7 +115731,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/piano/60_Studies_for_the_Violin_Op.45-QmXCCRTFJq76.mid",
   "thumb": "thumbs/pdmx2/piano/60_Studies_for_the_Violin_Op.45-QmXCCRTFJq76.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "pdmx2",
@@ -116292,7 +116392,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/piano/Allegro-Qme4dFzXfUTx.mid",
   "thumb": "thumbs/pdmx2/piano/Allegro-Qme4dFzXfUTx.webp",
-  "level": 1
+  "level": 1,
+  "tags": "레이너글 雷纳格尔"
  },
  {
   "source": "pdmx2",
@@ -121398,7 +121499,7 @@
   "midi": "mids/pdmx2/piano/Song_without_words-QmR6EvqAfwKF.mid",
   "thumb": "thumbs/pdmx2/piano/Song_without_words-QmR6EvqAfwKF.webp",
   "level": 1,
-  "tags": "무언가 无词歌 Romances sans paroles"
+  "tags": "스핀들러 施平德勒 무언가 无词歌 Romances sans paroles"
  },
  {
   "source": "pdmx2",
@@ -124670,7 +124771,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/piano/Op_101-QmcUSHF7CPTo.mid",
   "thumb": "thumbs/pdmx2/piano/Op_101-QmcUSHF7CPTo.webp",
-  "level": 1
+  "level": 1,
+  "tags": "바이엘 바이어 拜厄"
  },
  {
   "source": "pdmx2",
@@ -124993,7 +125095,8 @@
   "license": "publicdomain",
   "midi": "mids/pdmx2/violin/60_Studies_for_the_Violin_Op.45-QmQuMuby74PC.mid",
   "thumb": "thumbs/pdmx2/violin/60_Studies_for_the_Violin_Op.45-QmQuMuby74PC.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "pdmx2",
@@ -125006,7 +125109,8 @@
   "license": "cc-zero",
   "midi": "mids/pdmx2/violin/60_Studies_for_the_Violin_Op.45-Qmd9FJ11rvwE.mid",
   "thumb": "thumbs/pdmx2/violin/60_Studies_for_the_Violin_Op.45-Qmd9FJ11rvwE.webp",
-  "level": 1
+  "level": 1,
+  "tags": "볼파르트 볼파르 沃尔法特"
  },
  {
   "source": "pdmx2",
@@ -129573,7 +129677,7 @@
   "midi": "mids/pdmx2/piano/_tudes_enfantines_Op.37-QmQS3ZrekjxA.mid",
   "thumb": "thumbs/pdmx2/piano/_tudes_enfantines_Op.37-QmQS3ZrekjxA.webp",
   "level": 1,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo Etudes enfantines Op.37"
+  "tags": "르무안 勒穆瓦纳 연습곡 에튀드 练习曲 Estudio Estudo Etudes enfantines Op.37"
  },
  {
   "source": "pdmx2",
@@ -132237,7 +132341,7 @@
   "midi": "mids/pdmx2/piano/24_Etudes_Op.29-Qmb1Jz9hLTxa.mid",
   "thumb": "thumbs/pdmx2/piano/24_Etudes_Op.29-Qmb1Jz9hLTxa.webp",
   "level": 2,
-  "tags": "연습곡 에튀드 练习曲 Estudio Estudo"
+  "tags": "베르티니 贝尔蒂尼 연습곡 에튀드 练习曲 Estudio Estudo"
  },
  {
   "source": "pdmx2",
