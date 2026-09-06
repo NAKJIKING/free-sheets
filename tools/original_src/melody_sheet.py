@@ -119,6 +119,16 @@ def notes_from_midi(midi, track, start_tick, end_tick, top=True, min_len=48, pmi
     fixed = out2
     return fixed
 
+def footer_lines(footer):
+    """푸터 마크업. 긴 저작자표시(CC BY-SA)는 ' Licensed ' 앞에서 두 줄로
+    나눈다 — 한 줄이면 A4 폭(595pt)을 넘어 양끝이 인쇄에서 잘린다."""
+    if ' Licensed ' in footer and len(footer) > 105:
+        a, b = footer.split(' Licensed ', 1)
+        return ('\\center-column { \\line { "%s" } \\line { "Licensed %s" } }'
+                % (a, b))
+    return '\\line { "%s" }' % footer
+
+
 def to_lily(events, time_sig, transpose=0, flats=False, partial=0, collapse=True, pad=True, key='c \\major'):
     pref = key_pref(key)[0]; scale = scale_names(key)
     """(on, off, pitch|None) 목록 → LilyPond 음표 문자열 + 계이름 목록.
@@ -185,8 +195,8 @@ TEMPLATE = r'''\version "2.24.4"
   left-margin = 16\mm right-margin = 16\mm
   ragged-bottom = ##t  ragged-last-bottom = ##t
   #(define fonts (set-global-fonts #:roman "%(font)s" #:sans "%(font)s" #:factor (/ staff-height pt 20)))
-  oddFooterMarkup = \markup { \fill-line { \fontsize #-3 \line { "%(footer)s" } } }
-  evenFooterMarkup = \markup { \fill-line { \fontsize #-3 \line { "%(footer)s" } } }
+  oddFooterMarkup = \markup { \fill-line { \fontsize #-3 %(footer)s } }
+  evenFooterMarkup = \markup { \fill-line { \fontsize #-3 %(footer)s } }
 }
 \header {
   title = \markup { \fontsize #%(tsize)s \bold "%(title_ko)s" }
@@ -271,7 +281,7 @@ def build(cfg, outdir):
     ly = TEMPLATE % dict(
         font=cfg.get('font', 'Nanum Gothic'),
         tsize=cfg.get('tsize', 3), ssize=cfg.get('ssize', 0),
-        staff=cfg.get('staff', 24), footer=cfg.get('footer', ''), title_ko=cfg['title_ko'], subtitle=cfg.get('subtitle', ''),
+        staff=cfg.get('staff', 24), footer=footer_lines(cfg.get('footer', '')), title_ko=cfg['title_ko'], subtitle=cfg.get('subtitle', ''),
         composer=cfg.get('composer', ''), arranger=cfg.get('arranger', '단선율 초급판 · 내 악보함'),
         key=cfg['key'], time=cfg['time'], tempo=cfg.get('tempo', 96),
         partial=('\\partial ' + cfg['partial']) if cfg.get('partial') else '', melody=mel, lyrics=' '.join(sol))

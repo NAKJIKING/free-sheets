@@ -162,7 +162,7 @@ def build_variant(cfg, inst_id, outdir, tag=None, lang='ko'):
     big, line, instname, tagline, font = header_for(cfg, inst_id, lang)
     ly = M.TEMPLATE % dict(
         font=font, tsize=fit_size(big, True), ssize=fit_size(line, False),
-        staff=cfg.get('staff', 24), footer=cfg.get('footer', ''), title_ko=big,
+        staff=cfg.get('staff', 24), footer=M.footer_lines(cfg.get('footer', '')), title_ko=big,
         subtitle=line,
         composer=composer_for(cfg, lang), arranger=tagline,
         key=wkey, time=cfg['time'], tempo=cfg.get('tempo', 96),
