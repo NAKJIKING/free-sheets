@@ -1,0 +1,3002 @@
+[
+ {
+  "source": "original",
+  "title": "Gymnopédie No.1",
+  "file": "raw/original/piano/gymno.pdf",
+  "midi": "mids/original/piano/gymno.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Die Forelle — The Trout",
+  "file": "raw/original/piano/forelle.pdf",
+  "midi": "mids/original/piano/forelle.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "original",
+  "title": "Rondeau from Abdelazer",
+  "file": "raw/original/piano/rondeau.pdf",
+  "midi": "mids/original/piano/rondeau.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Kuckuck, Kuckuck",
+  "file": "raw/original/piano/kuckuck.pdf",
+  "midi": "mids/original/piano/kuckuck.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Salut d'amour",
+  "file": "raw/original/piano/salut.pdf",
+  "midi": "mids/original/piano/salut.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "original",
+  "title": "Old MacDonald Had a Farm",
+  "file": "raw/original/piano/old_macdonald.pdf",
+  "midi": "mids/original/piano/old_macdonald.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Twinkle, Twinkle, Little Star",
+  "file": "raw/original/piano/twinkle.pdf",
+  "midi": "mids/original/piano/twinkle.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Polonaise in G minor BWV Anh.119",
+  "file": "raw/original/piano/polonaise_g.pdf",
+  "midi": "mids/original/piano/polonaise_g.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "original",
+  "title": "My Old Kentucky Home",
+  "file": "raw/original/piano/kentucky.pdf",
+  "midi": "mids/original/piano/kentucky.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Ode to Joy",
+  "file": "raw/original/piano/ode.pdf",
+  "midi": "mids/original/piano/ode.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Waltz Op.39 No.15",
+  "file": "raw/original/piano/brahms_waltz.pdf",
+  "midi": "mids/original/piano/brahms_waltz.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "original",
+  "title": "Sonatina",
+  "file": "raw/original/piano/gurlitt_sonatina.pdf",
+  "midi": "mids/original/piano/gurlitt_sonatina.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Down by the Lakeside",
+  "file": "raw/original/piano/lakeside.pdf",
+  "midi": "mids/original/piano/lakeside.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Song without Words",
+  "file": "raw/original/piano/spindler.pdf",
+  "midi": "mids/original/piano/spindler.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "An die Musik D.547",
+  "file": "raw/original/piano/an_die_musik.pdf",
+  "midi": "mids/original/piano/an_die_musik.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "London Bridge Is Falling Down",
+  "file": "raw/original/piano/london_bridge.pdf",
+  "midi": "mids/original/piano/london_bridge.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "The Swan — Le Cygne",
+  "file": "raw/original/piano/swan.pdf",
+  "midi": "mids/original/piano/swan.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "original",
+  "title": "100 Progressive Studies, Op.139 No.2",
+  "file": "raw/original/piano/czerny139_2.pdf",
+  "midi": "mids/original/piano/czerny139_2.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "March in D major BWV Anh.122",
+  "file": "raw/original/piano/march_d.pdf",
+  "midi": "mids/original/piano/march_d.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Santa Lucia",
+  "file": "raw/original/piano/santa_lucia.pdf",
+  "midi": "mids/original/piano/santa_lucia.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Je te veux",
+  "file": "raw/original/piano/je_te_veux.pdf",
+  "midi": "mids/original/piano/je_te_veux.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Suo Gân",
+  "file": "raw/original/piano/suogan.pdf",
+  "midi": "mids/original/piano/suogan.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Karussell-Walzer",
+  "file": "raw/original/piano/karussell.pdf",
+  "midi": "mids/original/piano/karussell.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "We Wish You a Merry Christmas",
+  "file": "raw/original/piano/we_wish.pdf",
+  "midi": "mids/original/piano/we_wish.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Mary Had a Little Lamb",
+  "file": "raw/original/piano/mary_lamb.pdf",
+  "midi": "mids/original/piano/mary_lamb.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Gymnopédie No.2",
+  "file": "raw/original/piano/gymno2.pdf",
+  "midi": "mids/original/piano/gymno2.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Rock of Ages",
+  "file": "raw/original/piano/rockofages.pdf",
+  "midi": "mids/original/piano/rockofages.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "O Christmas Tree — O Tannenbaum",
+  "file": "raw/original/piano/tannenbaum.pdf",
+  "midi": "mids/original/piano/tannenbaum.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "Oh! Susanna",
+  "file": "raw/original/piano/susanna.pdf",
+  "midi": "mids/original/piano/susanna.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "original",
+  "title": "The First Noel",
+  "file": "raw/original/piano/firstnoel.pdf",
+  "midi": "mids/original/piano/firstnoel.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "O du eselhafter Martin (Jakob), KV 560b",
+  "file": "raw/mutopia/voice/MozartWA__KV560b__k560b.pdf",
+  "midi": "mids/mutopia/voice/MozartWA__KV560b__k560b.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Voice",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "Piano Quartet KV 478, KV 477",
+  "file": "raw/mutopia/piano/MozartWA__KV478__k478__k478-lys.pdf",
+  "midi": "mids/mutopia/piano/MozartWA__KV478__k478__k478-lys.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Hen Wlad Fy Nhadau",
+  "file": "raw/mutopia/voice/JamesJ__henwlad.pdf",
+  "midi": "mids/mutopia/voice/JamesJ__henwlad.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Voice",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "The Holly and the Ivy",
+  "file": "raw/mutopia/voice/Traditional__thehollyandtheivy.pdf",
+  "midi": "mids/mutopia/voice/Traditional__thehollyandtheivy.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Voice",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "Ellens Song",
+  "file": "raw/mutopia/piano/ellens_song-a4.pdf",
+  "midi": "mids/mutopia/piano/ellens_song-a4.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Bwv 1012 3",
+  "file": "raw/mutopia/cello/bwv-1012-3-a4.pdf",
+  "midi": "mids/mutopia/cello/bwv-1012-3-a4.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Cello",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Capricio",
+  "file": "raw/mutopia/flute/QuantzJJ__Capricio.pdf",
+  "midi": "mids/mutopia/flute/QuantzJJ__Capricio.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Minuetto",
+  "file": "raw/mutopia/flute/QuantzJJ__Minuetto.pdf",
+  "midi": "mids/mutopia/flute/QuantzJJ__Minuetto.mid",
+  "pages": 4,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "O Magnum Mysterium",
+  "file": "raw/mutopia/voice/VictoriaTLd__o_magnum_mysterium.pdf",
+  "midi": "mids/mutopia/voice/VictoriaTLd__o_magnum_mysterium.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Voice",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "In a Summer Garden",
+  "file": "raw/mutopia/flute/BrownCJ__bagatelle1.pdf",
+  "midi": "mids/mutopia/flute/BrownCJ__bagatelle1.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "The Magic Flute (Die Zauberflöte), KV 620",
+  "file": "raw/mutopia/voice/MozartWA__KV620__magicflute-15-aria__magicflute-15-aria-lys__parts.pdf",
+  "midi": "mids/mutopia/voice/MozartWA__KV620__magicflute-15-aria__magicflute-15-aria-lys__parts.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Voice",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "A Tango Trifle",
+  "file": "raw/mutopia/flute/BrownCJ__bagatelle2.pdf",
+  "midi": "mids/mutopia/flute/BrownCJ__bagatelle2.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "The Family Quarrel",
+  "file": "raw/openscore_lieder/Arne__Thomas-lc28971056.pdf",
+  "midi": "mids/Arne__Thomas-lc28971056.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "The Weeders",
+  "file": "raw/openscore_lieder/Arne__Thomas-lc29161304.pdf",
+  "midi": "mids/Arne__Thomas-lc29161304.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Cançó de bressol - Brahms",
+  "file": "raw/pdmx/cello/Can___de_bressol_-_Brahms-QmSL74DzxmCj.pdf",
+  "midi": "mids/pdmx/cello/Can___de_bressol_-_Brahms-QmSL74DzxmCj.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Cello",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "2. lago e Spiccato",
+  "file": "raw/pdmx/violin/2._lago_e_Spiccato-QmSHmW2v5inq.pdf",
+  "midi": "mids/pdmx/violin/2._lago_e_Spiccato-QmSHmW2v5inq.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "3 Minuets BWV 841-843",
+  "file": "raw/pdmx/violin/3_Minuets_BWV_841-843-QmfRTcau5xbK.pdf",
+  "midi": "mids/pdmx/violin/3_Minuets_BWV_841-843-QmfRTcau5xbK.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Jupiter The Bringer Of Jollity",
+  "file": "raw/pdmx/trumpet/Jupiter_The_Bringer_Of_Jollity-QmPo3rzuJTcz.pdf",
+  "midi": "mids/pdmx/trumpet/Jupiter_The_Bringer_Of_Jollity-QmPo3rzuJTcz.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Trumpet",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Trumpet Tune",
+  "file": "raw/pdmx/trumpet/Trumpet_Tune-QmQjypxZg1od.pdf",
+  "midi": "mids/pdmx/trumpet/Trumpet_Tune-QmQjypxZg1od.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Trumpet",
+  "level": 1
+ },
+ {
+  "source": "pdmx",
+  "title": "The Nutcracker (ballet) Op.71",
+  "file": "raw/pdmx/flute/The_Nutcracker__ballet__Op.71-QmQDK7JRwi1A.pdf",
+  "midi": "mids/pdmx/flute/The_Nutcracker__ballet__Op.71-QmQDK7JRwi1A.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Premières Études No.9",
+  "file": "raw/pdmx/trumpet/Premi_res__tudes_No.9-QmT3dPU47PHU.pdf",
+  "midi": "mids/pdmx/trumpet/Premi_res__tudes_No.9-QmT3dPU47PHU.mid",
+  "pages": 3,
+  "poly": 1,
+  "instrument": "Trumpet",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Orchestral Suite No.2 in B minor BWV 1067 No. 7 Badinerie",
+  "file": "raw/pdmx/saxophone/Orchestral_Suite_No.2_in_B_minor_BWV_1067_No._7_Badinerie-QmcfheFjnq9a.pdf",
+  "midi": "mids/pdmx/saxophone/Orchestral_Suite_No.2_in_B_minor_BWV_1067_No._7_Badinerie-QmcfheFjnq9a.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Saxophone",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Trumpet Concerto in E major S.49",
+  "file": "raw/pdmx/trumpet/Trumpet_Concerto_in_E_major_S.49-QmZADWznmW1M.pdf",
+  "midi": "mids/pdmx/trumpet/Trumpet_Concerto_in_E_major_S.49-QmZADWznmW1M.mid",
+  "pages": 12,
+  "poly": 1,
+  "instrument": "Trumpet",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "6 Cello Suites BWV 1007-1012",
+  "file": "raw/pdmx/saxophone/6_Cello_Suites_BWV_1007-1012-QmQNBcQNHE9K.pdf",
+  "midi": "mids/pdmx/saxophone/6_Cello_Suites_BWV_1007-1012-QmQNBcQNHE9K.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Saxophone",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Duo Concertant - Allegro Vivo",
+  "file": "raw/pdmx/flute/Duo_Concertant_-_Allegro_Vivo-QmSxgeHRjQyq.pdf",
+  "midi": "mids/pdmx/flute/Duo_Concertant_-_Allegro_Vivo-QmSxgeHRjQyq.mid",
+  "pages": 8,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Partita in A minor BWV 1013",
+  "file": "raw/pdmx/flute/Partita_in_A_minor_BWV_1013-QmSDHjWs266e.pdf",
+  "midi": "mids/pdmx/flute/Partita_in_A_minor_BWV_1013-QmSDHjWs266e.mid",
+  "pages": 3,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "March in D Major",
+  "file": "raw/pdmx/violin/March_in_D_Major-Qmd6k6eenjTm.pdf",
+  "midi": "mids/pdmx/violin/March_in_D_Major-Qmd6k6eenjTm.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 1
+ },
+ {
+  "source": "pdmx",
+  "title": "Minuet in G - Ludwig van Beethoven",
+  "file": "raw/pdmx/violin/Minuet_in_G_-_Ludwig_van_Beethoven-QmfWSizeeYAR.pdf",
+  "midi": "mids/pdmx/violin/Minuet_in_G_-_Ludwig_van_Beethoven-QmfWSizeeYAR.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 1
+ },
+ {
+  "source": "pdmx",
+  "title": "Canon and Gigue in D major P.37",
+  "file": "raw/pdmx/violin/Canon_and_Gigue_in_D_major_P.37-QmP13SJkG16S.pdf",
+  "midi": "mids/pdmx/violin/Canon_and_Gigue_in_D_major_P.37-QmP13SJkG16S.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Bolero",
+  "file": "raw/pdmx/trumpet/Bolero-QmU6xJY5vvLS.pdf",
+  "midi": "mids/pdmx/trumpet/Bolero-QmU6xJY5vvLS.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Trumpet",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "12 German Dances Hob.IX:Anh",
+  "file": "raw/pdmx/flute/12_German_Dances_Hob.IX_Anh-QmRzePkxGBAm.pdf",
+  "midi": "mids/pdmx/flute/12_German_Dances_Hob.IX_Anh-QmRzePkxGBAm.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Himno de la Alegría",
+  "file": "raw/pdmx/violin/Himno_de_la_Alegr_a-QmfXzDdybStS.pdf",
+  "midi": "mids/pdmx/violin/Himno_de_la_Alegr_a-QmfXzDdybStS.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 1
+ },
+ {
+  "source": "pdmx",
+  "title": "Cello Sonata in E minor RV 40",
+  "file": "raw/pdmx/cello/Cello_Sonata_in_E_minor_RV_40-QmdQ93W3hyeo.pdf",
+  "midi": "mids/pdmx/cello/Cello_Sonata_in_E_minor_RV_40-QmdQ93W3hyeo.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Cello",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Nocturne n1",
+  "file": "raw/pdmx/violin/Nocturne_n1-QmckmNN1be5W.pdf",
+  "midi": "mids/pdmx/violin/Nocturne_n1-QmckmNN1be5W.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Suite bergamasque",
+  "file": "raw/pdmx/saxophone/Suite_bergamasque-QmTr6ji33VS2.pdf",
+  "midi": "mids/pdmx/saxophone/Suite_bergamasque-QmTr6ji33VS2.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Saxophone",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "CL2. CONCERTO 2 FLUTES",
+  "file": "raw/pdmx/clarinet/CL2._CONCERTO_2_FLUTES-QmNrihqfAYwU.pdf",
+  "midi": "mids/pdmx/clarinet/CL2._CONCERTO_2_FLUTES-QmNrihqfAYwU.mid",
+  "pages": 3,
+  "poly": 1,
+  "instrument": "Clarinet",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Après un Rêve",
+  "file": "raw/pdmx/saxophone/Apr_s_un_R_ve-QmbYBXXQACow.pdf",
+  "midi": "mids/pdmx/saxophone/Apr_s_un_R_ve-QmbYBXXQACow.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Saxophone",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Concerto No. 1 - Allegretto con moto",
+  "file": "raw/pdmx/cello/Concerto_No._1_-_Allegretto_con_moto-QmPey3pV9jt1.pdf",
+  "midi": "mids/pdmx/cello/Concerto_No._1_-_Allegretto_con_moto-QmPey3pV9jt1.mid",
+  "pages": 3,
+  "poly": 1,
+  "instrument": "Cello",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "ARBAN 1 15a19 premieres etudes",
+  "file": "raw/pdmx/trumpet/ARBAN_1_15a19_premieres_etudes-QmNQvWjGtNiD.pdf",
+  "midi": "mids/pdmx/trumpet/ARBAN_1_15a19_premieres_etudes-QmNQvWjGtNiD.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Trumpet",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Eine kleine Nachtmusik K.525",
+  "file": "raw/pdmx/flute/Eine_kleine_Nachtmusik_K.525-QmRwu8AxPxRz.pdf",
+  "midi": "mids/pdmx/flute/Eine_kleine_Nachtmusik_K.525-QmRwu8AxPxRz.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Flute",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "concerto XI",
+  "file": "raw/pdmx/violin/concerto_XI-QmcWEKF15HCV.pdf",
+  "midi": "mids/pdmx/violin/concerto_XI-QmcWEKF15HCV.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Il barbiere di Siviglia",
+  "file": "raw/pdmx/violin/Il_barbiere_di_Siviglia-QmRNgicLpqwz.pdf",
+  "midi": "mids/pdmx/violin/Il_barbiere_di_Siviglia-QmRNgicLpqwz.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Brandenburg Concerto No.3 in G major BWV 1048",
+  "file": "raw/pdmx/cello/Brandenburg_Concerto_No.3_in_G_major_BWV_1048-QmPX7BX6wKsi.pdf",
+  "midi": "mids/pdmx/cello/Brandenburg_Concerto_No.3_in_G_major_BWV_1048-QmPX7BX6wKsi.mid",
+  "pages": 3,
+  "poly": 1,
+  "instrument": "Cello",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "6 Minuets WoO 10",
+  "file": "raw/pdmx/violin/6_Minuets_WoO_10-QmTLJRmcyacS.pdf",
+  "midi": "mids/pdmx/violin/6_Minuets_WoO_10-QmTLJRmcyacS.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Violin",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Courting Them All",
+  "file": "raw/thesession/Courting_Them_All-4058.pdf",
+  "midi": "mids/s_Courting_Them_All-4058.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Cradle Song",
+  "file": "raw/thesession/Cradle_Song-11999.pdf",
+  "midi": "mids/s_Cradle_Song-11999.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "McDonagh's",
+  "file": "raw/thesession/McDonagh_s-1963.pdf",
+  "midi": "mids/s_McDonagh_s-1963.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Easter Snow",
+  "file": "raw/thesession/Easter_Snow-10319.pdf",
+  "midi": "mids/s_Easter_Snow-10319.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Up And Doon Da Harbour",
+  "file": "raw/thesession/Up_And_Doon_Da_Harbour-8064.pdf",
+  "midi": "mids/s_Up_And_Doon_Da_Harbour-8064.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Cape Breton's Own",
+  "file": "raw/thesession/Cape_Breton_s_Own-3519.pdf",
+  "midi": "mids/s_Cape_Breton_s_Own-3519.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "An Buachaill Dreoite",
+  "file": "raw/thesession/An_Buachaill_Dreoite-7929.pdf",
+  "midi": "mids/s_An_Buachaill_Dreoite-7929.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Old Wheels Of The World, The",
+  "file": "raw/thesession/Old_Wheels_Of_The_World__The-431.pdf",
+  "midi": "mids/s_Old_Wheels_Of_The_World__The-431.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Honeysuckle, The",
+  "file": "raw/thesession/Honeysuckle__The-465.pdf",
+  "midi": "mids/s_Honeysuckle__The-465.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Lord Gordon's",
+  "file": "raw/thesession/Lord_Gordon_s-1774.pdf",
+  "midi": "mids/s_Lord_Gordon_s-1774.mid",
+  "pages": 2,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Dusty Miller",
+  "file": "raw/thesession/Dusty_Miller-7436.pdf",
+  "midi": "mids/s_Dusty_Miller-7436.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Tripping Up The Stairs",
+  "file": "raw/thesession/Tripping_Up_The_Stairs-111.pdf",
+  "midi": "mids/s_Tripping_Up_The_Stairs-111.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Standing Abbey, The",
+  "file": "raw/thesession/Standing_Abbey__The-8342.pdf",
+  "midi": "mids/s_Standing_Abbey__The-8342.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Mermaid Of Mullaghmore, The",
+  "file": "raw/thesession/Mermaid_Of_Mullaghmore__The-2854.pdf",
+  "midi": "mids/s_Mermaid_Of_Mullaghmore__The-2854.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Maid I Never Forgot, The",
+  "file": "raw/thesession/Maid_I_Never_Forgot__The-269.pdf",
+  "midi": "mids/s_Maid_I_Never_Forgot__The-269.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "John O'Connor",
+  "file": "raw/thesession/John_O_Connor-3555.pdf",
+  "midi": "mids/s_John_O_Connor-3555.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Julia Delaney's",
+  "file": "raw/thesession/Julia_Delaney_s-589.pdf",
+  "midi": "mids/s_Julia_Delaney_s-589.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Old Pigeon On The Gate, The",
+  "file": "raw/thesession/Old_Pigeon_On_The_Gate__The-5629.pdf",
+  "midi": "mids/s_Old_Pigeon_On_The_Gate__The-5629.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Johnny Spillane's Favourite",
+  "file": "raw/thesession/Johnny_Spillane_s_Favourite-3594.pdf",
+  "midi": "mids/s_Johnny_Spillane_s_Favourite-3594.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Blackbird, The",
+  "file": "raw/thesession/Blackbird__The-4508.pdf",
+  "midi": "mids/s_Blackbird__The-4508.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Sheffield, The",
+  "file": "raw/thesession/Sheffield__The-6390.pdf",
+  "midi": "mids/s_Sheffield__The-6390.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Fog In The Bog, The",
+  "file": "raw/thesession/Fog_In_The_Bog__The-5659.pdf",
+  "midi": "mids/s_Fog_In_The_Bog__The-5659.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Palm Sunday",
+  "file": "raw/thesession/Palm_Sunday-770.pdf",
+  "midi": "mids/s_Palm_Sunday-770.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Da New Rigged Ship",
+  "file": "raw/thesession/Da_New_Rigged_Ship-880.pdf",
+  "midi": "mids/s_Da_New_Rigged_Ship-880.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Newcastle",
+  "file": "raw/thesession/Newcastle-3727.pdf",
+  "midi": "mids/s_Newcastle-3727.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Merry Thatcher, The",
+  "file": "raw/thesession/Merry_Thatcher__The-2199.pdf",
+  "midi": "mids/s_Merry_Thatcher__The-2199.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "John Stenson's",
+  "file": "raw/thesession/John_Stenson_s-1155.pdf",
+  "midi": "mids/s_John_Stenson_s-1155.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Fire Haired Boy, The",
+  "file": "raw/thesession/Fire_Haired_Boy__The-4552.pdf",
+  "midi": "mids/s_Fire_Haired_Boy__The-4552.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Rakes Of Clonmel, The",
+  "file": "raw/thesession/Rakes_Of_Clonmel__The-1130.pdf",
+  "midi": "mids/s_Rakes_Of_Clonmel__The-1130.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Banks, The",
+  "file": "raw/thesession/Banks__The-922.pdf",
+  "midi": "mids/s_Banks__The-922.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Contrapunctusxv",
+  "file": "raw/mutopia/piano/contrapunctusXV-a4.pdf",
+  "midi": "mids/mutopia/piano/contrapunctusXV-a4.mid",
+  "pages": 5,
+  "poly": 3,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Traditioner Af Swenska Folk Dansar.1.27",
+  "file": "raw/mutopia/piano/traditioner_af_swenska_folk_dansar.1.27-a4.pdf",
+  "midi": "mids/mutopia/piano/traditioner_af_swenska_folk_dansar.1.27-a4.mid",
+  "pages": 1,
+  "poly": 3,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "26. Piango, che Amor con disusato oltraggio",
+  "file": "raw/mutopia/voice/MontePd__01-3-26.pdf",
+  "midi": "mids/mutopia/voice/MontePd__01-3-26.mid",
+  "pages": 3,
+  "poly": 3,
+  "instrument": "Voice",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Bwv801",
+  "file": "raw/mutopia/piano/bwv801-a4.pdf",
+  "midi": "mids/mutopia/piano/bwv801-a4.mid",
+  "pages": 3,
+  "poly": 3,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Bwv 1087 08",
+  "file": "raw/mutopia/cello/bwv-1087-08-a4.pdf",
+  "midi": "mids/mutopia/cello/bwv-1087-08-a4.mid",
+  "pages": 1,
+  "poly": 3,
+  "instrument": "Cello",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "The Harebell",
+  "file": "raw/mutopia/piano/SmallwoodW__the_harebell.pdf",
+  "midi": "mids/mutopia/piano/SmallwoodW__the_harebell.mid",
+  "pages": 2,
+  "poly": 3,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Lullaby",
+  "file": "raw/mutopia/cello/lullaby-a4.pdf",
+  "midi": "mids/mutopia/cello/lullaby-a4.mid",
+  "pages": 10,
+  "poly": 2,
+  "instrument": "Cello",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "25. Quel desir, c'hebbi in sù la vista prima",
+  "file": "raw/mutopia/voice/MontePd__01-3-25.pdf",
+  "midi": "mids/mutopia/voice/MontePd__01-3-25.mid",
+  "pages": 3,
+  "poly": 3,
+  "instrument": "Voice",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "Album pour la jeunesse, Opus 68 N°3",
+  "file": "raw/mutopia/piano/SchumannR__O68__schumann-op68-03-chanson-fredonnee.pdf",
+  "midi": "mids/mutopia/piano/SchumannR__O68__schumann-op68-03-chanson-fredonnee.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Cara sposa, amanta cara, HWV 7",
+  "file": "raw/mutopia/voice/HandelGF__HWV7__CaraSposa.pdf",
+  "midi": "mids/mutopia/voice/HandelGF__HWV7__CaraSposa.mid",
+  "pages": 6,
+  "poly": 5,
+  "instrument": "Voice",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Op840 3",
+  "file": "raw/mutopia/piano/op840-3-a4.pdf",
+  "midi": "mids/mutopia/piano/op840-3-a4.mid",
+  "pages": 2,
+  "poly": 5,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "160 Eight-Measure Exercises, Op. 821 No.1",
+  "file": "raw/mutopia/piano/CzernyC__Op_821__Czerny_Op_821_No_001.pdf",
+  "midi": "mids/mutopia/piano/CzernyC__Op_821__Czerny_Op_821_No_001.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "Czerny Op 821 No 014",
+  "file": "raw/mutopia/piano/Czerny_Op_821_No_014-a4.pdf",
+  "midi": "mids/mutopia/piano/Czerny_Op_821_No_014-a4.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "Keyboard partita in E minor, BWV 830",
+  "file": "raw/mutopia/piano/BachJS__BWV830__BWV-830__BWV-830-lys.pdf",
+  "midi": "mids/mutopia/piano/BachJS__BWV830__BWV-830__BWV-830-lys.mid",
+  "pages": 21,
+  "poly": 5,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "15 Menuetii",
+  "file": "raw/mutopia/piano/15-menuetii-a4.pdf",
+  "midi": "mids/mutopia/piano/15-menuetii-a4.mid",
+  "pages": 1,
+  "poly": 5,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Old French Song, Op. 39, No. 16",
+  "file": "raw/mutopia/piano/TchaikovskyPI__O39__16OldFrenchSong.pdf",
+  "midi": "mids/mutopia/piano/TchaikovskyPI__O39__16OldFrenchSong.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Prelude, Op. 59, No. 2 (1910)",
+  "file": "raw/mutopia/piano/ScriabinA__O59__prelude.pdf",
+  "midi": "mids/mutopia/piano/ScriabinA__O59__prelude.mid",
+  "pages": 3,
+  "poly": 8,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Sonata No. 8 — , Op. 13",
+  "file": "raw/mutopia/piano/BeethovenLv__O13__pathetique-3.pdf",
+  "midi": "mids/mutopia/piano/BeethovenLv__O13__pathetique-3.mid",
+  "pages": 7,
+  "poly": 8,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Alkan Op31 1",
+  "file": "raw/mutopia/piano/alkan-op31-1-a4.pdf",
+  "midi": "mids/mutopia/piano/alkan-op31-1-a4.mid",
+  "pages": 1,
+  "poly": 6,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Notte e giorno",
+  "file": "raw/mutopia/voice/MozartWA__KV527__NotteEGiorno.pdf",
+  "midi": "mids/mutopia/voice/MozartWA__KV527__NotteEGiorno.mid",
+  "pages": 3,
+  "poly": 7,
+  "instrument": "Voice",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "Toccatina",
+  "file": "raw/mutopia/piano/toccatina-a4.pdf",
+  "midi": "mids/mutopia/piano/toccatina-a4.mid",
+  "pages": 6,
+  "poly": 8,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Prélude III., CD 125; L.117",
+  "file": "raw/mutopia/piano/DebussyC__L117__debussy-L117-prels__debussy-L117-prels-lys__L117-prel-3__L117-prel-3-lys.pdf",
+  "midi": "mids/mutopia/piano/DebussyC__L117__debussy-L117-prels__debussy-L117-prels-lys__L117-prel-3__L117-prel-3-lys.mid",
+  "pages": 5,
+  "poly": 6,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Thestrenuouslife",
+  "file": "raw/mutopia/piano/TheStrenuousLife-a4.pdf",
+  "midi": "mids/mutopia/piano/TheStrenuousLife-a4.mid",
+  "pages": 4,
+  "poly": 7,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Deuxième Ballade",
+  "file": "raw/mutopia/piano/LisztF__ballade.pdf",
+  "midi": "mids/mutopia/piano/LisztF__ballade.mid",
+  "pages": 24,
+  "poly": 11,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "In April Mood (Songs of Love and Spring)",
+  "file": "raw/openscore_lieder/Lehmann__Liza-lc6762513.pdf",
+  "midi": "mids/Lehmann__Liza-lc6762513.mid",
+  "pages": 4,
+  "poly": 9,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Abschied (Deutsche Lieder, Op.11)",
+  "file": "raw/openscore_lieder/Lang__Josephine-lc6577426.pdf",
+  "midi": "mids/Lang__Josephine-lc6577426.mid",
+  "pages": 2,
+  "poly": 9,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "The Lost Chord",
+  "file": "raw/openscore_lieder/Sullivan__Arthur-lc6205441.pdf",
+  "midi": "mids/Sullivan__Arthur-lc6205441.mid",
+  "pages": 5,
+  "poly": 9,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Im Westen (Myrthen, Op.25)",
+  "file": "raw/openscore_lieder/Schumann__Robert-lc6981173.pdf",
+  "midi": "mids/Schumann__Robert-lc6981173.mid",
+  "pages": 1,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 1
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Du liebes Auge (Gesänge, Op.16)",
+  "file": "raw/openscore_lieder/Franz__Robert-lc4928153.pdf",
+  "midi": "mids/Franz__Robert-lc4928153.mid",
+  "pages": 2,
+  "poly": 6,
+  "instrument": "Voice+Piano",
+  "level": 1
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Tears (Elizabethan Songs)",
+  "file": "raw/openscore_lieder/Gurney__Ivor-lc6154108.pdf",
+  "midi": "mids/Gurney__Ivor-lc6154108.mid",
+  "pages": 4,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "L’absente",
+  "file": "raw/openscore_lieder/Chaminade__C_cile-lc4999590.pdf",
+  "midi": "mids/Chaminade__C_cile-lc4999590.mid",
+  "pages": 13,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Trennung (Lieder and Romances, Op.14)",
+  "file": "raw/openscore_lieder/Brahms__Johannes-lc5726490.pdf",
+  "midi": "mids/Brahms__Johannes-lc5726490.mid",
+  "pages": 3,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Im Herbste (Gartenlieder, Op.3)",
+  "file": "raw/openscore_lieder/Hensel__Fanny-lc6024601.pdf",
+  "midi": "mids/Hensel__Fanny-lc6024601.mid",
+  "pages": 4,
+  "poly": 4,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Le berger fidèle",
+  "file": "raw/openscore_lieder/Farrenc__Louise-lc6598368.pdf",
+  "midi": "mids/Farrenc__Louise-lc6598368.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Voice+Piano",
+  "level": 1
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Das Gärtnerliedchen aus dem Siegwart (Es war einmal ein Gärtner) (Lieder, 1786)",
+  "file": "raw/openscore_lieder/Paradis__Maria_Theresia_von-lc5907276.pdf",
+  "midi": "mids/Paradis__Maria_Theresia_von-lc5907276.mid",
+  "pages": 3,
+  "poly": 5,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Die Veilchen (Gesänge)",
+  "file": "raw/openscore_lieder/Reichardt__Louise-lc5087944.pdf",
+  "midi": "mids/Reichardt__Louise-lc5087944.mid",
+  "pages": 2,
+  "poly": 5,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Angst und Hoffen wechselnd mich beklemmen (Das Buch der hängenden Gärten, Op.15)",
+  "file": "raw/openscore_lieder/Schoenberg__Arnold-lc30437453.pdf",
+  "midi": "mids/Schoenberg__Arnold-lc30437453.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "An meine Zither (Lieder, Op.4)",
+  "file": "raw/openscore_lieder/Zumsteeg__Emilie-lc6162666.pdf",
+  "midi": "mids/Zumsteeg__Emilie-lc6162666.mid",
+  "pages": 2,
+  "poly": 5,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Da eben seinen Lauf verbracht (Lieder, 1786)",
+  "file": "raw/openscore_lieder/Paradis__Maria_Theresia_von-lc5994814.pdf",
+  "midi": "mids/Paradis__Maria_Theresia_von-lc5994814.mid",
+  "pages": 8,
+  "poly": 5,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Die Liebe (Lieder)",
+  "file": "raw/openscore_lieder/Schr_ter__Corona-lc6047364.pdf",
+  "midi": "mids/Schr_ter__Corona-lc6047364.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Love Relaps’d",
+  "file": "raw/openscore_lieder/Arne__Thomas-lc8873154.pdf",
+  "midi": "mids/Arne__Thomas-lc8873154.mid",
+  "pages": 2,
+  "poly": 3,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "In das Stambuch einer Freundin (Lieder)",
+  "file": "raw/openscore_lieder/Zumsteeg__Emilie-lc6159296.pdf",
+  "midi": "mids/Zumsteeg__Emilie-lc6159296.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Behold, Behold and Listen",
+  "file": "raw/openscore_lieder/Gambarini__Elisabetta_de-lc6604420.pdf",
+  "midi": "mids/Gambarini__Elisabetta_de-lc6604420.mid",
+  "pages": 3,
+  "poly": 3,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Ferne (Lieder, Op.9)",
+  "file": "raw/openscore_lieder/Hensel__Fanny-lc5103883.pdf",
+  "midi": "mids/Hensel__Fanny-lc5103883.mid",
+  "pages": 1,
+  "poly": 3,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Erinnrung zum Bach (Gesänge)",
+  "file": "raw/openscore_lieder/Reichardt__Louise-lc5087917.pdf",
+  "midi": "mids/Reichardt__Louise-lc5087917.mid",
+  "pages": 2,
+  "poly": 3,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Der Geburtstag (Lieder)",
+  "file": "raw/openscore_lieder/Zumsteeg__Emilie-lc6158825.pdf",
+  "midi": "mids/Zumsteeg__Emilie-lc6158825.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Hush to Peace",
+  "file": "raw/openscore_lieder/Arne__Thomas-lc8871933.pdf",
+  "midi": "mids/Arne__Thomas-lc8871933.mid",
+  "pages": 3,
+  "poly": 3,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Der Kuss (Lieder, Op.10)",
+  "file": "raw/openscore_lieder/Kinkel__Johanna-lc6177233.pdf",
+  "midi": "mids/Kinkel__Johanna-lc6177233.mid",
+  "pages": 2,
+  "poly": 3,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in E-flat major, Hob.III:31, Op.20 No.1",
+  "file": "raw/openscore_quartets/Haydn__Joseph-String_Quartet_in_E-flat_major__Hob.III31__Op.20_No.1___sq8075304.pdf",
+  "midi": "mids/q_Haydn__Joseph-String_Quartet_in_E-flat_major__Hob.III31__Op.20_No.1___sq8075304.mid",
+  "pages": 17,
+  "poly": 6,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet",
+  "file": "raw/openscore_quartets/Carre_o__Teresa-String_Quartet___sq7330550.pdf",
+  "midi": "mids/q_Carre_o__Teresa-String_Quartet___sq7330550.mid",
+  "pages": 27,
+  "poly": 7,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in D major, Hob.III:34, Op.20 No.4",
+  "file": "raw/openscore_quartets/Haydn__Joseph-String_Quartet_in_D_major__Hob.III34__Op.20_No.4___sq8509238.pdf",
+  "midi": "mids/q_Haydn__Joseph-String_Quartet_in_D_major__Hob.III34__Op.20_No.4___sq8509238.mid",
+  "pages": 27,
+  "poly": 6,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet, Op. 89",
+  "file": "raw/openscore_quartets/Beach__Amy-String_Quartet__Op._89___sq14387632.pdf",
+  "midi": "mids/q_Beach__Amy-String_Quartet__Op._89___sq14387632.mid",
+  "pages": 20,
+  "poly": 12,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet No.13 in B♭ major, Op.130",
+  "file": "raw/openscore_quartets/Beethoven__Ludwig_van-String_Quartet_No.13_in_B__major__Op.130___sq11539384.pdf",
+  "midi": "mids/q_Beethoven__Ludwig_van-String_Quartet_No.13_in_B__major__Op.130___sq11539384.mid",
+  "pages": 79,
+  "poly": 9,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet, Op.83",
+  "file": "raw/openscore_quartets/Elgar__Edward-String_Quartet__Op.83___sq7362818.pdf",
+  "midi": "mids/q_Elgar__Edward-String_Quartet__Op.83___sq7362818.mid",
+  "pages": 39,
+  "poly": 9,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in C major, Hob.III:72, Op.74 No.1",
+  "file": "raw/openscore_quartets/Haydn__Joseph-String_Quartet_in_C_major__Hob.III72__Op.74_No.1___sq10372717.pdf",
+  "midi": "mids/q_Haydn__Joseph-String_Quartet_in_C_major__Hob.III72__Op.74_No.1___sq10372717.mid",
+  "pages": 38,
+  "poly": 10,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in A Major",
+  "file": "raw/openscore_quartets/Mayer__Emilie-String_Quartet_in_A_Major___sq8818128.pdf",
+  "midi": "mids/q_Mayer__Emilie-String_Quartet_in_A_Major___sq8818128.mid",
+  "pages": 56,
+  "poly": 7,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in G major, Hob.III:21, Op.9 No.3",
+  "file": "raw/openscore_quartets/Haydn__Joseph-String_Quartet_in_G_major__Hob.III21__Op.9_No.3___sq10381459.pdf",
+  "midi": "mids/q_Haydn__Joseph-String_Quartet_in_G_major__Hob.III21__Op.9_No.3___sq10381459.mid",
+  "pages": 26,
+  "poly": 5,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in D major, Hob.III:3, Op.1 No.3",
+  "file": "raw/openscore_quartets/Haydn__Joseph-String_Quartet_in_D_major__Hob.III3__Op.1_No.3___sq8806746.pdf",
+  "midi": "mids/q_Haydn__Joseph-String_Quartet_in_D_major__Hob.III3__Op.1_No.3___sq8806746.mid",
+  "pages": 15,
+  "poly": 4,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in E-flat major, Hob.III:64, Op.64 No.6",
+  "file": "raw/openscore_quartets/Haydn__Joseph-String_Quartet_in_E-flat_major__Hob.III64__Op.64_No.6___sq7300376.pdf",
+  "midi": "mids/q_Haydn__Joseph-String_Quartet_in_E-flat_major__Hob.III64__Op.64_No.6___sq7300376.mid",
+  "pages": 28,
+  "poly": 4,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet No.1 in D minor",
+  "file": "raw/openscore_quartets/Arriaga__Juan_Cris_stomo_de-String_Quartet_No.1_in_D_minor___sq13744399.pdf",
+  "midi": "mids/q_Arriaga__Juan_Cris_stomo_de-String_Quartet_No.1_in_D_minor___sq13744399.mid",
+  "pages": 55,
+  "poly": 5,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in G minor, Op.10",
+  "file": "raw/openscore_quartets/Debussy__Claude-String_Quartet_in_G_minor__Op.10___sq8661306.pdf",
+  "midi": "mids/q_Debussy__Claude-String_Quartet_in_G_minor__Op.10___sq8661306.mid",
+  "pages": 45,
+  "poly": 5,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in E-flat major, Hob.III:20, Op.9 No.2",
+  "file": "raw/openscore_quartets/Haydn__Joseph-String_Quartet_in_E-flat_major__Hob.III20__Op.9_No.2___sq10328092.pdf",
+  "midi": "mids/q_Haydn__Joseph-String_Quartet_in_E-flat_major__Hob.III20__Op.9_No.2___sq10328092.mid",
+  "pages": 19,
+  "poly": 5,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in D Major",
+  "file": "raw/openscore_quartets/Mayer__Emilie-String_Quartet_in_D_Major___sq7588853.pdf",
+  "midi": "mids/q_Mayer__Emilie-String_Quartet_in_D_Major___sq7588853.mid",
+  "pages": 60,
+  "poly": 5,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet in G minor, Hob.III:74, Op.74 No.3 \\⠀吀栀攀 䠀漀爀猀攀洀愀渀尩",
+  "file": "raw/openscore_quartets/Haydn__Joseph-String_Quartet_in_G_minor__Hob.III74__Op.74_No.3__The_Horseman____.pdf",
+  "midi": "mids/q_Haydn__Joseph-String_Quartet_in_G_minor__Hob.III74__Op.74_No.3__The_Horseman____.mid",
+  "pages": 31,
+  "poly": 4,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "openscore_quartets",
+  "title": "String Quartet No.2, H.115",
+  "file": "raw/openscore_quartets/Bridge__Frank-String_Quartet_No.2__H.115___sq9094235.pdf",
+  "midi": "mids/q_Bridge__Frank-String_Quartet_No.2__H.115___sq9094235.mid",
+  "pages": 58,
+  "poly": 3,
+  "instrument": "StringQuartet",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "C.P.E. Bach - Duet for two Clarinets in C Major Wq. 142",
+  "file": "raw/pdmx/clarinet/C.P.E._Bach_-_Duet_for_two_Clarinets_in_C_Major_Wq._142-QmcC5w8CLj2X.pdf",
+  "midi": "mids/pdmx/clarinet/C.P.E._Bach_-_Duet_for_two_Clarinets_in_C_Major_Wq._142-QmcC5w8CLj2X.mid",
+  "pages": 2,
+  "poly": 2,
+  "instrument": "Clarinet",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "24 Caprices for Solo Violin Op.1",
+  "file": "raw/pdmx/violin/24_Caprices_for_Solo_Violin_Op.1-QmXkrukDxj4f.pdf",
+  "midi": "mids/pdmx/violin/24_Caprices_for_Solo_Violin_Op.1-QmXkrukDxj4f.mid",
+  "pages": 3,
+  "poly": 2,
+  "instrument": "Violin",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "14 Romances Op.34",
+  "file": "raw/pdmx/cello/14_Romances_Op.34-QmR6s7q1k4Qn.pdf",
+  "midi": "mids/pdmx/cello/14_Romances_Op.34-QmR6s7q1k4Qn.mid",
+  "pages": 4,
+  "poly": 2,
+  "instrument": "Cello",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Duet no. 2",
+  "file": "raw/pdmx/saxophone/Duet_no._2-QmZmWLsoUQHf.pdf",
+  "midi": "mids/pdmx/saxophone/Duet_no._2-QmZmWLsoUQHf.mid",
+  "pages": 5,
+  "poly": 2,
+  "instrument": "Saxophone",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Suite in E minor BWV 996",
+  "file": "raw/pdmx/clarinet/Suite_in_E_minor_BWV_996-QmPZujHhbCnY.pdf",
+  "midi": "mids/pdmx/clarinet/Suite_in_E_minor_BWV_996-QmPZujHhbCnY.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Clarinet",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Intrada-Suite for 2 Violins 'Gulliver's Travels' TWV 40:108",
+  "file": "raw/pdmx/violin/Intrada-Suite_for_2_Violins__Gulliver_s_Travels__TWV_40_108-QmRH92KaHwqt.pdf",
+  "midi": "mids/pdmx/violin/Intrada-Suite_for_2_Violins__Gulliver_s_Travels__TWV_40_108-QmRH92KaHwqt.mid",
+  "pages": 9,
+  "poly": 3,
+  "instrument": "Violin",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Herz und Mund und Tat und Leben BWV 147",
+  "file": "raw/pdmx/flute/Herz_und_Mund_und_Tat_und_Leben_BWV_147-QmadR4PJTaMq.pdf",
+  "midi": "mids/pdmx/flute/Herz_und_Mund_und_Tat_und_Leben_BWV_147-QmadR4PJTaMq.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Flute",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Cello Suite No.1 in G major BWV 1007",
+  "file": "raw/pdmx/clarinet/Cello_Suite_No.1_in_G_major_BWV_1007-QmdAkKedo8Ht.pdf",
+  "midi": "mids/pdmx/clarinet/Cello_Suite_No.1_in_G_major_BWV_1007-QmdAkKedo8Ht.mid",
+  "pages": 5,
+  "poly": 3,
+  "instrument": "Clarinet",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Minuet in G major BWV Anh.114",
+  "file": "raw/pdmx/cello/Minuet_in_G_major_BWV_Anh.114-QmRB57nFXEY4.pdf",
+  "midi": "mids/pdmx/cello/Minuet_in_G_major_BWV_Anh.114-QmRB57nFXEY4.mid",
+  "pages": 1,
+  "poly": 5,
+  "instrument": "Cello",
+  "level": 1
+ },
+ {
+  "source": "pdmx",
+  "title": "Violin Sonata No.3 in C major BWV 1005",
+  "file": "raw/pdmx/violin/Violin_Sonata_No.3_in_C_major_BWV_1005-QmZhoP8yvW3o.pdf",
+  "midi": "mids/pdmx/violin/Violin_Sonata_No.3_in_C_major_BWV_1005-QmZhoP8yvW3o.mid",
+  "pages": 19,
+  "poly": 4,
+  "instrument": "Violin",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Carmen",
+  "file": "raw/pdmx/flute/Carmen-QmexDKqvS5iT.pdf",
+  "midi": "mids/pdmx/flute/Carmen-QmexDKqvS5iT.mid",
+  "pages": 3,
+  "poly": 5,
+  "instrument": "Flute",
+  "level": 1
+ },
+ {
+  "source": "pdmx",
+  "title": "Moments Musicaux Opus 94 No. 3 in F minor",
+  "file": "raw/pdmx/violin/Moments_Musicaux_Opus_94_No._3_in_F_minor-QmXCc8eWVXCU.pdf",
+  "midi": "mids/pdmx/violin/Moments_Musicaux_Opus_94_No._3_in_F_minor-QmXCc8eWVXCU.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Violin",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Paganini - Centone di Sonate (Sonata IV: Adagio Cantabile) for Flute & Piano",
+  "file": "raw/pdmx/flute/Paganini_-_Centone_di_Sonate__Sonata_IV__Adagio_Cantabile__f-QmRWGVRzKmkq.pdf",
+  "midi": "mids/pdmx/flute/Paganini_-_Centone_di_Sonate__Sonata_IV__Adagio_Cantabile__f-QmRWGVRzKmkq.mid",
+  "pages": 2,
+  "poly": 5,
+  "instrument": "Flute",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Il Mio Tesoro",
+  "file": "raw/pdmx/clarinet/Il_Mio_Tesoro-Qmci8FZjRj15.pdf",
+  "midi": "mids/pdmx/clarinet/Il_Mio_Tesoro-Qmci8FZjRj15.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Clarinet",
+  "level": 1
+ },
+ {
+  "source": "pdmx",
+  "title": "Serenade Haydn",
+  "file": "raw/pdmx/clarinet/Serenade_Haydn-QmNu37tmL4Lu.pdf",
+  "midi": "mids/pdmx/clarinet/Serenade_Haydn-QmNu37tmL4Lu.mid",
+  "pages": 2,
+  "poly": 5,
+  "instrument": "Clarinet",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Violin Sonata No.9 Op.47",
+  "file": "raw/pdmx/violin/Violin_Sonata_No.9_Op.47-QmdVT3bvBqmQ.pdf",
+  "midi": "mids/pdmx/violin/Violin_Sonata_No.9_Op.47-QmdVT3bvBqmQ.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Violin",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Beau soir",
+  "file": "raw/pdmx/flute/Beau_soir-QmRTdNWdkiwD.pdf",
+  "midi": "mids/pdmx/flute/Beau_soir-QmRTdNWdkiwD.mid",
+  "pages": 3,
+  "poly": 8,
+  "instrument": "Flute",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Berceuse sur le nom de Gabriel Fauré",
+  "file": "raw/pdmx/violin/Berceuse_sur_le_nom_de_Gabriel_Faur_-QmQeFB57BMhu.pdf",
+  "midi": "mids/pdmx/violin/Berceuse_sur_le_nom_de_Gabriel_Faur_-QmQeFB57BMhu.mid",
+  "pages": 3,
+  "poly": 9,
+  "instrument": "Violin",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Turandot SC 91",
+  "file": "raw/pdmx/cello/Turandot_SC_91-QmVhpfeUuA48.pdf",
+  "midi": "mids/pdmx/cello/Turandot_SC_91-QmVhpfeUuA48.mid",
+  "pages": 3,
+  "poly": 9,
+  "instrument": "Cello",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Fantaisie and Variations on The Carnival of Venice",
+  "file": "raw/pdmx/saxophone/Fantaisie_and_Variations_on_The_Carnival_of_Venice-QmeQ8t4hZKYN.pdf",
+  "midi": "mids/pdmx/saxophone/Fantaisie_and_Variations_on_The_Carnival_of_Venice-QmeQ8t4hZKYN.mid",
+  "pages": 4,
+  "poly": 6,
+  "instrument": "Saxophone",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Without Sun",
+  "file": "raw/pdmx/violin/Without_Sun-QmPdi4seBLgF.pdf",
+  "midi": "mids/pdmx/violin/Without_Sun-QmPdi4seBLgF.mid",
+  "pages": 2,
+  "poly": 8,
+  "instrument": "Violin",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Cello Concerto No.1 Op.33",
+  "file": "raw/pdmx/cello/Cello_Concerto_No.1_Op.33-QmQHbZKN8uNf.pdf",
+  "midi": "mids/pdmx/cello/Cello_Concerto_No.1_Op.33-QmQHbZKN8uNf.mid",
+  "pages": 34,
+  "poly": 10,
+  "instrument": "Cello",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "Piano Sonata No. 11 K. 331 (Turkish March)",
+  "file": "raw/pdmx/flute/Piano_Sonata_No._11_K._331__Turkish_March_-QmbNiSieLunq.pdf",
+  "midi": "mids/pdmx/flute/Piano_Sonata_No._11_K._331__Turkish_March_-QmbNiSieLunq.mid",
+  "pages": 5,
+  "poly": 8,
+  "instrument": "Flute",
+  "level": 3
+ },
+ {
+  "source": "pdmx",
+  "title": "La Primavera Wilhelm Friedemann BACH (Weimar 1710 - Berlín 1784)",
+  "file": "raw/pdmx/flute/La_Primavera_Wilhelm_Friedemann_BACH__Weimar_1710_-_Berl_n_1-QmbRH8v5ixvc.pdf",
+  "midi": "mids/pdmx/flute/La_Primavera_Wilhelm_Friedemann_BACH__Weimar_1710_-_Berl_n_1-QmbRH8v5ixvc.mid",
+  "pages": 1,
+  "poly": 6,
+  "instrument": "Flute",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "Pass Me Not, O Gentle Savior",
+  "file": "raw/openhymnal/Pass_Me_Not__O_Gentle_Savior.pdf",
+  "midi": "mids/h_Pass_Me_Not__O_Gentle_Savior.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "Lord of Life, All Praise Excelling",
+  "file": "raw/openhymnal/Lord_of_Life__All_Praise_Excelling.pdf",
+  "midi": "mids/h_Lord_of_Life__All_Praise_Excelling.mid",
+  "pages": 2,
+  "poly": 5,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "In Peace and Joy I Now Depart",
+  "file": "raw/openhymnal/In_Peace_and_Joy_I_Now_Depart.pdf",
+  "midi": "mids/h_In_Peace_and_Joy_I_Now_Depart.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 3
+ },
+ {
+  "source": "openhymnal",
+  "title": "Hosanna, Loud Hosanna",
+  "file": "raw/openhymnal/Hosanna__Loud_Hosanna.pdf",
+  "midi": "mids/h_Hosanna__Loud_Hosanna.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "Immortal, Invisible, God Only Wise",
+  "file": "raw/openhymnal/Immortal__Invisible__God_Only_Wise.pdf",
+  "midi": "mids/h_Immortal__Invisible__God_Only_Wise.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "Alleluia, Alleluia! Hearts to Heaven and Voices Raise",
+  "file": "raw/openhymnal/Alleluia__Alleluia__Hearts_to_Heaven_and_Voices_Raise.pdf",
+  "midi": "mids/h_Alleluia__Alleluia__Hearts_to_Heaven_and_Voices_Raise.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "He Was Not Willing",
+  "file": "raw/openhymnal/He_Was_Not_Willing.pdf",
+  "midi": "mids/h_He_Was_Not_Willing.mid",
+  "pages": 2,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "While O'er Our Guilty Land, O Lord",
+  "file": "raw/openhymnal/While_O_er_Our_Guilty_Land__O_Lord.pdf",
+  "midi": "mids/h_While_O_er_Our_Guilty_Land__O_Lord.mid",
+  "pages": 1,
+  "poly": 5,
+  "instrument": "Hymn",
+  "level": 1
+ },
+ {
+  "source": "openhymnal",
+  "title": "Come, Thou Long-Expected Jesus",
+  "file": "raw/openhymnal/Come__Thou_Long-Expected_Jesus.pdf",
+  "midi": "mids/h_Come__Thou_Long-Expected_Jesus.mid",
+  "pages": 1,
+  "poly": 3,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "I Bind Unto Myself Today",
+  "file": "raw/openhymnal/I_Bind_Unto_Myself_Today.pdf",
+  "midi": "mids/h_I_Bind_Unto_Myself_Today.mid",
+  "pages": 3,
+  "poly": 53,
+  "instrument": "Hymn",
+  "level": 3
+ },
+ {
+  "source": "openhymnal",
+  "title": "Jesus, Joy of Man's Desiring",
+  "file": "raw/openhymnal/Jesus__Joy_of_Man_s_Desiring.pdf",
+  "midi": "mids/h_Jesus__Joy_of_Man_s_Desiring.mid",
+  "pages": 7,
+  "poly": 7,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Peerie Hoose Ahint Da Burn",
+  "file": "raw/thesession/Peerie_Hoose_Ahint_Da_Burn-6433.pdf",
+  "midi": "mids/s_Peerie_Hoose_Ahint_Da_Burn-6433.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Fanny Power",
+  "file": "raw/thesession/Fanny_Power-957.pdf",
+  "midi": "mids/s_Fanny_Power-957.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "I'll Tell Me Ma",
+  "file": "raw/thesession/I_ll_Tell_Me_Ma-2434.pdf",
+  "midi": "mids/s_I_ll_Tell_Me_Ma-2434.mid",
+  "pages": 1,
+  "poly": 5,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Da Ferry",
+  "file": "raw/thesession/Da_Ferry-7501.pdf",
+  "midi": "mids/s_Da_Ferry-7501.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Wexford Carol, The",
+  "file": "raw/thesession/Wexford_Carol__The-6500.pdf",
+  "midi": "mids/s_Wexford_Carol__The-6500.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Grind Hans Jässpôdspolska",
+  "file": "raw/thesession/Grind_Hans_J_ssp_dspolska-11815.pdf",
+  "midi": "mids/s_Grind_Hans_J_ssp_dspolska-11815.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "January Snows",
+  "file": "raw/thesession/January_Snows-11049.pdf",
+  "midi": "mids/s_January_Snows-11049.mid",
+  "pages": 1,
+  "poly": 5,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Bovaglie's Plaid",
+  "file": "raw/thesession/Bovaglie_s_Plaid-12668.pdf",
+  "midi": "mids/s_Bovaglie_s_Plaid-12668.mid",
+  "pages": 1,
+  "poly": 5,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "La Complainte Du Folkloriste",
+  "file": "raw/thesession/La_Complainte_Du_Folkloriste-6653.pdf",
+  "midi": "mids/s_La_Complainte_Du_Folkloriste-6653.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Highlander's Farewell To Ireland, The",
+  "file": "raw/thesession/Highlander_s_Farewell_To_Ireland__The-2695.pdf",
+  "midi": "mids/s_Highlander_s_Farewell_To_Ireland__The-2695.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Rattlin', Roarin' Willie",
+  "file": "raw/thesession/Rattlin___Roarin__Willie-7837.pdf",
+  "midi": "mids/s_Rattlin___Roarin__Willie-7837.mid",
+  "pages": 1,
+  "poly": 3,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Gravel Path, The",
+  "file": "raw/thesession/Gravel_Path__The-4104.pdf",
+  "midi": "mids/s_Gravel_Path__The-4104.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Trollpolska",
+  "file": "raw/thesession/Trollpolska-7964.pdf",
+  "midi": "mids/s_Trollpolska-7964.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Flogging, The",
+  "file": "raw/thesession/Flogging__The-195.pdf",
+  "midi": "mids/s_Flogging__The-195.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Oak Tree, The",
+  "file": "raw/thesession/Oak_Tree__The-212.pdf",
+  "midi": "mids/s_Oak_Tree__The-212.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Mickey Doherty's",
+  "file": "raw/thesession/Mickey_Doherty_s-2291.pdf",
+  "midi": "mids/s_Mickey_Doherty_s-2291.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Princess Royal, The",
+  "file": "raw/thesession/Princess_Royal__The-905.pdf",
+  "midi": "mids/s_Princess_Royal__The-905.mid",
+  "pages": 1,
+  "poly": 7,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Hurry The Jug",
+  "file": "raw/thesession/Hurry_The_Jug-893.pdf",
+  "midi": "mids/s_Hurry_The_Jug-893.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Franz Gute Nacht",
+  "file": "raw/mutopia/piano/franz-gute-nacht-a4.pdf",
+  "midi": "mids/mutopia/piano/franz-gute-nacht-a4.mid",
+  "pages": 2,
+  "poly": 6,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Album pour la jeunesse, Opus 68 n°6",
+  "file": "raw/mutopia/piano/SchumannR__O68__schumann-op68-06-pauvre-orpheline.pdf",
+  "midi": "mids/mutopia/piano/SchumannR__O68__schumann-op68-06-pauvre-orpheline.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Miss Girdle",
+  "file": "raw/thesession/Miss_Girdle-2417.pdf",
+  "midi": "mids/s_Miss_Girdle-2417.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Foggy Dew, The",
+  "file": "raw/thesession/Foggy_Dew__The-6862.pdf",
+  "midi": "mids/s_Foggy_Dew__The-6862.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Winnie Hayes'",
+  "file": "raw/thesession/Winnie_Hayes_-797.pdf",
+  "midi": "mids/s_Winnie_Hayes_-797.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Rooskey, The",
+  "file": "raw/thesession/Rooskey__The-5301.pdf",
+  "midi": "mids/s_Rooskey__The-5301.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Galway Piper, The",
+  "file": "raw/thesession/Galway_Piper__The-1699.pdf",
+  "midi": "mids/s_Galway_Piper__The-1699.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "50 Melodische Übungsstücke, Op. 840",
+  "file": "raw/mutopia/piano/CzernyC__O840__op840-10__op840-10-lys.pdf",
+  "midi": "mids/mutopia/piano/CzernyC__O840__op840-10__op840-10-lys.mid",
+  "pages": 2,
+  "poly": 5,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Unbewegte laue Luft (Lieder und Gesänge, Op.57)",
+  "file": "raw/openscore_lieder/Brahms__Johannes-lc5155459.pdf",
+  "midi": "mids/Brahms__Johannes-lc5155459.mid",
+  "pages": 5,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Prison (Op.83)",
+  "file": "raw/openscore_lieder/Faur___Gabriel-lc29748284.pdf",
+  "midi": "mids/Faur___Gabriel-lc29748284.mid",
+  "pages": 2,
+  "poly": 10,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Chœur des Pastorale, DO.287 (Poème pastoral)",
+  "file": "raw/openscore_lieder/Massenet__Jules-lc29027279.pdf",
+  "midi": "mids/Massenet__Jules-lc29027279.mid",
+  "pages": 9,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Schubertf D774 Aufdemwasserzusingen",
+  "file": "raw/mutopia/piano/SchubertF-D774_AufDemWasserZuSingen-a4.pdf",
+  "midi": "mids/mutopia/piano/SchubertF-D774_AufDemWasserZuSingen-a4.mid",
+  "pages": 8,
+  "poly": 7,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Wheels Of The World, The",
+  "file": "raw/thesession/Wheels_Of_The_World__The-1652.pdf",
+  "midi": "mids/s_Wheels_Of_The_World__The-1652.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Girl With The Blue Dress On, The",
+  "file": "raw/thesession/Girl_With_The_Blue_Dress_On__The-5762.pdf",
+  "midi": "mids/s_Girl_With_The_Blue_Dress_On__The-5762.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Limerick Lasses, The",
+  "file": "raw/thesession/Limerick_Lasses__The-516.pdf",
+  "midi": "mids/s_Limerick_Lasses__The-516.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Strahlt zuweilen auch ein mildes Licht (Lieder und Gesänge, Op.57)",
+  "file": "raw/openscore_lieder/Brahms__Johannes-lc5071694.pdf",
+  "midi": "mids/Brahms__Johannes-lc5071694.mid",
+  "pages": 2,
+  "poly": 8,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Das Paradies (Lieder, Op.25)",
+  "file": "raw/openscore_lieder/Lang__Josephine-lc5105152.pdf",
+  "midi": "mids/Lang__Josephine-lc5105152.mid",
+  "pages": 3,
+  "poly": 6,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Julia Clifford's",
+  "file": "raw/thesession/Julia_Clifford_s-11314.pdf",
+  "midi": "mids/s_Julia_Clifford_s-11314.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Parting, The",
+  "file": "raw/thesession/Parting__The-123.pdf",
+  "midi": "mids/s_Parting__The-123.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "original",
+  "title": "Jesu, Joy of Man's Desiring",
+  "file": "raw/original/piano/jesu.pdf",
+  "midi": "mids/original/piano/jesu.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Picnic, The",
+  "file": "raw/thesession/Picnic__The-2683.pdf",
+  "midi": "mids/s_Picnic__The-2683.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "openhymnal",
+  "title": "Lord, Dismiss Us With Thy Blessing",
+  "file": "raw/openhymnal/Lord__Dismiss_Us_With_Thy_Blessing.pdf",
+  "midi": "mids/h_Lord__Dismiss_Us_With_Thy_Blessing.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "160 Eight-Measure Exercises, Op. 821 No.4",
+  "file": "raw/mutopia/piano/CzernyC__Op_821__Czerny_Op_821_No_004.pdf",
+  "midi": "mids/mutopia/piano/CzernyC__Op_821__Czerny_Op_821_No_004.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Piano",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Wellington's Advance",
+  "file": "raw/thesession/Wellington_s_Advance-2191.pdf",
+  "midi": "mids/s_Wellington_s_Advance-2191.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Liebestreu (Songs, Op.3)",
+  "file": "raw/openscore_lieder/Brahms__Johannes-lc5667843.pdf",
+  "midi": "mids/Brahms__Johannes-lc5667843.mid",
+  "pages": 3,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Wild Irishman, The",
+  "file": "raw/thesession/Wild_Irishman__The-1027.pdf",
+  "midi": "mids/s_Wild_Irishman__The-1027.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Ballykeale",
+  "file": "raw/thesession/Ballykeale-2935.pdf",
+  "midi": "mids/s_Ballykeale-2935.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "L’Heure de Pourpre (Les Heures)",
+  "file": "raw/openscore_lieder/Holm_s__Augusta_Mary_Anne-lc5712149.pdf",
+  "midi": "mids/Holm_s__Augusta_Mary_Anne-lc5712149.mid",
+  "pages": 5,
+  "poly": 9,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Boys Of The Town, The",
+  "file": "raw/thesession/Boys_Of_The_Town__The-1035.pdf",
+  "midi": "mids/s_Boys_Of_The_Town__The-1035.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Album pour la jeunesse, Opus 68 n°12",
+  "file": "raw/mutopia/piano/SchumannR__O68__schumann-op68-12-Pere-Fouettard.pdf",
+  "midi": "mids/mutopia/piano/SchumannR__O68__schumann-op68-12-Pere-Fouettard.mid",
+  "pages": 2,
+  "poly": 5,
+  "instrument": "Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Macroom Lasses, The",
+  "file": "raw/thesession/Macroom_Lasses__The-1042.pdf",
+  "midi": "mids/s_Macroom_Lasses__The-1042.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Jupiter",
+  "file": "raw/pdmx/violin/Jupiter-QmfCj6YWkz8r.pdf",
+  "midi": "mids/pdmx/violin/Jupiter-QmfCj6YWkz8r.mid",
+  "pages": 2,
+  "poly": 8,
+  "instrument": "Violin",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Gorman's",
+  "file": "raw/thesession/Gorman_s-10965.pdf",
+  "midi": "mids/s_Gorman_s-10965.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "North Wind, The",
+  "file": "raw/thesession/North_Wind__The-4218.pdf",
+  "midi": "mids/s_North_Wind__The-4218.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "Let Our Gladness Have No End",
+  "file": "raw/openhymnal/Let_Our_Gladness_Have_No_End.pdf",
+  "midi": "mids/h_Let_Our_Gladness_Have_No_End.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Cock And The Hen, The",
+  "file": "raw/thesession/Cock_And_The_Hen__The-93.pdf",
+  "midi": "mids/s_Cock_And_The_Hen__The-93.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Shane O'Neill's March",
+  "file": "raw/thesession/Shane_O_Neill_s_March-10269.pdf",
+  "midi": "mids/s_Shane_O_Neill_s_March-10269.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "Air from 'little Russia' Op.107 No.3",
+  "file": "raw/pdmx/trumpet/Air_from__little_Russia__Op.107_No.3-QmPis99SGyJq.pdf",
+  "midi": "mids/pdmx/trumpet/Air_from__little_Russia__Op.107_No.3-QmPis99SGyJq.mid",
+  "pages": 1,
+  "poly": 2,
+  "instrument": "Trumpet",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Piano Sonate Opus 31 No 2 (1st Movement)",
+  "file": "raw/mutopia/piano/BeethovenLv__O31__LVB_Sonate_31no2_1.pdf",
+  "midi": "mids/mutopia/piano/BeethovenLv__O31__LVB_Sonate_31no2_1.mid",
+  "pages": 8,
+  "poly": 8,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "mutopia",
+  "title": "Contrapunctusxii",
+  "file": "raw/mutopia/piano/contrapunctusXII-a4.pdf",
+  "midi": "mids/mutopia/piano/contrapunctusXII-a4.mid",
+  "pages": 4,
+  "poly": 3,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Hare In The Corn, The",
+  "file": "raw/thesession/Hare_In_The_Corn__The-1736.pdf",
+  "midi": "mids/s_Hare_In_The_Corn__The-1736.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "God, That Madest Earth and Heaven",
+  "file": "raw/openhymnal/God__That_Madest_Earth_and_Heaven.pdf",
+  "midi": "mids/h_God__That_Madest_Earth_and_Heaven.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 1
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Spring (Peterisms, Set 2)",
+  "file": "raw/openscore_lieder/Warlock__Peter-lc6447825.pdf",
+  "midi": "mids/Warlock__Peter-lc6447825.mid",
+  "pages": 4,
+  "poly": 14,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "pdmx",
+  "title": "I have been young",
+  "file": "raw/pdmx/flute/I_have_been_young-Qmbdc2rrzNBR.pdf",
+  "midi": "mids/pdmx/flute/I_have_been_young-Qmbdc2rrzNBR.mid",
+  "pages": 3,
+  "poly": 3,
+  "instrument": "Flute",
+  "level": 1
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "The Night Piece (To Julia, Op.8)",
+  "file": "raw/openscore_lieder/Quilter__Roger-lc30191099.pdf",
+  "midi": "mids/Quilter__Roger-lc30191099.mid",
+  "pages": 5,
+  "poly": 9,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Sérénade d’été (Les Sérénades)",
+  "file": "raw/openscore_lieder/Holm_s__Augusta_Mary_Anne-lc5669853.pdf",
+  "midi": "mids/Holm_s__Augusta_Mary_Anne-lc5669853.mid",
+  "pages": 3,
+  "poly": 9,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Paddy's Rambles Through The Park",
+  "file": "raw/thesession/Paddy_s_Rambles_Through_The_Park-512.pdf",
+  "midi": "mids/s_Paddy_s_Rambles_Through_The_Park-512.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Es träumte mir (Lieder und Gesänge, Op.57)",
+  "file": "raw/openscore_lieder/Brahms__Johannes-lc5071686.pdf",
+  "midi": "mids/Brahms__Johannes-lc5071686.mid",
+  "pages": 3,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Sir Phillip McHugh",
+  "file": "raw/thesession/Sir_Phillip_McHugh-2388.pdf",
+  "midi": "mids/s_Sir_Phillip_McHugh-2388.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Please Say You Will",
+  "file": "raw/openscore_lieder/Joplin__Scott-lc6304288.pdf",
+  "midi": "mids/Joplin__Scott-lc6304288.mid",
+  "pages": 4,
+  "poly": 8,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Smash The Windows",
+  "file": "raw/thesession/Smash_The_Windows-101.pdf",
+  "midi": "mids/s_Smash_The_Windows-101.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "L’été",
+  "file": "raw/openscore_lieder/Chaminade__C_cile-lc5987667.pdf",
+  "midi": "mids/Chaminade__C_cile-lc5987667.mid",
+  "pages": 12,
+  "poly": 8,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "June Apple",
+  "file": "raw/thesession/June_Apple-7237.pdf",
+  "midi": "mids/s_June_Apple-7237.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Lachen und Weinen (Op.59)",
+  "file": "raw/openscore_lieder/Schubert__Franz-lc4982491.pdf",
+  "midi": "mids/Schubert__Franz-lc4982491.mid",
+  "pages": 3,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "I Buried My Wife And Danced On Her Grave",
+  "file": "raw/thesession/I_Buried_My_Wife_And_Danced_On_Her_Grave-381.pdf",
+  "midi": "mids/s_I_Buried_My_Wife_And_Danced_On_Her_Grave-381.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Ode (Lieder, Op.5)",
+  "file": "raw/openscore_lieder/Cornelius__Peter-lc5051357.pdf",
+  "midi": "mids/Cornelius__Peter-lc5051357.mid",
+  "pages": 3,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "mutopia",
+  "title": "Prelude IX, Op. 23, No. 9",
+  "file": "raw/mutopia/piano/RachmaninoffS__O23__rach-prelude23-09.pdf",
+  "midi": "mids/mutopia/piano/RachmaninoffS__O23__rach-prelude23-09.mid",
+  "pages": 4,
+  "poly": 8,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Limerick Rake, The",
+  "file": "raw/thesession/Limerick_Rake__The-6643.pdf",
+  "midi": "mids/s_Limerick_Rake__The-6643.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "No03 Albumblatt",
+  "file": "raw/mutopia/piano/No03_Albumblatt-a4.pdf",
+  "midi": "mids/mutopia/piano/No03_Albumblatt-a4.mid",
+  "pages": 1,
+  "poly": 5,
+  "instrument": "Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Green (Cinq Mélodies, Op.58)",
+  "file": "raw/openscore_lieder/Faur___Gabriel-lc5627879.pdf",
+  "midi": "mids/Faur___Gabriel-lc5627879.mid",
+  "pages": 4,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Jedem Werke bin ich fürder tot (Das Buch der hängenden Gärten, Op.15)",
+  "file": "raw/openscore_lieder/Schoenberg__Arnold-lc30437000.pdf",
+  "midi": "mids/Schoenberg__Arnold-lc30437000.mid",
+  "pages": 2,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Siege Of Ennis, The",
+  "file": "raw/thesession/Siege_Of_Ennis__The-1640.pdf",
+  "midi": "mids/s_Siege_Of_Ennis__The-1640.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Naughton's",
+  "file": "raw/thesession/Naughton_s-2622.pdf",
+  "midi": "mids/s_Naughton_s-2622.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openhymnal",
+  "title": "O The Deep, Deep Love of Jesus",
+  "file": "raw/openhymnal/O_The_Deep__Deep_Love_of_Jesus.pdf",
+  "midi": "mids/h_O_The_Deep__Deep_Love_of_Jesus.mid",
+  "pages": 1,
+  "poly": 4,
+  "instrument": "Hymn",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Seamus O'Brien's",
+  "file": "raw/thesession/Seamus_O_Brien_s-1044.pdf",
+  "midi": "mids/s_Seamus_O_Brien_s-1044.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "John Brennan's",
+  "file": "raw/thesession/John_Brennan_s-404.pdf",
+  "midi": "mids/s_John_Brennan_s-404.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Cam Ye O'er Frae France",
+  "file": "raw/thesession/Cam_Ye_O_er_Frae_France-8145.pdf",
+  "midi": "mids/s_Cam_Ye_O_er_Frae_France-8145.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Then and now",
+  "file": "raw/openscore_lieder/Gray__Louisa-lc6620454.pdf",
+  "midi": "mids/Gray__Louisa-lc6620454.mid",
+  "pages": 4,
+  "poly": 7,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Mort de Socrate (Socrate)",
+  "file": "raw/openscore_lieder/Satie__Erik-lc6482032.pdf",
+  "midi": "mids/Satie__Erik-lc6482032.mid",
+  "pages": 37,
+  "poly": 8,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "thesession",
+  "title": "Lads Of Dunse, The",
+  "file": "raw/thesession/Lads_Of_Dunse__The-8256.pdf",
+  "midi": "mids/s_Lads_Of_Dunse__The-8256.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Die Insel der Vergessenheit (Lieder, Op.8)",
+  "file": "raw/openscore_lieder/Faisst__Clara_Mathilda-lc6164267.pdf",
+  "midi": "mids/Faisst__Clara_Mathilda-lc6164267.mid",
+  "pages": 5,
+  "poly": 10,
+  "instrument": "Voice+Piano",
+  "level": 3
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Lieber Schatz, sei wieder gut (Gesänge, Op.26)",
+  "file": "raw/openscore_lieder/Franz__Robert-lc4976646.pdf",
+  "midi": "mids/Franz__Robert-lc4976646.mid",
+  "pages": 2,
+  "poly": 6,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Lark On The Strand, The",
+  "file": "raw/thesession/Lark_On_The_Strand__The-3254.pdf",
+  "midi": "mids/s_Lark_On_The_Strand__The-3254.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "I know a lovely garden",
+  "file": "raw/openscore_lieder/Hardelot__Guy_d_-lc6629724.pdf",
+  "midi": "mids/Hardelot__Guy_d_-lc6629724.mid",
+  "pages": 3,
+  "poly": 10,
+  "instrument": "Voice+Piano",
+  "level": 1
+ },
+ {
+  "source": "thesession",
+  "title": "Gruncharsko Horo",
+  "file": "raw/thesession/Gruncharsko_Horo-2052.pdf",
+  "midi": "mids/s_Gruncharsko_Horo-2052.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 2
+ },
+ {
+  "source": "openscore_lieder",
+  "title": "Le Noël des oiseaux",
+  "file": "raw/openscore_lieder/Chaminade__C_cile-lc29421629.pdf",
+  "midi": "mids/Chaminade__C_cile-lc29421629.mid",
+  "pages": 5,
+  "poly": 9,
+  "instrument": "Voice+Piano",
+  "level": 2
+ },
+ {
+  "source": "thesession",
+  "title": "Merrily Kissed The Quaker",
+  "file": "raw/thesession/Merrily_Kissed_The_Quaker-20553.pdf",
+  "midi": "mids/s_Merrily_Kissed_The_Quaker-20553.mid",
+  "pages": 1,
+  "poly": 1,
+  "instrument": "Folk",
+  "level": 1
+ },
+ {
+  "source": "mutopia",
+  "title": "Prelude Op. WoO 55",
+  "file": "raw/mutopia/piano/BeethovenLv__WoO55__prelude_WoO55.pdf",
+  "midi": "mids/mutopia/piano/BeethovenLv__WoO55__prelude_WoO55.mid",
+  "pages": 3,
+  "poly": 6,
+  "instrument": "Piano",
+  "level": 2
+ }
+]
