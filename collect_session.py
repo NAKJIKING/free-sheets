@@ -38,6 +38,19 @@ def save_catalog(c):
         json.dump(c, f, ensure_ascii=False, indent=1)
 
 
+def normalize_abc_body(abc):
+    """ABC 본문의 줄바꿈을 정규화한다.
+
+    덤프의 abc 필드는 진짜 CRLF 를 쓴다. 예전 코드는 리터럴 '\\r\\n'(역슬래시
+    두 글자)를 먼저 지우려 해서 아무것도 못 맞췄고, 이어지는 '\r'→'\n' 치환이
+    CRLF 를 빈 줄로 바꿔 놓았다. **ABC 에서 빈 줄은 곡의 끝**이라
+    abcm2ps·abc2midi 가 첫 줄만 읽고 멈췄다(수집된 2,659곡 전부 잘림).
+    CRLF 를 먼저 접고, 남는 빈 줄도 방어적으로 걷어낸다.
+    """
+    body = abc.replace('\r\n', '\n').replace('\r', '\n')
+    return '\n'.join(L for L in body.split('\n') if L.strip())
+
+
 def abc_key(mode):
     """'Gmajor'/'Edorian' → 'G'/'Edor' (abc 표준 조성 표기)."""
     m = re.match(r'([A-G][b#]?)(\w*)', mode or '')
@@ -115,7 +128,7 @@ def main():
             continue
         t = by_tune[tid]
         name = (t.get('name') or f'Tune {tid}').strip()
-        body = (t.get('abc') or '').replace('\\r\\n', '\n').replace('\r', '\n')
+        body = normalize_abc_body(t.get('abc') or '')
         if not body.strip():
             continue
         abc = (f"X:1\nT:{name}\nR:{t.get('type') or ''}\n"
