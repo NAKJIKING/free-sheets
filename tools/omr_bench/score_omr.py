@@ -180,10 +180,13 @@ def main():
         pred, parts, bars, bad = [], 0, 0, 0
         exp = []
         ok = True
+        # 반복 펼치기는 편집거리를 쓸 단선율 곡에만 한다 — 다성부 대곡까지
+        # 두 번 파싱하면 표본 300곡에 몇 시간이 더 걸린다.
+        need_expand = e['poly'] == 1
         for m in mxls:                          # 함정 1 — 악장을 이어 붙인다
             try:
                 a = xml_stats(m)
-                b = xml_stats(m, expand=True)
+                b = xml_stats(m, expand=True) if need_expand else None
             except Exception:
                 ok = False
                 break
