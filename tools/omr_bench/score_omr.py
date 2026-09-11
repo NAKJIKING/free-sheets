@@ -36,6 +36,9 @@ import zipfile
 from fractions import Fraction
 
 warnings.filterwarnings('ignore')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+import fastxml  # noqa: E402  (위 sys.path 설정 뒤에 와야 한다)
 
 Q = 12  # 4분음표를 12 로 — 8분·16분·셋잇단 무손실
 
@@ -66,28 +69,26 @@ def _inner_xml(mxl):
 
 
 def xml_stats(path, expand=False):
-    """(음높이 순서, 성부 수, 마디 수, 박자 안 맞는 마디 수)"""
+    """(음높이 순서, 성부 수, 마디 수, 박자 안 맞는 마디 수)
+
+    기본은 XML 을 직접 읽는다(`fastxml`) — music21 의 converter.parse 는
+    파일당 0.2~0.5초라 표본 수백 곡에 못 쓴다(실측 35~100배 차이).
+    직접 파서는 **붙임줄로 이어진 음을 하나로 센다** — 정답 MIDI 가 그렇게
+    기록하므로 이쪽이 맞다(music21 경로는 두 번 세어 헛 삽입을 만들었다).
+
+    expand=True 는 music21 의 expandRepeats() 가 필요하므로 그때만 쓴다.
+    볼타·D.C. 처럼 구조 추정으로 못 푸는 반복의 폴백이다.
+    """
+    if not expand:
+        return fastxml.notes_and_bars(path)
     from music21 import converter, chord as m21chord, note as m21note
     p = _inner_xml(path) if path.endswith('.mxl') else path
-    s = converter.parse(p)
-    if expand:
-        try:
-            s = s.expandRepeats()
-        except Exception:
-            return None
-    ev, bad, tot = [], 0, 0
-    for part in s.parts:
-        ms = list(part.getElementsByClass('Measure'))
-        cur = None
-        for k, m in enumerate(ms):
-            if m.timeSignature:
-                cur = m.timeSignature
-            if cur and 0 < k < len(ms) - 1:      # 못갖춘마디·끝마디 제외
-                tot += 1
-                exp = Fraction(cur.numerator * 4, cur.denominator)
-                got = Fraction(m.duration.quarterLength).limit_denominator(96)
-                if abs(got - exp) > Fraction(1, 64):
-                    bad += 1
+    try:
+        s_ = converter.parse(p).expandRepeats()
+    except Exception:
+        return None
+    ev = []
+    for part in s_.parts:
         for e in part.flatten().notes:
             off = round(float(e.offset) * Q)
             if isinstance(e, m21chord.Chord):
@@ -96,11 +97,18 @@ def xml_stats(path, expand=False):
             elif isinstance(e, m21note.Note):
                 ev.append((off, e.pitch.midi))
     ev.sort()
-    return [p_ for _, p_ in ev], len(s.parts), tot, bad
+    return [x for _, x in ev], len(s_.parts), 0, 0
 
 
 # ---------- 비교 ----------
 def lev(a, b):
+    """편집거리. rapidfuzz 가 있으면 그걸 쓴다 — 같은 답을 약 2,000배 빨리 낸다
+    (실측 600×1800 기준 162ms → 0.1ms). 없으면 순수 파이썬으로 떨어진다."""
+    try:
+        from rapidfuzz.distance import Levenshtein
+        return Levenshtein.distance(a, b)
+    except ImportError:
+        pass
     n, m = len(a), len(b)
     if n * m > 4_000_000:
         return None
@@ -182,7 +190,7 @@ def main():
         ok = True
         # 반복 펼치기는 편집거리를 쓸 단선율 곡에만 한다 — 다성부 대곡까지
         # 두 번 파싱하면 표본 300곡에 몇 시간이 더 걸린다.
-        need_expand = e['poly'] == 1
+        need_expand = False          # 구조 추정으로 안 되면 아래에서 뒤늦게 쓴다
         for m in mxls:                          # 함정 1 — 악장을 이어 붙인다
             try:
                 a = xml_stats(m)
@@ -204,7 +212,20 @@ def main():
             continue
 
         if e['poly'] == 1:                      # 함정 2 — 단선율만 편집거리로
-            ner, fit = best_ner(gt, pred, exp)
+            ner, fit = best_ner(gt, pred)
+            # music21 폴백은 '반복 때문에 어긋난 것 같을 때'만 쓴다.
+            # 인식 결과가 정답보다 훨씬 길면(범위 불일치·오인식) 반복 펼치기가
+            # 도움이 안 될 뿐 아니라 메모리를 터뜨린다 — 실제로 정답 136음짜리
+            # 곡에서 1,606음이 나와 폴백이 프로세스를 죽였다.
+            if 0.15 < ner < 1.0 and len(pred) <= len(gt) * 1.5:
+                exp2 = []
+                for m in mxls:
+                    b = xml_stats(m, expand=True)
+                    exp2 += (b[0] if b else [])
+                if exp2:
+                    n2, f2 = best_ner(gt, pred, exp2)
+                    if n2 < ner:
+                        ner, fit = n2, f2
             rec.update(ner=round(ner, 4), fit=fit)
             # 함정 4 — 정답이 악보보다 훨씬 많고 반복으로도 설명 안 되면 대조 불가
             if len(gt) > len(pred) * 1.6 and ner > 0.35:
