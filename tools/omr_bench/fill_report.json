@@ -3,25 +3,66 @@
   "title": "Bwv895",
   "file": "raw/mutopia/piano/bwv895-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 1080,
+  "pages": 4,
+  "parts": 1,
+  "bars": 43,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Terzetto",
   "file": "raw/mutopia/flute/terzetto-a4.pdf",
   "instrument": "Flute",
-  "verdict": "인식 결과 없음"
+  "notes": 2990,
+  "pages": 10,
+  "parts": 3,
+  "bars": 991,
+  "bad": 305,
+  "meters": [
+   "2/4",
+   "4/4",
+   "6/8",
+   "9/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 31%"
  },
  {
   "title": "Op2No12",
   "file": "raw/mutopia/flute/Op2No12-a4.pdf",
   "instrument": "Flute",
-  "verdict": "인식 결과 없음"
+  "notes": 3410,
+  "pages": 8,
+  "parts": 3,
+  "bars": 551,
+  "bad": 154,
+  "meters": [
+   "3/2",
+   "3/8",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 28%"
  },
  {
   "title": "Tunebook",
   "file": "raw/mutopia/cello/tunebook-a4.pdf",
   "instrument": "Cello",
-  "verdict": "인식 결과 없음"
+  "notes": 1460,
+  "pages": 6,
+  "parts": 1,
+  "bars": 431,
+  "bad": 12,
+  "meters": [
+   "2/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/cello/tunebook-a4.mid"
  },
  {
   "title": "Bwv 988 Guitar",
@@ -33,13 +74,31 @@
   "title": "Contrapunctusxvii",
   "file": "raw/mutopia/piano/contrapunctusXVII-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 3178,
+  "pages": 9,
+  "parts": 8,
+  "bars": 560,
+  "bad": 177,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 32%"
  },
  {
   "title": "Sonatina 1",
   "file": "raw/mutopia/piano/sonatina-1-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 1134,
+  "pages": 3,
+  "parts": 1,
+  "bars": 128,
+  "bad": 8,
+  "meters": [
+   "2/2",
+   "3/4",
+   "3/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Clementi Op42",
@@ -51,67 +110,167 @@
   "title": "Op149 14",
   "file": "raw/mutopia/piano/op149-14-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 872,
+  "pages": 4,
+  "parts": 1,
+  "bars": 56,
+  "bad": 2,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/piano/op149-14-a4.mid"
  },
  {
   "title": "Op149 16",
   "file": "raw/mutopia/piano/op149-16-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 973,
+  "pages": 3,
+  "parts": 1,
+  "bars": 162,
+  "bad": 16,
+  "meters": [
+   "3/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Dussek Op46 1",
   "file": "raw/mutopia/piano/Dussek_Op46_1-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 1532,
+  "pages": 6,
+  "parts": 1,
+  "bars": 123,
+  "bad": 36,
+  "meters": [
+   "2/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 29%"
  },
  {
   "title": "Dussek Op46 2",
   "file": "raw/mutopia/piano/Dussek_Op46_2-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 2025,
+  "pages": 7,
+  "parts": 1,
+  "bars": 144,
+  "bad": 5,
+  "meters": [
+   "2/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/piano/Dussek_Op46_2-a4.mid"
  },
  {
   "title": "Dussek Op46 3",
   "file": "raw/mutopia/piano/Dussek_Op46_3-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 1502,
+  "pages": 5,
+  "parts": 1,
+  "bars": 109,
+  "bad": 4,
+  "meters": [
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/piano/Dussek_Op46_3-a4.mid"
  },
  {
   "title": "Dussek Op46 4",
   "file": "raw/mutopia/piano/Dussek_Op46_4-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 1494,
+  "pages": 4,
+  "parts": 1,
+  "bars": 144,
+  "bad": 4,
+  "meters": [
+   "3/4",
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/piano/Dussek_Op46_4-a4.mid"
  },
  {
   "title": "Dussek Op46 5",
   "file": "raw/mutopia/piano/Dussek_Op46_5-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 1446,
+  "pages": 4,
+  "parts": 1,
+  "bars": 158,
+  "bad": 5,
+  "meters": [
+   "2/4",
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/piano/Dussek_Op46_5-a4.mid"
  },
  {
   "title": "Dussek Op46 6",
   "file": "raw/mutopia/piano/Dussek_Op46_6-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 2307,
+  "pages": 8,
+  "parts": 1,
+  "bars": 184,
+  "bad": 20,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 11%"
  },
  {
   "title": "Oldshawl",
   "file": "raw/mutopia/piano/oldshawl-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 683,
+  "pages": 2,
+  "parts": 5,
+  "bars": 75,
+  "bad": 15,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 20%"
  },
  {
   "title": "Ich Ruf",
   "file": "raw/mutopia/organ/Ich_ruf-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1208,
+  "pages": 6,
+  "parts": 2,
+  "bars": 170,
+  "bad": 9,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 5%"
  },
  {
   "title": "Lobt Gott",
   "file": "raw/mutopia/organ/Lobt_Gott-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1678,
+  "pages": 6,
+  "parts": 2,
+  "bars": 174,
+  "bad": 5,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Lobt_Gott-a4.mid"
  },
  {
   "title": "Sonataiv",
@@ -129,7 +288,15 @@
   "title": "Bwv533",
   "file": "raw/mutopia/organ/BWV533-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1354,
+  "pages": 6,
+  "parts": 4,
+  "bars": 252,
+  "bad": 40,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 16%"
  },
  {
   "title": "Prelude Et Fugue En La Majeur",
@@ -165,49 +332,114 @@
   "title": "Bwv611",
   "file": "raw/mutopia/organ/bwv611-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 552,
+  "pages": 2,
+  "parts": 2,
+  "bars": 26,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/bwv611-a4.mid"
  },
  {
   "title": "Bwv612",
   "file": "raw/mutopia/organ/bwv612-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 501,
+  "pages": 2,
+  "parts": 2,
+  "bars": 28,
+  "bad": 28,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 100%"
  },
  {
   "title": "Bwv613",
   "file": "raw/mutopia/organ/bwv613-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 397,
+  "pages": 2,
+  "parts": 2,
+  "bars": 30,
+  "bad": 9,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 30%"
  },
  {
   "title": "Das Alte Jahr",
   "file": "raw/mutopia/organ/Das_alte_Jahr-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 327,
+  "pages": 2,
+  "parts": 3,
+  "bars": 33,
+  "bad": 4,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Bwv615",
   "file": "raw/mutopia/organ/bwv615-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 919,
+  "pages": 3,
+  "parts": 2,
+  "bars": 98,
+  "bad": 21,
+  "meters": [
+   "3/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 21%"
  },
  {
   "title": "Bwv616",
   "file": "raw/mutopia/organ/bwv616-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 559,
+  "pages": 2,
+  "parts": 2,
+  "bars": 26,
+  "bad": 12,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 46%"
  },
  {
   "title": "Bwv617",
   "file": "raw/mutopia/organ/bwv617-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 626,
+  "pages": 3,
+  "parts": 2,
+  "bars": 18,
+  "bad": 18,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 100%"
  },
  {
   "title": "Bwv618",
   "file": "raw/mutopia/organ/bwv618-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 641,
+  "pages": 3,
+  "parts": 2,
+  "bars": 38,
+  "bad": 8,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 21%"
  },
  {
   "title": "Bwv619",
@@ -227,37 +459,86 @@
   "title": "Bwv620",
   "file": "raw/mutopia/organ/bwv620-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 609,
+  "pages": 2,
+  "parts": 2,
+  "bars": 46,
+  "bad": 6,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 13%"
  },
  {
   "title": "Bwv635",
   "file": "raw/mutopia/organ/bwv635-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 603,
+  "pages": 2,
+  "parts": 2,
+  "bars": 38,
+  "bad": 14,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 37%"
  },
  {
   "title": "Bwv636",
   "file": "raw/mutopia/organ/bwv636-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 363,
+  "pages": 2,
+  "parts": 2,
+  "bars": 22,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/bwv636-a4.mid"
  },
  {
   "title": "Durch Adams Fall",
   "file": "raw/mutopia/organ/Durch_Adams_fall-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 333,
+  "pages": 2,
+  "parts": 3,
+  "bars": 36,
+  "bad": 8,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 22%"
  },
  {
   "title": "Bwv638",
   "file": "raw/mutopia/organ/bwv638-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 386,
+  "pages": 2,
+  "parts": 2,
+  "bars": 20,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Ich Ruf Zu Dir",
   "file": "raw/mutopia/organ/Ich_ruf_zu_dir-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 388,
+  "pages": 2,
+  "parts": 3,
+  "bars": 42,
+  "bad": 7,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 17%"
  },
  {
   "title": "Ich Ruf Zu Dir2",
@@ -269,187 +550,438 @@
   "title": "In Dich Habe Ich Gehoffet",
   "file": "raw/mutopia/organ/In_dich_habe_ich_gehoffet-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 320,
+  "pages": 2,
+  "parts": 3,
+  "bars": 27,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 11%"
  },
  {
   "title": "Bwv641",
   "file": "raw/mutopia/organ/bwv641-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 354,
+  "pages": 2,
+  "parts": 2,
+  "bars": 14,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 14%"
  },
  {
   "title": "Bwv642",
   "file": "raw/mutopia/organ/bwv642-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 451,
+  "pages": 2,
+  "parts": 2,
+  "bars": 20,
+  "bad": 7,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 35%"
  },
  {
   "title": "Bwv643",
   "file": "raw/mutopia/organ/bwv643-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 229,
+  "pages": 2,
+  "parts": 3,
+  "bars": 30,
+  "bad": 12,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 40%"
  },
  {
   "title": "Von Gott Will Ich Nicht Lassen",
   "file": "raw/mutopia/organ/Von_Gott_will_ich_nicht_lassen-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 722,
+  "pages": 4,
+  "parts": 3,
+  "bars": 81,
+  "bad": 34,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 42%"
  },
  {
   "title": "Bwv659",
   "file": "raw/mutopia/organ/bwv659-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 892,
+  "pages": 3,
+  "parts": 2,
+  "bars": 64,
+  "bad": 7,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 11%"
  },
  {
   "title": "Bwv660",
   "file": "raw/mutopia/organ/bwv660-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 893,
+  "pages": 3,
+  "parts": 2,
+  "bars": 80,
+  "bad": 13,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 16%"
  },
  {
   "title": "Bwv661",
   "file": "raw/mutopia/organ/bwv661-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1250,
+  "pages": 4,
+  "parts": 2,
+  "bars": 180,
+  "bad": 29,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 16%"
  },
  {
   "title": "Bwv662",
   "file": "raw/mutopia/organ/bwv662-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1085,
+  "pages": 5,
+  "parts": 2,
+  "bars": 74,
+  "bad": 24,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 32%"
  },
  {
   "title": "Bwv663",
   "file": "raw/mutopia/organ/bwv663-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1453,
+  "pages": 6,
+  "parts": 2,
+  "bars": 186,
+  "bad": 37,
+  "meters": [
+   "3/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 20%"
  },
  {
   "title": "Bwv664",
   "file": "raw/mutopia/organ/bwv664-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 2447,
+  "pages": 8,
+  "parts": 2,
+  "bars": 190,
+  "bad": 27,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 14%"
  },
  {
   "title": "Bwv665",
   "file": "raw/mutopia/organ/bwv665-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1111,
+  "pages": 5,
+  "parts": 2,
+  "bars": 100,
+  "bad": 56,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 56%"
  },
  {
   "title": "Bwv666",
   "file": "raw/mutopia/organ/bwv666-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 894,
+  "pages": 3,
+  "parts": 2,
+  "bars": 72,
+  "bad": 72,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 100%"
  },
  {
   "title": "Bwv667",
   "file": "raw/mutopia/organ/bwv667-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 975,
+  "pages": 3,
+  "parts": 2,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/bwv667-a4.mid"
  },
  {
   "title": "Bwv683",
   "file": "raw/mutopia/organ/bwv683-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 425,
+  "pages": 1,
+  "parts": 1,
+  "bars": 23,
+  "bad": 7,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 30%"
  },
  {
   "title": "Bwv687",
   "file": "raw/mutopia/organ/bwv687-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 985,
+  "pages": 3,
+  "parts": 1,
+  "bars": 73,
+  "bad": 9,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Bwv693",
   "file": "raw/mutopia/organ/bwv693-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 455,
+  "pages": 2,
+  "parts": 3,
+  "bars": 78,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/bwv693-a4.mid"
  },
  {
   "title": "Bwv720",
   "file": "raw/mutopia/organ/bwv720-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 922,
+  "pages": 4,
+  "parts": 2,
+  "bars": 110,
+  "bad": 25,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 23%"
  },
  {
   "title": "Bwv721",
   "file": "raw/mutopia/organ/bwv721-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 958,
+  "pages": 2,
+  "parts": 1,
+  "bars": 32,
+  "bad": 2,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Bwv723",
   "file": "raw/mutopia/organ/bwv723-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 479,
+  "pages": 2,
+  "parts": 3,
+  "bars": 138,
+  "bad": 11,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Bwv724",
   "file": "raw/mutopia/organ/bwv724-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 431,
+  "pages": 2,
+  "parts": 3,
+  "bars": 120,
+  "bad": 3,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/bwv724-a4.mid"
  },
  {
   "title": "Bwv727",
   "file": "raw/mutopia/organ/bwv727-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 373,
+  "pages": 2,
+  "parts": 2,
+  "bars": 32,
+  "bad": 4,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Bwv734",
   "file": "raw/mutopia/organ/bwv734-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 959,
+  "pages": 3,
+  "parts": 2,
+  "bars": 76,
+  "bad": 23,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 30%"
  },
  {
   "title": "Bwv735",
   "file": "raw/mutopia/organ/bwv735-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1610,
+  "pages": 6,
+  "parts": 2,
+  "bars": 126,
+  "bad": 7,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Dandrieu Offertoire",
   "file": "raw/mutopia/organ/Dandrieu_Offertoire-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1412,
+  "pages": 4,
+  "parts": 1,
+  "bars": 123,
+  "bad": 2,
+  "meters": [
+   "2/2",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Dandrieu_Offertoire-a4.mid"
  },
  {
   "title": "Fugue Sur L Ave Maris Stella",
   "file": "raw/mutopia/organ/Fugue_sur_l_Ave_maris_stella-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 293,
+  "pages": 1,
+  "parts": 1,
+  "bars": 41,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Fugue_sur_l_Ave_maris_stella-a4.mid"
  },
  {
   "title": "Pfmut",
   "file": "raw/mutopia/organ/PFMUT-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 860,
+  "pages": 3,
+  "parts": 3,
+  "bars": 144,
+  "bad": 11,
+  "meters": [
+   "9/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Toccata",
   "file": "raw/mutopia/organ/Toccata-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1726,
+  "pages": 10,
+  "parts": 3,
+  "bars": 549,
+  "bad": 222,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 40%"
  },
  {
   "title": "Grigny Fugue A 5",
   "file": "raw/mutopia/organ/Grigny-Fugue_a_5-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 647,
+  "pages": 3,
+  "parts": 2,
+  "bars": 90,
+  "bad": 6,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Larej",
   "file": "raw/mutopia/organ/LaRej-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 585,
+  "pages": 2,
+  "parts": 2,
+  "bars": 36,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "All My Heart",
   "file": "raw/mutopia/organ/all-my-heart-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1034,
+  "pages": 6,
+  "parts": 5,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/all-my-heart-a4.mid"
  },
  {
   "title": "Mendelssohn Bartholdyf Op 23 No 1",
@@ -461,7 +993,16 @@
   "title": "Roberday Fugue 5",
   "file": "raw/mutopia/organ/Roberday-fugue-5-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 714,
+  "pages": 4,
+  "parts": 1,
+  "bars": 85,
+  "bad": 84,
+  "meters": [
+   "3/4",
+   "5/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 99%"
  },
  {
   "title": "Hspre3",
@@ -475,19 +1016,38 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "합격"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/HSpre3-a4.mid"
  },
  {
   "title": "Hspre4",
   "file": "raw/mutopia/organ/HSpre4-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 248,
+  "pages": 1,
+  "parts": 2,
+  "bars": 46,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/HSpre4-a4.mid"
  },
  {
   "title": "Hspre5",
   "file": "raw/mutopia/organ/HSpre5-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 883,
+  "pages": 3,
+  "parts": 1,
+  "bars": 61,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/HSpre5-a4.mid"
  },
  {
   "title": "Hspre13",
@@ -499,355 +1059,863 @@
   "title": "Mond",
   "file": "raw/mutopia/organ/mond-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 201,
+  "pages": 1,
+  "parts": 2,
+  "bars": 22,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/mond-a4.mid"
  },
  {
   "title": "Tallis Ordinal Figured",
   "file": "raw/mutopia/organ/tallis-ordinal-figured-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 56,
+  "pages": 1,
+  "parts": 1,
+  "bars": 7,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/tallis-ordinal-figured-a4.mid"
  },
  {
   "title": "Annue Christe 2E Verset",
   "file": "raw/mutopia/organ/Annue_Christe_2e_verset-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 780,
+  "pages": 2,
+  "parts": 1,
+  "bars": 56,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Annue_Christe_2e_verset-a4.mid"
  },
  {
   "title": "Annue Christe Amen",
   "file": "raw/mutopia/organ/Annue_Christe_Amen-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 708,
+  "pages": 2,
+  "parts": 1,
+  "bars": 53,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Annue_Christe_Amen-a4.mid"
  },
  {
   "title": "Veni Creator 2E Verset",
   "file": "raw/mutopia/organ/Veni_Creator-2e_verset-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 706,
+  "pages": 2,
+  "parts": 1,
+  "bars": 55,
+  "bad": 1,
+  "meters": [
+   "4/4",
+   "6/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Veni_Creator-2e_verset-a4.mid"
  },
  {
   "title": "Veni Creator 3E Verset",
   "file": "raw/mutopia/organ/Veni_Creator-3e_verset-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 459,
+  "pages": 2,
+  "parts": 1,
+  "bars": 52,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Veni_Creator-3e_verset-a4.mid"
  },
  {
   "title": "Veni Creator 4E Verset",
   "file": "raw/mutopia/organ/Veni_Creator-4e_verset-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 964,
+  "pages": 3,
+  "parts": 1,
+  "bars": 69,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Veni_Creator-4e_verset-a4.mid"
  },
  {
   "title": "Cae2",
   "file": "raw/mutopia/organ/cae2-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 804,
+  "pages": 2,
+  "parts": 1,
+  "bars": 59,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/cae2-a4.mid"
  },
  {
   "title": "Cae3",
   "file": "raw/mutopia/organ/cae3-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 821,
+  "pages": 2,
+  "parts": 1,
+  "bars": 57,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 5%"
  },
  {
   "title": "Istec2",
   "file": "raw/mutopia/organ/istec2-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 781,
+  "pages": 2,
+  "parts": 1,
+  "bars": 61,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/istec2-a4.mid"
  },
  {
   "title": "Mwp5V",
   "file": "raw/mutopia/organ/MWP5V-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1661,
+  "pages": 6,
+  "parts": 1,
+  "bars": 114,
+  "bad": 38,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 33%"
  },
  {
   "title": "Mwppt",
   "file": "raw/mutopia/organ/MWPPT-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1136,
+  "pages": 4,
+  "parts": 1,
+  "bars": 74,
+  "bad": 6,
+  "meters": [
+   "3/2",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Mwfan",
   "file": "raw/mutopia/organ/MWfan-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 1779,
+  "pages": 7,
+  "parts": 2,
+  "bars": 218,
+  "bad": 8,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/MWfan-a4.mid"
  },
  {
   "title": "5 Adagio",
   "file": "raw/mutopia/organ/5-adagio-a4.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 767,
+  "pages": 3,
+  "parts": 2,
+  "bars": 58,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 5%"
  },
  {
   "title": "Cpe Bach Rondo",
   "file": "raw/mutopia/harpsichord/cpe-bach-rondo-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 1793,
+  "pages": 3,
+  "parts": 1,
+  "bars": 247,
+  "bad": 12,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/cpe-bach-rondo-a4.mid"
  },
  {
   "title": "Bwv 259",
   "file": "raw/mutopia/harpsichord/bwv-259-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 230,
+  "pages": 1,
+  "parts": 1,
+  "bars": 10,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv-259-a4.mid"
  },
  {
   "title": "Bwv 269",
   "file": "raw/mutopia/harpsichord/bwv_269-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 228,
+  "pages": 1,
+  "parts": 1,
+  "bars": 21,
+  "bad": 2,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Bwv347",
   "file": "raw/mutopia/harpsichord/bwv347-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 231,
+  "pages": 1,
+  "parts": 1,
+  "bars": 13,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 15%"
  },
  {
   "title": "Anna Magdalena 20A",
   "file": "raw/mutopia/harpsichord/anna-magdalena-20a-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 97,
+  "pages": 1,
+  "parts": 1,
+  "bars": 14,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/anna-magdalena-20a-a4.mid"
  },
  {
   "title": "Bwv792",
   "file": "raw/mutopia/harpsichord/bwv792-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 536,
+  "pages": 2,
+  "parts": 1,
+  "bars": 39,
+  "bad": 2,
+  "meters": [
+   "9/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 5%"
  },
  {
   "title": "Bwv793",
   "file": "raw/mutopia/harpsichord/bwv793-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 754,
+  "pages": 3,
+  "parts": 1,
+  "bars": 42,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv793-a4.mid"
  },
  {
   "title": "Bwv794",
   "file": "raw/mutopia/harpsichord/bwv794-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 573,
+  "pages": 2,
+  "parts": 1,
+  "bars": 21,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv794-a4.mid"
  },
  {
   "title": "Bwv795",
   "file": "raw/mutopia/harpsichord/bwv795-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 659,
+  "pages": 3,
+  "parts": 1,
+  "bars": 33,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv795-a4.mid"
  },
  {
   "title": "Wtk1 Fugue1",
   "file": "raw/mutopia/harpsichord/wtk1-fugue1-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 751,
+  "pages": 2,
+  "parts": 1,
+  "bars": 25,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/wtk1-fugue1-a4.mid"
  },
  {
   "title": "Wtk1 Prelude1",
   "file": "raw/mutopia/harpsichord/wtk1-prelude1-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 514,
+  "pages": 2,
+  "parts": 1,
+  "bars": 33,
+  "bad": 8,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 24%"
  },
  {
   "title": "Bwv847A",
   "file": "raw/mutopia/harpsichord/bwv847a-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 1093,
+  "pages": 2,
+  "parts": 1,
+  "bars": 36,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Fuga2",
   "file": "raw/mutopia/harpsichord/fuga2-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 764,
+  "pages": 2,
+  "parts": 1,
+  "bars": 29,
+  "bad": 4,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 14%"
  },
  {
   "title": "Bwv848A",
   "file": "raw/mutopia/harpsichord/bwv848a-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 817,
+  "pages": 2,
+  "parts": 1,
+  "bars": 102,
+  "bad": 2,
+  "meters": [
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv848a-a4.mid"
  },
  {
   "title": "Bwv861 Praeludium16",
   "file": "raw/mutopia/harpsichord/BWV861_Praeludium16-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 553,
+  "pages": 2,
+  "parts": 1,
+  "bars": 17,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Bach Fugue17",
   "file": "raw/mutopia/harpsichord/bach-fugue17-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 907,
+  "pages": 2,
+  "parts": 1,
+  "bars": 33,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bach-fugue17-a4.mid"
  },
  {
   "title": "Bach Prelude17",
   "file": "raw/mutopia/harpsichord/bach-prelude17-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 663,
+  "pages": 3,
+  "parts": 1,
+  "bars": 42,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bach-prelude17-a4.mid"
  },
  {
   "title": "Bwv865 Fuga20",
   "file": "raw/mutopia/harpsichord/BWV865_Fuga20-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 2455,
+  "pages": 6,
+  "parts": 1,
+  "bars": 85,
+  "bad": 7,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Bwv865 Praeludium20",
   "file": "raw/mutopia/harpsichord/BWV865_Praeludium20-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 624,
+  "pages": 2,
+  "parts": 1,
+  "bars": 26,
+  "bad": 2,
+  "meters": [
+   "9/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Bwv869 Praeludium24",
   "file": "raw/mutopia/harpsichord/BWV869_Praeludium24-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 763,
+  "pages": 2,
+  "parts": 1,
+  "bars": 45,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/BWV869_Praeludium24-a4.mid"
  },
  {
   "title": "Bwv 988 V04",
   "file": "raw/mutopia/harpsichord/bwv-988-v04-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 301,
+  "pages": 1,
+  "parts": 1,
+  "bars": 32,
+  "bad": 1,
+  "meters": [
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv-988-v04-a4.mid"
  },
  {
   "title": "Bwv 988 V05",
   "file": "raw/mutopia/harpsichord/bwv-988-v05-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 536,
+  "pages": 2,
+  "parts": 1,
+  "bars": 30,
+  "bad": 1,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv-988-v05-a4.mid"
  },
  {
   "title": "Bwv 988 V06",
   "file": "raw/mutopia/harpsichord/bwv-988-v06-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 392,
+  "pages": 2,
+  "parts": 1,
+  "bars": 34,
+  "bad": 4,
+  "meters": [
+   "3/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Bwv 988 V07",
   "file": "raw/mutopia/harpsichord/bwv-988-v07-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 362,
+  "pages": 2,
+  "parts": 1,
+  "bars": 30,
+  "bad": 2,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Bwv 988 V08",
   "file": "raw/mutopia/harpsichord/bwv-988-v08-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 651,
+  "pages": 2,
+  "parts": 1,
+  "bars": 30,
+  "bad": 3,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Bwv 988 V09",
   "file": "raw/mutopia/harpsichord/bwv-988-v09-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 381,
+  "pages": 1,
+  "parts": 1,
+  "bars": 14,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv-988-v09-a4.mid"
  },
  {
   "title": "Bwv 988 V10",
   "file": "raw/mutopia/harpsichord/bwv-988-v10-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 318,
+  "pages": 1,
+  "parts": 1,
+  "bars": 30,
+  "bad": 5,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 17%"
  },
  {
   "title": "Bwv 988 V11",
   "file": "raw/mutopia/harpsichord/bwv-988-v11-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 619,
+  "pages": 2,
+  "parts": 1,
+  "bars": 30,
+  "bad": 30,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 100%"
  },
  {
   "title": "Bwv 988 V12",
   "file": "raw/mutopia/harpsichord/bwv-988-v12-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 643,
+  "pages": 2,
+  "parts": 1,
+  "bars": 30,
+  "bad": 1,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv-988-v12-a4.mid"
  },
  {
   "title": "Bwv 988 V13",
   "file": "raw/mutopia/harpsichord/bwv-988-v13-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 812,
+  "pages": 3,
+  "parts": 1,
+  "bars": 30,
+  "bad": 2,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Bwv 988 V30",
   "file": "raw/mutopia/harpsichord/bwv-988-v30-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 384,
+  "pages": 2,
+  "parts": 1,
+  "bars": 16,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Bach Applicatio",
   "file": "raw/mutopia/harpsichord/bach-applicatio-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 115,
+  "pages": 1,
+  "parts": 1,
+  "bars": 6,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bach-applicatio-a4.mid"
  },
  {
   "title": "01 Overture",
   "file": "raw/mutopia/harpsichord/01-overture-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 623,
+  "pages": 2,
+  "parts": 1,
+  "bars": 38,
+  "bad": 1,
+  "meters": [
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/01-overture-a4.mid"
  },
  {
   "title": "02 Entree",
   "file": "raw/mutopia/harpsichord/02-entree-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 407,
+  "pages": 1,
+  "parts": 1,
+  "bars": 19,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 11%"
  },
  {
   "title": "03 Gavotte",
   "file": "raw/mutopia/harpsichord/03-gavotte-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 248,
+  "pages": 1,
+  "parts": 1,
+  "bars": 20,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "04 Toccata",
   "file": "raw/mutopia/harpsichord/04-toccata-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 366,
+  "pages": 1,
+  "parts": 1,
+  "bars": 19,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/04-toccata-a4.mid"
  },
  {
   "title": "05 Fuga",
   "file": "raw/mutopia/harpsichord/05-fuga-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 206,
+  "pages": 1,
+  "parts": 1,
+  "bars": 17,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "06 Impertinence",
   "file": "raw/mutopia/harpsichord/06-impertinence-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 155,
+  "pages": 1,
+  "parts": 1,
+  "bars": 20,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 15%"
  },
  {
   "title": "07 Concerto",
   "file": "raw/mutopia/harpsichord/07-concerto-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 762,
+  "pages": 2,
+  "parts": 1,
+  "bars": 36,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "08 Preludio",
   "file": "raw/mutopia/harpsichord/08-preludio-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 474,
+  "pages": 1,
+  "parts": 1,
+  "bars": 20,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/08-preludio-a4.mid"
  },
  {
   "title": "09 Menueti",
   "file": "raw/mutopia/harpsichord/09-menueti-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 143,
+  "pages": 1,
+  "parts": 1,
+  "bars": 15,
+  "bad": 0,
+  "meters": [
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/09-menueti-a4.mid"
  },
  {
   "title": "Hob Xvi 28 Iii Presto",
   "file": "raw/mutopia/harpsichord/hob-xvi-28-iii-presto-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 1134,
+  "pages": 3,
+  "parts": 1,
+  "bars": 180,
+  "bad": 37,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 21%"
  },
  {
   "title": "Plaintes",
   "file": "raw/mutopia/harpsichord/plaintes-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 657,
+  "pages": 2,
+  "parts": 1,
+  "bars": 78,
+  "bad": 8,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Sauvages",
   "file": "raw/mutopia/harpsichord/sauvages-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 791,
+  "pages": 2,
+  "parts": 1,
+  "bars": 78,
+  "bad": 10,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 13%"
  },
  {
   "title": "Tambourin",
   "file": "raw/mutopia/harpsichord/tambourin-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 548,
+  "pages": 2,
+  "parts": 1,
+  "bars": 62,
+  "bad": 2,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/tambourin-a4.mid"
  },
  {
   "title": "Premierlivre",
@@ -859,7 +1927,15 @@
   "title": "Sonatensatz",
   "file": "raw/mutopia/harpsichord/sonatensatz-a4.pdf",
   "instrument": "Harpsichord",
-  "verdict": "인식 결과 없음"
+  "notes": 456,
+  "pages": 2,
+  "parts": 1,
+  "bars": 27,
+  "bad": 11,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 41%"
  },
  {
   "title": "Giulio Cesare",
@@ -871,73 +1947,183 @@
   "title": "Rectus",
   "file": "raw/mutopia/recorder/rectus-a4.pdf",
   "instrument": "Recorder",
-  "verdict": "인식 결과 없음"
+  "notes": 1101,
+  "pages": 3,
+  "parts": 3,
+  "bars": 210,
+  "bad": 73,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 35%"
  },
  {
   "title": "Sonata",
   "file": "raw/mutopia/recorder/Sonata-a4.pdf",
   "instrument": "Recorder",
-  "verdict": "인식 결과 없음"
+  "notes": 1370,
+  "pages": 5,
+  "parts": 2,
+  "bars": 234,
+  "bad": 1,
+  "meters": [
+   "3/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 위험 박자 [(3, 2)]"
  },
  {
   "title": "Ciaccona",
   "file": "raw/mutopia/recorder/Ciaccona-a4.pdf",
   "instrument": "Recorder",
-  "verdict": "인식 결과 없음"
+  "notes": 1529,
+  "pages": 6,
+  "parts": 2,
+  "bars": 318,
+  "bad": 27,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Sonata 1",
   "file": "raw/mutopia/recorder/Sonata_1-a4.pdf",
   "instrument": "Recorder",
-  "verdict": "인식 결과 없음"
+  "notes": 2408,
+  "pages": 8,
+  "parts": 2,
+  "bars": 342,
+  "bad": 19,
+  "meters": [
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Duett Telemann",
   "file": "raw/mutopia/recorder/Duett-Telemann-a4.pdf",
   "instrument": "Recorder",
-  "verdict": "인식 결과 없음"
+  "notes": 1943,
+  "pages": 5,
+  "parts": 1,
+  "bars": 171,
+  "bad": 16,
+  "meters": [
+   "2/2",
+   "3/4",
+   "4/4",
+   "6/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 9%"
  },
  {
   "title": "Bourree",
   "file": "raw/mutopia/lute/bourree-a4.pdf",
   "instrument": "Lute",
-  "verdict": "인식 결과 없음"
+  "notes": 233,
+  "pages": 1,
+  "parts": 1,
+  "bars": 24,
+  "bad": 2,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Bach Prelude Bwv999",
   "file": "raw/mutopia/lute/Bach_Prelude_BWV999-a4.pdf",
   "instrument": "Lute",
-  "verdict": "인식 결과 없음"
+  "notes": 505,
+  "pages": 2,
+  "parts": 1,
+  "bars": 41,
+  "bad": 2,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/lute/Bach_Prelude_BWV999-a4.mid"
  },
  {
   "title": "Greensleaves",
   "file": "raw/mutopia/lute/Greensleaves-a4.pdf",
   "instrument": "Lute",
-  "verdict": "인식 결과 없음"
+  "notes": 110,
+  "pages": 1,
+  "parts": 1,
+  "bars": 31,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/lute/Greensleaves-a4.mid"
  },
  {
   "title": "Gimo 12",
   "file": "raw/mutopia/mandolin/gimo-12-a4.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 1203,
+  "pages": 2,
+  "parts": 2,
+  "bars": 268,
+  "bad": 16,
+  "meters": [
+   "2/4",
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Gimo 13",
   "file": "raw/mutopia/mandolin/gimo-13-a4.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 4477,
+  "pages": 7,
+  "parts": 2,
+  "bars": 576,
+  "bad": 72,
+  "meters": [
+   "2/4",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Gimo 14",
   "file": "raw/mutopia/mandolin/gimo-14-a4.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 2944,
+  "pages": 5,
+  "parts": 2,
+  "bars": 346,
+  "bad": 46,
+  "meters": [
+   "2/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 13%"
  },
  {
   "title": "Gimo 15",
   "file": "raw/mutopia/mandolin/gimo-15-a4.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 1387,
+  "pages": 3,
+  "parts": 2,
+  "bars": 180,
+  "bad": 39,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 22%"
  },
  {
   "title": "Symphony25 1",
@@ -949,31 +2135,83 @@
   "title": "Symphony25 2",
   "file": "raw/mutopia/oboe/Symphony25_2-a4.pdf",
   "instrument": "Oboe",
-  "verdict": "인식 결과 없음"
+  "notes": 1284,
+  "pages": 8,
+  "parts": 7,
+  "bars": 504,
+  "bad": 36,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Sonate1",
   "file": "raw/mutopia/bassoon/Sonate1-a4.pdf",
   "instrument": "Bassoon",
-  "verdict": "인식 결과 없음"
+  "notes": 1231,
+  "pages": 5,
+  "parts": 2,
+  "bars": 300,
+  "bad": 4,
+  "meters": [
+   "2/2",
+   "2/4",
+   "3/4",
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/bassoon/Sonate1-a4.mid"
  },
  {
   "title": "Sonate2",
   "file": "raw/mutopia/bassoon/Sonate2-a4.pdf",
   "instrument": "Bassoon",
-  "verdict": "인식 결과 없음"
+  "notes": 1294,
+  "pages": 5,
+  "parts": 2,
+  "bars": 336,
+  "bad": 9,
+  "meters": [
+   "2/2",
+   "3/4",
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/bassoon/Sonate2-a4.mid"
  },
  {
   "title": "Sonate3",
   "file": "raw/mutopia/bassoon/Sonate3-a4.pdf",
   "instrument": "Bassoon",
-  "verdict": "인식 결과 없음"
+  "notes": 1306,
+  "pages": 4,
+  "parts": 2,
+  "bars": 332,
+  "bad": 7,
+  "meters": [
+   "2/4",
+   "3/4",
+   "3/8",
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/bassoon/Sonate3-a4.mid"
  },
  {
   "title": "Dies Irae",
   "file": "raw/mutopia/bassoon/dies_irae-a4.pdf",
   "instrument": "Bassoon",
-  "verdict": "인식 결과 없음"
+  "notes": 3939,
+  "pages": 9,
+  "parts": 55,
+  "bars": 3630,
+  "bad": 107,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/bassoon/dies_irae-a4.mid"
  },
  {
   "title": "Semiramide Riconosciuta",
@@ -985,61 +2223,144 @@
   "title": "Air Tromb",
   "file": "raw/mutopia/trombone/air-tromb-a4.pdf",
   "instrument": "Trombone",
-  "verdict": "인식 결과 없음"
+  "notes": 516,
+  "pages": 2,
+  "parts": 4,
+  "bars": 68,
+  "bad": 5,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Sancta Maria",
   "file": "raw/mutopia/trombone/Sancta_Maria-a4.pdf",
   "instrument": "Trombone",
-  "verdict": "인식 결과 없음"
+  "notes": 1035,
+  "pages": 5,
+  "parts": 5,
+  "bars": 420,
+  "bad": 5,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/trombone/Sancta_Maria-a4.mid"
  },
  {
   "title": "Alyabyev Cherubic",
   "file": "raw/mutopia/voice/alyabyev-cherubic-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 596,
+  "pages": 3,
+  "parts": 4,
+  "bars": 228,
+  "bad": 12,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 5%"
  },
  {
   "title": "Ernando",
   "file": "raw/mutopia/voice/Ernando-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1557,
+  "pages": 8,
+  "parts": 2,
+  "bars": 272,
+  "bad": 6,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Ernando-a4.mid"
  },
  {
   "title": "Easter",
   "file": "raw/mutopia/voice/Easter-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 264,
+  "pages": 1,
+  "parts": 2,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Easter-a4.mid"
  },
  {
   "title": "Goodkingwenceslas",
   "file": "raw/mutopia/voice/GoodKingWenceslas-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 212,
+  "pages": 1,
+  "parts": 2,
+  "bars": 30,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/GoodKingWenceslas-a4.mid"
  },
  {
   "title": "Leoni",
   "file": "raw/mutopia/voice/Leoni-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 209,
+  "pages": 1,
+  "parts": 2,
+  "bars": 44,
+  "bad": 28,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 64%"
  },
  {
   "title": "Nuz My Dzis Krzescijani",
   "file": "raw/mutopia/voice/Nuz_my_dzis_krzescijani-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 85,
+  "pages": 1,
+  "parts": 3,
+  "bars": 24,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Nuz_my_dzis_krzescijani-a4.mid"
  },
  {
   "title": "Uxbridge",
   "file": "raw/mutopia/voice/Uxbridge-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 263,
+  "pages": 1,
+  "parts": 2,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Uxbridge-a4.mid"
  },
  {
   "title": "Alice",
   "file": "raw/mutopia/voice/alice-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 665,
+  "pages": 2,
+  "parts": 2,
+  "bars": 88,
+  "bad": 8,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 9%"
  },
  {
   "title": "Bach Bwv 230 Lobet Den Herrn Alle Heiden",
@@ -1051,181 +2372,444 @@
   "title": "Bwv 264",
   "file": "raw/mutopia/voice/bwv-264-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 149,
+  "pages": 1,
+  "parts": 4,
+  "bars": 36,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Spiritus Domini Bach",
   "file": "raw/mutopia/voice/spiritus_domini_bach-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 415,
+  "pages": 4,
+  "parts": 4,
+  "bars": 164,
+  "bad": 27,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 16%"
  },
  {
   "title": "Nun Komm.28",
   "file": "raw/mutopia/voice/Nun_komm.28-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 149,
+  "pages": 1,
+  "parts": 1,
+  "bars": 6,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Nun_komm.28-a4.mid"
  },
  {
   "title": "O Haupt Voll Blut",
   "file": "raw/mutopia/voice/O_Haupt_voll_Blut-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 255,
+  "pages": 1,
+  "parts": 2,
+  "bars": 30,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/O_Haupt_voll_Blut-a4.mid"
  },
  {
   "title": "Brother James Air",
   "file": "raw/mutopia/voice/brother_james_air-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 165,
+  "pages": 1,
+  "parts": 1,
+  "bars": 5,
+  "bad": 0,
+  "meters": [
+   "3/2"
+  ],
+  "verdict": "탈락: 위험 박자 [(3, 2)]"
  },
  {
   "title": "Alas",
   "file": "raw/mutopia/voice/alas-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 413,
+  "pages": 2,
+  "parts": 2,
+  "bars": 88,
+  "bad": 2,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/alas-a4.mid"
  },
  {
   "title": "Aria Rocco",
   "file": "raw/mutopia/voice/aria-rocco-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1602,
+  "pages": 4,
+  "parts": 2,
+  "bars": 180,
+  "bad": 52,
+  "meters": [
+   "2/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 29%"
  },
  {
   "title": "St Anne",
   "file": "raw/mutopia/voice/st_anne-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 104,
+  "pages": 1,
+  "parts": 1,
+  "bars": 6,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/st_anne-a4.mid"
  },
  {
   "title": "Jesus Meine Zuversicht",
   "file": "raw/mutopia/voice/Jesus_meine_zuversicht-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 173,
+  "pages": 1,
+  "parts": 1,
+  "bars": 15,
+  "bad": 0,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Jesus_meine_zuversicht-a4.mid"
  },
  {
   "title": "Agape",
   "file": "raw/mutopia/voice/agape-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 135,
+  "pages": 1,
+  "parts": 1,
+  "bars": 14,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/agape-a4.mid"
  },
  {
   "title": "Togodbetheglory",
   "file": "raw/mutopia/voice/ToGodBeTheGlory-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 366,
+  "pages": 2,
+  "parts": 2,
+  "bars": 76,
+  "bad": 34,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 45%"
  },
  {
   "title": "I Am Thine O Lord",
   "file": "raw/mutopia/voice/i_am_Thine_o_Lord-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 272,
+  "pages": 1,
+  "parts": 1,
+  "bars": 15,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Aurore",
   "file": "raw/mutopia/voice/aurore-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1002,
+  "pages": 4,
+  "parts": 2,
+  "bars": 90,
+  "bad": 2,
+  "meters": [
+   "2/4",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/aurore-a4.mid"
  },
  {
   "title": "Fleur Jetee",
   "file": "raw/mutopia/voice/fleur_jetee-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1856,
+  "pages": 5,
+  "parts": 2,
+  "bars": 86,
+  "bad": 3,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/fleur_jetee-a4.mid"
  },
  {
   "title": "Le Pays Des Reves",
   "file": "raw/mutopia/voice/le_pays_des_reves-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 656,
+  "pages": 6,
+  "parts": 2,
+  "bars": 110,
+  "bad": 52,
+  "meters": [
+   "4/4",
+   "6/8",
+   "7/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 47%"
  },
  {
   "title": "Les Roses D Ispahan",
   "file": "raw/mutopia/voice/les_roses_d_ispahan-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 986,
+  "pages": 4,
+  "parts": 2,
+  "bars": 157,
+  "bad": 26,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 17%"
  },
  {
   "title": "Hardtimes",
   "file": "raw/mutopia/voice/hardtimes-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 778,
+  "pages": 3,
+  "parts": 5,
+  "bars": 105,
+  "bad": 41,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 39%"
  },
  {
   "title": "Slumber",
   "file": "raw/mutopia/voice/slumber-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 559,
+  "pages": 2,
+  "parts": 2,
+  "bars": 68,
+  "bad": 10,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 15%"
  },
  {
   "title": "Al Mormorar",
   "file": "raw/mutopia/voice/Al_mormorar-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1021,
+  "pages": 8,
+  "parts": 6,
+  "bars": 456,
+  "bad": 13,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Al_mormorar-a4.mid"
  },
  {
   "title": "Irby",
   "file": "raw/mutopia/voice/irby-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 204,
+  "pages": 1,
+  "parts": 1,
+  "bars": 10,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/irby-a4.mid"
  },
  {
   "title": "Solodalbrando",
   "file": "raw/mutopia/voice/SoloDalBrando-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 530,
+  "pages": 3,
+  "parts": 3,
+  "bars": 90,
+  "bad": 0,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SoloDalBrando-a4.mid"
  },
  {
   "title": "Sullaruotadifortuna",
   "file": "raw/mutopia/voice/SullaRuotaDiFortuna-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 491,
+  "pages": 3,
+  "parts": 2,
+  "bars": 120,
+  "bad": 1,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SullaRuotaDiFortuna-a4.mid"
  },
  {
   "title": "Lavendettaeuncibo",
   "file": "raw/mutopia/voice/LaVendettaEUnCibo-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 681,
+  "pages": 4,
+  "parts": 3,
+  "bars": 189,
+  "bad": 1,
+  "meters": [
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/LaVendettaEUnCibo-a4.mid"
  },
  {
   "title": "Agitatodafieretempeste",
   "file": "raw/mutopia/voice/AgitatoDaFiereTempeste-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 2835,
+  "pages": 10,
+  "parts": 5,
+  "bars": 375,
+  "bad": 22,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Iogiatamai",
   "file": "raw/mutopia/voice/IoGiaTAmai-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 990,
+  "pages": 6,
+  "parts": 4,
+  "bars": 252,
+  "bad": 12,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/IoGiaTAmai-a4.mid"
  },
  {
   "title": "Norisolvoabbandonar",
   "file": "raw/mutopia/voice/NoRisolvoAbbandonar-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1097,
+  "pages": 5,
+  "parts": 3,
+  "bars": 156,
+  "bad": 12,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Lagloriasola",
   "file": "raw/mutopia/voice/LaGloriaSola-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1315,
+  "pages": 5,
+  "parts": 4,
+  "bars": 256,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/LaGloriaSola-a4.mid"
  },
  {
   "title": "Nonpensiquellaltera",
   "file": "raw/mutopia/voice/NonPensiQuellAltera-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1325,
+  "pages": 9,
+  "parts": 4,
+  "bars": 372,
+  "bad": 25,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Imparaingrata",
   "file": "raw/mutopia/voice/ImparaIngrata-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 987,
+  "pages": 5,
+  "parts": 3,
+  "bars": 384,
+  "bad": 6,
+  "meters": [
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/ImparaIngrata-a4.mid"
  },
  {
   "title": "Sedelfiume",
   "file": "raw/mutopia/voice/SeDelFiume-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 2445,
+  "pages": 9,
+  "parts": 5,
+  "bars": 540,
+  "bad": 3,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SeDelFiume-a4.mid"
  },
  {
   "title": "Toplady",
@@ -1253,97 +2837,226 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "합격"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/DukeSt-a4.mid"
  },
  {
   "title": "Austria",
   "file": "raw/mutopia/voice/Austria-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 195,
+  "pages": 1,
+  "parts": 2,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Austria-a4.mid"
  },
  {
   "title": "Part Ii Aria Raphael",
   "file": "raw/mutopia/voice/part-II-aria-raphael-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1965,
+  "pages": 5,
+  "parts": 2,
+  "bars": 214,
+  "bad": 18,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Tantum Ergo",
   "file": "raw/mutopia/voice/tantum_ergo-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 221,
+  "pages": 1,
+  "parts": 4,
+  "bars": 96,
+  "bad": 3,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/tantum_ergo-a4.mid"
  },
  {
   "title": "Lyons",
   "file": "raw/mutopia/voice/lyons-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 156,
+  "pages": 1,
+  "parts": 1,
+  "bars": 15,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/lyons-a4.mid"
  },
  {
   "title": "Hildach Im Volkston",
   "file": "raw/mutopia/voice/hildach-im-volkston-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 374,
+  "pages": 2,
+  "parts": 2,
+  "bars": 60,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/hildach-im-volkston-a4.mid"
  },
  {
   "title": "Thaxted",
   "file": "raw/mutopia/voice/Thaxted-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 269,
+  "pages": 1,
+  "parts": 2,
+  "bars": 56,
+  "bad": 26,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 46%"
  },
  {
   "title": "Franconia",
   "file": "raw/mutopia/voice/franconia-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 103,
+  "pages": 1,
+  "parts": 1,
+  "bars": 7,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/franconia-a4.mid"
  },
  {
   "title": "Kopylov Gladsome Light",
   "file": "raw/mutopia/voice/kopylov-gladsome-light-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 318,
+  "pages": 2,
+  "parts": 2,
+  "bars": 70,
+  "bad": 5,
+  "meters": [
+   "3/4",
+   "4/4",
+   "6/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Part2",
   "file": "raw/mutopia/voice/part2-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 642,
+  "pages": 4,
+  "parts": 4,
+  "bars": 156,
+  "bad": 10,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Part4",
   "file": "raw/mutopia/voice/part4-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 475,
+  "pages": 3,
+  "parts": 4,
+  "bars": 248,
+  "bad": 17,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Part8",
   "file": "raw/mutopia/voice/part8-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 181,
+  "pages": 2,
+  "parts": 8,
+  "bars": 312,
+  "bad": 27,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 9%"
  },
  {
   "title": "Lalo Lesclave",
   "file": "raw/mutopia/voice/lalo-lesclave-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 869,
+  "pages": 3,
+  "parts": 2,
+  "bars": 62,
+  "bad": 5,
+  "meters": [
+   "9/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Samia",
   "file": "raw/mutopia/voice/samia-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 380,
+  "pages": 2,
+  "parts": 4,
+  "bars": 144,
+  "bad": 4,
+  "meters": [
+   "2/2",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/samia-a4.mid"
  },
  {
   "title": "Miseropargoletto",
   "file": "raw/mutopia/voice/MiseroPargoletto-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1634,
+  "pages": 7,
+  "parts": 5,
+  "bars": 505,
+  "bad": 11,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/MiseroPargoletto-a4.mid"
  },
  {
   "title": "Hanson Place",
   "file": "raw/mutopia/voice/hanson_place-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 260,
+  "pages": 1,
+  "parts": 1,
+  "bars": 14,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Lwv05",
@@ -1355,55 +3068,133 @@
   "title": "Martyn",
   "file": "raw/mutopia/voice/martyn-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 219,
+  "pages": 1,
+  "parts": 1,
+  "bars": 19,
+  "bad": 0,
+  "meters": [
+   "6/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/martyn-a4.mid"
  },
  {
   "title": "Boylston",
   "file": "raw/mutopia/voice/boylston-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 104,
+  "pages": 1,
+  "parts": 1,
+  "bars": 7,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/boylston-a4.mid"
  },
  {
   "title": "Nmgtt",
   "file": "raw/mutopia/voice/nmgtt-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 244,
+  "pages": 1,
+  "parts": 4,
+  "bars": 56,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/nmgtt-a4.mid"
  },
  {
   "title": "Olivet Mason",
   "file": "raw/mutopia/voice/olivet_mason-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 148,
+  "pages": 1,
+  "parts": 1,
+  "bars": 12,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 25%"
  },
  {
   "title": "Paulus 3",
   "file": "raw/mutopia/voice/paulus_3-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 257,
+  "pages": 2,
+  "parts": 4,
+  "bars": 52,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/paulus_3-a4.mid"
  },
  {
   "title": "Paulus 9",
   "file": "raw/mutopia/voice/paulus_9-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 217,
+  "pages": 2,
+  "parts": 4,
+  "bars": 48,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/paulus_9-a4.mid"
  },
  {
   "title": "Elias 32",
   "file": "raw/mutopia/voice/elias_32-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 425,
+  "pages": 2,
+  "parts": 4,
+  "bars": 140,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/elias_32-a4.mid"
  },
  {
   "title": "Op115 1",
   "file": "raw/mutopia/voice/op115_1-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 594,
+  "pages": 2,
+  "parts": 4,
+  "bars": 216,
+  "bad": 13,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Op115 2",
   "file": "raw/mutopia/voice/op115_2-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 774,
+  "pages": 3,
+  "parts": 4,
+  "bars": 280,
+  "bad": 18,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Op121",
@@ -1415,67 +3206,155 @@
   "title": "01 3 11",
   "file": "raw/mutopia/voice/01-3-11-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 235,
+  "pages": 5,
+  "parts": 3,
+  "bars": 43,
+  "bad": 15,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 35%"
  },
  {
   "title": "01 3 12",
   "file": "raw/mutopia/voice/01-3-12-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 282,
+  "pages": 6,
+  "parts": 3,
+  "bars": 42,
+  "bad": 6,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 14%"
  },
  {
   "title": "01 3 13",
   "file": "raw/mutopia/voice/01-3-13-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 251,
+  "pages": 5,
+  "parts": 3,
+  "bars": 40,
+  "bad": 16,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 40%"
  },
  {
   "title": "01 3 14",
   "file": "raw/mutopia/voice/01-3-14-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 425,
+  "pages": 5,
+  "parts": 3,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/01-3-14-a4.mid"
  },
  {
   "title": "01 3 15",
   "file": "raw/mutopia/voice/01-3-15-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 203,
+  "pages": 5,
+  "parts": 3,
+  "bars": 36,
+  "bad": 11,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 31%"
  },
  {
   "title": "01 3 16",
   "file": "raw/mutopia/voice/01-3-16-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 135,
+  "pages": 4,
+  "parts": 3,
+  "bars": 24,
+  "bad": 5,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 쪽당 34음 — 마디 검열 의심"
  },
  {
   "title": "01 3 17",
   "file": "raw/mutopia/voice/01-3-17-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 296,
+  "pages": 6,
+  "parts": 3,
+  "bars": 42,
+  "bad": 11,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 26%"
  },
  {
   "title": "01 3 18",
   "file": "raw/mutopia/voice/01-3-18-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 226,
+  "pages": 5,
+  "parts": 3,
+  "bars": 36,
+  "bad": 7,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 19%"
  },
  {
   "title": "01 3 19",
   "file": "raw/mutopia/voice/01-3-19-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 212,
+  "pages": 5,
+  "parts": 3,
+  "bars": 36,
+  "bad": 13,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 36%"
  },
  {
   "title": "01 3 20",
   "file": "raw/mutopia/voice/01-3-20-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 199,
+  "pages": 5,
+  "parts": 3,
+  "bars": 36,
+  "bad": 6,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 쪽당 40음 — 마디 검열 의심"
  },
  {
   "title": "Et Resurrexit",
   "file": "raw/mutopia/voice/Et_resurrexit-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 400,
+  "pages": 6,
+  "parts": 5,
+  "bars": 245,
+  "bad": 118,
+  "meters": [
+   "3/2",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 48%"
  },
  {
   "title": "Beatus Vir Primo",
@@ -1487,73 +3366,177 @@
   "title": "Ecce Sacrum Paratum Convivium",
   "file": "raw/mutopia/voice/Ecce_sacrum_paratum_convivium-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 218,
+  "pages": 4,
+  "parts": 2,
+  "bars": 146,
+  "bad": 72,
+  "meters": [
+   "2/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 49%"
  },
  {
   "title": "Otuchinnanzimorte",
   "file": "raw/mutopia/voice/OTuChInnanziMorte-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 104,
+  "pages": 1,
+  "parts": 2,
+  "bars": 38,
+  "bad": 15,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 39%"
  },
  {
   "title": "Salve Regina",
   "file": "raw/mutopia/voice/Salve_Regina-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 219,
+  "pages": 2,
+  "parts": 2,
+  "bars": 78,
+  "bad": 6,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Zufriedenheit Piano",
   "file": "raw/mutopia/voice/zufriedenheit-piano-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 188,
+  "pages": 1,
+  "parts": 2,
+  "bars": 24,
+  "bad": 4,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 17%"
  },
  {
   "title": "Zufriedenheit",
   "file": "raw/mutopia/voice/zufriedenheit-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 261,
+  "pages": 1,
+  "parts": 2,
+  "bars": 40,
+  "bad": 1,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/zufriedenheit-a4.mid"
  },
  {
   "title": "Mozart Abendruhe",
   "file": "raw/mutopia/voice/mozart_abendruhe-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 183,
+  "pages": 1,
+  "parts": 2,
+  "bars": 38,
+  "bad": 2,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 5%"
  },
  {
   "title": "Abschiedm",
   "file": "raw/mutopia/voice/AbschiedM-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 120,
+  "pages": 1,
+  "parts": 2,
+  "bars": 12,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/AbschiedM-a4.mid"
  },
  {
   "title": "Afterwards",
   "file": "raw/mutopia/voice/afterwards-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1556,
+  "pages": 5,
+  "parts": 2,
+  "bars": 115,
+  "bad": 11,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Mueller",
   "file": "raw/mutopia/voice/mueller-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 173,
+  "pages": 1,
+  "parts": 1,
+  "bars": 10,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Naujalis Caligaverunt",
   "file": "raw/mutopia/voice/naujalis-caligaverunt-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 375,
+  "pages": 2,
+  "parts": 4,
+  "bars": 148,
+  "bad": 5,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/naujalis-caligaverunt-a4.mid"
  },
  {
   "title": "Naujalis Popule Meus",
   "file": "raw/mutopia/voice/naujalis-popule-meus-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 835,
+  "pages": 4,
+  "parts": 4,
+  "bars": 336,
+  "bad": 12,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/naujalis-popule-meus-a4.mid"
  },
  {
   "title": "Naujalis Vexilla Regis",
   "file": "raw/mutopia/voice/naujalis-vexilla-regis-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 147,
+  "pages": 1,
+  "parts": 2,
+  "bars": 32,
+  "bad": 0,
+  "meters": [
+   "3/2"
+  ],
+  "verdict": "탈락: 위험 박자 [(3, 2)]"
  },
  {
   "title": "01 Homesweethome",
@@ -1599,55 +3582,133 @@
   "title": "St Louis",
   "file": "raw/mutopia/voice/st_louis-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 206,
+  "pages": 1,
+  "parts": 1,
+  "bars": 15,
+  "bad": 1,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Ries Wiegenlied",
   "file": "raw/mutopia/voice/ries-wiegenlied-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 621,
+  "pages": 3,
+  "parts": 2,
+  "bars": 77,
+  "bad": 25,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 32%"
  },
  {
   "title": "Dialogo A Due",
   "file": "raw/mutopia/voice/Dialogo_a_due-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1260,
+  "pages": 10,
+  "parts": 3,
+  "bars": 555,
+  "bad": 209,
+  "meters": [
+   "2/2",
+   "3/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 38%"
  },
  {
   "title": "Non Sia Chi Mi Riprenda",
   "file": "raw/mutopia/voice/Non_sia_chi_mi_riprenda-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1074,
+  "pages": 6,
+  "parts": 2,
+  "bars": 258,
+  "bad": 5,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Non_sia_chi_mi_riprenda-a4.mid"
  },
  {
   "title": "Schubertf D531 Dertodunddasmaedchen",
   "file": "raw/mutopia/voice/SchubertF-D531_DerTodUndDasMaedchen-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 646,
+  "pages": 3,
+  "parts": 2,
+  "bars": 82,
+  "bad": 5,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Andiemusik",
   "file": "raw/mutopia/voice/AnDieMusik-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 627,
+  "pages": 2,
+  "parts": 2,
+  "bars": 42,
+  "bad": 1,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/AnDieMusik-a4.mid"
  },
  {
   "title": "Forelle",
   "file": "raw/mutopia/voice/forelle-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1417,
+  "pages": 5,
+  "parts": 2,
+  "bars": 158,
+  "bad": 91,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 58%"
  },
  {
   "title": "Schubertf D686B Fruehlingsglaube",
   "file": "raw/mutopia/voice/SchubertF-D686B-Fruehlingsglaube-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1235,
+  "pages": 7,
+  "parts": 2,
+  "bars": 100,
+  "bad": 56,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 56%"
  },
  {
   "title": "Schubertf D691 Dievoegel",
   "file": "raw/mutopia/voice/SchubertF-D691_DieVoegel-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 674,
+  "pages": 3,
+  "parts": 2,
+  "bars": 108,
+  "bad": 0,
+  "meters": [
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SchubertF-D691_DieVoegel-a4.mid"
  },
  {
   "title": "Schubertf D717 Suleika 2",
@@ -1665,61 +3726,145 @@
   "title": "Schubertf D743 Seligewelt",
   "file": "raw/mutopia/voice/SchubertF-D743-SeligeWelt-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 509,
+  "pages": 4,
+  "parts": 2,
+  "bars": 40,
+  "bad": 5,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Schubertf D983B Zumrundetanz",
   "file": "raw/mutopia/voice/SchubertF-D983B_ZumRundetanz-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 247,
+  "pages": 2,
+  "parts": 4,
+  "bars": 56,
+  "bad": 0,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SchubertF-D983B_ZumRundetanz-a4.mid"
  },
  {
   "title": "Schubertf D983C Dienacht",
   "file": "raw/mutopia/voice/SchubertF-D983C_DieNacht-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 527,
+  "pages": 3,
+  "parts": 4,
+  "bars": 148,
+  "bad": 2,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SchubertF-D983C_DieNacht-a4.mid"
  },
  {
   "title": "Schubertf D983 Juenglingswonne",
   "file": "raw/mutopia/voice/SchubertF-D983_Juenglingswonne-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 774,
+  "pages": 4,
+  "parts": 4,
+  "bars": 168,
+  "bad": 8,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SchubertF-D983_Juenglingswonne-a4.mid"
  },
  {
   "title": "02 Freisinn",
   "file": "raw/mutopia/voice/02_Freisinn-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 872,
+  "pages": 2,
+  "parts": 2,
+  "bars": 66,
+  "bad": 27,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 41%"
  },
  {
   "title": "Blume",
   "file": "raw/mutopia/voice/blume-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 580,
+  "pages": 2,
+  "parts": 2,
+  "bars": 36,
+  "bad": 7,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 19%"
  },
  {
   "title": "Ich Grolle Nicht",
   "file": "raw/mutopia/voice/Ich_grolle_nicht-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1141,
+  "pages": 2,
+  "parts": 3,
+  "bars": 102,
+  "bad": 11,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 11%"
  },
  {
   "title": "Ich Will Meine Seele Tauchen",
   "file": "raw/mutopia/voice/Ich_will_meine_Seele_tauchen-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 574,
+  "pages": 3,
+  "parts": 2,
+  "bars": 42,
+  "bad": 26,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 62%"
  },
  {
   "title": "Foundation",
   "file": "raw/mutopia/voice/Foundation-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 185,
+  "pages": 1,
+  "parts": 2,
+  "bars": 36,
+  "bad": 12,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 33%"
  },
  {
   "title": "Sinivalkoinen",
   "file": "raw/mutopia/voice/SINIVALKOINEN-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 41,
+  "pages": 1,
+  "parts": 1,
+  "bars": 6,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SINIVALKOINEN-a4.mid"
  },
  {
   "title": "Singivy",
@@ -1745,67 +3890,162 @@
   "title": "Crusaders Hymn",
   "file": "raw/mutopia/voice/crusaders_hymn-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 159,
+  "pages": 1,
+  "parts": 1,
+  "bars": 13,
+  "bad": 0,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/crusaders_hymn-a4.mid"
  },
  {
   "title": "First Noel",
   "file": "raw/mutopia/voice/first_noel-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 264,
+  "pages": 1,
+  "parts": 1,
+  "bars": 22,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/first_noel-a4.mid"
  },
  {
   "title": "Fleebird",
   "file": "raw/mutopia/voice/fleebird-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 677,
+  "pages": 3,
+  "parts": 2,
+  "bars": 84,
+  "bad": 16,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 19%"
  },
  {
   "title": "Greensleeves",
   "file": "raw/mutopia/voice/greensleeves-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 236,
+  "pages": 1,
+  "parts": 1,
+  "bars": 15,
+  "bad": 2,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 13%"
  },
  {
   "title": "Greensleeves Guitar",
   "file": "raw/mutopia/voice/greensleeves_guitar-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 335,
+  "pages": 2,
+  "parts": 3,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/greensleeves_guitar-a4.mid"
  },
  {
   "title": "Its Me Oh Lord",
   "file": "raw/mutopia/voice/its_me_oh_Lord-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 146,
+  "pages": 1,
+  "parts": 2,
+  "bars": 28,
+  "bad": 0,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/its_me_oh_Lord-a4.mid"
  },
  {
   "title": "Voi Che Le Mie Vicende",
   "file": "raw/mutopia/voice/Voi_che_le_mie_vicende-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 2263,
+  "pages": 6,
+  "parts": 5,
+  "bars": 445,
+  "bad": 4,
+  "meters": [
+   "2/2"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Voi_che_le_mie_vicende-a4.mid"
  },
  {
   "title": "T Amo Mia Vita",
   "file": "raw/mutopia/voice/T_amo_mia_vita-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 426,
+  "pages": 3,
+  "parts": 3,
+  "bars": 168,
+  "bad": 4,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/T_amo_mia_vita-a4.mid"
  },
  {
   "title": "Dellalmasuperba",
   "file": "raw/mutopia/voice/DellAlmaSuperba-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1380,
+  "pages": 6,
+  "parts": 3,
+  "bars": 411,
+  "bad": 1,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/DellAlmaSuperba-a4.mid"
  },
  {
   "title": "Deldestin",
   "file": "raw/mutopia/voice/DelDestin-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1671,
+  "pages": 7,
+  "parts": 4,
+  "bars": 436,
+  "bad": 7,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/DelDestin-a4.mid"
  },
  {
   "title": "Mentredormi",
   "file": "raw/mutopia/voice/MentreDormi-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1452,
+  "pages": 10,
+  "parts": 6,
+  "bars": 240,
+  "bad": 14,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Siamnavi",
@@ -1823,73 +4063,172 @@
   "title": "Adeste",
   "file": "raw/mutopia/voice/adeste-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 226,
+  "pages": 1,
+  "parts": 2,
+  "bars": 44,
+  "bad": 10,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 23%"
  },
  {
   "title": "Adeste Fideles",
   "file": "raw/mutopia/voice/adeste_fideles-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 202,
+  "pages": 1,
+  "parts": 1,
+  "bars": 19,
+  "bad": 3,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 16%"
  },
  {
   "title": "O How Amiable",
   "file": "raw/mutopia/voice/O_how_amiable-a4.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 922,
+  "pages": 4,
+  "parts": 5,
+  "bars": 275,
+  "bad": 9,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/O_how_amiable-a4.mid"
  },
  {
   "title": "Bach Brichan",
   "file": "raw/mutopia/choir/Bach_BrichAn-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 239,
+  "pages": 1,
+  "parts": 4,
+  "bars": 48,
+  "bad": 8,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 17%"
  },
  {
   "title": "Bach Christlag",
   "file": "raw/mutopia/choir/Bach_ChristLag-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 233,
+  "pages": 1,
+  "parts": 4,
+  "bars": 48,
+  "bad": 8,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 17%"
  },
  {
   "title": "Instillernacht",
   "file": "raw/mutopia/choir/InstillerNacht-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 251,
+  "pages": 1,
+  "parts": 2,
+  "bars": 30,
+  "bad": 10,
+  "meters": [
+   "3/2"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 33%"
  },
  {
   "title": "Waisenklage",
   "file": "raw/mutopia/choir/Waisenklage-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 185,
+  "pages": 1,
+  "parts": 2,
+  "bars": 26,
+  "bad": 5,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 19%"
  },
  {
   "title": "Wiegenlied",
   "file": "raw/mutopia/choir/Wiegenlied-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 216,
+  "pages": 1,
+  "parts": 2,
+  "bars": 24,
+  "bad": 8,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 33%"
  },
  {
   "title": "Grabliedm",
   "file": "raw/mutopia/choir/GrabliedM-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 255,
+  "pages": 1,
+  "parts": 2,
+  "bars": 44,
+  "bad": 2,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/choir/GrabliedM-a4.mid"
  },
  {
   "title": "Kindleinswiegenlied",
   "file": "raw/mutopia/choir/KindleinsWiegenlied-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 477,
+  "pages": 2,
+  "parts": 2,
+  "bars": 44,
+  "bad": 2,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/choir/KindleinsWiegenlied-a4.mid"
  },
  {
   "title": "Deutschlandlied",
   "file": "raw/mutopia/choir/Deutschlandlied-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 269,
+  "pages": 1,
+  "parts": 2,
+  "bars": 32,
+  "bad": 5,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 16%"
  },
  {
   "title": "Greis",
   "file": "raw/mutopia/choir/Greis-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 681,
+  "pages": 2,
+  "parts": 2,
+  "bars": 78,
+  "bad": 26,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 33%"
  },
  {
   "title": "Schubertf D962 Tantumergo",
@@ -1901,55 +4240,127 @@
   "title": "Inderferne",
   "file": "raw/mutopia/choir/InderFerne-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 162,
+  "pages": 1,
+  "parts": 2,
+  "bars": 18,
+  "bad": 4,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 22%"
  },
  {
   "title": "Inderfernem",
   "file": "raw/mutopia/choir/InderFerneM-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 159,
+  "pages": 1,
+  "parts": 2,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "합격",
+  "midi": "mids/mutopia/choir/InderFerneM-a4.mid"
  },
  {
   "title": "Soldatenbraut",
   "file": "raw/mutopia/choir/Soldatenbraut-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 172,
+  "pages": 1,
+  "parts": 2,
+  "bars": 18,
+  "bad": 3,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 17%"
  },
  {
   "title": "Tharau",
   "file": "raw/mutopia/choir/Tharau-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 255,
+  "pages": 1,
+  "parts": 2,
+  "bars": 44,
+  "bad": 2,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/choir/Tharau-a4.mid"
  },
  {
   "title": "Untreuem",
   "file": "raw/mutopia/choir/UntreueM-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 180,
+  "pages": 1,
+  "parts": 2,
+  "bars": 22,
+  "bad": 6,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 27%"
  },
  {
   "title": "Daslied",
   "file": "raw/mutopia/choir/daslied-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 168,
+  "pages": 2,
+  "parts": 2,
+  "bars": 28,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Dergutekamerad",
   "file": "raw/mutopia/choir/DerguteKamerad-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 183,
+  "pages": 1,
+  "parts": 2,
+  "bars": 22,
+  "bad": 2,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 9%"
  },
  {
   "title": "Jugend",
   "file": "raw/mutopia/choir/Jugend-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 155,
+  "pages": 1,
+  "parts": 2,
+  "bars": 16,
+  "bad": 6,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 38%"
  },
  {
   "title": "Abendlied",
   "file": "raw/mutopia/choir/Abendlied-a4.pdf",
   "instrument": "Choir",
-  "verdict": "인식 결과 없음"
+  "notes": 272,
+  "pages": 1,
+  "parts": 2,
+  "bars": 38,
+  "bad": 11,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 29%"
  },
  {
   "title": "Concerto No3",
@@ -1997,61 +4408,155 @@
   "title": "Opdext",
   "file": "raw/mutopia/percussion/opdext-a4.pdf",
   "instrument": "Percussion",
-  "verdict": "인식 결과 없음"
+  "notes": 1085,
+  "pages": 3,
+  "parts": 1,
+  "bars": 152,
+  "bad": 2,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/percussion/opdext-a4.mid"
  },
  {
   "title": "Opsinist",
   "file": "raw/mutopia/percussion/opsinist-a4.pdf",
   "instrument": "Percussion",
-  "verdict": "인식 결과 없음"
+  "notes": 1504,
+  "pages": 4,
+  "parts": 1,
+  "bars": 196,
+  "bad": 121,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 62%"
  },
  {
   "title": "Prelude",
   "file": "raw/mutopia/percussion/prelude-a4.pdf",
   "instrument": "Percussion",
-  "verdict": "인식 결과 없음"
+  "notes": 726,
+  "pages": 3,
+  "parts": 2,
+  "bars": 136,
+  "bad": 4,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/percussion/prelude-a4.mid"
  },
  {
   "title": "Dansenapolitaine",
   "file": "raw/mutopia/percussion/dansenapolitaine-a4.pdf",
   "instrument": "Percussion",
-  "verdict": "인식 결과 없음"
+  "notes": 762,
+  "pages": 3,
+  "parts": 2,
+  "bars": 104,
+  "bad": 5,
+  "meters": [
+   "2/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/percussion/dansenapolitaine-a4.mid"
  },
  {
   "title": "Greensleevesacc",
   "file": "raw/mutopia/accordion/GreensleevesAcc-a4.pdf",
   "instrument": "Accordion",
-  "verdict": "인식 결과 없음"
+  "notes": 290,
+  "pages": 1,
+  "parts": 1,
+  "bars": 31,
+  "bad": 0,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/accordion/GreensleevesAcc-a4.mid"
  },
  {
   "title": "Sonata solo flute a min fl",
   "file": "raw/mutopia/flute/Sonata_solo_flute_a_min-fl-a4.pdf",
   "instrument": "Flute",
-  "verdict": "인식 결과 없음"
+  "notes": 1752,
+  "pages": 7,
+  "parts": 1,
+  "bars": 359,
+  "bad": 7,
+  "meters": [
+   "2/4",
+   "3/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/flute/Sonata_solo_flute_a_min-fl-a4.mid"
  },
  {
   "title": "Bwv1013",
   "file": "raw/mutopia/flute/bwv1013-a4.pdf",
   "instrument": "Flute",
-  "verdict": "인식 결과 없음"
+  "notes": 2117,
+  "pages": 5,
+  "parts": 1,
+  "bars": 221,
+  "bad": 4,
+  "meters": [
+   "2/4",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/flute/bwv1013-a4.mid"
  },
  {
   "title": "Division Violin 02",
   "file": "raw/mutopia/violin/division-violin-02-a4.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 618,
+  "pages": 2,
+  "parts": 1,
+  "bars": 74,
+  "bad": 17,
+  "meters": [
+   "2/2",
+   "4/4",
+   "7/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 23%"
  },
  {
   "title": "Division Violin 04",
   "file": "raw/mutopia/violin/division-violin-04-a4.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 176,
+  "pages": 2,
+  "parts": 1,
+  "bars": 46,
+  "bad": 25,
+  "meters": [
+   "2/4",
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 54%"
  },
  {
   "title": "Division Violin 23",
   "file": "raw/mutopia/violin/division-violin-23-a4.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 660,
+  "pages": 2,
+  "parts": 1,
+  "bars": 141,
+  "bad": 0,
+  "meters": [
+   "6/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/violin/division-violin-23-a4.mid"
  },
  {
   "title": "Bwv1017",
@@ -2063,7 +4568,17 @@
   "title": "Bach Bwv1041 Part Violin Solo",
   "file": "raw/mutopia/violin/bach-bwv1041-part-violin-solo-a4.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 2503,
+  "pages": 6,
+  "parts": 1,
+  "bars": 339,
+  "bad": 64,
+  "meters": [
+   "2/4",
+   "4/4",
+   "9/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 19%"
  },
  {
   "title": "Arban first",
@@ -2075,127 +4590,332 @@
   "title": "Bwv1013 Sax",
   "file": "raw/mutopia/saxophone/bwv1013_sax-a4.pdf",
   "instrument": "Saxophone",
-  "verdict": "인식 결과 없음"
+  "notes": 2117,
+  "pages": 5,
+  "parts": 1,
+  "bars": 221,
+  "bad": 5,
+  "meters": [
+   "2/4",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/saxophone/bwv1013_sax-a4.mid"
  },
  {
   "title": "Bwv1008",
   "file": "raw/mutopia/cello/bwv1008-a4.pdf",
   "instrument": "Cello",
-  "verdict": "인식 결과 없음"
+  "notes": 2261,
+  "pages": 6,
+  "parts": 1,
+  "bars": 263,
+  "bad": 12,
+  "meters": [
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/cello/bwv1008-a4.mid"
  },
  {
   "title": "Cellosuite3",
   "file": "raw/mutopia/cello/cellosuite3-a4.pdf",
   "instrument": "Cello",
-  "verdict": "인식 결과 없음"
+  "notes": 3061,
+  "pages": 7,
+  "parts": 1,
+  "bars": 378,
+  "bad": 13,
+  "meters": [
+   "2/2",
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/cello/cellosuite3-a4.mid"
  },
  {
   "title": "Bwv1010",
   "file": "raw/mutopia/cello/bwv1010-a4.pdf",
   "instrument": "Cello",
-  "verdict": "인식 결과 없음"
+  "notes": 2881,
+  "pages": 8,
+  "parts": 1,
+  "bars": 325,
+  "bad": 64,
+  "meters": [
+   "2/2",
+   "3/4",
+   "4/4",
+   "7/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 20%"
  },
  {
   "title": "Bwv1011",
   "file": "raw/mutopia/cello/bwv1011-a4.pdf",
   "instrument": "Cello",
-  "verdict": "인식 결과 없음"
+  "notes": 2884,
+  "pages": 9,
+  "parts": 1,
+  "bars": 430,
+  "bad": 221,
+  "meters": [
+   "3/2",
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 51%"
  },
  {
   "title": "Bwv1011 Transposed",
   "file": "raw/mutopia/cello/bwv1011_transposed-a4.pdf",
   "instrument": "Cello",
-  "verdict": "인식 결과 없음"
+  "notes": 2890,
+  "pages": 7,
+  "parts": 1,
+  "bars": 429,
+  "bad": 32,
+  "meters": [
+   "3/2",
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "AguadoOp4No1",
   "file": "raw/mutopia/guitar/AguadoOp4No1-a4.pdf",
   "instrument": "Guitar",
-  "verdict": "인식 결과 없음"
+  "notes": 419,
+  "pages": 1,
+  "parts": 1,
+  "bars": 52,
+  "bad": 17,
+  "meters": [
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 33%"
  },
  {
   "title": "AguadoOp4No2",
   "file": "raw/mutopia/guitar/AguadoOp4No2-a4.pdf",
   "instrument": "Guitar",
-  "verdict": "인식 결과 없음"
+  "notes": 389,
+  "pages": 2,
+  "parts": 1,
+  "bars": 46,
+  "bad": 8,
+  "meters": [
+   "3/4",
+   "3/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 17%"
  },
  {
   "title": "O Morning Star M",
   "file": "raw/mutopia/piano/o_morning_star_m-a4.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 214,
+  "pages": 2,
+  "parts": 2,
+  "bars": 32,
+  "bad": 21,
+  "meters": [
+   "2/4",
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 66%"
  },
  {
   "title": "Canto Serioso, FS 132",
   "file": "raw/mutopia/piano/NielsenCA__FS132__NielsenCantoSerioso__NielsenCantoSerioso-lys.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 208,
+  "pages": 1,
+  "parts": 1,
+  "bars": 45,
+  "bad": 9,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 20%"
  },
  {
   "title": "Sonata per Mandolino e Basso",
   "file": "raw/mutopia/mandolin/GervasioGB__gimo-145__gimo-145-lys.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 1394,
+  "pages": 3,
+  "parts": 1,
+  "bars": 137,
+  "bad": 14,
+  "meters": [
+   "2/4",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Trio a Due Mandolini e Basso",
   "file": "raw/mutopia/mandolin/GervasioGB__gimo-150__gimo-150-lys.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 426,
+  "pages": 1,
+  "parts": 1,
+  "bars": 100,
+  "bad": 4,
+  "meters": [
+   "2/2",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/mandolin/GervasioGB__gimo-150__gimo-150-lys.mid"
  },
  {
   "title": "Sinfonia a due mandolini, è Basso",
   "file": "raw/mutopia/mandolin/GervasioGB__gimo-149__gimo-149-lys.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 696,
+  "pages": 2,
+  "parts": 1,
+  "bars": 182,
+  "bad": 8,
+  "meters": [
+   "3/8",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/mandolin/GervasioGB__gimo-149__gimo-149-lys.mid"
  },
  {
   "title": "Tmeiskin",
   "file": "raw/mutopia/recorder/JapartJ__27-tmeiskin__27-tmeiskin-lys.pdf",
   "instrument": "Recorder",
-  "verdict": "인식 결과 없음"
+  "notes": 2,
+  "pages": 1,
+  "parts": 1,
+  "bars": 0,
+  "bad": 0,
+  "meters": [],
+  "verdict": "탈락: 음표 2개뿐"
  },
  {
   "title": "Brahms Horn Trio, Op. 40",
   "file": "raw/mutopia/piano/BrahmsJ__O40__BrahmsHornTrio__BrahmsHornTrio-lys.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 1456,
+  "pages": 7,
+  "parts": 1,
+  "bars": 764,
+  "bad": 140,
+  "meters": [
+   "2/4",
+   "3/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 18%"
  },
  {
   "title": "Symphony No. 9 in E minor, Op. 95",
   "file": "raw/mutopia/orchestra/DvorakA__O95__Sym9__Sym9-lys.pdf",
   "instrument": "Orchestra",
-  "verdict": "인식 결과 없음"
+  "notes": 506,
+  "pages": 5,
+  "parts": 1,
+  "bars": 407,
+  "bad": 60,
+  "meters": [
+   "2/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 15%"
  },
  {
   "title": "Eduardo e Cristina, ouverture",
   "file": "raw/mutopia/voice/RossiniG__Eduardo_e_Cristina__Eduardo_e_Cristina-lys.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1318,
+  "pages": 4,
+  "parts": 1,
+  "bars": 269,
+  "bad": 11,
+  "meters": [
+   "2/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/RossiniG__Eduardo_e_Cristina__Eduardo_e_Cristina-lys.mid"
  },
  {
   "title": "Rêverie, Op.24",
   "file": "raw/mutopia/piano/GlazunovA__O24__GlazunovReveries__GlazunovReveries-lys.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 190,
+  "pages": 1,
+  "parts": 1,
+  "bars": 63,
+  "bad": 4,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Sonata XII, Sacro-Profanus Concentus",
   "file": "raw/mutopia/trumpet/SchmelzerJH__Sonataduodecima__Sonataduodecima-lys.pdf",
   "instrument": "Trumpet",
-  "verdict": "인식 결과 없음"
+  "notes": 2321,
+  "pages": 9,
+  "parts": 1,
+  "bars": 733,
+  "bad": 266,
+  "meters": [
+   "3/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 36%"
  },
  {
   "title": "Romance, Op.36",
   "file": "raw/mutopia/piano/Saint-SaensC__O36__SaintSaensRomance__SaintSaensRomance-lys.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 198,
+  "pages": 1,
+  "parts": 1,
+  "bars": 88,
+  "bad": 10,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 11%"
  },
  {
   "title": "Sonata for Piano with Horn, Op. 17",
   "file": "raw/mutopia/piano/BeethovenLv__O17__BeethovenHornSonata-lys.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 1098,
+  "pages": 4,
+  "parts": 1,
+  "bars": 338,
+  "bad": 44,
+  "meters": [
+   "2/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 13%"
  },
  {
   "title": "Piano Sonate Opus 111 (1st Movement)",
@@ -2219,55 +4939,146 @@
   "title": "Concerto à 4 Violini Concertati, TWV 40:202",
   "file": "raw/mutopia/violin/TelemannGP__Concerto_a_4_D__Concerto_a_4_D-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 654,
+  "pages": 2,
+  "parts": 1,
+  "bars": 98,
+  "bad": 2,
+  "meters": [
+   "2/2",
+   "3/2"
+  ],
+  "verdict": "탈락: 위험 박자 [(3, 2)]"
  },
  {
   "title": "Concerto à 4 Violini Concertati, TWV 40:201",
   "file": "raw/mutopia/violin/TelemannGP__Concerto_a_4_G__Concerto_a_4_G-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 784,
+  "pages": 2,
+  "parts": 1,
+  "bars": 207,
+  "bad": 23,
+  "meters": [
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 11%"
  },
  {
   "title": "Sonata â IV. Violini, TWV 40:203",
   "file": "raw/mutopia/violin/TelemannGP__Sonata_a_4_C__Sonata_a_4_C-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 928,
+  "pages": 3,
+  "parts": 1,
+  "bars": 128,
+  "bad": 5,
+  "meters": [
+   "2/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/violin/TelemannGP__Sonata_a_4_C__Sonata_a_4_C-lys.mid"
  },
  {
   "title": "Symphonie en sol mineur",
   "file": "raw/mutopia/voice/MehulEN__Symphonie-1__Symphonie-1-lys.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 577,
+  "pages": 4,
+  "parts": 1,
+  "bars": 428,
+  "bad": 88,
+  "meters": [
+   "2/2",
+   "2/4",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 21%"
  },
  {
   "title": "Concerto for Bassoon and Orchestra in B-flat major, K. 191",
   "file": "raw/mutopia/violin/MozartWA__KV191__kv191-bassoon-concerto__kv191-bassoon-concerto-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1442,
+  "pages": 4,
+  "parts": 1,
+  "bars": 365,
+  "bad": 24,
+  "meters": [
+   "2/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Mozart Horn Concerto No. 2, K 417",
   "file": "raw/mutopia/horn/MozartWA__KV417__MozartHornConcerto2__MozartHornConcerto2-lys.pdf",
   "instrument": "Horn",
-  "verdict": "인식 결과 없음"
+  "notes": 1396,
+  "pages": 4,
+  "parts": 1,
+  "bars": 436,
+  "bad": 13,
+  "meters": [
+   "3/8",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/horn/MozartWA__KV417__MozartHornConcerto2__MozartHornConcerto2-lys.mid"
  },
  {
   "title": "Clarinet concerto, KV 622",
   "file": "raw/mutopia/voice/MozartWA__KV622__MozartK622__MozartK622-lys.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 2627,
+  "pages": 9,
+  "parts": 1,
+  "bars": 759,
+  "bad": 49,
+  "meters": [
+   "3/4",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 6%"
  },
  {
   "title": "Mozart Horn Concerto No. 1, K 412",
   "file": "raw/mutopia/horn/MozartWA__KV412__MozartHornConcerto1__MozartHornConcerto1-lys.pdf",
   "instrument": "Horn",
-  "verdict": "인식 결과 없음"
+  "notes": 1041,
+  "pages": 3,
+  "parts": 1,
+  "bars": 272,
+  "bad": 20,
+  "meters": [
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "DIVERTIMENTO II, (1756 - 1791)",
   "file": "raw/mutopia/clarinet/MozartWA__KV229__divertimento__divertimento-lys.pdf",
   "instrument": "Clarinet",
-  "verdict": "인식 결과 없음"
+  "notes": 1208,
+  "pages": 6,
+  "parts": 1,
+  "bars": 371,
+  "bad": 39,
+  "meters": [
+   "2/4",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 11%"
  },
  {
   "title": "Final de la sixième sonate, Opus 65 n°6",
@@ -2279,19 +5090,46 @@
   "title": "Concerto di mandolino con Violini e Basso obligati",
   "file": "raw/mutopia/mandolin/GabelloneG__gimo-88__gimo-88-lys.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 3200,
+  "pages": 4,
+  "parts": 1,
+  "bars": 141,
+  "bad": 61,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 43%"
  },
  {
   "title": "Cinq Préludes, Opus 16 n°4 No.4",
   "file": "raw/mutopia/piano/ScriabinA__O16__scriabine-op16-no4__scriabine-op16-no4-lys.pdf",
   "instrument": "Piano",
-  "verdict": "인식 결과 없음"
+  "notes": 167,
+  "pages": 1,
+  "parts": 1,
+  "bars": 10,
+  "bad": 7,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 70%"
  },
  {
   "title": "String Quartet in B-flat major, Op. 1 No. 1",
   "file": "raw/mutopia/stringquartet/HaydnFJ__O1__op1_1__op1_1-lys.pdf",
   "instrument": "StringQuartet",
-  "verdict": "인식 결과 없음"
+  "notes": 724,
+  "pages": 4,
+  "parts": 1,
+  "bars": 272,
+  "bad": 37,
+  "meters": [
+   "2/4",
+   "3/4",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 14%"
  },
  {
   "title": "String Quartet in C major (“Emperor”), Op. 76 No. 3",
@@ -2303,85 +5141,217 @@
   "title": "Concerto Per Mandolino, Violino Primo, Violino Secondo e Basso",
   "file": "raw/mutopia/mandolin/UgolinoV__gimo-297__gimo-297-lys.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 1278,
+  "pages": 2,
+  "parts": 1,
+  "bars": 203,
+  "bad": 18,
+  "meters": [
+   "2/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 9%"
  },
  {
   "title": "Op. 6 VIII. Concerto Grosso",
   "file": "raw/mutopia/stringquartet/CorelliA__O6__nr8-quartet__nr8-quartet-lys.pdf",
   "instrument": "StringQuartet",
-  "verdict": "인식 결과 없음"
+  "notes": 996,
+  "pages": 4,
+  "parts": 1,
+  "bars": 239,
+  "bad": 48,
+  "meters": [
+   "2/2",
+   "3/4",
+   "4/4",
+   "7/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 20%"
  },
  {
   "title": "Sinfonia a due mandolini e Basso",
   "file": "raw/mutopia/mandolin/CocchiG__gimo-76__gimo-76-lys.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 1344,
+  "pages": 2,
+  "parts": 2,
+  "bars": 224,
+  "bad": 35,
+  "meters": [
+   "2/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 16%"
  },
  {
   "title": "Concerto in D Minor",
   "file": "raw/mutopia/lute/VivaldiA__rv540__rv540-lys.pdf",
   "instrument": "Lute",
-  "verdict": "인식 결과 없음"
+  "notes": 463,
+  "pages": 2,
+  "parts": 1,
+  "bars": 151,
+  "bad": 11,
+  "meters": [
+   "2/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "L'Inverno / Winter, Op. 8, No. 4",
   "file": "raw/mutopia/violin/VivaldiA__O8__winter__winter-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1860,
+  "pages": 6,
+  "parts": 1,
+  "bars": 230,
+  "bad": 19,
+  "meters": [
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "La Primavera / Spring, Op. 8, No. 1",
   "file": "raw/mutopia/violin/VivaldiA__O8__spring__spring-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 728,
+  "pages": 3,
+  "parts": 1,
+  "bars": 67,
+  "bad": 5,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Estate / Summer, Op. 8, No. 2",
   "file": "raw/mutopia/violin/VivaldiA__O8__summer__summer-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 2686,
+  "pages": 6,
+  "parts": 1,
+  "bars": 320,
+  "bad": 122,
+  "meters": [
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 38%"
  },
  {
   "title": "Autumno / Autumn, Op. 8, No. 3",
   "file": "raw/mutopia/violin/VivaldiA__O8__autumn__autumn-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1927,
+  "pages": 5,
+  "parts": 1,
+  "bars": 309,
+  "bad": 24,
+  "meters": [
+   "3/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 8%"
  },
  {
   "title": "Ave Maria",
   "file": "raw/mutopia/voice/ZanoniM__AveMaria.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 425,
+  "pages": 1,
+  "parts": 12,
+  "bars": 444,
+  "bad": 96,
+  "meters": [
+   "2/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 22%"
  },
  {
   "title": "Envoi de Fleurs — Envoi_orgue01",
   "file": "raw/mutopia/organ/DelmetP__Envoi_orgue__Envoi_orgue-lys__Envoi_orgue01.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 647,
+  "pages": 2,
+  "parts": 2,
+  "bars": 114,
+  "bad": 1,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/DelmetP__Envoi_orgue__Envoi_orgue-lys__Envoi_orgue01.mid"
  },
  {
   "title": "Envoi de Fleurs — Envoi_orgue02",
   "file": "raw/mutopia/organ/DelmetP__Envoi_orgue__Envoi_orgue-lys__Envoi_orgue02.pdf",
   "instrument": "Organ",
-  "verdict": "인식 결과 없음"
+  "notes": 638,
+  "pages": 3,
+  "parts": 2,
+  "bars": 114,
+  "bad": 0,
+  "meters": [
+   "6/8"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/DelmetP__Envoi_orgue__Envoi_orgue-lys__Envoi_orgue02.mid"
  },
  {
   "title": "Gigue",
   "file": "raw/mutopia/violin/PachelbelJ__PachelbelGigue__PachelbelGigue-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 97,
+  "pages": 1,
+  "parts": 1,
+  "bars": 18,
+  "bad": 14,
+  "meters": [
+   "7/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 78%"
  },
  {
   "title": "Brandenburg Concerto No. 2, BWV 1047",
   "file": "raw/mutopia/violin/BachJS__BWV1047__brandenburg_2__brandenburg_2-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 2029,
+  "pages": 6,
+  "parts": 1,
+  "bars": 317,
+  "bad": 9,
+  "meters": [
+   "2/2",
+   "2/4",
+   "3/4"
+  ],
+  "verdict": "합격",
+  "midi": "mids/mutopia/violin/BachJS__BWV1047__brandenburg_2__brandenburg_2-lys.mid"
  },
  {
   "title": "B Minor Mass - Aria, BWV 232",
   "file": "raw/mutopia/bassoon/BachJS__BWV232__BachBMinorMass__BachBMinorMass-lys.pdf",
   "instrument": "Bassoon",
-  "verdict": "인식 결과 없음"
+  "notes": 465,
+  "pages": 2,
+  "parts": 1,
+  "bars": 92,
+  "bad": 6,
+  "meters": [
+   "3/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "Fantasia super: Komm Heiliger Geist, Herre Gott, BWV 651",
@@ -2489,72 +5459,185 @@
   "title": "Auf dem Strom, D.943",
   "file": "raw/mutopia/voice/SchubertF__D943__SchubertAufDemStrom__SchubertAufDemStrom-lys.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 670,
+  "pages": 2,
+  "parts": 1,
+  "bars": 204,
+  "bad": 20,
+  "meters": [
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 10%"
  },
  {
   "title": "Trio a due mandolini e Basso",
   "file": "raw/mutopia/mandolin/Anonymous__gimo-359__gimo-359-lys.pdf",
   "instrument": "Mandolin",
-  "verdict": "인식 결과 없음"
+  "notes": 379,
+  "pages": 1,
+  "parts": 1,
+  "bars": 83,
+  "bad": 11,
+  "meters": [
+   "2/4",
+   "3/8",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 13%"
  },
  {
   "title": "A Second Sett of Six Duetts for a Violin & Tenor, Op. 2 No. 1",
   "file": "raw/mutopia/violin/BlakeB__Blake_op_2__Blake_op2_no_1__Blake_op2_no_1-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1156,
+  "pages": 4,
+  "parts": 1,
+  "bars": 198,
+  "bad": 13,
+  "meters": [
+   "2/2",
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "A Second Sett of Six Duetts for a Violin & Tenor, Op. 2 No. 4",
   "file": "raw/mutopia/violin/BlakeB__Blake_op_2__Blake_op2_no_4__Blake_op2_no_4-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1116,
+  "pages": 4,
+  "parts": 1,
+  "bars": 183,
+  "bad": 17,
+  "meters": [
+   "2/2",
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 9%"
  },
  {
   "title": "A Second Sett of Six Duetts for a Violin & Tenor, Op. 2 No. 3",
   "file": "raw/mutopia/violin/BlakeB__Blake_op_2__Blake_op2_no_3__Blake_op2_no_3-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1205,
+  "pages": 4,
+  "parts": 1,
+  "bars": 196,
+  "bad": 18,
+  "meters": [
+   "2/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 9%"
  },
  {
   "title": "A Second Sett of Six Duetts for a Violin & Tenor, Op. 2 No. 2",
   "file": "raw/mutopia/violin/BlakeB__Blake_op_2__Blake_op2_no_2__Blake_op2_no_2-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1039,
+  "pages": 3,
+  "parts": 1,
+  "bars": 149,
+  "bad": 18,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "A Second Sett of Six Duetts for a Violin & Tenor, Op. 2 No. 6",
   "file": "raw/mutopia/violin/BlakeB__Blake_op_2__Blake_op2_no_6__Blake_op2_no_6-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1269,
+  "pages": 5,
+  "parts": 1,
+  "bars": 190,
+  "bad": 13,
+  "meters": [
+   "2/2",
+   "2/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 7%"
  },
  {
   "title": "A Second Sett of Six Duetts for a Violin & Tenor, Op. 2 No. 5",
   "file": "raw/mutopia/violin/BlakeB__Blake_op_2__Blake_op2_no_5__Blake_op2_no_5-lys.pdf",
   "instrument": "Violin",
-  "verdict": "인식 결과 없음"
+  "notes": 1475,
+  "pages": 5,
+  "parts": 1,
+  "bars": 200,
+  "bad": 23,
+  "meters": [
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 12%"
  },
  {
   "title": "Symphonie n°2 en mi bémol",
   "file": "raw/mutopia/voice/GossecFJ__Gossec-Symphonie-mib__Gossec-Symphonie-mib-lys.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 922,
+  "pages": 3,
+  "parts": 1,
+  "bars": 359,
+  "bad": 122,
+  "meters": [
+   "3/2",
+   "3/4",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 34%"
  },
  {
   "title": "Symphonie n°1 en si bémol",
   "file": "raw/mutopia/voice/GossecFJ__Gossec-Symphonie-sib__Gossec-Symphonie-sib-lys.pdf",
   "instrument": "Voice",
-  "verdict": "인식 결과 없음"
+  "notes": 1192,
+  "pages": 3,
+  "parts": 1,
+  "bars": 395,
+  "bad": 20,
+  "meters": [
+   "3/8",
+   "4/4",
+   "6/8"
+  ],
+  "verdict": "탈락: 박자 안 맞는 마디 5%"
  },
  {
   "title": "Sonata",
   "file": "raw/mutopia/recorder/Sonata-a4.pdf",
   "instrument": "Recorder",
-  "verdict": "인식 결과 없음"
+  "notes": 1370,
+  "pages": 5,
+  "parts": 2,
+  "bars": 234,
+  "bad": 1,
+  "meters": [
+   "3/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 위험 박자 [(3, 2)]"
  },
  {
   "title": "Sonata",
   "file": "raw/mutopia/recorder/Sonata-a4.pdf",
   "instrument": "Recorder",
-  "verdict": "인식 결과 없음"
+  "notes": 1370,
+  "pages": 5,
+  "parts": 2,
+  "bars": 234,
+  "bad": 1,
+  "meters": [
+   "3/2",
+   "3/4",
+   "4/4"
+  ],
+  "verdict": "탈락: 위험 박자 [(3, 2)]"
  }
 ]
