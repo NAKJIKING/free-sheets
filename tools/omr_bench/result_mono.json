@@ -11,6 +11,8 @@
   "bad_bars": 1,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -25,6 +27,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -39,6 +43,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -53,6 +59,8 @@
   "bad_bars": 0,
   "ner": 0.0161,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0161,
   "status": "채점됨"
  },
  {
@@ -67,6 +75,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -81,6 +91,8 @@
   "bad_bars": 1,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -95,6 +107,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -109,6 +123,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -123,6 +139,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -137,6 +155,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -151,6 +171,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -165,6 +187,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -179,6 +203,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -193,6 +219,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -207,6 +235,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -221,6 +251,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -235,6 +267,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -249,6 +283,8 @@
   "bad_bars": 6,
   "ner": 0.0689,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0689,
   "status": "채점됨"
  },
  {
@@ -263,6 +299,8 @@
   "bad_bars": 15,
   "ner": 10.8088,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 10.8088,
   "status": "채점됨"
  },
  {
@@ -277,6 +315,8 @@
   "bad_bars": 0,
   "ner": 0.0673,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0673,
   "status": "채점됨"
  },
  {
@@ -291,6 +331,8 @@
   "bad_bars": 1,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -305,6 +347,8 @@
   "bad_bars": 5,
   "ner": 0.0175,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0175,
   "status": "채점됨"
  },
  {
@@ -319,6 +363,8 @@
   "bad_bars": 2,
   "ner": 0.0441,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0441,
   "status": "채점됨"
  },
  {
@@ -333,6 +379,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.566,
   "status": "채점됨"
  },
  {
@@ -347,6 +395,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -361,6 +411,8 @@
   "bad_bars": 0,
   "ner": 0.378,
   "fit": "x2",
+  "shift": 0,
+  "raw_ner": 0.378,
   "status": "대조 불가(악보와 정답 범위 불일치)"
  },
  {
@@ -373,8 +425,10 @@
   "parts": 2,
   "bars": 28,
   "bad_bars": 0,
-  "ner": 0.7018,
-  "fit": "x2",
+  "ner": 0.3904,
+  "fit": "expandRepeats",
+  "shift": -2,
+  "raw_ner": 0.7018,
   "status": "대조 불가(악보와 정답 범위 불일치)"
  },
  {
@@ -387,8 +441,10 @@
   "parts": 1,
   "bars": 40,
   "bad_bars": 0,
-  "ner": 0.9908,
+  "ner": 0.0061,
   "fit": "as-is",
+  "shift": -14,
+  "raw_ner": 0.9908,
   "status": "채점됨"
  },
  {
@@ -403,6 +459,8 @@
   "bad_bars": 0,
   "ner": 0.0947,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0947,
   "status": "채점됨"
  },
  {
@@ -417,6 +475,8 @@
   "bad_bars": 3,
   "ner": 0.0397,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.3492,
   "status": "채점됨"
  },
  {
@@ -431,6 +491,8 @@
   "bad_bars": 4,
   "ner": 0.015,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.015,
   "status": "채점됨"
  },
  {
@@ -443,8 +505,10 @@
   "parts": 1,
   "bars": 13,
   "bad_bars": 0,
-  "ner": 0.7525,
+  "ner": 0.1485,
   "fit": "as-is",
+  "shift": -2,
+  "raw_ner": 0.7525,
   "status": "채점됨"
  },
  {
@@ -459,6 +523,8 @@
   "bad_bars": 12,
   "ner": 0.5348,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.5799,
   "status": "대조 불가(악보와 정답 범위 불일치)"
  },
  {
@@ -473,6 +539,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -485,8 +553,10 @@
   "parts": 1,
   "bars": 30,
   "bad_bars": 0,
-  "ner": 1.0,
+  "ner": 0.0,
   "fit": "as-is",
+  "shift": -14,
+  "raw_ner": 1.0,
   "status": "채점됨"
  },
  {
@@ -499,8 +569,10 @@
   "parts": 1,
   "bars": 320,
   "bad_bars": 92,
-  "ner": 0.8101,
+  "ner": 0.0814,
   "fit": "as-is",
+  "shift": -2,
+  "raw_ner": 0.8101,
   "status": "채점됨"
  },
  {
@@ -513,8 +585,10 @@
   "parts": 1,
   "bars": 46,
   "bad_bars": 5,
-  "ner": 1.0,
+  "ner": 0.0116,
   "fit": "as-is",
+  "shift": -9,
+  "raw_ner": 1.0,
   "status": "채점됨"
  },
  {
@@ -529,6 +603,8 @@
   "bad_bars": 0,
   "ner": 0.2346,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.6704,
   "status": "채점됨"
  },
  {
@@ -543,6 +619,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.18,
   "status": "채점됨"
  },
  {
@@ -557,6 +635,8 @@
   "bad_bars": 4,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -571,6 +651,8 @@
   "bad_bars": 3,
   "ner": 0.0397,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.3492,
   "status": "채점됨"
  },
  {
@@ -585,6 +667,8 @@
   "bad_bars": 0,
   "ner": 0.1207,
   "fit": "AAB",
+  "shift": 0,
+  "raw_ner": 0.1207,
   "status": "채점됨"
  },
  {
@@ -599,6 +683,8 @@
   "bad_bars": 2,
   "ner": 0.0,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -613,6 +699,8 @@
   "bad_bars": 2,
   "ner": 0.0744,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0744,
   "status": "채점됨"
  },
  {
@@ -627,6 +715,8 @@
   "bad_bars": 0,
   "ner": 0.3858,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.4016,
   "status": "대조 불가(악보와 정답 범위 불일치)"
  },
  {
@@ -641,6 +731,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -655,6 +747,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.2036,
   "status": "채점됨"
  },
  {
@@ -669,6 +763,8 @@
   "bad_bars": 2,
   "ner": 0.018,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.018,
   "status": "채점됨"
  },
  {
@@ -683,6 +779,8 @@
   "bad_bars": 2,
   "ner": 0.0583,
   "fit": "x2",
+  "shift": 0,
+  "raw_ner": 0.0583,
   "status": "채점됨"
  },
  {
@@ -697,6 +795,8 @@
   "bad_bars": 3,
   "ner": 0.0242,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0242,
   "status": "채점됨"
  },
  {
@@ -711,6 +811,8 @@
   "bad_bars": 0,
   "ner": 0.056,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.4322,
   "status": "채점됨"
  },
  {
@@ -725,6 +827,8 @@
   "bad_bars": 0,
   "ner": 0.5,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.5,
   "status": "대조 불가(악보와 정답 범위 불일치)"
  },
  {
@@ -739,6 +843,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -753,6 +859,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.2,
   "status": "채점됨"
  },
  {
@@ -767,6 +875,8 @@
   "bad_bars": 1,
   "ner": 0.161,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.3221,
   "status": "채점됨"
  },
  {
@@ -781,6 +891,8 @@
   "bad_bars": 4,
   "ner": 0.1,
   "fit": "AABBCC",
+  "shift": 0,
+  "raw_ner": 0.1,
   "status": "채점됨"
  },
  {
@@ -795,6 +907,8 @@
   "bad_bars": 0,
   "ner": 0.0339,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0339,
   "status": "채점됨"
  },
  {
@@ -809,6 +923,8 @@
   "bad_bars": 0,
   "ner": 0.0333,
   "fit": "x2",
+  "shift": 0,
+  "raw_ner": 0.0333,
   "status": "채점됨"
  },
  {
@@ -823,6 +939,8 @@
   "bad_bars": 15,
   "ner": 0.0809,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0809,
   "status": "채점됨"
  },
  {
@@ -837,6 +955,8 @@
   "bad_bars": 3,
   "ner": 0.0304,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0304,
   "status": "채점됨"
  },
  {
@@ -851,6 +971,8 @@
   "bad_bars": 0,
   "ner": 0.0917,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0917,
   "status": "채점됨"
  },
  {
@@ -865,6 +987,8 @@
   "bad_bars": 0,
   "ner": 0.1711,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.1711,
   "status": "채점됨"
  },
  {
@@ -879,6 +1003,8 @@
   "bad_bars": 0,
   "ner": 0.116,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.116,
   "status": "채점됨"
  },
  {
@@ -893,6 +1019,8 @@
   "bad_bars": 0,
   "ner": 0.0781,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0781,
   "status": "채점됨"
  },
  {
@@ -907,6 +1035,8 @@
   "bad_bars": 3,
   "ner": 0.0408,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1673,
   "status": "채점됨"
  },
  {
@@ -921,6 +1051,8 @@
   "bad_bars": 0,
   "ner": 0.04,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.208,
   "status": "채점됨"
  },
  {
@@ -935,6 +1067,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1604,
   "status": "채점됨"
  },
  {
@@ -949,6 +1083,8 @@
   "bad_bars": 2,
   "ner": 0.0186,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.2174,
   "status": "채점됨"
  },
  {
@@ -963,6 +1099,8 @@
   "bad_bars": 1,
   "ner": 0.1368,
   "fit": "AAB",
+  "shift": 0,
+  "raw_ner": 0.1368,
   "status": "채점됨"
  },
  {
@@ -977,6 +1115,8 @@
   "bad_bars": 0,
   "ner": 0.011,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1758,
   "status": "채점됨"
  },
  {
@@ -991,6 +1131,8 @@
   "bad_bars": 0,
   "ner": 0.0778,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0778,
   "status": "채점됨"
  },
  {
@@ -1005,6 +1147,8 @@
   "bad_bars": 16,
   "ner": 0.0543,
   "fit": "AAB",
+  "shift": 0,
+  "raw_ner": 0.0543,
   "status": "채점됨"
  },
  {
@@ -1019,6 +1163,8 @@
   "bad_bars": 40,
   "ner": 0.0523,
   "fit": "AAB",
+  "shift": 0,
+  "raw_ner": 0.0523,
   "status": "채점됨"
  },
  {
@@ -1033,6 +1179,8 @@
   "bad_bars": 17,
   "ner": 0.0714,
   "fit": "AABBCC",
+  "shift": 0,
+  "raw_ner": 0.0714,
   "status": "채점됨"
  },
  {
@@ -1047,6 +1195,8 @@
   "bad_bars": 16,
   "ner": 0.0,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -1061,6 +1211,8 @@
   "bad_bars": 0,
   "ner": 0.1241,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.1241,
   "status": "채점됨"
  },
  {
@@ -1075,6 +1227,8 @@
   "bad_bars": 0,
   "ner": 0.0615,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1769,
   "status": "채점됨"
  },
  {
@@ -1089,6 +1243,8 @@
   "bad_bars": 1,
   "ner": 0.1094,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.1094,
   "status": "채점됨"
  },
  {
@@ -1103,6 +1259,8 @@
   "bad_bars": 0,
   "ner": 0.15,
   "fit": "AAB",
+  "shift": 0,
+  "raw_ner": 0.15,
   "status": "채점됨"
  },
  {
@@ -1117,6 +1275,8 @@
   "bad_bars": 2,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1872,
   "status": "채점됨"
  },
  {
@@ -1131,6 +1291,8 @@
   "bad_bars": 0,
   "ner": 0.0659,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.2088,
   "status": "채점됨"
  },
  {
@@ -1145,6 +1307,8 @@
   "bad_bars": 0,
   "ner": 0.0571,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0571,
   "status": "채점됨"
  },
  {
@@ -1159,6 +1323,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1713,
   "status": "채점됨"
  },
  {
@@ -1173,6 +1339,8 @@
   "bad_bars": 0,
   "ner": 0.0484,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0484,
   "status": "채점됨"
  },
  {
@@ -1187,6 +1355,8 @@
   "bad_bars": 32,
   "ner": 0.0364,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0364,
   "status": "채점됨"
  },
  {
@@ -1201,6 +1371,8 @@
   "bad_bars": 0,
   "ner": 0.093,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.093,
   "status": "채점됨"
  },
  {
@@ -1215,6 +1387,8 @@
   "bad_bars": 2,
   "ner": 0.0,
   "fit": "as-is",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -1229,6 +1403,8 @@
   "bad_bars": 0,
   "ner": 0.2927,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.3333,
   "status": "채점됨"
  },
  {
@@ -1243,6 +1419,8 @@
   "bad_bars": 3,
   "ner": 0.0449,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1987,
   "status": "채점됨"
  },
  {
@@ -1257,6 +1435,8 @@
   "bad_bars": 3,
   "ner": 0.2664,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.2664,
   "status": "채점됨"
  },
  {
@@ -1271,6 +1451,8 @@
   "bad_bars": 0,
   "ner": 0.0114,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0114,
   "status": "채점됨"
  },
  {
@@ -1285,6 +1467,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "x2",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -1299,6 +1483,8 @@
   "bad_bars": 23,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1522,
   "status": "채점됨"
  },
  {
@@ -1313,6 +1499,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.1892,
   "status": "채점됨"
  },
  {
@@ -1327,6 +1515,8 @@
   "bad_bars": 0,
   "ner": 0.0,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.0,
   "status": "채점됨"
  },
  {
@@ -1341,6 +1531,8 @@
   "bad_bars": 0,
   "ner": 0.5102,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.5102,
   "status": "대조 불가(악보와 정답 범위 불일치)"
  },
  {
@@ -1355,6 +1547,8 @@
   "bad_bars": 2,
   "ner": 0.046,
   "fit": "AABB",
+  "shift": 0,
+  "raw_ner": 0.046,
   "status": "채점됨"
  },
  {
@@ -1369,6 +1563,8 @@
   "bad_bars": 3,
   "ner": 0.1748,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.199,
   "status": "채점됨"
  },
  {
@@ -1383,6 +1579,8 @@
   "bad_bars": 14,
   "ner": 0.2072,
   "fit": "expandRepeats",
+  "shift": 0,
+  "raw_ner": 0.3874,
   "status": "채점됨"
  }
 ]

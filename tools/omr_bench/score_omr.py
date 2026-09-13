@@ -138,19 +138,34 @@ def repeat_variants(pred):
     return out
 
 
-def best_ner(gt, pred, expanded=None):
-    """반복 구조를 맞춰 본 뒤 가장 좋은 NER 과 그때의 구조 이름."""
+def best_ner(gt, pred, expanded=None, shift=True):
+    """반복 구조와 조옮김을 맞춰 본 뒤 가장 좋은 NER·구조 이름·이동 반음 수.
+
+    **조옮김 보정이 왜 필요한가** — 정답 MIDI 는 실제로 울리는 음(sounding)이고
+    인쇄된 악보는 연주자가 읽는 음(written)이다. B♭ 클라리넷은 2 반음,
+    E♭ 색소폰은 9 반음 차이가 나고, `treble_8`(기타·테너) 은 12 반음 낮다.
+    보정하지 않으면 **모든 음이 틀린 것으로 잡힌다** — 실측에서 바흐 무반주
+    첼로 0.991, 드뷔시 1.000 이 나왔고 −14·−14 를 적용하니 0.006·0.000 이 됐다.
+
+    다만 이 보정은 **진짜 옥타브 오류도 가려 버린다.** 그래서 호출부는
+    보정 전 값(raw)도 함께 기록해 두 숫자를 같이 보고한다.
+    """
     cands = repeat_variants(pred)
     if expanded:
         cands['expandRepeats'] = expanded
-    best = (9e9, '?')
+    shifts = range(-24, 25) if shift else (0,)
+    best = (9e9, '?', 0)
     for name, c in cands.items():
-        d = lev(gt, c)
-        if d is None:
-            continue
-        r = d / max(1, len(gt))
-        if r < best[0]:
-            best = (r, name)
+        for k in shifts:
+            cc = c if k == 0 else [x + k for x in c]
+            d = lev(gt, cc)
+            if d is None:
+                continue
+            r = d / max(1, len(gt))
+            if r < best[0]:
+                best = (r, name, k)
+            if r == 0:
+                return best
     return best
 
 
@@ -174,7 +189,7 @@ def main():
         rec = dict(title=e.get('title'), source=e.get('source'),
                    poly=e['poly'], pages=e['pages'], n_gt=None, n_pred=None,
                    parts=None, bars=None, bad_bars=None, ner=None,
-                   fit=None, status='')
+                   fit=None, shift=None, raw_ner=None, status='')
         if not mxls:
             rec['status'] = '인식 실패'
             rows.append(rec)
@@ -212,7 +227,8 @@ def main():
             continue
 
         if e['poly'] == 1:                      # 함정 2 — 단선율만 편집거리로
-            ner, fit = best_ner(gt, pred)
+            raw_ner, _, _ = best_ner(gt, pred, shift=False)
+            ner, fit, shift = best_ner(gt, pred)
             # music21 폴백은 '반복 때문에 어긋난 것 같을 때'만 쓴다.
             # 인식 결과가 정답보다 훨씬 길면(범위 불일치·오인식) 반복 펼치기가
             # 도움이 안 될 뿐 아니라 메모리를 터뜨린다 — 실제로 정답 136음짜리
@@ -223,10 +239,11 @@ def main():
                     b = xml_stats(m, expand=True)
                     exp2 += (b[0] if b else [])
                 if exp2:
-                    n2, f2 = best_ner(gt, pred, exp2)
+                    n2, f2, s2 = best_ner(gt, pred, exp2)
                     if n2 < ner:
-                        ner, fit = n2, f2
-            rec.update(ner=round(ner, 4), fit=fit)
+                        ner, fit, shift = n2, f2, s2
+            rec.update(ner=round(ner, 4), fit=fit, shift=shift,
+                       raw_ner=round(raw_ner, 4))
             # 함정 4 — 정답이 악보보다 훨씬 많고 반복으로도 설명 안 되면 대조 불가
             if len(gt) > len(pred) * 1.6 and ner > 0.35:
                 rec['status'] = '대조 불가(악보와 정답 범위 불일치)'
