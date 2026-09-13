@@ -35,15 +35,30 @@ def notes_and_bars(path):
                 if t is not None:
                     bb, bt = t.findtext('beats'), t.findtext('beat-type')
                     if bb and bt: beats, btype = int(bb), int(bt)
-            dur = 0
-            for n in m.findall('note'):
+            # 마디 길이는 '시간 커서'로 잰다. 다성부 MusicXML 은 <backup> 으로
+            # 시간을 되감아 두 성부를 겹치므로, 음 길이를 그냥 더하면 마디가
+            # 성부 수만큼 부풀어 전부 '박자 안 맞음'으로 잡힌다(실측: 성악곡
+            # 100% 오탐). 커서의 최대 도달점이 진짜 마디 길이다.
+            cur = 0
+            dur = 0                                    # = 커서 최대 도달점
+            for n in m:
+                if n.tag == 'backup':
+                    cur -= int(n.findtext('duration') or 0)
+                    continue
+                if n.tag == 'forward':
+                    cur += int(n.findtext('duration') or 0)
+                    dur = max(dur, cur)
+                    continue
+                if n.tag != 'note':
+                    continue
                 if n.find('grace') is not None:       # 꾸밈음 제외
                     continue
                 d_ = n.findtext('duration')
                 d_ = int(d_) if d_ else 0
                 is_chord = n.find('chord') is not None
                 if not is_chord:
-                    dur += d_
+                    cur += d_
+                    dur = max(dur, cur)
                 p = n.find('pitch')
                 if p is None:                          # 쉼표
                     pend_tie = None
