@@ -60,7 +60,7 @@ def meters_of(mxl):
     return out
 
 
-def judge(entry, mxls):
+def judge(entry, mxls, max_badbar=0.05):
     """(합격 여부, 사유, 통계)"""
     notes = 0
     bars = bad = 0
@@ -80,7 +80,7 @@ def judge(entry, mxls):
         return False, f'음표 {notes}개뿐', stat
     if notes / pages < 40:
         return False, f'쪽당 {notes/pages:.0f}음 — 마디 검열 의심', stat
-    if bars >= 4 and bad / bars > 0.05:
+    if bars >= 4 and bad / bars > max_badbar:
         return False, f'박자 안 맞는 마디 {bad/bars*100:.0f}%', stat
     risky = meters & RISKY_METERS
     if risky:
@@ -129,6 +129,8 @@ def main():
     ap.add_argument('--pred', required=True)
     ap.add_argument('--write', action='store_true', help='미디 생성 + 카탈로그 갱신')
     ap.add_argument('--targets', default=os.path.join(ROOT, 'tools/omr_bench/fill_targets.json'))
+    ap.add_argument('--max-badbar', type=float, default=0.05,
+                    help='박자 안 맞는 마디 허용 비율 (1차 0.05, 2차 수확은 0.08 — 사장님 청취 확인 후 완화)')
     ap.add_argument('--report', default=os.path.join(ROOT, 'tools/omr_bench/fill_report.json'))
     args = ap.parse_args()
 
@@ -146,7 +148,7 @@ def main():
             report.append(row)
             continue
         try:
-            passed, why, stat = judge(e, mxls)
+            passed, why, stat = judge(e, mxls, args.max_badbar)
         except Exception as ex:
             rej += 1
             row.update(verdict=f'심사 오류 {type(ex).__name__}')

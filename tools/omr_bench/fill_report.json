@@ -11,7 +11,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/piano/bwv895-a4.mid"
  },
  {
   "title": "Terzetto",
@@ -98,7 +99,8 @@
    "3/4",
    "3/8"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/piano/sonatina-1-a4.mid"
  },
  {
   "title": "Clementi Op42",
@@ -255,7 +257,8 @@
   "meters": [
    "3/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 5%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Ich_ruf-a4.mid"
  },
  {
   "title": "Lobt Gott",
@@ -810,7 +813,8 @@
   "meters": [
    "2/2"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/bwv721-a4.mid"
  },
  {
   "title": "Bwv723",
@@ -824,7 +828,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 8%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/bwv723-a4.mid"
  },
  {
   "title": "Bwv724",
@@ -881,7 +886,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/bwv735-a4.mid"
  },
  {
   "title": "Dandrieu Offertoire",
@@ -926,7 +932,7 @@
   "meters": [
    "9/8"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 8%"
+  "verdict": "탈락: 위험 박자 [(9, 8)]"
  },
  {
   "title": "Toccata",
@@ -954,7 +960,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/Grigny-Fugue_a_5-a4.mid"
  },
  {
   "title": "Larej",
@@ -968,7 +975,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/LaRej-a4.mid"
  },
  {
   "title": "All My Heart",
@@ -1188,7 +1196,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 5%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/cae3-a4.mid"
  },
  {
   "title": "Istec2",
@@ -1263,7 +1272,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 5%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/organ/5-adagio-a4.mid"
  },
  {
   "title": "Cpe Bach Rondo",
@@ -1350,7 +1360,7 @@
   "meters": [
    "9/8"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 5%"
+  "verdict": "탈락: 위험 박자 [(9, 8)]"
  },
  {
   "title": "Bwv793",
@@ -1438,7 +1448,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv847a-a4.mid"
  },
  {
   "title": "Fuga2",
@@ -1539,7 +1550,7 @@
   "meters": [
    "9/8"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 8%"
+  "verdict": "탈락: 위험 박자 [(9, 8)]"
  },
  {
   "title": "Bwv869 Praeludium24",
@@ -1612,7 +1623,8 @@
   "meters": [
    "6/8"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv-988-v07-a4.mid"
  },
  {
   "title": "Bwv 988 V08",
@@ -1698,7 +1710,8 @@
   "meters": [
    "3/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/bwv-988-v13-a4.mid"
  },
  {
   "title": "Bwv 988 V30",
@@ -1800,7 +1813,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/harpsichord/05-fuga-a4.mid"
  },
  {
   "title": "06 Impertinence",
@@ -2001,7 +2015,8 @@
    "3/8",
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/recorder/Sonata_1-a4.mid"
  },
  {
   "title": "Duett Telemann",
@@ -2077,7 +2092,8 @@
    "2/4",
    "3/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/mandolin/gimo-12-a4.mid"
  },
  {
   "title": "Gimo 13",
@@ -2143,7 +2159,8 @@
   "meters": [
    "2/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/oboe/Symphony25_2-a4.mid"
  },
  {
   "title": "Sonate1",
@@ -2231,7 +2248,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/trombone/air-tromb-a4.mid"
  },
  {
   "title": "Sancta Maria",
@@ -2260,7 +2278,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 5%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/alyabyev-cherubic-a4.mid"
  },
  {
   "title": "Ernando",
@@ -2541,7 +2560,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/i_am_Thine_o_Lord-a4.mid"
  },
  {
   "title": "Aurore",
@@ -2721,7 +2741,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/AgitatoDaFiereTempeste-a4.mid"
  },
  {
   "title": "Iogiatamai",
@@ -2750,7 +2771,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 8%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/NoRisolvoAbbandonar-a4.mid"
  },
  {
   "title": "Lagloriasola",
@@ -2779,7 +2801,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/NonPensiQuellAltera-a4.mid"
  },
  {
   "title": "Imparaingrata",
@@ -2955,7 +2978,8 @@
    "4/4",
    "6/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/kopylov-gladsome-light-a4.mid"
  },
  {
   "title": "Part2",
@@ -2969,7 +2993,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/part2-a4.mid"
  },
  {
   "title": "Part4",
@@ -2983,7 +3008,8 @@
   "meters": [
    "3/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/part4-a4.mid"
  },
  {
   "title": "Part8",
@@ -3056,7 +3082,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/hanson_place-a4.mid"
  },
  {
   "title": "Lwv05",
@@ -3180,7 +3207,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/op115_1-a4.mid"
  },
  {
   "title": "Op115 2",
@@ -3194,7 +3222,8 @@
   "meters": [
    "2/2"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/op115_2-a4.mid"
  },
  {
   "title": "Op121",
@@ -3404,7 +3433,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 8%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/Salve_Regina-a4.mid"
  },
  {
   "title": "Zufriedenheit Piano",
@@ -3447,7 +3477,8 @@
   "meters": [
    "3/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 5%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/mozart_abendruhe-a4.mid"
  },
  {
   "title": "Abschiedm",
@@ -3550,7 +3581,8 @@
   "meters": [
    "2/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/01-HomeSweetHome-a4.mid"
  },
  {
   "title": "02 Bluebells",
@@ -3590,7 +3622,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/st_louis-a4.mid"
  },
  {
   "title": "Ries Wiegenlied",
@@ -3650,7 +3683,8 @@
   "meters": [
    "2/2"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/SchubertF-D531_DerTodUndDasMaedchen-a4.mid"
  },
  {
   "title": "Andiemusik",
@@ -4045,7 +4079,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/MentreDormi-a4.mid"
  },
  {
   "title": "Siamnavi",
@@ -4318,7 +4353,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/choir/daslied-a4.mid"
  },
  {
   "title": "Dergutekamerad",
@@ -4687,7 +4723,7 @@
    "3/8",
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "탈락: 위험 박자 [(3, 2)]"
  },
  {
   "title": "AguadoOp4No1",
@@ -4870,7 +4906,8 @@
   "meters": [
    "3/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/piano/GlazunovA__O24__GlazunovReveries__GlazunovReveries-lys.mid"
  },
  {
   "title": "Sonata XII, Sacro-Profanus Concentus",
@@ -5014,7 +5051,8 @@
    "3/4",
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/violin/MozartWA__KV191__kv191-bassoon-concerto__kv191-bassoon-concerto-lys.mid"
  },
  {
   "title": "Mozart Horn Concerto No. 2, K 417",
@@ -5047,7 +5085,8 @@
    "4/4",
    "6/8"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 6%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/MozartWA__KV622__MozartK622__MozartK622-lys.mid"
  },
  {
   "title": "Mozart Horn Concerto No. 1, K 412",
@@ -5062,7 +5101,8 @@
    "4/4",
    "6/8"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/horn/MozartWA__KV412__MozartHornConcerto1__MozartHornConcerto1-lys.mid"
  },
  {
   "title": "DIVERTIMENTO II, (1756 - 1791)",
@@ -5200,7 +5240,8 @@
    "3/8",
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/lute/VivaldiA__rv540__rv540-lys.mid"
  },
  {
   "title": "L'Inverno / Winter, Op. 8, No. 4",
@@ -5229,7 +5270,8 @@
   "meters": [
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/violin/VivaldiA__O8__spring__spring-lys.mid"
  },
  {
   "title": "Estate / Summer, Op. 8, No. 2",
@@ -5261,7 +5303,8 @@
    "3/8",
    "4/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 8%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/violin/VivaldiA__O8__autumn__autumn-lys.mid"
  },
  {
   "title": "Ave Maria",
@@ -5351,7 +5394,8 @@
   "meters": [
    "3/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/bassoon/BachJS__BWV232__BachBMinorMass__BachBMinorMass-lys.mid"
  },
  {
   "title": "Fantasia super: Komm Heiliger Geist, Herre Gott, BWV 651",
@@ -5498,7 +5542,8 @@
    "2/2",
    "2/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/violin/BlakeB__Blake_op_2__Blake_op2_no_1__Blake_op2_no_1-lys.mid"
  },
  {
   "title": "A Second Sett of Six Duetts for a Violin & Tenor, Op. 2 No. 4",
@@ -5558,7 +5603,8 @@
    "2/2",
    "2/4"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 7%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/violin/BlakeB__Blake_op_2__Blake_op2_no_6__Blake_op2_no_6-lys.mid"
  },
  {
   "title": "A Second Sett of Six Duetts for a Violin & Tenor, Op. 2 No. 5",
@@ -5606,7 +5652,8 @@
    "4/4",
    "6/8"
   ],
-  "verdict": "탈락: 박자 안 맞는 마디 5%"
+  "verdict": "합격",
+  "midi": "mids/mutopia/voice/GossecFJ__Gossec-Symphonie-sib__Gossec-Symphonie-sib-lys.mid"
  },
  {
   "title": "Sonata",
