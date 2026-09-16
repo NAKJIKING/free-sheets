@@ -6,6 +6,10 @@ name: 카탈로그 검사
 on:
   workflow_dispatch:
   push:
+    branches:
+      - '**'
+    tags-ignore:
+      - 'reviewed-*'
     paths:
       - 'catalog.json'
       - 'sanitize_catalog.py'

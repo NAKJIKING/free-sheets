@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 18 * * 5'    # 매주 토요일 새벽 3시 KST
   push:
+    branches:
+      - '**'
+    tags-ignore:
+      - 'reviewed-*'
     paths:
       - 'RUN'
       - 'collect.py'

@@ -3,6 +3,10 @@ name: PDMX 수집
 on:
   workflow_dispatch:
   push:
+    branches:
+      - '**'
+    tags-ignore:
+      - 'reviewed-*'
     paths:
       - 'collect_pdmx.py'
       - 'PDMX_RUN'
