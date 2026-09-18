@@ -4,6 +4,12 @@
 "쭉쭉 해보자"). 폰에서 도는 줄 단위 CTC 모델 — 상세 설계는
 `project-all/sheet_music_app/OMR_연구.md`.
 
+> ⚠ **2026-09-18 갱신 — 코퍼스가 바뀌었다.** 사장님 지시로 학습 코퍼스를
+> 자체 조판 .ly 에서 **라이브러리 미디 전체(7,336개 → 단선율 4,261곡)** 로
+> 옮겼다. 아래 ① 은 그대로 유효하지만 저장소의 `all_out` 에는 24곡 × 9악기
+> 밖에 없고 **엘리제의 .ly 가 없다**. 현재 쓰는 것은 ② 다.
+> 경위·수치·실행법은 **`진행일지.md`** 를 볼 것.
+
 ## ① make_lines.py — 줄 단위 학습쌍 생성기 (완성·검증됨)
 
 우리 조판 원본 252곡(.ly)의 멜로디를 4마디씩 끊고 12개 조로 옮겨,
@@ -37,3 +43,19 @@ python3 tools/omr_factory/make_lines.py --out DIR
 3. CTC 모델 학습(캐글 무료 GPU) → **1차 관문: 깨끗한 렌더 95%**,
    시험곡 = 엘리제를 위하여(단선율 A부분), 서버 시연과 같은 청음 비교
 4. 통과 후: 실사 폰사진 50장 시험 → ONNX 양자화 → 앱 탑재
+
+
+## ② 라이브러리 미디 공장 + 학습 일습 (2026-09-18, 현재 주력)
+
+`lib_lines.py` / `make_lib_lines.py` / `prep.py` / `cache.py` / `dataset.py` /
+`model.py` / `train.py` / `split.py` / `evaluate.py`.
+전체 실행 순서와 주의사항은 `진행일지.md` 에 있다. 요약:
+
+```bash
+export LILYPOND='C:/Users/cocok/tools/lilypond-2.24.4/bin/lilypond.exe'
+python tools/omr_factory/make_lib_lines.py --out DIR --keys 3 --max-chunks 6
+python tools/omr_factory/split.py   --data DIR      # 곡 단위 분할, 엘리제=시험
+python tools/omr_factory/cache.py   --data DIR      # 오선 정규화 캐시
+python tools/omr_factory/train.py   --data DIR --out MODEL --epochs 40
+python tools/omr_factory/evaluate.py --data DIR --model MODEL --out GATE1
+```

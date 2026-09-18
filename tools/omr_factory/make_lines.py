@@ -82,12 +82,21 @@ def chunks_of(bars, size=4):
     return out
 
 
+def midi_path(ly_dir, stem):
+    """리눅스 LilyPond 는 `.midi`, 윈도우판은 `.mid` 를 낸다 — 있는 쪽을 쓴다."""
+    for ext in ('.midi', '.mid'):
+        p = os.path.join(ly_dir, stem + ext)
+        if os.path.exists(p):
+            return p
+    return None
+
+
 def render_one(job):
     ly_dir, name, head, chunk_i, chunk, shift = job
     # head 는 이미 청크별로 완성돼 들어온다(첫 청크에만 빠르기표 포함)
     stem = f'c{chunk_i:02d}_k{shift:+d}'.replace('+', 'p').replace('-', 'm')
     png = os.path.join(ly_dir, stem + '.png')
-    if os.path.exists(png) and os.path.exists(os.path.join(ly_dir, stem + '.midi')):
+    if os.path.exists(png) and midi_path(ly_dir, stem):
         return ('skip', name, stem)
     # 조판 다양성: 곡·청크·조로 결정되는 보표 크기(난수 없이 재현 가능)
     h = int(hashlib.md5(f'{name}/{stem}'.encode()).hexdigest(), 16)
@@ -98,7 +107,7 @@ def render_one(job):
     r = subprocess.run([LILY, '-dresolution=300', '--png', '-dno-point-and-click',
                         '-o', os.path.join(ly_dir, stem), src],
                        capture_output=True, text=True, timeout=120)
-    ok = os.path.exists(png) and os.path.exists(os.path.join(ly_dir, stem + '.midi'))
+    ok = os.path.exists(png) and midi_path(ly_dir, stem) is not None
     if ok:
         os.remove(src)                      # 렌더 성공하면 중간물 정리
         return ('ok', name, stem)
@@ -157,6 +166,11 @@ def main():
                 print(f'  {done}/{len(jobs)} (성공 {ok} 실패 {fail} 재개생략 {skip})')
     with open(os.path.join(args.out, 'manifest.jsonl'), 'w', encoding='utf-8') as f:
         for row in manifest:
+            # 윈도우판 LilyPond 는 `.mid` 를 내므로 실제 파일명으로 교정한다
+            if not os.path.exists(os.path.join(args.out, row['midi'])):
+                alt = row['midi'][:-5] + '.mid'
+                if os.path.exists(os.path.join(args.out, alt)):
+                    row['midi'] = alt
             f.write(json.dumps(row, ensure_ascii=False) + '\n')
     print(f'끝: 성공 {ok} / 실패 {fail} / 재개생략 {skip} → {args.out}/manifest.jsonl')
 
