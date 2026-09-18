@@ -85,6 +85,8 @@ def main():
     ap.add_argument('--val-lines', type=int, default=1500,
                     help='검증에 쓸 줄 수(고정 간격으로 고름). 0 이면 전부')
     ap.add_argument('--resume', action='store_true')
+    ap.add_argument('--log-every', type=int, default=50,
+                    help='몇 스텝마다 진행을 찍을지 — 끊긴 뒤 속도를 빨리 보려면 작게')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
@@ -158,7 +160,7 @@ def main():
             sched.step()
             run += loss.detach().item()
             nb += 1
-            if nb % 200 == 0:
+            if nb % a.log_every == 0:
                 print(f'  ep{ep} {nb}/{len(dtr)} loss {run / nb:.4f} '
                       f'{(time.time() - t0) / nb:.3f}s/step', flush=True)
         ner, perf, nl = validate(net, dva, dev, vocab)
