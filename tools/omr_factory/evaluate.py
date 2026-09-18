@@ -113,7 +113,14 @@ def main():
 
     dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     st = torch.load(os.path.join(a.model, a.ckpt), map_location=dev)
-    net = CRNN(len(vocab)).to(dev)
+    # 체크포인트가 학습 때 쓴 입력 높이를 들고 있다. 지금 전처리 높이와
+    # 다르면 캐시가 다른 규격으로 구워져 있다는 뜻이라 점수가 무의미해진다.
+    import prep
+    hck = st.get('height', 160)
+    if hck != prep.HEIGHT:
+        sys.exit(f'중단: 체크포인트 높이 {hck} ≠ 전처리 높이 {prep.HEIGHT}. '
+                 f'캐시를 다시 굽고 다시 학습할 것.')
+    net = CRNN(len(vocab), height=hck, hidden=st.get('hidden', 256)).to(dev)
     net.load_state_dict(st['net'])
     net.eval()
     print(f"체크포인트 에폭 {st.get('epoch')} 검증NER {st.get('ner')}")

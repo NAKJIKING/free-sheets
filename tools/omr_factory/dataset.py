@@ -17,6 +17,8 @@ import torch
 from PIL import Image, ImageFilter
 from torch.utils.data import Dataset
 
+import prep
+
 BLANK = 0                       # CTC 공백
 
 
@@ -159,9 +161,16 @@ def augment(x, rng, s=1.0):
 # ───────────────────────────── 데이터셋 ─────────────────────────────
 
 class Lines(Dataset):
-    def __init__(self, data, rows, vocab, aug=0.0, max_w=2600):
-        self.data, self.rows, self.vocab, self.aug, self.max_w = \
-            data, rows, vocab, aug, max_w
+    """줄 이미지 데이터셋.
+
+    **긴 줄을 여기서 자르지 않는다.** 이미지만 자르고 정답을 그대로 두면
+    CTC 가 '이미지에 없는 음표까지 읽으라'고 배운다. 긴 줄은 `load_rows(max_w=)`
+    에서 아예 뺀다(train.py 가 몇 줄 뺐는지 보고한다). 시험에서는 빼지 않는다
+    — 빼면 '짧은 줄만' 채점해 점수가 부풀려진다.
+    """
+
+    def __init__(self, data, rows, vocab, aug=0.0):
+        self.data, self.rows, self.vocab, self.aug = data, rows, vocab, aug
 
     def __len__(self):
         return len(self.rows)
@@ -173,8 +182,6 @@ class Lines(Dataset):
         if self.aug > 0:
             rng = np.random.default_rng()
             x = augment(x, rng, self.aug)
-        if x.shape[1] > self.max_w:
-            x = x[:, :self.max_w]
         y = r['_y']
         return torch.from_numpy(x)[None], torch.tensor(y, dtype=torch.long)
 
@@ -202,20 +209,30 @@ class ThreadLoader:
     """
 
     def __init__(self, ds, batch_size, collate, shuffle=False, workers=8,
-                 prefetch=6, drop_last=False, seed=None):
+                 prefetch=6, drop_last=False, seed=None, bucket=False):
         self.ds, self.bs, self.collate = ds, batch_size, collate
         self.shuffle, self.workers, self.prefetch = shuffle, workers, prefetch
         self.drop_last, self.seed, self.epoch = drop_last, seed, 0
+        self.bucket = bucket
 
     def _batches(self):
+        """배치 목록.
+
+        bucket=True: **표본을 섞지 않고** 폭 순으로 붙어 있는 것끼리 묶은 뒤
+        **배치 차례만** 섞는다. 표본을 섞으면 train.py 가 해 둔 폭 정렬이
+        무효가 되어 한 배치에 짧은 줄과 긴 줄이 섞이고, 패딩이 배치 폭을
+        최댓값까지 끌어올려 GPU 시간을 그만큼 버린다(실측 폭 편차 수 배).
+        """
         import random
+        rnd = random.Random(None if self.seed is None else self.seed + self.epoch)
         order = list(range(len(self.ds)))
-        if self.shuffle:
-            random.Random(None if self.seed is None else self.seed + self.epoch
-                          ).shuffle(order)
+        if self.shuffle and not self.bucket:
+            rnd.shuffle(order)
         bs = [order[i:i + self.bs] for i in range(0, len(order), self.bs)]
         if self.drop_last and bs and len(bs[-1]) < self.bs:
             bs.pop()
+        if self.shuffle and self.bucket:
+            rnd.shuffle(bs)                      # 배치 안은 폭이 비슷하게 유지
         return bs
 
     def __len__(self):
@@ -247,7 +264,8 @@ class ThreadLoader:
                 yield fut.result()
 
 
-def load_rows(data, vocab=None, splits=('train',), min_tok=2, keep_unk=False):
+def load_rows(data, vocab=None, splits=('train',), min_tok=2, keep_unk=False,
+              max_w=0):
     """index.jsonl → 어휘로 인코딩된 줄 목록.
 
     keep_unk=False (학습용): 어휘 밖 토큰이 있는 줄은 버린다 — CTC 목표가
@@ -260,6 +278,8 @@ def load_rows(data, vocab=None, splits=('train',), min_tok=2, keep_unk=False):
         r = json.loads(ln)
         if r['split'] not in splits:
             continue
+        if max_w and r['w'] > max_w:
+            continue                             # 너무 긴 줄 — 자르지 말고 뺀다
         rows.append(r)
     if vocab is None:
         return rows

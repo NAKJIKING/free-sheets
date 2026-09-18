@@ -82,12 +82,13 @@ def main():
     ap.add_argument('--workers', type=int, default=8)
     ap.add_argument('--hidden', type=int, default=256)
     ap.add_argument('--max-w', type=int, default=2600)
-    ap.add_argument('--val-batches', type=int, default=60)
+    ap.add_argument('--val-lines', type=int, default=1500,
+                    help='검증에 쓸 줄 수(고정 간격으로 고름). 0 이면 전부')
     ap.add_argument('--resume', action='store_true')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
-    raw = D.load_rows(a.data, None, ('train',))
+    raw = D.load_rows(a.data, None, ('train',), max_w=a.max_w)
     vpath = os.path.join(a.out, 'vocab.json')
     if a.resume and os.path.exists(vpath):
         vocab = D.Vocab.load(vpath)
@@ -95,8 +96,11 @@ def main():
         vocab, seen = D.build_vocab(raw)
         vocab.save(vpath)
         print(f'어휘 {len(vocab)}종 (blank 포함) / 최빈 {list(seen.items())[:3]}')
-    tr, d1 = D.load_rows(a.data, vocab, ('train',))
-    va, (d2, u2) = D.load_rows(a.data, vocab, ('val',), keep_unk=True)
+    allrows = D.load_rows(a.data, None, ('train', 'val'))
+    toolong = sum(1 for r in allrows if r['w'] > a.max_w)
+    tr, d1 = D.load_rows(a.data, vocab, ('train',), max_w=a.max_w)
+    va, (d2, u2) = D.load_rows(a.data, vocab, ('val',), keep_unk=True, max_w=a.max_w)
+    print(f'폭 {a.max_w}px 초과로 뺀 줄 {toolong}개')
     print(f'학습 {len(tr)}줄(버림 {d1}) / 검증 {len(va)}줄(버림 {d2}, 어휘밖 토큰 {u2})')
     if not va:
         print('⚠ 검증셋이 비었다 — split.json 을 확인할 것', flush=True)
@@ -115,10 +119,22 @@ def main():
 
     # 긴 줄이 한 배치에 몰리면 패딩이 낭비된다 → 폭으로 정렬해 묶는다
     tr.sort(key=lambda r: r['w'])
-    dtr = D.ThreadLoader(D.Lines(a.data, tr, vocab, aug=a.aug, max_w=a.max_w),
+
+    # 검증은 **에폭마다 같은 줄**을 봐야 에폭 간 NER 비교가 뜻이 있다.
+    # 그리고 폭으로 정렬한 뒤 앞 N 배치만 보면 '짧은 줄만' 채점해 점수가
+    # 부풀려진다 → 먼저 고정 간격(stride)으로 골라 전 폭을 아우른 뒤 정렬한다.
+    va.sort(key=lambda r: (r['song'], r.get('var', ''), r['chunk'], r['shift']))
+    if a.val_lines and len(va) > a.val_lines:
+        step = len(va) / a.val_lines
+        va = [va[int(i * step)] for i in range(a.val_lines)]
+    va.sort(key=lambda r: r['w'])
+    print(f'검증 채점 {len(va)}줄 (폭 {va[0]["w"] if va else 0}~'
+          f'{va[-1]["w"] if va else 0}px)')
+
+    dtr = D.ThreadLoader(D.Lines(a.data, tr, vocab, aug=a.aug),
                          a.batch, D.collate, shuffle=True, workers=a.workers,
-                         drop_last=True, seed=1234)
-    dva = D.ThreadLoader(D.Lines(a.data, va, vocab, aug=0.0, max_w=a.max_w),
+                         drop_last=True, seed=1234, bucket=True)
+    dva = D.ThreadLoader(D.Lines(a.data, va, vocab, aug=0.0),
                          a.batch, D.collate, workers=max(2, a.workers // 2))
     sched = torch.optim.lr_scheduler.OneCycleLR(
         opt, max_lr=a.lr, total_steps=max(1, a.epochs * len(dtr)),
@@ -145,7 +161,7 @@ def main():
             if nb % 200 == 0:
                 print(f'  ep{ep} {nb}/{len(dtr)} loss {run / nb:.4f} '
                       f'{(time.time() - t0) / nb:.3f}s/step', flush=True)
-        ner, perf, nl = validate(net, dva, dev, vocab, cap=a.val_batches)
+        ner, perf, nl = validate(net, dva, dev, vocab)
         msg = dict(epoch=ep, loss=round(run / max(1, nb), 4),
                    val_ner=None if ner is None else round(ner, 5),
                    val_perfect=None if perf is None else round(perf, 4),
@@ -155,11 +171,13 @@ def main():
         log.flush()
         torch.save(dict(net=net.state_dict(), opt=opt.state_dict(), epoch=ep,
                         best=best if ner is None else min(best, ner),
-                        vocab=len(vocab)), ck)
+                        vocab=len(vocab), height=D.prep.HEIGHT,
+                        hidden=a.hidden), ck)
         if ner is not None and ner < best:
             best = ner
             torch.save(dict(net=net.state_dict(), epoch=ep, ner=ner,
-                            vocab=len(vocab)), os.path.join(a.out, 'best.pt'))
+                            vocab=len(vocab), height=D.prep.HEIGHT,
+                            hidden=a.hidden), os.path.join(a.out, 'best.pt'))
             print(f'  ↑ 최고 갱신 NER {ner:.4f}', flush=True)
     print('끝. 최고 검증 NER ' + ('없음' if best > 8e8 else f'{best:.4f}'), flush=True)
 

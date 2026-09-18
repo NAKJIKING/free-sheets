@@ -9,8 +9,14 @@
 세로는 완전히 접어 없애고(오선 위 위치가 음고이므로 세로 해상도가 중요 →
 가로만 1/4 로 줄인다), 가로 프레임 T = W/4 가 시간축이 된다.
 """
+import os
+import sys
+
 import torch
 import torch.nn as nn
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from prep import HEIGHT          # 전처리 높이와 모델 입력 높이는 **같아야 한다**
 
 
 def block(cin, cout, pool):
@@ -24,9 +30,9 @@ def block(cin, cout, pool):
 
 
 class CRNN(nn.Module):
-    #                              세로 160 → 80 → 40 → 20 → 10 → 5
+    #                              세로 224 → 112 → 56 → 28 → 14 → 7
     #                              가로  W  → W/2 → W/4 → W/4 → W/4 → W/4
-    def __init__(self, n_class, height=160, hidden=256, layers=2, dropout=0.1):
+    def __init__(self, n_class, height=HEIGHT, hidden=256, layers=2, dropout=0.1):
         super().__init__()
         self.cnn = nn.Sequential(
             block(1, 32, (2, 2)),

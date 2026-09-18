@@ -30,7 +30,12 @@ def bake(a):
     dst = os.path.join(data, 'cache', row['png'])
     if os.path.exists(dst):
         with Image.open(dst) as im:
-            return dict(row, w=im.size[0], ok=True)
+            w, h = im.size
+        # 재개는 **규격이 같을 때만** 한다. `prep.HEIGHT` 를 바꿨는데 예전
+        # 높이로 구운 캐시를 그대로 쓰면 모델 입력이 어긋나 조용히 망가진다
+        # (모델은 다른 높이도 그냥 받아들인다 — 오류가 안 난다).
+        if h == prep.HEIGHT:
+            return dict(row, w=w, ok=True)
     try:
         with Image.open(src) as im:
             g = 1.0 - np.asarray(im.convert('L'), dtype=np.float32) / 255.0

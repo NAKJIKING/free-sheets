@@ -107,8 +107,19 @@ def run_job(a):
     if want != have:
         return dict(st='대조불일치', song=j['song'],
                     err=f'want{want[:8]} have{have[:8]} len{len(want)}/{len(have)}')
+    # ⚠ 매니페스트에는 **악보에 그려진 음고**(기보 음고)를 쓴다.
+    # `bars_to_ly` 가 돌려주는 tokens 는 LilyPond `transpose` 를 먹이기 **전**의 음고다.
+    # 그대로 쓰면 이미지는 shift 만큼 옮겨져 있는데 정답은 안 옮겨져 있어,
+    # 모델에게 "D 로 그려진 음을 G 라고 답하라"고 가르치게 된다(shift≠0 인
+    # 줄이 전체의 약 2/3). 위 대조가 `tokens + shift == 렌더미디` 로 비교하기
+    # 때문에 생성기 자체 검사로는 절대 드러나지 않는다 — 2026-09-18 실측으로
+    # 잡았고, `verify_data.py` 가 이 조건을 독립적으로 다시 본다.
+    # 쉼표(음고 0)는 옮기지 않는다.
+    sh = j['shift']
+    if sh:
+        tokens = [(p + sh if p else 0, d, tie) for p, d, tie in tokens]
     return dict(st=st, song=j['song'], var=safe, chunk=j['chunk'],
-                shift=j['shift'], png=f'{safe}/{stem}.png',
+                shift=sh, png=f'{safe}/{stem}.png',
                 midi=f'{safe}/{os.path.basename(mid)}', tokens=tokens)
 
 
