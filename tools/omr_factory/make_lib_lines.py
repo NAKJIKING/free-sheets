@@ -96,10 +96,16 @@ def run_job(a):
         png, mid, err = L.render(LILY, d, stem, src)
         if not png:
             return dict(st='렌더실패', song=j['song'], err=err)
-    # 정답 대조 — LilyPond 미디의 음고열 == 우리 토큰의 붙임줄 병합 음고열 + 시프트.
+    # 🔴 토큰은 반드시 '이미지에 보이는 음'(조옮김 후)으로 저장한다.
+    # 이전 판은 조옮김 전 토큰을 저장하고 대조식에서만 시프트를 더해서,
+    # 검사는 통과하는데 학습 라벨은 이미지와 어긋나는 결함이 있었다
+    # (시프트≠0 표본 전부가 오답 라벨 = 데이터의 (keys-1)/keys).
+    # cache/dataset/evaluate 는 토큰을 그대로 쓰므로 여기가 유일한 진실 지점.
+    tokens = [((tp + j['shift']) if tp else 0, td, tt) for tp, td, tt in tokens]
+    # 정답 대조 — LilyPond 미디의 음고열 == 우리 토큰의 붙임줄 병합 음고열.
     # 재개(skip)한 줄도 반드시 대조한다. 안 하면 지난 실행에서 불일치로 버린
     # 파일이 다음 실행에서 조용히 통과해 데이터에 섞인다.
-    want = [p + j['shift'] for p in L.merged_pitches(tokens)]
+    want = L.merged_pitches(tokens)
     try:
         have = L.midi_notes(mid)
     except Exception as e:
