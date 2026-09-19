@@ -161,6 +161,13 @@ def main():
             torch.save(dict(net=net.state_dict(), epoch=ep, ner=ner,
                             vocab=len(vocab)), os.path.join(a.out, 'best.pt'))
             print(f'  ↑ 최고 갱신 NER {ner:.4f}', flush=True)
+        # 윈도우에서 프로세스 커밋이 에폭당 수 GB 씩 비대해져(힙 단편화 양상) 페이지파일을
+        # 부풀린다 → OMR_EPOCHS_PER_RUN 에폭마다 계획 종료하고 감독기가 --resume 재시작해
+        # 커밋을 리셋한다. 0/미설정이면 기존처럼 끝까지 돈다.
+        per_run = int(os.environ.get('OMR_EPOCHS_PER_RUN', '0'))
+        if per_run and ep - start + 1 >= per_run:
+            print(f'에폭 {ep} 저장 완료 — 계획 종료(OMR_EPOCHS_PER_RUN={per_run}), 감독기가 재시작한다', flush=True)
+            break
     print('끝. 최고 검증 NER ' + ('없음' if best > 8e8 else f'{best:.4f}'), flush=True)
 
 
