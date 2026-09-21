@@ -220,6 +220,15 @@ def augment_photo(a, rng, s=1.0, gap=22.0):
     g = np.asarray(img, dtype=np.float32) / 255.0
     g = np.clip(g + rng.normal(0, 0.03 * s, g.shape).astype(np.float32), 0, 1)  # 6 센서
     w, h = img.size
+    # 6.5 리샘플 체인 — 실물 파이프라인은 원근 워프·되펴기·정규화로
+    # 보간을 여러 번 거쳐 획이 물러진다(실측: 보정 켬에서 인식 저하).
+    # 축소↔복원 한 번으로 그 물러짐을 흉내낸다.
+    if rng.random() < 0.6 * s:
+        f2 = rng.uniform(1.1, 1.6)
+        img = Image.fromarray((g * 255).astype(np.uint8))
+        img = img.resize((max(16, int(w / f2)), max(16, int(h / f2))),
+                         Image.BILINEAR).resize((w, h), Image.BILINEAR)
+        g = np.asarray(img, dtype=np.float32) / 255.0
     f = rng.uniform(1.15, 1.15 + 1.45 * s)                    # 7 다운샘플/JPEG (마지막)
     img = Image.fromarray((g * 255).astype(np.uint8)) \
                .resize((max(16, int(w / f)), max(16, int(h / f))), Image.BILINEAR)
