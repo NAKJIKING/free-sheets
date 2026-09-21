@@ -21,6 +21,7 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import photo_prep
 import prep
 
 A4 = (2480, 3508)               # 300DPI A4
@@ -28,30 +29,71 @@ MARGIN_X, MARGIN_TOP = 90, 210
 LINE_W = A4[0] - 2 * MARGIN_X   # 줄 최대 폭
 
 
-def degrade_page(g, rng, s=1.0):
-    """(H, W) 회색 0~1 페이지 → 열화된 회색. dataset.augment_photo 와 같은
-    순서(기하→잉크(생략: 축소가 대신함)→종이결→조명→광학→센서→다운샘플/JPEG)."""
+def _curl(g, rng, s):
+    """종이 휘어짐 — 열마다 세로로 미는 부드러운 굴곡(가운데 불룩/한쪽 들림)."""
     h, w = g.shape
-    img = Image.fromarray((g * 255).astype(np.uint8))
-    # 기하: 원근 + 회전
-    j = 0.018 * s * min(w, h)
-    quad = []
-    for cx, cy in ((0, 0), (0, h), (w, h), (w, 0)):
-        quad += [cx + rng.uniform(-j, j), cy + rng.uniform(-j, j)]
-    img = img.transform((w, h), Image.QUAD, quad,
-                        resample=Image.BILINEAR, fillcolor=255)
-    img = img.rotate(rng.normal(0, 1.2 * s), resample=Image.BILINEAR,
-                     fillcolor=255, expand=False)
-    g = np.asarray(img, dtype=np.float32) / 255.0
-    # 종이결
+    A = rng.uniform(8, 30) * s * rng.choice([-1, 1])
+    phase = rng.uniform(0, np.pi)
+    d = (A * np.sin(np.pi * np.arange(w, dtype=np.float32) / w + phase))
+    rows = np.arange(h, dtype=np.float32)[:, None] - d[None, :]
+    r0 = np.clip(np.floor(rows).astype(np.int64), 0, h - 1)
+    r1 = np.clip(r0 + 1, 0, h - 1)
+    t = np.clip(rows - r0, 0, 1).astype(np.float32)
+    cols = np.arange(w)[None, :].repeat(h, axis=0)
+    return g[r0, cols] * (1 - t) + g[r1, cols] * t
+
+
+def degrade_page(g, rng, s=1.0):
+    """(H, W) 회색 0~1 페이지 → 열화된 회색 폰사진 흉내.
+
+    순서: 종이 성질(휘어짐→종이결) → 장면 배치(어두운 배경 위 원근·회전)
+    → 촬영(조명·그늘→광학→센서→다운샘플/JPEG). 배경·원근·휘어짐은
+    photo_prep 의 보정 ①②③이 되돌려야 할 대상이다.
+    """
+    h, w = g.shape
+    # 종이: 휘어짐
+    g = _curl(g, rng, s)
+    # 종이: 종이결 + 톤
     small = rng.random((max(2, h // 16), max(2, w // 16))).astype(np.float32)
     tex = np.asarray(Image.fromarray((small * 255).astype(np.uint8))
                      .resize((w, h), Image.BICUBIC), dtype=np.float32) / 255.0
     g = np.clip(g - (tex - 0.5) * 0.10 * s * g, 0, 1)
-    # 조명: 종이 톤 + 그라데이션 + 그림자 덩어리
     g = g * rng.uniform(1.0 - 0.18 * s, 1.0)
-    gx = np.linspace(0, 1, w, dtype=np.float32)[None, :]
-    gy = np.linspace(0, 1, h, dtype=np.float32)[:, None]
+    # 장면: 어두운 배경(책상) 위에 원근·회전으로 배치
+    bw, bh = int(w * 1.12), int(h * 1.12)
+    bg = np.full((bh, bw), rng.uniform(0.10, 0.42), dtype=np.float32)
+    bn = rng.random((max(2, bh // 40), max(2, bw // 40))).astype(np.float32)
+    bg += (np.asarray(Image.fromarray((bn * 255).astype(np.uint8))
+                      .resize((bw, bh), Image.BICUBIC),
+                      dtype=np.float32) / 255.0 - 0.5) * 0.12
+    fit = rng.uniform(0.86, 0.97)
+    pw, ph = int(w * fit * 1.12), int(h * fit * 1.12)
+    ox, oy = (bw - pw) / 2, (bh - ph) / 2
+    j = 0.022 * s * min(pw, ph)
+    quad = [(ox + rng.uniform(-j, j), oy + rng.uniform(-j, j)),
+            (ox + pw + rng.uniform(-j, j), oy + rng.uniform(-j, j)),
+            (ox + pw + rng.uniform(-j, j), oy + ph + rng.uniform(-j, j)),
+            (ox + rng.uniform(-j, j), oy + ph + rng.uniform(-j, j))]
+    co = tuple(photo_prep._persp_coeffs(
+        quad, [(0, 0), (w, 0), (w, h), (0, h)]))
+    paper = Image.fromarray((g * 255).astype(np.uint8))
+    warp = np.asarray(paper.transform((bw, bh), Image.PERSPECTIVE, co,
+                                      resample=Image.BILINEAR, fillcolor=0),
+                      dtype=np.float32) / 255.0
+    mask = np.asarray(Image.new('L', (w, h), 255)
+                      .transform((bw, bh), Image.PERSPECTIVE, co,
+                                 resample=Image.BILINEAR, fillcolor=0),
+                      dtype=np.float32) / 255.0
+    g = bg * (1 - mask) + warp * mask
+    ang = rng.normal(0, 1.2 * s)
+    img = Image.fromarray((np.clip(g, 0, 1) * 255).astype(np.uint8)) \
+        .rotate(ang, resample=Image.BILINEAR, expand=False,
+                fillcolor=int(bg.mean() * 255))
+    g = np.asarray(img, dtype=np.float32) / 255.0
+    bh, bw = g.shape
+    # 촬영: 조명 그라데이션 + 그림자 덩어리
+    gx = np.linspace(0, 1, bw, dtype=np.float32)[None, :]
+    gy = np.linspace(0, 1, bh, dtype=np.float32)[:, None]
     g = g * (1.0 - 0.28 * s * np.clip(rng.uniform(-1, 1) * gx
                                       + rng.uniform(-1, 1) * gy, -1, 1))
     if rng.random() < 0.7:
@@ -71,9 +113,9 @@ def degrade_page(g, rng, s=1.0):
     # 다운샘플(폰 해상도) — 마지막에 JPEG
     img = Image.fromarray((g * 255).astype(np.uint8))
     long_side = int(rng.uniform(2200, 3600))
-    f = max(w, h) / long_side
+    f = max(bw, bh) / long_side
     if f > 1.02:
-        img = img.resize((int(w / f), int(h / f)), Image.BILINEAR)
+        img = img.resize((int(bw / f), int(bh / f)), Image.BILINEAR)
     return img, int(rng.uniform(55, 90))
 
 

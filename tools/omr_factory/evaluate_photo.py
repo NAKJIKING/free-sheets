@@ -96,6 +96,8 @@ def main():
     ap.add_argument('--out', required=True)
     ap.add_argument('--ckpt', default='best.pt')
     ap.add_argument('--gate', type=float, default=0.10)
+    ap.add_argument('--no-correct', action='store_true',
+                    help='보정(종이 원근·조명 평탄화·되펴기) 끄고 평가 — 전/후 비교용')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
@@ -120,7 +122,7 @@ def main():
             y = vocab.encode([tuple(t) for t in ln['tokens']], unk=-1)
             refs.append([k for k in y if not vocab.is_rest(k)])
         crops = photo_prep.load_photo_lines(
-            os.path.join(a.photos, meta['page']))
+            os.path.join(a.photos, meta['page']), correct=not a.no_correct)
         hyps_all = decode_crops(net, crops, dev) if crops else []
         hyps = [[k for k in h if not vocab.is_rest(k)] for h in hyps_all]
         pe = pt = 0
@@ -157,7 +159,7 @@ def main():
     rep = dict(photos=a.photos, pages=len(pages), ner_notes=ner,
                err=ne, notes=nt, lines=lines_tot, detected=det_tot,
                missed_lines=miss, ghost_lines=ghost,
-               gate2_mock_pass=bool(ner <= a.gate),
+               gate2_mock_pass=bool(ner <= a.gate), correct=not a.no_correct,
                ckpt_epoch=st.get('epoch'), per_page=per_page)
     json.dump(rep, open(os.path.join(a.out, 'gate2_mock.json'), 'w',
                         encoding='utf-8'), ensure_ascii=False, indent=1)
