@@ -233,6 +233,8 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True):
     """
     img = path_or_img if isinstance(path_or_img, Image.Image) \
         else Image.open(path_or_img)
+    from PIL import ImageOps
+    img = ImageOps.exif_transpose(img)      # 폰사진은 EXIF 회전 필수
     img = img.convert('L')
     if correct:
         img = crop_paper(img)                        # ① 종이·원근
@@ -253,12 +255,28 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True):
         band = ink[max(0, int(cy - pad_ratio * gap)):
                    min(ink.shape[0], int(cy + pad_ratio * gap))]
         cols = band.sum(axis=0)
-        on = np.where(cols > max(1.0, band.shape[0] * 0.02))[0]
-        if len(on) == 0:
+        on = cols > max(1.0, band.shape[0] * 0.02)
+        # 펼친 책 사진은 옆 페이지 조각·책 모서리가 같은 높이에 걸린다 —
+        # 잉크 열이 이어지는 **가장 긴 구간** 하나만 줄로 삼는다
+        # (작은 끊김 ≤ 3칸은 마디 사이 여백으로 보고 잇는다).
+        runs, i0 = [], None
+        gap_tol = max(4, int(3 * gap))
+        last_on = -10 ** 9
+        for x in range(len(on)):
+            if on[x]:
+                if i0 is None or x - last_on > gap_tol:
+                    if i0 is not None:
+                        runs.append((i0, last_on))
+                    i0 = x
+                last_on = x
+        if i0 is not None:
+            runs.append((i0, last_on))
+        if not runs:
             x0, x1 = 0, W
         else:
-            x0 = max(0, int(on[0] * f - 2 * g0))
-            x1 = min(W, int((on[-1] + 1) * f + 2 * g0))
+            r0, r1 = max(runs, key=lambda r: r[1] - r[0])
+            x0 = max(0, int(r0 * f - 2 * g0))
+            x1 = min(W, int((r1 + 1) * f + 2 * g0))
         c = img.crop((x0, top, x1, bot))
         if correct:
             c = dewarp_line(c, g0)                   # ③ 되펴기
