@@ -17,6 +17,8 @@ import torch
 from PIL import Image, ImageFilter
 from torch.utils.data import Dataset
 
+import prep
+
 BLANK = 0                       # CTC 공백
 
 
@@ -156,23 +158,114 @@ def augment(x, rng, s=1.0):
     return np.asarray(img, dtype=np.float32) / 255.0
 
 
+# ──────────────────── 사진 증강 (관문 2, 300DPI 원본용) ────────────────────
+# 기존 augment 는 정규화 뒤(줄간격 12px) 이미지에서 돌아 원근·해상도 열화를
+# 제대로 못 흉내낸다. 여기서는 **300DPI 원본(줄간격 ~21‑27px) 위에서**
+# 기하(원근 포함) → 잉크 → 종이결 → 조명(그늘 포함) → 광학 → 센서 →
+# 다운샘플/JPEG 순서로 걸고, 마지막에 실사 추론과 같은
+# `prep.normalize_photo` 를 통과시킨다 — 학습·추론 동일 전처리 원칙 유지.
+
+def _persp(img, rng, s):
+    """원근 + 회전 — 폰 카메라가 종이를 비스듬히 내려다본 것."""
+    w, h = img.size
+    j = 0.02 * s * h
+    quad = []
+    for cx, cy in ((0, 0), (0, h), (w, h), (w, 0)):
+        quad += [cx + rng.uniform(-j, j), cy + rng.uniform(-j, j)]
+    img = img.transform((w, h), Image.QUAD, quad,
+                        resample=Image.BILINEAR, fillcolor=0)
+    ang = rng.normal(0, 1.0 * s)
+    return img.rotate(ang, resample=Image.BILINEAR, fillcolor=0, expand=False)
+
+
+def _paper_photo(a, rng, s):
+    """종이결 — 원본 해상도에 맞춘 큰 셀 + 강한 얼룩."""
+    h, w = a.shape
+    small = rng.random((max(2, h // 10), max(2, w // 10))).astype(np.float32)
+    tex = np.asarray(Image.fromarray((small * 255).astype(np.uint8))
+                     .resize((w, h), Image.BICUBIC), dtype=np.float32) / 255.0
+    return np.clip(a + (tex - 0.5) * 0.12 * s * (1 - a), 0, 1)
+
+
+def _light_photo(g, rng, s):
+    """조명 — 밝기 그라데이션 + 국소 그림자 덩어리(손·폰 그림자). g 는 회색(1=밝음)."""
+    h, w = g.shape
+    gx = np.linspace(0, 1, w, dtype=np.float32)[None, :]
+    gy = np.linspace(0, 1, h, dtype=np.float32)[:, None]
+    amp = 0.30 * s
+    g = g * (1.0 - amp * np.clip(rng.uniform(-1, 1) * gx + rng.uniform(-1, 1) * gy,
+                                 -1, 1))
+    if rng.random() < 0.6 * s:
+        cx, cy = rng.uniform(0, 1), rng.uniform(0, 1)
+        sx, sy = rng.uniform(0.15, 0.5), rng.uniform(0.3, 1.0)
+        depth = rng.uniform(0.1, 0.3) * s
+        blob = np.exp(-(((gx - cx) / sx) ** 2 + ((gy - cy) / sy) ** 2))
+        g = g * (1.0 - depth * blob.astype(np.float32))
+    return np.clip(g, 0, 1)
+
+
+def augment_photo(a, rng, s=1.0, gap=22.0):
+    """(H, W) 원본 잉크배열(0~1, 300DPI) → 실사풍 열화 후 정규화된 (160, W')."""
+    img = Image.fromarray((a * 255).astype(np.uint8))
+    img = _persp(img, rng, s)                                 # 1 기하(원근)
+    a = np.asarray(img, dtype=np.float32) / 255.0
+    a = _ink(a, rng, s)                                       # 2 잉크
+    a = _paper_photo(a, rng, s)                               # 3 종이결
+    g = np.clip(1.0 - a, 0, 1) * rng.uniform(1.0 - 0.20 * s, 1.0)   # 종이 톤
+    g = _light_photo(g, rng, s)                               # 4 조명·그늘
+    img = Image.fromarray((g * 255).astype(np.uint8))
+    r = abs(rng.normal(0, 0.5 * s)) * (gap / 12.0)
+    if r > 0.15:
+        img = img.filter(ImageFilter.GaussianBlur(r))         # 5 광학
+    g = np.asarray(img, dtype=np.float32) / 255.0
+    g = np.clip(g + rng.normal(0, 0.03 * s, g.shape).astype(np.float32), 0, 1)  # 6 센서
+    w, h = img.size
+    f = rng.uniform(1.15, 1.15 + 1.45 * s)                    # 7 다운샘플/JPEG (마지막)
+    img = Image.fromarray((g * 255).astype(np.uint8)) \
+               .resize((max(16, int(w / f)), max(16, int(h / f))), Image.BILINEAR)
+    q = int(rng.uniform(45, 92))
+    if q < 90:
+        import io
+        b = io.BytesIO()
+        img.save(b, 'JPEG', quality=max(30, q))
+        b.seek(0)
+        img = Image.open(b).convert('L')
+    # 되돌려 키우지 않는다 — 실제 사진도 저해상도 그대로 들어오고,
+    # normalize_photo 가 줄간격 12px 로 맞춘다.
+    return prep.normalize_photo(img)
+
+
 # ───────────────────────────── 데이터셋 ─────────────────────────────
 
 class Lines(Dataset):
-    def __init__(self, data, rows, vocab, aug=0.0, max_w=2600):
+    def __init__(self, data, rows, vocab, aug=0.0, max_w=2600, photo=0.0,
+                 photo_s=1.0):
+        """photo: 표본마다 이 확률로 300DPI 원본 + 사진 증강 경로를 탄다.
+        나머지는 기존 캐시 + 기존 증강(빠름) — 깨끗한 렌더 성능을 지키면서
+        실사 내성을 얹는 혼합 학습."""
         self.data, self.rows, self.vocab, self.aug, self.max_w = \
             data, rows, vocab, aug, max_w
+        self.photo, self.photo_s = photo, photo_s
 
     def __len__(self):
         return len(self.rows)
 
     def __getitem__(self, i):
         r = self.rows[i]
-        with Image.open(os.path.join(self.data, r['cache'])) as im:
-            x = np.asarray(im.convert('L'), dtype=np.float32) / 255.0
-        if self.aug > 0:
-            rng = np.random.default_rng()
-            x = augment(x, rng, self.aug)
+        rng = np.random.default_rng()
+        if self.photo > 0 and rng.random() < self.photo:
+            # 원본 경로 = 캐시 경로에서 'cache/' 접두사 제거
+            orig = os.path.join(self.data, r['cache'][6:])
+            with Image.open(orig) as im:
+                a = 1.0 - np.asarray(im.convert('L'), dtype=np.float32) / 255.0
+            st = prep.find_staff(a)
+            gap = st[1] if st else 22.0
+            x = augment_photo(a, rng, self.photo_s, gap=gap)
+        else:
+            with Image.open(os.path.join(self.data, r['cache'])) as im:
+                x = np.asarray(im.convert('L'), dtype=np.float32) / 255.0
+            if self.aug > 0:
+                x = augment(x, rng, self.aug)
         if x.shape[1] > self.max_w:
             x = x[:, :self.max_w]
         y = r['_y']

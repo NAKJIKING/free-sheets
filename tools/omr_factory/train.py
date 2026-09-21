@@ -84,6 +84,12 @@ def main():
     ap.add_argument('--max-w', type=int, default=2600)
     ap.add_argument('--val-batches', type=int, default=60)
     ap.add_argument('--resume', action='store_true')
+    ap.add_argument('--photo-aug', type=float, default=0.0,
+                    help='표본당 사진 증강(300DPI 원본 경로) 확률 — 관문 2')
+    ap.add_argument('--photo-s', type=float, default=1.0, help='사진 증강 세기')
+    ap.add_argument('--init', default='',
+                    help='이 체크포인트의 가중치로 시작(미세조정). '
+                         '--resume 으로 last.pt 를 찾으면 무시된다')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
@@ -112,14 +118,27 @@ def main():
         opt.load_state_dict(s['opt'])
         start, best = s['epoch'] + 1, s.get('best', 9e9)
         print(f'이어서 학습: 에폭 {start} 부터, 최고 NER {best:.4f}')
+    elif a.init:
+        s = torch.load(a.init, map_location=dev)
+        net.load_state_dict(s['net'])
+        print(f"미세조정 시작: {a.init} (에폭 {s.get('epoch')}, NER {s.get('ner')}) "
+              f'가중치만 로드, 옵티마이저·best 는 새로 시작')
 
     # 긴 줄이 한 배치에 몰리면 패딩이 낭비된다 → 폭으로 정렬해 묶는다
     tr.sort(key=lambda r: r['w'])
-    dtr = D.ThreadLoader(D.Lines(a.data, tr, vocab, aug=a.aug, max_w=a.max_w),
+    dtr = D.ThreadLoader(D.Lines(a.data, tr, vocab, aug=a.aug, max_w=a.max_w,
+                                 photo=a.photo_aug, photo_s=a.photo_s),
                          a.batch, D.collate, shuffle=True, workers=a.workers,
                          drop_last=True, seed=1234)
     dva = D.ThreadLoader(D.Lines(a.data, va, vocab, aug=0.0, max_w=a.max_w),
                          a.batch, D.collate, workers=max(2, a.workers // 2))
+    # 사진 미세조정 중에는 사진 증강을 통과시킨 검증도 함께 잰다 —
+    # best.pt 는 사진 NER 기준으로 고르고, 깨끗한 렌더 NER 은 회귀 감시용.
+    dvp = None
+    if a.photo_aug > 0:
+        dvp = D.ThreadLoader(D.Lines(a.data, va, vocab, aug=0.0, max_w=a.max_w,
+                                     photo=1.0, photo_s=a.photo_s),
+                             a.batch, D.collate, workers=max(2, a.workers // 2))
     sched = torch.optim.lr_scheduler.OneCycleLR(
         opt, max_lr=a.lr, total_steps=max(1, a.epochs * len(dtr)),
         pct_start=0.08, last_epoch=start * len(dtr) - 1 if start else -1)
@@ -150,17 +169,24 @@ def main():
                    val_ner=None if ner is None else round(ner, 5),
                    val_perfect=None if perf is None else round(perf, 4),
                    val_lines=nl, sec=round(time.time() - t0))
+        crit = ner                            # best.pt 판정 기준
+        if dvp is not None:
+            pner, pperf, _pl = validate(net, dvp, dev, vocab, cap=a.val_batches)
+            msg['val_ner_photo'] = None if pner is None else round(pner, 5)
+            msg['val_perfect_photo'] = None if pperf is None else round(pperf, 4)
+            crit = pner
         print('에폭', msg, flush=True)
         log.write(json.dumps(msg) + '\n')
         log.flush()
         torch.save(dict(net=net.state_dict(), opt=opt.state_dict(), epoch=ep,
-                        best=best if ner is None else min(best, ner),
+                        best=best if crit is None else min(best, crit),
                         vocab=len(vocab)), ck)
-        if ner is not None and ner < best:
-            best = ner
-            torch.save(dict(net=net.state_dict(), epoch=ep, ner=ner,
-                            vocab=len(vocab)), os.path.join(a.out, 'best.pt'))
-            print(f'  ↑ 최고 갱신 NER {ner:.4f}', flush=True)
+        if crit is not None and crit < best:
+            best = crit
+            torch.save(dict(net=net.state_dict(), epoch=ep, ner=crit,
+                            clean_ner=ner, vocab=len(vocab)),
+                       os.path.join(a.out, 'best.pt'))
+            print(f'  ↑ 최고 갱신 NER {crit:.4f}', flush=True)
         # 윈도우에서 프로세스 커밋이 에폭당 수 GB 씩 비대해져(힙 단편화 양상) 페이지파일을
         # 부풀린다 → OMR_EPOCHS_PER_RUN 에폭마다 계획 종료하고 감독기가 --resume 재시작해
         # 커밋을 리셋한다. 0/미설정이면 기존처럼 끝까지 돈다.
