@@ -1,0 +1,319 @@
+{
+ "split": "test",
+ "lines": 3475,
+ "songs": 195,
+ "ner_notes": 0.005417996499536703,
+ "ner_all": 0.00524957292666808,
+ "notes": 77704,
+ "oov_tokens": 24,
+ "perfect_lines": 3130,
+ "gate1_pass": true,
+ "ckpt_epoch": 26,
+ "elise": [
+  {
+   "tag": "original__altosax__elise_c00_km5",
+   "shift": -5,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__altosax__elise_c00_km5__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__altosax__elise_c00_km5__모델.mid",
+   "png": "cache/original__altosax__elise/c00_km5.png"
+  },
+  {
+   "tag": "original__altosax__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__altosax__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__altosax__elise_c00_kp0__모델.mid",
+   "png": "cache/original__altosax__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__altosax__elise_c00_kp3",
+   "shift": 3,
+   "notes": 36,
+   "err": 1,
+   "gt": "C:/Users/user/omr_gate1\\original__altosax__elise_c00_kp3__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__altosax__elise_c00_kp3__모델.mid",
+   "png": "cache/original__altosax__elise/c00_kp3.png"
+  },
+  {
+   "tag": "original__cello__elise_c00_km5",
+   "shift": -5,
+   "notes": 36,
+   "err": 5,
+   "gt": "C:/Users/user/omr_gate1\\original__cello__elise_c00_km5__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__cello__elise_c00_km5__모델.mid",
+   "png": "cache/original__cello__elise/c00_km5.png"
+  },
+  {
+   "tag": "original__cello__elise_c00_km3",
+   "shift": -3,
+   "notes": 36,
+   "err": 4,
+   "gt": "C:/Users/user/omr_gate1\\original__cello__elise_c00_km3__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__cello__elise_c00_km3__모델.mid",
+   "png": "cache/original__cello__elise/c00_km3.png"
+  },
+  {
+   "tag": "original__cello__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__cello__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__cello__elise_c00_kp0__모델.mid",
+   "png": "cache/original__cello__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__clarinet__elise_c00_km4",
+   "shift": -4,
+   "notes": 36,
+   "err": 1,
+   "gt": "C:/Users/user/omr_gate1\\original__clarinet__elise_c00_km4__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__clarinet__elise_c00_km4__모델.mid",
+   "png": "cache/original__clarinet__elise/c00_km4.png"
+  },
+  {
+   "tag": "original__clarinet__elise_c00_km3",
+   "shift": -3,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__clarinet__elise_c00_km3__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__clarinet__elise_c00_km3__모델.mid",
+   "png": "cache/original__clarinet__elise/c00_km3.png"
+  },
+  {
+   "tag": "original__clarinet__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__clarinet__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__clarinet__elise_c00_kp0__모델.mid",
+   "png": "cache/original__clarinet__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__flute__elise_c00_km4",
+   "shift": -4,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__flute__elise_c00_km4__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__flute__elise_c00_km4__모델.mid",
+   "png": "cache/original__flute__elise/c00_km4.png"
+  },
+  {
+   "tag": "original__flute__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__flute__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__flute__elise_c00_kp0__모델.mid",
+   "png": "cache/original__flute__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__flute__elise_c00_kp6",
+   "shift": 6,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__flute__elise_c00_kp6__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__flute__elise_c00_kp6__모델.mid",
+   "png": "cache/original__flute__elise/c00_kp6.png"
+  },
+  {
+   "tag": "original__guitar__elise_c00_km2",
+   "shift": -2,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__guitar__elise_c00_km2__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__guitar__elise_c00_km2__모델.mid",
+   "png": "cache/original__guitar__elise/c00_km2.png"
+  },
+  {
+   "tag": "original__guitar__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__guitar__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__guitar__elise_c00_kp0__모델.mid",
+   "png": "cache/original__guitar__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__guitar__elise_c00_kp3",
+   "shift": 3,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__guitar__elise_c00_kp3__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__guitar__elise_c00_kp3__모델.mid",
+   "png": "cache/original__guitar__elise/c00_kp3.png"
+  },
+  {
+   "tag": "original__piano__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__piano__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__piano__elise_c00_kp0__모델.mid",
+   "png": "cache/original__piano__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__piano__elise_c00_kp2",
+   "shift": 2,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__piano__elise_c00_kp2__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__piano__elise_c00_kp2__모델.mid",
+   "png": "cache/original__piano__elise/c00_kp2.png"
+  },
+  {
+   "tag": "original__piano__elise_c00_kp6",
+   "shift": 6,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__piano__elise_c00_kp6__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__piano__elise_c00_kp6__모델.mid",
+   "png": "cache/original__piano__elise/c00_kp6.png"
+  },
+  {
+   "tag": "original__recorder__elise_c00_km1",
+   "shift": -1,
+   "notes": 36,
+   "err": 2,
+   "gt": "C:/Users/user/omr_gate1\\original__recorder__elise_c00_km1__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__recorder__elise_c00_km1__모델.mid",
+   "png": "cache/original__recorder__elise/c00_km1.png"
+  },
+  {
+   "tag": "original__recorder__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__recorder__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__recorder__elise_c00_kp0__모델.mid",
+   "png": "cache/original__recorder__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__recorder__elise_c00_kp6",
+   "shift": 6,
+   "notes": 36,
+   "err": 2,
+   "gt": "C:/Users/user/omr_gate1\\original__recorder__elise_c00_kp6__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__recorder__elise_c00_kp6__모델.mid",
+   "png": "cache/original__recorder__elise/c00_kp6.png"
+  },
+  {
+   "tag": "original__trumpet__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__trumpet__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__trumpet__elise_c00_kp0__모델.mid",
+   "png": "cache/original__trumpet__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__trumpet__elise_c00_kp2",
+   "shift": 2,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__trumpet__elise_c00_kp2__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__trumpet__elise_c00_kp2__모델.mid",
+   "png": "cache/original__trumpet__elise/c00_kp2.png"
+  },
+  {
+   "tag": "original__trumpet__elise_c00_kp6",
+   "shift": 6,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__trumpet__elise_c00_kp6__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__trumpet__elise_c00_kp6__모델.mid",
+   "png": "cache/original__trumpet__elise/c00_kp6.png"
+  },
+  {
+   "tag": "original__violin__elise_c00_km2",
+   "shift": -2,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__violin__elise_c00_km2__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__violin__elise_c00_km2__모델.mid",
+   "png": "cache/original__violin__elise/c00_km2.png"
+  },
+  {
+   "tag": "original__violin__elise_c00_kp0",
+   "shift": 0,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__violin__elise_c00_kp0__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__violin__elise_c00_kp0__모델.mid",
+   "png": "cache/original__violin__elise/c00_kp0.png"
+  },
+  {
+   "tag": "original__violin__elise_c00_kp5",
+   "shift": 5,
+   "notes": 36,
+   "err": 0,
+   "gt": "C:/Users/user/omr_gate1\\original__violin__elise_c00_kp5__정답.mid",
+   "pred": "C:/Users/user/omr_gate1\\original__violin__elise_c00_kp5__모델.mid",
+   "png": "cache/original__violin__elise/c00_kp5.png"
+  }
+ ],
+ "worst": [
+  {
+   "song": "mutopia:Mendelssohn-BartholdyF__O37__nr2",
+   "ner": 0.13852813852813853,
+   "err": 32,
+   "notes": 231
+  },
+  {
+   "song": "pdmx:when_the_saints_go_marching_in-QmNpFTjSEZHb",
+   "ner": 0.07878787878787878,
+   "err": 13,
+   "notes": 165
+  },
+  {
+   "song": "mutopia:two-duo-a4",
+   "ner": 0.07720588235294118,
+   "err": 21,
+   "notes": 272
+  },
+  {
+   "song": "mutopia:LachnerF__psalm42",
+   "ner": 0.06201550387596899,
+   "err": 16,
+   "notes": 258
+  },
+  {
+   "song": "lieder:h_Awake_My_Soul__An_Offering_Bring",
+   "ner": 0.058823529411764705,
+   "err": 9,
+   "notes": 153
+  },
+  {
+   "song": "mutopia:BachJS__BWV629__bwv629",
+   "ner": 0.058333333333333334,
+   "err": 7,
+   "notes": 120
+  },
+  {
+   "song": "mutopia:BachJS__BWV628__bwv628",
+   "ner": 0.05,
+   "err": 3,
+   "notes": 60
+  },
+  {
+   "song": "s:Ar__irinn_N__Neosfainn_C__H_",
+   "ner": 0.04912280701754386,
+   "err": 14,
+   "notes": 285
+  },
+  {
+   "song": "lieder:Quilter__Roger-lc30908438",
+   "ner": 0.046511627906976744,
+   "err": 6,
+   "notes": 129
+  },
+  {
+   "song": "lieder:Joplin__Scott-lc6304288",
+   "ner": 0.041666666666666664,
+   "err": 5,
+   "notes": 120
+  }
+ ]
+}
