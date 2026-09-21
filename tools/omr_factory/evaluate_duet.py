@@ -84,6 +84,37 @@ def infix_edit_span(q, r):
     return prev[j], start[j], j
 
 
+@torch.no_grad()
+def decode_conf(net, crops, dev, max_w=2600, batch=8):
+    """decode_crops + 신뢰도 — 프레임별 최대 소프트맥스 확률의 평균.
+
+    정답 없이 켬/끔 파이프라인 중 나은 쪽을 고르는 근거로 쓴다: 크롭이
+    엉키면(배율·워프 실패) 모델 출력 분포가 뭉개져 신뢰도가 떨어진다."""
+    import torch.nn.functional as F
+    import prep as _prep
+    hyps, confs, frames = [], [], []
+    for k in range(0, len(crops), batch):
+        chunk = [c[:, :max_w] for c in crops[k:k + batch]]
+        W = max(c.shape[1] for c in chunk)
+        x = torch.zeros(len(chunk), 1, _prep.HEIGHT, W)
+        for i, c in enumerate(chunk):
+            x[i, 0, :, :c.shape[1]] = torch.from_numpy(c)
+        xl = torch.tensor([c.shape[1] for c in chunk])
+        x = x.to(dev)
+        with torch.autocast('cuda', dtype=torch.bfloat16,
+                            enabled=dev.type == 'cuda'):
+            lg = net(x).float()
+        ol = net.out_len(xl)
+        from model import greedy_decode
+        hyps += greedy_decode(lg, ol)
+        pr = F.softmax(lg, dim=-1).max(dim=-1).values.cpu()
+        for i in range(len(chunk)):
+            n = int(ol[i])
+            confs.append(float(pr[i, :n].mean()))
+            frames.append(n)
+    return hyps, confs, frames
+
+
 def build_line_truth(render, net, vocab, dev, voices):
     """깨끗한 원본 렌더(우리 조판 PNG)를 모델로 읽어(오류 ~0.3%) 각 보표
     줄이 정답의 어느 구간인지 역산 → 줄별 정답 목록(위→아래)과 성부 번호.
@@ -127,6 +158,8 @@ def main():
     ap.add_argument('--ckpt', default='best.pt')
     ap.add_argument('--gate', type=float, default=0.10)
     ap.add_argument('--no-correct', action='store_true')
+    ap.add_argument('--auto', action='store_true',
+                    help='사진마다 보정 켬/끔을 둘 다 돌려 CTC 신뢰도 높은 쪽 채택')
     ap.add_argument('--proof', type=int, default=3, help='증명물 사진 수')
     ap.add_argument('--render', default='C:/Users/user/omr_dense/캐논_플루트.png',
                     help='깨끗한 원본 렌더 — 줄별 정답 역산용')
@@ -157,14 +190,27 @@ def main():
     v_ok = [0, 0]
     per_photo = []
     proofs = {}
+    chose_on = 0
     for pi, ph in enumerate(photos):
         # extract_lines 는 위→아래 정렬된 (크롭, 중심y, 줄간격)을 준다
-        res = photo_prep.extract_lines(ph, correct=not a.no_correct,
-                                       with_pos=True)
-        crops = [c for c, _y, _g in res]
-        centers = [y for _c, y, _g in res]
-        norm = [prep.normalize_photo(c) for c in crops]
-        hyps = decode_crops(net, norm, dev) if norm else []
+        def run(correct):
+            res = photo_prep.extract_lines(ph, correct=correct, with_pos=True)
+            crops = [c for c, _y, _g in res]
+            centers = [y for _c, y, _g in res]
+            norm = [prep.normalize_photo(c) for c in crops]
+            if not norm:
+                return crops, centers, [], 0.0
+            hyps, confs, frames = decode_conf(net, norm, dev)
+            conf = sum(c * f for c, f in zip(confs, frames)) \
+                / max(1, sum(frames))
+            return crops, centers, hyps, conf
+        if a.auto:
+            r_on = run(True)
+            r_off = run(False)
+            crops, centers, hyps, _c = r_on if r_on[3] >= r_off[3] else r_off
+            chose_on += (r_on[3] >= r_off[3])
+        else:
+            crops, centers, hyps, _c = run(not a.no_correct)
         toks = [[tuple(vocab.itos[k]) for k in h if k > 0] for h in hyps]
         # 인식이 빈 보표(오검·잘린 조각)는 짝짓기 전에 뺀다 — 진짜 보표를
         # 놓친 경우라도 성부 편집거리에서 삭제 오류로 정직하게 남는다.
@@ -231,9 +277,12 @@ def main():
             write_midi(os.path.join(a.out, f'{tag}_v{vi + 1}__모델.mid'), pred)
     print(f'\n■ 증명물 미디 {len(pick)}장×2성부×2 → {a.out}')
 
-    tag = 'off' if a.no_correct else 'on'
+    if a.auto:
+        print(f'■ 자동 선택          켬 {chose_on} / 끔 {len(photos) - chose_on}')
+    tag = 'auto' if a.auto else ('off' if a.no_correct else 'on')
     rep = dict(photos=len(photos), ner_notes=ner, err=ne, notes=nt,
-               correct=not a.no_correct, det_hist=dict(det_hist),
+               correct=not a.no_correct, auto=a.auto, chose_on=chose_on,
+               det_hist=dict(det_hist),
                v1_staves=v_ok[0], v2_staves=v_ok[1],
                expected_staves_per_voice=exp_staves,
                gate2_real_pass=bool(ner <= a.gate),
