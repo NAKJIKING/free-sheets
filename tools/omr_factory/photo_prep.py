@@ -50,22 +50,48 @@ def find_paper(img, work_w=800):
     lo, hi = np.percentile(g, (8, 92))
     if hi - lo < 0.25:                      # 배경·종이 명암차 없음 → 전체가 종이
         return None
-    # 그늘진 종이를 배경으로 오인하는 사고 방지: 진짜 배경(책상)이 있으면
-    # **테두리**가 중앙보다 뚜렷이 어둡다. 아니면 종이가 프레임을 채운 것
-    # 이므로 자르지 않는다(조명 얼룩은 ② 평탄화가 처리).
-    gh, gw = g.shape
-    b = max(2, int(min(gh, gw) * 0.04))
-    border = np.concatenate([g[:b].ravel(), g[-b:].ravel(),
-                             g[:, :b].ravel(), g[:, -b:].ravel()])
-    inner = g[int(gh * 0.25):int(gh * 0.75), int(gw * 0.25):int(gw * 0.75)]
-    if np.median(border) > np.median(inner) - 0.20:
-        return None
     mask = g >= (lo + hi) / 2.0
     # 자잘한 밝은 점 제거(닫힘 연산 흉내)
     m = Image.fromarray((mask * 255).astype(np.uint8)) \
         .filter(ImageFilter.MinFilter(5)).filter(ImageFilter.MaxFilter(5))
     mask = np.asarray(m) > 127
-    if mask.mean() < 0.25:                  # 종이가 너무 작다 — 오검 위험
+    # 종이 밖의 밝은 물체(스티커·라벨·옆 종이)가 극점 귀퉁이를 가로채는
+    # 사고 방지: 마스크 무게중심이 속한 **연결 성분만** 남긴다(저해상도
+    # 플러드필 — scipy 없이 MaxFilter 반복).
+    if mask.any():
+        gh0, gw0 = mask.shape
+        # 해상도를 너무 낮추면 종이와 옆 물체 사이 가는 틈이 뭉개져 성분이
+        # 합쳐진다(실측) — 400px 폭 기준으로 유지.
+        f2 = max(1, gw0 // 400)
+        small = np.asarray(Image.fromarray((mask * 255).astype(np.uint8))
+                           .resize((gw0 // f2, gh0 // f2), Image.NEAREST)) > 127
+        yy0, xx0 = np.nonzero(mask)
+        cy, cx = int(yy0.mean()) // f2, int(xx0.mean()) // f2
+        cy = min(max(cy, 0), small.shape[0] - 1)
+        cx = min(max(cx, 0), small.shape[1] - 1)
+        if not small[cy, cx]:               # 무게중심이 구멍이면 근처 참점
+            ys2, xs2 = np.nonzero(small)
+            if len(ys2) == 0:
+                return None
+            k = np.argmin((ys2 - cy) ** 2 + (xs2 - cx) ** 2)
+            cy, cx = int(ys2[k]), int(xs2[k])
+        comp = np.zeros_like(small)
+        comp[cy, cx] = True
+        for _ in range(400):
+            grown = np.asarray(
+                Image.fromarray((comp * 255).astype(np.uint8))
+                .filter(ImageFilter.MaxFilter(5))) > 127
+            grown &= small
+            if grown.sum() == comp.sum():
+                break
+            comp = grown
+        comp_big = np.asarray(Image.fromarray((comp * 255).astype(np.uint8))
+                              .resize((gw0, gh0), Image.NEAREST)) > 127
+        mask = mask & comp_big
+    frac = mask.mean()
+    if frac < 0.18:                         # 종이가 너무 작다 — 오검 위험
+        return None
+    if frac > 0.93:                         # 종이가 프레임을 채움 — 자를 것 없음
         return None
     yy, xx = np.nonzero(mask)
     s, d = xx + yy, xx - yy
@@ -73,6 +99,33 @@ def find_paper(img, work_w=800):
                (xx[np.argmax(d)], yy[np.argmax(d)]),     # ne
                (xx[np.argmax(s)], yy[np.argmax(s)]),     # se
                (xx[np.argmin(d)], yy[np.argmin(d)])]     # sw
+    # 검증 — 그늘진 종이를 배경으로 오인해 엉뚱한 사각형을 자르는 사고 방지:
+    # ① 사각형 넓이가 화면의 20~95%, 마스크 넓이와도 비슷해야 하고(볼록 종이),
+    # ② 사각형 안은 마스크가 짙고 밖은 옅어야 한다(진짜 종이/배경 경계).
+    q = np.asarray(corners, dtype=np.float32)
+    # 마주보는 변 길이가 크게 다르면(전단된 마름모) 종이가 아니다 —
+    # 잘못 자르면 배율이 틀어져 뒤 전체가 망가지므로 안 자르는 쪽이 낫다.
+    el = [float(np.hypot(*(q[(i + 1) % 4] - q[i]))) for i in range(4)]
+    if max(el[0], el[2]) > 1.5 * min(el[0], el[2]) \
+            or max(el[1], el[3]) > 1.5 * min(el[1], el[3]):
+        return None
+    area = 0.5 * abs(sum(q[i, 0] * q[(i + 1) % 4, 1]
+                         - q[(i + 1) % 4, 0] * q[i, 1] for i in range(4)))
+    gh, gw = mask.shape
+    if not (0.18 * gh * gw <= area <= 0.97 * gh * gw):
+        return None
+    if not (0.75 <= mask.sum() / max(1.0, area) <= 1.25):
+        return None
+    ys, xs = np.mgrid[0:gh, 0:gw]
+    inside = np.ones((gh, gw), dtype=bool)
+    for i in range(4):
+        ax, ay = q[i]
+        bx, by = q[(i + 1) % 4]
+        inside &= ((bx - ax) * (ys - ay) - (by - ay) * (xs - ax)) >= -2 * (gw + gh)
+    if inside.mean() < 0.999 and mask[~inside].mean() > 0.35:
+        return None
+    if mask[inside].mean() < 0.80:
+        return None
     return [(float(x * f), float(y * f)) for x, y in corners]
 
 
@@ -206,9 +259,11 @@ def find_systems(ink, min_gap=6.0, max_gap=40.0, max_systems=16):
                          for m in (-2, -1, 0, 1, 2)])
         # 하모닉 차단: 반간격 빗살은 줄 사이 빈 행을, 배간격 빗살은 오선
         # 밖 빈 행을 찍는다 → 다섯 빗살의 최솟값이 작으면 오선계가 아니다.
+        # 문턱을 낮추면 16분음표 빔 무리가 가짜 오선계로 무더기 검출된다
+        # (실측) — 원거리 사진의 스케일 문제는 종이 잘라내기가 해결한다.
         resp[gi] = np.where(taps.min(axis=0) >= w * 0.12,
                             taps.sum(axis=0), 0.0)
-    floor = 5.0 * w * 0.16          # 오선 한 줄이 폭의 16% 이상은 찍힌다고 본다
+    floor = 5.0 * w * 0.16
     out = []
     r = resp.copy()
     while len(out) < max_systems:
@@ -216,15 +271,83 @@ def find_systems(ink, min_gap=6.0, max_gap=40.0, max_systems=16):
         if r[gi, y] < floor:
             break
         g = float(gaps[gi])
-        out.append((float(y), g))
+        out.append((float(y), g, float(r[gi, y])))
         y0 = max(0, int(y - 3.5 * g))
         y1 = min(h, int(y + 3.5 * g) + 1)
         r[:, y0:y1] = 0.0
+    # 한 페이지의 오선계는 줄간격이 같다 — **응답이 가장 큰 검출**(폭
+    # 전체를 가로지르는 진짜 오선)의 간격을 기준으로 벗어난 것(제목 텍스트,
+    # 빔 무리)을 버린다. 개수 중앙값 기준은 빔 오검이 다수가 되는 순간
+    # 진짜 오선을 거꾸로 죽였다(실측).
+    if len(out) >= 2:
+        ref = max(out, key=lambda t: t[2])[1]
+        out = [(y, g, s) for y, g, s in out if 0.72 * ref <= g <= 1.38 * ref]
+    out.sort()
+    return [(y, g) for y, g, _s in out]
+
+
+def rectify_by_staves(img, work_w=WORK_W):
+    """오선으로 원근 잔재를 편다 — 종이 테두리보다 튼튼한 신호.
+
+    좌/우 반쪽에서 따로 찾은 오선계의 y 차이(dy)는 그 높이의 기울기다.
+    dy(y) 를 1차로 피팅해(원근이면 y 에 따라 변한다) 열·행별 세로
+    재매핑으로 상쇄한다. 짝이 3개 미만이면 그대로 둔다.
+    """
+    ink, f = _ink_small(img, work_w)
+    h2, w2 = ink.shape
+    L = find_systems(ink[:, :w2 // 2])
+    R = find_systems(ink[:, w2 // 2:])
+    pairs = []
+    for yl, gl in L:
+        best = None
+        for yr, gr in R:
+            if abs(yr - yl) < 4 * max(gl, gr):
+                if best is None or abs(yr - yl) < abs(best[0] - yl):
+                    best = (yr, gr)
+        if best is not None:
+            pairs.append((yl, best[0] - yl))
+    if len(pairs) < 3:
+        return img
+    ys = np.asarray([p[0] for p in pairs], dtype=np.float64)
+    dy = np.asarray([p[1] for p in pairs], dtype=np.float64)
+    b, a = np.polyfit(ys, dy, 1)              # dy(y) ≈ a + b·y
+    if abs(a) < 0.8 and abs(b) * h2 < 0.8:    # 이미 수평 — 건드리지 않는다
+        return img
+    g = np.asarray(img, dtype=np.float32)
+    H, W = g.shape
+    sf = H / float(h2)
+    cols = np.arange(W, dtype=np.float32)
+    rows = np.arange(H, dtype=np.float32)
+    # 작업 좌표의 dy 를 원본 배율로: 중심 대비 열 위치 비율 × 그 행의 기울기
+    tilt = (a + b * (rows / sf)) * sf         # 행별 좌→우 전체 낙차(px, 원본)
+    shift = ((cols - W / 2.0) / (W / 2.0))[None, :] * (tilt / 2.0)[:, None]
+    src = rows[:, None] + shift
+    r0 = np.clip(np.floor(src).astype(np.int64), 0, H - 1)
+    r1 = np.clip(r0 + 1, 0, H - 1)
+    t = np.clip(src - r0, 0, 1).astype(np.float32)
+    cc = np.arange(W)[None, :].repeat(H, axis=0)
+    out = g[r0, cc] * (1 - t) + g[r1, cc] * t
+    return Image.fromarray(np.clip(out, 0, 255).astype(np.uint8))
+
+
+def _find_systems_multi(ink):
+    """전체 폭 + 좌/우 반쪽에서 각각 오선계를 찾아 병합.
+
+    원근이 남은 사진은 오선 행이 폭 전체에선 수 픽셀 번져 빗살 응답이
+    죽지만, 반쪽에서는 절반만 번져 살아난다(실측). 반쪽 검출은 전체
+    검출에 없는 y 만 보탠다."""
+    w = ink.shape[1]
+    out = list(find_systems(ink))
+    for half in (ink[:, :w // 2], ink[:, w // 2:]):
+        for y, g in find_systems(half):
+            if all(abs(y - y0) > 2.5 * max(g, g0) for y0, g0 in out):
+                out.append((y, g))
     out.sort()
     return out
 
 
-def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True):
+def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
+                  with_pos=False):
     """사진 → [회색 줄 크롭(PIL), ...] 위→아래. 크롭은 원해상도.
 
     correct=True: 종이 원근 보정 → 조명 평탄화 → 기울기 보정 →
@@ -244,8 +367,19 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True):
     if abs(ang) > 0.05:
         img = img.rotate(ang, resample=Image.BILINEAR, fillcolor=255,
                          expand=False)
-        ink, f = _ink_small(img, work_w)
-    systems = find_systems(ink)
+    if correct:
+        img = rectify_by_staves(img)                 # ①′ 오선 기반 원근 상쇄
+    ink, f = _ink_small(img, work_w)
+    systems = _find_systems_multi(ink)
+    # 멀리 찍어 줄간격이 작업 해상도에서 너무 작으면(선이 1px 로 뭉개짐)
+    # 해상도를 키워 다시 찾는다 — 원거리 사진 대응 2패스.
+    if systems:
+        med = sorted(g for _y, g in systems)[len(systems) // 2]
+        if med < 12.0:
+            work_w2 = min(int(work_w * 14.0 / med), 3200, img.size[0])
+            if work_w2 > work_w * 1.15:
+                ink, f = _ink_small(img, work_w2)
+                systems = _find_systems_multi(ink)
     crops = []
     W, H = img.size
     for cy, gap in systems:
@@ -280,7 +414,7 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True):
         c = img.crop((x0, top, x1, bot))
         if correct:
             c = dewarp_line(c, g0)                   # ③ 되펴기
-        crops.append(c)
+        crops.append((c, cy0, g0) if with_pos else c)
     return crops
 
 
