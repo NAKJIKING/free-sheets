@@ -19,7 +19,8 @@
 받아들이는 조건 (하나라도 어긋나면 그 청크를 버린다)
   - 트랙이 단선율(겹침 없음), 음 16개 이상
   - 모든 온셋·길이가 **16분음표 격자**(Q=12 에서 3의 배수)
-    → 셋잇단(4·8틱)은 이번 판에서 제외. 실측 음표의 91.3% 가 이 격자에 든다.
+    → 셋잇단(4·8틱)은 **관문 3a(2026-09-23)부터 수용** — 박 안에 온전히 든
+    순수 셋잇단 창만. 그 밖의 비격자는 여전히 제외.
   - 길이가 우리 표기 집합으로 분해 가능(3의 배수는 항상 가능)
 
 출력: DIR/<곡키>/c<청크>_k<시프트>.png + .mid + manifest.jsonl
@@ -186,7 +187,16 @@ def to_bars(notes, bt):
         return None
     origin = (notes[0][1] // bt) * bt
     seq = [(p, s - origin, d) for p, s, d in notes]
-    if any(s % GRID or d % GRID for _, s, d in seq):
+
+    def ok(s_, d_):
+        if s_ % GRID == 0 and d_ % GRID == 0:
+            return True                     # 16분 격자 (기존)
+        # 관문 3a: 셋잇단 8분(4틱)·셋잇단 4분(8틱) — 박(12틱) 안에 온전히
+        # 들어가고 4틱 격자에 붙은 것만. 그 밖의 비격자는 여전히 제외.
+        return (s_ % 4 == 0 and d_ in (4, 8)
+                and s_ // Q == (s_ + d_ - 1) // Q)
+
+    if any(not ok(s, d) for _, s, d in seq):
         return None
     end = max(s + d for _, s, d in seq)
     nbars = -(-end // bt)                       # 올림
@@ -246,20 +256,51 @@ def bars_to_ly(bars, sharps):
     토큰 하나 = 악보에 보이는 음표머리 하나(붙임줄로 쪼갠 것도 각각 한 개).
     tie=1 이면 다음 토큰과 붙임줄로 이어진다 → 미디에서는 한 음으로 병합된다.
     """
+    TUP = {4: '8', 8: '4'}          # 셋잇단 창 안 표기 (관문 3a)
     parts, tokens = [], []
     for bar in bars:
-        cell = []
+        # 마디 안 위치를 계산해 12틱(4분음표) 창 단위로 셋잇단을 묶는다.
+        items, pos = [], 0
         for p, d, tie in bar:
-            syms = split_dur(d)
-            if syms is None:
+            items.append((pos, p, d, tie))
+            pos += d
+        cell, i = [], 0
+        while i < len(items):
+            s0, p, d, tie = items[i]
+            if d % GRID == 0:
+                syms = split_dur(d)
+                if syms is None:
+                    return None, None
+                head = ly_pitch(p, sharps) if p else 'r'
+                for k, sym in enumerate(syms):
+                    last = k == len(syms) - 1
+                    joined = bool(p) and (not last or tie)
+                    cell.append(head + sym + ('~' if joined else ''))
+                    tokens.append([p, dict(PLAIN_BY_SYM)[sym], 1 if joined else 0])
+                i += 1
+                continue
+            # 셋잇단 창: 같은 12틱 창의 4·8틱 아이템을 모아 정확히 12틱이어야 한다
+            w0 = (s0 // Q) * Q
+            grp = []
+            tot = 0
+            while i < len(items) and tot < Q:
+                s_, p_, d_, t_ = items[i]
+                if d_ % GRID == 0 and tot == 0:
+                    break
+                if d_ not in (4, 8) or s_ // Q != w0 // Q:
+                    return None, None
+                grp.append((p_, d_, t_))
+                tot += d_
+                i += 1
+            if tot != Q:
                 return None, None
-            head = ly_pitch(p, sharps) if p else 'r'
-            for i, s in enumerate(syms):
-                last = i == len(syms) - 1
-                joined = bool(p) and (not last or tie)
-                cell.append(head + s + ('~' if joined else ''))
-                # 기호 하나 = 음표머리 하나. 길이는 그 기호의 틱.
-                tokens.append([p, dict(PLAIN_BY_SYM)[s], 1 if joined else 0])
+            inner = []
+            for p_, d_, t_ in grp:
+                head = ly_pitch(p_, sharps) if p_ else 'r'
+                joined = bool(p_) and bool(t_)
+                inner.append(head + TUP[d_] + ('~' if joined else ''))
+                tokens.append([p_, d_, 1 if joined else 0])
+            cell.append('\\tuplet 3/2 { ' + ' '.join(inner) + ' }')
         parts.append(' '.join(cell))
     return ' | '.join(parts) + ' |', tokens
 
