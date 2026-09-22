@@ -218,6 +218,19 @@ def augment_photo(a, rng, s=1.0, gap=22.0):
     if r > 0.15:
         img = img.filter(ImageFilter.GaussianBlur(r))         # 5 광학
     g = np.asarray(img, dtype=np.float32) / 255.0
+    # 5.5 손떨림(모션블러) — 방향성 흐림. 실물 53장에서 중간화질 사진의
+    # 인식 붕괴가 병목으로 남아 추가(관문2 ⑦ 진단).
+    if rng.random() < 0.35 * s:
+        L = rng.uniform(2.0, 7.0) * s * (gap / 22.0)
+        steps = max(2, int(L))
+        th = rng.uniform(0, np.pi)
+        dx, dy = np.cos(th), np.sin(th)
+        acc = np.zeros_like(g)
+        for k in range(steps):
+            t = (k - (steps - 1) / 2.0)
+            sx, sy = int(round(t * dx)), int(round(t * dy))
+            acc += np.roll(np.roll(g, sy, axis=0), sx, axis=1)
+        g = acc / steps
     g = np.clip(g + rng.normal(0, 0.03 * s, g.shape).astype(np.float32), 0, 1)  # 6 센서
     w, h = img.size
     # 6.5 리샘플 체인 — 실물 파이프라인은 원근 워프·되펴기·정규화로

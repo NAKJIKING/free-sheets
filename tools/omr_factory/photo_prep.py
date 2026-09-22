@@ -235,7 +235,8 @@ def deskew_angle(ink, lo=-6.0, hi=6.0):
     return float(max(fine, key=sharp))
 
 
-def find_systems(ink, min_gap=6.0, max_gap=40.0, max_systems=16):
+def find_systems(ink, min_gap=6.0, max_gap=40.0, max_systems=16,
+                 tap_frac=0.12, floor_frac=0.16):
     """작업 해상도 잉크배열 → [(중심행, 줄간격), ...] 위→아래.
 
     빗살(comb) 상관: 중심행 y·간격 g 마다 다섯 오선 위치의 행 잉크량을
@@ -261,9 +262,9 @@ def find_systems(ink, min_gap=6.0, max_gap=40.0, max_systems=16):
         # 밖 빈 행을 찍는다 → 다섯 빗살의 최솟값이 작으면 오선계가 아니다.
         # 문턱을 낮추면 16분음표 빔 무리가 가짜 오선계로 무더기 검출된다
         # (실측) — 원거리 사진의 스케일 문제는 종이 잘라내기가 해결한다.
-        resp[gi] = np.where(taps.min(axis=0) >= w * 0.12,
+        resp[gi] = np.where(taps.min(axis=0) >= w * tap_frac,
                             taps.sum(axis=0), 0.0)
-    floor = 5.0 * w * 0.16
+    floor = 5.0 * w * floor_frac
     out = []
     r = resp.copy()
     while len(out) < max_systems:
@@ -346,6 +347,44 @@ def _find_systems_multi(ink):
     return out
 
 
+def fill_missing(ink, systems):
+    """검출 보표 사이 '구멍'(이웃 간격의 1.7배 초과 벌어짐)과 페이지
+    위·아래 여백을 문턱을 낮춰 국소 재탐색해 누락 보표를 채운다.
+
+    낮춘 문턱은 구멍 안에서만 쓰므로 전역 오검(빔 무리)이 되살아나지
+    않고, 찾은 것도 기준 간격(±38%) 검사를 통과해야 채택된다."""
+    if len(systems) < 2:
+        return systems
+    h = ink.shape[0]
+    ref = sorted(g for _y, g in systems)[len(systems) // 2]
+    ys = [y for y, _g in systems]
+    diffs = sorted(b - a for a, b in zip(ys, ys[1:]))
+    step = diffs[len(diffs) // 2]           # 이웃 보표 중심 간격의 중앙값
+    holes = []
+    for a, b in zip(ys, ys[1:]):
+        if b - a > 1.7 * step:
+            holes.append((a + 2.5 * ref, b - 2.5 * ref))
+    if ys[0] - 2.5 * ref > 0.9 * step:      # 첫 보표 위 여백
+        holes.append((0, ys[0] - 2.5 * ref))
+    if h - ys[-1] - 2.5 * ref > 0.9 * step:  # 마지막 보표 아래 여백
+        holes.append((ys[-1] + 2.5 * ref, h))
+    out = list(systems)
+    for y0, y1 in holes:
+        y0, y1 = max(0, int(y0)), min(h, int(y1))
+        if y1 - y0 < 5 * ref:
+            continue
+        band = ink[y0:y1]
+        found = find_systems(band, tap_frac=0.07, floor_frac=0.10)
+        for by, bg in found:
+            if not (0.72 * ref <= bg <= 1.38 * ref):
+                continue
+            ay = by + y0
+            if all(abs(ay - y) > 2.5 * max(bg, g) for y, g in out):
+                out.append((ay, bg))
+    out.sort()
+    return out
+
+
 def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
                   with_pos=False):
     """사진 → [회색 줄 크롭(PIL), ...] 위→아래. 크롭은 원해상도.
@@ -380,6 +419,7 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
             if work_w2 > work_w * 1.15:
                 ink, f = _ink_small(img, work_w2)
                 systems = _find_systems_multi(ink)
+    systems = fill_missing(ink, systems)
     crops = []
     W, H = img.size
     for cy, gap in systems:
