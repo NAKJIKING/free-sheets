@@ -159,7 +159,9 @@ def main():
     ap.add_argument('--gate', type=float, default=0.10)
     ap.add_argument('--no-correct', action='store_true')
     ap.add_argument('--auto', action='store_true',
-                    help='사진마다 보정 켬/끔을 둘 다 돌려 CTC 신뢰도 높은 쪽 채택')
+                    help='사진마다 보정 켬/끔을 둘 다 돌려 CTC 신뢰도 높은 쪽 채택 (NER 최적)')
+    ap.add_argument('--auto-cov', action='store_true',
+                    help='자동선택을 커버리지(비어있지 않은 보표 수) 우선으로 — 관문 3-0 줄 회수 최적. 실측: NER 19.6→22.9%% 대신 출력단 누락+유령 8.4→5.0%%')
     ap.add_argument('--proof', type=int, default=3, help='증명물 사진 수')
     ap.add_argument('--render', default='C:/Users/user/omr_dense/캐논_플루트.png',
                     help='깨끗한 원본 렌더 — 줄별 정답 역산용')
@@ -204,11 +206,44 @@ def main():
             conf = sum(c * f for c, f in zip(confs, frames)) \
                 / max(1, sum(frames))
             return crops, centers, hyps, conf
-        if a.auto:
+        if a.auto or a.auto_cov:
             r_on = run(True)
             r_off = run(False)
-            crops, centers, hyps, _c = r_on if r_on[3] >= r_off[3] else r_off
-            chose_on += (r_on[3] >= r_off[3])
+
+            def nseq(r):
+                return [[(p_, d_) for p_, d_, _t in
+                         [tuple(vocab.itos[k]) for k in h if k > 0] if p_ > 0]
+                        for h in r[2]]
+
+            def nonempty(r):
+                return sum(1 for q in nseq(r) if q)
+
+            # 신뢰도 단독 기준은 두 번 배신했다(오염 크롭이 conf 0.99 로
+            # 오답: 190139(0) / 커버리지 큰 쪽을 버림: 190153(0)).
+            # 새 기준: 두 변형의 **상호 일치도** — 순서 정렬 후 공통 보표의
+            # 음열이 서로 맞으면(≥0.5) 둘 다 건강 → 보표 수 많은 쪽,
+            # 어긋나면 한쪽이 오염 → 가공 적은 끔을 택한다.
+            qa, qb = [q for q in nseq(r_on) if q], [q for q in nseq(r_off) if q]
+            if qa and qb:
+                pairs = align_lines(qa, qb)
+                num = den = 0
+                for ia, ib in pairs:
+                    if ia is not None and ib is not None:
+                        e = edit(qa[ia], qb[ib])
+                        m = max(len(qa[ia]), len(qb[ib]))
+                        num += max(0, m - e)
+                        den += m
+                agree = num / max(1, den)
+            else:
+                agree = 0.0
+            na, nb = nonempty(r_on), nonempty(r_off)
+            _ = agree
+            if a.auto_cov:                   # 3-0 모드: 줄 회수 우선
+                pick_on = (na, r_on[3]) >= (nb, r_off[3])
+            else:                            # 기본: NER 최적(신뢰도)
+                pick_on = r_on[3] >= r_off[3]
+            crops, centers, hyps, _c = r_on if pick_on else r_off
+            chose_on += pick_on
         else:
             crops, centers, hyps, _c = run(not a.no_correct)
         toks = [[tuple(vocab.itos[k]) for k in h if k > 0] for h in hyps]

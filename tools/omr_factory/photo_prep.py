@@ -402,6 +402,77 @@ def fill_missing(ink, systems):
     return out
 
 
+def _comb_resp(ink, y, gap):
+    """행 y, 간격 gap 의 다섯 빗살 응답 (find_systems 와 같은 정의)."""
+    prof = ink.sum(axis=1).astype(np.float32)
+    prof = np.convolve(prof, np.ones(3, np.float32) / 3, mode='same')
+    ys = np.arange(len(prof), dtype=np.float32)
+    acc = 0.0
+    for m in (-2, -1, 0, 1, 2):
+        acc += float(np.interp(y + m * gap, ys, prof, left=0, right=0))
+    return acc
+
+
+def slot_fill(ink, systems):
+    """교대 주기 격자 외삽으로 누락 보표를 채운다 (관문 3-0).
+
+    보표 중심 간격은 (쌍내 s1, 시스템간 s2) 두 값이 교대한다. 검출된
+    간격에서 s1·s2 를 추정해 페이지 위·아래·구멍의 **예측 슬롯**을 만들고,
+    슬롯 ±2칸 안에서만 응답 최대 행을 찾는다. 위치가 좁으니 문턱을
+    기존 검출 응답 중앙값의 45% 까지 낮춰도 유령이 안 생긴다.
+    """
+    if len(systems) < 4:
+        return systems
+    h = ink.shape[0]
+    ref = sorted(g for _y, g in systems)[len(systems) // 2]
+    ys = [y for y, _g in systems]
+    diffs = [b - a for a, b in zip(ys, ys[1:])]
+    small = [d for d in diffs if d <= 1.45 * min(diffs)]
+    big = [d for d in diffs if d > 1.45 * min(diffs)]
+    if not small or not big:
+        return systems
+    s1 = float(np.median(small))            # 쌍내 간격
+    s2 = float(np.median(big))              # 시스템간 간격 (쌍끝→다음 쌍머리)
+    # 주기 일관성 게이트 — 극회전·원근 사진은 간격이 흔들려 격자 외삽이
+    # 폭주한다(실측 190127(0): 7→22보표). 군집 산포 15% 초과면 포기.
+    if (len(small) >= 2 and float(np.std(small)) > 0.15 * s1)             or (len(big) >= 2 and float(np.std(big)) > 0.15 * s2):
+        return systems
+    # 검출 응답 기준선
+    base = float(np.median([_comb_resp(ink, y, ref) for y in ys]))
+    # 격자 생성: 가장 신뢰되는 인접쌍(간격≈s1)을 앵커로 위아래 교대 외삽
+    try:
+        k = next(i for i, d in enumerate(diffs) if d <= 1.45 * min(diffs))
+    except StopIteration:
+        return systems
+    slots = [ys[k], ys[k + 1]]
+    yy, step_next = ys[k + 1], s2
+    while True:
+        yy = yy + step_next
+        if yy > h - 1.5 * ref:
+            break
+        slots.append(yy)
+        step_next = s1 if step_next == s2 else s2
+    yy, step_prev = ys[k], s2
+    while True:
+        yy = yy - step_prev
+        if yy < 1.5 * ref:
+            break
+        slots.insert(0, yy)
+        step_prev = s1 if step_prev == s2 else s2
+    out = list(systems)
+    for sl in slots:
+        if any(abs(sl - y) <= 2.5 * ref for y, _g in out):
+            continue
+        lo = max(0, int(sl - 2.0 * ref))
+        hi = min(h, int(sl + 2.0 * ref) + 1)
+        cand = max(range(lo, hi), key=lambda y: _comb_resp(ink, y, ref))
+        r = _comb_resp(ink, cand, ref)
+        if r >= 0.45 * base                 and all(abs(cand - y) > 5.5 * max(ref, g) for y, g in out):
+            out.append((float(cand), ref))
+    out.sort()
+    return out
+
+
 def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
                   with_pos=False):
     """사진 → [회색 줄 크롭(PIL), ...] 위→아래. 크롭은 원해상도.
@@ -441,6 +512,7 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
                 if len(systems2) >= len(systems):
                     ink, f, systems = ink2, f2, systems2
     systems = fill_missing(ink, systems)
+    systems = slot_fill(ink, systems)
     crops = []
     W, H = img.size
     for cy, gap in systems:
