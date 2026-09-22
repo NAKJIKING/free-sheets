@@ -221,8 +221,11 @@ def _ink_small(img, work_w=WORK_W):
     return prep.local_binarize(g, win=25, k=0.10), f
 
 
-def deskew_angle(ink, lo=-6.0, hi=6.0):
-    """행 프로파일 분산을 최대화하는 회전각(도). 굵게 0.5° → 가늘게 0.1°."""
+def deskew_angle(ink, lo=-20.0, hi=20.0):
+    """행 프로파일 분산을 최대화하는 회전각(도). 굵게 1.5° → 가늘게 0.25°.
+
+    범위를 ±6°로 캡했더니 ~20° 돌아간 실물 사진(190127)이 통째로
+    무너졌다(실측) — 폰사진은 크게 돌아갈 수 있다."""
     im = Image.fromarray((ink * 255).astype(np.uint8))
 
     def sharp(deg):
@@ -230,8 +233,9 @@ def deskew_angle(ink, lo=-6.0, hi=6.0):
         p = np.asarray(r, dtype=np.float32).sum(axis=1)
         return float(((p - p.mean()) ** 2).mean())
 
-    best = max(np.arange(lo, hi + 0.25, 0.5), key=sharp)
-    fine = np.arange(best - 0.5, best + 0.55, 0.1)
+    best = max(np.arange(lo, hi + 0.5, 1.5), key=sharp)
+    mid = max(np.arange(best - 1.5, best + 1.6, 0.5), key=sharp)
+    fine = np.arange(mid - 0.5, mid + 0.55, 0.1)
     return float(max(fine, key=sharp))
 
 
@@ -311,8 +315,18 @@ def rectify_by_staves(img, work_w=WORK_W):
         return img
     ys = np.asarray([p[0] for p in pairs], dtype=np.float64)
     dy = np.asarray([p[1] for p in pairs], dtype=np.float64)
-    b, a = np.polyfit(ys, dy, 1)              # dy(y) ≈ a + b·y
+    if len(pairs) >= 5:
+        b, a = np.polyfit(ys, dy, 1)          # dy(y) ≈ a + b·y
+        # 피팅이 관측을 못 설명하면(좌/우 짝 어긋남) 워프 금지 — 어긋난
+        # 전단은 이미지를 통째로 망가뜨린다(실측 190127: 12→3보표).
+        resid = float(np.median(np.abs(a + b * ys - dy)))
+        if resid > 1.5:
+            return img
+    else:
+        a, b = float(np.median(dy)), 0.0      # 짝이 적으면 상수 전단만
     if abs(a) < 0.8 and abs(b) * h2 < 0.8:    # 이미 수평 — 건드리지 않는다
+        return img
+    if abs(a) + abs(b) * h2 > 12.0:           # 비정상적으로 큰 보정 — 불신
         return img
     g = np.asarray(img, dtype=np.float32)
     H, W = g.shape
@@ -404,8 +418,9 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
     ink, f = _ink_small(img, work_w)
     ang = deskew_angle(ink)
     if abs(ang) > 0.05:
+        # 큰 각에서 expand=False 는 모서리 보표를 잘라먹는다(실측 190127)
         img = img.rotate(ang, resample=Image.BILINEAR, fillcolor=255,
-                         expand=False)
+                         expand=abs(ang) > 3.0)
     if correct:
         img = rectify_by_staves(img)                 # ①′ 오선 기반 원근 상쇄
     ink, f = _ink_small(img, work_w)
@@ -417,8 +432,11 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
         if med < 12.0:
             work_w2 = min(int(work_w * 14.0 / med), 3200, img.size[0])
             if work_w2 > work_w * 1.15:
-                ink, f = _ink_small(img, work_w2)
-                systems = _find_systems_multi(ink)
+                ink2, f2 = _ink_small(img, work_w2)
+                systems2 = _find_systems_multi(ink2)
+                # 고해상도 재검출이 더 적게 찾으면(그림자·빔 잡음) 원래 것 유지
+                if len(systems2) >= len(systems):
+                    ink, f, systems = ink2, f2, systems2
     systems = fill_missing(ink, systems)
     crops = []
     W, H = img.size
