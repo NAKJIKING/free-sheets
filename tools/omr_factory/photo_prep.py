@@ -355,7 +355,10 @@ def _find_systems_multi(ink):
     out = list(find_systems(ink))
     for half in (ink[:, :w // 2], ink[:, w // 2:]):
         for y, g in find_systems(half):
-            if all(abs(y - y0) > 2.5 * max(g, g0) for y0, g0 in out):
+            # 보표 하나는 4칸을 차지한다 — 3.8칸 안쪽의 재검출은 같은 보표다
+            # (2.5칸→3.8→5.5로 조정: 실제 인접 보표는 7칸 이상 떨어진다. 원거리 사진에서 중복이 살아남아 유령 삽입 오류를
+            #  만들었다: 190122 17보표/중복 3, 실측 2026-09-23)
+            if all(abs(y - y0) > 5.5 * max(g, g0) for y0, g0 in out):
                 out.append((y, g))
     out.sort()
     return out
@@ -393,7 +396,7 @@ def fill_missing(ink, systems):
             if not (0.72 * ref <= bg <= 1.38 * ref):
                 continue
             ay = by + y0
-            if all(abs(ay - y) > 2.5 * max(bg, g) for y, g in out):
+            if all(abs(ay - y) > 5.5 * max(bg, g) for y, g in out):
                 out.append((ay, bg))
     out.sort()
     return out
@@ -466,7 +469,20 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
         if not runs:
             x0, x1 = 0, W
         else:
-            r0, r1 = max(runs, key=lambda r: r[1] - r[0])
+            ri = max(range(len(runs)), key=lambda i: runs[i][1] - runs[i][0])
+            r0, r1 = runs[ri]
+            # 최장 run 에서 3×틈 이내로 이어지는 이웃 조각을 양방향 병합 —
+            # 흐릿한 줄이 조각나 마디 몇 개만 남는 사고(190158 줄12) 방지.
+            # '전체 잉크 범위'로 넓히는 방식은 보정 켬에서 어두운 배경
+            # 잉크까지 쓸어 담아 17→85% 역행을 만들었다(190139(0) 실측).
+            k = ri
+            while k - 1 >= 0 and runs[k][0] - runs[k - 1][1] <= 3 * gap_tol:
+                k -= 1
+                r0 = runs[k][0]
+            k = ri
+            while k + 1 < len(runs) and runs[k + 1][0] - runs[k][1] <= 3 * gap_tol:
+                k += 1
+                r1 = runs[k][1]
             x0 = max(0, int(r0 * f - 2 * g0))
             x1 = min(W, int((r1 + 1) * f + 2 * g0))
         c = img.crop((x0, top, x1, bot))
@@ -477,6 +493,7 @@ def extract_lines(path_or_img, pad_ratio=5.5, work_w=WORK_W, correct=True,
 
 
 def load_photo_lines(path, correct=True, **kw):
-    """사진 → 모델 입력 [(160, W) 잉크배열, ...] — normalize_photo 통과."""
-    return [prep.normalize_photo(c, **kw)
-            for c in extract_lines(path, correct=correct)]
+    """사진 → 모델 입력 [(160, W) 잉크배열, ...] — normalize_photo 통과.
+    페이지 검출이 잰 줄간격을 normalize 힌트로 넘긴다 (배율 사고 방지)."""
+    return [prep.normalize_photo(c, gap_hint=g, **kw)
+            for c, _y, g in extract_lines(path, correct=correct, with_pos=True)]

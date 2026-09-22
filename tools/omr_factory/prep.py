@@ -114,15 +114,41 @@ def local_binarize(gray, win=31, k=0.12):
     return (gray < mean - k).astype(np.float32)
 
 
-def normalize_photo(img, interline=INTERLINE, height=HEIGHT):
+def _comb_center(ink, gap):
+    """간격을 알 때 오선 중심만 찾는다 — 다섯 빗살 응답 최대 행.
+
+    탐색을 **크롭 중앙 ±2.5칸**으로 제한한다: 크롭 밴드(±5.5칸)에 이웃
+    보표 일부가 걸리면 전역 최대가 이웃을 잡아 오선을 화면 밖으로 미는
+    사고가 났다(실측 190139(0): 17→85% 역행)."""
+    prof = ink.sum(axis=1).astype(np.float32)
+    prof = np.convolve(prof, np.ones(3, np.float32) / 3, mode='same')
+    ys = np.arange(len(prof), dtype=np.float32)
+    acc = np.zeros(len(prof), dtype=np.float32)
+    for m in (-2, -1, 0, 1, 2):
+        acc += np.interp(ys + m * gap, ys, prof, left=0, right=0)
+    mid = len(prof) / 2.0
+    lo = max(0, int(mid - 2.5 * gap))
+    hi = min(len(prof), int(mid + 2.5 * gap) + 1)
+    if hi <= lo:
+        return float(np.argmax(acc))
+    return float(lo + np.argmax(acc[lo:hi]))
+
+
+def normalize_photo(img, interline=INTERLINE, height=HEIGHT, gap_hint=None):
     """사진 줄 한 장 → 학습과 같은 (H, W) 잉크배열.
 
     학습(augment_photo 뒤)과 추론(photo_prep 크롭 뒤)이 **반드시 이 함수를
     같이 쓴다** — 관문 1 의 '같은 전처리' 원칙 그대로.
+    gap_hint: 페이지 오선계 검출이 잰 줄간격(신뢰도 높음). 크롭 내 재측정이
+    이것과 25% 이상 어긋나면 힌트를 쓴다 — 흐릿한 원거리 크롭에서 soft
+    재측정이 배율을 무너뜨리는 사고를 실측(190158 줄13)으로 확인.
     """
     g = np.asarray(_gray(img), dtype=np.float32) / 255.0
-    st = find_staff(local_binarize(g), soft=True)
+    ink = local_binarize(g)
+    st = find_staff(ink, soft=True)
     a = np.clip(1.0 - g, 0.0, 1.0)
+    if gap_hint and (st is None or not (0.75 * gap_hint <= st[1] <= 1.33 * gap_hint)):
+        st = (_comb_center(ink, gap_hint), float(gap_hint))
     if st is None:
         scale = height / max(1, a.shape[0])
         cy = a.shape[0] / 2.0

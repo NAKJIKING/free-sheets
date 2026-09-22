@@ -197,7 +197,7 @@ def main():
             res = photo_prep.extract_lines(ph, correct=correct, with_pos=True)
             crops = [c for c, _y, _g in res]
             centers = [y for _c, y, _g in res]
-            norm = [prep.normalize_photo(c) for c in crops]
+            norm = [prep.normalize_photo(c, gap_hint=g) for c, _y, g in res]
             if not norm:
                 return crops, centers, [], 0.0
             hyps, confs, frames = decode_conf(net, norm, dev)
