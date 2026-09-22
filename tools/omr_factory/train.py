@@ -90,6 +90,10 @@ def main():
     ap.add_argument('--init', default='',
                     help='이 체크포인트의 가중치로 시작(미세조정). '
                          '--resume 으로 last.pt 를 찾으면 무시된다')
+    ap.add_argument('--init-partial', default='',
+                    help='어휘가 다른 체크포인트에서 부분 이식(관문 3a): '
+                         'fc 는 공유 토큰 행만 복사, 신규 토큰 행은 초기값. '
+                         '원본 vocab.json 이 체크포인트 옆에 있어야 한다')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
@@ -123,6 +127,28 @@ def main():
         net.load_state_dict(s['net'])
         print(f"미세조정 시작: {a.init} (에폭 {s.get('epoch')}, NER {s.get('ner')}) "
               f'가중치만 로드, 옵티마이저·best 는 새로 시작')
+    elif a.init_partial:
+        s = torch.load(a.init_partial, map_location=dev)['net']
+        old_vocab = D.Vocab.load(os.path.join(
+            os.path.dirname(a.init_partial), 'vocab.json'))
+        msd = net.state_dict()
+        moved = 0
+        for k, v in s.items():
+            if k not in ('fc.weight', 'fc.bias') and msd[k].shape == v.shape:
+                msd[k] = v
+                moved += 1
+        # 출력층: 토큰 내용으로 행을 짝지어 이식. blank(0)는 0↔0.
+        omap = {t: i for i, t in enumerate(old_vocab.itos) if t is not None}
+        shared = 0
+        for ni, tok in enumerate(vocab.itos):
+            oi = 0 if tok is None else omap.get(tok)
+            if oi is not None:
+                msd['fc.weight'][ni] = s['fc.weight'][oi]
+                msd['fc.bias'][ni] = s['fc.bias'][oi]
+                shared += 1
+        net.load_state_dict(msd)
+        print(f'부분 이식: 몸통 {moved}텐서 + 출력층 공유 {shared}/{len(vocab)}행 '
+              f'(신규 {len(vocab) - shared}행 초기값) ← {a.init_partial}')
 
     # 긴 줄이 한 배치에 몰리면 패딩이 낭비된다 → 폭으로 정렬해 묶는다
     tr.sort(key=lambda r: r['w'])
