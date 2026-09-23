@@ -73,7 +73,9 @@ def validate(net, dl, dev, vocab, cap=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--data', required=True)
+    ap.add_argument('--data', required=True,
+                    help='코퍼스 루트. 쉼표로 여러 개를 주면 혼합 학습 — '
+                         '겹치는 줄은 그 수만큼 과표집된다')
     ap.add_argument('--out', required=True)
     ap.add_argument('--epochs', type=int, default=30)
     ap.add_argument('--batch', type=int, default=16)
@@ -97,7 +99,32 @@ def main():
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
-    raw = D.load_rows(a.data, None, ('train',))
+    # --data 는 쉼표로 여러 코퍼스를 받는다(혼합 학습). 각 줄에 자기
+    # 루트를 달아(_root) 이미지 경로가 제 코퍼스를 가리키게 한다.
+    # 같은 줄이 두 코퍼스에 다 있으면 그만큼 여러 번 나온다 — 그게
+    # 의도(구 분포 과표집)다. 곡 단위 분할은 각 코퍼스의 것을 그대로 쓴다.
+    roots = [p for p in a.data.split(',') if p]
+
+    def load_multi(vocab, splits, keep_unk=False):
+        rows, c1, c2 = [], 0, 0
+        for root in roots:
+            got = D.load_rows(root, vocab, splits, keep_unk=keep_unk)
+            if vocab is None:
+                part = got
+            else:
+                part, extra = got
+                if keep_unk:
+                    c1, c2 = c1 + extra[0], c2 + extra[1]
+                else:
+                    c1 += extra
+            for r in part:
+                r['_root'] = root
+            rows.extend(part)
+        if vocab is None:
+            return rows
+        return (rows, (c1, c2)) if keep_unk else (rows, c1)
+
+    raw = load_multi(None, ('train',))
     vpath = os.path.join(a.out, 'vocab.json')
     if a.resume and os.path.exists(vpath):
         vocab = D.Vocab.load(vpath)
@@ -105,8 +132,8 @@ def main():
         vocab, seen = D.build_vocab(raw)
         vocab.save(vpath)
         print(f'어휘 {len(vocab)}종 (blank 포함) / 최빈 {list(seen.items())[:3]}')
-    tr, d1 = D.load_rows(a.data, vocab, ('train',))
-    va, (d2, u2) = D.load_rows(a.data, vocab, ('val',), keep_unk=True)
+    tr, d1 = load_multi(vocab, ('train',))
+    va, (d2, u2) = load_multi(vocab, ('val',), keep_unk=True)
     print(f'학습 {len(tr)}줄(버림 {d1}) / 검증 {len(va)}줄(버림 {d2}, 어휘밖 토큰 {u2})')
     if not va:
         print('⚠ 검증셋이 비었다 — split.json 을 확인할 것', flush=True)
@@ -152,17 +179,17 @@ def main():
 
     # 긴 줄이 한 배치에 몰리면 패딩이 낭비된다 → 폭으로 정렬해 묶는다
     tr.sort(key=lambda r: r['w'])
-    dtr = D.ThreadLoader(D.Lines(a.data, tr, vocab, aug=a.aug, max_w=a.max_w,
+    dtr = D.ThreadLoader(D.Lines(roots[0], tr, vocab, aug=a.aug, max_w=a.max_w,
                                  photo=a.photo_aug, photo_s=a.photo_s),
                          a.batch, D.collate, shuffle=True, workers=a.workers,
                          drop_last=True, seed=1234)
-    dva = D.ThreadLoader(D.Lines(a.data, va, vocab, aug=0.0, max_w=a.max_w),
+    dva = D.ThreadLoader(D.Lines(roots[0], va, vocab, aug=0.0, max_w=a.max_w),
                          a.batch, D.collate, workers=max(2, a.workers // 2))
     # 사진 미세조정 중에는 사진 증강을 통과시킨 검증도 함께 잰다 —
     # best.pt 는 사진 NER 기준으로 고르고, 깨끗한 렌더 NER 은 회귀 감시용.
     dvp = None
     if a.photo_aug > 0:
-        dvp = D.ThreadLoader(D.Lines(a.data, va, vocab, aug=0.0, max_w=a.max_w,
+        dvp = D.ThreadLoader(D.Lines(roots[0], va, vocab, aug=0.0, max_w=a.max_w,
                                      photo=1.0, photo_s=a.photo_s),
                              a.batch, D.collate, workers=max(2, a.workers // 2))
     sched = torch.optim.lr_scheduler.OneCycleLR(

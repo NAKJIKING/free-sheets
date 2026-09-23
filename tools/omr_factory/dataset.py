@@ -274,17 +274,19 @@ class Lines(Dataset):
 
     def __getitem__(self, i):
         r = self.rows[i]
+        # 혼합 학습(여러 코퍼스): 줄마다 자기 루트를 달고 온다(_root).
+        root = r.get('_root', self.data)
         rng = np.random.default_rng()
         if self.photo > 0 and rng.random() < self.photo:
             # 원본 경로 = 캐시 경로에서 'cache/' 접두사 제거
-            orig = os.path.join(self.data, r['cache'][6:])
+            orig = os.path.join(root, r['cache'][6:])
             with Image.open(orig) as im:
                 a = 1.0 - np.asarray(im.convert('L'), dtype=np.float32) / 255.0
             st = prep.find_staff(a)
             gap = st[1] if st else 22.0
             x = augment_photo(a, rng, self.photo_s, gap=gap)
         else:
-            with Image.open(os.path.join(self.data, r['cache'])) as im:
+            with Image.open(os.path.join(root, r['cache'])) as im:
                 x = np.asarray(im.convert('L'), dtype=np.float32) / 255.0
             if self.aug > 0:
                 x = augment(x, rng, self.aug)
