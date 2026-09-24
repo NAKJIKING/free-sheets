@@ -67,8 +67,31 @@ def plan_song(path, bars_per_line, max_chunks, keys_per_song, pool, mids_root):
             staff = (18, 20, 22, 24, 26)[h % 5]
             clef = 'bass' if med + sh < 55 else 'treble'
             tempo = (60, 72, 84, 96, 108, 120, 132)[h % 7] if idx == 0 else 0
+            # 관문 3b — 도돌이·볼타 결정적 주입(~35% 줄). i0≥1 이라 |: 가
+            # 항상 지면에 보인다(줄 머리 반복은 기호가 안 찍혀 라벨-그림 불일치).
+            h2 = int(hashlib.md5(f'{var}/{idx}/{sh}/rep3b'.encode())
+                     .hexdigest(), 16)
+            n = len(sl)
+            rep = None
+            if h2 % 100 < 35 and n >= 2:
+                if n >= 4 and (h2 >> 8) % 2:
+                    i0 = 1 + (h2 >> 20) % (n - 3)      # 1..n-3
+                    rep = [i0, n - 2, n - 1, n]        # 볼타 1·2 각 1마디
+                else:
+                    i0 = 1 + (h2 >> 9) % (n - 1)       # 1..n-1
+                    i1 = n
+                    if n - i0 >= 2 and (h2 >> 13) % 3 == 0:
+                        i1 = i0 + 1 + (h2 >> 15) % (n - i0 - 1)
+                    rep = [i0, i1]
+            if rep:
+                # 구조 경계를 붙임줄이 넘으면 전개 의미가 깨진다(2번째 연주에서
+                # 다른 음으로 이어짐) → 그 줄은 주입 포기.
+                for b in rep:
+                    if 0 < b < n and sl[b - 1] and sl[b - 1][-1][2]:
+                        rep = None
+                        break
             jobs.append(dict(path=path, song=key, var=var, chunk=idx, shift=sh,
-                             staff=staff,
+                             staff=staff, rep=rep,
                              clef=clef, tempo=tempo, ts=ts, ks=ks,
                              bars=[[list(e) for e in bar] for bar in sl]))
     return jobs, None
@@ -77,7 +100,8 @@ def plan_song(path, bars_per_line, max_chunks, keys_per_song, pool, mids_root):
 def run_job(a):
     out_root, j = a
     key, sharps = L.KEYSIG.get(j['ks'], ('c \\major', True))
-    notes, tokens = L.bars_to_ly([[tuple(e) for e in bar] for bar in j['bars']], sharps)
+    notes, tokens = L.bars_to_ly([[tuple(e) for e in bar] for bar in j['bars']],
+                                 sharps, rep=j.get('rep'))
     if notes is None:
         return dict(st='표기불가', song=j['song'])
     src = L.SNIPPET % dict(
@@ -101,11 +125,15 @@ def run_job(a):
     # 검사는 통과하는데 학습 라벨은 이미지와 어긋나는 결함이 있었다
     # (시프트≠0 표본 전부가 오답 라벨 = 데이터의 (keys-1)/keys).
     # cache/dataset/evaluate 는 토큰을 그대로 쓰므로 여기가 유일한 진실 지점.
-    tokens = [((tp + j['shift']) if tp else 0, td, tt) for tp, td, tt in tokens]
+    # 구조 토큰(p<0)은 음이 아니므로 조옮김하지 않는다 (관문 3b)
+    tokens = [((tp + j['shift']) if tp > 0 else tp, td, tt)
+              for tp, td, tt in tokens]
     # 정답 대조 — LilyPond 미디의 음고열 == 우리 토큰의 붙임줄 병합 음고열.
     # 재개(skip)한 줄도 반드시 대조한다. 안 하면 지난 실행에서 불일치로 버린
     # 파일이 다음 실행에서 조용히 통과해 데이터에 섞인다.
-    want = L.merged_pitches(tokens)
+    # 미디는 \unfoldRepeats 로 전개돼 나오므로 우리 토큰도 전개해 대조 —
+    # 구조 기호의 의미(연주 순서)까지 함께 검증된다 (관문 3b).
+    want = L.merged_pitches(L.unfold_tokens(tokens))
     try:
         have = L.midi_notes(mid)
     except Exception as e:

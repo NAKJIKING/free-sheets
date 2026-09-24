@@ -87,6 +87,9 @@ def key_ok(ks, shift):
     return abs(KEY_FIFTHS.get(ks, 0) + SHIFT_FIFTHS[shift]) <= 7
 
 
+# 미디는 \unfoldRepeats 로 전개해 뽑는다(관문 3b) — 비전개 미디는 도돌이를
+# 기보 순서대로 연주하지 않아 대조가 어긋난다(실측 4/90). 전개 미디는
+# unfold_tokens(우리 토큰의 구조 전개)와 대조하므로 구조 의미까지 검증된다.
 SNIPPET = r'''\version "2.24.4"
 #(set-global-staff-size %(staff)d)
 \paper {
@@ -97,11 +100,12 @@ SNIPPET = r'''\version "2.24.4"
   oddHeaderMarkup = ##f evenHeaderMarkup = ##f
   oddFooterMarkup = ##f evenFooterMarkup = ##f
 }
+music = { \transpose c %(shift)s { %(clef)s \key %(key)s \time %(time)s %(tempo)s %(notes)s } }
 \score {
-  { \transpose c %(shift)s { %(clef)s \key %(key)s \time %(time)s %(tempo)s %(notes)s } }
+  \music
   \layout { \context { \Score \omit BarNumber } }
-  \midi { }
 }
+\score { \unfoldRepeats \music \midi { } }
 '''
 
 
@@ -250,15 +254,30 @@ def ly_pitch(midi, sharps):
     return name + mark
 
 
-def bars_to_ly(bars, sharps):
+# 관문 3b — 구조 기호 토큰: 음고 자리에 음수 코드(쉼표 0·음표 1..127 과 안 겹침).
+# 미디 음고가 아니므로 조옮김·미디 대조·미디 쓰기에서 모두 건너뛴다.
+REP_START = [-1, 0, 0]      # |:  반복 시작
+REP_END = [-2, 0, 0]        # :|  반복 끝
+VOLTA1 = [-3, 0, 0]         # 1번 괄호 시작
+VOLTA2 = [-4, 0, 0]         # 2번 괄호 시작
+
+
+def bars_to_ly(bars, sharps, rep=None):
     """마디 목록 → (LilyPond 음표 문자열, 토큰목록[[pitch, dur, tie]]).
 
     토큰 하나 = 악보에 보이는 음표머리 하나(붙임줄로 쪼갠 것도 각각 한 개).
     tie=1 이면 다음 토큰과 붙임줄로 이어진다 → 미디에서는 한 음으로 병합된다.
+
+    rep (관문 3b 조판 주입): None | [i0,i1] 평반복 | [i0,j,k,i1] 볼타.
+      마디 i0..i1(또는 몸통 i0..j, 1번괄호 j..k, 2번괄호 k..i1)을
+      \\repeat volta 2 (+ \\alternative) 로 감싼다. 토큰에는 읽는 순서대로
+      구조 마커를 삽입한다 — LilyPond 비전개 미디도 같은 순서로 연주하므로
+      기존 미디 대조가 그대로 성립한다.
     """
     TUP = {4: '8', 8: '4'}          # 셋잇단 창 안 표기 (관문 3a)
-    parts, tokens = [], []
+    parts, tokens, spans = [], [], []
     for bar in bars:
+        _t0 = len(tokens)
         # 마디 안 위치를 계산해 12틱(4분음표) 창 단위로 셋잇단을 묶는다.
         items, pos = [], 0
         for p, d, tie in bar:
@@ -302,16 +321,77 @@ def bars_to_ly(bars, sharps):
                 tokens.append([p_, d_, 1 if joined else 0])
             cell.append('\\tuplet 3/2 { ' + ' '.join(inner) + ' }')
         parts.append(' '.join(cell))
-    return ' | '.join(parts) + ' |', tokens
+        spans.append((_t0, len(tokens)))
+    if rep is None:
+        return ' | '.join(parts) + ' |', tokens
+
+    def seg(a, b):
+        ly = ' | '.join(parts[a:b]) + (' |' if b > a else '')
+        tk = [t for x in range(a, b) for t in tokens[spans[x][0]:spans[x][1]]]
+        return ly, tk
+
+    nb = len(bars)
+    if len(rep) == 2:
+        i0, i1 = rep
+        pre, tp = seg(0, i0)
+        body, tb = seg(i0, i1)
+        post, ts = seg(i1, nb)
+        ly = ((pre + ' ') if i0 else '') \
+            + '\\repeat volta 2 { ' + body + ' }' \
+            + ((' ' + post) if i1 < nb else '')
+        return ly, tp + [list(REP_START)] + tb + [list(REP_END)] + ts
+    i0, j, k, i1 = rep
+    pre, tp = seg(0, i0)
+    body, tb = seg(i0, j)
+    a1, t1 = seg(j, k)
+    a2, t2 = seg(k, i1)
+    post, ts = seg(i1, nb)
+    ly = ((pre + ' ') if i0 else '') \
+        + '\\repeat volta 2 { ' + body + ' } \\alternative { { ' + a1 \
+        + ' } { ' + a2 + ' } }' + ((' ' + post) if i1 < nb else '')
+    toks = tp + [list(REP_START)] + tb + [list(VOLTA1)] + t1 \
+        + [list(REP_END)] + [list(VOLTA2)] + t2 + ts
+    return ly, toks
+
+
+def unfold_tokens(tokens):
+    """구조 토큰을 전개해 실제 연주 순서로 편다 (관문 3b 판정 ②의 정의).
+
+    [pre] RS body RE [post]          → pre + body + body + post
+    [pre] RS body V1 a1 RE V2 a2 [post] → pre + body+a1 + body+a2 + post
+    구조가 없으면 그대로. 경계 붙임줄은 주입 단계에서 금지돼 있다."""
+    marks = {tuple(REP_START): 'rs', tuple(REP_END): 're',
+             tuple(VOLTA1): 'v1', tuple(VOLTA2): 'v2'}
+    pre, body, a1, a2, post = [], [], [], [], []
+    cur, seen = pre, False
+    for t in tokens:
+        m = marks.get(tuple(t))
+        if m == 'rs':
+            cur, seen = body, True
+        elif m == 'v1':
+            cur = a1
+        elif m == 're':
+            cur = post
+        elif m == 'v2':
+            cur = a2
+        else:
+            cur.append(t)
+    if not seen:
+        return list(tokens)
+    if a2:
+        # 토큰 순서가 …RE V2 a2 [post] 라 V2 뒤는 전부 a2 에 담기지만,
+        # 연주 순서에서도 a2·post 는 연속이라 전개 결과는 동일하다.
+        return pre + body + a1 + body + a2
+    return pre + body + body + post
 
 
 def merged_pitches(tokens):
     """붙임줄을 병합한 음고 목록 — LilyPond 가 낸 미디와 대조할 기대값."""
     out, carry = [], False
     for p, _d, tie in tokens:
-        if p and not carry:
+        if p > 0 and not carry:         # 구조 토큰(p<0)·쉼표(0)는 소리가 없다
             out.append(p)
-        carry = bool(p) and bool(tie)
+        carry = p > 0 and bool(tie)
     return out
 
 

@@ -47,6 +47,8 @@ def write_midi(path, tokens, bpm=84, tpq=480, program=0):
     while i < len(tokens):
         p, d, tie = tokens[i]
         i += 1
+        if p < 0:                       # 구조 토큰(도돌이·볼타)은 소리가 없다
+            continue
         while tie and i < len(tokens) and tokens[i][0] == p:
             d += tokens[i][1]
             tie = tokens[i][2]
