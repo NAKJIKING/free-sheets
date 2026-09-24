@@ -277,7 +277,9 @@ class Lines(Dataset):
         # 혼합 학습(여러 코퍼스): 줄마다 자기 루트를 달고 온다(_root).
         root = r.get('_root', self.data)
         rng = np.random.default_rng()
-        if self.photo > 0 and rng.random() < self.photo:
+        # real:true 줄은 이미 실물 사진(정규화 저장) — 사진 증강을 또 걸면
+        # 이중 열화라 캐시 경로(약한 증강만)로 태운다.
+        if self.photo > 0 and not r.get('real') and rng.random() < self.photo:
             # 원본 경로 = 캐시 경로에서 'cache/' 접두사 제거
             orig = os.path.join(root, r['cache'][6:])
             with Image.open(orig) as im:

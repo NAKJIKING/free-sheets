@@ -192,6 +192,23 @@ def main():
         dvp = D.ThreadLoader(D.Lines(roots[0], va, vocab, aug=0.0, max_w=a.max_w,
                                      photo=1.0, photo_s=a.photo_s),
                              a.batch, D.collate, workers=max(2, a.workers // 2))
+    # **실물 검증** — 검증셋에 real:true 줄(실물 촬영 코퍼스)이 있으면 그것만으로
+    # 별도 NER 을 재고 best.pt 는 이 값으로 고른다. 합성 사진검증이 실물 성능을
+    # 예측 못하는 문제(혼합·체인 실험, 진행일지 3a ⑥·⑦)의 근본 처방.
+    dvr = None
+    seen_real = set()
+    va_real = []
+    for r in va:
+        if r.get('real'):
+            k = (r['song'], r['var'], r['chunk'])
+            if k not in seen_real:      # 과표집(루트 반복)으로 든 중복 제거
+                seen_real.add(k)
+                va_real.append(r)
+    if va_real:
+        dvr = D.ThreadLoader(D.Lines(roots[0], va_real, vocab, aug=0.0,
+                                     max_w=a.max_w),
+                             a.batch, D.collate, workers=2)
+        print(f'실물 검증 {len(va_real)}줄 — best.pt 는 실물 NER 기준')
     sched = torch.optim.lr_scheduler.OneCycleLR(
         opt, max_lr=a.lr, total_steps=max(1, a.epochs * len(dtr)),
         pct_start=0.08, last_epoch=start * len(dtr) - 1 if start else -1)
@@ -228,6 +245,12 @@ def main():
             msg['val_ner_photo'] = None if pner is None else round(pner, 5)
             msg['val_perfect_photo'] = None if pperf is None else round(pperf, 4)
             crit = pner
+        if dvr is not None:                   # 실물 검증이 있으면 그게 최우선
+            rner, rperf, _rl = validate(net, dvr, dev, vocab)
+            msg['val_ner_real'] = None if rner is None else round(rner, 5)
+            msg['val_perfect_real'] = None if rperf is None else round(rperf, 4)
+            if rner is not None:
+                crit = rner
         print('에폭', msg, flush=True)
         log.write(json.dumps(msg) + '\n')
         log.flush()
