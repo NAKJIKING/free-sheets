@@ -66,7 +66,12 @@ def plan_song(path, bars_per_line, max_chunks, keys_per_song, pool, mids_root):
             h = int(hashlib.md5(f'{var}/{idx}/{sh}'.encode()).hexdigest(), 16)
             staff = (18, 20, 22, 24, 26)[h % 5]
             clef = 'bass' if med + sh < 55 else 'treble'
-            tempo = (60, 72, 84, 96, 108, 120, 132)[h % 7] if idx == 0 else 0
+            # 관문 3c — 빠르기표: 첫 청크만이 아니라 전 줄의 ~40% 에 결정적
+            # 주입, 값은 멜첼 표준열 전체. (3b 까지는 첫 청크에만 그려지고
+            # 라벨이 없어 모델이 '보고도 무시'하도록 학습되던 결함 수정.)
+            h3 = int(hashlib.md5(f'{var}/{idx}/{sh}/3c'.encode()).hexdigest(), 16)
+            tempo = (L.TEMPO_BPMS[(h3 >> 4) % len(L.TEMPO_BPMS)]
+                     if h3 % 100 < 40 else 0)
             # 관문 3b — 도돌이·볼타 결정적 주입(~35% 줄). i0≥1 이라 |: 가
             # 항상 지면에 보인다(줄 머리 반복은 기호가 안 찍혀 라벨-그림 불일치).
             h2 = int(hashlib.md5(f'{var}/{idx}/{sh}/rep3b'.encode())
@@ -90,8 +95,42 @@ def plan_song(path, bars_per_line, max_chunks, keys_per_song, pool, mids_root):
                     if 0 < b < n and sl[b - 1] and sl[b - 1][-1][2]:
                         rep = None
                         break
+            # 관문 3c — 셈여림 주입: 아이템(마디 안 p>0 항목) 전역번호 기준.
+            # bars_to_ly 의 번호 매김과 정의가 같아야 한다.
+            bar_items, nid = [], 0
+            for bar in sl:
+                cur = []
+                for p, _d, _t in bar:
+                    if p:
+                        cur.append(nid)
+                        nid += 1
+                bar_items.append(cur)
+            dyn = {}
+            if nid >= 2:
+                # 크레셴도 헤어핀 ~20%: 음표 3개 이상인 마디 하나 안에서
+                # 처음→끝. 한 마디 안이므로 도돌이 경계와 얽히지 않고,
+                # 헤어핀이 줄 끝에서 열린 채 남지도 않는다.
+                if (h3 >> 27) % 100 < 20:
+                    cands = [b for b in bar_items if len(b) >= 3]
+                    if cands:
+                        b = cands[(h3 >> 34) % len(cands)]
+                        dyn[b[0]], dyn[b[-1]] = -9, -10
+                # 점 셈여림 f/p/mf ~45%: 1–2개. 헤어핀 구간 안에 점 셈여림이
+                # 들면 LilyPond 가 헤어핀을 그 자리에서 끊어 라벨-그림이
+                # 어긋난다 → 구간 안은 피한다.
+                if (h3 >> 13) % 100 < 45:
+                    free = [i for i in range(nid) if i not in dyn]
+                    if -9 in dyn.values():
+                        cs = min(i for i, c in dyn.items() if c == -9)
+                        ce = max(i for i, c in dyn.items() if c == -10)
+                        free = [i for i in free if not (cs <= i <= ce)]
+                    for k in range(1 + ((h3 >> 41) % 2)):
+                        if not free:
+                            break
+                        pos = free.pop((h3 >> (45 + 7 * k)) % len(free))
+                        dyn[pos] = (-6, -7, -8)[(h3 >> (52 + 7 * k)) % 3]
             jobs.append(dict(path=path, song=key, var=var, chunk=idx, shift=sh,
-                             staff=staff, rep=rep,
+                             staff=staff, rep=rep, dyn=dyn or None,
                              clef=clef, tempo=tempo, ts=ts, ks=ks,
                              bars=[[list(e) for e in bar] for bar in sl]))
     return jobs, None
@@ -101,9 +140,13 @@ def run_job(a):
     out_root, j = a
     key, sharps = L.KEYSIG.get(j['ks'], ('c \\major', True))
     notes, tokens = L.bars_to_ly([[tuple(e) for e in bar] for bar in j['bars']],
-                                 sharps, rep=j.get('rep'))
+                                 sharps, rep=j.get('rep'), dyn=j.get('dyn'))
     if notes is None:
         return dict(st='표기불가', song=j['song'])
+    # 관문 3c — 빠르기 토큰: 그림의 ♩=N 은 줄 머리 위에 찍히므로 토큰열
+    # 맨 앞에 넣는다. 음수 토큰이라 아래 조옮김에서도 안 건드린다.
+    if j['tempo']:
+        tokens = [[L.TEMPO, j['tempo'], 0]] + tokens
     src = L.SNIPPET % dict(
         staff=j['staff'], shift=L.SHIFT_NAME[j['shift']], clef=r'\clef ' + j['clef'],
         key=key, time=f"{j['ts'][0]}/{j['ts'][1]}",

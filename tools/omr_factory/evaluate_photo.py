@@ -125,6 +125,12 @@ def main():
             os.path.join(a.photos, meta['page']), correct=not a.no_correct)
         hyps_all = decode_crops(net, crops, dev) if crops else []
         hyps = [[k for k in h if not vocab.is_rest(k)] for h in hyps_all]
+        # 회귀 공정성(관문 3c): 이 모의 정답에 3c 토큰(빠르기·셈여림)이
+        # 없으면 예측의 3c 토큰은 채점에서 제외한다(evaluate.py 와 동일 규칙).
+        if not any(k > 0 and vocab.itos[k][0] <= -5
+                   for ln in refs for k in ln):
+            hyps = [[k for k in h if not (k > 0 and vocab.itos[k][0] <= -5)]
+                    for h in hyps]
         pe = pt = 0
         pairs = align_lines(refs, hyps)
         for ri, hj in pairs:

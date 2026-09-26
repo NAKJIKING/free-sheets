@@ -261,8 +261,25 @@ REP_END = [-2, 0, 0]        # :|  반복 끝
 VOLTA1 = [-3, 0, 0]         # 1번 괄호 시작
 VOLTA2 = [-4, 0, 0]         # 2번 괄호 시작
 
+# 관문 3c — 빠르기표·셈여림 토큰 (2026-09-26).
+# 빠르기: [TEMPO, bpm, 0] — 길이 자리에 bpm 숫자를 싣는다(♩=bpm).
+#   음표 길이(3..72)와 값이 겹쳐도 음고 자리 −5 로 트리플이 구분된다.
+# 셈여림: 붙는 음표의 첫 토큰 **바로 뒤**에 삽입 — 읽는 순서 = 그림 위치.
+TEMPO = -5                  # ♩= 숫자
+DYN_F = [-6, 0, 0]          # \f
+DYN_P = [-7, 0, 0]          # \p
+DYN_MF = [-8, 0, 0]         # \mf
+CRESC_START = [-9, 0, 0]    # \<  헤어핀 시작
+CRESC_END = [-10, 0, 0]     # \!  헤어핀 끝
+DYN_LY = {-6: '\\f', -7: '\\p', -8: '\\mf', -9: '\\<', -10: '\\!'}
 
-def bars_to_ly(bars, sharps, rep=None):
+# 실제 메트로놈 눈금(멜첼 표준열) — 각 값이 어휘 한 종이 된다.
+TEMPO_BPMS = (40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 63, 66, 69, 72, 76,
+              80, 84, 88, 92, 96, 100, 104, 108, 112, 116, 120, 126, 132, 138,
+              144, 152, 160, 168, 176, 184, 192, 200, 208)
+
+
+def bars_to_ly(bars, sharps, rep=None, dyn=None):
     """마디 목록 → (LilyPond 음표 문자열, 토큰목록[[pitch, dur, tie]]).
 
     토큰 하나 = 악보에 보이는 음표머리 하나(붙임줄로 쪼갠 것도 각각 한 개).
@@ -273,8 +290,17 @@ def bars_to_ly(bars, sharps, rep=None):
       \\repeat volta 2 (+ \\alternative) 로 감싼다. 토큰에는 읽는 순서대로
       구조 마커를 삽입한다 — LilyPond 비전개 미디도 같은 순서로 연주하므로
       기존 미디 대조가 그대로 성립한다.
+
+    dyn (관문 3c 셈여림 주입): {음표 아이템 전역번호: 코드(−6..−10)}.
+      아이템 = 마디 안 (p>0) 항목 하나(붙임줄로 쪼개져도 한 아이템).
+      해당 아이템의 첫 음표머리에 \\f 류 접미를 달고, 토큰열에는 그 첫
+      토큰 바로 뒤에 [코드,0,0] 을 넣는다 — 붙임줄 사슬 중간에 끼므로
+      병합기(merged_pitches·write_midi·perf_seq)는 음수 토큰을 투명하게
+      건너뛴다.
     """
     TUP = {4: '8', 8: '4'}          # 셋잇단 창 안 표기 (관문 3a)
+    dyn = dyn or {}
+    ni = 0                          # 음표 아이템 전역번호 (p>0 만 센다)
     parts, tokens, spans = [], [], []
     for bar in bars:
         _t0 = len(tokens)
@@ -291,11 +317,17 @@ def bars_to_ly(bars, sharps, rep=None):
                 if syms is None:
                     return None, None
                 head = ly_pitch(p, sharps) if p else 'r'
+                code = dyn.get(ni) if p else None
                 for k, sym in enumerate(syms):
                     last = k == len(syms) - 1
                     joined = bool(p) and (not last or tie)
-                    cell.append(head + sym + ('~' if joined else ''))
+                    suf = DYN_LY[code] if (k == 0 and code is not None) else ''
+                    cell.append(head + sym + ('~' if joined else '') + suf)
                     tokens.append([p, dict(PLAIN_BY_SYM)[sym], 1 if joined else 0])
+                    if k == 0 and code is not None:
+                        tokens.append([code, 0, 0])
+                if p:
+                    ni += 1
                 i += 1
                 continue
             # 셋잇단 창: 같은 12틱 창의 4·8틱 아이템을 모아 정확히 12틱이어야 한다
@@ -317,8 +349,14 @@ def bars_to_ly(bars, sharps, rep=None):
             for p_, d_, t_ in grp:
                 head = ly_pitch(p_, sharps) if p_ else 'r'
                 joined = bool(p_) and bool(t_)
-                inner.append(head + TUP[d_] + ('~' if joined else ''))
+                code = dyn.get(ni) if p_ else None
+                suf = DYN_LY[code] if code is not None else ''
+                inner.append(head + TUP[d_] + ('~' if joined else '') + suf)
                 tokens.append([p_, d_, 1 if joined else 0])
+                if code is not None:
+                    tokens.append([code, 0, 0])
+                if p_:
+                    ni += 1
             cell.append('\\tuplet 3/2 { ' + ' '.join(inner) + ' }')
         parts.append(' '.join(cell))
         spans.append((_t0, len(tokens)))
@@ -386,10 +424,16 @@ def unfold_tokens(tokens):
 
 
 def merged_pitches(tokens):
-    """붙임줄을 병합한 음고 목록 — LilyPond 가 낸 미디와 대조할 기대값."""
+    """붙임줄을 병합한 음고 목록 — LilyPond 가 낸 미디와 대조할 기대값.
+
+    음수 토큰(구조·빠르기·셈여림)은 소리가 없고, 셈여림은 붙임줄 사슬
+    **중간**에 낄 수 있으므로(3c: 아이템 첫 토큰 뒤 삽입) carry 를 건드리지
+    않고 건너뛴다 — 안 그러면 이어진 음이 새 음으로 잘못 세어진다."""
     out, carry = [], False
     for p, _d, tie in tokens:
-        if p > 0 and not carry:         # 구조 토큰(p<0)·쉼표(0)는 소리가 없다
+        if p < 0:
+            continue
+        if p > 0 and not carry:
             out.append(p)
         carry = p > 0 and bool(tie)
     return out

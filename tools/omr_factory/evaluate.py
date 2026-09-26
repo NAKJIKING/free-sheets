@@ -42,13 +42,13 @@ def _vlq(n):
 
 def write_midi(path, tokens, bpm=84, tpq=480, program=0):
     """(pitch, dur, tie) 토큰열 → 미디 한 트랙. 붙임줄은 한 음으로 병합한다."""
-    # 병합
+    # 음수 토큰(구조·빠르기·셈여림)은 소리가 없다 — 붙임줄 사슬 중간에도
+    # 낄 수 있으므로(3c) 병합 **전에** 걸러야 이어진 음이 안 끊긴다.
+    tokens = [t for t in tokens if t[0] >= 0]
     merged, i = [], 0
     while i < len(tokens):
         p, d, tie = tokens[i]
         i += 1
-        if p < 0:                       # 구조 토큰(도돌이·볼타)은 소리가 없다
-            continue
         while tie and i < len(tokens) and tokens[i][0] == p:
             d += tokens[i][1]
             tie = tokens[i][2]
@@ -127,10 +127,22 @@ def main():
     def notes_only(seq):
         return [k for k in seq if not vocab.is_rest(k)]
 
+    def is_3c(k):
+        return k > 0 and vocab.itos[k][0] <= -5    # 빠르기·셈여림 토큰
+
     ne = nt = ae = at = 0
     perfect = 0
+    stripped = 0
     per_song = collections.defaultdict(lambda: [0, 0])
     for (ref, hyp), r in zip(pairs, rows):
+        # 회귀 공정성(관문 3c): 구 코퍼스는 그림에 빠르기표가 있어도 라벨에
+        # 3c 토큰이 없다 — 모델이 옳게 읽은 것이 삽입 오류로 잡히면 안 된다.
+        # 정답 줄에 3c 토큰이 없을 때만 예측에서 제외하고, 개수는 보고한다.
+        # (3c 코퍼스에서는 정답에 있으므로 그대로 채점된다.)
+        if not any(is_3c(k) for k in ref):
+            h2 = [k for k in hyp if not is_3c(k)]
+            stripped += len(hyp) - len(h2)
+            hyp = h2
         rn, hn = notes_only(ref), notes_only(hyp)
         e = edit(rn, hn)
         ne += e
@@ -148,6 +160,8 @@ def main():
     print(f'■ 쉼표포함 NER      {ner_all:.4%}   ({ae} / {at}토큰)')
     print(f'■ 무오류 줄         {perfect}/{len(rows)} = {perfect / max(1, len(rows)):.1%}')
     print(f'■ 시험 곡 수        {len(per_song)}')
+    if stripped:
+        print(f'■ 3c 토큰 제외      {stripped}개 (정답 라벨에 없는 빠르기·셈여림 예측)')
     print(f'■ 관문 1 (NER ≤ 5%) {"통과" if ner <= 0.05 else "미달"}')
 
     worst = sorted(per_song.items(), key=lambda kv: -(kv[1][0] / max(1, kv[1][1])))[:10]
@@ -182,6 +196,7 @@ def main():
 
     rep = dict(split=a.split, lines=len(rows), songs=len(per_song),
                ner_notes=ner, ner_all=ner_all, notes=nt, oov_tokens=nunk,
+               stripped_3c=stripped,
                perfect_lines=perfect, gate1_pass=bool(ner <= 0.05),
                ckpt_epoch=st.get('epoch'), elise=made,
                worst=[dict(song=s, ner=e / max(1, t), err=e, notes=t) for s, (e, t) in worst])

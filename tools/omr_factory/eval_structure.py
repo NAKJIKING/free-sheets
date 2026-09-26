@@ -37,11 +37,14 @@ def struct_seq(toks):
 
 
 def perf_seq(toks):
-    """전개 후 (음고,길이) 연주열 — 붙임줄 병합."""
+    """전개 후 (음고,길이) 연주열 — 붙임줄 병합.
+
+    음수 토큰은 전부 소리가 없다 — 3c 셈여림은 붙임줄 사슬 중간에 낄 수
+    있으므로 carry 를 안 건드리고 건너뛴다(구조 토큰만 거르던 것을 확장)."""
     out = []
     carry = False
     for p, d, tie in unfold_tokens([list(t) for t in toks]):
-        if p in STRUCT:
+        if p < 0:
             continue
         if carry and out and out[-1][0] == p:
             out[-1] = (p, out[-1][1] + d)
