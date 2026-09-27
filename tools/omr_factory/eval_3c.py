@@ -59,12 +59,11 @@ def main():
     net = CRNN(len(vocab)).to(dev)
     net.load_state_dict(st['net'])
     net.eval()
-    from tempo_head import TempoNet, crop_tempo, anchor_window
+    from tempo_head import TempoNet, crop_candidates, read_best
     th_net = TempoNet().to(dev)
     th_st = torch.load(os.path.join(a.tempo_head, 'best.pt'), map_location=dev)
     th_net.load_state_dict(th_st['net'])
     th_net.eval()
-    marker_id = vocab.stoi.get((TEMPO, 0, 0))
 
     rows = []
     for ln in open(os.path.join(a.data, 'index.jsonl'), encoding='utf-8'):
@@ -100,18 +99,8 @@ def main():
                 with Image.open(os.path.join(a.data, r['cache'][6:])) as im:
                     arr = 1.0 - np.asarray(im.convert('L'),
                                            dtype=np.float32) / 255.0
-                # 마커의 CTC 프레임 x 를 크롭 앵커로 (학습 bake 와 동일 분포)
-                xn = None
-                with torch.no_grad():
-                    x1 = torch.from_numpy(crops[ci])[None, None].to(dev)
-                    fr = net(x1).argmax(-1)[0].cpu()
-                for t in range(int(crops[ci].shape[1] // net.down)):
-                    if t < fr.shape[0] and int(fr[t]) == marker_id:
-                        xn = (t + 0.5) * net.down
-                        break
-                xw = anchor_window(arr, xn) if xn is not None else None
-                c = crop_tempo(arr, xwin=xw)
-                num = th_net.read(c, dev) if c is not None else None
+                # v4: 후보 크롭들 중 자릿수 2+ 최고 신뢰도 판독 선택
+                num = read_best(th_net, crop_candidates(arr), dev)
                 head_ok += (num == r['bpm'])
                 tempo_ok += (marker and num == r['bpm'])
             else:

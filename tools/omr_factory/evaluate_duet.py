@@ -240,8 +240,14 @@ def main():
             _ = agree
             if a.auto_cov:                   # 3-0 모드: 줄 회수 우선
                 pick_on = (na, r_on[3]) >= (nb, r_off[3])
-            else:                            # 기본: NER 최적(신뢰도)
-                pick_on = r_on[3] >= r_off[3]
+            else:
+                # 기본(09-27 개선): **기대 보표 수(렌더 기준)에 가까운 쪽**
+                # 우선, 동률이면 신뢰도. 신뢰도만 쓰면 보정 켬이 보표를
+                # 잃어도 남은 보표가 또렷해 이긴다 — 유실 보표는 신뢰도에
+                # 안 보인다(실측: 한 장에서 15→11 보표로 NER 0.7→49.5%).
+                exp = len(line_truth)
+                d_on, d_off = abs(na - exp), abs(nb - exp)
+                pick_on = (d_on, -r_on[3]) <= (d_off, -r_off[3])
             crops, centers, hyps, _c = r_on if pick_on else r_off
             chose_on += pick_on
         else:

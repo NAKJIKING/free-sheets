@@ -90,12 +90,17 @@ def crop_tempo(a, gap=None, xwin=None):
             break                       # 위에서부터 첫 후보 = 최상단
     if pick is None:
         return None
+    cs = _cands_of_block(band, pick, g)
+    return cs[0] if cs else None
+
+
+def _cands_of_block(band, pick, g, k=2):
+    """행 블록 하나 → 열 클러스터 상위 k 개의 최종 크롭 목록."""
     b0, b1 = pick
     pad = max(2, int(0.25 * g))
     b0, b1 = max(0, b0 - pad), min(band.shape[0], b1 + pad)
-    blk = band[b0:b1]
-    # 열 클러스터 — 1.5g 넘는 공백으로 나누고 잉크 최대 덩어리만.
-    cprof = blk.sum(axis=0)
+    blk0 = band[b0:b1]
+    cprof = blk0.sum(axis=0)
     on = cprof >= max(1.0, cprof.max() * 0.05)
     clusters, cur, gap_run = [], None, 0
     for i, o in enumerate(list(on) + [False]):
@@ -109,21 +114,96 @@ def crop_tempo(a, gap=None, xwin=None):
             if gap_run > 1.5 * g or i == len(on):
                 clusters.append(tuple(cur))
                 cur = None
-    if not clusters:
-        return None
-    best = max(clusters, key=lambda c: float(cprof[c[0]:c[1] + 1].sum()))
-    blk = blk[:, max(0, best[0] - pad):min(blk.shape[1], best[1] + pad)]
-    # 클러스터 안에서 세로 재트림(선택 행 블록의 여백 제거)
-    rp = blk.sum(axis=1)
-    ys = np.nonzero(rp >= max(1.0, rp.max() * 0.05))[0]
-    if len(ys):
-        blk = blk[max(0, ys[0] - 2):min(blk.shape[0], ys[-1] + 3)]
-    if blk.shape[0] < 6 or blk.shape[1] < 12:
-        return None
-    w = max(16, min(MAX_W, int(round(blk.shape[1] * H / blk.shape[0]))))
-    img = Image.fromarray((np.clip(blk, 0, 1) * 255).astype(np.uint8))
-    return np.asarray(img.resize((w, H), Image.BILINEAR),
-                      dtype=np.float32) / 255.0
+    clusters.sort(key=lambda c: -float(cprof[c[0]:c[1] + 1].sum()))
+    out = []
+    for c in clusters[:k]:
+        blk = blk0[:, max(0, c[0] - pad):min(blk0.shape[1], c[1] + pad)]
+        rp = blk.sum(axis=1)
+        ys = np.nonzero(rp >= max(1.0, rp.max() * 0.05))[0]
+        if len(ys):
+            blk = blk[max(0, ys[0] - 2):min(blk.shape[0], ys[-1] + 3)]
+        if blk.shape[0] < 6 or blk.shape[1] < 12:
+            continue
+        w = max(16, min(MAX_W, int(round(blk.shape[1] * H / blk.shape[0]))))
+        img = Image.fromarray((np.clip(blk, 0, 1) * 255).astype(np.uint8))
+        out.append(np.asarray(img.resize((w, H), Image.BILINEAR),
+                              dtype=np.float32) / 255.0)
+    return out
+
+
+def crop_candidates(a, k=6):
+    """줄 원본 → ♩=N 후보 크롭 목록 (행 블록 상위 2 × 열 클러스터 상위 2).
+
+    v4 (09-27): 단일 휴리스틱(최상단/최대잉크)으로는 높은 덧줄 음표·음자리표
+    와의 오인을 못 없앤다(v1 78%→v2 89% 정체). 후보를 여럿 만들고 판독기가
+    자릿수 2개 이상 + 최고 신뢰도로 고른다 — bpm 은 40~208 이라 항상 2자리
+    이상이고, 음표 덩어리가 자신있는 2자리 숫자로 읽히는 일은 드물다.
+    (마커 CTC 프레임 앵커는 폐기 — BiLSTM CTC 는 마커를 글리프 위치가 아닌
+    시퀀스 첫 프레임에 방출함을 실측.)"""
+    st = prep.find_staff(a)
+    if st is None:
+        return []
+    cy, g = st
+    top = cy - 2 * g
+    y1 = int(max(0, top - 0.3 * g))
+    y0 = int(max(0, top - 7.0 * g))
+    x1 = int(min(a.shape[1], 45 * g))
+    band = a[y0:y1, :x1]
+    if band.size == 0:
+        return []
+    prof = band.sum(axis=1)
+    if prof.max() < 2:
+        return []
+    # 문턱은 상대(최대×비율)에 **절대 상한(오선간격 비례)** 을 건다 — 촘촘한
+    # 16분음표 빔이 밴드에 들면 최대값을 지배해 얇은 ♩=N 텍스트 행이 문턱
+    # 미달로 사라진다(elise 첼로 실측: 후보 전멸의 원인).
+    rows = prof >= max(2.0, min(prof.max() * 0.22, 1.2 * g))
+    blocks, cur = [], None
+    for i, on in enumerate(list(rows) + [False]):
+        if on and cur is None:
+            cur = i
+        elif not on and cur is not None:
+            blocks.append((cur, i))
+            cur = None
+    qthr = max(2.0, min(prof.max() * 0.25, 2.5 * g))
+    blocks = [(b0, b1) for b0, b1 in blocks
+              if b1 - b0 >= 0.45 * g and prof[b0:b1].max() >= qthr]
+    # 최상단 우선 + 잉크 최대 순 — 상위 3개 행 블록 × 클러스터 2 = 후보 ≤6.
+    # 후보가 늘어도 안전한 근거: 선택기는 '자릿수 2개 이상 + 최고 신뢰도'라
+    # 음표·볼타 숫자(1자리)는 탈락하고, 400줄 실측에서 선택 실수 0이었다.
+    ordered = blocks[:1] + sorted(blocks[1:],
+                                  key=lambda b: -float(prof[b[0]:b[1]].sum()))
+    out = []
+    for b in ordered[:3]:
+        out.extend(_cands_of_block(band, b, g))
+        if len(out) >= k:
+            break
+    return out[:k]
+
+
+@torch.no_grad()
+def read_best(net, cands, dev, min_digits=2):
+    """후보 크롭들 → (숫자, 신뢰도) 최고 후보. 자릿수 min_digits 미만은 탈락.
+
+    신뢰도 = 방출(비공백) 프레임들의 로그확률 평균."""
+    best = (None, -1e9)
+    for c in cands:
+        x = torch.from_numpy(c)[None, None].to(dev)
+        lg = torch.log_softmax(net(x)[0], dim=-1).cpu()
+        ids = lg.argmax(-1)
+        ds, confs, prev = [], [], 0
+        for t in range(ids.shape[0]):
+            k_ = int(ids[t])
+            if k_ != prev and k_ != 0:
+                ds.append(str(k_ - 1))
+                confs.append(float(lg[t, k_]))
+            prev = k_
+        if len(ds) < min_digits:
+            continue
+        conf = sum(confs) / len(confs)
+        if conf > best[1]:
+            best = (int(''.join(ds)), conf)
+    return best[0]
 
 
 class TempoNet(nn.Module):
@@ -209,58 +289,64 @@ def marker_anchors(net, vocab, data, rows, dev, batch=16):
     return out
 
 
-def bake(a):
+def _cands_job(a):
     data, r = a
-    dst = os.path.join(data, 'tempo_cache', r['cache'][6:])
-    if os.path.exists(dst):
-        return dict(ok=True, crop=dst, bpm=r['bpm'], split=r['split'])
     try:
         with Image.open(os.path.join(data, r['cache'][6:])) as im:   # 원본
             arr = 1.0 - np.asarray(im.convert('L'), dtype=np.float32) / 255.0
-        c = crop_tempo(arr, xwin=anchor_window(arr, r.get('_xn'))
-                       if r.get('_xn') is not None else None)
+        return r, crop_candidates(arr)
     except Exception:
-        return dict(ok=False)
-    if c is None:
-        return dict(ok=False)
-    os.makedirs(os.path.dirname(dst), exist_ok=True)
-    Image.fromarray((c * 255).astype(np.uint8)).save(dst, optimize=True)
-    return dict(ok=True, crop=dst, bpm=r['bpm'], split=r['split'])
+        return r, []
 
 
 def cmd_bake(a):
+    """후보 크롭 생성 + (--reader 시) 정답 bpm 과 일치하는 후보 선택 저장.
+
+    v4: 판독기로 후보 ≤4개를 읽어 **정답 bpm 을 읽어낸 후보만** 저장 —
+    라벨과 그림이 어긋난 크롭(음자리표·높은 음표 오인)이 학습에서 사라진다.
+    일치 후보가 없으면 그 줄은 버린다(개수 보고). --reader 없으면 첫
+    후보(v2 휴리스틱)를 그대로 저장한다(부트스트랩 1회차용)."""
     from concurrent.futures import ThreadPoolExecutor
     rows = load_rows(a.data, ('train', 'val', 'test'))
-    print(f'빠르기 줄 {len(rows)}개 크롭', flush=True)
-    if a.anchor_model:
-        import dataset as D
-        from model import CRNN
-        vocab = D.Vocab.load(os.path.join(a.anchor_model, 'vocab.json'))
+    print(f'빠르기 줄 {len(rows)}개 크롭 (reader={bool(a.reader)})', flush=True)
+    net = dev = None
+    if a.reader:
         dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        st = torch.load(os.path.join(a.anchor_model, 'best.pt'),
-                        map_location=dev)
-        net = CRNN(len(vocab)).to(dev)
+        net = TempoNet().to(dev)
+        st = torch.load(os.path.join(a.reader, 'best.pt'), map_location=dev)
         net.load_state_dict(st['net'])
         net.eval()
-        xns = marker_anchors(net, vocab, a.data, rows, dev)
-        n_hit = sum(1 for x in xns if x is not None)
-        print(f'앵커 확보 {n_hit}/{len(rows)} (없으면 v2 휴리스틱 폴백)',
-              flush=True)
-        for r, xn in zip(rows, xns):
-            r['_xn'] = xn
-    n_ok = 0
+    n_ok = n_drop = 0
     out = open(os.path.join(a.data, 'tempo_index.jsonl'), 'w', encoding='utf-8')
     with ThreadPoolExecutor(max_workers=8) as ex:
-        for i, r in enumerate(ex.map(bake, ((a.data, x) for x in rows))):
-            if r.get('ok'):
+        for i, (r, cands) in enumerate(
+                ex.map(_cands_job, ((a.data, x) for x in rows))):
+            pick = None
+            if not cands:
+                n_drop += 1
+            elif net is None:
+                pick = cands[0]
+            else:
+                for c in cands:
+                    if net.read(c, dev) == r['bpm']:
+                        pick = c
+                        break
+                if pick is None:
+                    n_drop += 1
+            if pick is not None:
+                dst = os.path.join(a.data, 'tempo_cache', r['cache'][6:])
+                os.makedirs(os.path.dirname(dst), exist_ok=True)
+                Image.fromarray((pick * 255).astype(np.uint8)) \
+                     .save(dst, optimize=True)
                 n_ok += 1
                 out.write(json.dumps(dict(crop=os.path.relpath(
-                    r['crop'], a.data).replace('\\', '/'),
+                    dst, a.data).replace('\\', '/'),
                     bpm=r['bpm'], split=r['split'])) + '\n')
             if (i + 1) % 2000 == 0:
-                print(f'  {i + 1}/{len(rows)} ok {n_ok}', flush=True)
+                print(f'  {i + 1}/{len(rows)} ok {n_ok} drop {n_drop}',
+                      flush=True)
     out.close()
-    print(f'끝: {n_ok}/{len(rows)}', flush=True)
+    print(f'끝: {n_ok}/{len(rows)} (탈락 {n_drop})', flush=True)
 
 
 def _load_index(data):
@@ -383,8 +469,8 @@ def main():
     ap.add_argument('--data', required=True)
     ap.add_argument('--out', default='C:/Users/user/omr_tempo_head')
     ap.add_argument('--model', default='C:/Users/user/omr_tempo_head')
-    ap.add_argument('--anchor-model', default='',
-                    help='본체 모델 폴더 — 마커 CTC 프레임을 크롭 앵커로(v3)')
+    ap.add_argument('--reader', default='',
+                    help='후보 선택용 현 판독기 폴더(v4 부트스트랩)')
     ap.add_argument('--epochs', type=int, default=8)
     ap.add_argument('--batch', type=int, default=32)
     a = ap.parse_args()
