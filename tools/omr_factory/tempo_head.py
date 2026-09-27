@@ -36,13 +36,22 @@ MAX_W = 640
 N_CLASS = 11                # blank + 숫자 0..9
 
 
-def crop_tempo(a, gap=None):
+def crop_tempo(a, gap=None, xwin=None):
     """잉크배열(원본 해상도) → ♩=N 텍스트 크롭 (H,W) 또는 None.
 
-    오선 위 [top−7g, top−0.3g] 밴드의 왼쪽(x<22g)에서 행 프로파일이 가장
-    두꺼운 연속 블록(텍스트)을 찾아 세로로 꽉 잘라 높이 H 로 맞춘다.
-    높은 덧줄 음의 기둥(1-2px)은 텍스트(≈8g 폭)보다 행 잉크가 훨씬 얇아
-    문턱에서 걸러진다."""
+    v2 (09-27): v1 은 x<22g 로 잘라 조표가 넓거나(올림표 6개) 오선이 작은
+    판형에서 숫자가 창 밖에 잘렸다(val 78% 정체의 주범 — "♩ =" 까지만
+    남은 크롭 실측). 지금은:
+      ① 창을 x<45g 로 넓히고,
+      ② 밴드에서 **가장 위의 진한 행 블록**을 고른다 — ♩=N 은 줄 머리
+         구역에서 항상 최상단이고, 음자리표 꼭대기·올림표는 오선에 붙어
+         아래쪽 블록이 된다(얇은 덧줄 기둥은 잉크 문턱에서 걸러짐),
+      ③ 그 행 블록 안에서 열 클러스터(1.5g 넘는 공백으로 분리)를 만들어
+         잉크가 가장 많은 덩어리(♩ = 숫자)만 남긴다.
+    v3 (09-27): 높은 덧줄 음표 덩어리가 '최상단 블록'을 뺏는 사례(~10%,
+    val 89% 정체의 주범)가 남아 **본체 마커의 CTC 프레임 x 를 앵커**로
+    받는 xwin=(x0,x1) 을 지원 — 창 안에는 ♩=N 이 지배적이라 오인이 없다.
+    학습·추론이 같은 앵커를 쓰므로 분포도 일치한다. xwin 없으면 v2 동작."""
     st = prep.find_staff(a)
     if st is None:
         return None
@@ -52,37 +61,63 @@ def crop_tempo(a, gap=None):
     top = cy - 2 * g
     y1 = int(max(0, top - 0.3 * g))
     y0 = int(max(0, top - 7.0 * g))
-    x1 = int(min(a.shape[1], 22 * g))
-    band = a[y0:y1, :x1]
+    if xwin is not None:
+        wx0 = int(max(0, min(xwin[0], a.shape[1] - 12)))
+        x1 = int(min(a.shape[1], max(xwin[1], wx0 + 12)))
+    else:
+        wx0 = 0
+        x1 = int(min(a.shape[1], 45 * g))
+    band = a[y0:y1, wx0:x1]
     if band.size == 0:
         return None
     prof = band.sum(axis=1)
     if prof.max() < 2:
         return None                     # 밴드가 비었다 — 빠르기 없음
-    rows = prof >= max(2.0, prof.max() * 0.25)
-    # 가장 잉크가 많은 연속 블록
-    best, cur, s0, acc = None, None, 0, 0.0
+    rows = prof >= max(2.0, prof.max() * 0.30)
+    # 행 블록들 — 가장 위의, 충분히 진하고(피크 ≥ 0.45·최대) 충분히 높은
+    # (≥0.5g) 블록을 고른다.
+    blocks, cur = [], None
     for i, on in enumerate(list(rows) + [False]):
-        if on:
-            if cur is None:
-                cur, acc = i, 0.0
-            acc += prof[i]
-        elif cur is not None:
-            if best is None or acc > best[2]:
-                best = (cur, i, acc)
+        if on and cur is None:
+            cur = i
+        elif not on and cur is not None:
+            blocks.append((cur, i))
             cur = None
-    if best is None:
+    pick = None
+    for b0, b1 in blocks:
+        if b1 - b0 >= 0.5 * g and prof[b0:b1].max() >= prof.max() * 0.45:
+            pick = (b0, b1)
+            break                       # 위에서부터 첫 후보 = 최상단
+    if pick is None:
         return None
-    b0, b1, _ = best
+    b0, b1 = pick
     pad = max(2, int(0.25 * g))
     b0, b1 = max(0, b0 - pad), min(band.shape[0], b1 + pad)
     blk = band[b0:b1]
-    # 가로로도 꽉 자른다
+    # 열 클러스터 — 1.5g 넘는 공백으로 나누고 잉크 최대 덩어리만.
     cprof = blk.sum(axis=0)
-    xs = np.nonzero(cprof >= max(1.0, cprof.max() * 0.05))[0]
-    if len(xs) == 0:
+    on = cprof >= max(1.0, cprof.max() * 0.05)
+    clusters, cur, gap_run = [], None, 0
+    for i, o in enumerate(list(on) + [False]):
+        if o:
+            if cur is None:
+                cur = [i, i]
+            cur[1] = i
+            gap_run = 0
+        elif cur is not None:
+            gap_run += 1
+            if gap_run > 1.5 * g or i == len(on):
+                clusters.append(tuple(cur))
+                cur = None
+    if not clusters:
         return None
-    blk = blk[:, max(0, xs[0] - pad):min(blk.shape[1], xs[-1] + pad)]
+    best = max(clusters, key=lambda c: float(cprof[c[0]:c[1] + 1].sum()))
+    blk = blk[:, max(0, best[0] - pad):min(blk.shape[1], best[1] + pad)]
+    # 클러스터 안에서 세로 재트림(선택 행 블록의 여백 제거)
+    rp = blk.sum(axis=1)
+    ys = np.nonzero(rp >= max(1.0, rp.max() * 0.05))[0]
+    if len(ys):
+        blk = blk[max(0, ys[0] - 2):min(blk.shape[0], ys[-1] + 3)]
     if blk.shape[0] < 6 or blk.shape[1] < 12:
         return None
     w = max(16, min(MAX_W, int(round(blk.shape[1] * H / blk.shape[0]))))
@@ -133,6 +168,47 @@ def load_rows(data, splits):
     return out
 
 
+def anchor_window(arr, xn):
+    """정규화 x(마커 CTC 프레임 중심) → 원본 좌표 크롭 창 (x0, x1)."""
+    st = prep.find_staff(arr)
+    if st is None or xn is None:
+        return None
+    g = st[1]
+    xo = xn * g / 12.0                  # normalize 는 오선간격을 12px 로 맞춘다
+    return (xo - 4 * g, xo + 13 * g)
+
+
+@torch.no_grad()
+def marker_anchors(net, vocab, data, rows, dev, batch=16):
+    """본체 CRNN 으로 캐시 이미지를 디코드해 마커 프레임의 정규화 x 목록."""
+    mid = vocab.stoi.get((-5, 0, 0))
+    assert mid, '본체 어휘에 마커가 없다'
+    out = []
+    for k in range(0, len(rows), batch):
+        ch = rows[k:k + batch]
+        imgs = []
+        for r in ch:
+            with Image.open(os.path.join(data, r['cache'])) as im:
+                imgs.append(np.asarray(im.convert('L'),
+                                       dtype=np.float32) / 255.0)
+        W = max(x.shape[1] for x in imgs)
+        xs = torch.zeros(len(imgs), 1, imgs[0].shape[0], W)
+        for i, x in enumerate(imgs):
+            xs[i, 0, :, :x.shape[1]] = torch.from_numpy(x)
+        best = net(xs.to(dev)).argmax(-1).cpu()
+        for i, x in enumerate(imgs):
+            T = max(1, x.shape[1] // net.down)
+            xn = None
+            for t in range(min(T, best.shape[1])):
+                if int(best[i, t]) == mid:
+                    xn = (t + 0.5) * net.down
+                    break
+            out.append(xn)
+        if (k // batch) % 100 == 0:
+            print(f'  앵커 {k + len(ch)}/{len(rows)}', flush=True)
+    return out
+
+
 def bake(a):
     data, r = a
     dst = os.path.join(data, 'tempo_cache', r['cache'][6:])
@@ -141,7 +217,8 @@ def bake(a):
     try:
         with Image.open(os.path.join(data, r['cache'][6:])) as im:   # 원본
             arr = 1.0 - np.asarray(im.convert('L'), dtype=np.float32) / 255.0
-        c = crop_tempo(arr)
+        c = crop_tempo(arr, xwin=anchor_window(arr, r.get('_xn'))
+                       if r.get('_xn') is not None else None)
     except Exception:
         return dict(ok=False)
     if c is None:
@@ -155,6 +232,22 @@ def cmd_bake(a):
     from concurrent.futures import ThreadPoolExecutor
     rows = load_rows(a.data, ('train', 'val', 'test'))
     print(f'빠르기 줄 {len(rows)}개 크롭', flush=True)
+    if a.anchor_model:
+        import dataset as D
+        from model import CRNN
+        vocab = D.Vocab.load(os.path.join(a.anchor_model, 'vocab.json'))
+        dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        st = torch.load(os.path.join(a.anchor_model, 'best.pt'),
+                        map_location=dev)
+        net = CRNN(len(vocab)).to(dev)
+        net.load_state_dict(st['net'])
+        net.eval()
+        xns = marker_anchors(net, vocab, a.data, rows, dev)
+        n_hit = sum(1 for x in xns if x is not None)
+        print(f'앵커 확보 {n_hit}/{len(rows)} (없으면 v2 휴리스틱 폴백)',
+              flush=True)
+        for r, xn in zip(rows, xns):
+            r['_xn'] = xn
     n_ok = 0
     out = open(os.path.join(a.data, 'tempo_index.jsonl'), 'w', encoding='utf-8')
     with ThreadPoolExecutor(max_workers=8) as ex:
@@ -290,6 +383,8 @@ def main():
     ap.add_argument('--data', required=True)
     ap.add_argument('--out', default='C:/Users/user/omr_tempo_head')
     ap.add_argument('--model', default='C:/Users/user/omr_tempo_head')
+    ap.add_argument('--anchor-model', default='',
+                    help='본체 모델 폴더 — 마커 CTC 프레임을 크롭 앵커로(v3)')
     ap.add_argument('--epochs', type=int, default=8)
     ap.add_argument('--batch', type=int, default=32)
     a = ap.parse_args()
