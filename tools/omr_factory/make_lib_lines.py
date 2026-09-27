@@ -186,7 +186,8 @@ def run_job(a):
                     err=f'want{want[:8]} have{have[:8]} len{len(want)}/{len(have)}')
     return dict(st=st, song=j['song'], var=safe, chunk=j['chunk'],
                 shift=j['shift'], png=f'{safe}/{stem}.png',
-                midi=f'{safe}/{os.path.basename(mid)}', tokens=tokens)
+                midi=f'{safe}/{os.path.basename(mid)}', tokens=tokens,
+                bpm=j['tempo'])                # 0 이면 빠르기 없음 — tempo_head 라벨
 
 
 def main():
@@ -240,7 +241,8 @@ def main():
                 mf.write(json.dumps(dict(song=r['song'], var=r['var'],
                                          chunk=r['chunk'], shift=r['shift'],
                                          png=r['png'], midi=r['midi'],
-                                         tokens=r['tokens']),
+                                         tokens=r['tokens'],
+                                         bpm=r.get('bpm', 0)),
                                     ensure_ascii=False) + '\n')
             elif cnt[r['st']] <= 3:
                 print(f"  ! {r['st']} {r['song']} {r.get('err','')}", flush=True)

@@ -4,9 +4,10 @@
 
 시험 분할에서 3c 토큰(빠르기 −5, 셈여림 −6..−10)이 든 줄을 깨끗한 렌더로
 디코드해:
-  ① 빠르기 숫자 정확도 — 정답에 빠르기 토큰이 있는 줄에서, 예측의 빠르기
-     토큰열(값 포함)이 정답과 정확히 일치하는 줄 비율. 기준 ≥95%.
-     (숫자가 하나라도 다르면, 안 읽거나 헛읽어도 그 줄은 오답)
+  ① 빠르기 숫자 정확도 — 3차 설계: **본체 마커 검출 × 판독기(tempo_head)
+     숫자 읽기의 결합**. 정답에 빠르기가 있는 줄에서 (본체가 마커를 내고)
+     AND (판독기가 원본 크롭에서 읽은 숫자 == 정답 bpm) 인 줄 비율.
+     기준 ≥95%. 분해 지표 marker_recall / head_num_acc 도 보고.
   ② 셈여림 유무 정확도 — 정답에 셈여림이 있는 줄에서, 예측의 셈여림
      **종류 집합**(f/p/mf/cresc)이 정답과 일치하는 줄 비율. 기준 ≥90%.
      (로드맵의 '유무'보다 엄격한 종류 일치로 잰다 — 이게 통과하면 유무는
@@ -32,28 +33,7 @@ from evaluate_photo import decode_crops
 from model import CRNN
 
 TEMPO = -5
-DIGIT = -11
 DYN_NAME = {-6: 'f', -7: 'p', -8: 'mf', -9: 'cresc'}   # −10(끝)은 −9 에 붙는 짝
-
-
-def tempo_seq(toks):
-    """마커+자릿수(2차 인코딩) → 숫자 목록. 마커 바로 뒤에 이어지는 자릿수
-    토큰만 그 숫자에 속한다. 자릿수 없는 마커·떠도는 자릿수는 −1(항상 오답)."""
-    out, i = [], 0
-    while i < len(toks):
-        p = toks[i][0]
-        if p == TEMPO:
-            i += 1
-            ds = []
-            while i < len(toks) and toks[i][0] == DIGIT:
-                ds.append(str(toks[i][1]))
-                i += 1
-            out.append(int(''.join(ds)) if ds else -1)
-        else:
-            if p == DIGIT:
-                out.append(-1)          # 마커 없는 자릿수 — 오답 처리
-            i += 1
-    return out
 
 
 def dyn_kinds(toks):
@@ -66,6 +46,8 @@ def main():
     ap.add_argument('--data', required=True)
     ap.add_argument('--model', required=True)
     ap.add_argument('--ckpt', default='best.pt')
+    ap.add_argument('--tempo-head', required=True,
+                    help='빠르기 숫자 판독기(tempo_head.py train 출력) 폴더')
     ap.add_argument('--out', required=True)
     ap.add_argument('--batch', type=int, default=8)
     a = ap.parse_args()
@@ -77,15 +59,21 @@ def main():
     net = CRNN(len(vocab)).to(dev)
     net.load_state_dict(st['net'])
     net.eval()
+    from tempo_head import TempoNet, crop_tempo
+    th_net = TempoNet().to(dev)
+    th_st = torch.load(os.path.join(a.tempo_head, 'best.pt'), map_location=dev)
+    th_net.load_state_dict(th_st['net'])
+    th_net.eval()
 
     rows = []
     for ln in open(os.path.join(a.data, 'index.jsonl'), encoding='utf-8'):
         r = json.loads(ln)
-        if r['split'] == 'test' and any(t[0] <= -5 for t in r['tokens']):
+        if r['split'] == 'test' and (r.get('bpm')
+                                     or any(t[0] <= -5 for t in r['tokens'])):
             rows.append(r)
     print(f'3c 토큰 포함 시험 줄 {len(rows)}개', flush=True)
 
-    tempo_lines = tempo_ok = 0
+    tempo_lines = tempo_ok = marker_ok = head_ok = 0
     dyn_lines = dyn_kind_ok = dyn_presence_ok = 0
     clean_dyn_lines = dyn_ghost_lines = 0          # 셈여림 없는 줄의 오검출
     clean_tempo_lines = tempo_ghost_lines = 0      # 빠르기 없는 줄의 오검출
@@ -103,14 +91,21 @@ def main():
         for r, h in zip(chunk, hyps):
             ht = [list(vocab.itos[i]) for i in h if i > 0]
             rt = [list(t) for t in r['tokens']]
-            # ① 빠르기
-            tr_, th_ = tempo_seq(rt), tempo_seq(ht)
-            if tr_:
+            # ① 빠르기 = 본체 마커 검출 × 판독기 숫자 (3차 설계)
+            marker = any(p == TEMPO for p, _d, _t in ht)
+            if r.get('bpm'):
                 tempo_lines += 1
-                tempo_ok += (tr_ == th_)
+                marker_ok += marker
+                with Image.open(os.path.join(a.data, r['cache'][6:])) as im:
+                    arr = 1.0 - np.asarray(im.convert('L'),
+                                           dtype=np.float32) / 255.0
+                c = crop_tempo(arr)
+                num = th_net.read(c, dev) if c is not None else None
+                head_ok += (num == r['bpm'])
+                tempo_ok += (marker and num == r['bpm'])
             else:
                 clean_tempo_lines += 1
-                tempo_ghost_lines += bool(th_)
+                tempo_ghost_lines += marker
             # ② 셈여림
             kr, kh = dyn_kinds(rt), dyn_kinds(ht)
             if kr:
@@ -141,6 +136,8 @@ def main():
         lines=len(rows),
         tempo_lines=tempo_lines,
         tempo_num_acc=round(tempo_acc, 4),
+        marker_recall=round(marker_ok / max(1, tempo_lines), 4),
+        head_num_acc=round(head_ok / max(1, tempo_lines), 4),
         tempo_ghost=round(tempo_ghost_lines / max(1, clean_tempo_lines), 4),
         dyn_lines=dyn_lines,
         dyn_kind_acc=round(dyn_kind_acc, 4),

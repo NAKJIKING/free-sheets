@@ -71,7 +71,8 @@ def main():
                                           chunk=r['chunk'], shift=r['shift'],
                                           split=split.get(r['song'], 'train'),
                                           cache='cache/' + r['png'], w=r['w'],
-                                          tokens=r['tokens']),
+                                          tokens=r['tokens'],
+                                          bpm=r.get('bpm', 0)),
                                      ensure_ascii=False) + '\n')
             if n % 5000 == 0:
                 print(f'  {n}/{len(rows)} 탈락 {bad}', flush=True)
