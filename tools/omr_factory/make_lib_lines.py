@@ -144,9 +144,9 @@ def run_job(a):
     if notes is None:
         return dict(st='표기불가', song=j['song'])
     # 관문 3c — 빠르기 토큰: 그림의 ♩=N 은 줄 머리 위에 찍히므로 토큰열
-    # 맨 앞에 넣는다. 음수 토큰이라 아래 조옮김에서도 안 건드린다.
+    # 맨 앞에 넣는다(마커+자릿수, 2차 인코딩). 음수 토큰이라 조옮김 무관.
     if j['tempo']:
-        tokens = [[L.TEMPO, j['tempo'], 0]] + tokens
+        tokens = L.tempo_tokens(j['tempo']) + tokens
     src = L.SNIPPET % dict(
         staff=j['staff'], shift=L.SHIFT_NAME[j['shift']], clef=r'\clef ' + j['clef'],
         key=key, time=f"{j['ts'][0]}/{j['ts'][1]}",

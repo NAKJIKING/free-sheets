@@ -32,11 +32,28 @@ from evaluate_photo import decode_crops
 from model import CRNN
 
 TEMPO = -5
+DIGIT = -11
 DYN_NAME = {-6: 'f', -7: 'p', -8: 'mf', -9: 'cresc'}   # −10(끝)은 −9 에 붙는 짝
 
 
 def tempo_seq(toks):
-    return [d for p, d, _t in toks if p == TEMPO]
+    """마커+자릿수(2차 인코딩) → 숫자 목록. 마커 바로 뒤에 이어지는 자릿수
+    토큰만 그 숫자에 속한다. 자릿수 없는 마커·떠도는 자릿수는 −1(항상 오답)."""
+    out, i = [], 0
+    while i < len(toks):
+        p = toks[i][0]
+        if p == TEMPO:
+            i += 1
+            ds = []
+            while i < len(toks) and toks[i][0] == DIGIT:
+                ds.append(str(toks[i][1]))
+                i += 1
+            out.append(int(''.join(ds)) if ds else -1)
+        else:
+            if p == DIGIT:
+                out.append(-1)          # 마커 없는 자릿수 — 오답 처리
+            i += 1
+    return out
 
 
 def dyn_kinds(toks):
