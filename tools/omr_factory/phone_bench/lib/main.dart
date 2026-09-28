@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:onnxruntime/onnxruntime.dart';
 
+import 'full_bench.dart';
+
 void main() => runApp(const BenchApp());
 
 class BenchApp extends StatelessWidget {
@@ -17,7 +19,10 @@ class BenchApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         title: 'OMR 폰 벤치',
         theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
-        home: const BenchPage(),
+        home: WidgetsBinding.instance.platformDispatcher.defaultRouteName ==
+                '/full'
+            ? const FullBenchPage(autorun: true)
+            : const BenchPage(),
       );
 }
 
@@ -228,6 +233,17 @@ class _BenchPageState extends State<BenchPage> {
                 padding: const EdgeInsets.all(14),
                 child: Text(running ? status : '측정 시작',
                     style: const TextStyle(fontSize: 22)),
+              ),
+            ),
+            const SizedBox(height: 8),
+            OutlinedButton(
+              onPressed: running
+                  ? null
+                  : () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (_) => const FullBenchPage())),
+              child: const Padding(
+                padding: EdgeInsets.all(10),
+                child: Text('사진 한 장 전체 측정', style: TextStyle(fontSize: 18)),
               ),
             ),
             const SizedBox(height: 12),

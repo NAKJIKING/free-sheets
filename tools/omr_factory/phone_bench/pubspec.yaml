@@ -37,6 +37,7 @@ dependencies:
   onnxruntime: ^1.4.1
   device_info_plus: ^13.2.0
   image: ^4.10.1
+  image_picker: ^1.2.3
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +63,7 @@ flutter:
   assets:
     - assets/model/
     - assets/lines/
+    - assets/photos/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
