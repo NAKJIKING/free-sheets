@@ -139,10 +139,17 @@ def crop_candidates(a, k=6):
     자릿수 2개 이상 + 최고 신뢰도로 고른다 — bpm 은 40~208 이라 항상 2자리
     이상이고, 음표 덩어리가 자신있는 2자리 숫자로 읽히는 일은 드물다.
     (마커 CTC 프레임 앵커는 폐기 — BiLSTM CTC 는 마커를 글리프 위치가 아닌
-    시퀀스 첫 프레임에 방출함을 실측.)"""
+    시퀀스 첫 프레임에 방출함을 실측.)
+    실물 사진 크롭은 오선 찾기를 soft 모드로 폴백하고, 종이 톤(저강도
+    배경)을 빼서 렌더와 비슷한 잉크 분포로 정규화한다."""
     st = prep.find_staff(a)
     if st is None:
-        return []
+        st = prep.find_staff(a, soft=True)
+        if st is None:
+            return []
+        # 실물: 종이 결·조명 낮은 잉크값이 행 프로파일을 오염 → 바닥을 뺀다
+        lo = float(np.percentile(a, 60))
+        a = np.clip((a - lo) / max(1e-3, 1.0 - lo), 0, 1)
     cy, g = st
     top = cy - 2 * g
     y1 = int(max(0, top - 0.3 * g))
