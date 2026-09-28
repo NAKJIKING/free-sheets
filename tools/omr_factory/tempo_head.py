@@ -140,16 +140,17 @@ def crop_candidates(a, k=6):
     이상이고, 음표 덩어리가 자신있는 2자리 숫자로 읽히는 일은 드물다.
     (마커 CTC 프레임 앵커는 폐기 — BiLSTM CTC 는 마커를 글리프 위치가 아닌
     시퀀스 첫 프레임에 방출함을 실측.)
-    실물 사진 크롭은 오선 찾기를 soft 모드로 폴백하고, 종이 톤(저강도
-    배경)을 빼서 렌더와 비슷한 잉크 분포로 정규화한다."""
+    실물 사진 크롭은 종이 톤(저강도 배경)을 **상시** 바닥 제거로 정규화
+    (렌더는 바닥이 0이라 무변화)하고, 오선 찾기는 soft 모드로 폴백한다.
+    학습 증강(_photo_wash)도 마지막에 같은 바닥 제거를 걸어 분포를 맞춘다."""
+    lo = float(np.percentile(a, 60))
+    if lo > 0.03:
+        a = np.clip((a - lo) / max(1e-3, 1.0 - lo), 0, 1)
     st = prep.find_staff(a)
     if st is None:
         st = prep.find_staff(a, soft=True)
         if st is None:
             return []
-        # 실물: 종이 결·조명 낮은 잉크값이 행 프로파일을 오염 → 바닥을 뺀다
-        lo = float(np.percentile(a, 60))
-        a = np.clip((a - lo) / max(1e-3, 1.0 - lo), 0, 1)
     cy, g = st
     top = cy - 2 * g
     y1 = int(max(0, top - 0.3 * g))
@@ -188,28 +189,51 @@ def crop_candidates(a, k=6):
     return out[:k]
 
 
+BPM_LO, BPM_HI = 30, 280        # 타당한 bpm 범위 — 부제목 숫자 등 쓰레기 차단
+
+
+def repair_num(n):
+    """자릿수열 → 타당 bpm. 범위 초과면 꼬리를 자른다 — 셋잇단 ₃ 가 숫자
+    바로 옆에 붙어 같은 클러스터로 잘리는 실물 지면 실측('72'+'3'→723).
+    72₃→723→72, 108₃→1083→108. 못 고치면 None."""
+    s = str(n)
+    while s and not (BPM_LO <= int(s) <= BPM_HI):
+        s = s[:-1]
+        if not s or len(s) < 2:
+            return None
+    return int(s) if s else None
+
+
 @torch.no_grad()
-def read_best(net, cands, dev, min_digits=2):
-    """후보 크롭들 → (숫자, 신뢰도) 최고 후보. 자릿수 min_digits 미만은 탈락.
+def parse_num(net, crop, dev, min_digits=2):
+    """크롭 하나 → (복원된 bpm 또는 None, 신뢰도).
 
     신뢰도 = 방출(비공백) 프레임들의 로그확률 평균."""
+    x = torch.from_numpy(crop)[None, None].to(dev)
+    lg = torch.log_softmax(net(x)[0], dim=-1).cpu()
+    ids = lg.argmax(-1)
+    ds, confs, prev = [], [], 0
+    for t in range(ids.shape[0]):
+        k_ = int(ids[t])
+        if k_ != prev and k_ != 0:
+            ds.append(str(k_ - 1))
+            confs.append(float(lg[t, k_]))
+        prev = k_
+    if len(ds) < min_digits:
+        return None, -1e9
+    num = repair_num(int(''.join(ds)))
+    if num is None:
+        return None, -1e9
+    return num, sum(confs) / len(confs)
+
+
+def read_best(net, cands, dev, min_digits=2):
+    """후보 크롭들 → 타당 bpm 최고 신뢰도 후보."""
     best = (None, -1e9)
     for c in cands:
-        x = torch.from_numpy(c)[None, None].to(dev)
-        lg = torch.log_softmax(net(x)[0], dim=-1).cpu()
-        ids = lg.argmax(-1)
-        ds, confs, prev = [], [], 0
-        for t in range(ids.shape[0]):
-            k_ = int(ids[t])
-            if k_ != prev and k_ != 0:
-                ds.append(str(k_ - 1))
-                confs.append(float(lg[t, k_]))
-            prev = k_
-        if len(ds) < min_digits:
-            continue
-        conf = sum(confs) / len(confs)
-        if conf > best[1]:
-            best = (int(''.join(ds)), conf)
+        num, conf = parse_num(net, c, dev, min_digits)
+        if num is not None and conf > best[1]:
+            best = (num, conf)
     return best[0]
 
 
@@ -325,7 +349,7 @@ def cmd_bake(a):
         net.eval()
     n_ok = n_drop = 0
     out = open(os.path.join(a.data, 'tempo_index.jsonl'), 'w', encoding='utf-8')
-    with ThreadPoolExecutor(max_workers=8) as ex:
+    with ThreadPoolExecutor(max_workers=a.jobs) as ex:
         for i, (r, cands) in enumerate(
                 ex.map(_cands_job, ((a.data, x) for x in rows))):
             pick = None
@@ -335,7 +359,7 @@ def cmd_bake(a):
                 pick = cands[0]
             else:
                 for c in cands:
-                    if net.read(c, dev) == r['bpm']:
+                    if parse_num(net, c, dev)[0] == r['bpm']:
                         pick = c
                         break
                 if pick is None:
@@ -354,6 +378,55 @@ def cmd_bake(a):
                       flush=True)
     out.close()
     print(f'끝: {n_ok}/{len(rows)} (탈락 {n_drop})', flush=True)
+
+
+def _photo_wash(x, rng):
+    """실물 사진풍 열화 — 잉크 약화·배경 상승·종이결·기울임·블러·모션·JPEG.
+
+    마지막에 crop_candidates 와 **같은 바닥 제거**를 걸어 추론 분포와 맞춘다.
+    (실물 빠르기 벤치 5/43 의 처방 — 판독기가 렌더 전용 학습이던 것.)"""
+    from PIL import ImageFilter
+    h, w = x.shape
+    x = x * rng.uniform(0.55, 0.95)                    # 잉크 약화
+    bg = rng.uniform(0.03, 0.25)                       # 배경 상승
+    small = rng.random((max(2, h // 8), max(2, w // 8))).astype(np.float32)
+    tex = np.asarray(Image.fromarray((small * 255).astype(np.uint8))
+                     .resize((w, h), Image.BICUBIC), dtype=np.float32) / 255.0
+    x = np.clip(x + bg * (1 - x) + (tex - 0.5) * 0.08, 0, 1)
+    img = Image.fromarray((x * 255).astype(np.uint8))
+    ang = rng.normal(0, 1.2)
+    img = img.rotate(ang, resample=Image.BILINEAR, fillcolor=0, expand=False)
+    r = abs(rng.normal(0, 0.7))
+    if r > 0.15:
+        img = img.filter(ImageFilter.GaussianBlur(r))
+    x = np.asarray(img, dtype=np.float32) / 255.0
+    if rng.random() < 0.3:                             # 손떨림
+        L_ = rng.uniform(1.5, 4.0)
+        steps = max(2, int(L_))
+        th = rng.uniform(0, np.pi)
+        dx, dy = np.cos(th), np.sin(th)
+        acc = np.zeros_like(x)
+        for k in range(steps):
+            t = k - (steps - 1) / 2.0
+            acc += np.roll(np.roll(x, int(round(t * dy)), 0),
+                           int(round(t * dx)), 1)
+        x = acc / steps
+    x = np.clip(x + rng.normal(0, 0.03, x.shape).astype(np.float32), 0, 1)
+    f = rng.uniform(1.0, 1.8)                          # 다운샘플/JPEG
+    if f > 1.05:
+        img = Image.fromarray((x * 255).astype(np.uint8))
+        img = img.resize((max(12, int(w / f)), max(8, int(h / f))),
+                         Image.BILINEAR)
+        import io
+        b = io.BytesIO()
+        img.save(b, 'JPEG', quality=int(rng.uniform(40, 90)))
+        b.seek(0)
+        img = Image.open(b).convert('L').resize((w, h), Image.BILINEAR)
+        x = np.asarray(img, dtype=np.float32) / 255.0
+    lo = float(np.percentile(x, 60))                   # 추론과 동일 바닥 제거
+    if lo > 0.03:
+        x = np.clip((x - lo) / max(1e-3, 1.0 - lo), 0, 1)
+    return x
 
 
 def _load_index(data):
@@ -378,7 +451,11 @@ def _batchify(rows, bs, rng, aug):
         for k, r in enumerate(ch):
             x = r['_img'].astype(np.float32) / 255.0
             if aug and rng is not None:
-                x = D.augment(x, np.random.default_rng(), s=float(rng.random()) * 0.8)
+                g2 = np.random.default_rng()
+                if g2.random() < 0.5:              # 실물 사진풍 (v5)
+                    x = _photo_wash(x, g2)
+                else:                              # 기존 렌더 열화
+                    x = D.augment(x, g2, s=float(rng.random()) * 0.8)
                 if x.shape != r['_img'].shape:
                     x = np.asarray(Image.fromarray((x * 255).astype(np.uint8))
                                    .resize(r['_img'].shape[::-1]),
@@ -480,6 +557,7 @@ def main():
                     help='후보 선택용 현 판독기 폴더(v4 부트스트랩)')
     ap.add_argument('--epochs', type=int, default=8)
     ap.add_argument('--batch', type=int, default=32)
+    ap.add_argument('--jobs', type=int, default=8, help='bake 병렬 스레드')
     a = ap.parse_args()
     dict(bake=cmd_bake, train=cmd_train, eval=cmd_eval)[a.cmd](a)
 
