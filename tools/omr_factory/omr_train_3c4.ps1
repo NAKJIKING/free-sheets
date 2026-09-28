@@ -43,10 +43,10 @@ while ($true) {
 }
 
 Log '=== 3c4 stage5 eval_3c(3c 판정: 마커×판독기 + 셈여림) ==='
-cmd /c ".venv\Scripts\python.exe -u tools\omr_factory\eval_3c.py --data C:/Users/user/omr_lines3c --model $OUT --tempo-head C:/Users/user/omr_tempo_head --out C:/Users/user/omr_gate3c_3 >> $LOG 2>&1"
+cmd /c ".venv\Scripts\python.exe -u tools\omr_factory\eval_3c.py --data C:/Users/user/omr_lines3c --model $OUT --tempo-head C:/Users/user/omr_tempo_head --out C:/Users/user/omr_gate3c_4 >> $LOG 2>&1"
 if ($LASTEXITCODE -ne 0) { Log "PIPELINE_FAIL eval_3c rc=$LASTEXITCODE"; exit 3 }
 Log '=== 3c4 stage5b evaluate(3c 시험셋 전체 NER) ==='
-cmd /c ".venv\Scripts\python.exe -u tools\omr_factory\evaluate.py --data C:/Users/user/omr_lines3c --model $OUT --out C:/Users/user/omr_gate3c_full_3 --workers 2 >> $LOG 2>&1"
+cmd /c ".venv\Scripts\python.exe -u tools\omr_factory\evaluate.py --data C:/Users/user/omr_lines3c --model $OUT --out C:/Users/user/omr_gate3c_full_4 --workers 2 >> $LOG 2>&1"
 if ($LASTEXITCODE -ne 0) { Log "PIPELINE_FAIL eval_full rc=$LASTEXITCODE"; exit 3 }
 Log '=== 3c4 stage5c eval_structure(3b 구조 회귀 + 전개 곡 추적 지표) ==='
 cmd /c ".venv\Scripts\python.exe -u tools\omr_factory\eval_structure.py --data C:/Users/user/omr_lines3b --model $OUT --out C:/Users/user/omr_gate3b_struct_3c4 >> $LOG 2>&1"
