@@ -61,15 +61,23 @@ def main():
     ap.add_argument('--ckpt', default='best.pt')
     ap.add_argument('--out', required=True)
     ap.add_argument('--batch', type=int, default=8)
+    ap.add_argument('--onnx', default='',
+                    help='ONNX 경로 — 지정 시 onnxruntime(CPU) 백엔드')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
     vocab = D.Vocab.load(os.path.join(a.model, 'vocab.json'))
-    dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    st = torch.load(os.path.join(a.model, a.ckpt), map_location=dev)
-    net = CRNN(len(vocab)).to(dev)
-    net.load_state_dict(st['net'])
-    net.eval()
+    if a.onnx:
+        from ort_model import OrtCRNN
+        dev = torch.device('cpu')
+        net = OrtCRNN(a.onnx)
+        st = {}
+    else:
+        dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        st = torch.load(os.path.join(a.model, a.ckpt), map_location=dev)
+        net = CRNN(len(vocab)).to(dev)
+        net.load_state_dict(st['net'])
+        net.eval()
 
     rows = []
     for ln in open(os.path.join(a.data, 'index.jsonl'), encoding='utf-8'):

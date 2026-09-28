@@ -163,6 +163,8 @@ def main():
     ap.add_argument('--auto-cov', action='store_true',
                     help='자동선택을 커버리지(비어있지 않은 보표 수) 우선으로 — 관문 3-0 줄 회수 최적. 실측: NER 19.6→22.9%% 대신 출력단 누락+유령 8.4→5.0%%')
     ap.add_argument('--proof', type=int, default=3, help='증명물 사진 수')
+    ap.add_argument('--onnx', default='',
+                    help='ONNX 경로 — 지정 시 onnxruntime(CPU) 백엔드')
     ap.add_argument('--render', default='C:/Users/user/omr_dense/캐논_플루트.png',
                     help='깨끗한 원본 렌더 — 줄별 정답 역산용')
     a = ap.parse_args()
@@ -175,11 +177,18 @@ def main():
           ' / '.join(f'{i + 1}성부 {len(v)}음' for i, v in enumerate(voices)))
 
     vocab = D.Vocab.load(os.path.join(a.model, 'vocab.json'))
-    dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    st = torch.load(os.path.join(a.model, a.ckpt), map_location=dev)
-    net = CRNN(len(vocab)).to(dev)
-    net.load_state_dict(st['net'])
-    net.eval()
+    if a.onnx:
+        from ort_model import OrtCRNN
+        dev = torch.device('cpu')
+        net = OrtCRNN(a.onnx)
+        st = {}
+        print(f'onnxruntime(CPU) 백엔드: {a.onnx}', flush=True)
+    else:
+        dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        st = torch.load(os.path.join(a.model, a.ckpt), map_location=dev)
+        net = CRNN(len(vocab)).to(dev)
+        net.load_state_dict(st['net'])
+        net.eval()
     line_truth = build_line_truth(a.render, net, vocab, dev, voices)
     print(f'줄별 정답 {len(line_truth)}줄 역산 완료: ' +
           ' '.join(f'{vi + 1}성부{len(seq)}음' for vi, seq in line_truth))

@@ -102,6 +102,8 @@ def main():
     ap.add_argument('--workers', type=int, default=6)
     ap.add_argument('--gate-song', default='original:elise')
     ap.add_argument('--bpm', type=int, default=84)
+    ap.add_argument('--onnx', default='',
+                    help='ONNX 경로 — 지정 시 onnxruntime(CPU) 백엔드(앱 탑재 검증)')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 
@@ -113,12 +115,19 @@ def main():
     print(f'{a.split} {len(rows)}줄 / 너무짧아 버림 {drop}줄 / '
           f'어휘밖 토큰 {nunk}개(오류로 계산) / 어휘 {len(vocab)}종')
 
-    dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    st = torch.load(os.path.join(a.model, a.ckpt), map_location=dev)
-    net = CRNN(len(vocab)).to(dev)
-    net.load_state_dict(st['net'])
-    net.eval()
-    print(f"체크포인트 에폭 {st.get('epoch')} 검증NER {st.get('ner')}")
+    if a.onnx:
+        from ort_model import OrtCRNN
+        dev = torch.device('cpu')
+        net = OrtCRNN(a.onnx)
+        st = {}
+        print(f'onnxruntime(CPU) 백엔드: {a.onnx}')
+    else:
+        dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        st = torch.load(os.path.join(a.model, a.ckpt), map_location=dev)
+        net = CRNN(len(vocab)).to(dev)
+        net.load_state_dict(st['net'])
+        net.eval()
+        print(f"체크포인트 에폭 {st.get('epoch')} 검증NER {st.get('ner')}")
 
     dl = D.ThreadLoader(D.Lines(a.data, rows, vocab, aug=0.0),
                         a.batch, D.collate, workers=a.workers)
