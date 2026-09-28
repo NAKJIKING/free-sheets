@@ -34,7 +34,7 @@ truth = json.load(open('C:/Users/user/omr_dense/truth_canon.json',
 voices = [[(p, d) for p, d, _t in [tuple(t) for t in v] if p > 0]
           for v in truth['voices']]
 line_truth = build_line_truth('C:/Users/user/omr_dense/캐논_플루트.png',
-                              ort, vocab, 'cpu', voices)
+                              ort, vocab, torch.device('cpu'), voices)
 refs = [seq for _vi, seq in line_truth]
 
 pym = json.load(open(os.path.join(PIPE, 'pipe_manifest.json'),
