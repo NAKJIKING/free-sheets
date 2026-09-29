@@ -1,6 +1,9 @@
-// [사진 한 장 전체] 측정 v3 — 검출(켬/끔) isolate 2개 병렬 → 조기 결정
-// (한쪽만 인식, 53장 튜닝 Tc=0.9975·Tn=±2, 생략률 62%·NER +0.12%p) →
+// [사진 한 장 전체] 측정 v4 — 검출(켬/끔) isolate 2개 병렬 → 조기 결정 →
 // 인식된 줄부터 점진 표시. 폰 메모리(RSS)도 기록.
+// v4: 곡 무관 규칙 — 기대 보표 수(14, 캐논 상수) 제거. 조기 결정은
+// **켬/끔 검출 줄 수 차 ≤2 + 켬 신뢰도 ≥0.9975** (캐논 53장 반분 교차:
+// 미학습 절반 +0.106%p·생략 38%, 비캐논 실물 43장 +0.129%p·생략 35%).
+// 상수 점검: 남은 튜닝 상수는 Tc/Tn 과 conf 박빙폭 0.002 뿐(곡 무관 신호).
 // adb 자동실행(route /full)이면 내장 A·B 를 돌리고 결과를 logcat 에 남긴다.
 import 'dart:async';
 import 'dart:convert';
@@ -18,9 +21,8 @@ import 'pipeline/gray.dart';
 import 'pipeline/photo_prep.dart';
 import 'pipeline/prep.dart' as prep;
 
-const _expStaves = 14;
-const _earlyConf = 0.9975; // 53장 튜닝값
-const _earlyNe = 2;
+const _earlyConf = 0.9975; // 캐논 53장 반분 교차 튜닝(미학습 절반 검증)
+const _earlyDiff = 2;      // |켬 검출 줄 − 끔 검출 줄| 허용 — 곡 무관 신호
 
 class LineOut {
   LineOut(this.w, this.data);
@@ -222,11 +224,12 @@ class _FullBenchPageState extends State<FullBenchPage> {
       ]);
       mem();
       final on = results[0], off = results[1];
-      // ① 조기 결정: 검출 줄 수가 기대(14)에 가까운 쪽 먼저 인식
-      final dOn = (on.lines.length - _expStaves).abs();
-      final dOff = (off.lines.length - _expStaves).abs();
-      final first = dOn <= dOff ? on : off;
-      final second = dOn <= dOff ? off : on;
+      // ① 조기 결정(곡 무관): 켬을 먼저 인식하고, 두 검출이 구조적으로
+      // 일치(줄 수 차 ≤_earlyDiff)하며 켬이 확신이면 끔 인식을 생략.
+      final first = on;
+      final second = off;
+      final countAgree =
+          (on.lines.length - off.lines.length).abs() <= _earlyDiff;
       final infer = Stopwatch()..start();
       setState(() =>
           liveLines = '[${first.name == 'on' ? '보정 켬' : '보정 끔'} 인식]\n');
@@ -235,8 +238,7 @@ class _FullBenchPageState extends State<FullBenchPage> {
       _Decoded picked;
       String pickName;
       var skipped = false;
-      if (dFirst.conf >= _earlyConf &&
-          (dFirst.nonempty - _expStaves).abs() <= _earlyNe) {
+      if (countAgree && dFirst.conf >= _earlyConf) {
         picked = dFirst;
         pickName = first.name;
         skipped = true;
@@ -248,13 +250,14 @@ class _FullBenchPageState extends State<FullBenchPage> {
         mem();
         final onD = first.name == 'on' ? dFirst : dSecond;
         final offD = first.name == 'on' ? dSecond : dFirst;
+        // 박빙(0.002)이면 비어있지 않은 줄이 많은 쪽 — 기대 줄 수(곡 상수)
+        // 를 쓰지 않는 곡 무관 동률 규칙.
         if ((onD.conf - offD.conf).abs() > 0.002) {
           pickName = onD.conf >= offD.conf ? 'on' : 'off';
+        } else if (onD.nonempty != offD.nonempty) {
+          pickName = onD.nonempty > offD.nonempty ? 'on' : 'off';
         } else {
-          final a = (onD.nonempty - _expStaves).abs();
-          final b = (offD.nonempty - _expStaves).abs();
-          pickName =
-              (a < b || (a == b && onD.conf >= offD.conf)) ? 'on' : 'off';
+          pickName = onD.conf >= offD.conf ? 'on' : 'off';
         }
         picked = pickName == 'on' ? onD : offD;
       }
@@ -318,7 +321,7 @@ class _FullBenchPageState extends State<FullBenchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('사진 한 장 전체 측정 v3')),
+      appBar: AppBar(title: const Text('사진 한 장 전체 측정 v4')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
