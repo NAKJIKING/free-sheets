@@ -9,6 +9,29 @@ const interline = 12.0;
 const normHeight = 160;
 const minW = 32, maxW = 4096;
 
+/// 정규화 텐서(160×w, 오선 간격 12·중앙 80)의 오선 대비 — 다섯 오선 행
+/// (±1행 중 최대)의 평균 잉크 − 오선 사이 네 행 평균. 진짜 보표는 크고
+/// 제목·여백 오검출은 0 근처. ghost_diag.staff_q 와 같은 식(v5 가짜 줄 제거).
+double staffQ(Float32List a, int w) {
+  double row(int r) {
+    var s = 0.0;
+    for (var x = 0; x < w; x++) {
+      s += a[r * w + x];
+    }
+    return s / w;
+  }
+
+  var s = 0.0;
+  for (final r in const [56, 68, 80, 92, 104]) {
+    s += math.max(row(r - 1), math.max(row(r), row(r + 1)));
+  }
+  var b = 0.0;
+  for (final r in const [62, 74, 86, 98]) {
+    b += row(r);
+  }
+  return s / 5 - b / 4;
+}
+
 /// gray(1=밝음) → 잉크=1 이진배열. 국소 평균보다 k 어두우면 잉크.
 GrayF32 localBinarize(GrayF32 gray, {int win = 31, double k = 0.12}) {
   final mean = boxBlur(gray, math.max(3, win ~/ 2));

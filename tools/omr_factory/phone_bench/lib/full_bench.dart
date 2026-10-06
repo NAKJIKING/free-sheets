@@ -1,5 +1,8 @@
-// [사진 한 장 전체] 측정 v4 — 검출(켬/끔) isolate 2개 병렬 → 조기 결정 →
+// [사진 한 장 전체] 측정 v5 — 검출(켬/끔) isolate 2개 병렬 → 조기 결정 →
 // 인식된 줄부터 점진 표시. 폰 메모리(RSS)도 기록.
+// v5: 가짜 줄(제목·여백 오검출) 제거 — 토큰 없는 줄, 또는 (음표 ≤2 이고
+// 오선 대비 < 페이지 중앙값×0.3)인 줄을 최종 출력에서 뺀다. 선택(켬/끔)
+// 규칙은 v4 그대로. 캐논 53장 −0.022%p·비캐논 43장 −0.042%p(ghost_diag.py).
 // v4: 곡 무관 규칙 — 기대 보표 수(14, 캐논 상수) 제거. 조기 결정은
 // **켬/끔 검출 줄 수 차 ≤2 + 켬 신뢰도 ≥0.9975** (캐논 53장 반분 교차:
 // 미학습 절반 +0.106%p·생략 38%, 비캐논 실물 43장 +0.129%p·생략 35%).
@@ -23,7 +26,8 @@ import 'pipeline/prep.dart' as prep;
 
 const _earlyConf = 0.9975; // 캐논 53장 반분 교차 튜닝(미학습 절반 검증)
 const _earlyDiff = 2;      // |켬 검출 줄 − 끔 검출 줄| 허용 — 곡 무관 신호
-
+const _ghostNotes = 2;     // 가짜 줄 후보: 음표 이 수 이하
+const _ghostStaffQ = 0.3;  // 오선 대비가 페이지 중앙값의 이 비율 미만이면 가짜
 class LineOut {
   LineOut(this.w, this.data);
   final int w;
@@ -75,6 +79,7 @@ class _Decoded {
   double conf = 0;
   int nonempty = 0;
   final ids = <List<int>>[];
+  final sq = <double>[];
 }
 
 class FullBenchPage extends StatefulWidget {
@@ -173,6 +178,7 @@ class _FullBenchPageState extends State<FullBenchPage> {
       final use = frames.length < t ? frames : frames.sublist(0, t);
       final ids = _greedy(use);
       d.ids.add(ids);
+      d.sq.add(prep.staffQ(li.data, li.w));
       if (ids.isNotEmpty) d.nonempty++;
       for (final f in use) {
         final row = (f as List).cast<double>();
@@ -262,9 +268,22 @@ class _FullBenchPageState extends State<FullBenchPage> {
         picked = pickName == 'on' ? onD : offD;
       }
       final inferMs = infer.elapsedMilliseconds;
+      // v5 가짜 줄 제거 — 선택된 쪽의 최종 출력에만 적용(선택 규칙 불변)
+      final sqs = [...picked.sq]..sort();
+      final sqMed = sqs.isEmpty ? 1.0 : sqs[sqs.length ~/ 2];
+      final ghosts = <int>[];
       var notes = 0;
-      for (final l in picked.ids) {
-        notes += _notesOf(l);
+      final kept = StringBuffer();
+      for (var i = 0; i < picked.ids.length; i++) {
+        final n = _notesOf(picked.ids[i]);
+        final ghost = picked.ids[i].isEmpty ||
+            (n <= _ghostNotes && picked.sq[i] < _ghostStaffQ * sqMed);
+        if (ghost) {
+          ghosts.add(i + 1);
+          continue;
+        }
+        notes += n;
+        kept.writeln('  줄 ${i + 1}: 음표 $n개');
       }
       final totalMs = total.elapsedMilliseconds;
       final rssMb = (rssPeak / (1 << 20)).round();
@@ -277,7 +296,10 @@ class _FullBenchPageState extends State<FullBenchPage> {
             '${skipped ? "— 조기 결정, ${second.name == 'on' ? '켬' : '끔'} 건너뜀" : "(양쪽)"}')
         ..writeln(
             '  선택 ${pickName == 'on' ? '보정 켬' : '보정 끔'} / 음표 $notes개')
-        ..writeln('  메모리 최고  $rssMb MB');
+        ..writeln('  가짜 줄 제외 ${ghosts.isEmpty ? '없음' : '줄 ${ghosts.join('·')}'}'
+            ' → 최종 ${picked.ids.length - ghosts.length}줄')
+        ..writeln('  메모리 최고  $rssMb MB')
+        ..write(kept);
       debugPrint('OMRBENCH_RESULT ${jsonEncode({
             'name': name,
             'totalMs': totalMs,
@@ -289,6 +311,7 @@ class _FullBenchPageState extends State<FullBenchPage> {
             'skipped': skipped,
             'pick': pickName,
             'notes': notes,
+            'ghosts': ghosts,
             'rssPeakMb': rssMb,
           })}');
       setState(() {
@@ -321,7 +344,7 @@ class _FullBenchPageState extends State<FullBenchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('사진 한 장 전체 측정 v4')),
+      appBar: AppBar(title: const Text('사진 한 장 전체 측정 v5')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

@@ -39,6 +39,7 @@ void main(List<String> args) {
           'cy': double.parse(c.cy.toStringAsFixed(2)),
           'gap': double.parse(c.gap.toStringAsFixed(3)),
           'box': c.box,
+          'sq': prep.staffQ(tensor.data, tensor.w),
         });
       }
       entry['sides'][side] = {
