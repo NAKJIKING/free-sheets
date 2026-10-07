@@ -63,6 +63,43 @@ void main() {
     });
   });
 
+  group('파트 SMF', () {
+    test('1파트 = writeMidi 와 같은 바이트, 2파트 = 형식 1·트랙 2·채널 0/1', () {
+      final a = [const ScoreNote(0, 12, 60, 80)];
+      final b = [const ScoreNote(0, 24, 55, 80)];
+      expect(writeMidiParts([a], bpm: 100), writeMidi(a, bpm: 100));
+      final m = writeMidiParts([a, b], bpm: 100);
+      expect(m.sublist(8, 14), [0, 1, 0, 2, 1, 0xe0]);
+      // 둘째 트랙에는 빠르기 메타가 없고 채널 1 로 연주
+      final second = m.lastIndexOf(0x4d); // 'M' of last MTrk
+      expect(String.fromCharCodes(m.sublist(second, second + 4)), 'MTrk');
+      expect(m.sublist(second + 8, second + 11), [0x00, 0xc1, 0]);
+      expect(m.sublist(second + 11, second + 15), [0x00, 0x91, 55, 80]);
+    });
+  });
+
+  group('파트 나누기', () {
+    ScanLine at(double cy) => ScanLine(
+        decode: LineDecode([1], 0.99, 10),
+        toks: [n(60, 12)],
+        w: 400,
+        sq: 1,
+        cy: cy,
+        gap: 10);
+    test('간격이 고르면 1파트', () {
+      expect(groupParts([for (var i = 0; i < 8; i++) at(100.0 + 100 * i)]).k, 1);
+    });
+    test('작은·큰 교대면 2파트, 빠진 보표는 자리 추정 + 쉼표 채움', () {
+      // 단 안 100, 단 사이 250(단 간격 350) — 둘째 단의 아래 보표 누락
+      final ls = [at(0), at(100), at(350), at(700), at(800)];
+      final g = groupParts(ls);
+      expect(g.k, 2);
+      expect(g.systems[1], [(0, 2)]);
+      final pt = partTokens(ls, g);
+      expect(pt[1][1], const Tok(0, 12, false)); // 빠진 자리는 그 단 길이 쉼표
+    });
+  });
+
   group('가짜 줄', () {
     ScanLine line(int notes, double sq) => ScanLine(
         decode: LineDecode(List.filled(math.max(notes, 0), 1), 0.99, 10),

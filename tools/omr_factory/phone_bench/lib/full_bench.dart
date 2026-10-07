@@ -344,7 +344,7 @@ class _FullBenchPageState extends State<FullBenchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('사진 한 장 전체 측정 v5')),
+      appBar: AppBar(title: const Text('사진 한 장 전체 측정 v6')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

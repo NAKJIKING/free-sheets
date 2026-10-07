@@ -99,6 +99,35 @@ def render():
         print(name, os.path.exists(stem + '.png'), flush=True)
 
 
+def lines_of(img):
+    """폰과 같은 처리: 끔 경로(깨끗한 렌더라 보정 불필요) + 줄당 B=1 디코드."""
+    import torch
+    import torch.nn.functional as F
+    import dataset as D
+    import photo_prep
+    import prep
+    from model import greedy_decode
+    from ort_model import OrtCRNN
+    sys.path.insert(0, r'C:\Users\user\free-sheets\tools\omr_factory\phone_bench')
+    from ghost_diag import ONNX, MODEL, staff_q
+    global _net, _vocab
+    if '_net' not in globals():
+        _net = OrtCRNN(ONNX)
+        _vocab = D.Vocab.load(os.path.join(MODEL, 'vocab.json'))
+    out = []
+    for c, cy, g in photo_prep.extract_lines(img, correct=False, with_pos=True):
+        a = prep.normalize_photo(c, gap_hint=g)
+        lg = _net(torch.from_numpy(a)[None, None]).float()
+        n = max(1, a.shape[1] // 4)
+        ids = greedy_decode(lg, torch.tensor([n]))[0]
+        toks = [list(_vocab.itos[k]) for k in ids if k > 0]
+        out.append(dict(toks=toks, notes=sum(1 for t in toks if t[0] > 0),
+                        sq=staff_q(a)[0], w=int(a.shape[1]), cy=float(cy),
+                        gap=float(g),
+                        conf=float(F.softmax(lg, -1).max(-1).values[0, :n].mean())))
+    return out
+
+
 def dump():
     """96장 선택 경로의 가짜 제외 줄 텐서를 uint8 npz 로 캐시(실험 반복용)."""
     import numpy as np
@@ -149,23 +178,22 @@ def evaluate():
     import prep
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import poly_signals as S
+    from ref_parts import group_parts
 
     def frac(stats):
         n = sum(a for a, _ in stats)
         return sum(b for _, b in stats) / n if n else 0.0
 
-    print('[렌더]  이름  쌓인머리비율  보표쌍(교대·간격비)  경고')
+    print('[렌더]  이름  쌓인머리비율  파트수  화음경고')
     pages = [p for p in sorted(glob.glob(os.path.join(OUT, '*.png')))
              if 'dbg' not in p] + ['C:/Users/user/omr_dense/캐논_플루트.png']
     for p in pages:
         res = photo_prep.extract_lines(p, correct=False, with_pos=True)
         st = [S.head_stats(prep.normalize_photo(c, gap_hint=g)) for c, _y, g in res]
-        alt, ratio = S.paired([dict(cy=y, gap=g) for _c, y, g in res])
+        k = group_parts([dict(cy=y, gap=g) for _c, y, g in res])['k']
         f = frac(st)
-        warn = f >= S.STACKED_FRAC_WARN or (alt >= S.PAIR_ALT_MIN and
-                                            ratio >= S.PAIR_RATIO_MIN)
-        print(f'  {os.path.basename(p)[:-4]:12s} {f:.3f}  {alt:.2f}·{ratio:.2f}  '
-              f'{"경고" if warn else "-"}')
+        print(f'  {os.path.basename(p)[:-4]:12s} {f:.3f}  {k}  '
+              f'{"경고" if f >= S.STACKED_FRAC_WARN else "-"}')
     for set_name in ('canon', 'real'):
         fr = []
         for f in sorted(glob.glob(os.path.join(OUT, 'tensors', set_name + '_*.npz'))):

@@ -7,6 +7,7 @@ import 'dart:typed_data';
 
 import 'ctc.dart';
 import 'monophony.dart';
+import 'parts.dart';
 import 'pipeline/gray.dart';
 import 'pipeline/photo_prep.dart';
 import 'pipeline/prep.dart' as prep;
@@ -110,7 +111,30 @@ class ScanResult {
   double get conf => SideResult(side, kept).conf;
 
   List<List<Tok>> get keptTokens => [for (final l in kept) l.toks];
-  List<ScoreNote> get notes => buildScore(keptTokens);
+
+  /// 단(시스템)·파트 나누기 — 가짜 줄을 뺀 줄 기준.
+  PartGrouping get grouping => groupParts(kept);
+
+  /// 파트 수(1 = 단선율).
+  int get partCount => grouping.k;
+
+  /// 파트별 토큰열(위 파트부터). 단선율이면 줄을 위→아래로 이은 것 하나.
+  List<List<Tok>> get partTokenLists => partTokens(kept, grouping);
+
+  /// 파트별 연주 음표.
+  List<List<ScoreNote>> get partNotes =>
+      [for (final p in partTokenLists) buildScore([p])];
+
+  /// 파트별 길이(틱) — 끝 쉼표 보존용.
+  List<int> get partTicks => [for (final p in partTokenLists) scoreLength([p])];
+
+  /// 다성부 안내(경고 아님). 단선율이면 null.
+  String? get partsMessage =>
+      partCount >= 2 ? '$partCount성부 악보로 인식했어요. 미리듣기에서 파트를 골라 들을 수 있어요.' : null;
+
+  /// 전체 미디 — 단선율은 형식 0(기존과 같은 바이트), 다성부는 파트별 트랙.
+  Uint8List midi({double bpm = 90}) =>
+      writeMidiParts(partNotes, bpm: bpm, totalTicks: partTicks);
 }
 
 /// 음표가 이보다 적으면 실패로 본다(설계 5절).
@@ -166,8 +190,7 @@ class Scanner {
       for (var i = 0; i < ghost.length; i++)
         if (!ghost[i]) i,
     ];
-    final mono = monophony([for (final i in keptIdx) picked.lines[i]],
-        [for (final i in keptIdx) heads[picked.name]![i]]);
+    final mono = monophony([for (final i in keptIdx) heads[picked.name]![i]]);
     final res = ScanResult(
         side: picked.name,
         skipped: skipped,

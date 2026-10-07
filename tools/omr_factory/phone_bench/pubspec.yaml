@@ -34,7 +34,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  onnxruntime: ^1.4.1
+  # S3: pub 캐시 패치 금지 — 저장소에 포함한 1.4.1(compileSdk 36 패치, VENDORED.md)
+  onnxruntime:
+    path: ../third_party/onnxruntime-1.4.1
   device_info_plus: ^13.2.0
   image: ^4.10.1
   image_picker: ^1.2.3

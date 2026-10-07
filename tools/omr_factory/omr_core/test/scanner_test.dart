@@ -50,10 +50,14 @@ void main() {
       expect(r.ghost.where((g) => g), isEmpty);
       expect(r.noteCount, greaterThan(100));
       expect(r.tooFewNotes, isFalse);
-      // 캐논은 2중주 — 보표 쌍 경고가 떠야 한다
-      expect(r.mono.pairedStaves, isTrue, reason: '${r.mono.pairAlt} ${r.mono.pairRatio}');
+      // 캐논은 2중주 — 경고가 아니라 2파트로 나뉘어야 한다
+      expect(r.mono.warn, isFalse);
+      expect(r.partCount, 2, reason: 'ratio ${r.grouping.ratio}');
+      expect(r.partsMessage, contains('2성부'));
+      final m = r.midi();
+      expect(m.sublist(8, 12), [0, 1, 0, 2]); // 형식 1, 트랙 2
       expect(events.whereType<LineEvent>().length, 14);
-      expect(r.notes, isNotEmpty);
+      expect(r.partNotes.every((p) => p.isNotEmpty), isTrue);
       expect(r.timings['total'], greaterThan(0));
     }, timeout: const Timeout(Duration(minutes: 3)));
   }

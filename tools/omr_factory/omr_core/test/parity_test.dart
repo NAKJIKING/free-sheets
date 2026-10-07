@@ -34,8 +34,9 @@ void main() {
   final vocab = Vocab.fromJsonString(File(vocabPath).readAsStringSync());
   final photos = (fx['photos'] as List).cast<Map<String, dynamic>>();
 
-  test('선택·조기결정·가짜줄·보표쌍·음표·SMF — ${photos.length}장 파이썬 일치', () {
-    var midiSame = 0;
+  test('선택·조기결정·가짜줄·파트·음표·SMF — ${photos.length}장 파이썬 일치', () {
+    var midiSame = 0, partMidiSame = 0, onePartSame = 0;
+    final kDist = <int, int>{};
     for (final p in photos) {
       final name = p['photo'] as String;
       final on = side('on', p['on'], vocab), off = side('off', p['off'], vocab);
@@ -48,11 +49,33 @@ void main() {
       final gm = ghostMask(picked.lines);
       expect(gm, (p['ghost'] as List).cast<bool>(), reason: name);
       final kept = keptLines(picked.lines);
-      final mono = monophony(kept, [for (final _ in kept) const HeadStats(0, 0)]);
-      expect(mono.pairAlt, closeTo((p['pair_alt'] as num).toDouble(), 1e-9),
+      // 파트 나누기 — 단·파트 배정, 파트별 음표, 파트 SMF
+      final g = groupParts(kept);
+      expect(g.k, p['k'], reason: name);
+      kDist[g.k] = (kDist[g.k] ?? 0) + 1;
+      expect(
+          [
+            for (final sy in g.systems) [for (final (j, i) in sy) [j, i]],
+          ],
+          (p['systems'] as List)
+              .map((sy) => (sy as List).map((x) => (x as List).cast<int>()).toList())
+              .toList(),
           reason: name);
-      expect(mono.pairRatio, closeTo((p['pair_ratio'] as num).toDouble(), 1e-9),
+      final pt = partTokens(kept, g);
+      final pn = [for (final t in pt) buildScore([t])];
+      expect(
+          pn,
+          [
+            for (final part in (p['part_notes'] as List).cast<List>())
+              [
+                for (final n in part.cast<List>())
+                  ScoreNote(n[0] as int, n[1] as int, n[2] as int, n[3] as int),
+              ],
+          ],
           reason: name);
+      final pmidi = writeMidiParts(pn,
+          bpm: 90, totalTicks: [for (final t in pt) scoreLength([t])]);
+      if (base64Encode(pmidi) == p['part_midi']) partMidiSame++;
       final toks = [for (final l in kept) l.toks];
       final notes = buildScore(toks);
       expect(
@@ -65,8 +88,13 @@ void main() {
       expect(scoreLength(toks), p['total'], reason: name);
       final midi = writeMidi(notes, bpm: 90, totalTicks: scoreLength(toks));
       if (base64Encode(midi) == p['midi']) midiSame++;
+      // 단선율 회귀: 1파트면 파트 SMF = 파트 나누기 전 SMF(바이트)
+      if (g.k == 1 && base64Encode(pmidi) == base64Encode(midi)) onePartSame++;
     }
     expect(midiSame, photos.length, reason: 'SMF 바이트 일치');
+    expect(partMidiSame, photos.length, reason: '파트 SMF 바이트 일치');
+    expect(onePartSame, kDist[1] ?? 0, reason: '1파트 회귀');
+    expect(kDist, {2: 53, 1: 43}, reason: '캐논 2파트·단선율 1파트');
   });
 
   test('staffQ·음표머리 통계 — 텐서 파이썬 일치', () {

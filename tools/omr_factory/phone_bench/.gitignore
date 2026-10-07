@@ -1,2 +1,5 @@
 assets/
 build/
+.dart_tool/
+.flutter-plugins-dependencies
+__pycache__/

@@ -221,7 +221,7 @@ class _BenchPageState extends State<BenchPage> {
       body.writeln(_fmt(r));
     }
     return Scaffold(
-      appBar: AppBar(title: const Text('OMR 폰 속도 시험 v5')),
+      appBar: AppBar(title: const Text('OMR 폰 속도 시험 v6 (1.4.1 포함본)')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

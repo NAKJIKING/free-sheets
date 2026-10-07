@@ -2,7 +2,9 @@
 library;
 
 export 'src/ctc.dart';
+export 'src/model_store.dart';
 export 'src/monophony.dart';
+export 'src/parts.dart';
 export 'src/pipeline/gray.dart' show GrayF32, decodeGray;
 export 'src/pipeline/photo_prep.dart' show LineCrop, extractLines;
 export 'src/pipeline/prep.dart' show normalizePhoto, staffQ;

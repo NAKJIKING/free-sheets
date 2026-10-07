@@ -48,6 +48,29 @@ def _vlq(v):
     return bytes(reversed(b))
 
 
+def write_midi_parts(parts, totals, bpm=90, program=0):
+    """파트별 SMF — 파트 하나면 write_midi_bytes 와 같은 바이트(형식 0),
+    둘 이상이면 형식 1·파트마다 트랙·채널 j(9 건너뜀)·빠르기는 첫 트랙."""
+    if len(parts) == 1:
+        return write_midi_bytes(parts[0], totals[0], bpm, program)
+    out = b'MThd' + struct.pack('>IHHH', 6, 1, len(parts), TPQ)
+    k = TPQ // Q
+    for j, (notes, total) in enumerate(zip(parts, totals)):
+        ch = j if j < 9 else j + 1
+        ev = bytearray()
+        if j == 0:
+            ev += b'\x00\xff\x51\x03' + struct.pack('>I', int(60_000_000 / bpm))[1:]
+        ev += bytes([0x00, 0xc0 | ch, program])
+        at = 0
+        for s, d, p, v in notes:
+            ev += _vlq((s - at) * k) + bytes([0x90 | ch, p, v])
+            ev += _vlq(d * k) + bytes([0x80 | ch, p, 0])
+            at = s + d
+        ev += _vlq(max(0, total - at) * k) + b'\xff\x2f\x00'
+        out += b'MTrk' + struct.pack('>I', len(ev)) + bytes(ev)
+    return out
+
+
 def write_midi_bytes(notes, total, bpm=90, program=0):
     ev = bytearray()
     ev += b'\x00\xff\x51\x03' + struct.pack('>I', int(60_000_000 / bpm))[1:]

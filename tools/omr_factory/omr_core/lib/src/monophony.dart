@@ -1,17 +1,15 @@
-// 단선율 아님 징후 — 결과 화면 경고용. 파이썬 기준: omr_core/tool/poly_signals.py
-// (head_mask·head_blobs2·paired). 보정 근거는 진행일지 S1 절.
+// 화음(한 박자에 여러 음) 징후 — 결과 화면 경고용. 파이썬 기준:
+// omr_core/tool/poly_signals.py (head_mask·head_blobs·head_stats). 보정 근거는
+// 진행일지 2026-10-07 S1 절. 보표 쌍(2중주 등)은 경고가 아니라 파트 나누기
+// 대상이다 — parts.dart(사장님 지적 10-07: 2중주의 각 보표는 단선율).
 //
 // 모델은 화음을 한 음으로 확신 있게 읽는다(렌더 실측: 3화음 줄 신뢰도 0.988,
-// 피아노 0.999) — 토큰만으로는 화음을 알 수 없어서 **이미지 신호** 두 가지를 쓴다.
-//  ① 쌓인 음표머리: 오선 행 제거 → 빈 머리 속 채우기 → 열기 7 로 기둥·빔·
+// 피아노 0.999) — 토큰만으로는 화음을 알 수 없어서 **이미지 신호**를 쓴다.
+//  쌓인 음표머리: 오선 행 제거 → 빈 머리 속 채우기 → 열기 7 로 기둥·빔·
 //     덧줄·임시표 획을 지운 뒤, 음표머리 폭(12~22px) 덩어리 중 높이 24px
-//     (2칸) 이상인 것의 비율. 한계: 빈 머리(2분·온음표) 화음은 잘 못 잡는다
-//     — 피아노 악보는 ②가 잡는다.
-//  ② 보표 쌍: 줄 중심 간격이 작은·큰 두 값으로 교대(피아노 큰보표·2중주).
+//     (2칸) 이상인 것의 비율. 한계: 빈 머리(2분·온음표) 화음·2도 화음은 약하다.
 import 'dart:math' as math;
 import 'dart:typed_data';
-
-import 'select.dart';
 
 /// 쌓인 머리 비율 문턱 — 이 이상이면 "여러 음이 겹친 곳" 경고.
 /// 보정(진행일지 S1): 렌더 3화음 1.00·2중음 0.22 / 단선율 함정 0~0.01,
@@ -32,9 +30,6 @@ const headSkipPx = 160;
 
 /// 정규화 텐서의 오선 행(간격 12, 중앙 80).
 const staffRows = [56, 68, 80, 92, 104];
-
-/// 보표 쌍 판정: 교대율·간격비·최소 줄 수.
-const pairAltMin = 0.8, pairRatioMin = 1.2, pairMinLines = 4;
 
 /// 줄 하나의 음표머리 통계.
 class HeadStats {
@@ -179,72 +174,25 @@ HeadStats headStats(Float32List a, int w, {int h = 160}) {
 
 /// 페이지 단위 판정.
 class MonophonyReport {
-  const MonophonyReport({
-    required this.stackedFrac,
-    required this.pairAlt,
-    required this.pairRatio,
-  });
+  const MonophonyReport(this.stackedFrac);
   final double stackedFrac;
-  final double pairAlt;
-  final double pairRatio;
 
-  bool get stacked => stackedFrac >= stackedFracWarn;
-  bool get pairedStaves => pairAlt >= pairAltMin && pairRatio >= pairRatioMin;
-
-  /// 경고를 띄울지.
-  bool get warn => stacked || pairedStaves;
+  /// 경고를 띄울지 — 쌓인 음표머리(진짜 화음)일 때만.
+  bool get warn => stackedFrac >= stackedFracWarn;
 
   /// 결과 화면 경고 문구(없으면 null).
-  String? get message {
-    if (stacked && pairedStaves) {
-      return '화음이나 두 줄 보표(피아노·2중주) 악보로 보여요. 한 줄 선율만 '
-          '인식하므로 겹친 음은 하나만 들리고, 두 보표는 이어서 들려요.';
-    }
-    if (stacked) {
-      return '한 박자에 여러 음이 겹친 곳이 보여요. 한 줄 선율만 인식하므로 '
-          '겹친 음은 하나만 들려요.';
-    }
-    if (pairedStaves) {
-      return '두 줄씩 묶인 보표(피아노·2중주)로 보여요. 성부를 나누지 못해 '
-          '위아래 보표를 차례로 이어서 들려요.';
-    }
-    return null;
-  }
+  String? get message => warn
+      ? '한 박자에 여러 음이 겹친 곳(화음)이 보여요. 한 줄 선율만 인식하므로 '
+          '겹친 음은 하나만 들려요.'
+      : null;
 }
 
-/// [lines]: 가짜 줄을 뺀 줄(위→아래), [heads]: 같은 순서의 음표머리 통계.
-MonophonyReport monophony(List<ScanLine> lines, List<HeadStats> heads) {
+/// [heads]: 가짜 줄을 뺀 줄들의 음표머리 통계.
+MonophonyReport monophony(List<HeadStats> heads) {
   var n = 0, tall = 0;
   for (final h in heads) {
     n += h.heads;
     tall += h.tall;
   }
-  var alt = 0.0, ratio = 0.0;
-  if (lines.length >= pairMinLines) {
-    final gaps = [for (final l in lines) l.gap]..sort();
-    final g = gaps[gaps.length ~/ 2];
-    final d = [
-      for (var i = 1; i < lines.length; i++) (lines[i].cy - lines[i - 1].cy) / g,
-    ];
-    final lo = d.reduce(math.min), hi = d.reduce(math.max);
-    final mid = (lo + hi) / 2;
-    final big = [for (final x in d) x > mid];
-    final nb = big.where((b) => b).length;
-    if (nb > 0 && nb < big.length) {
-      var flips = 0;
-      for (var i = 1; i < big.length; i++) {
-        if (big[i] != big[i - 1]) flips++;
-      }
-      alt = flips / (big.length - 1);
-      double med(Iterable<double> xs) {
-        final s = xs.toList()..sort();
-        return s[s.length ~/ 2];
-      }
-
-      ratio = med([for (var i = 0; i < d.length; i++) if (big[i]) d[i]]) /
-          med([for (var i = 0; i < d.length; i++) if (!big[i]) d[i]]);
-    }
-  }
-  return MonophonyReport(
-      stackedFrac: n == 0 ? 0.0 : tall / n, pairAlt: alt, pairRatio: ratio);
+  return MonophonyReport(n == 0 ? 0.0 : tall / n);
 }

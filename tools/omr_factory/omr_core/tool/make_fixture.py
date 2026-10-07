@@ -5,7 +5,9 @@
     python make_fixture.py   # → C:/Users/user/omr_core_fixture/fixture.json
 
 사진마다 켬/끔 줄(id·신뢰도·프레임·폭·sq·cy·gap)과 파이썬 기대값:
-조기 결정·선택(v4), 가짜 줄(v5), 보표 쌍 신호, 연주 음표·SMF(bpm 90, base64).
+조기 결정·선택(v4), 가짜 줄(v5), 파트 나누기(단·파트·파트별 음표·파트 SMF),
+연주 음표·SMF(bpm 90, base64). 1파트 사진은 파트 SMF 가 기존 SMF 와 같은 바이트인지
+전수 검사(단선율 회귀 없음).
 또 dart_out_v5 텐서(10장×켬끔)의 staffQ·음표머리 통계 기대값.
 SMF 는 셈여림이 없을 때 evaluate.write_midi(unfold(...)) 와 바이트 일치를
 여기서 전수 검사한다(기준 구현 자체의 정합). 출력은 저장소 밖.
@@ -24,7 +26,8 @@ sys.path.insert(0, r'C:\Users\user\free-sheets\tools\omr_factory')
 sys.path.insert(0, r'C:\Users\user\free-sheets\tools\omr_factory\phone_bench')
 import ref_score as R  # noqa: E402
 from ghost_diag import OUT as GD, MODEL, staff_q  # noqa: E402
-from poly_signals import head_stats, paired  # noqa: E402
+from poly_signals import head_stats  # noqa: E402
+from ref_parts import group_parts, part_tokens  # noqa: E402
 
 OUT = 'C:/Users/user/omr_core_fixture'
 DART_OUT = 'C:/Users/user/omr_phone_bench_assets/dart_out_v5'
@@ -62,7 +65,7 @@ def main():
     vocab = json.load(open(os.path.join(MODEL, 'vocab.json'), encoding='utf-8'))
     stoi = {tuple(t): i + 1 for i, t in enumerate(vocab)}
     d = json.load(open(GD, encoding='utf-8'))
-    photos, same_bytes = [], 0
+    photos, same_bytes, one_part_same = [], 0, 0
     for set_name in ('canon', 'real'):
         for e in d[set_name]:
             p, skip = pick(e['on'], e['off'])
@@ -70,7 +73,10 @@ def main():
             lines = e[p]['lines']
             gm = ghost_mask(lines)
             kept = [l for l, g in zip(lines, gm) if not g]
-            alt, ratio = paired(kept)
+            grp = group_parts(kept)
+            ptoks = part_tokens(kept, grp)
+            pn = [R.build_score([pt]) for pt in ptoks]
+            pmidi = R.write_midi_parts([x[0] for x in pn], [x[1] for x in pn], bpm=90)
             toks = [l['toks'] for l in kept]
             notes, total = R.build_score(toks)
             midi = R.write_midi_bytes(notes, total, bpm=90)
@@ -81,6 +87,10 @@ def main():
                     [tuple(t) for l in toks for t in l]), bpm=90)
                 assert open(tmp, 'rb').read() == midi, e['photo']
                 same_bytes += 1
+            # 단선율 회귀: 1파트면 파트 미디 = 기존(파트 나누기 전) 미디 바이트
+            if grp['k'] == 1:
+                assert pmidi == midi, e['photo']
+                one_part_same += 1
 
             def pack(s):
                 return dict(n=len(s['lines']), lines=[dict(
@@ -90,7 +100,10 @@ def main():
             photos.append(dict(
                 photo=f'{set_name}:{e["photo"]}', on=pack(e['on']),
                 off=pack(e['off']), pick=p, skipped=skip, ghost=gm,
-                pair_alt=alt, pair_ratio=ratio,
+                k=grp['k'], systems=[[list(x) for x in sy] for sy in grp['systems']],
+                part_notes=[[list(n) for n in x[0]] for x in pn],
+                part_totals=[x[1] for x in pn],
+                part_midi=base64.b64encode(pmidi).decode(),
                 notes=[list(n) for n in notes], total=total,
                 midi=base64.b64encode(midi).decode()))
     # 텐서 단위: staffQ·음표머리 (다트 파이프라인 출력 텐서 그대로)
@@ -108,7 +121,8 @@ def main():
                                     heads=heads, tall=tall))
     json.dump(dict(photos=photos, tensors=tensors, tensor_dir=DART_OUT),
               open(os.path.join(OUT, 'fixture.json'), 'w'))
-    print(f'사진 {len(photos)}장(SMF 기준 바이트 일치 {same_bytes}장), '
+    print(f'사진 {len(photos)}장(SMF 기준 바이트 일치 {same_bytes}장, '
+          f'1파트 회귀 바이트 일치 {one_part_same}장), '
           f'텐서 {len(tensors)}줄 → {OUT}/fixture.json')
 
 

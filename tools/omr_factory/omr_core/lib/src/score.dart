@@ -151,4 +151,46 @@ Uint8List writeMidi(List<ScoreNote> notes,
   return b.takeBytes();
 }
 
+/// 파트별 SMF. 파트가 하나면 [writeMidi] 와 **같은 바이트**(형식 0 — 단선율
+/// 회귀 없음). 둘 이상이면 형식 1·파트마다 트랙 하나·채널 j(타악기 채널 9 건너뜀),
+/// 빠르기는 첫 트랙에만.
+Uint8List writeMidiParts(List<List<ScoreNote>> parts,
+    {double bpm = 90, int program = 0, List<int>? totalTicks}) {
+  if (parts.length == 1) {
+    return writeMidi(parts[0],
+        bpm: bpm, program: program, totalTicks: totalTicks?.first);
+  }
+  final b = BytesBuilder()
+    ..add('MThd'.codeUnits)
+    ..add(_u32(6))
+    ..add([0, 1, (parts.length >> 8) & 0xff, parts.length & 0xff, tpq >> 8, tpq & 0xff]);
+  const k = tpq ~/ quarter;
+  for (var j = 0; j < parts.length; j++) {
+    final ch = j < 9 ? j : j + 1;
+    final ev = BytesBuilder();
+    if (j == 0) {
+      final us = (60000000 / bpm).floor();
+      ev.add([0x00, 0xff, 0x51, 0x03, (us >> 16) & 0xff, (us >> 8) & 0xff, us & 0xff]);
+    }
+    ev.add([0x00, 0xc0 | ch, program]);
+    var at = 0;
+    for (final n in parts[j]) {
+      _vlq(ev, (n.start - at) * k);
+      ev.add([0x90 | ch, n.key, n.vel]);
+      _vlq(ev, n.dur * k);
+      ev.add([0x80 | ch, n.key, 0]);
+      at = n.start + n.dur;
+    }
+    final total = totalTicks?[j] ?? at;
+    _vlq(ev, (total - at).clamp(0, 1 << 27) * k);
+    ev.add([0xff, 0x2f, 0x00]);
+    final trk = ev.takeBytes();
+    b
+      ..add('MTrk'.codeUnits)
+      ..add(_u32(trk.length))
+      ..add(trk);
+  }
+  return b.takeBytes();
+}
+
 List<int> _u32(int v) => [(v >> 24) & 0xff, (v >> 16) & 0xff, (v >> 8) & 0xff, v & 0xff];
