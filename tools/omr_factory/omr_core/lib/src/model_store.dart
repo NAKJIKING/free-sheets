@@ -1,4 +1,6 @@
 // 인식 모델 내려받기(앱 탑재 S2) — 첫 스캔 때 GitHub 릴리스에서 받아 sha256 검증.
+// ⚠ 보관 모듈: 2026-10-07 모델 비공개 결정으로 1차 앱 흐름에서는 쓰지 않는다
+// (모델은 assets 내장). 진행률·sha256 스트리밍 검증·실패 분류는 Play 에셋 팩 전환 때 재사용.
 //
 // 규칙은 앱의 검수 PDF 저장소(reviewed_pdf_store.dart — 손대지 않음)와 같다:
 //  - 주소는 https://github.com/NAKJIKING/free-sheets/releases/download/<tag>/<name>
@@ -37,7 +39,9 @@ class ModelManifest {
 }
 
 /// 채택 모델(omr_model_3c4 → FP32 ONNX, 진행일지 2026-09-28) 매니페스트.
-/// 릴리스 태그는 아직 게시 전 — 게시는 사장님 승인 후(공개 저장소 자산).
+/// ⚠ 사장님 결정(2026-10-07): 모델은 비공개 — 공개 저장소 릴리스 게시 금지, 이 태그도
+/// 만들지 않는다. 1차 앱은 모델을 assets 로 내장하고 이 모듈을 쓰지 않는다(보관용).
+/// 크기·sha256 은 내장 모델 복사본 검증과 향후 Play 에셋 팩 전환 때 그대로 쓴다.
 const omrModel3c4 = ModelManifest(tag: 'omr-model-3c4-fp32-01', files: [
   ModelFile('omr_crnn_fp32.onnx', 21831332,
       '6dfc1d66aacfccbcefddb87a674da58a9dab33348b271df58b59467b771e78c2'),

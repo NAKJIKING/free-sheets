@@ -1,0 +1,35 @@
+name: onnxruntime_plus
+description: Flutter FFI plugin for ONNX Runtime with iOS Swift Package Manager support and cross-platform Dart bindings.
+version: 1.5.0
+homepage: https://github.com/almasumdev/onnxruntime_plus
+repository: https://github.com/almasumdev/onnxruntime_plus
+issue_tracker: https://github.com/almasumdev/onnxruntime_plus/issues
+
+environment:
+  sdk: '>=2.17.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ffi: ^2.0.1
+
+dev_dependencies:
+  ffigen: ^7.2.11
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  # pana: ^0.21.36
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        ffiPlugin: true
+      ios:
+        ffiPlugin: true
+
+topics:
+  - onnx
+  - ai
+  - machine-learning

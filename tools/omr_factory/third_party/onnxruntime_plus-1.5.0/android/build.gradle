@@ -45,6 +45,10 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 21
+        // The bundled ONNX Runtime 1.22.0 binaries are built against API 24.
+        // Declared here so the manifest merger fails the build on a lower
+        // minSdk, rather than the app installing on API 21-23 and crashing the
+        // first time it dlopen()s libonnxruntime.so.
+        minSdkVersion 24
     }
 }

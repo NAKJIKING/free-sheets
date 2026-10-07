@@ -18,7 +18,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:image_picker/image_picker.dart';
-import 'package:onnxruntime/onnxruntime.dart';
+import 'package:onnxruntime_plus/onnxruntime_plus.dart';
 
 import 'pipeline/gray.dart';
 import 'pipeline/photo_prep.dart';

@@ -1,6 +1,6 @@
 import 'dart:ffi';
 import 'dart:io';
-import 'package:onnxruntime/src/bindings/onnxruntime_bindings_generated.dart';
+import 'package:onnxruntime_plus/src/bindings/onnxruntime_bindings_generated.dart';
 
 final DynamicLibrary _dylib = () {
   if (Platform.isAndroid) {
@@ -12,7 +12,11 @@ final DynamicLibrary _dylib = () {
   }
 
   if (Platform.isMacOS) {
-    return DynamicLibrary.open('libonnxruntime.1.15.1.dylib');
+    try {
+      return DynamicLibrary.open('libonnxruntime.1.15.1.dylib');
+    } on ArgumentError {
+      return DynamicLibrary.process();
+    }
   }
 
   if (Platform.isWindows) {

@@ -11,7 +11,7 @@
 | `src/select.dart` | 켬/끔 조기 결정·자동선택(v4), 가짜 줄 제거(v5) | phone_bench/ghost_diag.py |
 | `src/monophony.dart` | 화음 경고(쌓인 음표머리) | tool/poly_signals.py |
 | `src/parts.dart` | 다성부 파트 나누기(단 묶기·누락 자리 추정·쉼표 채움) | tool/ref_parts.py |
-| `src/model_store.dart` | 모델 내려받기(GitHub 릴리스·sha256·이어받기·재시도) | — (검수 PDF 저장소 규칙) |
+| `src/model_store.dart` | 모델 내려받기(sha256·이어받기·재시도) — **보관, 1차 미사용**(모델 비공개·앱 내장 결정 10-07) | — (검수 PDF 저장소 규칙) |
 | `src/score.dart` | 반복 전개·셈여림 세기·붙임줄 병합·시간 배치·SMF | lib_lines.unfold_tokens·evaluate.write_midi(+tool/ref_score.py) |
 | `src/wav_embed.dart` | 첨부 WAV 안 `omrS` 청크로 미디·토큰 보관 | — |
 | `src/scanner.dart` | 사진 한 장 흐름(isolate 검출 병렬/순차 → 인식 → 선택 → 경고) | phone_bench full_bench v5 |

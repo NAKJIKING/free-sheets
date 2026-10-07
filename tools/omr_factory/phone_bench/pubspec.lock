@@ -328,13 +328,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
-  onnxruntime:
+  onnxruntime_plus:
     dependency: "direct main"
     description:
-      path: "../third_party/onnxruntime-1.4.1"
+      path: "../third_party/onnxruntime_plus-1.5.0"
       relative: true
     source: path
-    version: "1.4.1"
+    version: "1.5.0"
   path:
     dependency: transitive
     description:

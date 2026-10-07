@@ -1,15 +1,24 @@
 <p align="center"><img width="50%" src="https://github.com/microsoft/onnxruntime/raw/main/docs/images/ONNX_Runtime_logo_dark.png" /></p>
 
-# OnnxRuntime Plugin
-[![pub package](https://img.shields.io/pub/v/onnxruntime.svg)](https://pub.dev/packages/onnxruntime)
+# onnxruntime_plus
+[![pub package](https://img.shields.io/pub/v/onnxruntime_plus.svg)](https://pub.dev/packages/onnxruntime_plus)
+
+## Fork Status
+
+This package is a fork of the original [`onnxruntime`](https://pub.dev/packages/onnxruntime) Flutter plugin.
+It is kept mainly to ship Apple packaging fixes, especially iOS Swift Package Manager support,
+and related compatibility updates that are not available in the older package.
+
+Maintenance is best-effort and focused on keeping the package usable for current projects,
+not on broad feature development.
 
 ## Overview
 
-Flutter plugin for OnnxRuntime via `dart:ffi` provides an easy, flexible, and fast Dart API to integrate Onnx models in flutter apps across mobile and desktop platforms.
+Flutter plugin for ONNX Runtime via `dart:ffi` with iOS Swift Package Manager support and cross-platform Dart bindings.
 
 | **Platform**      | Android       | iOS | Linux | macOS | Windows |
 |-------------------|---------------|-----|-------|-------|---------|
-| **Compatibility** | API level 21+ | *   | *     | *     | *       |
+| **Compatibility** | API level 24+ | *   | *     | *     | *       |
 | **Architecture**  | arm32/arm64   | *   | *     | *     | *       |
 
 *: [Consistent with Flutter](https://docs.flutter.dev/reference/supported-platforms)
@@ -23,6 +32,17 @@ Flutter plugin for OnnxRuntime via `dart:ffi` provides an easy, flexible, and fa
 * Inference speed is not slower than native Android/iOS Apps built using the Java/Objective-C API.
 * Run inference in different isolates to prevent jank in UI thread.
 
+## Android 16 KB page size
+
+Since version 1.5.0 the bundled Android runtime is ONNX Runtime 1.22.0, whose
+`libonnxruntime.so` is linked with 16 KB ELF segment alignment. That is what
+Google Play requires of apps targeting Android 15 and above, and what devices
+running a 16 KB page size need in order to map the library at all.
+
+The 16 KB binaries are built against API 24, so this package raises its
+`minSdkVersion` from 21 to 24. Set `minSdkVersion 24` (or higher) in your app's
+`android/app/build.gradle` if it is still on a lower value.
+
 ## Getting Started
 
 In your flutter project add the dependency:
@@ -30,7 +50,7 @@ In your flutter project add the dependency:
 ```yml
 dependencies:
   ...
-  onnxruntime: x.y.z
+  onnxruntime_plus: x.y.z
 ```
 
 ## Usage example
@@ -38,7 +58,7 @@ dependencies:
 ### Import
 
 ```dart
-import 'package:onnxruntime/onnxruntime.dart';
+import 'package:onnxruntime_plus/onnxruntime_plus.dart';
 ```
 
 ### Initializing environment
@@ -77,4 +97,10 @@ outputs?.forEach((element) {
 ```dart
 OrtEnv.instance.release();
 ```
+
+## Apple packaging
+
+For iOS, this package supports both CocoaPods fallback and Swift Package Manager integration.
+The Swift package uses the official ONNX Runtime iOS binary archive published by Microsoft.
+This fork also keeps Apple package metadata in sync for newer Flutter package-manager expectations.
 

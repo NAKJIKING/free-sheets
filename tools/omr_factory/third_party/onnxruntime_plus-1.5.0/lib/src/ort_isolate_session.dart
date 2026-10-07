@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:isolate';
 
-import 'package:onnxruntime/src/ort_session.dart';
-import 'package:onnxruntime/src/ort_value.dart';
+import 'package:onnxruntime_plus/src/ort_session.dart';
+import 'package:onnxruntime_plus/src/ort_value.dart';
 
 class OrtIsolateSession {
   int address;

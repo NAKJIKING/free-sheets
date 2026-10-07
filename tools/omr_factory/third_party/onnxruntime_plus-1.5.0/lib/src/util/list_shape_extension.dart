@@ -5,7 +5,7 @@ extension ListShape on List {
   ///
   /// [T] is the type of elements in list
   ///
-  /// Returns List<dynamic> if [shape.length] > 5
+  /// Returns `List<dynamic>` if [shape.length] > 5
   /// else returns list with exact type
   ///
   /// Throws [ArgumentError] if number of elements for [shape]
@@ -138,7 +138,7 @@ extension ListShape on List {
   }
 
   /// Flatten this list, [T] is element type
-  /// if not specified List<dynamic> is returned
+  /// if not specified `List<dynamic>` is returned
   List<T> flatten<T>() {
     var flat = <T>[];
     forEach((e) {

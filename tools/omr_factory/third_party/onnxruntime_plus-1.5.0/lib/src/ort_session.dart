@@ -4,15 +4,15 @@ import 'dart:typed_data';
 import 'package:flutter/services.dart';
 
 import 'package:ffi/ffi.dart';
-import 'package:onnxruntime/src/bindings/bindings.dart';
-import 'package:onnxruntime/src/bindings/onnxruntime_bindings_generated.dart'
+import 'package:onnxruntime_plus/src/bindings/bindings.dart';
+import 'package:onnxruntime_plus/src/bindings/onnxruntime_bindings_generated.dart'
     as bg;
-import 'package:onnxruntime/src/ort_env.dart';
-import 'package:onnxruntime/src/ort_isolate_session.dart';
-import 'package:onnxruntime/src/ort_status.dart';
-import 'package:onnxruntime/src/ort_value.dart';
-import 'package:onnxruntime/src/ort_provider.dart';
-import 'package:onnxruntime/src/providers/ort_flags.dart';
+import 'package:onnxruntime_plus/src/ort_env.dart';
+import 'package:onnxruntime_plus/src/ort_isolate_session.dart';
+import 'package:onnxruntime_plus/src/ort_status.dart';
+import 'package:onnxruntime_plus/src/ort_value.dart';
+import 'package:onnxruntime_plus/src/ort_provider.dart';
+import 'package:onnxruntime_plus/src/providers/ort_flags.dart';
 
 class OrtSession {
   late ffi.Pointer<bg.OrtSession> _ptr;
@@ -231,6 +231,34 @@ class OrtSession {
     return _isolateSession?.run(runOptions, inputs, outputNames);
   }
 
+  String getMetadatas(String key) {
+    final metaPtr = calloc<ffi.Pointer<bg.OrtModelMetadata>>();
+    var statusPtr = OrtEnv.instance.ortApiPtr.ref.SessionGetModelMetadata
+            .asFunction<
+                bg.OrtStatusPtr Function(ffi.Pointer<bg.OrtSession>,
+                    ffi.Pointer<ffi.Pointer<bg.OrtModelMetadata>>)>()(
+        _ptr, metaPtr);
+    OrtStatus.checkOrtStatus(statusPtr);
+    final meta = metaPtr.value;
+    final namePtrPtr = calloc<ffi.Pointer<ffi.Char>>();
+    statusPtr = OrtEnv
+            .instance.ortApiPtr.ref.ModelMetadataLookupCustomMetadataMap
+            .asFunction<
+                bg.OrtStatusPtr Function(
+                    ffi.Pointer<bg.OrtModelMetadata> modelMetadata,
+                    ffi.Pointer<bg.OrtAllocator> allocator,
+                    ffi.Pointer<ffi.Char> key,
+                    ffi.Pointer<ffi.Pointer<ffi.Char>> value)>()(
+        meta,
+        OrtAllocator.instance.ptr,
+        key.toNativeUtf8().cast<ffi.Char>(),
+        namePtrPtr);
+    final name = namePtrPtr.value.cast<Utf8>().toDartString();
+    calloc.free(metaPtr);
+    calloc.free(namePtrPtr);
+    return name;
+  }
+
   void release() {
     _isolateSession?.release();
     _isolateSession = null;
@@ -370,6 +398,11 @@ class OrtSessionOptions {
   /// Appends Nnapi provider.
   bool appendNnapiProvider(NnapiFlags flags) {
     return _appendExecutionProvider(OrtProvider.nnapi, flags);
+  }
+
+  /// Appends QNN provider.
+  bool appendQnnProvider() {
+    return _appendExecutionProvider2(OrtProvider.qnn, {});
   }
 
   /// Appends Xnnpack provider.

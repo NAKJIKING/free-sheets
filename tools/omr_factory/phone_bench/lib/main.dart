@@ -7,7 +7,7 @@ import 'dart:typed_data';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:onnxruntime/onnxruntime.dart';
+import 'package:onnxruntime_plus/onnxruntime_plus.dart';
 
 import 'full_bench.dart';
 
@@ -221,7 +221,7 @@ class _BenchPageState extends State<BenchPage> {
       body.writeln(_fmt(r));
     }
     return Scaffold(
-      appBar: AppBar(title: const Text('OMR 폰 속도 시험 v6 (1.4.1 포함본)')),
+      appBar: AppBar(title: const Text('OMR 폰 속도 시험 v6 (plus 1.5.0 포함본)')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
