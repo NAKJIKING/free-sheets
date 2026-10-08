@@ -100,6 +100,24 @@ void main() {
     });
   });
 
+  group('긴 변 축소', () {
+    test('작으면 그대로, 크면 비율 유지·8비트 값', () {
+      final g = GrayF32(300, 400);
+      for (var i = 0; i < g.data.length; i++) {
+        g.data[i] = (i % 256) / 255.0;
+      }
+      expect(identical(capLongSide(g, null), g), isTrue);
+      expect(identical(capLongSide(g, 400), g), isTrue);
+      final r = capLongSide(g, 200);
+      expect([r.w, r.h], [150, 200]);
+      for (final v in r.data) {
+        expect((v * 255 - (v * 255).round()).abs(), lessThan(1e-3));
+      }
+      final wide = capLongSide(GrayF32(1000, 30), 500);
+      expect([wide.w, wide.h], [500, 15]);
+    });
+  });
+
   group('가짜 줄', () {
     ScanLine line(int notes, double sq) => ScanLine(
         decode: LineDecode(List.filled(math.max(notes, 0), 1), 0.99, 10),

@@ -9,6 +9,7 @@ import 'ctc.dart';
 import 'monophony.dart';
 import 'parts.dart';
 import 'pipeline/gray.dart';
+import 'pipeline/kernels.dart' show resizeBilinear;
 import 'pipeline/photo_prep.dart';
 import 'pipeline/prep.dart' as prep;
 import 'score.dart';
@@ -58,14 +59,30 @@ class DetLine {
   final HeadStats heads;
 }
 
+/// 긴 변이 [maxSide] 보다 크면 그 길이로 줄인다(PIL BILINEAR 축소와 같은 삼각
+/// 필터 + 8비트 재양자화 — 파이썬 크기 실험(size_study.py)과 같은 처리).
+/// 고화소(50MP 등) 사진도 이 크기로 처리된다.
+GrayF32 capLongSide(GrayF32 photo, int? maxSide) {
+  if (maxSide == null) return photo;
+  final long = photo.w > photo.h ? photo.w : photo.h;
+  if (long <= maxSide) return photo;
+  final s = maxSide / long;
+  final r = resizeBilinear(photo, (photo.w * s).round(), (photo.h * s).round());
+  for (var i = 0; i < r.data.length; i++) {
+    r.data[i] = (r.data[i] * 255).round().clamp(0, 255) / 255.0;
+  }
+  return r;
+}
+
 /// 한 경로 검출(무거운 연산, isolate 안에서 돈다).
-List<DetLine> detectSide(Uint8List jpeg, bool correct) {
+List<DetLine> detectSide(Uint8List jpeg, bool correct, {int? maxSide}) {
   GrayF32 photo;
   try {
     photo = decodeGray(jpeg);
   } catch (_) {
     throw ScanException(ScanFailure.badImage);
   }
+  photo = capLongSide(photo, maxSide);
   final out = <DetLine>[];
   for (final c in extractLines(photo, correct: correct)) {
     final t = prep.normalizePhoto(c.gray, gapHint: c.gap);
@@ -147,22 +164,25 @@ class Scanner {
 
   /// [parallel]: 켬·끔 검출을 isolate 2개로 동시에(램 6GB 이상 권장) —
   /// false 면 순차(최고 메모리 감소).
+  /// [maxSide]: 긴 변이 이보다 크면 디코드 직후 축소(고화소 사진 메모리 상한).
   Future<ScanResult> scan(Uint8List jpeg,
-      {bool parallel = true, void Function(ScanEvent)? onEvent}) async {
+      {bool parallel = true,
+      int? maxSide,
+      void Function(ScanEvent)? onEvent}) async {
     final sw = Stopwatch()..start();
     final tm = <String, int>{};
     onEvent?.call(StageEvent('detect'));
     List<DetLine> on, off;
     if (parallel) {
       final r = await Future.wait([
-        Isolate.run(() => detectSide(jpeg, true)),
-        Isolate.run(() => detectSide(jpeg, false)),
+        Isolate.run(() => detectSide(jpeg, true, maxSide: maxSide)),
+        Isolate.run(() => detectSide(jpeg, false, maxSide: maxSide)),
       ]);
       on = r[0];
       off = r[1];
     } else {
-      on = await Isolate.run(() => detectSide(jpeg, true));
-      off = await Isolate.run(() => detectSide(jpeg, false));
+      on = await Isolate.run(() => detectSide(jpeg, true, maxSide: maxSide));
+      off = await Isolate.run(() => detectSide(jpeg, false, maxSide: maxSide));
     }
     tm['detect'] = sw.elapsedMilliseconds;
     if (on.isEmpty && off.isEmpty) throw ScanException(ScanFailure.noStaff);
