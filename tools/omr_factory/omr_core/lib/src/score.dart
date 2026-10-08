@@ -23,12 +23,12 @@ class ScoreNote {
   final int vel;
 
   @override
-  bool operator ==(Object o) =>
-      o is ScoreNote &&
-      o.start == start &&
-      o.dur == dur &&
-      o.key == key &&
-      o.vel == vel;
+  bool operator ==(Object other) =>
+      other is ScoreNote &&
+      other.start == start &&
+      other.dur == dur &&
+      other.key == key &&
+      other.vel == vel;
   @override
   int get hashCode => Object.hash(start, dur, key, vel);
   @override

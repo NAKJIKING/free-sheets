@@ -19,8 +19,11 @@ class Tok {
       Tok(j[0] as int, j[1] as int, (j[2] as int) != 0);
 
   @override
-  bool operator ==(Object o) =>
-      o is Tok && o.pitch == pitch && o.dur == dur && o.tie == tie;
+  bool operator ==(Object other) =>
+      other is Tok &&
+      other.pitch == pitch &&
+      other.dur == dur &&
+      other.tie == tie;
   @override
   int get hashCode => Object.hash(pitch, dur, tie);
   @override
