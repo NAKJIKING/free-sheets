@@ -15,18 +15,22 @@ import json
 import os
 import sys
 
-sys.path.insert(0, r'C:\Users\user\free-sheets\tools\omr_factory')
+# 저장소 밖 자료의 뿌리 — 사용자 폴더(식당 PC C:/Users/user, 집 PC C:/Users/cocok).
+# 환경변수 OMR_ASSET_HOME 으로 덮어쓸 수 있다.
+HOME = os.environ.get('OMR_ASSET_HOME') or os.path.expanduser('~')
+
+sys.path.insert(0, os.path.join(HOME, 'free-sheets', 'tools', 'omr_factory'))
 import numpy as np
 
-OUT = r'C:\Users\user\omr_phone_bench_assets\ghost_diag.json'
-ONNX = 'C:/Users/user/omr_export/omr_crnn_fp32.onnx'
-MODEL = 'C:/Users/user/omr_model_3c4'
-CANON = 'C:/Users/user/omr_photo_canon'
-CANON_TRUTH = 'C:/Users/user/omr_dense/truth_canon.json'
-CANON_RENDER = 'C:/Users/user/omr_dense/캐논_플루트.png'
-REAL = 'C:/Users/user/omr_real_shots'
-REAL_REPORT = 'C:/Users/user/omr_real_lines/report.json'
-PRINT = 'C:/Users/user/omr_print'
+OUT = os.path.join(HOME, 'omr_phone_bench_assets', 'ghost_diag.json')
+ONNX = os.path.join(HOME, 'omr_export', 'omr_crnn_fp32.onnx')
+MODEL = os.path.join(HOME, 'omr_model_3c4')
+CANON = os.path.join(HOME, 'omr_photo_canon')
+CANON_TRUTH = os.path.join(HOME, 'omr_dense', 'truth_canon.json')
+CANON_RENDER = os.path.join(HOME, 'omr_dense', '캐논_플루트.png')
+REAL = os.path.join(HOME, 'omr_real_shots')
+REAL_REPORT = os.path.join(HOME, 'omr_real_lines', 'report.json')
+PRINT = os.path.join(HOME, 'omr_print')
 EARLY_CONF, EARLY_DIFF = 0.9975, 2          # v4 조기 결정(폰과 동일)
 
 

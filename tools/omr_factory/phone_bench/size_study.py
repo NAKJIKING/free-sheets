@@ -16,12 +16,14 @@ import json
 import os
 import sys
 
-sys.path.insert(0, r'C:\Users\user\free-sheets\tools\omr_factory')
+sys.path.insert(0, os.path.join(
+    os.environ.get('OMR_ASSET_HOME') or os.path.expanduser('~'),
+    'free-sheets', 'tools', 'omr_factory'))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ghost_diag as G
 
-OUT_DIR = r'C:\Users\user\omr_phone_bench_assets'
-SIZES = (2000, 2500, 3000)
+OUT_DIR = os.path.join(G.HOME, 'omr_phone_bench_assets')
+SIZES = (2000, 2500, 3000, 3500)   # 3500 은 2000~3000 이 모두 탈락해 추가(실측 사진 긴 변 4000)
 GUARD_MB = 1200                 # 여유 램이 이보다 적으면 스스로 멈춘다
 GHOST_RULE = (2, 0.0, 0.3)      # v5 = omr_core select.ghostMask
 
