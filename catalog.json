@@ -181006,5 +181006,36 @@
   "instrument": "Recorder",
   "license": "see source page",
   "level": 2
- }
+ },
+    {
+        "source": "reviewed",
+        "source_url": "https://imslp.org/wiki/Sicilienne,_Op.78_(Faur%C3%A9,_Gabriel)#IMSLP129966",
+        "file": "raw/reviewed/flute/flute-20261022-faure-sicilienne-gouin.pdf",
+        "title": "Sicilienne, Op.78 — Flute part",
+        "composer": "Gabriel Fauré",
+        "instrument": "Flute",
+        "license": "CC BY-SA 4.0 · Pierre Gouin / Les Éditions Outremontaises (2006)",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "alias": "시실리안느, Op.78 — 플루트 파트",
+        "tags": "플루트 중급 flute intermediate Gabriel Fauré",
+        "level": 2,
+        "entry": false,
+        "sha256": "5a3aa4b22983375866fe03d935abf44289f97b51dccede5c0ff4c76b565aa305"
+    },
+    {
+        "source": "reviewed",
+        "source_url": "https://archive.org/details/minuettauslarl00bize",
+        "file": "raw/reviewed/flute/flute-20261022-bizet-menuet-wetzger.pdf",
+        "title": "Menuet from L’Arlésienne Suite No.2 — Flute part",
+        "composer": "Georges Bizet",
+        "instrument": "Flute",
+        "license": "Public Domain · Paul Wetzger arrangement / Zimmermann (1910)",
+        "license_url": "https://imslp.org/wiki/L%27Arl%C3%A9sienne_Suite_No.2_(Bizet,_Georges)#IMSLP116883",
+        "alias": "아를의 여인 제2모음곡 미뉴에트 — 플루트 파트",
+        "tags": "플루트 중급 flute intermediate Georges Bizet",
+        "level": 2,
+        "entry": false,
+        "sha256": "8fb90d9d546cfe14aaead6a4edd6fc26464e578db1a189179b7b6182ea15d37b"
+    }
+
 ]
